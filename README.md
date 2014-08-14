@@ -1,7 +1,7 @@
-Innovation665_HazardousPharmceuticals
-=====================================
+HazardousPharmceuticals
+=======================
 
-Innovation665_Hazardous Pharmaceuticals Project
+VHA Innovation Project 665
 
 Every VA pharmacy in the country carries pharmaceuticals that present hazards for human exposure and environmental hazards upon disposal.  This project seeks to modify necessary VA systems to properly identify hazardous pharmaceuticals for handling precautions and disposal instructions.  The is serve to protect the Veterans, VA staff, and the environment.  This includes:
 
