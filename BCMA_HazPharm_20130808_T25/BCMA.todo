@@ -1,0 +1,13 @@
+{TODO :
+Clean up usage of lstUnitDose direct references in subordinate procedures.
+Replace with IdxOrder variable passed in as parameter.}
+{DONE -oBob -cNormal : Test PRN max time spinner control in BCMA Parameters.}
+{TODO -oBob -cNormal : 
+Add highlight for provider / pharmacist override reason / intervention in VDL.
+Flag is found in piece 29 in PSB GETORDERTAB results line.}
+{DONE -oBob -cNormal :
+Add support for non-nurse verified warning options as site parameter in 
+BCMA and BCMAParameters programs.  Add warning message dialog 
+functonality based on parameter value.}
+
+{TODO : Check JAWS handling on string grid in EditMedLogAdminSelect.}

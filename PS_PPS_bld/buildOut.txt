@@ -1,0 +1,663 @@
+Buildfile: C:\PPSNSource\PS_PPS_Bld\PS_PPS_bld\build.xml
+
+ear:
+
+setEarDependencyTarget:
+
+setWarDependencyTarget:
+
+setJarDependencyTarget:
+
+setCompileDependencyTarget:
+
+setGenerateDependencyTarget:
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\log
+     [echo] --------------------------- Cleaning Presentation ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+initTemplate:
+
+initStructure:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\src
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\meta\local
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\meta\national
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\archive
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\test\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\javadoc
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\checkstyle\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\pmd\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\coverage\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\coverage\instr
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive\ejb
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive\web
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive\connector
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive\lib
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\meta\META-INF
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\build\lib
+
+initProperties:
+[swri:clearCaseBaselines] Unable to find baseline names from 'cleartool lsstream -l' command. ANT property baseline.name not set.
+
+buildDependency:
+     [echo] --------------------------- Executing ear on Common ----------------------------
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+setEarDependencyTarget:
+
+setWarDependencyTarget:
+
+setJarDependencyTarget:
+
+setCompileDependencyTarget:
+
+setGenerateDependencyTarget:
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+     [echo] --------------------------- Cleaning Common ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+initTemplate:
+
+initStructure:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\src
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\meta\local
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\meta\national
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\archive
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\test\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\javadoc
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\checkstyle\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\pmd\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\coverage\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\coverage\instr
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\archive\ejb
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\archive\web
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\archive\connector
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\archive\lib
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\meta\META-INF
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\build\lib
+
+initProperties:
+[swri:clearCaseBaselines] Unable to find baseline names from 'cleartool lsstream -l' command. ANT property baseline.name not set.
+
+buildDependency:
+
+initClasspath:
+
+Template.init:
+
+init:
+
+Template.generate:
+     [echo] --------------------------- Generating Common ----------------------------
+
+generate:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\meta\properties\gov\va\med\pharmacy\peps\common\capability\impl
+[propertyfile] Creating new property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\meta\properties\gov\va\med\pharmacy\peps\common\capability\impl\BuildVersionCapabilityImpl.properties
+
+Template.compile:
+     [echo] --------------------------- Compiling Common ----------------------------
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\compile.xml:14: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 475 source files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\classes
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+compile:
+
+Template.jar:
+     [echo] --------------------------- Packaging Common into JAR ----------------------------
+
+jar:
+     [copy] Copying 41 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\archive\lib
+      [jar] Building jar: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\build\archive\Common.jar
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\tmp\archive\lib
+
+war:
+     [echo] --------------------------- Packaging Common into WAR ----------------------------
+
+ear:
+     [echo] --------------------------- Packaging Common into EAR ----------------------------
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+     [echo] --------------------------- Completed execution on Common ----------------------------
+     [echo] --------------------------- Executing ear on Service ----------------------------
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv
+
+setEarDependencyTarget:
+
+setWarDependencyTarget:
+
+setJarDependencyTarget:
+
+setCompileDependencyTarget:
+
+setGenerateDependencyTarget:
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\log
+     [echo] --------------------------- Cleaning Service ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+initTemplate:
+
+initStructure:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\src
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\local
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\national
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\archive
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\test\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\javadoc
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\checkstyle\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\pmd\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\coverage\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\coverage\instr
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\ejb
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\web
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\connector
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\lib
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\meta\META-INF
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\build\lib
+
+initProperties:
+[swri:clearCaseBaselines] Unable to find baseline names from 'cleartool lsstream -l' command. ANT property baseline.name not set.
+
+buildDependency:
+     [echo] --------------------------- Skipping ear on Common because the build for the project has already run ----------------------------
+     [echo] --------------------------- Executing ear on Domain ----------------------------
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain
+
+setEarDependencyTarget:
+
+setWarDependencyTarget:
+
+setJarDependencyTarget:
+
+setCompileDependencyTarget:
+
+setGenerateDependencyTarget:
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\log
+     [echo] --------------------------- Cleaning Domain ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+initTemplate:
+
+initStructure:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\src
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\meta\local
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\meta\national
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\archive
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\test\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\javadoc
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\checkstyle\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\pmd\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\coverage\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\coverage\instr
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive\ejb
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive\web
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive\connector
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive\lib
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\meta\META-INF
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\build\lib
+
+initProperties:
+[swri:clearCaseBaselines] Unable to find baseline names from 'cleartool lsstream -l' command. ANT property baseline.name not set.
+
+buildDependency:
+     [echo] --------------------------- Skipping ear on Common because the build for the project has already run ----------------------------
+     [echo] --------------------------- Executing ear on Interface ----------------------------
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface
+
+setEarDependencyTarget:
+
+setWarDependencyTarget:
+
+setJarDependencyTarget:
+
+setCompileDependencyTarget:
+
+setGenerateDependencyTarget:
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\log
+     [echo] --------------------------- Cleaning Interface ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+initTemplate:
+
+initStructure:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\src
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\meta\local
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\meta\national
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\archive
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\test\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\javadoc
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\checkstyle\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\pmd\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\coverage\report
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\coverage\instr
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive\ejb
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive\web
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive\connector
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive\lib
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\meta\META-INF
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\build\classes
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\build\lib
+
+initProperties:
+[swri:clearCaseBaselines] Unable to find baseline names from 'cleartool lsstream -l' command. ANT property baseline.name not set.
+
+buildDependency:
+     [echo] --------------------------- Skipping ear on Common because the build for the project has already run ----------------------------
+
+initClasspath:
+
+Template.init:
+
+init:
+     [echo] Classpath inside InitInterfaceTemplate: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\checkstyle;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\developer;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\launch;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\launch\old;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\pmd;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\sound;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\properties;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\properties\deploy;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-bean-collections-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-core-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-cli-1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-codec-1.5.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-collections-3.2.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-digester-2.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-fileupload-1.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-io-1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-lang-2.6.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-logging-1.1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\JDK15-CacheDB-2008.2.1.902.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\derbyclient-10.3.1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\ojdbc5-11.2.0.1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\sqljdbc4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\ehcache-core-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\ejb3-persistence-1.0.2.GA.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\hibernate-jpa-2.0-api-1.0.0.Final.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\hibernate-validator-4.1.0.Final.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\jcl-over-slf4j-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\log4j-1.2.15.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\slf4j-api-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\slf4j-log4j12-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\aopalliance-1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\cglib-nodep-2.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\profile\aspectjrt-1.6.11.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\profile\aspectjweaver-1.6.11.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\quartz-1.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-aop-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-asm-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-beans-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-context-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-context-support-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-core-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-expression-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-jdbc-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-orm-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-test-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-tx-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-web-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\xml\jaxen-1.1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\ant\ant-contrib-1.0b3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\ant\ant-swri.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\checkstyle\checkstyle-5.5-all.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\checkstyle\checkstyle-pharmacy-2.0.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\coverage\emma-2.1.5320.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\coverage\emma_ant-2.1.5320.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\pmd\asm-3.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\pmd\pmd-4.2.6.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\easymock-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\easymockclassextension-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\junit-4.8.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\junitperf-1.9.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\objenesis-1.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\powermock-easymock-1.3.8-full.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\weblogic\tools.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\weblogic\weblogic.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-bea-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-ejb-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-hibernate-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-web-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-xdoclet-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xjavadoc-1.5-snapshot050611.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xml\xercesImpl-2.9.1.jar
+     [echo] Interface Classpath inside InitInterfaceTemplate: C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\build\jaxb\jaxb-xjc.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\build\weblogic\weblogic-container-binding.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\build\weblogic\webservices.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\build\weblogic\xbean.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\build\xmlbeans\xmlbeans-2.4.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\drugdatavendor\fdb\FDBDataConnection-2.0.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\drugdatavendor\fdb\fdbdif32-3.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\jaxb\activation-1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\jaxb\jaxb-api.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\jaxb\jaxb-impl.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\jaxb\jsr173_1.0_api.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\StsConnectivity3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\axis-1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\axis-jaxrpc-1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\axis-saaj-1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\axis-wsdl4j-1.5.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\commons-discovery-0.5.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\sts\stsProd.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\vistalink\vljConnector-1.6.0.028.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\vistalink\vljFoundationsLib-1.6.0.028.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Interface\vistalink\vljSecurity-1.6.0.027.jar;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\checkstyle;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\developer;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\launch;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\launch\old;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\pmd;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\sound;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\properties;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\properties\deploy;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-bean-collections-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-core-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-cli-1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-codec-1.5.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-collections-3.2.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-digester-2.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-fileupload-1.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-io-1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-lang-2.6.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-logging-1.1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\JDK15-CacheDB-2008.2.1.902.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\derbyclient-10.3.1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\ojdbc5-11.2.0.1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\sqljdbc4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\ehcache-core-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\ejb3-persistence-1.0.2.GA.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\hibernate-jpa-2.0-api-1.0.0.Final.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\hibernate-validator-4.1.0.Final.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\jcl-over-slf4j-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\log4j-1.2.15.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\slf4j-api-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\slf4j-log4j12-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\aopalliance-1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\cglib-nodep-2.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\profile\aspectjrt-1.6.11.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\profile\aspectjweaver-1.6.11.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\quartz-1.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-aop-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-asm-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-beans-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-context-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-context-support-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-core-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-expression-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-jdbc-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-orm-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-test-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-tx-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-web-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\xml\jaxen-1.1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\ant\ant-contrib-1.0b3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\ant\ant-swri.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\checkstyle\checkstyle-5.5-all.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\checkstyle\checkstyle-pharmacy-2.0.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\coverage\emma-2.1.5320.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\coverage\emma_ant-2.1.5320.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\pmd\asm-3.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\pmd\pmd-4.2.6.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\easymock-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\easymockclassextension-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\junit-4.8.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\junitperf-1.9.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\objenesis-1.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\powermock-easymock-1.3.8-full.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\weblogic\tools.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\weblogic\weblogic.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-bea-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-ejb-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-hibernate-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-web-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-xdoclet-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xjavadoc-1.5-snapshot050611.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xml\xercesImpl-2.9.1.jar
+
+Template.generate:
+     [echo] --------------------------- Generating Interface ----------------------------
+
+generate:
+      [xjc] Consider using <depends>/<produces> so that XJC won't do unnecessary compilation
+      [xjc] Compiling file:/C:/PPSNSource/PS_PPS_Dev/PS_PPS_interface/etc/xml/schema/common.xsd and others
+      [xjc] Writing output to C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\src
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\meta\properties\gov\va\med\pharmacy\peps\external\common\sts\outbound\capability\impl
+[propertyfile] Creating new property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\meta\properties\gov\va\med\pharmacy\peps\external\common\sts\outbound\capability\impl\StsCapabilityImpl.properties
+
+Template.compile:
+     [echo] --------------------------- Compiling Interface ----------------------------
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\compile.xml:14: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 656 source files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\classes
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\utility\XmlDocument.java:32: warning: com.sun.org.apache.xml.internal.serialize.OutputFormat is Sun proprietary API and may be removed in a future release
+    [javac] import com.sun.org.apache.xml.internal.serialize.OutputFormat;
+    [javac]                                                 ^
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\utility\XmlDocument.java:33: warning: com.sun.org.apache.xml.internal.serialize.XMLSerializer is Sun proprietary API and may be removed in a future release
+    [javac] import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
+    [javac]                                                 ^
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\utility\XmlDocument.java:289: warning: com.sun.org.apache.xml.internal.serialize.XMLSerializer is Sun proprietary API and may be removed in a future release
+    [javac]     private XMLSerializer getXmlSerializer(Writer writer, String[] cdataElements, boolean forceIndent) {
+    [javac]             ^
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\utility\XmlDocument.java:290: warning: com.sun.org.apache.xml.internal.serialize.OutputFormat is Sun proprietary API and may be removed in a future release
+    [javac]         OutputFormat of = new OutputFormat();
+    [javac]         ^
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\utility\XmlDocument.java:290: warning: com.sun.org.apache.xml.internal.serialize.OutputFormat is Sun proprietary API and may be removed in a future release
+    [javac]         OutputFormat of = new OutputFormat();
+    [javac]                               ^
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\utility\XmlDocument.java:300: warning: com.sun.org.apache.xml.internal.serialize.XMLSerializer is Sun proprietary API and may be removed in a future release
+    [javac]         return new XMLSerializer(writer, of);
+    [javac]                    ^
+    [javac] Note: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\src\gov\va\med\pharmacy\peps\external\common\preencapsulation\utility\update\pdm\DrugFileConverter.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 6 warnings
+
+compile:
+
+Template.jar:
+     [echo] --------------------------- Packaging Interface into JAR ----------------------------
+
+jar:
+     [copy] Copying 16 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive\lib
+     [copy] Copying 42 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive
+      [jar] Building jar: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build\archive\NationalInterface.jar
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp\archive\lib
+
+war:
+     [echo] --------------------------- Packaging Interface into WAR ----------------------------
+
+ear:
+     [echo] --------------------------- Packaging Interface into EAR ----------------------------
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface
+     [echo] --------------------------- Completed execution on Interface ----------------------------
+
+initClasspath:
+
+Template.init:
+
+init:
+
+Template.generate:
+     [echo] --------------------------- Generating Domain ----------------------------
+
+generate:
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] (XDocletMain.start                   47  ) Running <hibernatecfg/>
+[hibernatedoclet] Generating hibernate.cfg.xml configuration file
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] (XDocletMain.start                   47  ) Running <hibernatecfg/>
+[hibernatedoclet] Generating hibernate1.cfg.xml configuration file
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] (XDocletMain.start                   47  ) Running <hibernatecfg/>
+[hibernatedoclet] Generating hibernate2.cfg.xml configuration file
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] (XDocletMain.start                   47  ) Running <hibernatecfg/>
+[hibernatedoclet] Generating hibernate.cfg.xml configuration file
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] addOtherProperty(): name=null, null
+[hibernatedoclet] (XDocletMain.start                   47  ) Running <hibernatecfg/>
+[hibernatedoclet] Generating hibernate.cfg.xml configuration file
+
+Template.compile:
+     [echo] --------------------------- Compiling Domain ----------------------------
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\compile.xml:14: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 670 source files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+compile:
+
+Template.jar:
+     [echo] --------------------------- Packaging Domain into JAR ----------------------------
+
+jar:
+     [copy] Copying 7 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive\lib
+     [copy] Copying 41 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive
+     [copy] Copying 17 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive
+      [jar] Building jar: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build\archive\NationalDomain.jar
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp\archive\lib
+
+war:
+     [echo] --------------------------- Packaging Domain into WAR ----------------------------
+
+ear:
+     [echo] --------------------------- Packaging Domain into EAR ----------------------------
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain
+     [echo] --------------------------- Completed execution on Domain ----------------------------
+     [echo] --------------------------- Skipping ear on Interface because the build for the project has already run ----------------------------
+
+initClasspath:
+
+Template.init:
+
+init:
+
+Template.generate:
+     [echo] --------------------------- Generating Service ----------------------------
+
+generate:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\properties\gov\va\med\pharmacy\peps\service\common\test\integration
+[propertyfile] Creating new property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\properties\gov\va\med\pharmacy\peps\service\common\test\integration\IntegrationTestCase.properties
+[propertyfile] Updating property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\properties\gov\va\med\pharmacy\peps\service\common\test\integration\IntegrationTestCase.properties
+[ejbdoclet] (XDocletMain.start                   47  ) Running <remoteinterface/>
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.RequestServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugDataServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.bean.DrugReferenceServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.OrderCheckServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbSchedulerProcessServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ReportsServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.ConsoleServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.SiteUpdateScheduleServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingProcessBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationCSVServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.UserServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.DomainServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NotificationServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FDBUpdateProcessServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.PrintTemplateServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NationalSettingServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.QuickActionServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.SearchTemplateServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.SynchronizationStatusServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugInfoServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ManagedItemServiceBean'.
+[ejbdoclet] Generating Remote interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationServiceBean'.
+[ejbdoclet] (XDocletMain.start                   47  ) Running <localinterface/>
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.RequestServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugDataServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.bean.DrugReferenceServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.OrderCheckServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbSchedulerProcessServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ReportsServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.ConsoleServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.SiteUpdateScheduleServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingProcessBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationCSVServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.UserServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.DomainServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NotificationServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FDBUpdateProcessServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.PrintTemplateServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NationalSettingServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.QuickActionServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.SearchTemplateServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.SynchronizationStatusServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugInfoServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ManagedItemServiceBean'.
+[ejbdoclet] Generating Local interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationServiceBean'.
+[ejbdoclet] (XDocletMain.start                   47  ) Running <homeinterface/>
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.RequestServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugDataServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.bean.DrugReferenceServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.OrderCheckServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbSchedulerProcessServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ReportsServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.ConsoleServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.SiteUpdateScheduleServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingProcessBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationCSVServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.UserServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.DomainServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NotificationServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FDBUpdateProcessServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.PrintTemplateServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NationalSettingServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.QuickActionServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.SearchTemplateServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.SynchronizationStatusServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugInfoServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ManagedItemServiceBean'.
+[ejbdoclet] Generating Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationServiceBean'.
+[ejbdoclet] (XDocletMain.start                   47  ) Running <localhomeinterface/>
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.RequestServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugDataServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.bean.DrugReferenceServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.OrderCheckServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbSchedulerProcessServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ReportsServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.ConsoleServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.national.session.bean.SiteUpdateScheduleServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingProcessBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationCSVServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.UserServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.DomainServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NotificationServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FDBUpdateProcessServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.PrintTemplateServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.NationalSettingServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.FdbMappingServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.QuickActionServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.SearchTemplateServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.SynchronizationStatusServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.DrugInfoServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.ManagedItemServiceBean'.
+[ejbdoclet] Generating Local Home interface for 'gov.va.med.pharmacy.peps.service.common.session.bean.MigrationServiceBean'.
+[ejbdoclet] (XDocletMain.start                   47  ) Running <deploymentdescriptor/>
+[ejbdoclet] Generating EJB deployment descriptor (ejb-jar.xml).
+[ejbdoclet] (XDocletMain.start                   47  ) Running <weblogic/>
+[ejbdoclet] Generating weblogic-ejb-jar.xml.
+[ejbdoclet] INFO:    Some classes refer to other classes that were not found among the sources or on the classpath.
+[ejbdoclet]          (Perhaps the referred class doesn't exist? Hasn't been generated yet?)
+[ejbdoclet]          The referring classes do not import any fully qualified classes matching these classes.
+[ejbdoclet]          However, since no packages are imported, xjavadoc has assumed that the referred classes
+[ejbdoclet]          belong to the same package as the referring class. The classes are:
+[ejbdoclet] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\src\gov\va\med\pharmacy\peps\common\session\bean\AbstractPepsStatelessSessionBean.java --> T qualified to gov.va.med.pharmacy.peps.common.session.bean.T
+[ejbdoclet] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\src\gov\va\med\pharmacy\peps\common\message\bean\AbstractPepsMessageDrivenBean.java --> T qualified to gov.va.med.pharmacy.peps.common.message.bean.T
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\properties\local\spring
+[propertyfile] Creating new property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\meta\properties\local\spring\nationalJndi.properties
+
+Template.compile:
+     [echo] --------------------------- Compiling Service ----------------------------
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\compile.xml:14: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 453 source files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\classes
+    [javac] Note: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\src\gov\va\med\pharmacy\peps\service\common\capability\impl\ManagedItemCapabilityImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+compile:
+
+Template.jar:
+     [echo] --------------------------- Packaging Service into JAR ----------------------------
+
+jar:
+      [jar] Building jar: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\archive\NationalServiceClient.jar
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\lib
+     [copy] Copying 42 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive
+     [copy] Copying 24 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive
+      [jar] Building jar: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\archive\NationalService.jar
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\lib
+      [jar] Building jar: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\archive\NationalServiceEjb.jar
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\archive\ejb
+
+war:
+     [echo] --------------------------- Packaging Service into WAR ----------------------------
+
+Template.ear:
+     [echo] --------------------------- Packaging Service into EAR ----------------------------
+
+ear:
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\tmp\meta\META-INF
+ [swri:ear] Building eartask: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\archive\PRE-1.0-local.ear
+ [swri:ear] META-INF/MANIFEST.MF already added, skipping
+ [swri:ear] Building eartask: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv\build\archive\PRE-1.0-national.ear
+ [swri:ear] META-INF/MANIFEST.MF already added, skipping
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_srv
+     [echo] --------------------------- Completed execution on Service ----------------------------
+
+initClasspath:
+
+Template.init:
+
+init:
+     [echo] Classpath at this stage: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\checkstyle;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\developer;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\launch;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\launch\old;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\pmd;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\sound;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\properties;C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\properties\deploy;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-bean-collections-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-beanutils-core-1.8.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-cli-1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-codec-1.5.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-collections-3.2.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-digester-2.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-fileupload-1.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-io-1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-lang-2.6.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\commons\commons-logging-1.1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\JDK15-CacheDB-2008.2.1.902.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\derbyclient-10.3.1.4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\ojdbc5-11.2.0.1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\database\sqljdbc4.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\ehcache-core-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\ejb3-persistence-1.0.2.GA.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\hibernate-jpa-2.0-api-1.0.0.Final.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\hibernate\hibernate-validator-4.1.0.Final.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\jcl-over-slf4j-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\log4j-1.2.15.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\slf4j-api-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\log\slf4j-log4j12-1.6.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\aopalliance-1.0.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\cglib-nodep-2.2.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\profile\aspectjrt-1.6.11.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\profile\aspectjweaver-1.6.11.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\quartz-1.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-aop-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-asm-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-beans-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-context-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-context-support-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-core-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-expression-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-jdbc-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-orm-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-test-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-tx-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\spring\spring-web-3.0.5.RELEASE.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\xml\jaxen-1.1.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\ant\ant-contrib-1.0b3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\ant\ant-swri.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\checkstyle\checkstyle-5.5-all.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\checkstyle\checkstyle-pharmacy-2.0.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\coverage\emma-2.1.5320.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\coverage\emma_ant-2.1.5320.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\pmd\asm-3.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\pmd\pmd-4.2.6.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\easymock-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\easymockclassextension-2.5.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\junit-4.8.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\junitperf-1.9.1.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\objenesis-1.2.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\test\powermock-easymock-1.3.8-full.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\weblogic\tools.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\weblogic\weblogic.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-bea-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-ejb-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-hibernate-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-web-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xdoclet-xdoclet-module-1.2.3.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xdoclet\xjavadoc-1.5-snapshot050611.jar;C:\PPSNSource\PS_PPS_Bld\PS_PPS_lib\Common\build\xml\xercesImpl-2.9.1.jar
+
+Template.generate:
+     [echo] --------------------------- Generating Presentation ----------------------------
+
+generate:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\meta\properties\gov\va\med\pharmacy\peps\common\test\integration
+[propertyfile] Creating new property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\meta\properties\gov\va\med\pharmacy\peps\common\test\integration\IntegrationTestCase.properties
+[propertyfile] Updating property file: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\meta\properties\gov\va\med\pharmacy\peps\common\test\integration\IntegrationTestCase.properties
+
+Template.compile:
+     [echo] --------------------------- Compiling Presentation ----------------------------
+    [javac] C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\etc\build\template\compile.xml:14: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 139 source files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+compile:
+
+jar:
+     [echo] --------------------------- Packaging Presentation into JAR ----------------------------
+
+Template.war:
+     [echo] --------------------------- Packaging Presentation into WAR ----------------------------
+
+war:
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\archive\national
+      [war] Building war: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\archive\national\PRE.war
+      [war] WEB-INF/lib/poi-3.2-FINAL.jar already added, skipping
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive\web
+
+Template.ear:
+     [echo] --------------------------- Packaging Presentation into EAR ----------------------------
+
+ear:
+     [echo] Copy ../PS_PPS_common/tmp/archive to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui/tmp/archive.
+     [echo] Copy ../PS_PPS_srv/tmp/archive to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui/tmp/archive.
+     [copy] Copying 2 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive
+     [copy] Copying 2 files to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\archive
+     [copy] Copying 1 file to C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\tmp\archive\web
+ [swri:ear] Updating eartask: C:\PPSNSource\PS_PPS_Dev\PS_PPS_ui\build\archive\PRE-1.0-national.ear
+ [swri:ear] META-INF/MANIFEST.MF already added, skipping
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 56 seconds

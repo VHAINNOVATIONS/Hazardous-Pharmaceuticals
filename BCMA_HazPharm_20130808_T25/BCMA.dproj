@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6c64321c-1b81-4bb2-82e3-8fe29cac4d04}</ProjectGuid>
+    <MainSource>BCMA.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>BCMA.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>1</DCC_Alignment>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_MapFile>3</DCC_MapFile>
+    <DCC_StackSize>24576,1048576</DCC_StackSize>
+    <DCC_DcuOutput>C:\Projects\BCMA_I665_HazPharProto\DCU</DCC_DcuOutput>
+    <DCC_ObjOutput>C:\Projects\BCMA_I665_HazPharProto\DCU</DCC_ObjOutput>
+    <DCC_HppOutput>C:\Projects\BCMA_I665_HazPharProto\DCU</DCC_HppOutput>
+    <DCC_BplOutput>$(DELPHI)\Bpl</DCC_BplOutput>
+    <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files (x86)\Vista\BDK32\D2006;C:\Program Files (x86)\Vista\BDK32\Source;C:\Projects\s508\508Components\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files (x86)\EHS</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files (x86)\Vista\BDK32\D2006;C:\Program Files (x86)\Vista\BDK32\Source;C:\Projects\s508\508Components\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files (x86)\EHS</DCC_ResourcePath>
+    <DCC_ObjPath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files (x86)\Vista\BDK32\D2006;C:\Program Files (x86)\Vista\BDK32\Source;C:\Projects\s508\508Components\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files (x86)\EHS</DCC_ObjPath>
+    <DCC_IncludePath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files (x86)\Vista\BDK32\D2006;C:\Program Files (x86)\Vista\BDK32\Source;C:\Projects\s508\508Components\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files (x86)\EHS</DCC_IncludePath>
+    <DCC_Define>MSF_ON;DEBUGLOG_ON;TEST_ON;ACTIVECTRL_OFF;RELEASE</DCC_Define>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>1</DCC_Alignment>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+    <DCC_MapFile>3</DCC_MapFile>
+    <DCC_StackSize>24576,1048576</DCC_StackSize>
+    <DCC_DcuOutput>.\DCU</DCC_DcuOutput>
+    <DCC_ObjOutput>.\DCU</DCC_ObjOutput>
+    <DCC_HppOutput>.\DCU</DCC_HppOutput>
+    <DCC_BplOutput>$(DELPHI)\Bpl</DCC_BplOutput>
+    <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files\Vista\BDK32\D2006;C:\Program Files\Vista\BDK32\Source;C:\Projects\s508\VA_Source\VA\VA\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files\EHS</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files\Vista\BDK32\D2006;C:\Program Files\Vista\BDK32\Source;C:\Projects\s508\VA_Source\VA\VA\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files\EHS</DCC_ResourcePath>
+    <DCC_ObjPath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files\Vista\BDK32\D2006;C:\Program Files\Vista\BDK32\Source;C:\Projects\s508\VA_Source\VA\VA\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files\EHS</DCC_ObjPath>
+    <DCC_IncludePath>$(DELPHI)\Lib\Debug;$(DELPHI)\Source\Toolsapi;C:\Program Files\Vista\BDK32\D2006;C:\Program Files\Vista\BDK32\Source;C:\Projects\s508\VA_Source\VA\VA\dcu;C:\Projects\OR_SRC_CREATION\CPRS-Lib;C:\Program Files\EHS</DCC_IncludePath>
+    <DCC_Define>MSF_ON;DEBUGLOG_ON;TEST_ON;ACTIVECTRL_OFF;DEBUG</DCC_Define>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="RunParams">s=54.225.228.13 p=9200 /DEBUGLOG /noccow</Parameters><Parameters Name="DebugSourceDirs">C:\Projects\s508\VA_Source\VA\VA\VA508Accessibility\</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Language><Language Name="ProjectLang">$00000409</Language></Language><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">3</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">68</VersionInfo><VersionInfo Name="Build">25</VersionInfo><VersionInfo Name="Debug">True</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Department Of Veterans Affairs</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Bar Code Medication Administration</VersionInfoKeys><VersionInfoKeys Name="FileVersion">3.0.68.25</VersionInfoKeys><VersionInfoKeys Name="InternalName">BCMA</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">U.S. Department Of Veterans Affairs, 2012</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks">U.S. Department Of Veterans Affairs, 2012</VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">BCMA</VersionInfoKeys><VersionInfoKeys Name="ProductName">Bar Code Medication Administration</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">3.665.0</VersionInfoKeys><VersionInfoKeys Name="Comments">Developed with Borland Developer Studio 2006</VersionInfoKeys><VersionInfoKeys Name="ReleaseDate">August 2013</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">BCMA.dpr</Source></Source>  
+    
+    <DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="CLIENTNAME">'Console'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="LOGONSERVER">'\\VHAPNE3DCV1'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="WecVersionForRosebud.608">'2'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="SonicCentral">'C:\Program Files\Common Files\Sonic Shared\Sonic Central\'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="BCB">'c:\program files\borland\bds\4.0'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="PCOMM_Root">'C:\Program Files\IBM\Personal Communications\'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="HOMESHARE">'\\vhaislnetapp1\users$'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="Path">'C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\;C:\Program Files\Borland\BDS\4.0\Bin;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Attachmate\Reflection\;C:\Program Files\Windows Imaging\;C:\Program Files\ActivIdentity\ActivClient\;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\Support Tools\;C:\Documents and Settings\vhaislkaiser\My Documents\Borland Studio Projects\Bpl'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="APPDATA">'C:\Documents and Settings\vhaislkaiser\Application Data'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="BDS">'c:\program files\borland\bds\4.0'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="BDSPROJECTSDIR">'C:\Documents and Settings\vhaislkaiser\My Documents\Borland Studio Projects'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="COMPUTERNAME">'ISL-KAISER-LT'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="DELPHI">'c:\program files\borland\bds\4.0'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="HOMEPATH">'\Documents and Settings\vhaislkaiser'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="PROCESSOR_IDENTIFIER">'x86 Family 6 Model 37 Stepping 5, GenuineIntel'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="TEMP">'C:\DOCUME~1\VHAISL~1\LOCALS~1\Temp'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="TMP">'C:\DOCUME~1\VHAISL~1\LOCALS~1\Temp'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="USERPROFILE">'C:\Documents and Settings\vhaislkaiser'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="DRVDIR">'C:\DRV'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="MODEL">'VMWKS551'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="SYSTYPE">'MINI_TOWER'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="TYPE">'Desktop'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="UATDATA">'C:\WINDOWS\system32\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="CG_BOOST_ROOT">'C:\Program Files\Embarcadero\RAD Studio\8.0\include\boost_1_39'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="IBREDISTDIR">'C:\Users\Public\Documents\InterBase\redist\InterBaseXE3'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="NUMBER_OF_PROCESSORS">'4'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="PROCESSOR_REVISION">'2505'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="SESSIONNAME">'Console'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="USERDOMAIN">'VHAMASTER'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="USERNAME">'vhaislkaiser'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="USERDNSDOMAIN">'VHA.MED.VA.GOV'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="CLASSPATH">'.;C:\Program Files (x86)\Java\jre6\lib\ext\QTJava.zip'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="CommonProgramFiles(x86)">'C:\Program Files (x86)\Common Files'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="CommonProgramW6432">'C:\Program Files\Common Files'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="LOCALAPPDATA">'C:\Users\vhaislkaiser\AppData\Local'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="PROCESSOR_ARCHITEW6432">'AMD64'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ProgramData">'C:\ProgramData'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ProgramFiles(x86)">'C:\Program Files (x86)'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ProgramW6432">'C:\Program Files'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="PUBLIC">'C:\Users\Public'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="QTJAVA">'C:\Program Files (x86)\Java\jre6\lib\ext\QTJava.zip'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="VALogLocation">'C:\ProgramData\DeptOfVeteransAffairs\Logs'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="windows_tracing_flags">'3'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="windows_tracing_logfile">'C:\BVTBin\Tests\installpackage\csilogfile.log'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ViewClient_Broker_Remote_IP_Address">'152.131.1.16'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ViewClient_IP_Address">'192.168.1.102'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ViewClient_MAC_Address">'00-24-D7-89-CB-79'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ViewClient_Machine_Domain">'vha'</DebugEnvironmentVariables>
+      <DebugEnvironmentVariables Name="ViewClient_Machine_Name">'ISL-LTKAISERR'</DebugEnvironmentVariables>
+    </DebugEnvironmentVariables>
+    <DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ALLUSERSPROFILE">'C:\Documents and Settings\All Users'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="BDSCOMMONDIR">'C:\Documents and Settings\All Users\Documents\RAD Studio\5.0'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="BDSUSERDIR">'\\vaphsvfin\profile$\vaphskaiser\Documents\RAD Studio\5.0'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="CommonProgramFiles">'C:\Program Files\Common Files'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ComSpec">'C:\WINDOWS\system32\cmd.exe'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="DEFLOGDIR">'C:\Documents and Settings\All Users\Application Data\McAfee\DesktopProtection'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="FP_NO_HOST_CHECK">'NO'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="FTP_PASSIVE">'1'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="HOMEDRIVE">'C:'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="OS">'Windows_NT'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="PATHEXT">'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.PSC1'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="PROCESSOR_ARCHITECTURE">'x86'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="PROCESSOR_LEVEL">'6'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ProgramFiles">'C:\Program Files'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="PSModulePath">'C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="SystemDrive">'C:'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="SystemRoot">'C:\WINDOWS'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="TERM">'dumb'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_Broker_DNS_Name">'VAPHSVM1.innovations.va.gov'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_Broker_Tunnel_URL">'https://173.252.156.142:443'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_Broker_Tunneled">'true'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_Broker_URL">'https://vm.vainnovation.us:443'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_LoggedOn_Domainname">'INNOVATIONS'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_LoggedOn_Username">'vaphskaiser'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_Protocol">'RDP'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="ViewClient_Type">'Windows'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="VS90COMNTOOLS">'c:\Program Files\Microsoft Visual Studio 9.0\Common7\Tools\'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="VSEDEFLOGDIR">'C:\Documents and Settings\All Users\Application Data\McAfee\DesktopProtection'</DebugSysEnvironmentVariables>
+      <DebugSysEnvironmentVariables Name="windir">'C:\WINDOWS'</DebugSysEnvironmentVariables>
+    </DebugSysEnvironmentVariables>
+  </Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="BCMA.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="BCMA_Common.pas" />
+    <DCCReference Include="BCMA_IV.pas">
+      <Form>fraIV</Form>
+      <DesignClass>TFrame</DesignClass>
+    </DCCReference>
+    <DCCReference Include="BCMA_Main.pas">
+      <Form>frmMain</Form>
+    </DCCReference>
+    <DCCReference Include="BCMA_Objects.pas" />
+    <DCCReference Include="BCMA_OrderMan.pas">
+      <Form>frmCPRSOrderManager</Form>
+    </DCCReference>
+    <DCCReference Include="BCMA_Startup.pas" />
+    <DCCReference Include="BCMA_Timeout.pas">
+      <Form>frmTimeOut</Form>
+    </DCCReference>
+    <DCCReference Include="BCMA_Util.pas" />
+    <DCCReference Include="Debug.pas">
+      <Form>frmDebug</Form>
+    </DCCReference>
+    <DCCReference Include="FAboutDlg.pas">
+      <Form>AboutDlg</Form>
+    </DCCReference>
+    <DCCReference Include="fCoverSheet.pas">
+      <Form>frmCoverSheet</Form>
+    </DCCReference>
+    <DCCReference Include="fDateTimePicker.pas">
+      <Form>frmDateTimePicker</Form>
+    </DCCReference>
+    <DCCReference Include="fDspMemo.pas">
+      <Form>frmDspMemo</Form>
+    </DCCReference>
+    <DCCReference Include="fEditMedLog.pas">
+      <Form>frmEditMedLog</Form>
+    </DCCReference>
+    <DCCReference Include="fEdtMedLogAdminSelect.pas">
+      <Form>frmEditMedLogAdminSelect</Form>
+    </DCCReference>
+    <DCCReference Include="fExpiredPatches.pas">
+      <Form>frmExpiredPatches</Form>
+    </DCCReference>
+    <DCCReference Include="fFractional.pas">
+      <Form>frmFractional</Form>
+    </DCCReference>
+    <DCCReference Include="fLegend.pas">
+      <Form>frmLegend</Form>
+    </DCCReference>
+    <DCCReference Include="fMedTherapyMedSelection.pas">
+      <Form>frmMedTherapyMedSelection</Form>
+    </DCCReference>
+    <DCCReference Include="fPrint.pas">
+      <Form>frmPrint</Form>
+    </DCCReference>
+    <DCCReference Include="fPrintPtSelect.pas">
+      <Form>frmPrintPtSelect</Form>
+    </DCCReference>
+    <DCCReference Include="fPRNMedLog.pas">
+      <Form>frmPRNMedLog</Form>
+    </DCCReference>
+    <DCCReference Include="fPtConfirmation.pas">
+      <Form>frmPtConfirmation</Form>
+    </DCCReference>
+    <DCCReference Include="fPtSelect.pas">
+      <Form>frmPtSelect</Form>
+    </DCCReference>
+    <DCCReference Include="fScanWristband.pas">
+      <Form>frmScanWristband</Form>
+    </DCCReference>
+    <DCCReference Include="fSelectInjection.pas">
+      <Form>frmSelectInjection</Form>
+    </DCCReference>
+    <DCCReference Include="fUnableToScan.pas">
+      <Form>frmUnableToScan</Form>
+    </DCCReference>
+    <DCCReference Include="InputQry.pas">
+      <Form>frmInputQry</Form>
+    </DCCReference>
+    <DCCReference Include="Instructor.pas">
+      <Form>frmInstructor</Form>
+    </DCCReference>
+    <DCCReference Include="MedLog.pas">
+      <Form>frmMedLog</Form>
+    </DCCReference>
+    <DCCReference Include="MissingDose.pas">
+      <Form>frmMissingDose</Form>
+    </DCCReference>
+    <DCCReference Include="MultipleDrugs.pas">
+      <Form>frmMultipleDrugs</Form>
+    </DCCReference>
+    <DCCReference Include="MultipleOrderedDrugs.pas">
+      <Form>frmMultipleOrderedDrugs</Form>
+    </DCCReference>
+    <DCCReference Include="MultOrder.pas">
+      <Form>frmMultOrder</Form>
+    </DCCReference>
+    <DCCReference Include="mVitals.pas" />
+    <DCCReference Include="oCoverSheet.pas" />
+    <DCCReference Include="oInterfaces.pas" />
+    <DCCReference Include="Options.pas">
+      <Form>frmOptions</Form>
+    </DCCReference>
+    <DCCReference Include="oReport.pas" />
+    <DCCReference Include="PRNEffectiveness.pas">
+      <Form>frmPRNEffectiveness</Form>
+    </DCCReference>
+    <DCCReference Include="Report.pas">
+      <Form>frmReport</Form>
+    </DCCReference>
+    <DCCReference Include="ReportRequest.pas">
+      <Form>frmReportRequest</Form>
+    </DCCReference>
+    <DCCReference Include="ScanIV.pas">
+      <Form>frmScanIV</Form>
+    </DCCReference>
+    <DCCReference Include="SelectReason.pas">
+      <Form>frmSelectReason</Form>
+    </DCCReference>
+    <DCCReference Include="Splash.pas">
+      <Form>frmSplash</Form>
+    </DCCReference>
+    <DCCReference Include="stabSort.pas" />
+    <DCCReference Include="uCCOW.pas" />
+    <DCCReference Include="uFiveRights.pas">
+      <Form>frmFiveRights</Form>
+    </DCCReference>
+    <DCCReference Include="uIVUtilities.pas" />
+    <DCCReference Include="VHA_Objects.pas" />
+    <DCCReference Include="WardStock.pas">
+      <Form>frmWardStock</Form>
+    </DCCReference>
+    <DCCReference Include="\\vaphsvfin\profile$\vaphskaiser\Documents\RAD Studio\5.0\Imports\BcmaOrderCom_TLB.pas" />
+    <None Include="BCMA.todo" />
+    <None Include="ModelSupport_BCMA\BCMA\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA\default.txvpck" />
+    <None Include="ModelSupport_BCMA\BCMA_Common\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Common\default.txvpck" />
+    <None Include="ModelSupport_BCMA\BCMA_IV\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Main\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Main\default.txvpck" />
+    <None Include="ModelSupport_BCMA\BCMA_Objects\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Objects\default.txvpck" />
+    <None Include="ModelSupport_BCMA\BCMA_OrderMan\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Startup\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Timeout\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\BCMA_Util\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\Debug\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\default.txvpck" />
+    <None Include="ModelSupport_BCMA\FAboutDlg\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fCoverSheet\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fDateTimePicker\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fDspMemo\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fEditMedLog\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fEdtMedLogAdminSelect\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fExpiredPatches\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fFractional\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fLegend\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fMedTherapyMedSelection\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fPrintPtSelect\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fPrint\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fPRNMedLog\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fPtConfirmation\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fPtSelect\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fScanWristband\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fSelectInjection\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\fUnableToScan\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\InputQry\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\Instructor\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\MedLog\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\MissingDose\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\MultipleDrugs\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\MultipleOrderedDrugs\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\MultOrder\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\mVitals\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\oCoverSheet\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\oInterfaces\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\Options\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\oReport\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\PRNEffectiveness\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\ReportRequest\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\Report\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\ScanIV\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\SelectReason\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\Splash\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\stabSort\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\uCCOW\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\uFiveRights\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\uIVUtilities\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\VHA_Objects\default.txaPackage" />
+    <None Include="ModelSupport_BCMA\WardStock\default.txaPackage" />
+  </ItemGroup>
+</Project>

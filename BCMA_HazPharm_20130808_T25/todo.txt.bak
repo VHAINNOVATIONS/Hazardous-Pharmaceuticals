@@ -1,0 +1,89 @@
+Tab order comparison between MSF and 508:
+Patient Confirmation: OK
+MedLog: OK
+Unable to Scan: OK
+Medication Verification (uFiveRights): OK
+Missing Dose: OK
+Medication Log: OK
+Medication Admin History: OK
+
+
+done: Section 508: handle grid for SelectAdmin in PRNEffectiveness
+done: fix vitals frame refresh row handling
+done: fix PRN Med log static text fields as in Med Log
+
+done: add itemquery and queryvalue for grdVitals, grdPRNList, grdLastFourActions
+add grid to ctrl-shift-= event handler in Main.
+
+
+
+IHS: check patient lookup on 6 digit HRN.
+
+Section 508 version:
+
+* make sure lstunitdosekeypress is populated; same with sgunitdosekeypress.  
+
+* check all events for lstunitdose in SIOPI and apply to lstunitdose in s508 and to sgunitdose as appropriate.
+
+* add popupmenu to frmMain.
+
+* check list out of bounds errors on VDL display and PRN display.
+* Enable screen read for background messages on IV tab.
+
+Disable / Hide SI/OPI components on ReportRequest form
+
+Check Mark Held does not update string grid Status with H.  Updates on Given to G.
+
+Forms waiting for update:
+PRNEffectiveness - listview and listbox - one column plus Vitals frame
+fPRNMedLog - listbox (one column?) and 5 column listview
+mVitals - frame with listview and string grid - needs completion
+BCMA_Main - check last four actions listview (add StringGrid?)
+
+Forms coded, needing test
+BCMA_Timeout
+fEditMedLog
+fEdtMedLogAdminSelect - listview multiple cols.
+fExpiredPatches - listview one column
+fFractional
+fMedTherapyMedSelection - listviews single columns
+fPrintPtSelect - listview 5 cols. - similar to fPtSelect
+fScanWristband needs finishing
+fUnableToScan - listview - one column
+Instructor
+MedLog - listbox - 1 or 2 columns
+MissingDose
+MultipleDrugs
+MultipleOrderedDrugs - listbox - one column
+MultOrder - listbox - single column
+mVitals - listview done
+Options
+ScanIV
+SelectReason
+uFiveRights
+WardStock - listbox - one column
+
+
+Forms with coding complete, JAWS-readable:
+BCMA_IV - TfraIV - listbox done
+BCMA_Main
+BCMA_OrderMan
+fAboutDlg
+fDateTimePicker - 2 listboxes - n/a single columns
+fInputQry
+fPtConfirmation
+fPtSelect
+fPrint
+fReportRequest
+Report
+Splash
+
+
+IHS units merged to IHS_508:
+VHA_Objects
+BCMA_Objects
+BCMA_Main
+fEdtMedLogAdminSelect
+fPtConfirmation
+fEditMedLog
+fPtSelect

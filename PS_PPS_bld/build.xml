@@ -1,0 +1,29 @@
+<project name="PPS Build Script" default="ear" basedir="." xmlns:swri="http://www.swri.org">
+
+    <property name="loc.ui" value="../../PS_PPS_Dev/PS_PPS_ui"/>
+    <property name="loc.dom" value="../../PS_PPS_Dev/PS_PPS_domain"/>
+    
+    <target name="cleanAll">
+        <subant target="cleanAll">
+            <fileset dir="${loc.ui}" includes="build.xml"></fileset>
+        </subant>
+    </target>
+
+    <target name="generate">
+        <subant target="generate">
+            <fileset dir="${loc.ui}" includes="build.xml"></fileset>
+        </subant>
+    </target>
+
+    <target name="refreshDatabase">
+        <subant target="refreshDatabase">
+            <fileset dir="${loc.dom}" includes="build.xml"></fileset>
+        </subant>
+    </target>
+
+    <target name="ear">
+        <subant target="ear">
+            <fileset dir="${loc.ui}" includes="build.xml"></fileset>
+        </subant>
+    </target>
+</project>
