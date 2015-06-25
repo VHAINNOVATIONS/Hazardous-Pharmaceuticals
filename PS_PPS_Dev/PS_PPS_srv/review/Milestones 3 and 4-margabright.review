@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4">
+  <ReviewIssue id="FKFSA9LO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:43:29:052 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:44:00:083 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>margabright</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="6">src/gov/va/med/pharmacy/peps/service/common/capability/ManagedItemCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>PMD Errors</Summary>
+    <Description>package gov.va.med.pharmacy.peps.service.common.capability;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVVBQG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:11:36:616 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:11:56:085 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>margabright</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="65">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove commented out code</Summary>
+    <Description>public class ManagedItemCapabilityImpl implements ManagedItemCapability {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

@@ -1,0 +1,108 @@
+<project name="Interface" default="compile" basedir="." xmlns:swri="http://www.swri.org">
+    <import file="../PS_PPS_common/etc/build/template/template.xml" />
+    <import file="${etc.build.dir}/template/interface.xml" />
+
+    <target name="init" depends="Template.init" description="Initialize the project">
+        <swri:initInterfaceTemplate />
+        <property name="buildCP" refid="build.class.path"/>
+        <!-- echo>Classpath at this stage: ${buildCP}</echo -->
+        <property name="projectCP" refid="Interface.build.class.path" />
+        <!-- echo>${ant.project.name} Build CP at this stage: ${projectCP}</echo -->
+    </target>
+
+    <target name="clean" depends="Template.clean" description="Clean the project" />
+
+    <target name="cleanAll" depends="Template.cleanAll" description="Clean the project and its dependencies" />
+
+    <target name="generate" depends="Template.generate" description="Generate the project artifacts">
+        <swri:schemaToJava />
+        <!--swri:stsWsdlToJava /-->
+        <swri:generateSTSCapabilityProperty />
+    </target>
+
+    <target name="compile" depends="Template.compile" description="Compile the source code" />
+
+    <target name="compileEnvironments"
+            depends="Template.compileEnvironments"
+            description="Compile the source code environments (common, local, and national) separately" />
+
+    <target name="unitTest" depends="Template.unitTest" description="Execute unit tests" />
+
+    <target name="buildUnitTest"
+            depends="Template.buildUnitTest"
+            description="Compile environments separately for dependency checking, then run unit tests" />
+
+    <target name="jar" depends="Template.jar" description="Package the project artifacts">
+        <!-- package.pseudonym Ant property set in the deployment environment's properties file under Common/etc/build/template/properties/deploy -->
+        <if>
+            <istrue value="${package.pseudonym}" />
+            <then>
+                <!-- Temporarily package pseudonym and the VistaLinkConnectionUtilityStub in the deployed application. -->
+                <!-- Remove once VistA has the correct RPCs setup. -->
+                <!--swri:packageLocalJar>
+                    <anotherfileset>
+                        <fileset dir="${build.classes.dir}">
+                            <include name="**/pseudonym/**/*.class" />
+                            <include name="gov/va/med/pharmacy/peps/external/common/preencapsulation/outbound/utility/test/stub/VistaLinkConnectionUtilityStub.class" />
+                        </fileset>
+                        <fileset dir="${etc.dir}">
+                            <include name="**/pseudonym/**/*.properties" />
+                            <include name="**/pseudonym/**/*.xml" />
+                        </fileset>
+                    </anotherfileset>
+                </swri:packageLocalJar-->
+                <swri:packageNationalJar>
+                    <anotherfileset>
+                        <fileset dir="${build.classes.dir}">
+                            <include name="**/pseudonym/**/*.class" />
+                            <include name="gov/va/med/pharmacy/peps/external/common/preencapsulation/outbound/utility/test/stub/VistaLinkConnectionUtilityStub.class" />
+                        </fileset>
+                        <fileset dir="${etc.dir}">
+                            <include name="**/pseudonym/**/*.properties" />
+                            <include name="**/pseudonym/**/*.xml" />
+                        </fileset>
+                    </anotherfileset>
+                </swri:packageNationalJar>
+            </then>
+            <else>
+                <!--swri:packageLocalJar /-->
+                <swri:packageNationalJar />
+            </else>
+        </if>
+    </target>
+
+    <target name="packagePseudonymJar" depends="compile" description="Package pseudonym">
+        <swri:packagePseudonymJar />
+    </target>
+
+    <target name="packageFdbUpdaterJar" depends="compile" description="Package FDB Updater jar stub">
+        <swri:packageFdbUpdaterJar />
+    </target>
+
+    <target name="packagePseudoSTSEar" depends="init" description="Package pseudo STS stub">
+        <swri:pseudoStsWsdlToJWS />
+        <swri:pseudoStsJWSToWS />
+        <swri:pseudoStsPackageEar />
+    </target>
+
+    <target name="packagePseudoPepsJar" depends="compile" description="Package PseudoPeps">
+        <jar destFile="${build.archive.dir}/PseudoPeps.jar" update="true">
+            <manifest>
+                <attribute name="Author" value="${user.name}" />
+                <attribute name="Build-Date" value="${build.date}" />
+                <attribute name="Main-Class" value="gov.va.med.pharmacy.peps.external.tools.pseudopeps.PseudoPeps" />
+                <attribute name="Class-Path"
+                           value="lib/vljConnector.jar lib/vljFoundationsLib.jar lib/vljSecurity.jar lib/log4j.jar lib/j2ee-connector.jar lib/jaxen.jar" />
+            </manifest>
+
+            <fileset dir="${build.classes.dir}">
+                <include name="gov/va/med/pharmacy/peps/external/tools/pseudopeps/*" />
+            </fileset>
+
+            <zipfileset dir="etc/pseudopeps" excludes="*.zip" />
+        </jar>
+    </target>
+
+    <target name="document" depends="Template.document" description="Document the project" />
+
+</project>

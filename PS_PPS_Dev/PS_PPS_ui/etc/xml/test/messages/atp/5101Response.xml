@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugInfoResponse xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/info/response">
+    <drug gcnSeqNo="60301">
+        <routes>
+            <route>
+                <id>006</id>
+                <name>CONTINUOUS INFUSION</name>
+            </route>
+            <route>
+                <id>052</id>
+                <name>INTRAVENOUS</name>
+            </route>
+            <route>
+                <id>079</id>
+                <name>SUBCUTANEOUS</name>
+            </route>
+        </routes>
+        <doseTypes>
+            <doseType>
+                <id>01</id>
+                <name>LOADING</name>
+            </doseType>
+            <doseType>
+                <id>02</id>
+                <name>MAINTENANCE</name>
+            </doseType>
+            <doseType>
+                <id>04</id>
+                <name>PROPHYLACTIC</name>
+            </doseType>
+            <doseType>
+                <id>07</id>
+                <name>SINGLE DOSE</name>
+            </doseType>
+        </doseTypes>
+        <strengthUnit>UNIT/250 ML</strengthUnit>
+    </drug>
+    <drug gcnSeqNo="16579">
+        <routes>
+            <route>
+                <id>064</id>
+                <name>ORAL</name>
+            </route>
+        </routes>
+        <doseTypes>
+            <doseType>
+                <id>02</id>
+                <name>MAINTENANCE</name>
+            </doseType>
+            <doseType>
+                <id>07</id>
+                <name>SINGLE DOSE</name>
+            </doseType>
+            <doseType>
+                <id>08</id>
+                <name>INITIAL DOSE</name>
+            </doseType>
+        </doseTypes>
+        <strengthUnit>MG</strengthUnit>
+    </drug>
+</drugInfoResponse>

@@ -1,0 +1,107 @@
+.highestLevel {
+height:570px;
+width:100%;
+}
+.text_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	text-align:left;
+	line-height:26px;
+}
+.text_column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	text-align:left;
+}
+.text_column3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	text-align:left;
+	line-height:2;
+}
+.text_column4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align:left;
+	line-height:2;
+}
+.checkbox_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:230px;
+	float:left;
+	text-align:left;
+	line-height:18px;
+}
+
+.checkbox_column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	width:80px;
+}
+
+.checkbox_column3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	width:80px;
+}
+
+.checkbox_column4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height:18px;
+}
+
+.labVital_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:130px;
+	float:left;
+	text-align:left;
+	vertical-align: top;
+	line-height:2;
+}
+.labVital_column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:250px;
+	float:left;
+	text-align:center;
+	vertical-align: top;
+	line-height:2;
+}
+
+.new_text_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:150px;
+	float:left;
+	text-align:left;
+	line-height:2;
+}
+
+.title {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:10px;
+}
+
+.button {
+	width:8em;
+	text-align:center;
+	margin-top:10px;
+	margin-left:30px;
+	left:0px;
+}
+
+.textField {
+	margin-top:5px;
+}
+.greentextField {
+	background-color:#80FF80;
+}

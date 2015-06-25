@@ -1,0 +1,231 @@
+<project name="Template" default="compile" basedir="." xmlns:swri="http://www.swri.org">
+    <dirname property="template.dir" file="${ant.file.Template}" />
+    <property file="${template.dir}/properties/project.properties" />
+    <property file="${etc.build.dir}/build.properties" />
+
+    <import file="${template.dir}/buildTest.xml" />
+    <import file="${template.dir}/clearcase.xml" />
+    <import file="${template.dir}/compile.xml" />
+    <import file="${template.dir}/dependency.xml" />
+    <import file="${template.dir}/deploy.xml" />
+    <import file="${template.dir}/document.xml" />
+    <import file="${template.dir}/ear.xml" />
+    <import file="${template.dir}/ejb.xml" />
+    <import file="${template.dir}/init.xml" />
+    <import file="${template.dir}/jar.xml" />
+    <import file="${template.dir}/progress.xml" />
+    <import file="${template.dir}/coverage.xml" />
+    <import file="${template.dir}/test.xml" />
+    <import file="${template.dir}/war.xml" />
+    <import file="${template.dir}/weblogic.xml" />
+
+    <!-- Delete this project's build artifacts -->
+    <target name="clean">
+        <!-- Since this is the first target to run, start the log here -->
+        <delete dir="${log.dir}" failonerror="false" />
+        <mkdir dir="${log.dir}" />
+        <record name="${log.dir}/build.log" />
+
+        <swri:progress msg="Cleaning ${ant.project.name}" />
+
+        <delete dir="${build.dir}" failonerror="false" />
+        <delete dir="${tmp.dir}" failonerror="false" />
+    </target>
+
+    <!-- Delete this project's and dependencies' build artifacts -->
+    <target name="cleanAll" depends="clean, initTasks">
+        <!-- This really cleans Common multiple times, but it doesn't take but a second anyway -->
+        <for list="${dependencies}" delimiter=",;:" param="module">
+            <sequential>
+                <swri:callTarget target="cleanAll" module="@{module}" failonerror="false" />
+            </sequential>
+        </for>
+    </target>
+
+    <!-- Setup project structure and classpath -->
+    <target name="init"
+            depends="clean, initTasks, initTemplate, initStructure, initProperties, buildDependency, initClasspath">
+        <!-- <swri:initCoverageTemplate /> -->
+    </target>
+
+    <!-- Generate the relevant source code -->
+    <target name="generate" depends="setGenerateDependencyTarget, init">
+        <swri:progress msg="Generating ${ant.project.name}" />
+    </target>
+
+    <!-- Compile the source code -->
+    <target name="compile" depends="setCompileDependencyTarget, generate">
+        <swri:progress msg="Compiling ${ant.project.name}" />
+
+        <swri:compile />
+    </target>
+
+    <!-- Execute the unit tests -->
+    <target name="unitTest" depends="compile">
+        <swri:progress msg="Unit testing ${ant.project.name}" />
+
+        <swri:unitTest />
+    </target>
+
+    <!-- Compile environments separately for dependency checking -->
+    <target name="compileEnvironments" depends="setCompileDependencyTarget, generate">
+        <swri:compileCommon />
+        <!--swri:compileLocal /-->
+        <swri:compileNational />
+    </target>
+
+    <!-- Compile environments separately for dependency checking, then run unit tests -->
+    <target name="buildUnitTest" depends="initBuildFailureMessage, buildUnitTestWithoutFailure">
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <!-- Target called by originating buildUnitTest to run dependencies' unit tests without failing the build -->
+    <target name="buildUnitTestWithoutFailure"
+            depends="setBuildUnitTestWithoutFailureDependencyTarget, setIgnoreTestFailures, compileEnvironments, unitTest, buildTestDocument">
+        <!-- jbarde: commentted out for now -->
+        <!-- , buildTestDocument -->
+        <swri:setBuildFailureMessage />
+    </target>
+
+    <!-- Compile environments separately for dependency checking, then run integration tests -->
+    <target name="buildIntegrationTest" depends="initBuildFailureMessage, buildIntegrationTestWithoutFailure">
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <!-- Target called by originating buildIntegrationTest to run dependencies' integration tests without failing the build -->
+    <target name="buildIntegrationTestWithoutFailure"
+            depends="setBuildIntegrationTestWithoutFailureDependencyTarget, setIgnoreTestFailures, compileEnvironments, integrationTest, buildTestDocument">
+        <swri:setBuildFailureMessage />
+    </target>
+
+    <!-- Compile environments separately for dependency checking, then run unit and integration tests -->
+    <target name="buildTestAll" depends="initBuildFailureMessage, buildTestAllWithoutFailure">
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <target name="buildTestAll2" depends="initBuildFailureMessage, buildTestAllWithoutFailureAndIntegration">
+        <swri:checkForBuildTestFailure />
+    </target>
+
+    <!-- Target called by originating buildTestAll to run dependencies' unit and integration tests without failing the build -->
+    <target name="buildTestAllWithoutFailure"
+            depends="setBuildTestAllWithoutFailureDependencyTarget, setIgnoreTestFailures, compileEnvironments, unitTest, integrationTest, buildTestDocument">
+        <swri:setBuildFailureMessage />
+    </target>
+
+    <!-- Target called by originating buildTestAll to run dependencies' unit and integration tests without failing the build -->
+    <target name="buildTestAllWithoutFailureAndIntegration"
+            depends="setBuildTestAllWithoutFailureDependencyTarget, setIgnoreTestFailures, compileEnvironments, unitTest, buildTestDocument">
+        <swri:setBuildFailureMessage /> 
+    </target>
+
+    <!-- Archive the artifacts of the project -->
+    <target name="jar" depends="setJarDependencyTarget, compile">
+        <swri:progress msg="Packaging ${ant.project.name} into JAR" />
+    </target>
+
+    <!-- War the project's JSPs from <project>/web -->
+    <target name="war" depends="setWarDependencyTarget, jar">
+        <swri:progress msg="Packaging ${ant.project.name} into WAR" />
+    </target>
+
+    <!-- Ear the project artifacts for deployment -->
+    <target name="ear" depends="setEarDependencyTarget, war">
+        <swri:progress msg="Packaging ${ant.project.name} into EAR" />
+    </target>
+
+    <!-- Deploy this project -->
+    <target name="deploy" depends="ear">
+        <swri:progress msg="Deploying ${ant.project.name}" />
+    </target>
+
+    <!-- Redeploy this project without repackaging any dependencies -->
+    <target name="redeploy" depends="setDependencyIgnore, deploy" />
+
+    <!-- Deploy and baseline this project -->
+    <target name="deployBaseline" depends="deploy">
+        <swri:baseline />
+    </target>
+
+    <!-- Deploy and execute the integration tests -->
+    <target name="integrationTest" depends="deploy">
+        <swri:progress msg="Integration testing ${ant.project.name}" />
+
+        <swri:integrationTest />
+    </target>
+
+    <!-- Deploy and execute the performance tests -->
+    <target name="performanceTest" depends="deploy">
+        <swri:progress msg="Performance testing ${ant.project.name}" />
+
+        <swri:performanceTest />
+    </target>
+
+    <!-- Document this project -->
+    <target name="document" depends="generate">
+        <swri:progress msg="Documenting ${ant.project.name}" />
+
+        <swri:javadoc />
+        <swri:checkstyle />
+        <swri:pmd />
+    </target>
+
+    <!-- CruiseControl calls this target so everything is clean before running unit tests -->
+    <target name="cruiseControlUnitTest" depends="cleanAll, setCompileDependencyTarget, buildUnitTest" />
+
+    <!-- Jenkins calls this target for each project sequentially (hence no cleanAll is called) -->
+    <target name="jenkinsUnitTestNoClean" depends="setCompileDependencyTarget, buildUnitTest" />
+
+    <target name="setCoverage" depends="initTasks">
+        <var name="coverage" value="true" />
+    </target>
+
+    <target name="setCoverageAllProjects" depends="initTasks">
+        <var name="coverage.all.projects" value="true" />
+    </target>
+
+    <!-- CruiseControl calls this target so everything is clean before running integration tests -->
+    <target name="cruiseControlIntegrationTest"
+            depends="setBaselineName, setIntegrationProperties, setRefreshDatabase, rebootManagedServers, cleanAll, buildIntegrationTest" />
+
+    <!-- CruiseControl calls this target so everything is clean before running integration tests for the baseline build -->
+    <target name="cruiseControlBaselineIntegrationTest"
+            depends="setBaselineName, setBaselineIntegrationProperties, setRefreshDatabase, rebootManagedServers, cleanAll, buildIntegrationTest" />
+
+    <!-- CruiseControl calls this target so everything is clean before running integration tests for the baseline build -->
+    <target name="cruiseControlTestAll"
+        depends="setCoverage, setCoverageAllProjects, setBaselineName, setBaselineIntegrationProperties, setRefreshDatabase, rebootManagedServers, cleanAll, buildTestAll" />
+
+    <!-- CruiseControl calls this target so everything is clean before running integration tests for the baseline build -->
+    <target name="cruiseControlTestAll2"
+        depends="setBaselineName, setIntegrationProperties, cleanAll, buildTestAll2" />
+    
+    <!-- Set the baseline name used in version.properties when running from CruiseControl -->
+    <target name="setBaselineName">
+        <property name="baseline.name" value="${label}" />
+    </target>
+
+    <target name="setIntegrationProperties" depends="initTasks">
+        <swri:progress msg="WARNING WARNING WARNING Initial deploy.environment=${deploy.environment}"/>
+        <var name="deploy.environment" value="prebuild" />
+        <swri:progress msg="WARNING WARNING WARNING Altered deploy.environment=${deploy.environment}"/>
+    </target>
+
+    <target name="setBaselineIntegrationProperties" depends="initTasks">
+        <!-- 2011-10-19, jbarde - disabling the changing of deploy.environment -->
+        <swri:progress msg="WARNING WARNING WARNING executing ALTERED setBaselineIntegrationProperties"/>
+        <!--
+        <swri:progress msg="WARNING WARNING WARNING Initial deploy.environment=${deploy.environment}"/>
+        <var name="deploy.environment" value="testrack" />
+        <swri:progress msg="WARNING WARNING WARNING Altered deploy.environment=${deploy.environment}"/>
+         -->
+    </target>
+
+    <target name="setRefreshDatabase" depends="initTasks">
+        <var name="refresh.database" value="true" />
+    </target>
+
+    <target name="rebootManagedServers" depends="initTasks, initProperties">
+        <swri:rebootManagedServers />
+    </target>
+</project>

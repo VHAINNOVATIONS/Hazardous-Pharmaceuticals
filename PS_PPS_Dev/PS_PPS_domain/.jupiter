@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Property>
+  <Review id="DEFAULT">
+    <Description>property.default.description</Description>
+    <Author />
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">1970-01-01 :: 00:00:00:000 GMT-10:00</CreationDate>
+    <Directory>review</Directory>
+    <Reviewers />
+    <Files />
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.type.label.codingStandards" />
+        <Entry name="item.type.label.programLogic" />
+        <Entry name="item.type.label.optimization" />
+        <Entry name="item.type.label.usability" />
+        <Entry name="item.type.label.clarity" />
+        <Entry name="item.type.label.missing" />
+        <Entry name="item.type.label.irrelevant" />
+        <Entry name="item.type.label.suggestion" />
+        <Entry name="item.type.label.other" />
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.severity.label.critical" />
+        <Entry name="item.severity.label.major" />
+        <Entry name="item.severity.label.normal" />
+        <Entry name="item.severity.label.minor" />
+        <Entry name="item.severity.label.trivial" />
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.resolution.label.validNeedsfixing" />
+        <Entry name="item.resolution.label.validFixlater" />
+        <Entry name="item.resolution.label.validDuplicate" />
+        <Entry name="item.resolution.label.validWontfix" />
+        <Entry name="item.resolution.label.invalidWontfix" />
+        <Entry name="item.resolution.label.unsureValidity" />
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open" />
+        <Entry name="item.status.label.resolved" />
+        <Entry name="item.status.label.closed" />
+        <Entry name="item.status.label.reopened" />
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="true" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="true" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+    </Filters>
+  </Review>
+  <Review id="Milestone_2">
+    <Description>Milestone 2 Buddy Check</Description>
+    <Author />
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:03:04:744 CDT</CreationDate>
+    <Directory>review</Directory>
+    <Reviewers>
+      <Entry id="bsiegel" name="bsiegel" />
+      <Entry id="cdittmar" name="cdittmar" />
+      <Entry id="cwalker" name="cwalker" />
+      <Entry id="czinsmeyer" name="czinsmeyer" />
+      <Entry id="egrantham" name="egrantham" />
+      <Entry id="jlockwood" name="jlockwood" />
+      <Entry id="jwood" name="jwood" />
+      <Entry id="margabright" name="margabright" />
+      <Entry id="mkiolbassa" name="mkiolbassa" />
+      <Entry id="mspears" name="mspears" />
+      <Entry id="mthornton" name="mthornton" />
+      <Entry id="pkeller" name="pkeller" />
+      <Entry id="smohanty" name="smohanty" />
+      <Entry id="tdietzel" name="tdietzel" />
+      <Entry id="tramirez" name="tramirez" />
+      <Entry id="tstavenger" name="tstavenger" />
+      <Entry id="ugoring" name="ugoring" />
+      <Entry id="warensman" name="warensman" />
+    </Reviewers>
+    <Files>
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ColorDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ConsoleDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/CsFedScheduleDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DosageFormDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DrugClassDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DrugUnitDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/GenericNameDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/IngredientDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/IntendedUseDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ManufacturerDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderUnitDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OtcRxDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PackageSizeDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PackageTypeDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PartialSaveMgtDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PrintTemplateDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RouteDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/SearchDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/SeqNumDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ShapeDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/impl/VaDispenseUnitDomainCapabilityImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/ColorDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/ConsoleDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/CsFedScheduleDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/DataFieldsDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/DosageFormDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/DrugClassDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/DrugUnitDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/GenericNameDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/IngredientDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/IntendedUseDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/ManufacturerDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/NdcDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/OrderableItemDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/OrderUnitDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/OtcRxDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/PackageSizeDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/PackageTypeDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/PartialSaveMgtDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/PrintTemplateDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/ProductDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/RequestDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/RouteDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/SearchDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/SeqNumDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/ShapeDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/capability/VaDispenseUnitDomainCapability.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/DataAccessObjectImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplAtcCanisterDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplCsFedScheduleDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplDfMedRtDfAssocDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplDosageFormDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplDrugUnitDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplFormularyAlternativeDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplIngredientDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplInpatientPharmLocationDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplIntendedUseDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplLocalConsoleInfoDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplLocalPossibleDosageDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplManufacturerDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplMedRouteDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplMultiTextDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplNationalPossibleDosageDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplNdcDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplNewReqValueDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplOiMedRouteAssocDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplOldReqValueDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplOrderableItemDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplOrderUnitDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplPackageSizeDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplPackageTypeDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplPartialSaveMgtDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplProdDrugClassAssocDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplProdIngredientAssocDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplProductDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplRequestDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplRequestDetailDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplSeqNumDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplSiteConfigDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplSynonymDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplTradeNameDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfAssocValueDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaDfDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfEditablePropertyDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfLovDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfNonlistValueDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfOwnerDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaDispenseUnitDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaDrugClassDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaGenericNameDaoImpl.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/DataAccessObject.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplAtcCanisterDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplCsFedScheduleDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplDfMedRtDfAssocDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplDosageFormDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplDrugUnitDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplFormularyAlternativeDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplIngredientDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplInpatientPharmLocationDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplIntendedUseDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplLocalConsoleInfoDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplLocalPossibleDosageDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplManufacturerDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplMedRouteDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplMultiTextDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplNationalPossibleDosageDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplNdcDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplNewReqValueDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplOiMedRouteAssocDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplOldReqValueDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplOrderableItemDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplOrderUnitDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplPackageSizeDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplPackageTypeDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplPartialSaveMgtDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplProdDrugClassAssocDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplProdIngredientAssocDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplProductDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplRequestDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplRequestDetailDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplSeqNumDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplSiteConfigDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplSynonymDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplTradeNameDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVadfAssocValueDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVaDfDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVadfEditablePropertyDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVadfLovDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVadfNonlistValueDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVadfOwnerDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVaDispenseUnitDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVaDrugClassDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/dao/EplVaGenericNameDao.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/DataObject.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplIngredientDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplInpatientPharmLocationDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplIntendedUseDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalPossibleDosageDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplManufacturerDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplMedRouteDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplNdcDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplNewReqValueDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplOldReqValueDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplOrderableItemDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplOrderUnitDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplPackageSizeDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplPackageTypeDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplPartialSaveMgtDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplProdDrugClassAssocDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplProdDrugClassAssocDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplProdIngredientAssocDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplProdIngredientAssocDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplProductDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDetailDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplSeqNumDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplSiteConfigDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplSynonymDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplTradeNameDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVaDfDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfEditablePropertyDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfEditablePropertyDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfLovDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfLovDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfNonlistValueDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfNonlistValueDoKey.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfOwnerDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVaDispenseUnitDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVaDrugClassDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/model/EplVaGenNameDo.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/DataObjectConversionUtility.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/HqlBuilder.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/StringValidator.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/ValueObjectConversionUtility.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/DataFieldsDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/DispenseUnitDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/DomainCapabilityTestCase.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/DosageFormDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/DrugClassDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/DrugUnitDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/GenericNameDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/IngredientDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/IntendedUseDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalNdcDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalOrderItemDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalPartialSaveMgtDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalProductDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/ManufacturerDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalNdcDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalOrderableItemDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalPartialSaveMgtDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalProductDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/OrderUnitDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/PackageTypeDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/RequestDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/RouteCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/SearchDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/capability/test/SeqNumDomainCapabilityTest.java" />
+      <Entry name="test/gov/va/med/pharmacy/peps/domain/common/utility/test/RefreshDatabase.java" />
+      <Entry name="etc/build/template/properties/cache.properties" />
+      <Entry name="etc/build/template/properties/derby.properties" />
+      <Entry name="etc/build/template/properties/oracle.properties" />
+      <Entry name="etc/build/template/domain.xml" />
+      <Entry name="etc/build/build.properties" />
+      <Entry name="etc/properties/local/test/jdbc.properties" />
+      <Entry name="etc/properties/national/test/jdbc.properties" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplIngredientDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplInpatientPharmLocationDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplIntendedUseDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplLocalPossibleDosageDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplManufacturerDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplMedRouteDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNdcDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNewReqValueDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiDrugTextDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiSynonymDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOldReqValueDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOrderableItemDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOrderUnitDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPackageSizeDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPackageTypeDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPartialSaveMgtDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProdDrugClassAssocDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProdIngredientAssocDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProductDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDetailDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSeqNumDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSiteConfigDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSynonymDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplTradeNameDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDfDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfEditablePropertyDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfLovDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfNonlistValueDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfOwnerDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfProdNdcAssocValueDo.hbm.xmlold" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDispenseUnitDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDrugClassDo.hbm.xml" />
+      <Entry name="etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaGenNameDo.hbm.xml" />
+      <Entry name="etc/xml/local/spring/test/DomainContext.xml" />
+      <Entry name="etc/xml/local/spring/test/DomainContext-Local-1.xml" />
+      <Entry name="etc/xml/local/spring/test/DomainContext-Local-2.xml" />
+      <Entry name="etc/xml/local/spring/DomainContext.xml" />
+      <Entry name="etc/xml/local/spring/DomainContextTemplate.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplIngredientDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplInpatientPharmLocationDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplIntendedUseDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplLocalPossibleDosageDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplManufacturerDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplMedRouteDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNdcDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNewReqValueDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiDrugTextDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiSynonymDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOldReqValueDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOrderableItemDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOrderUnitDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPackageSizeDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPackageTypeDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPartialSaveMgtDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProdDrugClassAssocDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProdIngredientAssocDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProductDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDetailDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSeqNumDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSiteConfigDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSynonymDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplTradeNameDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDfDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfEditablePropertyDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfLovDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfNonlistValueDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfOwnerDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDispenseUnitDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDrugClassDo.hbm.xml" />
+      <Entry name="etc/xml/national/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaGenNameDo.hbm.xml" />
+      <Entry name="etc/xml/national/spring/test/DomainContext.xml" />
+      <Entry name="etc/xml/national/spring/DomainContext.xml" />
+      <Entry name="etc/xml/national/spring/DomainContextTemplate.xml" />
+      <Entry name="etc/xml/spring/test/DomainContext.xml" />
+      <Entry name="etc/xml/spring/test/Transaction.xml" />
+      <Entry name="etc/xml/spring/DomainContext.xml" />
+      <Entry name="etc/xml/spring/DomainContextTemplate.xml" />
+      <Entry name="build.xml" />
+    </Files>
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.type.label.codingStandards" />
+        <Entry name="item.type.label.programLogic" />
+        <Entry name="item.type.label.optimization" />
+        <Entry name="item.type.label.usability" />
+        <Entry name="item.type.label.clarity" />
+        <Entry name="item.type.label.missing" />
+        <Entry name="item.type.label.irrelevant" />
+        <Entry name="item.type.label.suggestion" />
+        <Entry name="item.type.label.other" />
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.severity.label.critical" />
+        <Entry name="item.severity.label.major" />
+        <Entry name="item.severity.label.normal" />
+        <Entry name="item.severity.label.minor" />
+        <Entry name="item.severity.label.trivial" />
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.resolution.label.validNeedsfixing" />
+        <Entry name="item.resolution.label.validFixlater" />
+        <Entry name="item.resolution.label.validDuplicate" />
+        <Entry name="item.resolution.label.validWontfix" />
+        <Entry name="item.resolution.label.invalidWontfix" />
+        <Entry name="item.resolution.label.unsureValidity" />
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open" />
+        <Entry name="item.status.label.resolved" />
+        <Entry name="item.status.label.closed" />
+        <Entry name="item.status.label.reopened" />
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="true" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="true" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+    </Filters>
+  </Review>
+  <Review id="Milestones 3 and 4 JWood">
+    <Description>Milestones 3 and 4 JWood DOMAIN Buddy Check</Description>
+    <Author>jwood</Author>
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-27 :: 14:41:16:945 CDT</CreationDate>
+    <Directory>review</Directory>
+    <Reviewers>
+      <Entry id="acolon" name="acolon" />
+      <Entry id="aross" name="aross" />
+      <Entry id="czinsmeyer" name="czinsmeyer" />
+      <Entry id="jwhipple" name="jwhipple" />
+      <Entry id="jwood" name="jwood" />
+      <Entry id="margabright" name="margabright" />
+      <Entry id="mdittmer" name="mdittmer" />
+      <Entry id="nflores" name="nflores" />
+      <Entry id="smohanty" name="smohanty" />
+    </Reviewers>
+    <Files>
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/dataobjectconversion/DataObjectConversionHelper.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/dataobjectconversion/DataObjectConversionUtility.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/valueobjectconversion/UserValueObjectConverter.java" />
+      <Entry name="src/gov/va/med/pharmacy/peps/domain/common/utility/valueobjectconversion/ValueObjectConversionUtility.java" />
+    </Files>
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.type.label.codingStandards" />
+        <Entry name="item.type.label.programLogic" />
+        <Entry name="item.type.label.optimization" />
+        <Entry name="item.type.label.usability" />
+        <Entry name="item.type.label.clarity" />
+        <Entry name="item.type.label.missing" />
+        <Entry name="item.type.label.irrelevant" />
+        <Entry name="item.type.label.suggestion" />
+        <Entry name="item.type.label.other" />
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.severity.label.critical" />
+        <Entry name="item.severity.label.major" />
+        <Entry name="item.severity.label.normal" />
+        <Entry name="item.severity.label.minor" />
+        <Entry name="item.severity.label.trivial" />
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.resolution.label.validNeedsfixing" />
+        <Entry name="item.resolution.label.validFixlater" />
+        <Entry name="item.resolution.label.validDuplicate" />
+        <Entry name="item.resolution.label.validWontfix" />
+        <Entry name="item.resolution.label.invalidWontfix" />
+        <Entry name="item.resolution.label.unsureValidity" />
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open" />
+        <Entry name="item.status.label.resolved" />
+        <Entry name="item.status.label.closed" />
+        <Entry name="item.status.label.reopened" />
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="true" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="true" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+    </Filters>
+  </Review>
+    <Review id="M5P1">
+    <Description>M5P1 Code Review</Description>
+    <Author />
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-06-30 :: 14:29:26:001 CDT</CreationDate>
+    <Directory>review</Directory>
+    <Reviewers>
+      <Entry id="mdittmer" name="mdittmer" />
+      <Entry id="mspears" name="mspears" />
+      <Entry id="nflores" name="nflores" />
+      <Entry id="smohanty" name="smohanty" />
+      <Entry id="tdietzel" name="tdietzel" />
+      <Entry id="tstavenger" name="tstavenger" />
+      <Entry id="ugoring" name="ugoring" />
+    </Reviewers>
+    <Files />
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.type.label.codingStandards" />
+        <Entry name="item.type.label.programLogic" />
+        <Entry name="item.type.label.optimization" />
+        <Entry name="item.type.label.usability" />
+        <Entry name="item.type.label.clarity" />
+        <Entry name="item.type.label.missing" />
+        <Entry name="item.type.label.irrelevant" />
+        <Entry name="item.type.label.suggestion" />
+        <Entry name="item.type.label.other" />
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.severity.label.critical" />
+        <Entry name="item.severity.label.major" />
+        <Entry name="item.severity.label.normal" />
+        <Entry name="item.severity.label.minor" />
+        <Entry name="item.severity.label.trivial" />
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset" />
+        <Entry name="item.resolution.label.validNeedsfixing" />
+        <Entry name="item.resolution.label.validFixlater" />
+        <Entry name="item.resolution.label.validDuplicate" />
+        <Entry name="item.resolution.label.validWontfix" />
+        <Entry name="item.resolution.label.invalidWontfix" />
+        <Entry name="item.resolution.label.unsureValidity" />
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open" />
+        <Entry name="item.status.label.resolved" />
+        <Entry name="item.status.label.closed" />
+        <Entry name="item.status.label.reopened" />
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="" enabled="false" />
+        <Filter name="Resolution" value="item.label.unset" enabled="true" />
+        <Filter name="Status" value="item.status.label.open" enabled="false" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false" />
+        <Filter name="Reviewer" value="" enabled="false" />
+        <Filter name="Type" value="item.label.unset" enabled="false" />
+        <Filter name="Severity" value="item.label.unset" enabled="false" />
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true" />
+        <Filter name="Resolution" value="item.label.unset" enabled="false" />
+        <Filter name="Status" value="item.status.label.open" enabled="true" />
+        <Filter name="File" value="" enabled="false" />
+      </Phase>
+    </Filters>
+  </Review>
+</Property>
+

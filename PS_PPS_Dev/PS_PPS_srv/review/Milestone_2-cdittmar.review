@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4GJWOT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:11:03:869 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:11:54:289 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>update javadocs</Summary>
+    <Description>Make sure all methods have javadoc comments, and that the parameters, returns, and throws match what the method does. Also check that the description describes ndc and not another item type</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GLVDF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:12:35:475 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:26:55:387 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="101">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unnecessary to set ndc to null</Summary>
+    <Description>The domain will always either return something from the retrieve call or an item not found excepton. Setting the ndc to null here doesn't have much effect. You could just directly return what's retrieved from the ndcDomainCapability.</Description>
+    <Annotation />
+    <Revision>Agreed and Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GQ7TP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:15:58:237 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:11:07:718 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="139">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>retrieve product and remove todo</Summary>
+    <Description>You have the productCapability defined, so use it here to retrieve the product</Description>
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GVEF3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:20:00:063 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:34:52:425 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="194">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>setting fields to "" is unnecessary</Summary>
+    <Description>You've instatiated a new NdcVo, which should not have any vlaues set for any attributes by default, so it isn't really necessary to set the ndc, upc, upn, and vendorStockNumber to "".</Description>
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H56VD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:27:36:841 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:38:33:624 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="321">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented out code</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H8PMA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:30:21:106 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:43:49:055 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="441">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>use ndcDomainCapability.getRevisionNumber method and remove todo</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Added method</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HCIUC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:33:18:948 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:45:02:132 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="507">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Change OI references to product in comment</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HE2ER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:34:30:963 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:54:17:871 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="531">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>What exception is this catching?</Summary>
+    <Description>If it's something specific, change it to that. If it shouldn't be there, remove it.</Description>
+    <Annotation />
+    <Revision>Was catching various validation/Item Not Found exceptions. Throwing them now, since they were being thrown anyway</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HFRPS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:35:50:416 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:11:54:063 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="601">src/gov/va/med/pharmacy/peps/service/common/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented out code chunks</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HGONZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:36:33:119 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:57:33:086 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="79">src/gov/va/med/pharmacy/peps/service/common/capability/NdcCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>format method signature like all the other methods in the class</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed, has to be formatted different as it is long</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HJHI5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:38:43:805 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:51:49:129 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="53">src/gov/va/med/pharmacy/peps/service/local/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add @Override</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HL04A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:39:54:586 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:53:20:346 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="106">src/gov/va/med/pharmacy/peps/service/local/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove this method</Summary>
+    <Description>processFromNational in the ndcCapability is not used. The itemUtility's processFromNational has replaced this method.</Description>
+    <Annotation />
+    <Revision>Removed the method</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HME0A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:40:59:242 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:41:13:789 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="48">src/gov/va/med/pharmacy/peps/service/national/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add @Override</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HMZ86">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:41:26:742 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:08:02:782 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="50">src/gov/va/med/pharmacy/peps/service/national/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove this comment</Summary>
+    <Description>I believe that the request capability doesn't call this method anymore</Description>
+    <Annotation />
+    <Revision>removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HPRHJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:43:36:679 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:44:03:397 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="74">src/gov/va/med/pharmacy/peps/service/national/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove this method</Summary>
+    <Description>This method is not used anywhere. The ItemUtility insertFromLocal has replaced this method.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HQM9L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:44:16:569 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:44:24:413 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="113">src/gov/va/med/pharmacy/peps/service/national/capability/impl/NdcCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented out code chunk</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HSNJ5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:45:51:521 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:47:06:662 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="40">src/gov/va/med/pharmacy/peps/service/national/capability/NdcCapability.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove this method</Summary>
+    <Description>See same comment for method in impl</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HTW3R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:46:49:287 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:09:14:807 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="162">src/gov/va/med/pharmacy/peps/service/common/session/bean/NdcServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>format method signature the same as the other methods in class</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Formmated properly</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HVZHA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:48:26:974 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:36:51:303 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="87">src/gov/va/med/pharmacy/peps/service/common/session/NdcService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>fix formatting</Summary>
+    <Description />
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HYNKG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:50:31:504 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 14:21:23:851 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="151">test/gov/va/med/pharmacy/peps/service/local/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>how is this method any differennt from the testRetrieveExistingTemplate?</Summary>
+    <Description>If they're the same, remove one.</Description>
+    <Annotation />
+    <Revision>Same test, removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HZRKZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:51:23:363 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 14:23:36:341 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="176">test/gov/va/med/pharmacy/peps/service/local/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>make this actually test something</Summary>
+    <Description>This method should test commitModifications or should be removed.</Description>
+    <Annotation />
+    <Revision>Test is dealt with elsewhere, removed test</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I23RS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:53:12:472 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:13:31:736 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="323">test/gov/va/med/pharmacy/peps/service/local/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove this line</Summary>
+    <Description>setting out of container should be done in the ServiceIntegrationTestCase properties and not in the test, as that can screw up the test when running in CruiseControl</Description>
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I3TY1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:54:33:049 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 14:21:55:665 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="340">test/gov/va/med/pharmacy/peps/service/local/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>The test should do something or be removed</Summary>
+    <Description />
+    <Annotation />
+    <Revision>removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I46J6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:54:49:362 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 14:21:39:930 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="350">test/gov/va/med/pharmacy/peps/service/local/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>The test should do something or be removed</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I5IJ1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:55:51:565 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:56:13:658 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="77">test/gov/va/med/pharmacy/peps/service/national/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Retrieve the inserted item to make sure it's there</Summary>
+    <Description>Don't user asserts that don't test anything.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I6VBY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:56:54:814 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:34:35:784 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="167">test/gov/va/med/pharmacy/peps/service/national/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented out chunk</Summary>
+    <Description>or uncomment so test is actually run</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I7EAO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:57:19:392 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 14:26:56:751 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="277">test/gov/va/med/pharmacy/peps/service/national/test/integration/NdcServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove test or have it test something</Summary>
+    <Description />
+    <Annotation />
+    <Revision>removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

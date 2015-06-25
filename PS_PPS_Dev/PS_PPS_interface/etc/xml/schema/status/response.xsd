@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/status/response"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/status/response"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="response">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="response"
+                    type="responseType"
+                    minOccurs="1"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="responseType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute
+                    name="status"
+                    type="responseStatusType"
+                    use="required" />
+
+                <xsd:attribute
+                    name="pepsIdNumber"
+                    type="xsd:integer"
+                    use="optional" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="responseStatusType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Success" /><!-- Message was processed successfully by VistA. -->
+            <xsd:enumeration value="Failure" /><!-- Message was not enqueued successfully. -->
+            <xsd:enumeration value="Queued" /><!-- Message was successfully enqueued by VistA. -->
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
+

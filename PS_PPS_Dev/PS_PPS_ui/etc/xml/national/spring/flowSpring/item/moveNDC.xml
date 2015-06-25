@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="moveNDCstart">
+    
+    <view-state
+        id="moveNDCstart"
+        view="move.NDCs.start">
+        
+        <transition
+            on="searchProduct1"
+            to="searchProduct1" />
+        <transition
+            on="searchProduct2"
+            to="searchProduct2" />
+        <transition
+            on="updateChildren"
+            to="updateChildren" />
+    </view-state>
+
+    <view-state
+        id="moveNDCPage2"
+        view="move.NDCs.Page2">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="moveChildren" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        
+        <transition
+            on="searchProduct1"
+            to="searchProduct1" />
+        <transition
+            on="searchProduct2"
+            to="searchProduct2" />
+        <transition
+            on="updateChildren"
+            to="updateChildren" />
+    </view-state>
+
+    
+    <subflow-state
+        id="searchProduct1"
+        subflow="searchNDCParent">
+        <transition
+            on="end"
+            to="retrieveProduct1">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="'PRODUCT'"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+    </subflow-state>
+    
+    <action-state id="retrieveProduct1">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="moveChildren" />
+            <attribute
+                name="actionMethod"
+                value="retrieveItem1" />
+        </evaluate>
+        <transition
+            on="success"
+            to="moveNDCPage2" />
+    </action-state>
+    
+    <subflow-state
+        id="searchProduct2"
+        subflow="searchNDCParent">
+        <transition
+            on="end"
+            to="retrieveProduct2">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+    </subflow-state>
+    
+    <action-state id="retrieveProduct2">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="moveChildren" />
+            <attribute
+                name="actionMethod"
+                value="retrieveItem2" />
+        </evaluate>
+        <transition
+            on="success"
+            to="moveNDCPage2" />
+    </action-state>
+    
+    <action-state id="updateChildren">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="moveChildren" />
+            <attribute
+                name="actionMethod"
+                value="updateParentChildRelationships" />
+        </evaluate>
+        <transition
+            on="end"
+            to="moveNDCend" />
+    </action-state>
+    
+    <end-state id="end" view="moveNDCend" />
+        
+    <view-state
+        id="moveNDCend"
+        view="move.NDCs.end">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="moveChildren" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+    </view-state>
+</flow>

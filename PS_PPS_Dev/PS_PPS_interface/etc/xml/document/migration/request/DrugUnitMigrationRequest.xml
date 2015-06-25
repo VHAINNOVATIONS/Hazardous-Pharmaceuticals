@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<drugMigrationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request ../../../schema/migration/drugMigrationRequest.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request">
+    <request>
+        <ndfmsFile>50.607</ndfmsFile>
+        <startingRecordNumber>0</startingRecordNumber>
+        <numElements>100</numElements>
+        <type>0</type>
+    </request>
+</drugMigrationRequest>

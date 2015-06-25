@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="pdm_converter_review_1">
+  <ReviewIssue id="FR189609">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:51:55:305 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:53:34:397 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Pharmacy System - Only Use PHARMACY SYSTEM Field Keys</Summary>
+    <Description>Some field keys are incorrect in PharmacySystemFileConverter</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18BF5N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:53:40:475 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:54:23:068 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Rx Consult - Verify Word Processing Text Field Correctness</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18CE7R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:54:25:911 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:54:59:223 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>OrderUnitConverter - Add Private Constructor</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18D5IT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:55:01:301 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:55:16:364 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>DrugTextConverter - Take Out TODO</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18DJ7V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:55:19:051 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:55:55:082 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Take Out Header Comments</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18ECGD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:55:56:941 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:56:07:081 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add Multiple Field Keys</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18ES8I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:56:17:394 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:56:27:518 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Make Whole Multiples Nillable</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18F66N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:56:35:471 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:56:57:596 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>AdminScheduleConverter Frequency Fieldkey is Incorrect</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18FUEL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:57:06:861 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:57:22:689 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add javadocs for private methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18GAQP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:57:28:033 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:57:44:439 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>other language expansion should be nillable</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18I3CM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 17:58:51:766 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 18:01:35:559 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>DosageFormFileConverter should use POSSIBLE_DOSAGES_PACKAGE instead of PACKAGE_CODE</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR18RPB8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 18:06:20:132 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 18:06:33:647 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Effective Date Time Status Not Set Correctly</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

@@ -1,0 +1,125 @@
+<Response type="array"><![CDATA[
+<vistaDomainsResponse
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/response"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/response ../../schema/facility/localVistADomainResponse.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <listDomain name="Outpatient Sites">
+        <!-- SwRI Example Data -->
+        <stringItem>Outpatient Site 1</stringItem>
+        <stringItem>Outpatient Site 2</stringItem>
+        <stringItem>Outpatient Site 3</stringItem>
+    </listDomain>
+    
+    <listDomain name="Hospital Locations">
+        <!--  VA Example Data -->
+        <stringItem>MALCOM RANDALL VAMC</stringItem>
+        <stringItem>BAY PINES VAMC</stringItem>
+
+        <!-- SwRI Example Data -->
+        <stringItem>Mikes Mental Clinic</stringItem>
+        <stringItem>7th Floor</stringItem>
+        <stringItem>Alcohol</stringItem>
+        <stringItem>Gen Med</stringItem>
+        <stringItem>General Medicine</stringItem>
+        <stringItem>7A Gen Med</stringItem>
+        <stringItem>Mike's IP Subspecialty</stringItem>
+        <stringItem>Mike's IP Ward</stringItem>
+        <stringItem>ICU/CCU</stringItem>
+        <stringItem>7B</stringItem>
+        <stringItem>Intermed-2</stringItem>
+        <stringItem>7A/I</stringItem>
+        <stringItem>7A Surg</stringItem>
+        <stringItem>3E North</stringItem>
+        <stringItem>5 West Psych</stringItem>
+        <stringItem>Val's Clinic</stringItem>
+        <stringItem>Cardiology</stringItem>
+    </listDomain>
+
+    <listDomain name="Wards">
+        <!--  VA Example Data -->
+        <stringItem>PSYCHIATRY</stringItem>
+        <stringItem>3 NORTH SURG</stringItem>
+        <stringItem>ICU/CCU</stringItem>
+        <stringItem>REHAB</stringItem>
+
+        <!--  SwRI Example Data -->
+        <stringItem>Gen Med</stringItem>
+        <stringItem>BCMA</stringItem>
+        <stringItem>7A Surg</stringItem>
+    </listDomain>
+
+    <listDomain name="Labs">
+        <!--  VA Example Data -->
+        <stringItem>SKIN PUNCH</stringItem>
+        <stringItem>SPUTUM</stringItem>
+        <stringItem>NEEDLE BIOPSY BONE MARROW</stringItem>
+
+        <!--  SwRI Example Data -->
+        <stringItem>CREATININE/SERUM</stringItem>
+        <stringItem>GENTAMICIN-PEAK/SERUM</stringItem>
+        <stringItem>GENTAMICIN-RANDOM/SERUM</stringItem>
+        <stringItem>GENTAMICIN-TROUGH/SERUM</stringItem>
+        <stringItem>HEMOGLOBIN ALC/BLOOD</stringItem>
+        <stringItem>INR/PLASMA</stringItem>
+        <stringItem>WHITE BLOOD COUNT</stringItem>
+        <stringItem>RED BLOOD COUNT</stringItem>
+    </listDomain>
+
+    <listDomain name="Vitals">
+        <!--  VA Example Data
+            <stringItem>100.7 Fahrenheit</stringItem>
+            <stringItem>160/90 Blood pressure</stringItem>
+        -->
+
+        <!--  SwRI Example Data -->
+        <stringItem>Temperature</stringItem>
+        <stringItem>Blood Pressure</stringItem>
+        <stringItem>Pain Level</stringItem>
+        <stringItem>Pulse (Heart Rate)</stringItem>
+    </listDomain>
+
+    <listDomain name="IFCAP Item Numbers">
+        <!--  SwRI Example Data -->
+        <integerItem>45</integerItem>
+        <integerItem>89</integerItem>
+    </listDomain>
+
+    <listDomain name="Specimen Types">
+        <!--  VA Example Data -->
+        <stringItem>FEMORAL NERVE</stringItem>
+        <stringItem>SUBCUTANEOUS TISSUE OF ABDOMEN</stringItem>
+        <stringItem>ZYGOTE</stringItem>
+
+        <!--  SwRI Example Data -->
+        <stringItem>Right Lung</stringItem>
+        <stringItem>Left Lung</stringItem>
+        <stringItem>Spleen</stringItem>
+        <stringItem>Pancreas</stringItem>
+        <stringItem>Thyroid Gland</stringItem>
+        <stringItem>Right Superior Parathyroid Gland</stringItem>
+        <stringItem>Right Inferior Parathyroid Gland</stringItem>
+        <stringItem>Left Superior Parathyroid Gland</stringItem>
+        <stringItem>Left Inferior Parathyroid Gland</stringItem>
+        <stringItem>Parathyroid Gland</stringItem>
+        <stringItem>Right Kidney</stringItem>
+        <stringItem>Left Kidney</stringItem>
+        <stringItem>Right Adrenal Gland</stringItem>
+        <stringItem>Left Adrenal Gland</stringItem>
+        <stringItem>Prostate</stringItem>
+        <stringItem>Right Testis</stringItem>
+        <stringItem>Left Testis</stringItem>
+        <stringItem>Pituitary Gland</stringItem>
+        <stringItem>Right Ovary</stringItem>
+        <stringItem>Left Ovary</stringItem>
+        <stringItem>Lung</stringItem>
+        <stringItem>Kidney</stringItem>
+        <stringItem>Adrenal Gland</stringItem>
+        <stringItem>Thymus</stringItem>
+        <stringItem>Ovary</stringItem>
+    </listDomain>
+
+    <stringDomain name="VistA Version">6.01.34.5000</stringDomain>
+</vistaDomainsResponse>
+]]></Response>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="tramirez_milestone2_presentation">
+  <ReviewIssue id="FF5QCRR2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 14:33:13:214 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 14:34:19:966 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>general</Summary>
+    <Description>review javadoc to verify correctness, remove comments and todo statements</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5RL53J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:07:43:375 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:09:50:081 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="495">src/gov/va/med/pharmacy/peps/presentation/common/action/OrderableItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>getComment/setComment manipulate different variables</Summary>
+    <Description>/**&#xD;
+     * Sets the comment for a partial save&#xD;
+     * &#xD;
+     * @param comment String&#xD;
+     */&#xD;
+    public void setComment(String comment) {&#xD;
+        this.comment = comment;&#xD;
+    }&#xD;
+    &#xD;
+    /**&#xD;
+     * Sets the comment for a partial save&#xD;
+     * &#xD;
+     * @return comment String&#xD;
+     */&#xD;
+    public String getComment() {&#xD;
+        if (lastOIComment == null) {&#xD;
+&#xD;
+            lastOIComment = "";&#xD;
+        }&#xD;
+&#xD;
+        return lastOIComment;&#xD;
+&#xD;
+    }</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5SCAKL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:28:50:181 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:29:59:235 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="57">src/gov/va/med/pharmacy/peps/presentation/local/action/OrderableItemAction.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>code for national</Summary>
+    <Description>This code is only used at national, suggest removing.&#xD;
+&#xD;
+    /**&#xD;
+     * Invoked when the 'Submit' button is hit from the OrderableItem's details form page as part of the &#xD;
+     * "Mod" Request national review flow.  &#xD;
+     * &#xD;
+     * @return Flow return code text&#xD;
+     * @throws ItemNotFoundException&#xD;
+     */&#xD;
+    public String submitModificationRequest() throws ItemNotFoundException {&#xD;
+        mainRequest.setUnderReview(false);&#xD;
+        &#xD;
+        return compareDifferences();&#xD;
+    }&#xD;
+    &#xD;
+    /**&#xD;
+     * Invoked when the 'Approve' button is hit from the OrderableItem's details form page as part of the &#xD;
+     * "Add" Request national review flow.  &#xD;
+     * &#xD;
+     * @return Flow return code text&#xD;
+     * @throws ItemNotFoundException&#xD;
+     */&#xD;
+    public String approveAddRequest() throws ItemNotFoundException {&#xD;
+        mainRequest.setNewItemRequestStatus(RequestItemStatus.APPROVED);&#xD;
+        mainRequest.setUnderReview(false);&#xD;
+        &#xD;
+        return compareDifferences();&#xD;
+    }&#xD;
+    &#xD;
+    /**&#xD;
+     * Invoked when the 'Reject' button is hit from the OrderableItem's details form page as part of the &#xD;
+     * "Add" Request national review flow.  &#xD;
+     * &#xD;
+     * @return Flow return code text&#xD;
+     * @throws ItemNotFoundException&#xD;
+     */&#xD;
+    public String rejectAddRequest() throws ItemNotFoundException {        &#xD;
+        mainRequest.setNewItemRequestStatus(RequestItemStatus.REJECTED);&#xD;
+        mainRequest.setUnderReview(false);&#xD;
+        &#xD;
+        return compareDifferences();&#xD;
+    }    &#xD;
+    &#xD;
+    /**&#xD;
+     * Used to indicate no processing of the request details should occur&#xD;
+     * &#xD;
+     * @return Flow return code text&#xD;
+     * @throws ItemNotFoundException&#xD;
+     */&#xD;
+    public String markUnderReview() throws ItemNotFoundException {&#xD;
+        mainRequest.setUnderReview(true);&#xD;
+        &#xD;
+        return compareDifferences();&#xD;
+    }&#xD;
+    &#xD;
+    /**&#xD;
+     * Commit request and item modification changes to the database as the final step in the national&#xD;
+     * review flow.&#xD;
+     * &#xD;
+     * @return END&#xD;
+     * @throws ValidationException if either the RequestVo or the updated ProductVo is invalid for request processing.&#xD;
+     */&#xD;
+    public String commitRequestModifications() throws ValidationException {&#xD;
+&#xD;
+&#xD;
+        getOrderableItemService().commitRequestModifications(getUser(), getModel(), getMainRequest(), getModDifferences());&#xD;
+        &#xD;
+        return endFlow();&#xD;
+    }</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5SFMHC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:31:25:584 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:33:22:007 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="100">src/gov/va/med/pharmacy/peps/presentation/national/action/OrderableItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>why is this done?</Summary>
+    <Description>compareDifferences();&#xD;
+&#xD;
+If an item is being rejected why do we care what differences exist.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5SIJR8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:33:42:020 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:35:38:584 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="114">src/gov/va/med/pharmacy/peps/presentation/national/action/OrderableItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>why return request summary screen?</Summary>
+    <Description>if an item is put under review should the action take the user out of the flow or continue as if approving and igore the business logic in validating the request details?&#xD;
+&#xD;
+        return compareDifferences();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5SLMOO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:36:05:784 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:36:55:216 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="138">src/gov/va/med/pharmacy/peps/presentation/national/action/OrderableItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>redundant code</Summary>
+    <Description>nulling the requests is done by subsequent call to endFlow()&#xD;
+&#xD;
+        // @todo: Remove when Spring Web Flow is fully implemented.&#xD;
+        pendingRequests = null;&#xD;
+        mainRequest = null;&#xD;
+        &#xD;
+        return endFlow();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5SX74K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:45:05:492 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 15:47:20:849 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo>tramirez</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>documentation</Summary>
+    <Description>tabbedMenu.js file has minimal documentation. start each function with a summary of the function's purpose</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/request"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/request"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+
+    <xsd:element name="vistaDomainsRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="domain"
+                    minOccurs="1"
+                    maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:attribute
+                            name="name"
+                            type="common:vistaDomainName"
+                            use="required" />
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

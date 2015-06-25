@@ -1,0 +1,7 @@
+//Boolean Data Field List ,,
+Dispense Via CMOP,Hazardous to Patient,Patient Specific Label
+Do Not Handle if Pregnant,High-Risk,Protect From Light
+Do Not Mail,Long Term Out of Stock,Refrigeration
+Follow-Up Time,Low Safety Margin,Transmit to CMOP
+Hazardous to Dispense,Narcotic,Witness to Administration
+Hazardous to Handle,Non-Renewable,stop

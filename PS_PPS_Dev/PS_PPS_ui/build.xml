@@ -1,0 +1,291 @@
+<project name="Presentation" default="compile" basedir="." xmlns:swri="http://www.swri.org">
+    <import file="../PS_PPS_common/etc/build/template/template.xml" />
+    <import file="${etc.build.dir}/template/selenium.xml" />
+    <import file="${etc.build.dir}/template/presentation.xml" />
+
+    <target name="init" depends="Template.init" description="Initialize the project">
+        <property name="buildCP" refid="build.class.path"/>
+        <echo>Classpath at this stage: ${buildCP}</echo>
+    </target>
+
+    <target name="clean" depends="Template.clean" description="Clean the project" />
+
+    <target name="cleanAll" depends="Template.cleanAll" description="Clean the project and its dependencies" />
+
+    <target name="generate" depends="Template.generate" description="Generate the project artifacts">
+        <!-- <swri:generateSeleniumTestCaseProperties /> -->
+        <swri:generatePresentationIntegrationProperties />
+    </target>
+
+    <target name="compile" depends="Template.compile" description="Compile the source code" />
+
+    <target name="compileEnvironments"
+            depends="Template.compileEnvironments"
+            description="Compile the source code environments (common, local, and national) separately" />
+
+    <target name="unitTest" depends="Template.unitTest" description="Execute the unit tests" />
+
+    <target name="buildUnitTest"
+            depends="Template.buildUnitTest"
+            description="Compile environments separately for dependency checking, then run unit tests" />
+
+    <target name="buildIntegrationTest"
+            depends="Template.buildIntegrationTest"
+            description="Compile environments separately for dependency checking, then run integration tests" />
+
+    <target name="buildTestAll"
+            depends="Template.buildTestAll"
+            description="Compile environments separately for dependency checking, then run unit and integration tests" />
+
+    <target name="war" depends="Template.war" description="Package the Presentation classes, resources, and JSPs into a WAR">
+        <!-- WebLogic appears to compile the JSPs with a separate class path comprising of all jars -->
+        <!-- at the root of WEB-INF/lib. It seems to ignore the class path set in the MANIFEST.MF -->
+        <!-- Therefore, we need to copy the jars to WEB-INF/lib that it will need. -->
+        <!--swri:packageLocalWar name="PRE" destDir="${build.archive.dir}/local">
+            <libfileset>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/struts">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/springwebflow">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/jstl">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/displaytag">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/tiles">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/kaajee">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/sds">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.Common.dir}/${build}/${archive}">
+                    <include name="Common.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Common}/commons">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Common}/spring">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Common}/hibernate">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                -->
+                <!--
+                <lib dir="${module.BuildLib.dir}/${module.Common}/${build}/weblogic/precompile">
+                    <include name="*.jar" />
+                </lib>
+                -->
+            <!--/libfileset>
+        </swri:packageLocalWar-->
+
+        <swri:packageNationalWar name="PRE" destDir="${build.archive.dir}/national">
+            <libfileset>
+                <!--<lib dir="${module.BuildLib.dir}/${module.Presentation}/struts">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+            	<lib dir="${module.BuildLib.dir}/${module.Presentation}/menu">
+            	    <include name="*.jar" />
+            		<exclude name="*-sources.jar" />
+            	</lib>-->
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/springwebflow">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/jstl">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/displaytag">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/tiles">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/kaajee">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Presentation}/sds">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.Common.dir}/${build}/${archive}">
+                    <include name="Common.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Common}/commons">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Common}/spring">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Common}/hibernate">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <lib dir="${module.BuildLib.dir}/${module.Interface}/sts">
+                    <include name="*.jar" />
+                    <exclude name="*-sources.jar" />
+                </lib>
+                <!--
+                <lib dir="${module.BuildLib.dir}/${module.Common}/${build}/weblogic/precompile">
+                    <include name="*.jar" />
+                </lib>
+                -->
+            </libfileset>
+        </swri:packageNationalWar>
+    </target>
+
+    <target name="ear" depends="Template.ear" description="Ear the HeVD plugins for deployment">
+        <!-- Since we don't package a JAR in Presentation or copy the tmp/archive folder from Service, -->
+        <!-- let's be sure we still get the EJB libraries. -->
+        <for list="${dependencies}" delimiter=",;:" param="module">
+            <sequential>
+                <echo>Copy ${module.@{module}.dir}/${tmp}/${archive} to ${tmp.archive.dir}.</echo>
+                <copy todir="${tmp.archive.dir}">
+                    <fileset dir="${module.@{module}.dir}/${tmp}/${archive}">
+                        <include name="lib/**/*Client.jar" />
+                        <include name="lib/**/*Ejb.jar" />
+                        <include name="ejb/**" />
+                        <exclude name="*-sources.jar" />
+                    </fileset>
+                </copy>
+            </sequential>
+        </for>
+
+        <!-- Update the Service project's EAR files -->
+        <copy todir="${build.archive.dir}">
+            <fileset dir="${module.Service.dir}/${build}/${archive}">
+                <include name="**/*.ear" />
+            </fileset>
+        </copy>
+
+        <!-- packageEar packages any WAR file in tmp.archive.dir/web, so only copy local -->
+        <!--
+        <delete failonerror="false">
+            <fileset dir="${tmp.archive.dir}/web">
+                <include name="PRE.war" />
+            </fileset>
+        </delete>
+        <copy todir="${tmp.archive.dir}/web">
+            <fileset dir="${build.archive.dir}/local">
+                <include name="PRE.war" />
+            </fileset>
+        </copy>
+        -->
+        <!--swri:packageLocalEar /-->
+
+        <!-- packageEar packages any WAR file in tmp.archive.dir/web, so only copy national -->
+        <delete failonerror="false">
+            <fileset dir="${tmp.archive.dir}/web">
+                <include name="PRE.war" />
+            </fileset>
+        </delete>
+        <copy todir="${tmp.archive.dir}/web">
+            <fileset dir="${build.archive.dir}/national">
+                <include name="PRE.war" />
+            </fileset>
+        </copy>
+        <swri:packageNationalEar />
+    </target>
+
+    <!-- Deploy National first so it's services are available at Local -->
+    <target name="deploy" depends="Template.deploy" description="Deploy Service and Presentation in one EAR">
+        <swri:redeployNational />
+        <!--swri:redeployLocal /-->
+    </target>
+
+    <!-- Begin temporary targets to deploy M1D storyboards. Remove after M1D is complete. -->
+    <target name="deployMilestone1"
+            depends="init"
+            description="Temporary target used to deploy M1D WAR. Should be removed after M1D is complete">
+        <swri:warMilestone1 environment="local" />
+        <swri:warMilestone1 environment="national" />
+
+        <swri:redeployMilestone1 environment="local" />
+        <swri:redeployMilestone1 environment="national" />
+    </target>
+
+    <macrodef name="warMilestone1" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="destDir" default="${build.archive.dir}/M1D/@{environment}" />
+        <attribute name="destFile" default="PRE.war" />
+        <sequential>
+            <mkdir dir="@{destDir}" />
+
+            <war destfile="@{destDir}/@{destFile}"
+                 duplicate="preserve"
+                 update="true"
+                 compress="off"
+                 webxml="${etc.web.dir}/milestone1/web.xml">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <fileset dir="${basedir}/storyboards/Milestone1/common">
+                    <include name="storyboards/**" />
+                </fileset>
+
+                <fileset dir="${basedir}/storyboards/Milestone1/@{environment}">
+                    <include name="storyboards/**" />
+                </fileset>
+            </war>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="redeployMilestone1" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="destDir" default="${build.archive.dir}/M1D/@{environment}" />
+        <attribute name="name" default="PRE" />
+        <sequential>
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <swri:undeploy host="@{host}"
+                                   targets="${@{host}.@{environment}.targets}"
+                                   name="@{name}-@{environment}" />
+                    <swri:deploy host="@{host}"
+                                 targets="${@{host}.@{environment}.targets}"
+                                 name="@{name}-@{environment}"
+                                 source="@{destDir}/@{name}.war" />
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+    <!-- End temporary targets to deploy M1D storyboards. Remove after M1D is complete. -->
+
+    <target name="deployBaseline"
+            depends="Template.deployBaseline"
+            description="Deploy Service and Presentation in one EAR then baseline projects" />
+
+    <target name="redeploy"
+            depends="Template.redeploy"
+            description="Redeploy Presentation without repackaging Common or Service" />
+
+    <target name="integrationTest" depends="Template.integrationTest" description="Deploy and execute the integration tests">
+        <!-- <swri:seleniumTest /> -->
+    </target>
+
+    <target name="document" depends="Template.document" description="Document the project" />
+</project>

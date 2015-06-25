@@ -1,0 +1,48 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en"
+    lang="en">
+<head>
+<!--
+ * 
+ * @author VHIT Security and Other Common Services (S&OCS)
+ * @version 1.1.0.007
+ * -->
+<title>Login Persistent Cookie Information</title>
+</head>
+<body>
+<h3>Login Persistent Cookie Information</h3>
+<p>The login module uses a persistent cookie to store the institution you select at login.</p>
+<p>This information is used at the next login, to pre-select the same institution for the next login.</p>
+<p>Given that the list of institutions may be quite long for some applications, the goal of using the 
+persistent cookie is to save you time by pre-selecting the most likely institution choice, which for most
+users would be the previously selected login. This is similar to the Windows login, which saves your last
+domain used for login, and pre-selects that domain at the next login.</p>
+<p>In addition to the above persistent cookie, the login module uses another persistent cookie to store
+the user's preference for sorting institutions in the Institution Drop Down box of the login page.</p>
+<p>The cookies contains the following information:</p>
+<ul>
+<li>name: gov.va.med.authentication.kernel.defaultDivision</li>
+<li>value: station number used for the previous login</li>
+<li>expiry time: 180 days</li>
+<li>name: gov.va.med.authentication.kernel.defaultSortInstitutionBy</li>
+<li>value: sort order of name or number used for the previous refresh</li>
+<li>expiry time: 180 days</li>
+</ul>
+<h4>Thin Client/Terminal Server users:</h4>
+<p>Please note that persistent cookies may not be of much use on Terminal Servers.</p>
+<p>The reason is that many Terminal Servers may have been configured to use roaming profiles that may
+not retain as part of the user profile cookies and temporary internet files upon the user logout
+and disconnect.</p>
+<p>In such cases, the recommendation is to create on each Terminal Server shortcuts and save them
+on the desktop and/or quick launch bar.  These shortcuts should have the desired target URLs plus any
+desired KAAJEE supported parameters.  For further details regarding how to use these KAAJEE supported
+parameters in order to pre-select the desired institution and institution sorting preference,
+please refer to the KAAJEE documentation.</p>
+
+<p align="center"><a href="loginCookieInfo.htm" onclick='window.close()'><b>Close Window</b></a></p>
+</body>
+</html>

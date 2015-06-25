@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/migration/data/response"
+     
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/migration/data/response" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="drugMigrationResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+            	<xsd:element name="responseHeader" type="responseHeaderType" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="invalidRequest" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+                <xsd:element name="vaProduct" type="vaProductFieldsType" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="drugIngredients" type="drugIngredientsFieldsType" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="vaGenericName" type="vaGenericNameFieldsType" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="vaDrugClass" type="vaDrugClassFieldsType" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="drugUnits" type="drugUnitsFieldType" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="vaDispenseUnit" type="vaDispenseUnitFieldType" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="dosageForm" type="dosageFormFieldType" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="responseHeaderType">
+        <xsd:sequence>
+            <xsd:element name="endOfFile" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="vaProductFieldsType">
+        <xsd:sequence>
+            <xsd:element name="ndfProductIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="vaGenericName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="dosageForm" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="strength" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="units" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="nationalFormularyName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="vaPrintName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="vaProductIdentifier" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="transmitToCmop" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="vaDispenseUnit" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="gcnSeqNo" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="activeIngredients" type="activeIngredients" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="primaryVaDrugClass" type="drugClassRow" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="nationalFormularyIndicator" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="csFederalSchedule" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="singleMultiSourceProduct" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="inactivationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="overrideDfDoseChkExclusion" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="excludeDrugDrugInteraction" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="createPossibleDosage" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="productPackage" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="masterEntryForVuid" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="vuid" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="effectiveDateTime" type="effectiveDateTime" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="fdaMedGuide" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="serviceCode" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="possibleDosagesToCreate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="drugIngredientsFieldsType">
+        <xsd:sequence>
+            <xsd:element name="drugIngredientsIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="primaryIngredient" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="inactivationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="masterEntryForVuid" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="vuid" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="effectiveDateTime" type="effectiveDateTime" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="vaGenericNameFieldsType">
+        <xsd:sequence>
+            <xsd:element name="vaGenericIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="inactivationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="masterEntryForVuid" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="vuid" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="effectiveDateTime" type="effectiveDateTime" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="vaDrugClassFieldsType">
+        <xsd:sequence>
+            <xsd:element name="vaDrugClassIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="code" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="classification" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="parentClass" type="drugClassRow" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="type" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="masterEntryForVuid" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="vuid" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="effectiveDateTime" type="effectiveDateTime" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="description" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="drugClassRow">
+        <xsd:sequence>
+            <xsd:element name="vaDrugClassIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="code" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="classification" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="drugUnitsFieldType">
+        <xsd:sequence>
+            <xsd:element name="drugUnitsIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="inactivationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="vaDispenseUnitFieldType">
+        <xsd:sequence>
+            <xsd:element name="dispenseUnitsIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="inactivationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="dosageFormFieldType">
+        <xsd:sequence>
+            <xsd:element name="dosageFormIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="inactivationDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="units" type="units" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="dispenseUnitsPerDose" type="dispenseUnitsPerDose" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="excludeFromDosageChecks" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="activeIngredients">
+        <xsd:sequence>
+            <xsd:element name="activeIngredientIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ingredientName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="strength" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="units" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="effectiveDateTime">
+        <xsd:sequence>
+            <xsd:element name="effectiveDateTime" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="status" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="dispenseUnitsPerDose">
+        <xsd:sequence>
+            <xsd:element name="dispenseUnitsPerDoseIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="dispenseUnitsPerDose" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="package" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="units">
+        <xsd:sequence>
+            <xsd:element name="unitsIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="units" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="package" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5B4T3A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:27:07:462 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:17:24:830 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/domain/common/capability/DataFieldsDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc for entire class</Summary>
+    <Description>Update/correct the javadoc for methods in the DataFieldsDomainCapability</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5B5PZQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:27:50:102 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:17:13:924 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="84">src/gov/va/med/pharmacy/peps/domain/common/capability/DataFieldsDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove "public"</Summary>
+    <Description>I believe our coding standards state that we shouldn't use "public" in interfaces</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5B6SEY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:28:39:898 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:28:55:867 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/capability/DrugUnitDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>dosage forms -&gt; drug units</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5B79MQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:29:02:210 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:29:40:569 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/capability/GenericNameDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>manufacturers -&gt; generic names</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5B9LTY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:30:51:334 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:31:07:693 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="22">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ConsoleDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>Update javdoc for entire ConsoleDomainCapabilityImpl class</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5BAHJV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:31:32:443 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:41:12:194 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/CsFedScheduleDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>Update javdoc for entir class, particularly dosage form -&gt; CS Fed schedules</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5BBD08">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:32:13:208 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:33:19:895 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/domain/common/capability/CsFedScheduleDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Should this class be named ControlledSubstanceFederalScheduleDomainCapability?</Summary>
+    <Description>I believe our coding standards state that we're not to use abbreviations, so this class name should be spelled out. Also applies to the Impl class (and perhaps Impl itself?)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5BEH1L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:34:38:409 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:51:35:304 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="42">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc for this class</Summary>
+    <Description>DataFieldsDomainCapabilityImpl</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5BEXCE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:34:59:534 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:37:51:938 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="83">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use static constants from a DO?</Summary>
+    <Description>Shoudl these strings like "eplNdc" be references to static constants in the DO? We've done that in other places for properties/column names. Applies to other static strings in this Capability as well (and perhaps everywhere in Domain).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5BGVNM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:36:30:658 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:52:58:556 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="116">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Rename "what" to something more useful</Summary>
+    <Description>what</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5C8MPA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:58:05:422 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:58:24:875 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="238">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Why doesn't this method call properties.add(data) like the other methods do?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5C9ETV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:58:41:875 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:03:33:824 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="223">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>These methods don't appear to be used anywhere</Summary>
+    <Description>retrieveEditablePropertiesTest, retrieveLovTest, retrieveProdAssocsTest</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CKWA8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:07:37:712 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:09:15:914 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="383">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>If this set were typed, the iterator wouldn't have to be used, instead a for each loop could be used</Summary>
+    <Description>Also applies to other insertVaDf* methods.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CLUD7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:08:21:883 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:42:37:180 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="390">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove commented code since it isn't doing anything anyway</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CNBJO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:09:30:804 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:09:52:570 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="446">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use Log4j, not System.out.println</Summary>
+    <Description>System.out.println</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5COA3L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:10:15:585 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:10:50:038 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="496">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DataFieldsDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unused local varaibles</Summary>
+    <Description>The method calls can still be made, but you don't need to set the return value to anything since it isn't used.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CPXMS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:11:32:740 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:11:50:631 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DrugUnitDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc for this class</Summary>
+    <Description>dosage forms -&gt; drug units</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CYAPW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:18:02:948 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:05:27:700 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/IntendedUseDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc for this class</Summary>
+    <Description>generic name -&gt; intended use</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CZ44G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:18:41:056 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:08:09:918 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="43">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unused class attribute</Summary>
+    <Description>eplVadfOwnerDao</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D0EXC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:19:41:712 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:20:02:711 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="61">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Shouldn't the Service capability be doing the validation?</Summary>
+    <Description>Move the call to validate() to the Service capability</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D14GL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:20:14:805 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:37:31:891 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="63">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct spelling</Summary>
+    <Description>chekc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D1UNA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:20:48:742 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:13:09:119 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="84">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused local variable</Summary>
+    <Description>vaDfOwners</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D2DSX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:21:13:569 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:21:26:694 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="101">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>ndcisDuplicate -&gt; isNdcDuplicate</Summary>
+    <Description>ndcisDuplicate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D4257">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:22:31:771 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:22:57:833 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="103">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type the instantiation since the local variable is typed</Summary>
+    <Description>new ArrayList&lt;Criterion&gt;();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D6HCX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:24:24:801 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:41:25:467 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="202">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use static string in DOs for column names</Summary>
+    <Description>EPL_VADF_OWNERS and EPL_NDCS</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DA9A3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:27:20:955 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:42:29:248 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="275">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Why not have a DataObjectConversionUtility.toNdcs(Collection&lt;EplNdcDo&gt;) method?</Summary>
+    <Description>Having the method in the conversion utility would at least simplify this capability and potentially others if they have to do the same thing.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DDYLI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:30:13:734 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:30:24:234 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="363">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>setProductDomainCapability</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DEL6F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:30:42:999 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:50:05:886 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="23">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused imports</Summary>
+    <Description>ProductVo, EplProdDrugClassAssocDao, and EplProductDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DK2YK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:34:59:324 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:52:08:406 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="111">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use static string in EplOrderableItemDo?</Summary>
+    <Description>I believe our coding standards state that we should be using static values for Strings such as "ACTIVE". Could such a static String be placed in EplOrderableItemDo or someplace similar?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DLNAR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:36:12:339 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 07:51:17:198 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="133">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use static column names in DO</Summary>
+    <Description>Put "EPL_VADF_OWNERS" column name as a static string in the EplVadfOwnersDo&#xD;
+Also applies to "EPL_ORDERABLE_ITEMS" on line 171</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DN7B7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:37:24:931 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:56:51:959 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="193">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This exception message has an argument (the ID?) that isn't getting passed in.</Summary>
+    <Description>ItemNotFoundException.ITEM_NOT_FOUND</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DNYCQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:37:59:978 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:06:602 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="211">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc for this class</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DOMB4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:38:31:024 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 07:52:44:683 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="246">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Shoudl eplOrderableItem.eplId be a static string too?</Summary>
+    <Description>eplOrderableItem.eplId</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DPQ91">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:22:789 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 07:54:57:913 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderUnitDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>generic name -&gt; order units</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DQ91O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:47:148 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:56:039 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OtcRxDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc for this class</Summary>
+    <Description>OtcRxDomainCapabilityImpl</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DQTSN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:40:14:039 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:40:37:898 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="32">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OtcRxDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Note that these are stubbed values like we have in other capabilities when there is hard coded data</Summary>
+    <Description>over the counter</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DRJ2S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:40:46:804 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:01:02:400 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PackageSizeDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>package types -&gt; package sizes</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DSB4R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:41:23:163 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:42:26:974 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="24">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PartialSaveMgtDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Spell out abbreviations -- PartialSaveManagementDomainCapabilityImpl</Summary>
+    <Description>This would also apply to this capability's Java interface, to the VO, and possibly to the DAO</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DU2AL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:42:45:021 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:02:00:691 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="45">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PartialSaveMgtDomainCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>What is a Votem?</Summary>
+    <Description>PartialSaveVotems</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DUPFH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:43:15:005 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:02:31:540 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="62">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PartialSaveMgtDomainCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do we really need to populate everything, or can we just populate the ID?</Summary>
+    <Description>delete</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DVTSL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:44:07:317 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:32:35:454 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="16">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/PrintTemplateDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should we note that this class is currently a stubbed implementation?</Summary>
+    <Description>Perform</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DW96U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:44:27:270 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:10:04:058 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="65">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unused class attribute</Summary>
+    <Description>eplVadfOwnerDao</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DX1DL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:45:03:801 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:17:482 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="87">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider using Hibernate's cascade feature so that this becomes a lot simpler?</Summary>
+    <Description>My understanding of Hibernate's cascading feature is that it would perform all the creation of the associated DOs if we were to insert the Product DO.&#xD;
+&#xD;
+Applies to Product updates and may also apply to Orderable Items and NDCs</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DYEQW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:46:07:784 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:05:09:528 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="169">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use static string in DO?</Summary>
+    <Description>EPL_VADF_OWNERS&#xD;
+Same for "ACTIVE" in line 179</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DYYIP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:46:33:409 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:47:00:346 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="198">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description>/*&#xD;
+         * List&lt;EplProductDo&gt; products = eplProductDao.retrieve(EplProductDo.VA_PRODUCT_NAME, productName); // go through&#xD;
+         * products and check for status = ACTIVE for (EplProductDo item : products) { if&#xD;
+         * (item.getItemStatus().equals("ACTIVE")) { return (DataObjectConversionUtility.toProduct(item)); } }&#xD;
+         * &#xD;
+         * return null;&#xD;
+         */</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DZV19">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:47:15:549 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:47:42:845 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="189">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>If there is always only one, could we change the hbm.xml to only give us one instead of a Collection?</Summary>
+    <Description>// there is always only one</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E1D0T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:48:25:517 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:11:422 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="220">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Wrap ObjectNotFoundException cause</Summary>
+    <Description>throw new ItemNotFoundException(e, ItemNotFoundException.ITEM_NOT_FOUND, new Object[] {id});&#xD;
+&#xD;
+This may also apply other places the ItemNotFoundException is used.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E37I0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:51:672 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:50:00:953 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="352">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>changeOrderableItemParent</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E3UIK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:50:21:500 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:07:17:176 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="390">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use static strings for eplProduct.eplId</Summary>
+    <Description>eplProduct.eplId</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E55CQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:51:22:202 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:09:15:682 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="552">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is zero a magic number for something?</Summary>
+    <Description>0&#xD;
+&#xD;
+Consider making this a static string -- I believe the coding standards would tell us to do so.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E6CTD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:18:529 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:26:826 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="697">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>setEplOrderableItemDao</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E7VWF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:29:919 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:54:46:887 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="65">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>Applies throughout this class</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E8HEA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:57:778 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:54:18:997 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="65">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Could Hibernate's Criteria class be used in this method instead?</Summary>
+    <Description>searchPendingRequests</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EAL8A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:55:36:058 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:56:34:964 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="309">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Consider commenting why you're using a HashSet here</Summary>
+    <Description>I image it is because you're removing duplicates, but you may want to explicitly say so.&#xD;
+&#xD;
+Also applies to line 326 and 344 in the next two methods.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EDYP2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:58:13:478 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:14:47:295 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="249">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/SearchDomainCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>What's an 'ing'?</Summary>
+    <Description>ing</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EELPM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:58:43:306 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:15:13:889 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="329">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/SearchDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use static strings</Summary>
+    <Description>APPROVED, PENDING, REJECTED, Y (below in line 412 and 485)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EFY7O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:59:46:164 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:01:33:382 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="491">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/SearchDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider using Hibernate's yes_no property type</Summary>
+    <Description>If we change the hbm.xml files to use the yes_no type instead of a String, then Hibernate will automatically convert "Y" and "N" into true and false. This I think would improve many of our classes -- not just this one.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EK2Z3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:02:58:959 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:52:01:711 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="69">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/SearchDomainCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Refactor this capability into more methods, perhaps even more classes</Summary>
+    <Description>The length of this class is getting long and some of the methods themselves are quite long. Maintaining the class will become quite difficult, I'm afraid. &#xD;
+&#xD;
+I would look into two things:&#xD;
+&#xD;
+1. Using the Criteria class (if possible, though I think we found a Hibernate bug for joining to the same table twice that made it so we couldn't)&#xD;
+2. Split up the large methods into multiple methods to make it easier to understand and follow&#xD;
+3. Consider splitting it up into multiple classes -- perhaps even putting the NDC/Orderable Item/Product search methods into their corresponding Domain capabilities?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EO0SX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:06:02:769 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:22:23:797 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="22">test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalPartialSaveMgtDomainCapabilityTest.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>If this (and other tests) is really a National test, why is it in the common package?</Summary>
+    <Description>Consider moving the NationalPartialSaveMgtDomainCapabilityTest under a national package and removing the "National" text from its name.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EP9X1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:01:237 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:10:440 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="71">test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalPartialSaveMgtDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>buildPartialSaveMgt</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EQCM8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:51:392 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:09:30:469 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="114">src/gov/va/med/pharmacy/peps/domain/common/utility/DataObjectConversionUtility.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider moving common code into separate methods instead of copy/paste code</Summary>
+    <Description>It appears that the DataObjectConversionUtility has several places to convert DOs into the respective DataField instances. I would recommend creating new methods for each DataField type that can be reused. That way we're not doing the same thing in multiple ways.&#xD;
+&#xD;
+This actually already bit us when converting Request DOs into DataFields -- not all of the values were getting set, in particular the default values, multiselect, and editable attributes!</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ESS5O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:09:44:844 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:11:00:296 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="105">src/gov/va/med/pharmacy/peps/domain/common/utility/ValueObjectConversionUtility.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider moving common code into separate methods instead of copy/paste code</Summary>
+    <Description>It appears that the ValueObjectConversionUtility has several places to convert VOs into the respective DO instances. I would especially recommend creating new methods for each DataField type that can be reused. That way we're not doing the same thing in multiple ways.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

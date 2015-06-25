@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://pharmacy.webservices.term.med.va.gov"
+    xmlns:tns="http://pharmacy.webservices.term.med.va.gov" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified"
+            elementFormDefault="qualified" targetNamespace="http://pharmacy.webservices.term.med.va.gov">
+            <xsd:element name="assignGenericVuid">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="name" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="isNational" type="xsd:boolean" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:complexType name="VuidResponse">
+                <xsd:sequence>
+                    <xsd:element name="errorMessage" nillable="true" type="xsd:string" />
+                    <xsd:element name="inactivationDate" type="xsd:dateTime" />
+                    <xsd:element name="status" nillable="true" type="tns:Status" />
+                    <xsd:element name="vuid" type="xsd:long" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:simpleType name="Status">
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="NEW" />
+                    <xsd:enumeration value="EXISTING" />
+                    <xsd:enumeration value="ERROR" />
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:element name="assignGenericVuidResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:VuidResponse" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignDrugClassVuid">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="name" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="code" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="parentClassVuid" nillable="true" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="isNational" type="xsd:boolean" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignDrugClassVuidResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:VuidResponse" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="removeDrugClassParent">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vuid" type="xsd:long" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:complexType name="Response">
+                <xsd:sequence>
+                    <xsd:element name="errorMessage" nillable="true" type="xsd:string" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="removeDrugClassParentResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:Response" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:simpleType name="ValueSet">
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="GENERIC" />
+                    <xsd:enumeration value="INGREDIENT" />
+                    <xsd:enumeration value="DRUG_PRODUCT" />
+                    <xsd:enumeration value="MED_ROUTE" />
+                    <xsd:enumeration value="DRUG_CLASS" />
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:element name="activate">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vuid" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="valueSet" nillable="true" type="tns:ValueSet" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="activateResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:Response" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="inactivate">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vuid" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="valueSet" nillable="true" type="tns:ValueSet" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="inactivateResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:Response" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:complexType name="ArrayOfDrugComponent">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="DrugComponent" nillable="true"
+                        type="tns:DrugComponent" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="DrugComponent">
+                <xsd:sequence>
+                    <xsd:element name="ingredient" type="xsd:long" />
+                    <xsd:element name="strength" nillable="true" type="xsd:string" />
+                    <xsd:element name="unitOfMeasure" nillable="true" type="xsd:string" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ArrayOfLong">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="long" nillable="true" type="xsd:long" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="updateDrugProduct">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vuid" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vaGenericVuid" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="gcnSequenceNumber" nillable="true"
+                            type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="dosageForm" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="drugComponents" nillable="true"
+                            type="tns:ArrayOfDrugComponent" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vaDrugClassVuids" nillable="true"
+                            type="tns:ArrayOfLong" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateDrugProductResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:Response" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignIngredientVuid">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="name" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="isNational" type="xsd:boolean" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignIngredientVuidResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:VuidResponse" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateDrugClassParent">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vuid" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="parentClassVuid" type="xsd:long" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="updateDrugClassParentResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:Response" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignMedRouteVuid">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="name" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="isNational" type="xsd:boolean" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignMedRouteVuidResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:VuidResponse" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignDrugProductVuid">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="name" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vaGenericVuid" type="xsd:long" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="gcnSequenceNumber" nillable="true"
+                            type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="dosageForm" nillable="true" type="xsd:string" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="drugComponents" nillable="true"
+                            type="tns:ArrayOfDrugComponent" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vaDrugClassVuids" nillable="true"
+                            type="tns:ArrayOfLong" />
+                        <xsd:element maxOccurs="1" minOccurs="1" name="isNational" type="xsd:boolean" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="assignDrugProductVuidResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:VuidResponse" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="setNational">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="vuid" type="xsd:long" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="setNationalResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:Response" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="inactivateRequest">
+        <wsdl:part name="parameters" element="tns:inactivate"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignDrugProductVuidRequest">
+        <wsdl:part name="parameters" element="tns:assignDrugProductVuid"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateDrugProductResponse">
+        <wsdl:part name="parameters" element="tns:updateDrugProductResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignGenericVuidResponse">
+        <wsdl:part name="parameters" element="tns:assignGenericVuidResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignDrugProductVuidResponse">
+        <wsdl:part name="parameters" element="tns:assignDrugProductVuidResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignMedRouteVuidResponse">
+        <wsdl:part name="parameters" element="tns:assignMedRouteVuidResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateDrugProductRequest">
+        <wsdl:part name="parameters" element="tns:updateDrugProduct"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateDrugClassParentResponse">
+        <wsdl:part name="parameters" element="tns:updateDrugClassParentResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateDrugClassParentRequest">
+        <wsdl:part name="parameters" element="tns:updateDrugClassParent"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="activateRequest">
+        <wsdl:part name="parameters" element="tns:activate"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="removeDrugClassParentRequest">
+        <wsdl:part name="parameters" element="tns:removeDrugClassParent"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignMedRouteVuidRequest">
+        <wsdl:part name="parameters" element="tns:assignMedRouteVuid"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignDrugClassVuidRequest">
+        <wsdl:part name="parameters" element="tns:assignDrugClassVuid"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="inactivateResponse">
+        <wsdl:part name="parameters" element="tns:inactivateResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignIngredientVuidResponse">
+        <wsdl:part name="parameters" element="tns:assignIngredientVuidResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="removeDrugClassParentResponse">
+        <wsdl:part name="parameters" element="tns:removeDrugClassParentResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="activateResponse">
+        <wsdl:part name="parameters" element="tns:activateResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignDrugClassVuidResponse">
+        <wsdl:part name="parameters" element="tns:assignDrugClassVuidResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignIngredientVuidRequest">
+        <wsdl:part name="parameters" element="tns:assignIngredientVuid"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="setNationalResponse">
+        <wsdl:part name="parameters" element="tns:setNationalResponse"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="setNationalRequest">
+        <wsdl:part name="parameters" element="tns:setNational"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="assignGenericVuidRequest">
+        <wsdl:part name="parameters" element="tns:assignGenericVuid"></wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="PharmacyServicesPortType">
+        <wsdl:operation name="assignGenericVuid">
+            <wsdl:input name="assignGenericVuidRequest" message="tns:assignGenericVuidRequest"></wsdl:input>
+            <wsdl:output name="assignGenericVuidResponse" message="tns:assignGenericVuidResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignDrugClassVuid">
+            <wsdl:input name="assignDrugClassVuidRequest" message="tns:assignDrugClassVuidRequest"></wsdl:input>
+            <wsdl:output name="assignDrugClassVuidResponse" message="tns:assignDrugClassVuidResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="removeDrugClassParent">
+            <wsdl:input name="removeDrugClassParentRequest" message="tns:removeDrugClassParentRequest"></wsdl:input>
+            <wsdl:output name="removeDrugClassParentResponse" message="tns:removeDrugClassParentResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="activate">
+            <wsdl:input name="activateRequest" message="tns:activateRequest"></wsdl:input>
+            <wsdl:output name="activateResponse" message="tns:activateResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="inactivate">
+            <wsdl:input name="inactivateRequest" message="tns:inactivateRequest"></wsdl:input>
+            <wsdl:output name="inactivateResponse" message="tns:inactivateResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateDrugProduct">
+            <wsdl:input name="updateDrugProductRequest" message="tns:updateDrugProductRequest"></wsdl:input>
+            <wsdl:output name="updateDrugProductResponse" message="tns:updateDrugProductResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignIngredientVuid">
+            <wsdl:input name="assignIngredientVuidRequest" message="tns:assignIngredientVuidRequest"></wsdl:input>
+            <wsdl:output name="assignIngredientVuidResponse" message="tns:assignIngredientVuidResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateDrugClassParent">
+            <wsdl:input name="updateDrugClassParentRequest" message="tns:updateDrugClassParentRequest"></wsdl:input>
+            <wsdl:output name="updateDrugClassParentResponse" message="tns:updateDrugClassParentResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignMedRouteVuid">
+            <wsdl:input name="assignMedRouteVuidRequest" message="tns:assignMedRouteVuidRequest"></wsdl:input>
+            <wsdl:output name="assignMedRouteVuidResponse" message="tns:assignMedRouteVuidResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignDrugProductVuid">
+            <wsdl:input name="assignDrugProductVuidRequest" message="tns:assignDrugProductVuidRequest"></wsdl:input>
+            <wsdl:output name="assignDrugProductVuidResponse" message="tns:assignDrugProductVuidResponse"></wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="setNational">
+            <wsdl:input name="setNationalRequest" message="tns:setNationalRequest"></wsdl:input>
+            <wsdl:output name="setNationalResponse" message="tns:setNationalResponse"></wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="PharmacyServicesHttpBinding" type="tns:PharmacyServicesPortType">
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="assignGenericVuid">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="assignGenericVuidRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="assignGenericVuidResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignDrugClassVuid">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="assignDrugClassVuidRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="assignDrugClassVuidResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="removeDrugClassParent">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="removeDrugClassParentRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="removeDrugClassParentResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="activate">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="activateRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="activateResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="inactivate">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="inactivateRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="inactivateResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateDrugProduct">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="updateDrugProductRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="updateDrugProductResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignIngredientVuid">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="assignIngredientVuidRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="assignIngredientVuidResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateDrugClassParent">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="updateDrugClassParentRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="updateDrugClassParentResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignMedRouteVuid">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="assignMedRouteVuidRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="assignMedRouteVuidResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assignDrugProductVuid">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="assignDrugProductVuidRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="assignDrugProductVuidResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="setNational">
+            <wsdlsoap:operation soapAction="" />
+            <wsdl:input name="setNationalRequest">
+                <wsdlsoap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="setNationalResponse">
+                <wsdlsoap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="PharmacyServices">
+        <wsdl:port name="PharmacyServicesHttpPort" binding="tns:PharmacyServicesHttpBinding">
+            <wsdlsoap:address location="@SERVICE_LOCATION@" />
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
+

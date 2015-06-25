@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping default-cascade="refresh">
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplVaDfDo"
+    table="EPL_VA_DFS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="vadfName"
+        type="java.lang.String"
+        column="VADF_NAME"
+        not-null="true"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="vadfType"
+        type="java.lang.String"
+        column="VADF_TYPE"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="multiSelectYn"
+        type="java.lang.String"
+        column="MULTI_SELECT_YN"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="defaultValue"
+        type="java.lang.String"
+        column="DEFAULT_VALUE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="vadfUsages"
+        type="java.lang.String"
+        column="VADF_USAGES"
+        not-null="true"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional one-to-many association to EplVadfNonlistValueDo -->
+    <set
+        name="eplVadfNonlistValues"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="VADF_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplVadfNonlistValueDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplVadfLovDo -->
+    <set
+        name="eplVadfLovs"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="VADF_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplVadfLovDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplVadfEditablePropertyDo -->
+    <set
+        name="eplVadfEditableProperties"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="VADF_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplVadfEditablePropertyDo"
+        />
+    </set>
+    
+    <!-- bi-directional one-to-many association to EplMultiTextDo -->
+    <set
+        name="eplMultiTexts"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="VADF_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplMultiTextDo"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>
+

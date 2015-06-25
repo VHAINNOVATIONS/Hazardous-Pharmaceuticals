@@ -1,0 +1,28 @@
+<!-- An xsdconfig file must begin with a "config" element in the 
+        http://www.bea.com/2002/09/xbean/config namespace. Also, be sure
+        to declare any namespaces used to qualify types in your schema (here,
+        the namespace corresponding to the pol prefix. -->
+<xb:config xmlns:xb="http://www.bea.com/2002/09/xbean/config">
+
+    <!-- Use the "namespace" element to map a namespace to the Java package
+        name that should be generated.
+    <xb:namespace uri="http://openuri.org/easypoLocal">
+        <xb:package>org.openuri.easypo.xsdconfig</xb:package>
+    </xb:namespace>  -->
+    
+    <xb:namespace uri="gov/va/med/pharmacy/external/service/preencapsulation/peps/inbound/vo/drug/check/request">
+        <xb:package>gov.va.med.pharmacy.peps.external.local.preencapsulation.inbound.vo.drug.check.request</xb:package>
+    </xb:namespace>
+    
+    <xb:namespace uri="gov/va/med/pharmacy/external/service/preencapsulation/peps/inbound/vo/drug/check/response">
+        <xb:package>gov.va.med.pharmacy.peps.external.local.preencapsulation.inbound.vo.drug.check.response</xb:package>
+    </xb:namespace>
+
+    <!-- Use the "qname" element to map schema type names to generated
+        Java type names. In these examples, the name attribute's value is the
+        XML element name; the javaname attribute's value is the Java type 
+        that should be generated. -->
+    <!-- <xb:qname name="pol:CUST" javaname="Customer"/>    -->
+    <xb:qname name="gov/va/med/pharmacy/external/service/preencapsulation/peps/inbound/vo/drug/check/request" javaname="gov/va/med/pharmacy/peps/external/local/preencapsulation/inbound/vo/drug/check/request"/>
+
+</xb:config>

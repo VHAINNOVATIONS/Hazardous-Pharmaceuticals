@@ -1,0 +1,106 @@
+<project name="DependencyTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <target name="buildDependency" unless="dependency.ignore">
+        <fail unless="dependencies" message="Please set the 'dependencies' property." />
+
+        <!-- default dependency.target to init if not already set -->
+        <property name="dependency.target" value="init" />
+
+        <swri:iterator list="${dependencies}" target="${dependency.target}" />
+    </target>
+
+    <target name="setDependencyIgnore">
+        <property name="dependency.ignore" value="true" />
+    </target>
+
+    <target name="setGenerateDependencyTarget">
+        <property name="dependency.target" value="generate" />
+    </target>
+
+    <target name="setCompileDependencyTarget">
+        <property name="dependency.target" value="compile" />
+    </target>
+
+    <target name="setJarDependencyTarget">
+        <property name="dependency.target" value="jar" />
+    </target>
+
+    <target name="setWarDependencyTarget">
+        <property name="dependency.target" value="war" />
+    </target>
+
+    <target name="setEarDependencyTarget">
+        <property name="dependency.target" value="ear" />
+    </target>
+
+    <target name="setBuildUnitTestWithoutFailureDependencyTarget">
+        <property name="dependency.target" value="buildUnitTestWithoutFailure" />
+    </target>
+
+    <target name="setBuildIntegrationTestWithoutFailureDependencyTarget">
+        <property name="dependency.target" value="buildIntegrationTestWithoutFailure" />
+    </target>
+
+    <target name="setBuildTestAllWithoutFailureDependencyTarget">
+        <property name="dependency.target" value="buildTestAllWithoutFailure" />
+    </target>
+
+    <target name="setDeployDependencyTarget">
+        <property name="dependency.target" value="deploy" />
+    </target>
+
+    <macrodef name="iterator" uri="http://www.swri.org">
+        <attribute name="list" />
+        <attribute name="target" />
+        <attribute name="failonerror" default="true" />
+        <sequential>
+            <for list="@{list}" delimiter=",;:" param="module">
+                <sequential>
+                    <if>
+                        <not>
+                            <isset property="module.complete.@{module}" />
+                        </not>
+                        <then>
+                            <swri:progress msg="Executing @{target} on @{module}" />
+
+                            <swri:callTarget target="@{target}" module="@{module}" failonerror="@{failonerror}" />
+
+                            <swri:progress msg="Completed execution on @{module}" />
+                            <property name="module.complete.@{module}" value="true" />
+
+                            <property prefix="@{module}" file="${module.@{module}.dir}/${etc}/${build}/build.properties" />
+
+                            <for list="${@{module}.dependencies}" delimiter=",;:" param="dependency">
+                                <sequential>
+                                    <property name="module.complete.@{dependency}" value="true" />
+                                </sequential>
+                            </for>
+                        </then>
+                        <else>
+                            <swri:progress msg="Skipping @{target} on @{module} because the build for the project has already run" />
+                        </else>
+                    </if>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="callTarget" uri="http://www.swri.org">
+        <attribute name="target" />
+        <attribute name="module" />
+        <attribute name="failonerror" />
+        <sequential>
+            <subant target="@{target}"
+                    inheritall="false"
+                    inheritrefs="false"
+                    buildpath="${module.@{module}.dir}"
+                    verbose="true"
+                    failonerror="@{failonerror}">
+                <propertyset>
+                    <propertyref prefix="init.ignore." />
+                    <propertyref prefix="module.complete." />
+                </propertyset>
+                <property name="build.failure.message.file" value="${build.failure.message.file}" />
+            </subant>
+        </sequential>
+    </macrodef>
+</project>

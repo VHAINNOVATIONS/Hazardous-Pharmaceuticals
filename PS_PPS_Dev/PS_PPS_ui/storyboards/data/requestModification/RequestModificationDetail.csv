@@ -1,0 +1,3 @@
+//VADF name, current value, requested value,reason,req to modify value,req to make editable
+Quantity Dispense Msg,Dispensed for 30 days at a time,Dispensed for 30 days at a time,Will modify to match longer administration period,N,Y
+Days Supply Limit,30,42,Treatment may last up to 6 weeks,Y,N

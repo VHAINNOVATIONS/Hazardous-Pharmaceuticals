@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/orderUnit"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/orderUnit"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+
+    <xsd:complexType name="abbreviationKey">
+        <xsd:simpleContent>
+            <xsd:restriction base="common:stringField">
+                <xsd:minLength value="2" />
+                <xsd:maxLength value="3" />
+
+                <xsd:attribute
+                    name="number"
+                    type="common:fieldNumber"
+                    use="required"
+                    fixed="0.01" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="orderUnitFile">
+        <xsd:sequence>
+            <xsd:element
+                name="candidateKey"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element
+                            name="abbreviation"
+                            type="abbreviationKey"
+                            minOccurs="1"
+                            maxOccurs="1" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="abbreviation"
+                type="abbreviationKey"
+                minOccurs="0"
+                maxOccurs="1" />
+
+            <xsd:element
+                name="expansion"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="3" />
+                            <xsd:maxLength value="30" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="0.02" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <xsd:attribute
+            name="action"
+            use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="common:itemAction">
+                    <xsd:enumeration value="Add" />
+                    <xsd:enumeration value="Modify" />
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+
+        <xsd:attribute
+            name="number"
+            type="common:fileNumber"
+            use="required"
+            fixed="51.5" />
+    </xsd:complexType>
+</xsd:schema>

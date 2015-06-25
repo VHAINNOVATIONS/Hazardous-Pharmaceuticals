@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+                        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <!-- Profile AOP -->
+    <!-- This Spring Application Context is only included if profiling is turned on. Profiling is not intended for use in a deployed production system. -->
+    <bean
+        id="profiler"
+        class="gov.va.med.pharmacy.peps.common.utility.profile.Profiler"
+        autowire-candidate="true" />
+
+    <aop:config>
+        <aop:aspect ref="profiler">
+            <!-- Gather the capability execution times -->
+            <aop:around
+                pointcut="within(gov.va.med.pharmacy.peps..capability.impl.*)"
+                method="profile" />
+
+            <!-- Gather the DAO execution times -->
+            <aop:around
+                pointcut="within(gov.va.med.pharmacy.peps..dao.impl.*)"
+                method="profile" />
+
+            <!-- Gather the utility execution times -->
+            <aop:around
+                pointcut="within(gov.va.med.pharmacy.peps..utility..*)"
+                method="profile" />
+
+            <!-- Log the results once the service call is complete -->
+            <aop:around
+                pointcut="within(gov.va.med.pharmacy.peps..session.impl.*)"
+                method="logProfile" />
+
+            <!-- Log the results once the message call is complete -->
+            <aop:around
+                pointcut="within(gov.va.med.pharmacy.peps..message.impl.*)"
+                method="logProfile" />
+        </aop:aspect>
+    </aop:config>
+</beans>

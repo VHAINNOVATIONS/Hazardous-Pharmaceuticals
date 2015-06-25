@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="ndf_converter_review">
+  <ReviewIssue id="FOUKUG2M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-17 :: 16:50:35:614 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-18 :: 09:00:45:565 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="35">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/DrugIngredientsFileConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Unnecessary Imports</Summary>
+    <Description>These are in quite a few of the converter files.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FOVJG1NG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-18 :: 08:59:10:300 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-18 :: 08:59:37:889 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="143">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/DrugIngredientsFileConverter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is the entire class path needed here&gt;</Summary>
+    <Description>gov.va.med.pharmacy.peps.external.common.vo.outbound.common.ObjectFactory abstractObjectFactory = new gov.va.med.pharmacy.peps.external.common.vo.outbound.common.ObjectFactory();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

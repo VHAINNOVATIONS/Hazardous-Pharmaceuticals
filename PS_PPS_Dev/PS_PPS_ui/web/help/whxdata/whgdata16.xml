@@ -1,0 +1,55 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="VHA Unique Identifier (VUID)" value="These are non-business, unique numbers that are automatically assigned to concepts, properties, and relationships in a terminology to facilitate their access and manipulation by computers." />
+ <entry name="VHIM" value="VHA Health Information Model" />
+ <entry name="VIE" value="VistA Interface Engine" />
+ <entry name="Virtual Due List (VDL)" value="A list of medications that need to be administered to a Patient within a specified time parameter. These include active Continuous, PRN, On-Call, and One-Time medication orders." />
+ <entry name="Virtual Private Network (VPN)" value="A scheme where a portion of a network is connected via Internet, but information sent across the Internet is encrypted. The result is a “virtual network,” which is also part of a larger network entity. This enables users to privately share private information over a public infrastructure." />
+ <entry name="Vision Document" value="The stakeholder’s view of the product to be developed specified in terms of the stakeholders key needs and features. It provides the contractual basis for the more detailed technical requirements." />
+ <entry name="Visit" value="A Patient event that begins when the Patient arrives at a clinic for medical evaluation or treatment and concludes when the Patient departs." />
+ <entry name="VISN" value="Veterans Integrated Service Network" />
+ <entry name="VistA " value="Veterans Health Information Systems and Technology Architecture" />
+ <entry name="VistA Data Systems and Integration Service (VDSI)" value="The service group that manages VistA system changes to ensure compliance with standards and regulating bodies; ensures resource impacts are assessed to allow sufficient time for equipment or software procurements as needed; manages and maintains the VistA data architecture working in close association with OED Program Directors and manages technical/application integration oversight, support, and tools to ensure products inter-operate effectively and make maximal use of existing software tools. VDSI performs five required reviews of VistA products to support these goals, which are typically performed at specific points in the software development lifecycle." />
+ <entry name="VistA Interface Engine (VIE)" value="A Delivery Service routing component that receives messages from the Delivery Service inbound queue and provides message handling based on Delivery Service functionality." />
+ <entry name="VistA Update Message" value="A message from PEPS to VistA that contains an update (e.g., update may include a New Item in PEPS, a change to an existing item in PEPS)." />
+ <entry name="VistALink" value="A standardized, portable, and secure mechanism for establishing connections between Java (J2SE and J2EE) and VistA/M servers.&#160;It is a transport layer that provides HealtheVet-VistA application developers APIs for establishing synchronous, real-time communication between Java applications and VistA/M systems." />
+ <entry name="Visual Flow Management" value="This term is referring to visual systems or the establishment of a visual workplace in which the ultimate outcome is visual information sharing. The bingo board is just a simple example. It provides immediate visual information to the observer. There are numerous visual tools that could be put in place in the pharmacy that would supplement the use of the new PRE system as well as improve Pharmacy work processes. For example, the bin described in “visual order” could include a visual display of the expiration date of items in the bin." />
+ <entry name="Visual Order" value="In the context of inventory management, refers to the use of a physical visual signal or indication that an item needs to be replenished. This might be an empty bin in which its physical condition (empty) generates an automatic refilling action. That single visual signal could trigger real time replenishment from a supply cart. No computer transaction is required at that time. Appropriate use of this process tool would multiply a pharmacy’s capability when combined with the PRE system. The size of the bin determines the Par Level, the fact that is empty defines the Usage, and the Reorder Point, the filling action defines Replenishment. A single computer transaction recording the filling event would generate the tracking and ordering requirements that normally require multiple and time wasting separate transactions including scanning use, generating a pick list, withdrawing from supply, scanning replenishment, and generating a procurement order. See glossary term Visual Flow Management." />
+ <entry name="Vitria" value="A Business Process Integration platform orchestrating interactions between existing and future applications, data, people, and partners to provide real-time visibility and control over strategic business processes." />
+ <entry name="VMS" value="VAX Mumps Standard" />
+ <entry name="VO" value="Value Object" />
+ <entry name="VOB" value="Versioned Object Bases" />
+ <entry name="VPFS" value="Veterans Personal Finance System" />
+ <entry name="VPID" value="VA-wide Person Identifier" />
+ <entry name="VPN" value="Virtual Private Network" />
+ <entry name="VUID" value="VHA Unique Identifier" />
+ <entry name="WAN" value="Wide Area Network" />
+ <entry name="Waste Log" value="A record of all instances when a CS was wasted (i.e., never made it to a patient for any reason: dropped, broken, etc.) including: Date/Time, Location, User ID, VUID, Amount Wasted, Reason for Waste, Investigated (Yes/No)." />
+ <entry name="WBS" value="Work Breakdown Structure" />
+ <entry name="WDDE" value="Ward Drug Dispensing Equipment" />
+ <entry name="Web Service" value="A collection of functions that are packaged as a single entity and published to the network for use by other programs. They are building blocks for creating open distributed systems, and allow companies and individuals to quickly and cheaply make their digital assets available worldwide." />
+ <entry name="Web Services Interoperability (WS-I)" value="A consortium of a large number of companies, representing a wide range of industries including automotive, consumer packaged goods, finance, government, insurance, media, telecommunications, travel, and the computer industry. WS-I is focused on promoting the interoperability of Web services applications across different computing environments and programming languages. It does so by providing advice, best practices, and other resources intended to assist developers of Web services applications." />
+ <entry name="White-box Testing" value="A testing technique that derives test cases from the structure of a system or software program." />
+ <entry name="Wide Area Network (WAN)" value="A physical or logical network that provides capabilities for a number of independent devices to communicate with each other over a common transmission-interconnected topology in geographic areas larger than those served by local area networks." />
+ <entry name="Witness" value="An authorized person who co-signs an action taken by another Caregiver to attest to the correctness of the action as documented (e.g., witness of CS waste, witness of chemotherapy drug administration)." />
+ <entry name="Witness for Administration" value="A VA Data Field used to specify whether an item needs to have a witness in order to be administered to a patient." />
+ <entry name="WLES" value="WebLogic Enterprise Security" />
+ <entry name="Work Product" value="An item produced by an individual or Project Team. The OED Quality Policy specifies mandatory work products for review: Project Management Plan (PMP), Software Requirements Specification (SRS), Software Design Document (SDD), Function Point Workbook, Use Cases and Use Case scenarios, Supplemental Specifications (if Use Cases were created), Test Plan, Test Scripts, Code, Documentation (Release Notes, User Manual, Technical Manual, Installation Guide, Security Guide), Patch Components (if released through the National Patch Module). When object-oriented methodology is used for development during highly critical projects, class diagrams, entity relationship diagrams, and data flow diagrams must undergo the Work Product Review Process." />
+ <entry name="Work Product Review (WPR)" value="The formal examination or analysis of a work product by project or possibly non-project personnel." />
+ <entry name="Workload Instance Credit" value="Credit given to a user by the system for the number of occurrences related to a specific activity. For example, a user might select Profile Review as the activity, and the user may indicate a number of occurrences for that activity. The system will then credit the user with the number of occurrences indicated for the activity." />
+ <entry name="WPR" value="Work Product Review" />
+ <entry name="WS" value="Ward Stock" />
+ <entry name="WS-I" value="Web Services Interoperability" />
+ <entry name="X12N" value="ANSI X12 Subcommittee N" />
+ <entry name="XA" value="eXtensible Architecture" />
+ <entry name="XACML" value="eXtensible Access Control Markup Language" />
+ <entry name="XDE" value="Extended Development Experience (IBM, Corp. Rational)" />
+ <entry name="Xdoclet" value="An open source code generation engine that enables Attribute-Oriented Programming for Java. It allows for integration of meta data (attributes) into software code to increase its significance. Special JavaDoc tags are used to implement this functionality. Xdoclet parses source files and generates many artifacts such as XML descriptors and/or source code. These files are generated from templates that use the information provided in the source code and its JavaDoc tags." />
+ <entry name="XMI" value="XML Metadata Interchange" />
+ <entry name="XML" value="eXtensible Markup Language" />
+ <entry name="XOR" value="Logical eXclusive OR" />
+ <entry name="XPn" value="Extension Points" />
+ <entry name="XSD" value="XML Schema Definition" />
+ <entry name="XUI" value="eXtensible User InterfaceSource: Starfield B. Primary care: concept, evaluation, and policy. New York: Oxford University Press, 1992" />
+
+</glossarydata>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- This is the NATIONAL ServiceContextTemplate.xml file -->
+
+    <!-- National Services -->
+    <bean
+        id="consoleService"
+        class="gov.va.med.pharmacy.peps.service.national.session.impl.ConsoleServiceImpl"
+        autowire-candidate="true">
+        <property
+            name="consoleCapability"
+            ref="consoleCapability" />
+    </bean>
+
+    <bean
+        id="siteUpdateScheduleService"
+        class="gov.va.med.pharmacy.peps.service.national.session.impl.SiteUpdateScheduleServiceImpl"
+        autowire-candidate="true">
+        <property
+            name="siteUpdateScheduleCapability"
+            ref="siteUpdateScheduleCapability" />
+    </bean>
+
+    <!-- National Capabilities -->
+    <bean
+        id="requestCapability"
+        class="gov.va.med.pharmacy.peps.service.national.capability.impl.RequestCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="requestDomainCapability"
+            ref="requestDomainCapability" />
+        <property
+            name="managedItemCapability"
+            ref="managedItemCapability" />
+        <property
+            name="notificationDomainCapability"
+            ref="notificationDomainCapability" />
+        <property
+            name="requestStateMachineFactory"
+            ref="requestStateMachineFactory" />
+    </bean>
+
+    <bean
+        id="consoleCapability"
+        class="gov.va.med.pharmacy.peps.service.national.capability.impl.ConsoleCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="sendToLocalCapability"
+            ref="sendToLocalCapability" />
+        <property
+            name="siteConfigDomainCapability"
+            ref="siteConfigDomainCapability" />
+        <property
+            name="versionCapability"
+            ref="versionCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+        <property
+            name="consoleDomainCapability"
+            ref="consoleDomainCapability" />
+        <property
+            name="buildVersionCapability"
+            ref="buildVersionCapability" />
+        <property
+            name="vistaAuthoritativeDomainCapability"
+            ref="vistaAuthoritativeDomainCapability" />
+        <property
+            name="synchronizationStatusCapability"
+            ref="synchronizationStatusCapability" />
+        <property
+            name="drugReferenceCapability"
+            ref="drugReferenceCapability" />
+
+    </bean>
+
+
+
+    <bean
+        id="searchTemplateCapability"
+        class="gov.va.med.pharmacy.peps.service.national.capability.impl.SearchTemplateCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="searchTemplateDomainCapability"
+            ref="searchTemplateDomainCapability" />
+        <property
+            name="sendToLocalCapability"
+            ref="sendToLocalCapability" />
+    </bean>
+
+    <bean
+        id="managedItemCapability"
+        class="gov.va.med.pharmacy.peps.service.national.capability.impl.ManagedItemCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="requestCapability"
+            ref="requestCapability" />
+         <property
+            name="genericNameDomainCapability"
+            ref="genericNameDomainCapability" />
+	     <property
+            name="ingredientDomainCapability"
+            ref="ingredientDomainCapability" />    
+        <property
+            name="requestDomainCapability"
+            ref="requestDomainCapability" />
+        <property
+            name="nationalSettingDomainCapability"
+            ref="nationalSettingDomainCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+        <property
+            name="partialSaveMgtDomainCapability"
+            ref="partialSaveMgtDomainCapability" />
+        <property
+            name="vistaFileSynchCapability"
+            ref="vistaFileSynchCapability" />
+        <property
+            name="managedItemCapabilityFactory"
+            ref="managedItemCapabilityFactory" />
+        <property
+            name="dataFieldsCapability"
+            ref="dataFieldsCapability" />
+        <property
+            name="drugReferenceCapability"
+            ref="drugReferenceCapability" />
+	    <property
+            name="fdbNdcDomainCapability"
+            ref="fdbNdcDomainCapability" />
+        <property
+            name="fdbProductDomainCapability"
+            ref="fdbProductDomainCapability" />
+        <property
+            name="stsCapability"
+            ref="stsCapability" />
+        <property
+            name="itemAuditHistoryDomainCapability"
+            ref="itemAuditHistoryDomainCapability" />
+        <property
+            name="notificationDomainCapability"
+            ref="notificationDomainCapability" />
+        <property 
+        	name="specialHandlingDomainCapability" 
+        	ref="specialHandlingDomainCapability" />        	
+        <property 
+            name="ndfSynchQueueDomainCapability" 
+            ref="ndfSynchQueueDomainCapability" />
+    </bean>
+
+    <bean
+        id="siteUpdateScheduleCapability"
+        class="gov.va.med.pharmacy.peps.service.national.capability.impl.SiteUpdateScheduleCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="siteUpdateScheduleDomainCapability"
+            ref="siteUpdateScheduleDomainCapability" />
+        <property
+            name="consoleCapability"
+            ref="consoleCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+        <property
+            name="sendToLocalCapability"
+            ref="sendToLocalCapability" />
+        <property
+            name="ndcImageCapability"
+            ref="ndcImageCapability" />
+    </bean>
+
+    <!-- National MessagingService -->
+    <bean
+        id="receiveFromLocalCapability"
+        class="gov.va.med.pharmacy.peps.service.national.messagingservice.inbound.capability.impl.ReceiveFromLocalCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="requestCapability"
+            ref="requestCapability" />
+        <property
+            name="consoleCapability"
+            ref="consoleCapability" />
+        <property
+            name="siteUpdateScheduleCapability"
+            ref="siteUpdateScheduleCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+    </bean>
+
+    <bean
+        id="receiveFromLocalService"
+        class="gov.va.med.pharmacy.peps.service.national.messagingservice.inbound.message.impl.ReceiveFromLocalServiceImpl"
+        autowire-candidate="true">
+        <property
+            name="receiveFromLocalCapability"
+            ref="receiveFromLocalCapability" />
+    </bean>
+
+    <!-- HospitalQueueService -->
+    <bean
+        id="hospitalQueueService"
+        class="gov.va.med.pharmacy.peps.service.national.messagingservice.inbound.message.impl.HospitalQueueServiceImpl"
+        autowire-candidate="true">
+        <property
+            name="hospitalQueueCapability"
+            ref="hospitalQueueCapability" />
+    </bean>
+
+    <bean
+        id="hospitalQueueCapability"
+        class="gov.va.med.pharmacy.peps.service.national.messagingservice.inbound.capability.impl.HospitalQueueCapabilityImpl" 
+        autowire-candidate="true"/>
+
+</beans>

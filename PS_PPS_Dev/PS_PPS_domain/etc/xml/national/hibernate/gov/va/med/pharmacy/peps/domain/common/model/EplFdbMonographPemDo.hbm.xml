@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplFdbMonographPemDo" 
+    table="EPL_FDB_MONOGRAPH_PEM"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="monographId"
+        type="java.lang.Long"
+        column="MONOGRAPH_ID">
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="englishTitle"
+        type="java.lang.String"
+        column="ENGLISH_TITLE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishTitle"
+        type="java.lang.String"
+        column="SPANISH_TITLE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+     <property
+        name="englishBrandName"
+        type="java.lang.String"
+        column="ENGLISH_BRAND_NAME"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishBrandName"
+        type="java.lang.String"
+        column="SPANISH_BRAND_NAME"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="englishMissedDose"
+        type="java.lang.String"
+        column="ENGLISH_MISSED_DOSE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishMissedDose"
+        type="java.lang.String"
+        column="SPANISH_MISSED_DOSE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+    <property
+        name="englishPhonetics"
+        type="java.lang.String"
+        column="ENGLISH_PHONETICS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishPhonetics"
+        type="java.lang.String"
+        column="SPANISH_PHONETICS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+    <property
+        name="englishHowToTake"
+        type="java.lang.String"
+        column="ENGLISH_HOW_TO_TAKE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishHowToTake"
+        type="java.lang.String"
+        column="SPANISH_HOW_TO_TAKE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+    <property
+        name="englishDrugInteractions"
+        type="java.lang.String"
+        column="ENGLISH_DRUG_INTERACTIONS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishDrugInteractions"
+        type="java.lang.String"
+        column="SPANISH_DRUG_INTERACTIONS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>     
+    
+      <property
+        name="englishMedicalAlerts"
+        type="java.lang.String"
+        column="ENGLISH_MEDICAL_ALERTS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishMedicalAlerts"
+        type="java.lang.String"
+        column="SPANISH_MEDICAL_ALERTS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property> 
+    
+     <property
+        name="englishNotes"
+        type="java.lang.String"
+        column="ENGLISH_NOTES"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishNotes"
+        type="java.lang.String"
+        column="SPANISH_NOTES"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>  
+    
+     <property
+        name="englishOverdose"
+        type="java.lang.String"
+        column="ENGLISH_OVERDOSE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishOverdose"
+        type="java.lang.String"
+        column="SPANISH_OVERDOSE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>            
+    
+     <property
+        name="englishPrecautions"
+        type="java.lang.String"
+        column="ENGLISH_PRECAUTIONS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishPrecautions"
+        type="java.lang.String"
+        column="SPANISH_PRECAUTIONS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>     
+    
+     <property
+        name="englishStorage"
+        type="java.lang.String"
+        column="ENGLISH_STORAGE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishStorage"
+        type="java.lang.String"
+        column="SPANISH_STORAGE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>   
+    
+     <property
+        name="englishSideEffects"
+        type="java.lang.String"
+        column="ENGLISH_SIDE_EFFECTS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishSideEffects"
+        type="java.lang.String"
+        column="SPANISH_SIDE_EFFECTS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>   
+    
+      <property
+        name="englishUses"
+        type="java.lang.String"
+        column="ENGLISH_USES"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishUses"
+        type="java.lang.String"
+        column="SPANISH_USES"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>    
+    
+      <property
+        name="englishWarnings"
+        type="java.lang.String"
+        column="ENGLISH_WARNINGS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishWarnings"
+        type="java.lang.String"
+        column="SPANISH_WARNINGS"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>   
+    
+      <property
+        name="englishDisclaimer"
+        type="java.lang.String"
+        column="ENGLISH_DISCLAIMER"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    
+      <property
+        name="spanishDisclaimer"
+        type="java.lang.String"
+        column="SPANISH_DISCLAIMER"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>                    
+    
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.sql.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.sql.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+</class>
+</hibernate-mapping>

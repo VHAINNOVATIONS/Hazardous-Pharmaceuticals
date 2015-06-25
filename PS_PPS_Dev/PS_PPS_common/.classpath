@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="*.keep|*.keep.*|**/*.keep|**/*.keep.*|*.contrib|*.contrib.*|**/*.contrib|**/*.contrib.*|*.merge|*.merge.*|**/*.merge|**/*.merge.*" kind="src" path="src"/>
+	<classpathentry excluding="*.keep|*.keep.*|**/*.keep|**/*.keep.*|*.contrib|*.contrib.*|**/*.contrib|**/*.contrib.*|*.merge|*.merge.*|**/*.merge|**/*.merge.*" kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="lib" path="build/meta"/>
+	<classpathentry kind="lib" path="etc"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/junitperf-1.9.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/log4j-1.2.15.jar" sourcepath="/PS_PPS_lib/Common/log/log4j-1.2.15-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/junit-4.8.2.jar" sourcepath="/PS_PPS_lib/Common/build/test/junit-4.8.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-core-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-core-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-context-support-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-context-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-context-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-web-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-web-3.0.5.RELEASE-sources.jar"/>
+    <classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-aop-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-aop-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-beans-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring-beans-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-tx-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-tx-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/profile/aspectjrt-1.6.11.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/profile/aspectjweaver-1.6.11.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-bean-collections-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-core-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-collections-3.2.1.jar" sourcepath="etc/source/commons-collections-3.2.1-src.zip"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-lang-2.6.jar" sourcepath="/PS_PPS_lib/Common/commons/commons-lang-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/weblogic/weblogic.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/easymock-2.5.2.jar" sourcepath="/PS_PPS_lib/Common/build/test/easymock-2.5.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/database/derbyclient-10.3.1.4.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/database/ojdbc5-11.2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/database/JDK15-CacheDB-2008.2.1.902.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/cglib-nodep-2.2.2.jar" sourcepath="/PS_PPS_lib/Common/spring/cglib-nodep-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/database/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/easymockclassextension-2.5.2.jar" sourcepath="/PS_PPS_lib/Common/build/test/easymockclassextension-2.5.2-sources.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

@@ -1,0 +1,4 @@
+//genericName, Strength, Unit, Dose Form, VA Drug Class, Local Use, Request Status, Formulary, State
+Acetaminophen,200,mg,Tablet,Product,Y,Pending,Formulary,Active
+Tylenol,500,ml,Capsule,Ingredient,N,Approved,Formulary,Active
+Tylenol,250,mg,Tablet,null,Y,Pending,????,????,

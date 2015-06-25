@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF2NVXHI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:00:49:734 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:01:02:562 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NXHSE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:02:02:702 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:02:05:671 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NYATJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:02:40:327 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:02:45:077 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NZ7ZZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:03:23:327 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:03:26:765 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NZZ07">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:03:58:327 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:04:00:624 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O1FK4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:05:06:436 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:05:12:389 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O2SHE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:06:09:842 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:06:12:811 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplIngredientDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O3LDB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:06:47:279 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:06:51:498 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplInpatientPharmLocationDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O4KJD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:07:32:857 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:07:38:310 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplIntendedUseDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O5I0N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:08:16:247 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:08:20:310 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O6Y4Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:09:23:794 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:09:29:981 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplLocalPossibleDosageDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OHK51">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:17:38:869 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:17:44:884 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplManufacturerDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OJ8VN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:18:57:587 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:19:01:071 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplMedRouteDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OK6S4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:19:41:524 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:19:45:384 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OLI6P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:20:42:961 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:20:46:649 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OM7CJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:21:15:571 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:21:18:836 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplNewReqValueDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OMZXL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:21:52:617 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:21:55:977 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiDrugTextDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OO7I6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:22:49:086 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:22:56:961 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OPEPA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:23:45:070 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:24:03:085 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOiSynonymDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OQANV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:24:26:491 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:24:30:288 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOldReqValueDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2QXPUL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:26:11:997 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:26:23:903 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOrderableItemDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RAG25">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:36:05:837 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:36:20:102 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplOrderUnitDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RBEO8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:36:50:696 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:36:53:711 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPackageSizeDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RBVM1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:37:12:649 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:37:17:399 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPackageTypeDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RDBGC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:38:19:836 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:39:13:476 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplPartialSaveMgtDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should Length = 30</Summary>
+    <Description>The size of the item revision number should match the Item VO revision number.  Already captured as a ClearQuest issue.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RF1X0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:39:40:788 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:39:43:570 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProdDrugClassAssocDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RFHWZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:40:01:523 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:40:08:304 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProdIngredientAssocDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RG65S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:40:32:944 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:40:37:788 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplProductDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RH28A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:41:14:506 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:41:20:241 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDetailDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RHSFF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:41:48:459 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:41:51:709 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplRequestDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RICGS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:42:14:428 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:42:18:615 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSeqNumDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RIQEY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:42:32:506 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:42:35:553 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSiteConfigDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RJNHH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:43:15:365 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:43:21:552 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplSynonymDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RK13I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:43:33:006 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:43:36:615 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplTradeNameDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RKPT9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:44:05:037 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:44:08:365 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RL96A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:44:30:130 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:44:34:036 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDfDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RM10W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:45:06:224 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:45:08:833 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDfDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RN0DW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:45:52:052 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:45:55:473 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfEditablePropertyDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RNT46">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:46:29:286 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:46:31:536 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfLovDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2ROL02">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:47:05:426 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:47:09:410 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfNonlistValueDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RQKT4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:48:38:488 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:48:43:050 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVadfOwnerDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RR8LW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:49:09:332 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:49:13:519 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDispenseUnitDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RRMWN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:49:27:863 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:49:30:628 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaDrugClassDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RS8WQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:49:56:378 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:50:12:847 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="1">etc/xml/local/hibernate/gov/va/med/pharmacy/peps/domain/common/model/EplVaGenNameDo.hbm.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues found</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

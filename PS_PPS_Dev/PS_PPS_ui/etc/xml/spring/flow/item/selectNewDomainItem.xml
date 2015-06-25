@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="manageTemplate">
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <input
+        name="parentItem"
+        value="flowScope.childitem"
+        type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+
+    <input
+        name="parentAttribute"
+        value="flowScope.parentAttribute"
+        type="string" />
+
+    <subflow-state
+        id="manageTemplate"
+        subflow="manageTemplate">
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="templateMethod"
+            value="'openBlankTemplate'"
+            type="string" />
+        <transition
+            on="cancel"
+            to="cancel" />
+        <transition
+            on="end"
+            to="selectDomain">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+        </transition>
+    </subflow-state>
+
+    <action-state id="selectDomain">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="selectDomain" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+
+    <end-state id="cancel">
+        <output
+            name="parentItem"
+            value="flowScope.childitem"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+    </end-state>
+
+    <end-state id="end">
+        <output
+            name="parentItem"
+            value="flowScope.childitem"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+    </end-state>
+</flow>

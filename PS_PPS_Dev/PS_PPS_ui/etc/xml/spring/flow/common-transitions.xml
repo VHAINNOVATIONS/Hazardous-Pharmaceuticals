@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-login,common-exception"
+    abstract="true">
+
+    <action-state id="removeRow">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="removeRow" />
+        </evaluate>
+        <transition
+            on="success"
+            to="${flowScope.previousViewState}" />
+    </action-state>
+
+    <global-transitions>
+        <transition
+            on="removeRow"
+            to="removeRow" />
+        <transition
+            on="input"
+            to="${flowScope.previousViewState}" />
+    </global-transitions>
+</flow>

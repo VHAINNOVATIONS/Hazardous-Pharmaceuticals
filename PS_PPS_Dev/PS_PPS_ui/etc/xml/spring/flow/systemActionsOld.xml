@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="systemActions">
+
+    <view-state
+        id="systemActions"
+        view="system.actions.edit">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="console" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="sendEntireDrugFile"
+            to="sendEntireDrugFile" />
+    </view-state>
+
+    <action-state id="sendEntireDrugFile">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="console" />
+            <attribute
+                name="actionMethod"
+                value="sendEntireDrugFile" />
+        </evaluate>
+        <transition
+            on="success"
+            to="systemActions" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+
+    <end-state
+        id="end"
+        view="flowRedirect:systemActions" />
+</flow>

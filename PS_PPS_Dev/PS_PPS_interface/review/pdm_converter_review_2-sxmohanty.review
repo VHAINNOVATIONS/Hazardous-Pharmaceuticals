@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="pdm_converter_review_2">
+  <ReviewIssue id="FR53VBZK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:00:16:112 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:02:10:382 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="63">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>getting datafields</Summary>
+    <Description>replace the code with the following to see the compile error when data field type do not match:&#xD;
+DataFields&lt;DataField&gt; dataFields =orderableItemVo.getDataFields();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR54BSSV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:13:04:399 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:14:09:446 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="97">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Incorrect field key</Summary>
+    <Description>the correct field key is OI_IV_FLAG, not IV_FLAG</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR54OQ7L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:23:07:569 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:24:07:039 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="156">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Field key MED_ROUTE not correct</Summary>
+    <Description>are you looking for OI route on local med route??</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR54WKJU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:29:13:482 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:30:03:283 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="174">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Need to find the default value</Summary>
+    <Description>you need to find the adm schedule that is marked default.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR552FMQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:33:47:042 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:34:03:835 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="240">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>what is this field key??</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR559BLG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:39:08:404 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:39:39:677 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="259">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Incorrect synonym field key</Summary>
+    <Description>the synonym field key for OI is ORDERABLE_ITEM_SYNONYM</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR55ER5V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:43:21:859 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:43:38:636 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add java doc comment</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

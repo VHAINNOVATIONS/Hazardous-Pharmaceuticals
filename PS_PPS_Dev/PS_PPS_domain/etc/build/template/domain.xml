@@ -1,0 +1,759 @@
+<project name="DomainTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initDomainTemplate" uri="http://www.swri.org">
+        <sequential>
+            <path id="Domain.build.class.path">
+                <!-- putting domains libs first, as it may need them for precendence -->
+                <fileset dir="${module.BuildLib.dir}/${module.Domain}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset>
+                <path refid="build.class.path" />
+            </path>
+
+            <taskdef name="dbunitXls" classname="org.swri.ant.task.DbUnitXlsTask" classpathref="Domain.build.class.path" />
+
+            <taskdef name="middlegen" classname="middlegen.MiddlegenTask" classpathref="Domain.build.class.path" />
+
+            <taskdef name="hibernatetool"
+                     classname="org.hibernate.tool.ant.HibernateToolTask"
+                     classpathref="Domain.build.class.path" />
+
+            <taskdef name="hbm2ddl"
+                     classname="org.hibernate.tool.hbm2ddl.SchemaExportTask"
+                     classpathref="Domain.build.class.path" />
+
+            <property file="${etc.dir}/${build}/template/properties/${local.database.flavor}.properties" prefix="local" />
+            <property file="${etc.dir}/${build}/template/properties/${national.database.flavor}.properties"
+                      prefix="national" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="exportDatabase" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <sequential>
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.@{environment}.database.names}" delimiter=",;:" param="databaseName">
+                        <sequential>
+                            <swri:exportData environment="@{environment}" host="@{host}" databaseName="@{databaseName}" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="refreshDatabase" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="file" />
+        <sequential>
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <if>
+                        <equals arg1="@{environment}" arg2="local" />
+                        <then>
+                            <var name="site.number" value="671" />
+                        </then>
+                        <else>
+                            <var name="site.number" value="999" />
+                        </else>
+                    </if>
+
+                    <for list="${@{host}.@{environment}.database.names}" delimiter=",;:" param="databaseName">
+                        <sequential>
+                        	<echo>databaseName: @{databaseName}</echo>
+                            <swri:cleanData environment="@{environment}" host="@{host}" databaseName="@{databaseName}" />
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}.ddl" />
+                            <!-- Pause for ten seconds as there seems to be a timing issue with Oracle's SQL committing and the data getting loaded. -->
+                            <sleep seconds="10" />
+                            <swri:data environment="@{environment}"
+                                       host="@{host}"
+                                       databaseName="@{databaseName}"
+                                       file="@{file}.xls" />
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}-FK.ddl" />
+                            <swri:updatePharmacySystem environment="@{environment}"
+                                                       host="@{host}"
+                                                       databaseName="@{databaseName}"
+                                                       siteNumber="${site.number}" />
+                            <math result="site.number"
+                                  operand1="${site.number}"
+                                  operation="+"
+                                  operand2="10"
+                                  datatype="int" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="refreshPerformanceDatabase" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="file" />
+        <sequential>
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.@{environment}.database.names}" delimiter=",;:" param="databaseName">
+                        <sequential>
+                            <if>
+                                <equals arg1="@{environment}" arg2="local" />
+                                <then>
+                                    <var name="site.number" value="671" />
+                                </then>
+                                <else>
+                                    <var name="site.number" value="999" />
+                                </else>
+                            </if>
+                        
+                            <swri:cleanData environment="@{environment}" host="@{host}" databaseName="@{databaseName}" />
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}.ddl" />
+                            <!-- Pause for ten seconds as there seems to be a timing issue with Oracle's SQL committing and the data getting loaded. -->
+                            <sleep seconds="10" />
+                            <swri:performanceData environment="@{environment}"
+                                                  host="@{host}"
+                                                  databaseName="@{databaseName}" />
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}-FK.ddl" />
+                            <swri:updatePharmacySystem environment="@{environment}"
+                                                       host="@{host}"
+                                                       databaseName="@{databaseName}"
+                                                       siteNumber="${site.number}" />
+                            <math result="site.number"
+                                  operand1="${site.number}"
+                                  operation="+"
+                                  operand2="10"
+                                  datatype="int" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="refreshDatabaseMigration" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="file" />
+        <sequential>
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <if>
+                        <equals arg1="@{environment}" arg2="local" />
+                        <then>
+                            <var name="site.number" value="671" />
+                        </then>
+                        <else>
+                            <var name="site.number" value="999" />
+                        </else>
+                    </if>
+
+                    <for list="${@{host}.@{environment}.database.names}" delimiter=",;:" param="databaseName">
+                        <sequential>
+                            <swri:cleanData environment="@{environment}" host="@{host}" databaseName="@{databaseName}" />
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}.ddl" />
+                            <!-- Pause for ten seconds as there seems to be a timing issue with Oracle's SQL committing and the data getting loaded. -->
+                            <sleep seconds="10" />
+                            <swri:migrationData environment="@{environment}"
+                                       host="@{host}"
+                                       databaseName="@{databaseName}"
+                                       file="@{file}.xls" />
+                            <swri:ddl environment="@{environment}"
+                                      host="@{host}"
+                                      databaseName="@{databaseName}"
+                                      file="@{file}-FK.ddl" />
+                            <swri:updatePharmacySystem environment="@{environment}"
+                                                       host="@{host}"
+                                                       databaseName="@{databaseName}"
+                                                       siteNumber="${site.number}" />
+                            <math result="site.number"
+                                  operand1="${site.number}"
+                                  operation="+"
+                                  operand2="10"
+                                  datatype="int" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+    
+    <macrodef name="cleanData" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="databaseFlavor" default="${@{environment}.database.flavor}" />
+        <attribute name="dir" default="${etc.dir}/database/ddl/@{databaseFlavor}" />
+        <attribute name="file" default="@{databaseName}.ddl" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="cache" />
+                <then>
+                    <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+                    <echo level="info">Calling Cache CleanData procedure on @{url} as ${database.user}/${database.password}</echo>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         caching="true"
+                         onerror="continue"
+                         classpathref="Domain.build.class.path">
+                		CALL CleanData;
+            		</sql>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="updatePharmacySystem" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="siteNumber" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="databaseFlavor" default="${@{environment}.database.flavor}" />
+        <attribute name="dir" default="${etc.dir}/database/ddl/@{databaseFlavor}" />
+        <attribute name="file" default="@{databaseName}.ddl" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <if>
+                <equals arg1="@{environment}" arg2="local" />
+                <then>
+                    <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+                    <echo level="info">Updating Pharmacy System ID to @{siteNumber} on @{url} as ${database.user}/${database.password}</echo>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         caching="true"
+                         onerror="continue"
+                         classpathref="Domain.build.class.path">
+                		UPDATE EPL_PHARMACY_SYSTEM SET SITE_NUMBER = @{siteNumber} WHERE SITE_NUMBER = 671;
+            		</sql>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <!-- Since Ant cannot double resolve attributes within a macrodef, we have another macrodef to do so as a workaround -->
+    <macrodef name="setUser" uri="http://www.swri.org">
+        <attribute name="databaseHost" />
+        <attribute name="databaseName" />
+        <attribute name="userProperty" default="@{databaseHost}.@{databaseName}.user" />
+        <attribute name="passwordProperty" default="@{databaseHost}.@{databaseName}.password" />
+        <attribute name="schemaProperty" default="@{databaseHost}.@{databaseName}.schema" />
+        <sequential>
+            <var name="database.user" value="${@{userProperty}}" />
+            <var name="database.password" value="${@{passwordProperty}}" />
+            <var name="database.schema" value="${@{schemaProperty}}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="ddl" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="databaseFlavor" default="${@{environment}.database.flavor}" />
+        <attribute name="dir" default="${etc.dir}/database/ddl/@{databaseFlavor}" />
+        <attribute name="file" default="@{databaseName}.ddl" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <echo level="info">Executing DDL on @{url} as ${database.user}/${database.password}</echo>
+            <sql driver="@{driver}"
+                 url="@{url}"
+                 userid="${database.user}"
+                 password="${database.password}"
+                 delimiter=";"
+                 autocommit="true"
+                 caching="true"
+                 onerror="continue"
+                 classpathref="Domain.build.class.path">
+
+                <transaction src="@{dir}/@{file}" />
+            </sql>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="oracle" />
+                <then>
+                    <echo level="info">Purging Oracle recycle bin</echo>
+                    <sql driver="@{driver}"
+                         url="@{url}"
+                         userid="${database.user}"
+                         password="${database.password}"
+                         delimiter=";"
+                         autocommit="true"
+                         caching="true"
+                         onerror="continue"
+                         classpathref="Domain.build.class.path">
+                		purge recyclebin;
+            		</sql>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="exportData" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="dir" default="${build.dir}/database" />
+        <attribute name="file" default="${@{host}.database.url.host}-@{databaseName}.xls" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <mkdir dir="@{dir}" />
+            <echo level="info">Exporting data on @{url} as ${database.user}/${database.password}</echo>
+            <dbunitXls driver="@{driver}"
+                       url="@{url}"
+                       user="${database.user}"
+                       password="${database.password}"
+                       schema="${database.schema}"
+                       xlsPath="@{dir}/@{file}"
+                       export="true" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="data" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="dir" default="${etc.dir}/database/data" />
+        <attribute name="fileFormat" default="xls" />
+        <attribute name="file" default="@{databaseName}.@{fileFormat}" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <echo level="info">Refreshing data on @{url} as ${database.user}/${database.password}</echo>
+            <dbunitXls driver="@{driver}"
+                       url="@{url}"
+                       user="${database.user}"
+                       password="${database.password}"
+                       schema="${database.schema}"
+                       xlsPath="@{dir}/@{file}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="performanceData" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="databaseFlavor" default="${@{environment}.database.flavor}" />
+        <attribute name="dir" default="${etc.dir}/database/data/performance/@{environment}" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <echo level="info">Executing insert SQL on @{url} as ${database.user}/${database.password}</echo>
+            <sql driver="@{driver}"
+                 url="@{url}"
+                 userid="${database.user}"
+                 password="${database.password}"
+                 delimiter=";"
+                 autocommit="true"
+                 caching="true"
+                 onerror="continue"
+                 classpathref="Domain.build.class.path">
+                <path>
+                    <fileset dir="@{dir}">
+                        <include name="*.sql" />
+                    </fileset>
+                </path>
+            </sql>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="migrationData" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseName" />
+        <attribute name="host" />
+        <attribute name="databaseHost" default="${@{host}.database.url.host}" />
+        <attribute name="dir" default="${etc.dir}/database/data/migration" />
+        <attribute name="fileFormat" default="xls" />
+        <attribute name="file" default="@{databaseName}.@{fileFormat}" />
+        <attribute name="driver" default="${@{environment}.database.driver}" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+            <echo level="info">Refreshing data on @{url} as ${database.user}/${database.password}</echo>
+            <dbunitXls driver="@{driver}"
+                       url="@{url}"
+                       user="${database.user}"
+                       password="${database.password}"
+                       schema="${database.schema}"
+                       xlsPath="@{dir}/@{file}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="createDdl" uri="http://www.swri.org">
+        <sequential>
+            <swri:hbm2ddl environment="local" databaseFlavor="derby" databaseName="LocalEPL" />
+            <swri:hbm2ddl environment="national" databaseFlavor="derby" databaseName="NationalEPL" />
+
+            <swri:hbm2ddl environment="local" databaseFlavor="cache" databaseName="LocalEPL" />
+
+            <swri:hbm2ddl environment="national" databaseFlavor="oracle" databaseName="NationalEPL" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="hbm2ddl" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseFlavor" />
+        <attribute name="databaseName" />
+        <attribute name="destDir" default="${etc.dir}/database/ddl/@{databaseFlavor}" />
+        <sequential>
+            <hbm2ddl properties="${etc.dir}/${build}/template/properties/@{databaseFlavor}.properties"
+                     output="@{destDir}/@{databaseName}.ddl"
+                     drop="false"
+                     quiet="false"
+                     delimiter=";"
+                     text="true">
+                <fileset dir="${etc.xml.dir}/@{environment}/hibernate">
+                    <include name="**/*.hbm.xml" />
+                </fileset>
+            </hbm2ddl>
+            <if>
+                <equals arg1="@{databaseFlavor}" arg2="oracle" />
+                <then>
+                    <replaceregexp match="cascade constraints" replace="cascade constraints purge" byline="true">
+                        <fileset dir="@{destDir}">
+                            <include name="@{databaseName}.ddl" />
+                        </fileset>
+                    </replaceregexp>
+                    <replaceregexp match="raw" replace="number" byline="true">
+                        <fileset dir="@{destDir}">
+                            <include name="@{databaseName}.ddl" />
+                        </fileset>
+                    </replaceregexp>
+                </then>
+                <elseif>
+                    <equals arg1="@{databaseFlavor}" arg2="cache" />
+                    <then>
+                        <replaceregexp match="restrict" replace="cascade" byline="true">
+                            <fileset dir="@{destDir}">
+                                <include name="@{databaseName}.ddl" />
+                            </fileset>
+                        </replaceregexp>
+                    </then>
+                </elseif>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="hibernate" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <sequential>
+            <swri:middlegen environment="@{environment}" />
+            <swri:hbm2java environment="@{environment}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="middlegen" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="hbmXmlDir" default="${build.meta.dir}/xml/@{environment}/hibernate" />
+        <attribute name="package" default="gov.va.med.pharmacy.peps.domain.common.model" />
+        <attribute name="hostProperty" default="@{environment}.hosts" />
+        <sequential>
+
+            <for list="${@{environment}.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.@{environment}.database.names}" delimiter=",;:" param="databaseName">
+                        <sequential>
+                            <swri:setUser databaseHost="${@{host}.database.url.host}" databaseName="@{databaseName}" />
+                            <echo level="info">Running Middlegen at ${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}${@{host}.database.url.host}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties} as ${database.user}/${database.password}</echo>
+
+                            <middlegen appname="@{databaseName}"
+                                       prefsdir="${etc.dir}/middlegen"
+                                       gui="${gui}"
+                                       databaseurl="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}${@{host}.database.url.host}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}"
+                                       driver="${@{environment}.database.driver}"
+                                       username="${database.user}"
+                                       password="${database.password}"
+                                       schema="${database.schema}"
+                                       includeViews="${@{environment}.database.views}"
+                                       xmlprefs="true">
+
+                                <html destination="${build.html.dir}/database/@{databaseName}" />
+
+                                <hibernate destination="@{hbmXmlDir}"
+                                           package="@{package}"
+                                           beanSuffix="Do"
+                                           extends="gov.va.med.pharmacy.peps.domain.common.model.DataObject"
+                                           genXDocletTags="false"
+                                           databaseSchema="${database.schema}"
+                                           javaTypeMapper="middlegen.plugins.hibernate.HibernateJavaTypeMapper"
+                                           equalsHashcode="false" />
+                            </middlegen>
+
+                            <replaceregexp match="gov/va/med/pharmacy/(.*)/domain/model/"
+                                           replace="gov.va.med.pharmacy.\1.domain.model."
+                                           byline="true">
+                                <fileset dir="@{hbmXmlDir}">
+                                    <include name="**/*.hbm.xml" />
+                                </fileset>
+                            </replaceregexp>
+
+                            <replaceregexp match="Hibernate Mapping DTD 2.0"
+                                           replace="Hibernate Mapping DTD 3.0"
+                                           byline="true">
+                                <fileset dir="@{hbmXmlDir}">
+                                    <include name="**/*.hbm.xml" />
+                                </fileset>
+                            </replaceregexp>
+
+                            <replaceregexp match="hibernate-mapping-2.0.dtd"
+                                           replace="hibernate-mapping-3.0.dtd"
+                                           byline="true">
+                                <fileset dir="@{hbmXmlDir}">
+                                    <include name="**/*.hbm.xml" />
+                                </fileset>
+                            </replaceregexp>
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="hbm2java" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="hbmXmlDir" default="${build.meta.dir}/xml/@{environment}/hibernate" />
+        <sequential>
+            <hibernatetool destdir="${build.src.dir}">
+                <configuration>
+                    <fileset dir="@{hbmXmlDir}">
+                        <include name="**/*.hbm.xml" />
+                    </fileset>
+                </configuration>
+
+                <hbm2java jdk5="true" />
+            </hibernatetool>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="generateHibernateConfig" uri="http://www.swri.org">
+        <sequential>
+            <!-- Generate the Local hibernate.cfg.xml. Test configuration includes one file per database. -->
+            <!-- Assumes that Local-1 is first in line per the order of hosts and database names. -->
+            <property name="database.number" value="1" />
+            <swri:generateDeployConfig environment="local" datasource="LocalEPL" />
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.local.database.names}" delimiter=",;:" param="database">
+                        <sequential>
+                            <swri:generateTestConfig environment="local"
+                                                     databaseHost="${@{host}.database.url.host}"
+                                                     databaseName="@{database}"
+                                                     destinationFile="hibernate${database.number}.cfg.xml" />
+                            <math result="database.number"
+                                  operand1="${database.number}"
+                                  operation="+"
+                                  operand2="1"
+                                  datatype="int" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+
+            <!-- Generate the National hibernate.cfg.xml. Assumes National only has one host machine and one database. -->
+            <swri:generateDeployConfig environment="national" datasource="NationalEPL" />
+            <for list="${national.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <swri:generateTestConfig environment="national"
+                                             databaseHost="${@{host}.database.url.host}"
+                                             databaseName="${@{host}.national.database.names}" />
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="generateDeployConfig" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="datasource" />
+        <attribute name="destDir" default="${build.meta.dir}/${xml}/@{environment}/hibernate" />
+        <sequential>
+            <!-- Placing the taskdef here because if you call hibernatedoclet more than once with only defining the task -->
+            <!-- once, any properties you define, such as jndiProperty, will show up multiple times in subsequent calls. -->
+            <taskdef name="hibernatedoclet"
+                     classname="xdoclet.modules.hibernate.HibernateDocletTask"
+                     classpathref="Domain.build.class.path" />
+        	<echo>hibernatecfg will write to ${build.meta.dir}/${xml}/@{environment}/hibernate</echo>
+            <hibernatedoclet destdir="@{destDir}" force="true">
+                <fileset dir="${src.dir}">
+                    <include name="**/model/*Do.java" />
+                </fileset>
+				
+             <!--   <hibernatecfg destDir="@{destDir}"
+                              dialect="${@{environment}.hibernate.dialect}"
+                              dataSource="datasource/@{datasource}"
+                              transactionManagerLookup="${@{environment}.transaction.lookup}"
+                              transactionManagerFactory="${@{environment}.transaction.factory}"
+                              showSql="${@{environment}.hibernate.show_sql}"
+                              useOuterJoin="false"
+                              version="3.0"> -->
+                	
+                	<hibernatecfg destDir="@{destDir}"
+                	                              dialect="org.hibernate.dialect.OracleDialect"
+                	                              dataSource="datasource/@{datasource}"
+                	                              transactionManagerLookup="org.hibernate.transaction.WeblogicTransactionManagerLookup"
+                	                              transactionManagerFactory="org.hibernate.transaction.CMTTransactionFactory"
+                	                              showSql="false"
+                	                              useOuterJoin="false"
+                	                              version="3.0">
+
+                    <!-- EhCache -->
+
+                	<!-- NON-test config does NOT need the Singleton factory -->
+                    <otherProperty name="hibernate.cache.region.factory_class"
+                        value="net.sf.ehcache.hibernate.EhCacheRegionFactory" />
+                	<otherProperty name="net.sf.ehcache.configurationResourceName"
+                	    value="xml/ehcache/ehcache.xml" />
+                    <otherProperty name="hibernate.cache.use_query_cache"
+                        value="true" />
+                    <otherProperty name="hibernate.cache.use_second_level_cache"
+                        value="true" />
+                    <otherProperty name="hibernate.cache.use_structured_cache" 
+                    	value="true" />
+                    <otherProperty name="hibernate.generate_statistics" 
+                    	value="true" />
+                    
+                    <otherProperty name="hibernate.query.factory_class"
+                                   value="org.hibernate.hql.ast.ASTQueryTranslatorFactory" />
+                </hibernatecfg>
+            </hibernatedoclet>
+
+            <!-- The 'use_outer_join' property is deprecated, use 'hibernate.max_fetch_depth' instead. Removing the property. -->
+            <replace file="@{destDir}/hibernate.cfg.xml"
+                     token="&lt;property name=&quot;use_outer_join&quot;&gt;false&lt;/property&gt;" />
+
+            <!-- Correct Hibernate property names to include 'hibernate.' prefix -->
+            <replace file="@{destDir}/hibernate.cfg.xml" token="name=&quot;dialect" value="name=&quot;hibernate.dialect" />
+            <replace file="@{destDir}/hibernate.cfg.xml" token="name=&quot;show_sql" value="name=&quot;hibernate.show_sql" />
+            <replace file="@{destDir}/hibernate.cfg.xml"
+                     token="name=&quot;transaction.manager_lookup_class"
+                     value="name=&quot;hibernate.transaction.manager_lookup_class" />
+            <replace file="@{destDir}/hibernate.cfg.xml"
+                     token="name=&quot;connection"
+                     value="name=&quot;hibernate.connection" />
+
+            <!-- hbm.xml files are checked in under xml/environment/hibernate, not with the source under gov -->
+            <replaceregexp match="gov" replace="xml/@{environment}/hibernate/gov" byline="true">
+                <fileset dir="@{destDir}">
+                    <include name="hibernate.cfg.xml" />
+                </fileset>
+            </replaceregexp>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="generateTestConfig" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="databaseHost" />
+        <attribute name="databaseName" />
+        <attribute name="destDir" default="${build.meta.dir}/${xml}/@{environment}/hibernate/test" />
+        <attribute name="destinationFile" default="hibernate.cfg.xml" />
+        <attribute name="url"
+                   default="${@{environment}.database.url.prefix}:${@{environment}.database.url.host.prefix}@{databaseHost}:${@{environment}.database.url.port}${@{environment}.database.url.port.suffix}@{databaseName}${@{environment}.database.url.properties}" />
+        <sequential>
+            <!-- Placing the taskdef here because if you call hibernatedoclet more than once with only defining the task -->
+            <!-- once, any properties you define, such as jndiProperty, will show up multiple times in subsequent calls. -->
+            <taskdef name="hibernatedoclet"
+                     classname="xdoclet.modules.hibernate.HibernateDocletTask"
+                     classpathref="Domain.build.class.path" />
+
+            <swri:setUser databaseHost="@{databaseHost}" databaseName="@{databaseName}" />
+
+            <hibernatedoclet destdir="@{destDir}" force="true">
+                <fileset dir="${src.dir}">
+                    <include name="**/model/*Do.java" />
+                </fileset>
+
+                <hibernatecfg destDir="@{destDir}"
+                              destinationFile="@{destinationFile}"
+                              dialect="${@{environment}.hibernate.dialect}"
+                              driver="${@{environment}.database.driver}"
+                              jdbcUrl="@{url}"
+                              username="${database.user}"
+                              password="${database.password}"
+                              showSql="${@{environment}.hibernate.show_sql}"
+                              version="3.0">
+
+                    <!-- EhCache -->
+
+                	<!-- test config needs Singleton factory -->
+                    <otherProperty name="hibernate.cache.region.factory_class"
+                        value="net.sf.ehcache.hibernate.SingletonEhCacheRegionFactory" />
+                	
+                    <otherProperty name="net.sf.ehcache.configurationResourceName"
+                        value="xml/ehcache/ehcache.xml" />
+                    <otherProperty name="hibernate.cache.use_query_cache"
+                        value="true" />
+                    <otherProperty name="hibernate.cache.use_second_level_cache"
+                        value="true" />
+                    <otherProperty name="hibernate.cache.use_structured_cache" 
+                        value="true" />
+                    <otherProperty name="hibernate.generate_statistics" 
+                        value="true" />
+                    
+                    <otherProperty name="hibernate.query.factory_class"
+                                   value="org.hibernate.hql.ast.ASTQueryTranslatorFactory" />
+                </hibernatecfg>
+            </hibernatedoclet>
+
+            <!-- The 'use_outer_join' property is deprecated, use 'hibernate.max_fetch_depth' instead. Removing the property. -->
+            <replace file="@{destDir}/@{destinationFile}"
+                     token="&lt;property name=&quot;use_outer_join&quot;&gt;false&lt;/property&gt;" />
+
+            <!-- Correct Hibernate property names to include 'hibernate.' prefix -->
+            <replace file="@{destDir}/@{destinationFile}" token="name=&quot;dialect" value="name=&quot;hibernate.dialect" />
+            <replace file="@{destDir}/@{destinationFile}"
+                     token="name=&quot;show_sql"
+                     value="name=&quot;hibernate.show_sql" />
+            <replace file="@{destDir}/@{destinationFile}"
+                     token="name=&quot;transaction.manager_lookup_class"
+                     value="name=&quot;hibernate.transaction.manager_lookup_class" />
+            <replace file="@{destDir}/@{destinationFile}"
+                     token="name=&quot;connection"
+                     value="name=&quot;hibernate.connection" />
+
+            <!-- hbm.xml files are checked in under xml/environment/hibernate, not with the source under gov -->
+            <replaceregexp match="gov" replace="xml/@{environment}/hibernate/gov" byline="true">
+                <fileset dir="@{destDir}">
+                    <include name="@{destinationFile}" />
+                </fileset>
+            </replaceregexp>
+        </sequential>
+    </macrodef>
+</project>

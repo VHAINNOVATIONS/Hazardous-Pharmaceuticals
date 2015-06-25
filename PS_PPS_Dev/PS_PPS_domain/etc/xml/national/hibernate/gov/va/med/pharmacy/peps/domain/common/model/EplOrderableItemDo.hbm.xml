@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping default-cascade="refresh">
+
+    <!-- Generated content, all changes will be lost! -->
+
+    <class name="gov.va.med.pharmacy.peps.domain.common.model.EplOrderableItemDo" table="EPL_ORDERABLE_ITEMS" >
+        <meta attribute="extends" inherit="false">
+            gov.va.med.pharmacy.peps.domain.common.model.DataObject
+        </meta>
+
+        <id name="eplId" type="java.lang.Long" column="EPL_ID">
+            <meta attribute="use-in-equals">true</meta>
+            <generator class="assigned"/>
+        </id>
+
+        <property name="oiType" type="java.lang.String" column="OI_TYPE" not-null="true" length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="requestStatus" type="java.lang.String" column="REQUEST_STATUS" not-null="true" length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="itemStatus" type="java.lang.String" column="ITEM_STATUS" not-null="true" length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="rejectReasonText" type="java.lang.String" column="REJECT_REASON_TEXT" length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="requestRejectReason" type="java.lang.String" column="REQUEST_REJECT_REASON" length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="oiName" type="java.lang.String" column="OI_NAME" not-null="true" length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="vistaOiName" type="java.lang.String" column="VISTA_OI_NAME" not-null="true" length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="localUse" type="java.lang.String" column="LOCAL_USE" not-null="true" length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="revisionNumber" type="java.lang.Long" column="REVISION_NUMBER" not-null="true" length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="nationalFormularyIndicator" type="java.lang.String" column="NATIONAL_FORMULARY_INDICATOR" length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="nonVaMed" type="java.lang.String" column="NON_VA_MED" not-null="true" length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="inactivationDate" type="java.util.Date" column="INACTIVATION_DATE" length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="prevMarkedForLocalUseYn" type="java.lang.String" column="PREV_MARKED_FOR_LOCAL_USE_YN" not-null="true" length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property name="highAlert" type="java.lang.String" column="HIGH_ALERT" length="120">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property name="specialInstructions" type="java.lang.String" column="SPECIAL_INSTRUCTIONS" length="120">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catMedicFlag" 
+            type="java.lang.String" 
+            column="CAT_MEDIC_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catInvestFlag" 
+            type="java.lang.String" 
+            column="CAT_INVEST_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catCompoundFlag" 
+            type="java.lang.String" 
+            column="CAT_COMPOUND_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catSupplyFlag" 
+            type="java.lang.String" 
+            column="CAT_SUPPLY_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatHerbalFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_HERBAL_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatChemoFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_CHEMO_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatOtcFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_OTC_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatVeterFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_VETER_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="createdBy" type="java.lang.String" column="CREATED_BY" not-null="true" length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="createdDtm" type="java.util.Date" column="CREATED_DTM" not-null="true" length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="lastModifiedBy" type="java.lang.String" column="LAST_MODIFIED_BY" length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property name="lastModifiedDtm" type="java.util.Date" column="LAST_MODIFIED_DTM" length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+
+        <!-- Associations -->
+        <!-- bi-directional many-to-one association to EplOiScheduleTypeDo -->
+        <many-to-one name="eplOiScheduleType" class="gov.va.med.pharmacy.peps.domain.common.model.EplOiScheduleTypeDo" >
+            <meta attribute="use-in-equals">true</meta>
+            <column name="OI_SCHED_TYPE_ID_FK"/>
+        </many-to-one>
+        <!-- bi-directional many-to-one association to EplDosageFormDo -->
+        <many-to-one name="eplDosageForm" class="gov.va.med.pharmacy.peps.domain.common.model.EplDosageFormDo" not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="DOSAGE_FORM_ID_FK"/>
+        </many-to-one>
+         <!-- bi-directional one-to-many association to EplCategories -->
+         <many-to-one name="eplStandardMedRoute" class="gov.va.med.pharmacy.peps.domain.common.model.EplStandardMedRouteDo" not-null="false">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="STANDARD_MED_ROUTE_ID_FK"/>
+        </many-to-one>
+        <!-- bi-directional one-to-many association to EplOiMedRouteAssocDo -->
+        <set name="eplOiMedRouteAssocs" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplOiMedRouteAssocDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplProductDo -->
+        <set name="eplProducts" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplProductDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplVitalDo -->
+        <set name="eplVitals" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="ORDERABLE_ITEM_ID_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplVitalDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplPartialSaveMgtDo -->
+        <set name="eplPartialSaveMgts" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplPartialSaveMgtDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplOiDrugTextNAssocDo -->
+        <set name="eplOiDrugTextNAssocs" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplOiDrugTextNAssocDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplOiAdminSchedAssocDo -->
+        <set name="eplOiAdminSchedAssocs" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplOiAdminSchedAssocDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplRequestDo -->
+        <set name="eplRequests" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplRequestDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplOiDrugTextLAssocDo -->
+        <set name="eplOiDrugTextLAssocs" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplOiDrugTextLAssocDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplOrderableItemDo -->
+        <set name="eplOrderableItems" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="ASSOC_NATIONAL_OI_ID_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplOrderableItemDo"/>
+        </set>
+        <!-- bi-directional many-to-one association to EplOrderableItemDo -->
+        <many-to-one name="eplOrderableItem" class="gov.va.med.pharmacy.peps.domain.common.model.EplOrderableItemDo" not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="ASSOC_NATIONAL_OI_ID_FK"/>
+        </many-to-one>
+        <!-- bi-directional one-to-many association to EplLabDo -->
+        <set name="eplLabs" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="ORDERABLE_ITEM_ID_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplLabDo"/>
+        </set>
+        <!-- bi-directional one-to-many association to EplVadfOwnerDo -->
+        <set name="eplVadfOwners" lazy="true" inverse="true" cascade="none">
+            <key>
+                <column name="EPL_ID_OI_FK"/>
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplVadfOwnerDo"/>
+        </set>
+    </class>
+</hibernate-mapping>

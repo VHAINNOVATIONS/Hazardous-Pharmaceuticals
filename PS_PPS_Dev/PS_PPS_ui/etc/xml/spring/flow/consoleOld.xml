@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="retrieveConsole">
+
+    <action-state id="retrieveConsole">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="console" />
+            <attribute
+                name="actionMethod"
+                value="retrieveConsole" />
+        </evaluate>
+        <transition
+            on="success"
+            to="console" />
+    </action-state>
+
+    <action-state id="refreshAllSystemInformation">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="console" />
+            <attribute
+                name="actionMethod"
+                value="refreshAllSystemInformation" />
+        </evaluate>
+        <transition
+            on="success"
+            to="retrieveConsole" />
+    </action-state>
+
+    <action-state id="requestLocalSystemInformation">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="console" />
+            <attribute
+                name="actionMethod"
+                value="requestLocalSystemInformation" />
+        </evaluate>
+        <transition
+            on="success"
+            to="retrieveConsole" />
+    </action-state>
+
+    <view-state
+        id="console"
+        view="console">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="console" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="refresh"
+            to="retrieveConsole" />
+        <transition
+            on="refreshAllSystemInformation"
+            to="refreshAllSystemInformation" />
+        <transition
+            on="requestLocalSystemInformation"
+            to="requestLocalSystemInformation" />
+    </view-state>
+
+</flow>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions, addManagedDomain"
+    start-state="edit">
+
+    <input
+        name="itemId"
+        value="flowScope.itemId"
+        type="string" />
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <input
+        name="item"
+        value="flowScope.item"
+        type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+
+    <input
+        name="oldItem"
+        value="flowScope.oldItem"
+        type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+
+    <view-state
+        id="edit"
+        view="${flowScope.itemType.getViewName()}.edit">
+        <on-render>
+            <set
+                 name="conversationScope.isFirst"
+                 value="conversationScope.isFirst+1" />
+                 
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+                    
+            </evaluate>
+        </on-render>
+        <transition
+            on="cancel"
+            to="cancel" />
+        <transition
+            on="retrievePmi"
+            to="retrievePmi" />
+        <transition
+            on="editField"
+            to="editField">
+            <!-- The FieldKey to be edited is a request parameter. Set it in flash scope to be available for the next render. -->
+            <set
+                name="flashScope.fieldKey"
+                value="currentEvent.attributes.fieldKey"
+                type="string" />
+        </transition>
+        <transition
+            on="savePartial"
+            to="savePartial" />
+        <transition
+            on="selectParent"
+            to="selectParent" />
+        <transition
+            on="submitModifications"
+            to="submitModifications" />
+        <transition
+            on="submitProblemReport"
+            to="submitProblemReport" />
+        <transition
+            on="submitPopup"
+            to="submitPopup" />
+
+        <!-- Managed domain only functionality. -->
+        <transition
+            on="activate"
+            to="activate" />
+        <transition
+            on="inactivate"
+            to="inactivate" />
+        <transition
+            on="search"
+            to="searchEnd" />
+        <transition
+            on="retrieve"
+            to="retrieveEnd" />
+
+        <!-- Product pop-ups -->
+        <transition
+            on="enterEditDosagesPopup"
+            to="enterEditDosagesPopup" />
+        <transition
+            on="pmiPopup"
+            to="pmiPopup" />
+    </view-state>
+
+    <view-state
+        id="enterEditDosagesPopup"
+        view="enter.edit.dosages.popup">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+    </view-state>
+
+    <view-state
+        id="editField"
+        view="edit.field">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+    </view-state>
+
+    <action-state id="submitPopup">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="input" />
+        </evaluate>
+        <transition
+            on="input"
+            to="edit" />
+    </action-state>
+
+    <action-state id="retrievePmi">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="drugReference" />
+            <attribute
+                name="actionMethod"
+                value="retrievePmi" />
+        </evaluate>
+        <transition
+            on="success"
+            to="edit" />
+    </action-state>
+
+    <view-state
+        id="pmiPopup"
+        view="pmi.popup">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="drugReference" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+    </view-state>
+
+    <subflow-state
+        id="savePartial"
+        subflow="savePartial">
+        <on-entry>
+            <!-- Make sure that any input from the fields on the page get saved before we move on to the savePartial flow. -->
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="input" />
+            </evaluate>
+        </on-entry>
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <transition
+            on="end"
+            to="end" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </subflow-state>
+
+    <subflow-state
+        id="submitProblemReport"
+        subflow="submitProblemReport">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <transition
+            on="end"
+            to="edit" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </subflow-state>
+
+    <subflow-state
+        id="selectParent"
+        subflow="selectParent">
+        <on-entry>
+            <!-- Make sure that any input from the fields on the page get saved before we move on to the selectParent flow. -->
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="input" />
+            </evaluate>
+        </on-entry>
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <transition
+            on="end"
+            to="${flowScope.previousViewState}">
+            <set
+                name="flowScope.item"
+                value="currentEvent.attributes.item" />
+        </transition>
+    </subflow-state>
+
+    <action-state id="proposedAdd">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="proposeModifications" />
+        </evaluate>
+        <transition
+            on="success"
+            to="modificationSummary" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+
+    <action-state id="inactivate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="inactivate" />
+        </evaluate>
+        <transition
+            on="success"
+            to="inactivationSummary" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+
+    <action-state id="cancelInactivate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="activate" />
+        </evaluate>
+        <transition
+            on="success"
+            to="edit" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+
+    <action-state id="activate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="activate" />
+        </evaluate>
+        <transition
+            on="success"
+            to="modificationSummary" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+
+    <action-state id="submitModifications">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="submitModifications" />
+        </evaluate>
+        <transition
+            on="success"
+            to="modificationSummary" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+
+    <view-state
+        id="modificationSummary"
+        view="${conversationScope.environment}.modification.summary">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="commitModifications"
+            to="commitModifications" />
+        <transition
+            on="reviewAll"
+            to="reviewChangeAll" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </view-state>
+
+    <view-state
+        id="inactivationSummary"
+        view="${conversationScope.environment}.inactivation.summary">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="commitInactivation"
+            to="commitInactivation" />
+        <transition
+            on="reviewAll"
+            to="reviewChangeAll" />
+        <transition
+            on="cancel"
+            to="cancelInactivate" />
+    </view-state>
+
+    <action-state id="reviewChangeAll">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="reviewChangeAll" />
+        </evaluate>
+        <transition
+            on="success"
+            to="multiEditModSummary" />
+    </action-state>
+
+    <view-state
+        id="multiEditModSummary"
+        view="multi.edit.mod.summary">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="commitModifications"
+            to="commitAllModifications" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </view-state>
+
+    <action-state id="commitAllModifications">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="commitAllModifications" />
+        </evaluate>
+        <transition
+            on="success"
+            to="confirm" />
+    </action-state>
+
+    <action-state id="commitModifications">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="commitModifications" />
+        </evaluate>
+        <transition
+            on="success"
+            to="confirm" />
+    </action-state>
+
+    <action-state id="commitInactivation">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="commitInactivation" />
+        </evaluate>
+        <transition
+            on="success"
+            to="confirm" />
+        <transition
+            on="input"
+            to="inactivationSummary" />
+    </action-state>
+
+    <view-state
+        id="confirm"
+        view="confirm.modifications">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="end" />
+    </view-state>
+
+    <subflow-state
+        id="optimisticLock"
+        subflow="optimisticLock">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <transition
+            on="end"
+            to="confirm" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </subflow-state>
+
+    <end-state id="end">
+        <output
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <output
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+    </end-state>
+
+    <end-state id="cancel" />
+
+    <end-state id="searchEnd" />
+
+    <end-state id="retrieveEnd" />
+
+    <global-transitions>
+        <transition
+            on="input"
+            to="edit" />
+        <transition
+            on="optimisticViolation"
+            to="optimisticLock" />
+        <transition
+            on="previousItem"
+            to="end">
+            <set
+                name="conversationScope.tableSelectionsIndex"
+                value="conversationScope.tableSelectionsIndex - 1" />
+        </transition>
+        <transition
+            on="nextItem"
+            to="end">
+            <set
+                name="conversationScope.tableSelectionsIndex"
+                value="conversationScope.tableSelectionsIndex + 1" />
+        </transition>
+    </global-transitions>
+
+</flow>

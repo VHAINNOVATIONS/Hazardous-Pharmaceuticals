@@ -1,0 +1,64 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Kernel Authentication and Authorization for J2EE (KAAJEE)" value="A part of the VA Single Sign-On/User Context (SSO/UC) project, which addresses the authentication and authorization needs of J2EE-based Web applications, currently hosted on Oracle 9iAS. The limited aim of the first phase is to provide “single credential” authentication and “single repository” authorization for J2EE Web applications, using the user’s existing, familiar Kernel access and verify code for authentication, and using the Kernel system as the authorization repository as well." />
+ <entry name="KIDS" value="Kernel Installation and Distribution System" />
+ <entry name="Kiosk" value="A terminal that allows users (e.g., Patients) to order refills and obtain information about their medical histories (i.e., medication, medication profiles). May also be a machine with dispensing capabilities that interfaces with the VistA Pharmacy system." />
+ <entry name="Lab Display" value="A VA Data Field used to specify what Labs need to be displayed for a drug within VistA." />
+ <entry name="Large Volume Parenteral (LVP)" value="A solution intended for continuous parenteral infusion, administered as a vehicle for additive(s) or for the pharmacological effect of the solution itself. It is comprised of any number of additives, including zero, in one solution. It runs continuously, with another bag administered when one bottle or bag is empty. This is an admixture." />
+ <entry name="Layer" value="A logical grouping of the components within the system that are separated by common functionality." />
+ <entry name="LE" value="Local Environment" />
+ <entry name="Legacy System" value="An existing system that is deployed in an organization with plans to be replaced by a newer system and newer technology." />
+ <entry name="Lend Order (Inventory)" value="This functionality allows the local pharmacy to supply (lend) inventory to a borrowing institution. This order does not involve billing but will support “horse trading” for specific items with the borrowing institution. See glossary term Borrow Orders (Inventory)." />
+ <entry name="Licensed Pharmacist" value="An individual who has graduated from an accredited school of pharmacy, passed a state board examination, and served an internship under a licensed pharmacist in a community or hospital pharmacy." />
+ <entry name="Licensed Practitioner" value="An individual who is licensed or otherwise authorized to provide healthcare services." />
+ <entry name="Loading Dose" value="A dose of drug sufficient to produce a plasma concentration of drug that would fall within the therapeutic window after only one or very few doses over a very short interval. It is larger than the dose rate needed to maintain the concentration within the window and would produce toxic concentrations if given in repeated doses." />
+ <entry name="Local Order Processing Decision Rule (LOPDR)" value="The rules specific to the local order processing that assist with the selection of products based on Patient data." />
+ <entry name="Local Reporting Fields" value="The fields configured and appended to an item in the Local EPL for use only by the Local EPL Management System. Local Reporting Fields are designed to capture data specific to local activities, but they will not be usable for program functionality. The fields will only be useful for reporting and searching." />
+ <entry name="Location Group" value="A group of hospital locations that can include: wards, rooms, and clinics. A location group is created and stored so that it can be used when running a Unit Dose Pick List or a Sterile Product Work List to define the area of the hospital that is serviced." />
+ <entry name="Log4J" value="An open source logging tool that allows developers to write log statements in their software and configure them externally, using properties files." />
+ <entry name="LOPDR" value="Local Order Processing Decision Rule" />
+ <entry name="Lot Number " value="The tracking number assigned by the manufacturer to manufacturing batches in order to track a product recall in the event of a problem with the drug in terms of Patient safety. Maintaining control of this constraint is a high-priority Patient safety issue for the VHA." />
+ <entry name="LRU" value="Least Recently Used" />
+ <entry name="LVN" value="Licensed Vocational Nurse" />
+ <entry name="LVP" value="Large Volume Parenteral" />
+ <entry name="M" value="MUMPS – Massachusetts General Hospital Utility Multi-Programming System" />
+ <entry name="M&amp;IS" value="Messaging and Interface Services" />
+ <entry name="Mail Order Pharmacy" value="The remotely located pharmacies that are high-volume processors for medications that are to be mailed to Patients." />
+ <entry name="Maintenance Dose" value="The dose needed to maintain the concentration within the therapeutic window when given repeatedly at a constant interval." />
+ <entry name="Manufacturer" value="Specifies the vendor or company that produces the product." />
+ <entry name="Manufacturer Domain" value="Holds the list of manufacturers specific to NDC Items." />
+ <entry name="MAP" value="Medical Advisory Panel" />
+ <entry name="MAR" value="Medical Administration Record" />
+ <entry name="MARS" value="MUMPS Automated Reporting System" />
+ <entry name="MAS" value="Medical Administration Service (now Health Administration Service)" />
+ <entry name="Master Vault" value="A location designated to store controlled substances and which is set up as the main dispensing site for controlled substances." />
+ <entry name="MD" value="Doctor of Medicine" />
+ <entry name="MDB" value="Message Driven Bean" />
+ <entry name="MDR" value="Meta Data Registry" />
+ <entry name="Medical Advisory Panel (MAP)" value="A committee that is part of the management and medical decision-making structure of the VA Pharmacy Business Management. The committee consists of eleven Physicians in practice at VA medical centers and one DoD Physician." />
+ <entry name="Medication Checker" value="An authorized person who performs the validation check on filled medication prior to dispensing (e.g., Licensed Pharmacist or Pharmacy Technician)." />
+ <entry name="Medication Deliverer" value="An authorized person or device that delivers medication(s) to a Patient or Caregiver at point-of-care (e.g., a pneumatic tool, mail carrier, Pharmacy Technician, Nurse)." />
+ <entry name="Medication Filler" value="An authorized person that dispenses medications, mixes IVs, etc. Note that the filler may be a Pharmacist, Pharmacy Technician, or an automated filling device." />
+ <entry name="Medication Instruction Domain" value="Holds the abbreviations that are often used when entering the prescription sig.&#160; Each&#160;entry in this domain holds an expansion of the abbreviation which is used to complete the sig as it is printed on the prescription label." />
+ <entry name="Medication Receiver" value="A person who receives medication(s) from a Patient upon admission (e.g.,&#160;Nurse)." />
+ <entry name="Medication Returner" value="A person who returns a Patient’s medications to the Patient when the Patient is discharged from the hospital." />
+ <entry name="Medication Route" value="The method in which the product is to be administered (e.g., oral, injection)." />
+ <entry name="Medication Use Evaluation (MUE)" value="An order entry process that is similar to a templated order entry that incorporates a series of screens whereby the Orderer proceeds to answer some system-generated questions. The uniqueness of this process is that the system provides a series of pop-up boxes relating to the importance of the questions and why it is important for the Providers to answer the questions. Of even greater importance, the system will actually provide references and a synopsis of referred article(s). In this manner, the Provider is treated as an interested professional with a high level of interest for providing the best care for his or her Patient." />
+ <entry name="Message" value="A collection of data in a standardized format that can be sent to or received at a given destination." />
+ <entry name="Message Beans" value="A reusable software component that is designed to handle incoming messages based on Java Message Service technology." />
+ <entry name="Milestone" value="A significant event that occurs at a single specific point in time, usually denoting initiation or completion. Milestones are also used to communicate decisions made or received." />
+ <entry name="Missed Dose" value="A dose scheduled to be administered to a patient, but not administered to the patient at the scheduled time." />
+ <entry name="Missed Medication" value="A scheduled medication that is not administered to the Patient, usually because the Patient is unavailable or the Patient refuses the medication." />
+ <entry name="Missing Dose" value="A scheduled medication (e.g., unit dose) that is unavailable at the time of the scheduled administration." />
+ <entry name="Mitigation" value="A method or procedures which may: (1) avoid an impact altogether by not taking a certain action or parts of an action; (2) minimize impacts by limiting the degree or magnitude of the action and its implementation." />
+ <entry name="Model-View-Controller" value="A software architecture that separates an application’s data model (the model), user interface (the view), and control logic (the controller) into three distinct components so that modifications to one component can be made with minimal impact to the others." />
+ <entry name="Modification Request" value="A request generated from PEPS when a PEPS Local Manager makes a request to change a non-editable data field on a PEPS item. The PEPS National Manager reviews the Modification Request and either approves or rejects the request." />
+ <entry name="Module" value="A software term for a specialized unit within a component that carries out a specific function that may depend upon other modules within the same component." />
+ <entry name="MOM" value="Message Oriented Middleware" />
+ <entry name="MOP" value="Mail Order Pharmacy" />
+ <entry name="MPD" value="Minimal Patient Dataset" />
+ <entry name="MPI" value="Master Patient Index (or Master Person Index)" />
+ <entry name="MS" value="Microsoft" />
+ <entry name="MSH" value="Message Header" />
+
+</glossarydata>

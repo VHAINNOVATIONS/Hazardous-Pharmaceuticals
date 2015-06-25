@@ -1,0 +1,14 @@
+<exception
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="ggov/va/med/pharmacy/peps/external/common/preencapsulation/vo/exception ../../schema/status/exception.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/exception">
+
+    <code>PRE</code>
+
+    <message>Unable to perform the order check.</message>
+
+    <detailedMessage><![CDATA[[gov.va.med.pharmacy.local.service.business.ordercheck.OrderCheckException$Runtime:UNABLE_TO_PERFORM_ORDERCHECK] Unable to perform the order check.
+        |
+        --> [gov.va.med.pharmacy.external.service.drugdatavendor.peps.outbound.DrugDataVendorServiceException$Error:CONNECTION_LIMIT_EXCEEDED] The connection limit for the FDB database has been exceeded.
+    ]]></detailedMessage>
+</exception>

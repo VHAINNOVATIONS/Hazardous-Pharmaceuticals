@@ -1,0 +1,31 @@
+/**
+ * Source file created in 2007 by Southwest Research Institute
+ */
+
+
+package gov.va.med.pharmacy.peps.domain.common.dao.impl;
+
+
+import java.util.List;
+
+import gov.va.med.pharmacy.peps.domain.common.dao.EplVadfNonlistValueDao;
+import gov.va.med.pharmacy.peps.domain.common.model.EplVadfNonlistValueDo;
+
+
+/**
+ * This class makes avaliable the methods that may be used to access and modify the data referenced by the
+ * EplVadfNonlistValueDao.
+ */
+public class EplVadfNonlistValueDaoImpl extends DataAccessObjectImpl<EplVadfNonlistValueDo, Long> implements
+    EplVadfNonlistValueDao {
+
+    /**
+     * Inherited from the GenericDAO interface. Finds an all EplVadfNonlistValueDo object in ascending order from the database.
+     * 
+     * @return Collection of EplVadfNonlistValueDo objects
+     */
+    @Override
+    public List<EplVadfNonlistValueDo> retrieve() {
+        return retrieveAscending(EplVadfNonlistValueDo.VA_DF_VALUE);
+    }
+}

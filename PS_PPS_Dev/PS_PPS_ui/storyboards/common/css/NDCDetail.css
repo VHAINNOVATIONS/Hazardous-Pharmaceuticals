@@ -1,0 +1,203 @@
+a {
+	text-indent:5px;
+	color: #0000CC;
+}
+
+.productId {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color:black;
+	line-height:20px;
+	background-color:inherit;
+	vertical-align:top;
+}
+
+.generalInfo {
+	height: 60px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	font-weight:normal;
+	/*border-color:#000000;
+	border-width:medium;
+	border:solid;*/
+	background-color:inherit;
+	margin-left:10px;
+	vertical-align:top;
+}
+
+.heading {
+	width:100%;
+	margin-top:15px;
+}
+
+.fieldset {
+	margin-top:3px;
+	border-top:thin;
+	border-top-style:solid;
+	border-top-color:#CCCCCC;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+}
+
+.buttonPanel {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	height:30px;
+	line-height:30px;
+	margin-top:10px;
+	background-color:inherit;
+}
+
+.buttonLeft {
+	float:left;
+	margin-top:inherit;
+}
+
+.buttonCenter {
+	float:left;
+	margin-left:300px;
+	margin-top:inherit;
+}
+.adjbuttonCenter {
+	float:left;
+	margin-left:2.5px;
+	margin-top:inherit;
+}
+.buttonRight {
+	float:right;
+	margin-right:10px;
+	margin-top:inherit;
+}
+
+.ndcBody {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	line-height:26px;
+	margin-top:75px;
+}
+
+.borderTitle {
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.text_leftalign {
+	text-align:left;
+}
+
+.leftTextColumn {
+	float: left;
+	margin-left:10px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:26px;
+}
+
+.VADFLeftTextColumn {
+	float: left;
+	margin-left:0px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:26px;
+}
+
+.middleTextColumn {
+	float: left;
+	margin-left:50px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:25px;
+}
+
+.modifyMiddleTextColumn {
+	float: left;
+	margin-left:135px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:25px;
+}
+
+.VADFMiddleTextColumn {
+	float: left;
+	margin-left:125px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:25px;
+}
+
+.nationalMiddleTextColumn {
+	float: left;
+	margin-left:62px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:25px;
+}
+.nationalModifyMiddleTextColumn {
+	float: left;
+	margin-left:120px;
+	margin-top:3px;
+	text-align:left;
+	vertical-align:top;
+	line-height:26px;
+}
+
+.areaTextColumn {
+	float: right;
+	margin-right:8x;
+	margin-top:0px;
+	text-align:right;
+	vertical-align:top;
+	line-height:30px;
+}
+
+.areaInputColumn {
+	float:right;
+	margin-right:70px;
+	vertical-align:text-top;
+	margin-top:5px;
+	margin-left:3px;
+}
+
+.inputColumn {
+	float: left;
+	margin-left:8px;
+	margin-top:3px;
+	vertical-align:top;
+	line-height:26px;
+}
+
+.imageColumn {
+	text-align:center;
+	margin-right:90px;
+	vertical-align:center;
+	margin-top:10px;
+	float:right;
+}
+
+.noImageColumn {
+	text-align:center;
+	margin-right:70px;
+	vertical-align:center;
+	margin-top:40px;
+	float:right;
+}
+
+.NonVADF {
+	width:100%;
+	height:160px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.VadfFont {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}

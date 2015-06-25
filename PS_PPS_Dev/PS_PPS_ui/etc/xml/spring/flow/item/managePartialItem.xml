@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="searchPartialItems">
+
+    <subflow-state
+        id="searchPartialItems"
+        subflow="searchPartialItems">
+        <transition
+            on="end"
+            to="editPartialItem">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+    </subflow-state>
+
+    <subflow-state
+        id="editPartialItem"
+        subflow="editPartialItem">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <transition
+            on="end"
+            to="restartFlow" />
+        <transition
+            on="cancel"
+            to="restartFlow" />
+    </subflow-state>
+
+    <end-state
+        id="restartFlow"
+        view="flowRedirect:managePartialItem" />
+</flow>

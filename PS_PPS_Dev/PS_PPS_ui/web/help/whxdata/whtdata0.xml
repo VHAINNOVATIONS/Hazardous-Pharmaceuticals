@@ -1,0 +1,104 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<tocdata>
+<book name="Home" url="masterHelp/Home.htm" >
+  <item name="Login" url="masterHelp/Login.htm" />
+  <item name="Navigation" url="masterHelp/Navigation.htm" />
+</book>
+<book name="Manage PPS" url="masterHelp/Manage_PPS.htm" >
+  <book name="Simple Search" url="masterHelp/Simple_Search.htm" >
+    <item name="Perform a Simple Search" url="masterHelp/Perform_a_Simple_Search.htm" />
+  </book>
+  <book name="Advanced Search" url="masterHelp/Advanced_Search.htm" >
+    <item name="Perform an Advanced Search" url="masterHelp/Perform_an_Advanced_Search.htm" />
+    <item name="Manage Search Templates" url="masterHelp/Manage_Search_Templates.htm" />
+    <item name="Manage Print Templates" url="masterHelp/Manage_Print_Templates.htm" />
+  </book>
+  <book name="Add Items" url="masterHelp/Add_Items.htm" >
+    <item name="Add Product" url="masterHelp/Add_Product.htm" />
+    <item name="Add Orderable Item" url="masterHelp/Add_Orderable_Item.htm" />
+    <item name="Add NDC" url="masterHelp/Add_NDC.htm" />
+    <item name="Select Parent" url="masterHelp/Select_Parent.htm" />
+  </book>
+  <book name="Edit Items" url="masterHelp/Edit_Items.htm" >
+    <item name="Edit Product" url="masterHelp/Edit_Product.htm" />
+    <item name="Edit Orderable Item" url="masterHelp/Edit_Orderable_Item.htm" />
+    <item name="Edit Ndc" url="masterHelp/Edit_Ndc.htm" />
+  </book>
+  <book name="Search Requests" url="masterHelp/Search_Requests.htm" >
+    <item name="Edit Product Request" url="masterHelp/Edit_Product_Request.htm" />
+    <item name="Edit Orderable Item Request" url="masterHelp/Edit_Orderable_Item_Request.htm" />
+    <item name="Request Summary" url="masterHelp/Request_Summary.htm" />
+    <item name="Confirm Reject" url="masterHelp/Confirm_Reject.htm" />
+  </book>
+  <book name="Saved Work in Progress" url="masterHelp/Saved_Work_in_Progress.htm" >
+    <item name="Comment" url="masterHelp/Comment.htm" />
+  </book>
+  <book name="PPS Data Elements" url="masterHelp/PPS_Data_Elements.htm" >
+    <item name="Search Domains" url="masterHelp/Search_Domains.htm" />
+    <item name="Add Domains" url="masterHelp/Add_Domains.htm" />
+    <item name="Add Drug Class" url="masterHelp/Add_Drug_Class.htm" />
+    <item name="Add Dispense Unit" url="masterHelp/Add_Dispense_Unit.htm" />
+    <item name="Add Dosage Form" url="masterHelp/Add_Dosage_Form.htm" />
+    <item name="Add Dose Unit" url="masterHelp/Add_Dose_Unit.htm" />
+    <item name="Add Drug Text" url="masterHelp/Add_Drug_Text.htm" />
+    <item name="Add Drug Unit" url="masterHelp/Add_Drug_Unit.htm" />
+    <item name="Add Generic Name" url="masterHelp/Add_Generic_Name.htm" />
+    <item name="Add Ingredient" url="masterHelp/Add_Ingredient.htm" />
+    <item name="Add Order Unit" url="masterHelp/Add_Order_Unit.htm" />
+    <item name="Add Manufacturer Name" url="masterHelp/Add_Manufacturer_Name.htm" />
+    <item name="Add Package Type" url="masterHelp/Add_Package_Type.htm" />
+    <item name="Add Special Handling" url="masterHelp/Add_Special_Handling.htm" />
+    <item name="Add Standard Med Route" url="masterHelp/Add_Standard_Med_Route.htm" />
+    <item name="Edit Domains" url="masterHelp/Edit_Domains.htm" />
+    <item name="Edit Drug Class" url="masterHelp/Edit_Drug_Class.htm" />
+    <item name="Edit Dispense Unit" url="masterHelp/Edit_Dispense_Unit.htm" />
+    <item name="Edit Dosage Form" url="masterHelp/Edit_Dosage_Form.htm" />
+    <item name="Edit Dose Unit" url="masterHelp/Edit_Dose_Unit.htm" />
+    <item name="Edit Drug Text" url="masterHelp/Edit_Drug_Text.htm" />
+    <item name="Edit Drug Unit" url="masterHelp/Edit_Drug_Unit.htm" />
+    <item name="Edit Generic Name" url="masterHelp/Edit_Generic_Name.htm" />
+    <item name="Edit Ingredient" url="masterHelp/Edit_Ingredient.htm" />
+    <item name="Edit Order Unit" url="masterHelp/Edit_Order_Unit.htm" />
+    <item name="Edit Manufacturer Name" url="masterHelp/Edit_Manufacturer_Name.htm" />
+    <item name="Edit Package Type" url="masterHelp/Edit_Package_Type.htm" />
+    <item name="Edit Special Handling" url="masterHelp/Edit_Special_Handling.htm" />
+    <item name="Edit Standard Med Route" url="masterHelp/Edit_Standard_Med_Route.htm" />
+  </book>
+  <book name="PPS Data Requests" url="masterHelp/PPS_Data_Requests.htm" >
+    <item name="Search Domain Requests" url="masterHelp/Search_Domain_Requests.htm" />
+    <item name="Edit Domain Request" url="masterHelp/Edit_Domain_Request.htm" />
+    <item name="Edit Ingredient Request" url="masterHelp/Edit_Ingredient_Request.htm" />
+    <item name="Edit Drug Class Request" url="masterHelp/Edit_Drug_Class_Request.htm" />
+    <item name="Edit Dispense Unit Request" url="masterHelp/Edit_Dispense_Unit_Request.htm" />
+    <item name="Edit Dosage Form Request" url="masterHelp/Edit_Dosage_Form_Request.htm" />
+    <item name="Edit Dose Unit Request" url="masterHelp/Edit_Dose_Unit_Request.htm" />
+    <item name="Edit Drug Unit Request" url="masterHelp/Edit_Drug_Unit_Request.htm" />
+    <item name="Edit Generic Name Request" url="masterHelp/Edit_Generic_Name_Request.htm" />
+  </book>
+</book>
+<item name="Reports" url="masterHelp/Reports.htm" />
+<book name="COTS Services" url="masterHelp/COTS_Services.htm" >
+  <book name="FDB Search" url="masterHelp/FDB_Search.htm" >
+    <item name="Match Results" url="masterHelp/Match_Results.htm" />
+  </book>
+  <item name="FDB Add" url="masterHelp/FDB_Add.htm" />
+  <item name="FDB Update" url="masterHelp/FDB_Update.htm" />
+  <item name="Add Report" url="masterHelp/Add_Report.htm" />
+  <item name="Update Report" url="masterHelp/Update_Report.htm" />
+</book>
+<book name="Manage Application" url="masterHelp/Manage_Application.htm" >
+  <item name="Domain Mapping" url="masterHelp/Domain_Mapping.htm" />
+  <item name="FDB Scheduler" url="masterHelp/FDB_Scheduler.htm" />
+  <item name="User Roles" url="masterHelp/User_Roles.htm" />
+  <item name="Edit Home Page" url="masterHelp/Edit_Home_Page.htm" />
+</book>
+<book name="User Preferences" url="masterHelp/User_Preferences.htm" >
+  <item name="User Preferences" url="masterHelp/User_Preferences1.htm" />
+  <item name="Search Preferences" url="masterHelp/Search_Preferences.htm" />
+</book>
+<book name="Migration" url="masterHelp/Migration.htm" >
+  <item name="Migration Start" url="masterHelp/Migration_Start.htm" />
+  <item name="Migration Control/Migration Report" url="masterHelp/Migration_Control_Migration_Report.htm" />
+</book>
+
+</tocdata>

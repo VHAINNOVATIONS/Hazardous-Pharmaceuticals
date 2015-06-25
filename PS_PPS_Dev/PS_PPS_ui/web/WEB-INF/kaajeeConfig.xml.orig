@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kaajee-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="kaajeeConfig.xsd">
+
+  <!-- host application name, used for login page display and logging -->
+  <host-application-name>PEPS</host-application-name>
+  
+  <!-- put each station number for KAAJEE login here -->
+  <login-station-numbers>
+    <station-number>200</station-number>
+    <station-number>358</station-number>
+    <station-number>402</station-number>
+    <station-number>405</station-number>
+    <station-number>436</station-number>
+    <station-number>437</station-number>
+    <station-number>438</station-number>
+    <station-number>442</station-number>
+    <station-number>459</station-number>
+    <station-number>460</station-number>
+    <station-number>460</station-number>
+    <station-number>463</station-number>
+    <station-number>500</station-number>
+    <station-number>501</station-number>
+    <station-number>502</station-number>
+    <station-number>503</station-number>
+    <station-number>504</station-number>
+    <station-number>506</station-number>
+    <station-number>509</station-number>
+    <station-number>512</station-number>
+    <station-number>515</station-number>
+    <station-number>516</station-number>
+    <station-number>517</station-number>
+    <station-number>518</station-number>
+    <station-number>519</station-number>
+    <station-number>520</station-number>
+    <station-number>521</station-number>
+    <station-number>523</station-number>
+    <station-number>526</station-number>
+    <station-number>528</station-number>
+    <station-number>529</station-number>
+    <station-number>531</station-number>
+    <station-number>534</station-number>
+    <station-number>537</station-number>
+    <station-number>538</station-number>
+    <station-number>539</station-number>
+    <station-number>540</station-number>
+    <station-number>540</station-number>
+    <station-number>541</station-number>
+    <station-number>542</station-number>
+    <station-number>544</station-number>
+    <station-number>546</station-number>
+    <station-number>548</station-number>
+    <station-number>549</station-number>
+    <station-number>550</station-number>
+    <station-number>552</station-number>
+    <station-number>553</station-number>
+    <station-number>554</station-number>
+    <station-number>556</station-number>
+    <station-number>557</station-number>
+    <station-number>558</station-number>
+    <station-number>561</station-number>
+    <station-number>562</station-number>
+    <station-number>564</station-number>
+    <station-number>565</station-number>
+    <station-number>568</station-number>
+    <station-number>570</station-number>
+    <station-number>573</station-number>
+    <station-number>575</station-number>
+    <station-number>578</station-number>
+    <station-number>580</station-number>
+    <station-number>581</station-number>
+    <station-number>583</station-number>
+    <station-number>585</station-number>
+    <station-number>586</station-number>
+    <station-number>589</station-number>
+    <station-number>590</station-number>
+    <station-number>593</station-number>
+    <station-number>595</station-number>
+    <station-number>596</station-number>
+    <station-number>598</station-number>
+    <station-number>600</station-number>
+    <station-number>603</station-number>
+    <station-number>605</station-number>
+    <station-number>607</station-number>
+    <station-number>608</station-number>
+    <station-number>610</station-number>
+    <station-number>612</station-number>
+    <station-number>613</station-number>
+    <station-number>614</station-number>
+    <station-number>618</station-number>
+    <station-number>619</station-number>
+    <station-number>620</station-number>
+    <station-number>621</station-number>
+    <station-number>623</station-number>
+    <station-number>626</station-number>
+    <station-number>629</station-number>
+    <station-number>630</station-number>
+    <station-number>631</station-number>
+    <station-number>632</station-number>
+    <station-number>635</station-number>
+    <station-number>636</station-number>
+    <station-number>636</station-number>
+    <station-number>637</station-number>
+    <station-number>640</station-number>
+    <station-number>642</station-number>
+    <station-number>644</station-number>
+    <station-number>646</station-number>
+    <station-number>648</station-number>
+    <station-number>648</station-number>
+    <station-number>649</station-number>
+    <station-number>650</station-number>
+    <station-number>652</station-number>
+    <station-number>653</station-number>
+    <station-number>654</station-number>
+    <station-number>655</station-number>
+    <station-number>656</station-number>
+    <station-number>657</station-number>
+    <station-number>658</station-number>
+    <station-number>659</station-number>
+    <station-number>660</station-number>
+    <station-number>662</station-number>
+    <station-number>663</station-number>
+    <station-number>664</station-number>
+    <station-number>666</station-number>
+    <station-number>667</station-number>
+    <station-number>668</station-number>
+    <station-number>671</station-number>
+    <station-number>672</station-number>
+    <station-number>673</station-number>
+    <station-number>674</station-number>
+    <station-number>676</station-number>
+    <station-number>678</station-number>
+    <station-number>679</station-number>
+    <station-number>687</station-number>
+    <station-number>688</station-number>
+    <station-number>689</station-number>
+    <station-number>691</station-number>
+    <station-number>692</station-number>
+    <station-number>693</station-number>
+    <station-number>695</station-number>
+    <station-number>756</station-number>
+    <station-number>757</station-number>
+  </login-station-numbers>
+ 
+
+  <!-- defined application context root Name -->
+  <context-root-name>/kaajeePeps</context-root-name>
+
+ 
+  <!-- put the system announcement here. Use ~ for a line break, or ~ ~ for a 
+       paragraph break. -->
+  <system-announcement>
+    U.S. Government Computer System
+    ~ ~
+    U. S. government systems are intended to be used by authorized government network users for viewing and retrieving information only, except as otherwise explicitly authorized for official business and limited personal use in accordance with policy.  Information from these systems resides on and transmits through computer systems and networks funded by the government.  All access or use constitutes understanding and acceptance that there is no reasonable expectation of privacy in the use of Government networks or systems.
+	~ ~
+    The data and documents on this system include Federal records that contain sensitive information protected by various Federal statutes, including the Privacy Act, 5 U.S.C. Section 552a, and veterans' records confidentiality statutes such as 38 U.S.C. Sections 5701 and 7332.  Access to the data and records is on a need-to-know basis only.
+    ~ ~
+    All access or use of this system constitutes user understanding and acceptance of these terms and constitutes unconditional consent to review and action including (but not limited to) monitoring, recording, copying, auditing, inspecting, investigating, restricting access, blocking, tracking, disclosing to authorized personnel, or any other authorized actions by all authorized government and law enforcement personnel.
+	~ ~
+    Unauthorized user attempts or acts to (1) access, upload, change, or delete information on this system, (2) modify this system, (3) deny access to this system, (4) accrue resources for unauthorized use or (5) otherwise misuse this system are strictly prohibited.  Such attempts or acts are subject to action that may result in criminal, civil, or administrative penalties.
+  </system-announcement>
+  
+  <!-- set to true to return a user's "New Person" division multiple as part 
+       of login -->
+  <user-new-person-divisions retrieve="true" />
+
+  <!-- set to true to return all children divisions of the login division's 
+       computing facility, as part of login -->  
+  <computing-facility-divisions retrieve="true" />
+  
+  <cactus-insecure-mode enabled="false" />
+     
+  <!-- BEAWeblogic Server SSL listen port , used for login page to implement SSL   -->
+  <!--   <ssl-listen-port-number>7002</ssl-listen-port-number>  -->
+  
+
+</kaajee-config>
+  

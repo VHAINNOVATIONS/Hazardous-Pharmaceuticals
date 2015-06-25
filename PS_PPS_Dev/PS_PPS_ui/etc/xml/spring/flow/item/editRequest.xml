@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="editItem">
+
+    <input
+        name="mainRequest"
+        value="conversationScope.mainRequest"
+        type="gov.va.med.pharmacy.peps.common.vo.RequestVo" />
+
+    <!-- Override the edit view-state to display the edit requests view and to provide additional transitions. -->
+    <view-state
+        id="edit"
+        view="${flowScope.itemType.getViewName()}.request.edit">
+        <transition
+            on="approveRequest"
+            to="approveRequest" />
+
+        <!-- Override the editField transition to include the ognlKey attribute used only on request fields. -->
+        <transition
+            on="editField"
+            to="editField">
+            <set
+                name="flashScope.ognlKey"
+                value="currentEvent.attributes.ognlKey"
+                type="string" />
+        </transition>
+        
+        <transition
+            on="markForPsr"
+            to="markForPsr" />
+        <transition
+            on="markUnderReview"
+            to="markUnderReview" />
+        <transition
+            on="rejectProblemReport"
+            to="rejectProblemReport" />
+        <transition
+            on="rejectRequest"
+            to="rejectRequest" />
+        <transition
+            on="submitModRequests"
+            to="submitModRequests" />
+    </view-state>
+
+    <action-state id="approveRequest">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="approveRequest" />
+        </evaluate>
+        <transition
+            on="success"
+            to="requestSummary" />
+    </action-state>
+
+    <action-state id="markUnderReview">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="markUnderReview" />
+        </evaluate>
+        <transition
+            on="success"
+            to="requestSummary" />
+    </action-state>
+
+    <view-state
+        id="requestSummary"
+        view="request.summary">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="confirm"
+            to="commitRequest" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </view-state>
+
+    <action-state id="commitRequest">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="commitRequest" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+
+    <action-state id="rejectRequest">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="rejectRequest" />
+        </evaluate>
+        <transition
+            on="success"
+            to="confirmReject" />
+    </action-state>
+
+    <view-state
+        id="confirmReject"
+        view="confirm.reject">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="confirm"
+            to="commitRequest" />
+        <transition
+            on="cancel"
+            to="edit" />
+    </view-state>
+
+    <action-state id="rejectProblemReport">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="rejectProblemReport" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+
+    <action-state id="markForPsr">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="markForPsr" />
+        </evaluate>
+        <transition
+            on="success"
+            to="requestSummary" />
+    </action-state>
+
+    <action-state id="submitModRequests">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="submitModRequests" />
+        </evaluate>
+        <transition
+            on="success"
+            to="requestSummary" />
+        <transition
+            on="end"
+            to="end" />
+    </action-state>
+</flow>

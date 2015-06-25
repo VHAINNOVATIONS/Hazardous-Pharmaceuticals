@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PEPSRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request drugCheckSchemaInput.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/request">
+
+    <Header pingOnly="true">
+        <Time value="0845" />
+        <MServer
+            stationNumber="45"
+            serverName="Server Name"
+            ip="10.56.132.1"
+            uci="text"
+            namespace="VISTA" />
+        <MUser
+            jobNumber="2101"
+            duz="88660079"
+            userName="user" />
+    </Header>
+</PEPSRequest>

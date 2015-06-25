@@ -1,0 +1,43 @@
+
+table.pendingTable {
+    /*width: 100%;*/
+    border: 1px solid black;
+    margin: 0px 0px 0px 3px !important;
+    border-collapse: collapse; 
+    empty-cells: show;
+    table-layout: auto; 
+}
+
+
+table.pendingTable thead tr {
+    background-color: #B0B0B0; /* dark grey */
+}
+
+table.pendingTable th {
+    padding: 2px 8px 2px 8px !important;
+    text-align: center;
+    vertical-align: middle;
+    border-color: black;
+    font-family: arial; /* set the fonts for table headers */
+    font-size: 12px; /* set the fonts for table headers */
+}
+
+table.pendingTable th a,table.pendingTable th a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+table.pendingTable th a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+table.footerTable {
+    /*width: 100%;*/
+    margin: 0px 0 0px 0 !important;
+    border-collapse: collapse; 
+    empty-cells: hide;
+    table-layout: auto; 
+}
+
+

@@ -1,0 +1,28 @@
+<project name="PresentationTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <property file="${ant.file.Presentation}/properties/project.properties" />
+    
+    <macrodef name="generatePresentationIntegrationProperties" uri="http://www.swri.org">
+        <attribute name="fileName"
+                   default="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/common/test/integration/IntegrationTestCase.properties" />
+        <sequential>
+            <dirname property="file.dir" file="@{fileName}" />
+            <mkdir dir="${file.dir}" />
+
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.local.targets}" delimiter=",;:" param="target">
+                        <sequential>
+                            <propertyfile file="@{fileName}">
+                                <entry key="local.host" value="@{host}" />
+                                <entry key="local.port" value="${server.@{target}.port}" />
+                                <entry key="local.context.factory" value="${@{host}.jndi.provider}" />
+                                <entry key="local.provider.url"
+                                       value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.@{target}.port}" />
+                            </propertyfile>
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+</project>

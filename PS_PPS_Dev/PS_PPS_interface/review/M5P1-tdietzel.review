@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="M5P1">
+  <ReviewIssue id="FWMEP2D4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-01 :: 13:53:56:152 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:54:14:113 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="59">src/gov/va/med/pharmacy/peps/external/common/callback/ManagedItemCapabilityCallback.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>processFromLocalVista method throws generic 'Exception'</Summary>
+    <Description>Could this be split into exactly what exceptions it could throw? If not, could a list of the more common exceptions be added to the coment</Description>
+    <Annotation>The callback interface is based on the Service capability. The change would need to happen there first.</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3P666U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 16:19:15:414 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:52:06:895 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="128">src/gov/va/med/pharmacy/peps/external/common/drugdatavendor/outbound/capability/impl/DrugReferenceCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Exception is normal flow</Summary>
+    <Description>The catch block contains a comment saying on exception is a normal flow but doesn't explain why - one exception is rethrown and the other is essentially caught and ignored&#xD;
+&#xD;
+Elaborating the comment on why we only log one exception would help with readability</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3P7IV3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 16:20:18:495 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:50:48:240 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="41">src/gov/va/med/pharmacy/peps/external/common/drugdatavendor/outbound/utility/MessageConversionUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Code could use a for each loop</Summary>
+    <Description>For consistency with the rest of our code, this section could use the java for each construct</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6IYGI6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 15:48:36:366 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:48:39:007 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="60">src/gov/va/med/pharmacy/peps/external/common/sts/outbound/capability/impl/StsCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Method uses deprecated call</Summary>
+    <Description>Assuming you want the dosage form name, use the getDosageFormName() method instead.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6J0H4E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 15:50:10:478 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:46:40:135 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="356">src/gov/va/med/pharmacy/peps/external/common/sts/outbound/capability/impl/StsCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Method uses deprecated Call</Summary>
+    <Description>Assuming you want the dosage form name, use the getDosageFormName() method instead.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6K2KKF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 16:19:47:871 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:46:18:323 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="46">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/drug/data/ProductDataFieldTypeConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Numerous TODOs can be addressed</Summary>
+    <Description>This file contains a large number of TODO comments, many can be addressed.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6KD9Q7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 16:28:07:039 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:45:41:621 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="70">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/DosageFormFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Method uses wrong field key and deprecated method</Summary>
+    <Description>Dosage Form Name has its own field key (FieldKey.DOSAGE_FORM_NAME and a seperate getDosageFormName() method. Both should be used in this method&#xD;
+&#xD;
+FieldKey.VALUE is not an actual field on the doasge form</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6KHJ39">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 16:31:25:797 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:44:39:278 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="85">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/VaProductFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deprecated method used</Summary>
+    <Description>Dosage Form name should be accessed using getDosageFormNam()</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6KITT2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 16:32:26:342 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:41:44:719 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="67">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/DoseUnitsFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Dose Unit does not use fieldKey.VALUE</Summary>
+    <Description>Dose unit name has its own FieldKey.DOSE_UNIT_NAME fieldkey for its method.&#xD;
+&#xD;
+Similarly, the getValue() method is deprecated, use .getDoseUnitName() instead</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX6KKNFD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-15 :: 16:33:51:385 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:40:53:969 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deprecated Method used</Summary>
+    <Description>dosageFormVo.getDosageFormName() instead of dosageFormVo.getValue()</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7WMH9Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 14:58:58:295 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:39:13:954 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="33">src/gov/va/med/pharmacy/peps/external/tools/pseudonym/calls/fatkaat/usermanagement/UserLogon.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Map could be parameterized</Summary>
+    <Description>This Hashmap should be parameterized, to prevent basic coding errors and prevent forced class casts</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7WYGGK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 15:08:17:108 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 14:36:57:189 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tdietzel</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/external/tools/pseudonym/vistalink/Parser.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Todo comment to be addressed</Summary>
+    <Description>This todo comment has a date of January 2006, is it really still a todo?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

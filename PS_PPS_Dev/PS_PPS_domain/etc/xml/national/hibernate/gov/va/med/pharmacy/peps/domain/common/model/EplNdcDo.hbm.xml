@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping default-cascade="refresh">
+
+    <!-- Generated content, all changes will be lost! -->
+
+    <class
+        name="gov.va.med.pharmacy.peps.domain.common.model.EplNdcDo"
+        table="EPL_NDCS"
+        
+        >
+        <meta
+            attribute="extends"
+            inherit="false">
+            gov.va.med.pharmacy.peps.domain.common.model.DataObject
+        </meta>
+
+        <id
+            name="eplId"
+            type="java.lang.Long"
+            column="EPL_ID">
+            <meta attribute="use-in-equals">true</meta>
+            <generator class="assigned" />
+        </id>
+
+        <property
+            name="ndcNumber"
+            type="java.lang.String"
+            column="NDC_NUMBER"
+            length="13">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="ndcNoDashes"
+            type="java.lang.String"
+            column="NDC_NO_DASHES"
+            length="11">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+	    name="ndfNdcIen"
+        type="java.lang.Long"
+        column="NDF_NDC_IEN"
+        length="30">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+        </property>
+        
+        <property
+            name="sequenceNum"
+            type="java.lang.Long"
+            column="SEQUENCE_NUM"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="itemStatus"
+            type="java.lang.String"
+            column="ITEM_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestStatus"
+            type="java.lang.String"
+            column="REQUEST_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="tradeName"
+            type="java.lang.String"
+            column="TRADE_NAME"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="upcUpn"
+            type="java.lang.String"
+            column="UPC_UPN"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="shape"
+            type="java.lang.String"
+            column="SHAPE"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="color"
+            type="java.lang.String"
+            column="COLOR"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="imprint"
+            type="java.lang.String"
+            column="IMPRINT"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+  	    <property
+            name="imprint2"
+            type="java.lang.String"
+            column="IMPRINT_2"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="localDispense"
+            type="java.lang.String"
+            column="LOCAL_DISPENSE"
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="revisionNumber"
+            type="java.lang.Long"
+            column="REVISION_NUMBER"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="otcRx"
+            type="java.lang.String"
+            column="OTC_RX"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="rejectReasonText"
+            type="java.lang.String"
+            column="REJECT_REASON_TEXT"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestRejectReason"
+            type="java.lang.String"
+            column="REQUEST_REJECT_REASON"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="ndcDispUnitsPerOrdUnit"
+            type="java.lang.Double"
+            column="NDC_DISP_UNITS_PER_ORD_UNIT">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="packageSize"
+            type="java.lang.Double"
+            column="PACKAGE_SIZE"
+            length="12">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="vendor"
+            type="java.lang.String"
+            column="VENDOR"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="vsn"
+            type="java.lang.String"
+            column="VSN"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="tenDigitNdc"
+            type="java.lang.String"
+            column="TEN_DIGIT_NDC"
+            length="25">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="tenDigitFormatIndication"
+            type="java.lang.String"
+            column="TEN_DIGIT_FORMAT_INDICATION"
+            length="25">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="source"
+            type="java.lang.String"
+            column="SOURCE"
+            not-null="true"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+           <property
+            name="singleMultiSource"
+            type="java.lang.String"
+            column="SINGLE_MULTI_SOURCE"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="inactivationDate"
+            type="java.util.Date"
+            column="INACTIVATION_DATE"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssI"
+	        type="java.lang.String"
+	        column="FSS_I"
+	        length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssPv"
+	        type="java.lang.String"
+	        column="FSS_PV"
+	        length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssCntNo"
+	        type="java.lang.String"
+	        column="FSS_CNT_NO"
+	        length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssEndDate"
+	        type="java.util.Date"
+	        column="FSS_END_DATE"
+	        length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssPrice"
+	        type="java.lang.Double"
+	        column="FSS_PRICE"
+	        length="8">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssVaPrice"
+	        type="java.lang.Double"
+	        column="FSS_VA_PRICE"
+	        length="8">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssBig4Price"
+	        type="java.lang.Double"
+	        column="FSS_BIG4_PRICE"
+	        length="8">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssBpaPrice"
+	        type="java.lang.Double"
+	        column="FSS_BPA_PRICE"
+	        length="8">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssBpaAvail"
+	        type="java.lang.String"
+	        column="FSS_BPA_AVAIL"
+	        length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+	    <property
+	        name="fssNcPrice"
+	        type="java.lang.Double"
+	        column="FSS_NC_PRICE"
+	        length="8">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catMedicFlag" 
+            type="java.lang.String" 
+            column="CAT_MEDIC_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catInvestFlag" 
+            type="java.lang.String" 
+            column="CAT_INVEST_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catCompoundFlag" 
+            type="java.lang.String" 
+            column="CAT_COMPOUND_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="catSupplyFlag" 
+            type="java.lang.String" 
+            column="CAT_SUPPLY_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatHerbalFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_HERBAL_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatChemoFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_CHEMO_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatOtcFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_OTC_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="subcatVeterFlag" 
+            type="java.lang.String" 
+            column="SUBCAT_VETER_FLAG" 
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdBy"
+            type="java.lang.String"
+            column="CREATED_BY"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdDtm"
+            type="java.util.Date"
+            column="CREATED_DTM"
+            not-null="true"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedBy"
+            type="java.lang.String"
+            column="LAST_MODIFIED_BY"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedDtm"
+            type="java.util.Date"
+            column="LAST_MODIFIED_DTM"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+
+        <!-- Associations -->
+
+        <!-- bi-directional many-to-one association to EplOrderUnitDo -->
+        <many-to-one
+            name="eplOrderUnit"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplOrderUnitDo"
+            not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="ORDER_UNIT_ID_FK" />
+        </many-to-one>
+        <!-- bi-directional many-to-one association to EplProductDo -->
+        <many-to-one
+            name="eplProduct"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplProductDo"
+            cascade="none"
+            not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="EPL_ID_PRODUCT_FK" />
+        </many-to-one>
+        <!-- bi-directional one-to-many association to EplPartialSaveMgtDo -->
+        <set
+            name="eplPartialSaveMgts"
+            lazy="true"
+            inverse="true"
+            cascade="none">
+            <key>
+                <column name="EPL_ID_NDC_FK" />
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplPartialSaveMgtDo" />
+        </set>
+        <!-- bi-directional one-to-many association to EplRequestDo -->
+        <set
+            name="eplRequests"
+            lazy="true"
+            inverse="true"
+            cascade="none">
+            <key>
+                <column name="EPL_ID_NDC_FK" />
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplRequestDo" />
+        </set>
+        <!-- bi-directional one-to-many association to EplVadfOwnerDo -->
+        <set
+            name="eplVadfOwners"
+            lazy="true"
+            inverse="true"
+            cascade="none">
+            <key>
+                <column name="EPL_ID_NDC_FK" />
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplVadfOwnerDo" />
+        </set>
+        <!-- bi-directional many-to-one association to EplPackageTypeDo -->
+        <many-to-one
+            name="eplPackageType"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplPackageTypeDo"
+            not-null="false">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="PACKAGE_TYPE_ID_FK" />
+        </many-to-one>
+        <!-- bi-directional many-to-one association to EplManufacturerDo -->
+        <many-to-one
+            name="eplManufacturer"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplManufacturerDo"
+            not-null="false">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="MANUFACTURER_ID_FK" />
+        </many-to-one>
+
+    </class>
+</hibernate-mapping>
+

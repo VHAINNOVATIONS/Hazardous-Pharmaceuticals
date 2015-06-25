@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    id="PRE"
+    version="2.5"
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:xml/spring/CommonContext.xml,classpath*:xml/spring/PresentationContext.xml,classpath*:xml/local/spring/PresentationContext.xml
+        </param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>menuConfigLocation</param-name>
+        <param-value>/xml/local/spring/menu-config.xml</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
+        <param-value>/xml/spring/tiles.xml,/xml/local/spring/tiles.xml</param-value>
+    </context-param>
+
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>xml/local/struts/struts.xml</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ExceptionFilter</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.utility.ExceptionFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ExceptionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SpringWebFlow</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.springwebflow.servlet.SpringWebFlowFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>SpringWebFlow</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>net.sf.navigator.menu.MenuContextListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.apache.tiles.web.startup.TilesListener</listener-class>
+    </listener>
+
+    <!-- VistA Synchronization Status Servlet -->
+    <servlet>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.SynchronizationStatusServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <url-pattern>/encapsulation/status</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Info Retrieve Servlet -->
+    <servlet>
+        <servlet-name>DrugData</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugDataServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugData</servlet-name>
+        <url-pattern>/encapsulation/drug/data</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Accountability Servlet 
+    <servlet>
+        <servlet-name>DrugAccountability</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugAccountabilityServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet> 
+
+    <servlet-mapping>
+        <servlet-name>DrugAccountability</servlet-name>
+        <url-pattern>/encapsulation/drugaccountability/data</url-pattern>
+    </servlet-mapping> -->
+
+    <!-- PMI Retrieve Servlet -->
+    <servlet>
+        <servlet-name>PatientMedicationInformation</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.drugdatavendor.servlet.PatientMedicationInformationServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientMedicationInformation</servlet-name>
+        <url-pattern>/drugdatavendor/pmi</url-pattern>
+    </servlet-mapping>
+
+    <!-- Order Check Servlet -->
+    <servlet>
+        <servlet-name>OrderCheck</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.OrderCheckServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderCheck</servlet-name>
+        <url-pattern>/ordercheck</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Info Servlet -->
+    <servlet>
+        <servlet-name>DrugInfo</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugInfoServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugInfo</servlet-name>
+        <url-pattern>/druginfo</url-pattern>
+    </servlet-mapping>
+
+    <!-- Kaajee configuration -->
+    <listener>
+        <listener-class>gov.va.med.authentication.kernel.KaajeeSessionAttributeListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>gov.va.med.authentication.kernel.KaajeeHttpSessionListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>KaajeeInit</servlet-name>
+        <servlet-class>gov.va.med.authentication.kernel.InitKaajeeServlet</servlet-class>
+        <init-param>
+            <param-name>kaajee-config-file-location</param-name>
+            <param-value>/WEB-INF/kaajeeConfig.xml</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>gov.va.med.authentication.kernel.LoginController</servlet-class>
+        <run-as>
+            <role-name>adminuserrole</role-name>
+        </run-as>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login/login.jsp</form-login-page>
+            <form-error-page>/login/loginerror.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>PEPS Index</web-resource-name>
+            <url-pattern>/about</url-pattern>
+            <url-pattern>/console</url-pattern>
+            <url-pattern>/displaySettings</url-pattern>
+            <url-pattern>/homepage</url-pattern>
+            <url-pattern>/index.jsp</url-pattern>
+            <url-pattern>/searchDataElements</url-pattern>
+            <url-pattern>/searchDomainRequests</url-pattern>
+            <url-pattern>/manageItem</url-pattern>
+            <url-pattern>/managePartialItem</url-pattern>
+            <url-pattern>/searchRequests</url-pattern>
+            <url-pattern>/manageTemplate</url-pattern>
+            <url-pattern>/moveProduct</url-pattern>
+            <url-pattern>/notifications</url-pattern>
+            <url-pattern>/pharmacySystem</url-pattern>
+            <url-pattern>/systemActions</url-pattern>
+            <url-pattern>/updateCots</url-pattern>
+            <url-pattern>/pmi</url-pattern>
+            <url-pattern>/reviewNdcInformation</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>PEPS LOCAL MANAGER</role-name>
+            <role-name>PEPS LOCAL ADMIN</role-name>
+            <role-name>PEPS LOCAL VIEWER</role-name>
+            <role-name>PEPS NATIONAL MANAGER</role-name>
+            <role-name>PEPS NATIONAL ADMIN</role-name>
+            <role-name>PEPS NATIONAL VIEWER</role-name>
+            <role-name>PEPS SECOND REVIEWER</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <security-role>
+        <description>PEPS Local Manager Role</description>
+        <role-name>PEPS LOCAL MANAGER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS Local Administrator Role</description>
+        <role-name>PEPS LOCAL ADMIN</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS Local Viewer Role</description>
+        <role-name>PEPS LOCAL VIEWER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS National Manager Role</description>
+        <role-name>PEPS NATIONAL MANAGER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS National Administrator Role</description>
+        <role-name>PEPS NATIONAL ADMIN</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS National Viewer Role</description>
+        <role-name>PEPS NATIONAL VIEWER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS Second Reviewer Role</description>
+        <role-name>PEPS SECOND REVIEWER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>auto-assigned authenticated user role</description>
+        <role-name>AUTHENTICATED_KAAJEE_USER</role-name>
+    </security-role>
+
+    <security-role>
+        <role-name>adminuserrole</role-name>
+    </security-role>
+
+    <!-- End Kaajee Configuration -->
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,90 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/drugClassSyncRequest" 
+        xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/drugClassSyncRequest" 
+        elementFormDefault="qualified" attributeFormDefault="unqualified">
+        
+        <xsd:element name="drugClassSyncRequest">
+        <xsd:complexType>
+           <xsd:sequence>
+           
+              <xsd:element 
+                  name="RequestType" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="drugClassIen" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="drugClassCode" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="drugClassClassification" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="ParentClass" 
+                  type="drugClassRow"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="type" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="masterEntryForVuid" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="vuid" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="effectiveDateTimeRecord" 
+                  type="effectiveDateTime"
+                  minOccurs="1" 
+                  maxOccurs="unbounded" />
+                  
+                <xsd:element
+                  name="description" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+                  
+           </xsd:sequence>
+        </xsd:complexType>
+     </xsd:element>
+ 
+     <xsd:complexType name="drugClassRow">
+        <xsd:sequence>
+            <xsd:element name="code" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="classification" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="drugClassIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+     <xsd:complexType name="effectiveDateTime">
+        <xsd:sequence>
+            <xsd:element name="effectiveDateTime" type="xsd:dateTime" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="status" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

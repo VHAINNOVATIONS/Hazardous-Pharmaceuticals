@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="load">
+
+    <action-state id="load">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="loadItemSearch" />
+        </evaluate>
+        <!-- <evaluate expression="searchCommand.loadItemSearch()"></evaluate> -->
+        <transition
+            on="success"
+            to="searchCriteria" />
+    </action-state>
+
+    <view-state
+        id="searchCriteria"
+        view="${conversationScope.searchTemplate.searchCriteria.searchDomain.viewName}.search">
+        <on-render>        
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="search" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+            <!-- <evaluate expression="searchCommand.render()"></evaluate> -->
+        </on-render>
+        <transition
+            on="advanced"
+            to="load">
+            <set
+                name="conversationScope.advancedSearch"
+                value="'true'"
+                type="boolean" />
+            <!-- <evaluate expression="searchCommand.setAdvancedSearch(true)" result="conversationScope.advancedSearch"></evaluate> -->
+            <set
+                name="conversationScope.items"
+                value="null" />
+                <!-- <evaluate expression="searchCommand.setItems(null)" result="conversationScope.items"></evaluate> -->
+        </transition>
+        <transition
+            on="simple"
+            to="load">
+            <set
+                name="conversationScope.advancedSearch"
+                value="'false'"
+                type="boolean" />
+                <!-- <evaluate expression="searchCommand.setAdvancedSearch(false)" result="conversationScope.advancedSearch"></evaluate> -->
+            <set
+                name="conversationScope.items"
+                value="null" />
+                <!-- <evaluate expression="searchCommand.setItems(null)" result="conversationScope.items"></evaluate> -->
+        </transition>
+        <transition
+            on="add"
+            to="addSearchTerms" />
+        <transition
+            on="default"
+            to="setDefault" />
+        <transition
+            on="retrieve"
+            to="end" />
+        <transition
+            on="save"
+            to="saveSearch" />
+        <transition
+            on="search"
+            to="search" />
+        <transition
+            on="managePrintTemplate"
+            to="managePrintTemplateSubflow" />
+        <transition
+            on="manageSearchTemplates"
+            to="manageSearchTemplatesSubflow" />
+    </view-state>
+
+    <action-state id="search">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="search" />
+        </evaluate>
+        <!-- <evaluate expression="searchCommand.search()"></evaluate> -->
+        <transition
+            on="success"
+            to="searchCriteria" />
+        <transition
+            on="input"
+            to="searchCriteria" />
+    </action-state>
+
+    <action-state id="addSearchTerms">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="addSearchTerm" />
+        </evaluate>
+        <!-- <evaluate expression="searchCommand.addSearchTerm()"></evaluate> -->
+        <transition
+            on="success"
+            to="searchCriteria" />
+        <transition
+            on="input"
+            to="searchCriteria" />
+    </action-state>
+
+    <action-state id="saveSearch">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="saveSearch" />
+        </evaluate>
+        <!-- <evaluate expression="searchCommand.saveSearch()"></evaluate> -->
+        <transition
+            on="success"
+            to="search" />
+        <transition
+            on="warn"
+            to="warning" />
+        <transition
+            on="input"
+            to="search" />
+    </action-state>
+
+    <view-state
+        id="warning"
+        view="advanced.search.warn">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="search" />
+                <attribute
+                    name="actionMethod"
+                    value="warn" />
+            </evaluate>
+            <!-- <evaluate expression="searchCommand.warn()"></evaluate> -->
+        </on-render>
+        <transition
+            on="submit"
+            to="saveSearch" />
+        <transition
+            on="cancel"
+            to="search" />
+    </view-state>
+
+    <action-state id="setDefault">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="setDefaultSearch" />                
+        </evaluate>
+        <!-- <evaluate expression="searchCommand.setDefaultSearch()"></evaluate> -->
+        <transition
+            on="success"
+            to="search" />
+        <transition
+            on="input"
+            to="search" />
+    </action-state>
+
+    <subflow-state
+        id="managePrintTemplateSubflow"
+        subflow="managePrintTemplate">
+        <transition
+            on="end"
+            to="search" />
+    </subflow-state>
+
+    <subflow-state
+        id="manageSearchTemplatesSubflow"
+        subflow="manageSearchTemplates">
+        <transition
+            on="retrieveEndState"
+            to="search" />
+        <transition
+            on="cancel"
+            to="searchCriteria" />
+    </subflow-state>
+
+    <end-state id="end">
+        <output
+            name="itemId"
+            value="requestParameters.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="requestParameters.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+    </end-state>
+
+</flow>

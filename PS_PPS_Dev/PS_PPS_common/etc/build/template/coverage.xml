@@ -1,0 +1,180 @@
+<project name="CoverageTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initCoverageTemplate" uri="http://www.swri.org">
+        <sequential>
+            <path id="build.class.path">
+                <dirset dir="${module.Common.dir}/etc/build" />
+
+                <fileset dir="${module.BuildLib.dir}/${module.Common}">
+                    <!-- this won't work for some reason, moved the validation-api-*.jar files to Presentation -->
+                    <!-- exclude name="hibernate/validation-api**" if="${exclude.validation.api}"/ -->
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                    <exclude name="build/**" />
+                </fileset>
+
+                <fileset dir="${module.BuildLib.dir}/${module.Common}">
+                    <include name="build/**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset>
+                <!-- fileset dir="${module.BuildLib.dir}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset -->
+            </path>
+            <taskdef resource="emma_ant.properties" loaderref="ant-loader" classpathref="build.class.path" />
+
+            <if>
+                <isfalse value="${out.of.container}" />
+                <then>
+                    <swri:coverageResetAll />
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageInstrument" uri="http://www.swri.org">
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <property name="buildCP" refid="build.class.path"/>
+                    <!-- echo>Classpath at this stage: ${buildCP}</echo -->
+
+                    <emma>
+                        <instr mode="overwrite"
+                               metadatafile="${build.dir}/coverage/${ant.project.name}-metadata.emma"
+                               merge="true">
+                            <instrpath>
+                                <pathelement path="${build.classes.dir}" />
+                            </instrpath>
+                            <filter includes="*" excludes="*test*, *tools*" />
+                        </instr>
+                    </emma>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageGet" uri="http://www.swri.org">
+        <attribute name="port" default="47653" />
+        <attribute name="host" />
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <trycatch>
+                        <try>
+                            <emma>
+                                <ctl connect="@{host}:@{port}">
+                                    <command name="coverage.get" args="${build.dir}/coverage/${ant.project.name}-coverage.emma,true,false" />
+                                </ctl>
+                            </emma>
+                        </try>
+                        <catch>
+                            <echo level="info">Unable to get coverage data on host @{host}</echo>
+                        </catch>
+                    </trycatch>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageGetAll" uri="http://www.swri.org">
+        <sequential>
+            <!-- ${local.hosts}, -->
+            <for list="${national.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <swri:coverageGet host="@{host}" />
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageReset" uri="http://www.swri.org">
+        <attribute name="port" default="47653" />
+        <attribute name="host" />
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <trycatch>
+                        <try>
+                            <emma>
+                                <ctl connect="@{host}:@{port}">
+                                    <command name="coverage.reset" />
+                                </ctl>
+                            </emma>
+                        </try>
+                        <catch>
+                            <echo level="info">Unable to reset coverage data on host @{host}</echo>
+                        </catch>
+                    </trycatch>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageResetAll" uri="http://www.swri.org">
+        <sequential>
+            <!-- ${local.hosts}, -->
+            <for list="${national.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <swri:coverageReset host="@{host}" />
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="coverageReport" uri="http://www.swri.org">
+        <attribute name="allProjects" default="${coverage.all.projects}" />
+        <sequential>
+            <if>
+                <istrue value="${coverage}" />
+                <then>
+                    <if>
+                        <istrue value="@{allProjects}" />
+                        <then>
+                            <patternset id="coverage.pattern.set">
+                                <include name="*.emma" />
+                            </patternset>
+                            
+                            <!-- Copy this project's dependencies' coverage data and metadata -->
+                            <for list="${dependencies}" delimiter=",;:" param="module">
+                                <sequential>
+                                    <copy toDir="${build.dir}/coverage">
+                                        <fileset dir="${module.@{module}.dir}/${build}/coverage">
+                                            <include name="*.emma" />
+                                        </fileset>
+                                    </copy>
+                                </sequential>
+                            </for>
+                        </then>
+                        <else>
+                            <patternset id="coverage.pattern.set">
+                                <include name="${ant.project.name}-coverage.emma" />
+                                <include name="${ant.project.name}-metadata.emma" />
+                            </patternset>
+                        </else>
+                    </if>
+
+                    <trycatch>
+                        <try>
+                            <emma>
+                                <report sourcepath="${src.dir}">
+                                    <fileset dir="${build.dir}/coverage">
+                                        <patternset refid="coverage.pattern.set" />
+                                    </fileset>
+                                    <html outfile="${build.dir}/coverage/report/coverage.html" />
+                                    <xml outfile="${build.dir}/coverage/report/coverage.xml" />
+                                </report>
+                            </emma>
+                        </try>
+                        <catch>
+                            <echo level="info">Unable to generate coverage report</echo>
+                        </catch>
+                    </trycatch>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+</project>

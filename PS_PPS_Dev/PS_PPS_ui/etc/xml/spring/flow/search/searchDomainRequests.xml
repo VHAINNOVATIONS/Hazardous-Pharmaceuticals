@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="searchRequests"
+    start-state="loadDomain">
+            
+    <action-state id="loadDomain">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="request" />
+            <attribute
+                name="actionMethod"
+                value="loadDomainRequests" />
+        </evaluate>
+        <transition
+            on="input"
+            to="reviewCriteria">
+        </transition>
+        <transition
+            on="success"
+            to="reviewCriteria">
+        </transition>
+    </action-state>
+
+</flow>

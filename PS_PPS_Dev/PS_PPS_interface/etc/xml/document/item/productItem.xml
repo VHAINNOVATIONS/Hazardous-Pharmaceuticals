@@ -1,0 +1,178 @@
+<!-- Product Item example.  -->
+
+<productItem
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/productItem"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:vaGeneric="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaGeneric"
+    xmlns:drugUnits="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugUnits"
+    xmlns:dosageForm="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/dosageForm"
+    xmlns:vaDispenseUnit="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaDispenseUnit"
+    xmlns:drugIngredients="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugIngredients"
+    xmlns:vaDrugClass="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaDrugClass"
+    xmlns:dosageUnit="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/dosageUnit"
+    xmlns:drugText="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/drugText"
+    xmlns:orderUnit="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/orderUnit"
+    xmlns:standardMedicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/standardMedicationRoutes"
+    xmlns:medicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationRoutes"
+    xmlns:rxConsult="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/rxConsult"
+    xmlns:vaProduct="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaProduct"
+    xmlns:drug="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/drug"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/productItem ../../schema/item/productItem.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    status="Approved"
+    pepsIdNumber="1234567890">
+
+    <vaGenericFile
+        action="Modify"
+        number="50.6">
+        <vaGeneric:candidateKey>
+            <vaGeneric:name number="0.01">Aspirin</vaGeneric:name>
+            <vaGeneric:vuid number="99.99">383902</vaGeneric:vuid>
+        </vaGeneric:candidateKey>
+
+        <vaGeneric:name number="0.01">Fancy Aspirin</vaGeneric:name>
+
+        <vaGeneric:effectiveDateTime
+            multiple="true"
+            number="99.991">
+            <vaGeneric:effectiveDateTimeFile number="50.6009">
+                <common:effectiveDateTime number=".01">11-02-2008</common:effectiveDateTime>
+                <common:status number=".02">1</common:status>
+            </vaGeneric:effectiveDateTimeFile>
+        </vaGeneric:effectiveDateTime>
+    </vaGenericFile>
+
+    <drugUnitsFile
+        action="Modify"
+        number="50.607">
+        <drugUnits:candidateKey>
+            <drugUnits:name number="0.01">mg</drugUnits:name>
+        </drugUnits:candidateKey>
+    </drugUnitsFile>
+
+    <dosageFormFile
+        action="Modify"
+        number="50.606">
+        <dosageForm:candidateKey>
+            <dosageForm:name number=".01">Tab</dosageForm:name>
+        </dosageForm:candidateKey>
+    </dosageFormFile>
+
+    <vaDispenseUnitFile
+        action="Modify"
+        number="50.64">
+        <vaDispenseUnit:candidateKey>
+            <vaDispenseUnit:name number="0.01">mg</vaDispenseUnit:name>
+        </vaDispenseUnit:candidateKey>
+    </vaDispenseUnitFile>
+
+    <drugIngredientsFile
+        action="Modify"
+        number="50.416">
+        <drugIngredients:candidateKey>
+            <drugIngredients:name number="0.01">Aspirin</drugIngredients:name>
+            <drugIngredients:vuid number="99.99">12345</drugIngredients:vuid>
+        </drugIngredients:candidateKey>
+
+        <drugIngredients:name number="0.01">Fancy Aspirin</drugIngredients:name>
+        <drugIngredients:primaryIngredient number="2">Aspirin</drugIngredients:primaryIngredient>
+
+        <!-- Only send a single effective date/time. -->
+        <drugIngredients:effectiveDateTime
+            multiple="true"
+            number="99.991">
+            <drugIngredients:effectiveDateTimeFile number="50.4169">
+                <common:effectiveDateTime number=".01">12-01-2008</common:effectiveDateTime>
+                <common:status number=".02">1</common:status>
+            </drugIngredients:effectiveDateTimeFile>
+        </drugIngredients:effectiveDateTime>
+    </drugIngredientsFile>
+
+    <vaDrugClassFile
+        action="Modify"
+        number="50.605">
+        <vaDrugClass:candidateKey>
+            <vaDrugClass:code number=".01">CN101</vaDrugClass:code>
+            <vaDrugClass:classification number="1">Anti-allergy</vaDrugClass:classification>
+            <vaDrugClass:vuid number="99.99">8903</vaDrugClass:vuid>
+        </vaDrugClass:candidateKey>
+
+        <vaDrugClass:classification number="1">Pro-allergy</vaDrugClass:classification>
+        <vaDrugClass:type number="3">0</vaDrugClass:type>
+
+        <!-- Break into chunks with | delimiter <= 70 characters and do not chop whole words. -->
+        <vaDrugClass:description
+            wordProcessing="true"
+            number="4">
+            <common:wordProcessingFile append="true"><![CDATA[Some description text goes in here|More description text goes here]]></common:wordProcessingFile>
+        </vaDrugClass:description>
+
+        <vaDrugClass:effectiveDateTime
+            multiple="true"
+            number="99.991">
+            <vaDrugClass:effectiveDateTimeFile number="50.60509">
+                <common:effectiveDateTime number=".01">10-10-2008</common:effectiveDateTime>
+                <common:status number=".02">1</common:status>
+            </vaDrugClass:effectiveDateTimeFile>
+        </vaDrugClass:effectiveDateTime>
+    </vaDrugClassFile>
+
+    <vaProductFile
+        action="Add"
+        number="50.68">
+        <vaProduct:candidateKey>
+            <vaProduct:name number=".01">Aspirin 325mg tab</vaProduct:name>
+            <vaProduct:vuid number="99.99">12345</vaProduct:vuid>
+        </vaProduct:candidateKey>
+
+        <vaProduct:vaGenericName number=".05">12345(VUID)</vaProduct:vaGenericName>
+        <vaProduct:dosageForm number="1">tab</vaProduct:dosageForm>
+        <vaProduct:strength number="2">325</vaProduct:strength>
+        <vaProduct:units number="3">mg</vaProduct:units>
+        <vaProduct:nationalFormularyName number="4">Aspirin Tab</vaProduct:nationalFormularyName>
+        <vaProduct:vaPrintName number="5">Aspirin 325mg tab</vaProduct:vaPrintName>
+        <vaProduct:vaProductIdentifier number="6">1234</vaProduct:vaProductIdentifier>
+        <vaProduct:transmitToCmop number="7">1</vaProduct:transmitToCmop>
+        <vaProduct:vaDispenseUnit number="8">mg</vaProduct:vaDispenseUnit>
+
+        <vaProduct:activeIngredients
+            multiple="true"
+            number="14">
+            <vaProduct:activeIngredientsFile number="50.6814">
+                <vaProduct:activeIngredient number=".01">12345</vaProduct:activeIngredient>
+                <vaProduct:strength number="1">325</vaProduct:strength>
+                <vaProduct:unit number="2">mg</vaProduct:unit>
+            </vaProduct:activeIngredientsFile>
+        </vaProduct:activeIngredients>
+
+        <vaProduct:primaryVaDrugClass number="15">12345</vaProduct:primaryVaDrugClass>
+        <vaProduct:nationalFormularyIndicator number="17">1</vaProduct:nationalFormularyIndicator>
+        <vaProduct:csFederalSchedule number="19">2</vaProduct:csFederalSchedule>
+        <vaProduct:singleMultiSourceProduct number="20">M</vaProduct:singleMultiSourceProduct>
+
+        <vaProduct:effectiveDateTime
+            multiple="true"
+            number="99.991">
+            <vaProduct:effectiveDateTimeFile number="50.6899">
+                <common:effectiveDateTime number=".01">12-01-2008</common:effectiveDateTime>
+                <common:status number=".02">1</common:status>
+            </vaProduct:effectiveDateTimeFile>
+        </vaProduct:effectiveDateTime>
+
+        <vaProduct:serviceCode number="2000">699999</vaProduct:serviceCode>
+    </vaProductFile>
+
+    <drugFile
+        action="Add"
+        number="50">
+        <drug:candidateKey>
+            <drug:genericName number=".01">Free text name</drug:genericName>
+            <drug:linkageId number="99.99">12345</drug:linkageId>
+        </drug:candidateKey>
+
+        <drug:pharmacyOrderableItem number="2.1">Aspirin Tab</drug:pharmacyOrderableItem>
+        <drug:dispenseUnit number="14.5">mg</drug:dispenseUnit>
+        <drug:ncpdpDispenseUnit number="82">EA</drug:ncpdpDispenseUnit>
+        <drug:ncpdpQuantityMultiplier number="83">3</drug:ncpdpQuantityMultiplier>
+    </drugFile>
+</productItem>

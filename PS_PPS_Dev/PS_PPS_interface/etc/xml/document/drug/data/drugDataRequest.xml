@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<drugData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request ../../../schema/drug/data/localDrugDataRequest.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request">
+
+    <drugRequest>
+        <vuid>377514</vuid>
+        <ndc>24223</ndc>
+	</drugRequest>
+</drugData>

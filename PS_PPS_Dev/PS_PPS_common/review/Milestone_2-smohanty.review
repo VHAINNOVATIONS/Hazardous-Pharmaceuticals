@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF2ZSC4V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:33:57:487 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:35:01:987 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove unused import statements</Summary>
+    <Description>remove unused import statements by cntl+shift+O</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF302DBF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:41:45:579 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:42:30:985 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="10">src/gov/va/med/pharmacy/peps/common/vo/RequestState.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>inappropriate comment</Summary>
+    <Description>request status is used for oi, product, and ndc items. According to the comment it is used only for product</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF309896">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:47:05:610 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:48:02:548 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="52">src/gov/va/med/pharmacy/peps/common/vo/RequestSummaryVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing java doc comments</Summary>
+    <Description>missing java doc comments for getters/setters in this class</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30QV3H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:00:48:365 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:02:04:741 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="55">src/gov/va/med/pharmacy/peps/common/vo/RequestTerm.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>comment does not show return type</Summary>
+    <Description>comment should show return type</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF316ZBN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:13:20:339 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:17:40:668 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/common/vo/RequestVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing information from comment</Summary>
+    <Description>RequestVo is also created for NOI</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF31GGBR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:20:42:279 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:21:14:248 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="48">src/gov/va/med/pharmacy/peps/common/vo/RequestVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>unused parameter tag</Summary>
+    <Description>the parameter tag is not used</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF31V33K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:32:04:976 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:33:27:302 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing java doc comments</Summary>
+    <Description>some methods are missing java doc comment and adequate explanation of the method in the comment</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF31X0M3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:33:35:067 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:34:14:879 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary />
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF31ZP8D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:35:40:285 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:37:41:175 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="91">src/gov/va/med/pharmacy/peps/common/vo/SearchRequestCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing description of the parameter tag in the comment</Summary>
+    <Description>missing description of parameter tag in the comment</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF322ZMX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:38:13:737 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:38:37:003 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="84">src/gov/va/med/pharmacy/peps/common/vo/SearchRequestCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing return type in the comment</Summary>
+    <Description>missing return type in the comment</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF323X3S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:38:57:112 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:39:13:034 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="102">src/gov/va/med/pharmacy/peps/common/vo/SearchRequestCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing return type in the comment</Summary>
+    <Description>missing return type in the comment</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF324KGX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:39:27:393 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:40:05:940 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="109">src/gov/va/med/pharmacy/peps/common/vo/SearchRequestCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing description of the parameter tag in the comment</Summary>
+    <Description>missing description of the parameter tag in the comment</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

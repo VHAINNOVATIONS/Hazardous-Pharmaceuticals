@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5EYYM8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:14:33:152 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:15:34:526 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="138">src/gov/va/med/pharmacy/peps/presentation/common/action/PartialRetrieveAction.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Rename this method to retrievePartialSaves since it is retrieving more than one.</Summary>
+    <Description>retrievePartialSave -&gt; retrievePartialSaves&#xD;
+&#xD;
+Also type the return List so that we don't get the compile warning anymore.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F0KYV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:15:48:775 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:16:39:525 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="141">src/gov/va/med/pharmacy/peps/presentation/common/action/PartialRetrieveAction.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use of a for each loop would be cleaner and would remove the need for the iterator</Summary>
+    <Description>for (PartialSaveVo partialSaveVo : partialSaveVos) {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F1VFL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:16:48:993 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:20:59:037 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="153">src/gov/va/med/pharmacy/peps/presentation/common/action/PartialRetrieveAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use the .isProduct(), isNdc(), and isOrderableItem() methods instead of ==</Summary>
+    <Description>Also applies to lines 189, 195, and 201</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F7BCW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:21:02:912 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:21:58:051 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="201">src/gov/va/med/pharmacy/peps/presentation/common/action/PartialRetrieveAction.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Previous check in partialRetrieveItem didn't have if check for Orderable Item, is it necessary?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FDBUM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:43:486 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:27:04:594 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1">web/WEB-INF/jsp/partialSaveItems.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move this JSP into a folder</Summary>
+    <Description>The root of WEB-INF/jsp has been used for more of the universal pages (empty, home, navigation bars, etc). Putting the partial save page here is a little out of place. Perhaps under it's own folder? &#xD;
+&#xD;
+May also apply to the other partial save pages -- they could be all placed in their own folder.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FFBOY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:27:16:594 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:27:34:328 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="6">web/WEB-INF/jsp/partialSaveItems.jsp</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Localize the field set's legend</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FGBKM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:28:03:094 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:04:405 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1">web/WEB-INF/jsp/product/partialsavecomment.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider merging this comment JSP with the others (NDC and Orderable Item) under one file</Summary>
+    <Description>Merge the files, adding logic to decide which action to call on submit (this actually may become unnecessary when we move to using Spring Web Flow).&#xD;
+&#xD;
+Move the file under a separate folder where all partial save JSPs are held.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FHUIG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:14:296 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:31:327 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="13">web/WEB-INF/jsp/product/partialsavecomment.jsp</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Localize the "Please enter..." text</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FJNHE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:30:38:498 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:30:52:420 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="13">web/WEB-INF/jsp/search/partialsave.jsp</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Localize the Fieldset's legend</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FK5QI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:02:154 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:24:091 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="13">web/WEB-INF/jsp/search/partialsave.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider moving this file along with the other partial save files into a folder of their own</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

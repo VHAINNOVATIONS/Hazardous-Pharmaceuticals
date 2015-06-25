@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    jaxb:version="2.0"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <!-- ************************* Common field type(s) ********************** -->
+
+    <xsd:complexType
+        abstract="true"
+        name="stringField">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute
+                    name="number"
+                    type="fieldNumber"
+                    use="required" />
+
+                <xsd:anyAttribute />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="integerField">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:integer">
+                <xsd:attribute
+                    name="number"
+                    type="fieldNumber"
+                    use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="floatField">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:float">
+                <xsd:attribute
+                    name="number"
+                    type="fieldNumber"
+                    use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="doubleField">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:double">
+                <xsd:attribute
+                    name="number"
+                    type="fieldNumber"
+                    use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="dateTimeField">
+        <xsd:simpleContent>
+            <xsd:restriction base="stringField">
+                <!-- 04-25-1979 12:45 -->
+                <xsd:pattern value="\d{2}-\d{2}-\d{4}\s\d{2}:\d{2}" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="dateField">
+        <xsd:simpleContent>
+            <xsd:restriction base="stringField">
+                <!-- 04-25-1979 -->
+                <xsd:pattern value="\d{2}-\d{2}-\d{4}" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="itemStatus">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Pending" />
+            <xsd:enumeration value="Approved" />
+            <xsd:enumeration value="Rejected" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="itemAction">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Add" />
+            <xsd:enumeration value="Modify" />
+            <xsd:enumeration value="Inactivate" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="language">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="English" />
+            <xsd:enumeration value="Spanish" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="DARequestType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="New" />
+            <xsd:enumeration value="Update" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="DAResponseType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Success" />
+            <xsd:enumeration value="Failure" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- ************************* Common field/file numbers ********************** -->
+
+    <xsd:simpleType name="fieldNumber">
+        <xsd:restriction base="xsd:float">
+            <xsd:minInclusive value="0" />
+            <xsd:maxInclusive value="9999" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="fileNumber">
+        <xsd:restriction base="xsd:float">
+            <xsd:enumeration value="0" /><!-- NEW WARNING LABEL LIST WARN -->
+            <xsd:enumeration value="50" />
+            <xsd:enumeration value="50.1" />
+            <xsd:enumeration value="50.01" />
+            <xsd:enumeration value="50.02" />
+            <xsd:enumeration value="50.0212" />
+            <xsd:enumeration value="50.0214" />
+            <xsd:enumeration value="50.032" />
+            <xsd:enumeration value="50.037" />
+            <xsd:enumeration value="50.032" />
+            <xsd:enumeration value="50.0441" />
+            <xsd:enumeration value="50.065" />
+            <xsd:enumeration value="50.0903" />
+            <xsd:enumeration value="50.0904" />
+            <xsd:enumeration value="50.416" />
+            <xsd:enumeration value="50.4169" />
+            <xsd:enumeration value="50.6" />
+            <xsd:enumeration value="50.6009" />
+            <xsd:enumeration value="50.605" />
+            <xsd:enumeration value="50.60509" />
+            <xsd:enumeration value="50.606" />
+            <xsd:enumeration value="50.6061" />
+            <xsd:enumeration value="50.6066" />
+            <xsd:enumeration value="50.6068" />
+            <xsd:enumeration value="50.6069" />
+            <xsd:enumeration value="50.607" />
+            <xsd:enumeration value="50.608" />
+            <xsd:enumeration value="50.609" />
+            <xsd:enumeration value="50.64" />
+            <xsd:enumeration value="50.67" />
+            <xsd:enumeration value="50.68" />
+            <xsd:enumeration value="50.6814" />
+            <xsd:enumeration value="50.6899" />
+            <xsd:enumeration value="50.7" />
+            <xsd:enumeration value="50.72" />
+            <xsd:enumeration value="50.76" />
+            <xsd:enumeration value="51" />
+            <xsd:enumeration value="51.01" />
+            <xsd:enumeration value="51.1" />
+            <xsd:enumeration value="51.11" />
+            <xsd:enumeration value="51.17" />
+            <xsd:enumeration value="51.2" />
+            <xsd:enumeration value="51.23" />
+            <xsd:enumeration value="51.2399" />
+            <xsd:enumeration value="51.24" />
+            <xsd:enumeration value="51.242" />
+            <xsd:enumeration value="51.2499" />
+            <xsd:enumeration value="51.27" />
+            <xsd:enumeration value="51.5" />
+            <xsd:enumeration value="51.7" />
+            <xsd:enumeration value="51.71" />
+            <xsd:enumeration value="54" />
+            <xsd:enumeration value="54.1" />
+            <xsd:enumeration value="55.95" />
+            <xsd:enumeration value="59.7" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="vistaDomainName">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Outpatient Sites" />
+            <xsd:enumeration value="Hospital Locations" />
+            <xsd:enumeration value="Wards" />
+            <xsd:enumeration value="Labs" />
+            <xsd:enumeration value="Vitals" />
+            <xsd:enumeration value="IFCAP Item Numbers" />
+            <xsd:enumeration value="Specimen Types" />
+            <xsd:enumeration value="VistA Version" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- ************************* Common sub-file(s) and sub-file field(s) ********************** -->
+
+    <xsd:complexType
+        abstract="true"
+        name="abstractEffectiveDateTimeField">
+        <xsd:sequence>
+            <!-- 
+                Defined in child type.
+                
+                <xsd:element
+                name="effectiveDateTimeFile"
+                type="effectiveDateTimeFile"
+                minOccurs="1"
+                maxOccurs="1" />
+            -->
+        </xsd:sequence>
+
+        <xsd:attribute
+            name="multiple"
+            type="xsd:boolean"
+            use="required"
+            fixed="true" />
+
+        <xsd:attribute
+            name="number"
+            type="fieldNumber"
+            use="required"
+            fixed="99.991" />
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="abstractEffectiveDateTimeFile">
+        <xsd:sequence>
+            <xsd:element
+                name="effectiveDateTime"
+                minOccurs="0"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="dateField">
+
+                            <xsd:attribute
+                                name="number"
+                                type="fieldNumber"
+                                use="required"
+                                fixed="0.01" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="status"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="stringField">
+                            <xsd:enumeration value="0" />
+                            <xsd:enumeration value="1" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="fieldNumber"
+                                use="required"
+                                fixed="0.02" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <!--
+            Defined in child type.
+            
+            <xsd:attribute
+            name="number"
+            type="fileNumber"
+            use="required"
+            fixed="" />
+        -->
+    </xsd:complexType>
+
+    <xsd:complexType
+        abstract="true"
+        name="abstractWordProcessingField">
+        <xsd:sequence>
+            <xsd:element
+                name="wordProcessingFile"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:string">
+                            <xsd:attribute
+                                name="append"
+                                type="xsd:boolean"
+                                use="required" />
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <!--
+            Defined in child type.
+            
+            <xsd:attribute
+            name="number"
+            type="fieldNumber"
+            use="required"
+            fixed=""  />
+        -->
+
+        <xsd:attribute
+            name="wordProcessing"
+            type="xsd:boolean"
+            use="required"
+            fixed="true" />
+    </xsd:complexType>
+
+</xsd:schema>

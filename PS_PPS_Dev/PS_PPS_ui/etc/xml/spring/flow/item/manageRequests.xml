@@ -1,0 +1,168 @@
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="searchRequests">
+
+    <subflow-state
+        id="searchRequests"
+        subflow="searchRequests">
+        <transition
+            on="end"
+            to="chooseToLoop">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+    </subflow-state>
+
+    <decision-state id="chooseToLoop">
+        <on-entry>
+            <!-- chooseToLoop only called when leaving searchRequests. First reset the selections, if any set previously. -->
+            <!-- Then let Struts set the tableSelections List.  -->
+            <set
+                name="conversationScope.tableSelections"
+                value="null" />
+            <set
+                name="conversationScope.tableSelectionsIndex"
+                value="0"
+                type="int" />
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="peps" />
+                <attribute
+                    name="actionMethod"
+                    value="input" />
+            </evaluate>
+        </on-entry>
+        <if
+            test="conversationScope.tableSelections != null and !conversationScope.tableSelections.isEmpty()"
+            then="nextItem"
+            else="retrieveRequest" />
+    </decision-state>
+
+    <action-state id="nextItem">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="request" />
+            <attribute
+                name="actionMethod"
+                value="parseUniqueId" />
+        </evaluate>
+        <transition
+            on="success"
+            to="retrieveRequest" />
+        <transition
+            on="error"
+            to="searchRequests" />
+    </action-state>
+
+    <action-state id="retrieveRequest">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="request" />
+            <attribute
+                name="actionMethod"
+                value="retrieveRequest" />
+        </evaluate>
+        <transition
+            on="success"
+            to="retrieveItem" />
+    </action-state>
+
+    <action-state id="retrieveItem">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="retrieve" />
+        </evaluate>
+        <transition
+            on="success"
+            to="editRequest" />
+    </action-state>
+
+    <subflow-state
+        id="editRequest"
+        subflow="editRequest">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <input
+            name="oldItem"
+            value="flowScope.oldItem"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <input
+            name="mainRequest"
+            value="conversationScope.mainRequest"
+            type="gov.va.med.pharmacy.peps.common.vo.RequestVo" />
+        <transition
+            on="end"
+            to="chooseEnd">
+            <set
+                name="flowScope.item"
+                value="currentEvent.attributes.item"
+                type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+        <transition
+            on="searchEnd"
+            to="searchRequests" />
+        <transition
+            on="retrieveEnd"
+            to="retrieveRequest" />
+    </subflow-state>
+
+    <decision-state id="chooseEnd">
+        <if
+            test="conversationScope.tableSelections != null and !conversationScope.tableSelections.isEmpty() and conversationScope.tableSelections.size() > conversationScope.tableSelectionsIndex"
+            then="nextItem" />
+        <if
+            test="flowScope.subFlow"
+            then="end"
+            else="searchRequests" />
+    </decision-state>
+
+    <end-state id="end">
+        <output
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <output
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+    </end-state>
+</flow>

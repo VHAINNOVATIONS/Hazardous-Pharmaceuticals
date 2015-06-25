@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="drugData">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="drugsNotFound"
+                    type="drugsNotFoundType"
+                    minOccurs="0"
+                    maxOccurs="1" />
+                <xsd:element
+                    name="drugDataFields"
+                    type="drugDataFieldsType"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="drugsNotFoundType">
+        <xsd:sequence>
+            <xsd:element
+                name="vuid"
+                type="xsd:integer"
+                minOccurs="0"
+                maxOccurs="unbounded" />
+            <xsd:element
+                name="ndc"
+                type="xsd:integer"
+                minOccurs="0"
+                maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="drugDataFieldsType">
+        <xsd:sequence>
+            <xsd:element
+                ref="drugRequestIdentifier"
+                minOccurs="1"
+                maxOccurs="1" />
+            <xsd:choice
+                minOccurs="1"
+                maxOccurs="unbounded">
+                <xsd:element
+                    name="stringDataField"
+                    type="stringDataFieldType" />
+                <xsd:element
+                    name="booleanDataField"
+                    type="booleanDataFieldType" />
+                <xsd:element
+                    name="integerDataField"
+                    type="integerDataFieldType" />
+                <xsd:element
+                    name="doubleDataField"
+                    type="doubleDataFieldType" />
+                <xsd:element
+                    name="listDataField"
+                    type="listDataFieldType" />
+                <xsd:element
+                    name="complexDataField"
+                    type="complexDataFieldType" />
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="drugRequestIdentifier">
+        <xsd:complexType>
+            <xsd:choice
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:element
+                    name="vuid"
+                    type="xsd:integer"
+                    minOccurs="1"
+                    maxOccurs="1" />
+                <xsd:element
+                    name="ndc"
+                    type="xsd:integer"
+                    minOccurs="1"
+                    maxOccurs="1" />
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="stringDataFieldType">
+        <xsd:attribute
+            name="value"
+            type="xsd:string"
+            use="required" />
+        <xsd:attribute
+            name="fieldName"
+            type="stringFieldNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="booleanDataFieldType">
+        <xsd:attribute
+            name="value"
+            type="xsd:boolean"
+            use="required" />
+        <xsd:attribute
+            name="fieldName"
+            type="booleanFieldNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="integerDataFieldType">
+        <xsd:attribute
+            name="value"
+            type="xsd:integer"
+            use="required" />
+        <xsd:attribute
+            name="fieldName"
+            type="integerFieldNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="doubleDataFieldType">
+        <xsd:attribute
+            name="value"
+            type="xsd:double"
+            use="required" />
+        <xsd:attribute
+            name="fieldName"
+            type="doubleFieldNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="listDataFieldType">
+        <xsd:sequence>
+            <xsd:element
+                name="item"
+                type="itemType"
+                minOccurs="0"
+                maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute
+            name="fieldName"
+            type="listFieldNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="itemType">
+        <xsd:attribute
+            name="value"
+            type="xsd:string"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="complexDataFieldType">
+        <xsd:sequence>
+            <xsd:element
+                name="complexItem"
+                type="complexItemType"
+                minOccurs="0"
+                maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute
+            name="fieldName"
+            type="complexFieldNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:complexType name="complexItemType">
+        <xsd:attribute
+            name="value"
+            type="xsd:string"
+            use="required" />
+        <xsd:attribute
+            name="name"
+            type="complexItemNameType"
+            use="required" />
+    </xsd:complexType>
+
+    <xsd:simpleType name="booleanFieldNameType">
+        <xsd:restriction base="xsd:string">
+            <!-- ndc fields -->
+            <xsd:enumeration value="Mark For Local Use" />
+            <xsd:enumeration value="Protect From Light" />
+            <!-- product fields -->
+            <xsd:enumeration value="Transmit to CMOP (Local)" />
+            <xsd:enumeration value="Do Not Mail" />
+            <xsd:enumeration value="Exclude Drg-Drg Interaction Ck" />
+            <xsd:enumeration value="High-Risk Follow-Up" />
+            <xsd:enumeration value="High-Risk Med" />
+            <xsd:enumeration value="Local Non-Formulary" />
+            <xsd:enumeration value="Mark For Local Use" />
+            <xsd:enumeration value="Med Controlled Substance" />
+            <xsd:enumeration value="National Formulary Indicator" />
+            <xsd:enumeration value="OP External Dispense" />
+            <xsd:enumeration value="CMOP Dispense (National)" />
+            <xsd:enumeration value="Witness Required" />
+            <xsd:enumeration value="Patient Specific Label" />
+            <xsd:enumeration value="Protect From Light" />
+            <xsd:enumeration value="Do Not Handle if Pregnant" />
+            <xsd:enumeration value="Follow-Up Time" />
+            <xsd:enumeration value="Hazardous to Dispose" />
+            <xsd:enumeration value="Hazardous to Handle" />
+            <xsd:enumeration value="Hazardous to Patient" />
+            <xsd:enumeration value="Long Term Out of Stock" />
+            <xsd:enumeration value="Low Safety Margin" />
+            <xsd:enumeration value="Non-Renewable" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="stringFieldNameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="NDC Item Inactivation Date" />
+            <xsd:enumeration value="NDC" />
+            <xsd:enumeration value="Reject Reason Text" />
+            <xsd:enumeration value="Trade Name" />
+            <xsd:enumeration value="UPC-UPN" />
+            <xsd:enumeration value="Vendor" />
+            <xsd:enumeration value="VSN" />
+            <xsd:enumeration value="Proposed Inactivation Date" />
+            <xsd:enumeration value="Previous NDC" />
+            <xsd:enumeration value="Previous UPC UPN" />
+            <xsd:enumeration value="Source" />
+            <!-- product fields -->
+            <xsd:enumeration value="Action Profile Message (OP)" />
+            <xsd:enumeration value="Day (ND) Or Dose (NL) Limit" />
+            <xsd:enumeration value="DEA Special Handling" />
+            <xsd:enumeration value="Dispense Limit for Order" />
+            <xsd:enumeration value="Dispense Limit Schedule" />
+            <xsd:enumeration value="Dispense Override" />
+            <xsd:enumeration value="Dispense Override Reason" />
+            <xsd:enumeration value="Dispense Quantity Limit" />
+            <xsd:enumeration value="Dispense Quantity Override" />
+            <xsd:enumeration value="Dispense Quantity Override Reason" />
+            <xsd:enumeration value="FSN" />
+            <xsd:enumeration value="High-Risk Follow-Up Time Period" />
+            <xsd:enumeration value="IFCAP Item Number" />
+            <xsd:enumeration value="Product Inactivation Date" />
+            <xsd:enumeration value="Inpatient Pharmacy Location" />
+            <xsd:enumeration value="Inpatient Medication Expired Orders Max Time" />
+            <xsd:enumeration value="Inpatient Medication Expired Orders Min Time" />
+            <xsd:enumeration value="Max Dispense Limit" />
+            <xsd:enumeration value="Message" />
+            <xsd:enumeration value="Generic Name" />
+            <xsd:enumeration value="National Formulary Name" />
+            <xsd:enumeration value="National Formulary Restriction" />
+            <xsd:enumeration value="Override Reason Enterer" />
+            <xsd:enumeration value="Quantity Dispense Message" />
+            <xsd:enumeration value="Reject Reason Text" />
+            <xsd:enumeration value="Specimen Type" />
+            <xsd:enumeration value="Total Dispense Quantity" />
+            <xsd:enumeration value="Unit Dose Schedule" />
+            <xsd:enumeration value="VA Print Name" />
+            <xsd:enumeration value="VA Product Name" />
+            <xsd:enumeration value="VUID" />
+            <xsd:enumeration value="Default Mail Service" />
+            <xsd:enumeration value="CMOP ID" />
+            <xsd:enumeration value="Proposed Inactivation Date" />
+            <xsd:enumeration value="Primary EPA Code" />
+            <xsd:enumeration value="DOT Shipping Label" />
+            <xsd:enumeration value="Waste Sort Code" />
+            <xsd:enumeration value="Tallman Lettering" />
+            <xsd:enumeration value="Source" />
+            <xsd:enumeration value="Product NDC" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="integerFieldNameType">
+        <xsd:restriction base="xsd:string">
+            <!-- product fields -->
+            <xsd:enumeration value="AR/WS Amis Conversion Number" />
+            <xsd:enumeration value="Current Inventory" />
+            <xsd:enumeration value="Dispense Days Supply Limit" />
+            <xsd:enumeration value="GCNSEQNO" />
+            <xsd:enumeration value="Maximum Dose Per Day" />
+            <xsd:enumeration value="Monitor Max Days" />
+            <xsd:enumeration value="Normal Amount To Order" />
+            <xsd:enumeration value="Reorder Level" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="doubleFieldNameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Package Size" />
+            <xsd:enumeration value="NDC Price Per Dispense Unit" />
+            <xsd:enumeration value="NDC Price Per Order Unit" />
+            <xsd:enumeration value="Unit Price" />
+            <xsd:enumeration value="NDC Dispense Units Per Order Unit" />
+            <!-- product fields -->
+            <xsd:enumeration value="Product Dispense Units Per Order Unit" />
+            <xsd:enumeration value="Product Price Per Dispense Unit" />
+            <xsd:enumeration value="Product Price Per Order Unit" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="listFieldNameType">
+        <xsd:restriction base="xsd:string">
+            <!-- NDC fields -->
+            <xsd:enumeration value="Application Package Use" />
+            <xsd:enumeration value="OTC/RX Indicator" />
+            <xsd:enumeration value="Scored" />
+            <xsd:enumeration value="Product Type" />
+            <xsd:enumeration value="Refrigeration" />
+            <xsd:enumeration value="Shape" />
+            <xsd:enumeration value="Color" />
+            <xsd:enumeration value="Imprint" />
+            <xsd:enumeration value="Request Rejection Reason" />
+            <xsd:enumeration value="Item Status" />
+
+            <!-- Product Item fields -->
+            <xsd:enumeration value="Active Ingredients" />
+            <xsd:enumeration value="New Warning Label List Warn" />
+            <xsd:enumeration value="Application Package Use" />
+            <xsd:enumeration value="Approved For Splitting" />
+            <xsd:enumeration value="AR/WS Amis Category" />
+            <xsd:enumeration value="Corresponding Inpatient Drug" />
+            <xsd:enumeration value="Corresponding Outpatient Drug" />
+            <xsd:enumeration value="CS Federal Schedule" />
+            <xsd:enumeration value="DAW Code" />
+            <xsd:enumeration value="Formulary Alternative" />
+            <xsd:enumeration value="Order Unit" />
+            <xsd:enumeration value="Primary VA Drug Class" />
+            <xsd:enumeration value="Request Status" />
+            <xsd:enumeration value="Secondary VA Drug Class" />
+            <xsd:enumeration value="Single/Multi Source Product" />
+            <xsd:enumeration value="Product Type" />
+            <xsd:enumeration value="Unit Dose Schedule Type" />
+            <xsd:enumeration value="VA Dispense Unit" />
+            <xsd:enumeration value="Refrigeration" />
+            <xsd:enumeration value="Recall Level" />
+            <xsd:enumeration value="DEA Schedule" />
+            <xsd:enumeration value="Formulary" />
+            <xsd:enumeration value="Request Rejection Reason" />
+            <xsd:enumeration value="Item Status" />
+
+            <!-- Orderable Item Fields -->
+            <xsd:enumeration value="Labs During Administration" />
+            <xsd:enumeration value="Labs During Finishing An Order" />
+            <xsd:enumeration value="Labs During Order Entry" />
+            <xsd:enumeration value="Vitals During Administration" />
+            <xsd:enumeration value="Vitals During Finishing An Order" />
+            <xsd:enumeration value="Vitals During Order Entry" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="complexFieldNameType">
+        <xsd:restriction base="xsd:string">
+            <!-- ndc fields -->
+            <xsd:enumeration value="Package Type" />
+            <xsd:enumeration value="Order Unit" />
+            <xsd:enumeration value="Manufacturer" />
+            <!-- product fields -->
+            <xsd:enumeration value="Ingredients" />
+            <xsd:enumeration value="Drug Unit" />
+            <xsd:enumeration value="Drug Class" />
+            <xsd:enumeration value="Order Unit" />
+            <xsd:enumeration value="Dispense Unit" />
+            <xsd:enumeration value="Dose Units" />
+            <xsd:enumeration value="Rx Consult" />
+            <!-- product multiples -->
+            <xsd:enumeration value="Synonym" />
+            <xsd:enumeration value="ATC Canisters" />
+            <xsd:enumeration value="Possible Dosages" />
+            <xsd:enumeration value="Local Possible Dosage" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="complexItemNameType">
+        <xsd:restriction base="xsd:string">
+            <!-- ndc fields -->
+            <xsd:enumeration value="Package Type Name" />
+            <xsd:enumeration value="Order Unit Abbreviation" />
+            <xsd:enumeration value="Order Unit Expansion" />
+            <xsd:enumeration value="Address" />
+            <xsd:enumeration value="Manufacturer Name" />
+            <xsd:enumeration value="Phone Number" />
+            <!-- product fields -->
+            <xsd:enumeration value="Inactivation Date" />
+            <xsd:enumeration value="Ingredient Name" />
+            <xsd:enumeration value="Primary Ingredients" />
+            <xsd:enumeration value="VUID" />
+            <xsd:enumeration value="Drug Unit Name" />
+            <xsd:enumeration value="Classification" />
+            <xsd:enumeration value="Code" />
+            <xsd:enumeration value="Parent Class" />
+            <xsd:enumeration value="Type" />
+            <xsd:enumeration value="Description" />
+            <xsd:enumeration value="Order Unit Abbreviation" />
+            <xsd:enumeration value="Order Unit Expansion" />
+            <xsd:enumeration value="Dispense Unit Name" />
+            <xsd:enumeration value="Dose Unit Name" />
+            <xsd:enumeration value="First DataBank Dose Unit" />
+            <xsd:enumeration value="Dose Unit Synonym" />
+            <xsd:enumeration value="Replaced By VHA Standard Terms" />
+            <xsd:enumeration value="Rx Consult Name" />
+            <xsd:enumeration value="Warning Mapping" />
+            <xsd:enumeration value="Spanish Translation" />
+            <xsd:enumeration value="Consult Text" />
+            <xsd:enumeration value="Ingredient Strength" />
+            <xsd:enumeration value="Ingredient Unit" />
+            <xsd:enumeration value="Dispense Units Per Order Unit" />
+            <xsd:enumeration value="Product Intended Use" />
+            <xsd:enumeration value="Synonym Name" />
+            <xsd:enumeration value="Order Unit" />
+            <xsd:enumeration value="Vendor" />
+            <xsd:enumeration value="VSN" />
+            <xsd:enumeration value="Price Per Order Unit" />
+            <xsd:enumeration value="NDC Code" />
+            <xsd:enumeration value="Price per Dispense Unit" />
+            <xsd:enumeration value="ATC Canister" />
+            <xsd:enumeration value="ATC Mnemonic" />
+            <xsd:enumeration value="Ward Group For ATC Canisters" />
+            <xsd:enumeration value="BCMA Units Per Dose" />
+            <xsd:enumeration value="Dispense Units Per Dose" />
+            <xsd:enumeration value="Dose" />
+            <xsd:enumeration value="Package" />
+            <xsd:enumeration value="BCMA Units Per Dose" />
+            <xsd:enumeration value="Local Possible Dosage" />
+            <xsd:enumeration value="Other Language Dosage Name" />
+            <xsd:enumeration value="Dose Unit" />
+            <xsd:enumeration value="Numeric Dose" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

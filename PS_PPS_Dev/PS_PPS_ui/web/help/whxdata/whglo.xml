@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossary>
+<chunkinfo url="whgdata0.xml" first="10F" last="Automated Management Information System (AMIS)" num="70" />
+<chunkinfo url="whgdata1.xml" first="Automatic Refill" last="CIP" num="68" />
+<chunkinfo url="whgdata2.xml" first="Client" last="CS" num="55" />
+<chunkinfo url="whgdata3.xml" first="CS Counter" last="Destruction Holding Area" num="57" />
+<chunkinfo url="whgdata4.xml" first="Destruction Holding List" last="ER" num="70" />
+<chunkinfo url="whgdata5.xml" first="ER (Architecture)" last="HDS" num="70" />
+<chunkinfo url="whgdata6.xml" first="Health Data Repository (HDR)" last="Intranet" num="53" />
+<chunkinfo url="whgdata7.xml" first="Inventory Forecast" last="Kernel" num="50" />
+<chunkinfo url="whgdata8.xml" first="Kernel Authentication and Authorization for J2EE (KAAJEE)" last="MSH" num="60" />
+<chunkinfo url="whgdata9.xml" first="MTF" last="Order Unit Domain" num="63" />
+<chunkinfo url="whgdata10.xml" first="Orderable Item (OI)" last="Pharmacy Technician" num="63" />
+<chunkinfo url="whgdata11.xml" first="Pick List" last="Rational Software Architect" num="69" />
+<chunkinfo url="whgdata12.xml" first="RBAC" last="Sequence Diagram" num="55" />
+<chunkinfo url="whgdata13.xml" first="Service" last="Sterile Product" num="47" />
+<chunkinfo url="whgdata14.xml" first="Sterile Product Work List" last="Transport CS" num="51" />
+<chunkinfo url="whgdata15.xml" first="Transport Invoice" last="VHA OI" num="60" />
+<chunkinfo url="whgdata16.xml" first="VHA Unique Identifier (VUID)" last="XUI" num="51" />
+<chunkinfo url="whgdata17.xml" first="“Now Dose”" last="“Now Dose”" num="1" />
+
+</glossary>

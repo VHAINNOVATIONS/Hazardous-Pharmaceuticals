@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugData xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response">
+    <drugDataFields>
+        <drugRequestIdentifier>
+            <vuid>4007158</vuid>
+        </drugRequestIdentifier>
+        <booleanDataField fieldName="Transmit to CMOP (Local)" value="true"/>
+        <booleanDataField fieldName="Do Not Mail" value="false"/>
+        <booleanDataField fieldName="Exclude Drg-Drg Interaction Ck" value="false"/>
+        <booleanDataField fieldName="High-Risk Follow-Up" value="false"/>
+        <booleanDataField fieldName="High-Risk Med" value="false"/>
+        <booleanDataField fieldName="Local Non-Formulary" value="true"/>
+        <booleanDataField fieldName="Mark For Local Use" value="true"/>
+        <booleanDataField fieldName="Med Controlled Substance" value="false"/>
+        <booleanDataField fieldName="National Formulary Indicator" value="false"/>
+        <booleanDataField fieldName="OP External Dispense" value="false"/>
+        <booleanDataField fieldName="CMOP Dispense (National)" value="false"/>
+        <booleanDataField fieldName="Witness Required" value="false"/>
+        <booleanDataField fieldName="Patient Specific Label" value="false"/>
+        <booleanDataField fieldName="Narcotic" value="false"/>
+        <booleanDataField fieldName="Protect From Light" value="false"/>
+        <booleanDataField fieldName="Do Not Handle if Pregnant" value="false"/>
+        <booleanDataField fieldName="Follow-Up Time" value="false"/>
+        <booleanDataField fieldName="Hazardous to Dispose" value="false"/>
+        <booleanDataField fieldName="Hazardous to Handle" value="false"/>
+        <booleanDataField fieldName="Hazardous to Patient" value="false"/>
+        <booleanDataField fieldName="Long Term Out of Stock" value="false"/>
+        <booleanDataField fieldName="Low Safety Margin" value="false"/>
+        <booleanDataField fieldName="Non-Renewable" value="false"/>
+        <integerDataField fieldName="AR/WS Amis Conversion Number" value="1"/>
+        <integerDataField fieldName="Current Inventory" value="0"/>
+        <integerDataField fieldName="Dispense Days Supply Limit" value="30"/>
+        <integerDataField fieldName="GCNSEQNO" value="4489"/>
+        <integerDataField fieldName="Maximum Dose Per Day" value="1"/>
+        <integerDataField fieldName="Monitor Max Days" value="7"/>
+        <integerDataField fieldName="Reorder Level" value="1"/>
+        <stringDataField fieldName="Action Profile Message (OP)" value="Action Profile Msg Text"/>
+        <stringDataField fieldName="Day (ND) Or Dose (NL) Limit" value="12D"/>
+        <stringDataField fieldName="DEA Special Handling" value="3C"/>
+        <stringDataField fieldName="Dispense Quantity Override Reason" value="DQO Reason Text"/>
+        <stringDataField fieldName="Max Dispense Limit" value="Max Disp Limit Text"/>
+        <stringDataField fieldName="Message" value="Message Text"/>
+        <stringDataField fieldName="Generic Name" value="ACETAMINOPHEN"/>
+        <stringDataField fieldName="National Formulary Name" value="ACETAMINOPHEN TAB"/>
+        <stringDataField fieldName="Override Reason Enterer" value="Override Reason Enterer"/>
+        <stringDataField fieldName="Total Dispense Quantity" value="100"/>
+        <stringDataField fieldName="VA Print Name" value="ACETAMINOPHEN 325MG TAB"/>
+        <stringDataField fieldName="VA Product Name" value="ACETAMINOPHEN 325MG TAB"/>
+        <stringDataField fieldName="VUID" value="4007158"/>
+        <stringDataField fieldName="Source" value="VA"/>
+        <listDataField fieldName="Application Package Use">
+            <item value="O-OUTPATIENT"/>
+        </listDataField>
+        <listDataField fieldName="Approved For Splitting">
+            <item value="YES"/>
+        </listDataField>
+        <listDataField fieldName="CS Federal Schedule">
+            <item value="0 - Unscheduled"/>
+        </listDataField>
+        <listDataField fieldName="DAW Code">
+            <item value="0-NO PRODUCT SELECTION INDICATED"/>
+        </listDataField>
+        <listDataField fieldName="Inpatient Pharmacy Location">
+            <item value="3E NORTH"/>
+            <item value="3E NORTH"/>
+        </listDataField>
+        <listDataField fieldName="Primary VA Drug Class">
+            <item value="CN103"/>
+        </listDataField>
+        <listDataField fieldName="Request Status">
+            <item value="APPROVED"/>
+        </listDataField>
+        <listDataField fieldName="Secondary VA Drug Class"/>
+        <listDataField fieldName="Single/Multi Source Product">
+            <item value="S - Single Source"/>
+        </listDataField>
+        <listDataField fieldName="Product Type">
+            <item value="MEDICATION"/>
+        </listDataField>
+        <listDataField fieldName="Product Type">
+            <item value="P - PRN"/>
+        </listDataField>
+        <listDataField fieldName="VA Dispense Unit">
+            <item value="TAB"/>
+        </listDataField>
+        <listDataField fieldName="Refrigeration">
+            <item value="REFRIGERATE"/>
+        </listDataField>
+        <listDataField fieldName="Recall Level">
+            <item value="0-NO RECALL"/>
+        </listDataField>
+        <listDataField fieldName="Formulary">
+            <item value="FORMULARY"/>
+        </listDataField>
+        <listDataField fieldName="Item Status">
+            <item value="ACTIVE"/>
+        </listDataField>
+        <listDataField fieldName="Labs During Administration"/>
+        <listDataField fieldName="Labs During Finishing An Order"/>
+        <listDataField fieldName="Labs During Order Entry"/>
+        <listDataField fieldName="Vitals During Administration"/>
+        <listDataField fieldName="Vitals During Finishing An Order"/>
+        <listDataField fieldName="Vitals During Order Entry"/>
+        <complexDataField fieldName="Ingredients">
+            <complexItem name="Ingredient Name" value="ACETAMINOPHEN"/>
+            <complexItem name="VUID" value="4017513"/>
+        </complexDataField>
+        <complexDataField fieldName="Drug Class">
+            <complexItem name="Description" value="CN103-NON-OPIOID ANALGESICS"/>
+            <complexItem name="Code" value="CN103"/>
+            <complexItem name="Classification" value="0-Major"/>
+            <complexItem name="VUID" value="4021582"/>
+            <complexItem name="Parent Class" value=""/>
+        </complexDataField>
+        <complexDataField fieldName="Dispense Unit">
+            <complexItem name="Dispense Unit Name" value="TAB"/>
+        </complexDataField>
+        <complexDataField fieldName="ATC Canisters">
+            <complexItem name="Ward Group For ATC Canisters" value="3 NORTH SURG"/>
+            <complexItem name="ATC Canister" value="1"/>
+        </complexDataField>
+        <complexDataField fieldName="Possible Dosages">
+            <complexItem name="Dispense Units Per Dose" value="2.0"/>
+            <complexItem name="Dose" value="650.0"/>
+            <complexItem name="BCMA Units Per Dose" value="2.0"/>
+            <complexItem name="Package" value=""/>
+        </complexDataField>
+        <complexDataField fieldName="Possible Dosages">
+            <complexItem name="Dispense Units Per Dose" value="1.0"/>
+            <complexItem name="Dose" value="325.0"/>
+            <complexItem name="BCMA Units Per Dose" value="1.0"/>
+            <complexItem name="Package" value=""/>
+        </complexDataField>
+        <complexDataField fieldName="Local Possible Dosage">
+            <complexItem name="Dose Unit" value="CAP"/>
+            <complexItem name="Other Language Dosage Name" value="0"/>
+            <complexItem name="BCMA Units Per Dose" value="1.0"/>
+            <complexItem name="Numeric Dose" value="325.0"/>
+            <complexItem name="Local Possible Dosage" value="325 MG"/>
+            <complexItem name="Package" value=""/>
+        </complexDataField>
+    </drugDataFields>
+</drugData>

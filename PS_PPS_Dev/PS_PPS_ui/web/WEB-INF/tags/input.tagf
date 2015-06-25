@@ -1,0 +1,344 @@
+<%@tag import="gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility"%>
+<%@tag import="gov.va.med.pharmacy.peps.common.vo.FieldKey"%>
+<%@tag import="gov.va.med.pharmacy.peps.common.vo.FieldKey.FieldType"%>
+<%@tag import="gov.va.med.pharmacy.peps.common.vo.datafield.DataField"%>
+<%@tag import="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo"%>
+<%@tag import="gov.va.med.pharmacy.peps.presentation.common.utility.ApplicationContextUtility"%>
+<%@tag import="gov.va.med.pharmacy.peps.presentation.common.utility.DomainUtility"%>
+<%@ attribute
+    name="item"
+    required="true"
+    type="java.lang.Object"
+    rtexprvalue="true"
+    description="The object containing the data to display"%>
+<%@ attribute
+    name="id"
+    required="false"
+    type="java.lang.String"
+    description="String HTML ID to give the control. If no ID is specified, the key attribute will be used."%>
+<%@ attribute
+    name="name"
+    required="false"
+    type="java.lang.String"
+    description="String HTML name to give the control. If no name is specified, the key attribute will be used."%>
+<%@ attribute
+    name="key"
+    required="true"
+    type="java.lang.String"
+    description="String form of DataFieldKey the field to be displayed"%>
+<%@ attribute
+    name="disabled"
+    required="false"
+    type="java.lang.Boolean"
+    description="Disables the HTML input field"%>
+<%@ attribute
+    name="maxlength"
+    required="false"
+    type="java.lang.Integer"
+    description="Max length for a text field"%>
+<%@ attribute
+    name="size"
+    required="false"
+    type="java.lang.Integer"
+    description="Width of text field or the number of elements to show in a select box"%>
+<%@ attribute
+    name="labelPosition"
+    required="false"
+    type="java.lang.String"
+    description="Position of label [left, top, right, bottom] in relation to the HTML input box"%>
+<%@ attribute
+    name="required"
+    required="false"
+    type="java.lang.Boolean"
+    description="Make the HTML field required"%>
+<%@ attribute
+    name="value"
+    required="false"
+    type="java.lang.Object"
+    description="The value to display"%>
+<%@ attribute
+    name="nameValue"
+    required="false"
+    type="java.lang.String"
+    description="The display value of a select box"%>
+<%@ attribute
+    name="cols"
+    required="false"
+    type="java.lang.Integer"
+    description="Number of columns for a text area"%>
+<%@ attribute
+    name="rows"
+    required="false"
+    type="java.lang.Integer"
+    description="Number of rows for a text area"%>
+<%@ attribute
+    name="isAdvancedSearchContext"
+    required="false"
+    type="java.lang.Boolean"
+    description="Indicates that this field is to be used in the advanced search context"%>
+<%@ attribute
+    name="cssStyle"
+    required="false"
+    type="java.lang.String"
+    description="CSS style HTML attribute passed on to Struts tags."%>
+<%@ attribute
+    name="cssClass"
+    required="false"
+    type="java.lang.String"
+    description="CSS class HTML attribute added to default PEPS classes passed on to Struts tags."%>
+<%@ attribute
+    name="abbreviation"
+    required="false"
+    type="java.lang.Boolean"
+    description="True/false if the label should display the localized abbreviation or the localized name. Default is false (to display the localized name)."%>
+<%@ attribute
+    name="description"
+    required="false"
+    type="java.lang.Boolean"
+    description="True/false if the label should display the localized description or the localized name. Default is false (to display the localized name)."%>
+<%@ attribute
+    name="postValue"
+    required="false"
+    type="java.lang.Boolean"
+    description="True if tag for Selectable should post value instead of id. Defaults to false."%>
+<%@ attribute
+    name="jsOnClick"
+    required="false"
+    type="java.lang.String"
+    description="Javascript for onclick associated with tag."%>
+<%@ attribute
+    name="jsOnKeyUp"
+    required="false"
+    type="java.lang.String"
+    description="Javascript for onkeyup associated with tag."%>
+<%@ attribute
+    name="jsOnChange"
+    required="false"
+    type="java.lang.String"
+    description="Javascript for onchange associated with tag."%>
+<%@ attribute
+    name="managedDataAddLink"
+    required="false"
+    type="java.lang.Boolean"
+    description="Optional boolean value to force ManagedDataVo select boxes to not display the 'Add' link. Defaults to true."%>
+<%@ attribute
+    name="selectedValues"
+    required="false"
+    type="java.util.List"
+    description="A list containing multiple user selections for a multiselect box"%>
+<%@ attribute
+    name="isHidden"
+    required="false"
+    type="java.lang.Boolean"
+    description="Is the input hidden?"%>
+<%@ attribute
+    name="tabindex"
+    required="false"
+    type="java.lang.Integer"
+    description="Tab index of input"%>
+<%@ attribute
+    name="parentFieldKey"
+    required="false"
+    type="gov.va.med.pharmacy.peps.common.vo.FieldKey"
+    description="The parent of the current fieldKey, if there is one. Used for GroupDataField funtionality"%>
+<%@ attribute
+    name="readonly"
+    required="false"
+    type="java.lang.Boolean"
+    description="Makes the HTML input field readonly - the user can still use scrollbars in textareas if this attribute has been set."%>
+<%
+
+            DomainUtility domainUtility = ApplicationContextUtility.getSpringBean(config.getServletContext(), DomainUtility.class);
+           
+            gov.va.med.pharmacy.peps.common.vo.FieldKey fieldKey = gov.va.med.pharmacy.peps.common.vo.FieldKey.getKey(key);
+            
+            jspContext.setAttribute("fieldKey", fieldKey);
+            
+            //System.out.println("fieldKey: "+fieldKey.getKey() +" type: " +fieldKey.getFieldSubType());
+
+            if (fieldKey == null) {
+                throw new IllegalStateException("Could not find a FieldKey instance for the key '" + key
+                    + "'.  Please check JSP/property/Java files for all instances of this key.");
+            }
+
+            Class fieldClass = fieldKey.getFieldClass();
+            
+            
+            
+            //removed && !fieldKey.isMultitextDataFieldValue() 
+            request.setAttribute("displayNationalEditLink", fieldKey.isVaDataField() && !fieldKey.isGroupedDataField()
+                && !fieldKey.isLocalOnlyDataField());
+
+            Object dataField = null;
+
+            	if(fieldKey.getFieldType() == FieldType.VA_DATA_FIELD && item != null) {            		
+                    dataField = ((ManagedItemVo)item).getVaDataFields().getDataField(fieldKey);
+                    
+                    //Only put this into context if this is a vaDataField - used to properly set the editable value
+                    jspContext.setAttribute("dataField", dataField);
+                }
+       
+            
+            
+            if(dataField == null ) {
+                dataField = gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility.getFieldValue(item, fieldKey);                
+            }
+
+
+            if (id == null || id.trim().length() == 0) {
+                jspContext.setAttribute("id", key);
+            }          
+            
+            if(name == null || (name != null && name.isEmpty())) {                
+                jspContext.setAttribute("name", fieldKey.fromDotsToCamelCase());
+            }
+            
+
+            gov.va.med.pharmacy.peps.common.vo.FieldAuthorizationVo fieldAuthorization = (gov.va.med.pharmacy.peps.common.vo.FieldAuthorizationVo) jspContext.getAttribute("fieldAuthorization");
+            
+            if(fieldAuthorization == null)
+                fieldAuthorization = (gov.va.med.pharmacy.peps.common.vo.FieldAuthorizationVo) request.getAttribute("fieldAuthorization");
+            
+            boolean unauthorized = false;
+
+            if (fieldAuthorization != null) {
+                boolean requestToEdit = false;
+
+                if (dataField instanceof gov.va.med.pharmacy.peps.common.vo.datafield.DataField) {
+                    requestToEdit = ((gov.va.med.pharmacy.peps.common.vo.datafield.DataField) dataField).isRequestToEdit();
+                }
+
+                boolean shouldDisable = fieldAuthorization.isDisabled(fieldKey)
+                    || fieldKey.isLocalOnlyDataField();
+                    
+
+                unauthorized = !requestToEdit && shouldDisable;
+            }
+
+            if (unauthorized) {
+                cssClass = cssClass == null ? "unauthorized" : cssClass + " unauthorized";
+                jspContext.setAttribute("cssClass", cssClass);
+            }
+            else if (cssClass == null) {
+                cssClass = "";
+                jspContext.setAttribute("cssClass", cssClass);
+            }                        
+
+            // Allow for advanced search context to override disabling of field edits based on role.
+            if (isAdvancedSearchContext != null && isAdvancedSearchContext) {
+                disabled = Boolean.FALSE;
+                jspContext.setAttribute("disabled", disabled);
+            }
+
+            // Even if the field is not disabled, check field authorization anyway.
+            // This allows a field to be forced to disabled, but not forced to enabled.
+            // This allows for columns within a MDF to be disabled individually.
+            else if (disabled == null || (!disabled && fieldKey.isGroupedDataField())) {
+                disabled = unauthorized;
+                jspContext.setAttribute("disabled", disabled);
+            }
+
+            if (required == null) {
+                if (fieldAuthorization != null) {
+                    jspContext.setAttribute("required", fieldAuthorization.isRequired(fieldKey));
+                }
+                else {
+                    jspContext.setAttribute("required", Boolean.FALSE);
+                }
+            }
+
+            if (postValue == null) {
+                postValue = Boolean.FALSE;
+            }
+
+            if (managedDataAddLink == null) {
+                managedDataAddLink = Boolean.TRUE;
+                jspContext.setAttribute("managedDataAddLink", managedDataAddLink);
+            }
+            //System.err.println(fieldKey);
+            if (value == null) {
+                if (dataField instanceof gov.va.med.pharmacy.peps.common.vo.datafield.DataField) {
+                    jspContext.setAttribute("value", ((DataField)dataField).getValue());
+                }
+                else {
+                    jspContext.setAttribute("value", dataField);
+                }                               
+            } else {
+                jspContext.setAttribute("value", value);
+            }
+            
+            gov.va.med.pharmacy.peps.common.vo.EntityType itemType = (gov.va.med.pharmacy.peps.common.vo.EntityType) gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility
+            .getFieldValue(item, "entityType"); 
+                //gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility.findValue(request, "itemType");
+
+            // If the fieldClass didn't translate into an EntityType, try getting it from the action directly
+            if (itemType == null) {
+                itemType = gov.va.med.pharmacy.peps.common.vo.EntityType.toEntityType(fieldClass);
+
+            }
+
+            jspContext.setAttribute("itemType", itemType);
+
+            String label;
+
+            if (abbreviation != null && abbreviation) {
+                label = fieldKey.getLocalizedAbbreviation(request.getLocale(), itemType);
+            }
+            else if (description != null && description) {
+                label = fieldKey.getLocalizedDescription(request.getLocale(), itemType);
+            }
+            else {
+                label = fieldKey.getLocalizedName(request.getLocale(), itemType);
+            }
+
+            jspContext.setAttribute("label", label);
+
+            String tooltip = fieldKey.getLocalizedDescription(request.getLocale(), itemType);
+            jspContext.setAttribute("tooltip", tooltip);
+
+            if (labelPosition == null || labelPosition.trim().length() == 0) {
+                jspContext.setAttribute("labelPosition", "left");
+            }
+
+            if (maxlength != null && maxlength == 0) {
+                jspContext.setAttribute("maxlength", null);
+            }
+
+            if (size != null && size == 0) {
+                jspContext.setAttribute("size", null);
+            }
+
+            if (jsOnClick != null) {
+                jspContext.setAttribute("jsOnClick", jsOnClick);
+            }
+
+            if (jsOnChange != null) {
+                jspContext.setAttribute("jsOnChange", jsOnChange);
+            }
+
+            //Set onkeyup to auto-calc/populate DOSE
+            if (gov.va.med.pharmacy.peps.common.vo.FieldKey.POSSIBLE_DOSAGES_DISPENSE_UNITS_PER_DOSE.equals(fieldKey)) {
+                String strength = gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility.getFieldValue(item,
+                    "displayableIngredientStrength").toString();
+                
+                if (strength.contains("-")) { // multiples use hyphen separator, but value is read as a-b=c
+                    strength = "0";
+                }
+                
+                jspContext.setAttribute("jsOnKeyUp", "populateDose(this," + strength + ")");
+            }
+            
+            if (gov.va.med.pharmacy.peps.common.vo.FieldKey.DAY_ND_OR_DOSE_NL_LIMIT.equals(fieldKey)) {
+                //jspContext.setAttribute("cssStyle", "text-transform: uppercase;");
+                jspContext.setAttribute("jsOnChange", "upperCase(this.id);");
+            }
+            
+            //JCAHO issue with some Longs in the A-Z tab causing struts validation error
+            //Added some String fields that also need the onchange event  
+            if (gov.va.med.pharmacy.peps.common.vo.FieldKey.MAX_DOSE_PER_DAY.equals(fieldKey)
+                || gov.va.med.pharmacy.peps.common.vo.FieldKey.MAX_DISPENSE_LIMIT.equals(fieldKey)
+                || gov.va.med.pharmacy.peps.common.vo.FieldKey.DISPENSE_LIMIT_FOR_ORDER.equals(fieldKey)
+                || gov.va.med.pharmacy.peps.common.vo.FieldKey.TOTAL_DISPENSE_QUANTITY.equals(fieldKey)) {
+                jspContext.setAttribute("jsOnChange", "stripLeadingTrailingZerosForLong(this.id);");
+            }
+%>

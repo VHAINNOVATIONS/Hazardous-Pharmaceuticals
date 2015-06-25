@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="pdm_converter_review_2">
+  <ReviewIssue id="FR53W0BA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:00:47:638 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:01:33:778 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="74">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/MedicationInstructionFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Not the correct field Key</Summary>
+    <Description>I think the correct field key is probably med_instruction_synonym</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR54OZB4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:23:19:360 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-13 :: 11:24:32:281 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="158">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/PharmacyOrderableItemFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Not the correct FieldKey</Summary>
+    <Description>Orderable Item has a collection of OiMedRoutes...Not sure whether you want to loop through those and then get the local med route from that?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

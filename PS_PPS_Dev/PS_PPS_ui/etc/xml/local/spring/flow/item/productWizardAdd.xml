@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="addItem"
+    start-state="wizard11">
+
+    <view-state
+        id="wizard11"
+        view="product.wizard.input.11">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="computeFields"
+            to="computeFields" />
+        <transition
+            on="next"
+            to="next11" />
+    </view-state>
+
+    <action-state id="computeFields">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="computeProductUniquenessFields" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard11" />
+    </action-state>
+
+    <action-state id="next11">
+
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard12" />
+    </action-state>
+
+    <view-state
+        id="wizard12"
+        view="product.wizard.input.12a">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous11" />
+        <transition
+            on="next"
+            to="next12" />
+    </view-state>
+
+    <action-state id="previous11">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard11" />
+    </action-state>
+
+    <action-state id="next12">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard13" />
+    </action-state>
+
+    <view-state
+        id="wizard13"
+        view="product.wizard.input.12b">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous12" />
+        <transition
+            on="next"
+            to="next13" />
+    </view-state>
+
+    <action-state id="previous12">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard12" />
+    </action-state>
+
+
+    <action-state id="next13">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard14" />
+    </action-state>
+
+    <view-state
+        id="wizard14"
+        view="product.wizard.input.13">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous13" />
+        <transition
+            on="next"
+            to="next14" />
+    </view-state>
+
+    <action-state id="previous13">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard13" />
+    </action-state>
+
+
+    <action-state id="next14">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard15" />
+    </action-state>
+
+    <view-state
+        id="wizard15"
+        view="product.wizard.input.14">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous14" />
+        <transition
+            on="next"
+            to="next15" />
+    </view-state>
+
+    <action-state id="previous14">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard14" />
+    </action-state>
+
+
+    <action-state id="next15">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard16" />
+    </action-state>
+
+    <view-state
+        id="wizard16"
+        view="product.wizard.input.15">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous15" />
+        <transition
+            on="next"
+            to="next16" />
+    </view-state>
+
+    <action-state id="previous15">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard15" />
+    </action-state>
+
+
+    <action-state id="next16">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard17" />
+    </action-state>
+
+    <view-state
+        id="wizard17"
+        view="product.wizard.input.16">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous16" />
+        <transition
+            on="next"
+            to="next17" />
+    </view-state>
+
+    <action-state id="previous16">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard16" />
+    </action-state>
+
+
+    <action-state id="next17">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard18" />
+    </action-state>
+
+    <view-state
+        id="wizard18"
+        view="product.wizard.input.17b">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous17" />
+        <transition
+            on="next"
+            to="next18" />
+    </view-state>
+
+    <action-state id="previous17">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard17" />
+    </action-state>
+
+
+    <action-state id="next18">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard19" />
+    </action-state>
+
+    <view-state
+        id="wizard19"
+        view="product.wizard.input.17">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous18" />
+        <transition
+            on="next"
+            to="next19" />
+    </view-state>
+
+    <action-state id="previous18">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard18" />
+    </action-state>
+
+
+    <action-state id="next19">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard20" />
+    </action-state>
+
+    <view-state
+        id="wizard20"
+        view="product.wizard.input.18">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="previous19" />
+    </view-state>
+    
+    <action-state id="previous19">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard19" />
+    </action-state>
+    
+</flow>

@@ -1,0 +1,126 @@
+<project name="InitTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <target name="initTasks" >  
+        <echo message="module.BuildLib.dir: ${module.BuildLib.dir}"/>    
+        <path id="build.class.path">
+            <dirset dir="${module.Common.dir}/etc/build" />
+
+            <fileset dir="${module.BuildLib.dir}/${module.Common}">
+                <!-- this won't work for some reason, moved the validation-api-*.jar files to Presentation -->
+                <!-- exclude name="hibernate/validation-api**" if="${exclude.validation.api}"/ -->
+                <include name="**/*.jar" />
+                <exclude name="**/*sources.jar" />
+                <exclude name="build/**" />
+            </fileset>
+
+            <fileset dir="${module.BuildLib.dir}/${module.Common}">
+                <include name="build/**/*.jar" />
+                <exclude name="**/*sources.jar" />
+            </fileset>
+            <!-- fileset dir="${module.BuildLib.dir}">
+                <include name="**/*.jar" />
+                <exclude name="**/*sources.jar" />
+            </fileset -->
+            
+        </path>
+
+        <taskdef resource="net/sf/antcontrib/antlib.xml" loaderref="ant-loader" classpathref="build.class.path" />
+
+        <taskdef name="classpath"
+                 classname="org.swri.ant.task.ClasspathTask"
+                 loaderref="ant-loader"
+                 classpathref="build.class.path"
+                 uri="http://www.swri.org" />
+
+        <property name="init.ignore.Tasks" value="false" />
+    </target>
+
+    <target name="initProperties" unless="init.ignore.Tasks">
+        <condition property="path.prefix" value="/">
+            <os family="unix" />
+        </condition>
+
+        <condition property="path.prefix" value="C:">
+            <os family="windows" />
+        </condition>
+
+        <property file="${module.Common.dir}/${etc}/${build}/template/properties/server.properties" />
+
+        <!-- Deployment environment properties can override previous properties, so use var task -->
+        <var file="${module.Common.dir}/${etc}/${build}/template/properties/deploy/${deploy.environment}.properties" />
+
+        <property name="build.version" value="${application.name} ${application.version}" />
+        <property name="build.version.full" value="${application.name} ${application.version.major}.${application.version.minor}.${application.version.revision}" />
+
+        <tstamp>
+            <format property="build.date" pattern="EEEE, MMMM dd, yyyy hh:mm:ss aa z" />
+            <format property="build.date.short" pattern="yyyyMMdd_HHmmss" />
+        </tstamp>
+
+        <!-- If this build is not running under CruiseControl, the baseline.name property will not be set yet. -->
+        <if>
+            <not>
+                <isset property="baseline.name" />
+            </not>
+            <then>
+                <swri:baselineNames />
+            </then>
+        </if>
+
+        <!-- If this build is not running in a ClearCase view, the baseline.name property will still not be set. -->
+        <if>
+            <not>
+                <isset property="baseline.name" />
+            </not>
+            <then>
+                <property name="baseline.name" value="${build.date.short}" />
+            </then>
+        </if>
+
+        <!-- User properties to set success and failure sounds -->
+        <property file="${module.Common.dir}/${etc}/${build}/developer/${user.name}.properties" />
+        <property file="${module.Common.dir}/${etc}/${build}/developer/default.properties" />
+        <swri:audible success="${sound.success}" failure="${sound.failure}" />
+    </target>
+
+    <target name="initTemplate" unless="init.ignore.Template">
+        <swri:initClearCaseTemplate />
+        <swri:initDocumentTemplate />
+        <swri:initJarTemplate />
+        <swri:initEarTemplate />
+        <swri:initDeployTemplate />
+        <swri:initEjbTemplate />
+
+        <property name="init.ignore.Template" value="true" />
+    </target>
+
+    <target name="initStructure">
+        <mkdir dir="${src.dir}" />
+        <mkdir dir="${lib.dir}" />
+        <mkdir dir="${log.dir}" />
+        <mkdir dir="${build.src.dir}" />
+        <mkdir dir="${build.classes.dir}" />
+        <mkdir dir="${build.meta.dir}/local" />
+        <mkdir dir="${build.meta.dir}/national" />
+        <mkdir dir="${build.archive.dir}" />
+        <mkdir dir="${build.test.report.dir}" />
+        <mkdir dir="${test.dir}" />
+        <mkdir dir="${etc.build.dir}" />
+        <mkdir dir="${build.dir}/javadoc" />
+        <mkdir dir="${build.dir}/checkstyle/report" />
+        <mkdir dir="${build.dir}/pmd/report" />
+        <mkdir dir="${build.dir}/coverage/report" />
+        <mkdir dir="${build.dir}/coverage/instr" />
+        <mkdir dir="${tmp.archive.dir}/ejb" />
+        <mkdir dir="${tmp.archive.dir}/web" />
+        <mkdir dir="${tmp.archive.dir}/connector" />
+        <mkdir dir="${tmp.archive.dir}/lib" />
+        <mkdir dir="${tmp.dir}/meta/META-INF" />
+        <mkdir dir="${tmp.build.dir}/classes" />
+        <mkdir dir="${tmp.build.dir}/lib" />
+    </target>
+
+    <target name="initClasspath">
+        <swri:classpath />
+        <swri:initJarLibpath />
+    </target>
+</project>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplLabDo"
+    table="EPL_LABS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="hilo" />
+    </id>
+
+    <property
+        name="labDisplayOrderEntry"
+        type="java.lang.String"
+        column="LAB_DISPLAY_ORDER_ENTRY"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="labDisplayFinishAnOrder"
+        type="java.lang.String"
+        column="LAB_DISPLAY_FINISH_AN_ORDER"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="labDisplayAdministration"
+        type="java.lang.String"
+        column="LAB_DISPLAY_ADMINISTRATION"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional many-to-one association to EplOrderableItemDo temporarily removed for testing-->
+    <many-to-one
+        name="eplOrderableItem"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplOrderableItemDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="ORDERABLE_ITEM_ID_FK" />
+    </many-to-one>
+
+</class>
+</hibernate-mapping>
+

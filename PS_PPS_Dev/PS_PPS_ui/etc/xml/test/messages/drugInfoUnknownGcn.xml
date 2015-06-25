@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<drugInfoRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/info/request drugInfoSchemaInput.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/info/request">
+
+    <drug gcnSeqNo="266" />
+    <drug gcnSeqNo="0" />
+    <drug gcnSeqNo="25485" />
+</drugInfoRequest>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplNationalSettingDo" 
+    table="EPL_NATIONAL_SETTINGS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID">
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="keyName"
+        type="java.lang.String"
+        column="KEY_NAME"
+        not-null="true"
+        unique="true"
+        length="500">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="stringValue"
+        type="java.lang.String"
+        column="STRING_VALUE"
+        length="2000">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="integerValue"
+        type="java.lang.Long"
+        column="INTEGER_VALUE"
+        length="30">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="decimalValue"
+        type="java.lang.Long"
+        column="DECIMAL_VALUE"
+        length="30">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="booleanValue"
+        type="java.lang.Long"
+        column="BOOLEAN_VALUE"
+        length="1">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="dateValue"
+        type="java.util.Date"
+        column="DATE_VALUE"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="true">
+
+    <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{hh:mm:ss a} %-5p [%t] [%c:%M] %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="FileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="log/log4j.log" />
+
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{hh:mm:ss a} %-5p [%t] [%c:%M] %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="HibernateFileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="./log/org.hibernate.log" />
+        <param name="MaxFileSize" value="10MB" />
+        <!-- Keep one backup file -->
+        <param name="MaxBackupIndex" value="1" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{hh:mm:ss a} %-5p [%t] [%c:%M] %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="HibernateSqlFileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="file" value="./log/org.hibernate.sql.log" />
+        <param name="MaxFileSize" value="10MB" />
+        <!-- Keep one backup file -->
+        <param name="MaxBackupIndex" value="1" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{hh:mm:ss a} %-5p [%t] [%c:%M] %m%n" />
+        </layout>
+    </appender>
+
+    <logger name="org.hibernate" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="HibernateFileAppender" />
+    </logger>
+
+    <logger name="org.hibernate.SQL" additivity="false">
+        <level value="error" />
+        <!-- <appender-ref ref="FileAppender"/> -->
+        <appender-ref ref="HibernateSqlFileAppender" />
+    </logger>
+
+    <logger name="org.dbunit" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.springframework" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.springframework.webflow" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.aspectj" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.apache.struts2" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="com.opensymphony.xwork2" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="com.opensymphony.xwork2.util.OgnlValueStack" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.apache.commons.digester" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="freemarker.cache" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="freemarker.beans" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.apache.tiles" additivity="false">
+        <level value="error" />
+        <!-- <appender-ref ref="FileAppender"/> -->
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="net.sf.navigator" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.displaytag" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.apache.commons" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.codehaus.xfire" additivity="true">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.mortbay" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="org.apache.jasper" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <!-- <logger name="gov.va.med.pharmacy.peps" additivity="false"> <level value="debug"/> <appender-ref ref="FileAppender"/> 
+        <appender-ref ref="ConsoleAppender"/> </logger> -->
+
+    <!-- <logger name="gov.va.med.pharmacy.peps.presentation.common.command" additivity="true"> <level value="debug"/> <appender-ref 
+        ref="FileAppender"/> <appender-ref ref="ConsoleAppender"/> </logger> -->
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.utility.MenuPermissionsAdapter" additivity="false">
+        <level value="debug" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.utility.XSSRequestWrapper" additivity="false">
+        <level value="warn" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.utility" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.common.utility.ResourceBundleUtility" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.external.tools.pseudonym" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.spring.interceptor.test.stub.LoginSpringInterceptorStub"
+        additivity="false">
+        <level value="debug" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.spring.interceptor" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.controller" additivity="false">
+        <level value="debug" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.controller.AjaxController" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="gov.va.med.pharmacy.peps.presentation.common.utility.impl.DomainUtilityImpl" additivity="false">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+        <appender-ref ref="ConsoleAppender" />
+    </logger>
+
+    <logger name="net.sf.ehcache">
+        <level value="error" />
+        <appender-ref ref="FileAppender" />
+    </logger>
+
+    <root>
+        <priority value="debug" />
+        <appender-ref ref="ConsoleAppender" />
+    </root>
+
+</log4j:configuration>

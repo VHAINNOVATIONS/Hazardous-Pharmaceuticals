@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+    <!-- Generated content, all changes will be lost! -->
+
+    <class
+        name="gov.va.med.pharmacy.peps.domain.common.model.EplAdminScheduleDo"
+        table="EPL_ADMIN_SCHEDULES"
+        >
+        <meta
+            attribute="extends"
+            inherit="false">
+            gov.va.med.pharmacy.peps.domain.common.model.DataObject
+        </meta>
+
+        <id
+            name="eplId"
+            type="java.lang.Long"
+            column="EPL_ID">
+            <meta attribute="use-in-equals">true</meta>
+            <generator class="assigned" />
+        </id>
+
+        <property
+            name="frequencyInMinutes"
+            type="java.lang.Long"
+            column="FREQUENCY_IN_MINUTES"
+            length="10">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="scheduleName"
+            type="java.lang.String"
+            column="SCHEDULE_NAME"
+            not-null="true"
+            length="20">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="otherLanguageExpansion"
+            type="java.lang.String"
+            column="OTHER_LANGUAGE_EXPANSION"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="scheduleOutpatientExpansion"
+            type="java.lang.String"
+            column="SCHEDULE_OUTPATIENT_EXPANSION"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="packagePrefix"
+            type="java.lang.String"
+            column="PACKAGE_PREFIX"
+            length="4">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="standardAdministrationTimes"
+            type="java.lang.String"
+            column="STANDARD_ADMINISTRATION_TIMES"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="standardShifts"
+            type="java.lang.String"
+            column="STANDARD_SHIFTS"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="inactivationDate"
+            type="java.util.Date"
+            column="INACTIVATION_DATE"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestStatus"
+            type="java.lang.String"
+            column="REQUEST_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="itemStatus"
+            type="java.lang.String"
+            column="ITEM_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="rejectReasonText"
+            type="java.lang.String"
+            column="REJECT_REASON_TEXT"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestRejectReason"
+            type="java.lang.String"
+            column="REQUEST_REJECT_REASON"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="revisionNumber"
+            type="java.lang.Long"
+            column="REVISION_NUMBER"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdBy"
+            type="java.lang.String"
+            column="CREATED_BY"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdDtm"
+            type="java.util.Date"
+            column="CREATED_DTM"
+            not-null="true"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedBy"
+            type="java.lang.String"
+            column="LAST_MODIFIED_BY"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedDtm"
+            type="java.util.Date"
+            column="LAST_MODIFIED_DTM"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+
+    <!-- Associations -->
+  
+    <!-- bi-directional many-to-one association to EplScheduleTypeDo -->
+    <many-to-one
+        name="eplScheduleType"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplScheduleTypeDo"
+        not-null="true"
+    >
+        <column name="SCHEDULE_TYPE_ID_FK" />
+    </many-to-one>
+    <!-- bi-directional one-to-many association to EplHospitalLocationDo -->
+    <set
+        name="eplHospitalLocations"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="EPL_ID_ADMIN_SCHED_FK" />
+        </key>
+        <one-to-many 
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplHospitalLocationDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplWardDo -->
+    <set
+        name="eplWards"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="EPL_ID_ADMIN_SCHED_FK" />
+        </key>
+        <one-to-many 
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplWardDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplOiAdminSchedAssocDo -->
+    <set
+        name="eplOiAdminSchedAssocs"
+        lazy="true"
+        inverse="true"
+		cascade="none"
+    >
+        <key>
+            <column name="EPL_ID_ADMIN_SCHED_FK" />
+        </key>
+        <one-to-many 
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplOiAdminSchedAssocDo"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>

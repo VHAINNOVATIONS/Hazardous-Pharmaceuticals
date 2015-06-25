@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+	<class 
+   	 name="gov.va.med.pharmacy.peps.domain.common.model.EplMigrationErrorDo" 
+    	table="EPL_MIGRATION_ERROR"
+	>
+    <meta 	attribute="extends" 
+    		inherit="false">
+    		gov.va.med.pharmacy.peps.domain.common.model.DataObject
+    		</meta>
+
+<composite-id>
+        <key-property 
+            name="fileId" 
+            column="FILE_ID" 
+            type="java.lang.Double"
+            length="10">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+          <key-property 
+            name="migrationRowId" 
+            column="MIGRATION_ROW_ID" 
+            type="java.lang.String"
+            length="10">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="migrationUniqueValue" 
+            column="MIGRATION_UNIQUE_VALUE" 
+            type="java.lang.String"
+            length="10">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="migrationFieldValue" 
+            column="MIGRATION_FIELD_VALUE" 
+            type="java.lang.String"
+            length="200">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="migrationFieldName" 
+            column="MIGRATION_FIELD_NAME" 
+            type="java.lang.String"
+            length="200">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="migrationMultRowId" 
+            column="MIGRATION_MULT_ROW_ID" 
+            type="java.lang.String"
+            length="10">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="migrationMultFieldName" 
+            column="MIGRATION_MULT_FIELD_NAME" 
+            type="java.lang.String"
+            length="200">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="detailedErrorText" 
+            column="DETAILED_ERROR_TEXT" 
+            type="java.lang.String"
+            length="2000">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="processedDtm" 
+            column="PROCESSED_DTM" 
+            type="java.sql.Timestamp"
+            length="26">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="createdBy" 
+            column="CREATED_BY" 
+            type="java.lang.String"
+            length="50">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="createdDtm" 
+            column="CREATED_DTM" 
+            type="java.sql.Timestamp"
+            length="26">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="lastModifiedBy" 
+            column="LAST_MODIFIED_BY" 
+            type="java.lang.String"
+            length="50">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+        <key-property 
+            name="lastModifiedDtm" 
+            column="LAST_MODIFIED_DTM" 
+            type="java.sql.Timestamp"
+            length="26">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </key-property>
+     
+</composite-id>
+
+    <!-- Associations -->
+
+</class>
+</hibernate-mapping>

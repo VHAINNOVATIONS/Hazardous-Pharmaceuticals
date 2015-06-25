@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<PPS-NConfigFile>
+	<NationalPort>8001</NationalPort>
+	<TransactionTimeout>60</TransactionTimeout>
+	<NDFDivision>500</NDFDivision>
+	<NDFProxyUserIEN>10000000058</NDFProxyUserIEN>
+	<ConnectionSpecName>DUZ</ConnectionSpecName>
+	<RPCTimeout>60000</RPCTimeout>
+	<SWRI>true</SWRI>
+    <FDBImageLocation>/FDB_Images/</FDBImageLocation>
+</PPS-NConfigFile>

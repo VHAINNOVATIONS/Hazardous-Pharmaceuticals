@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugAccountabilityRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request ../../../schema/drug/drugaccountability/DrugAccountabilityRequest.xsd "
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request">
+    <requestAdd>
+        <ndc>043254-1234-10</ndc>
+        <vuid>4002698</vuid>
+        <orderUnit>EA</orderUnit>
+        <pricePerDispenseUnit>30.01</pricePerDispenseUnit>
+        <pricePerOrderUnit>30.02</pricePerOrderUnit>
+        <addSynonymFields>
+            <vsn>VSN30</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>30.03</dispenseUnitsPerOrderUnit>
+        </addSynonymFields>
+        <addNDCFields>
+            <vsn>VSN30</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>30.03</dispenseUnitsPerOrderUnit>
+            <otcRXIndicator>0</otcRXIndicator>
+            <manufacturer>EMD</manufacturer>
+        </addNDCFields>
+        <addProductFields>
+            <dispenseUnitPerOrderUnit>30.03</dispenseUnitPerOrderUnit>
+            <currentInventory>30</currentInventory>
+            <ifcapItemNumber>30</ifcapItemNumber>
+        </addProductFields>
+    </requestAdd>
+    
+    <requestAdd>
+        <ndc>043254-1234-11</ndc>
+        <vuid>4002698</vuid>
+        <orderUnit>EA</orderUnit>
+        <pricePerDispenseUnit>31.01</pricePerDispenseUnit>
+        <pricePerOrderUnit>31.02</pricePerOrderUnit>
+        <addNDCFields>
+            <vsn>VSN31</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>31.03</dispenseUnitsPerOrderUnit>
+            <otcRXIndicator>0</otcRXIndicator>
+            <manufacturer>EMD</manufacturer>
+        </addNDCFields>
+    </requestAdd>
+    
+    <requestAdd>
+        <ndc>043254-1234-12</ndc>
+        <vuid>4002698</vuid>
+        <orderUnit>EA</orderUnit>
+        <pricePerDispenseUnit>32.01</pricePerDispenseUnit>
+        <pricePerOrderUnit>32.02</pricePerOrderUnit>
+        <addSynonymFields>
+            <vsn>VSN32</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>32.03</dispenseUnitsPerOrderUnit>
+        </addSynonymFields>
+        <addNDCFields>
+            <vsn>VSN32</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>32.03</dispenseUnitsPerOrderUnit>
+            <otcRXIndicator>1</otcRXIndicator>
+            <manufacturer>EMD</manufacturer>
+        </addNDCFields>
+    </requestAdd>
+    
+    <requestAdd>
+        <ndc>043254-1234-13</ndc>
+        <vuid>4002698</vuid>
+        <orderUnit>EA</orderUnit>
+        <pricePerDispenseUnit>33.01</pricePerDispenseUnit>
+        <pricePerOrderUnit>33.02</pricePerOrderUnit>
+        <addNDCFields>
+            <vsn>VSN33</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>33.03</dispenseUnitsPerOrderUnit>
+            <otcRXIndicator>0</otcRXIndicator>
+            <manufacturer>EMD</manufacturer>
+        </addNDCFields>
+        <addProductFields>
+            <dispenseUnitPerOrderUnit>33.03</dispenseUnitPerOrderUnit>
+            <currentInventory>33</currentInventory>
+            <ifcapItemNumber>33</ifcapItemNumber>
+        </addProductFields>
+    </requestAdd>
+</drugAccountabilityRequest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="10.56.132.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1010"/>
+        <PEPSVersion difIssueDate="20081020" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDoseChecks>
+                <drugDoseCheck>
+                    <message>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="16579"/>
+                        <severity>Information</severity>
+                        <type>RenalImpairment</type>
+                        <drugName>SIMVASTATIN ORAL TABLET 40 MG</drugName>
+                        <text>Renal function is important in this drug's elimination. Dosing adjustment should be considered in patients with an estimated creatinine clearance at or below 10 ML/MIN.</text>
+                    </message>
+                    <message>
+                        <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="16579"/>
+                        <severity>Information</severity>
+                        <type>HepaticImpairment</type>
+                        <drugName>SIMVASTATIN ORAL TABLET 40 MG</drugName>
+                        <text>Hepatic function is important in this drug's metabolism. Dosing adjustment should be considered in patients with significant hepatic impairment.</text>
+                    </message>
+                    <drug orderNumber="Z;1;Prospect" ien="344" gcnSeqNo="16579"/>
+                    <doseHigh>80</doseHigh>
+                    <doseHighUnit>MG/DAY</doseHighUnit>
+                    <doseLow>5</doseLow>
+                    <doseLowUnit>MG/DAY</doseLowUnit>
+                    <doseFormHigh>2</doseFormHigh>
+                    <doseFormHighUnit>EA/DAY</doseFormHighUnit>
+                    <doseFormLow>0.125</doseFormLow>
+                    <doseFormLowUnit>EA/DAY</doseFormLowUnit>
+                    <doseRouteDescription>ORAL</doseRouteDescription>
+                </drugDoseCheck>
+                <drugDoseCheck>
+                    <message>
+                        <drug orderNumber="Z;2;Prospect" ien="113"
+                            vuid="778899" gcnSeqNo="266"/>
+                        <severity>Information</severity>
+                        <type>HepaticImpairment</type>
+                        <drugName>AMIODARONE HCL ORAL TABLET 200 MG</drugName>
+                        <text>Hepatic function is important in this drug's metabolism. Dosing adjustment should be considered in patients with significant hepatic impairment.</text>
+                    </message>
+                    <drug orderNumber="Z;2;Prospect" ien="113"
+                        vuid="778899" gcnSeqNo="266"/>
+                    <doseHigh>400</doseHigh>
+                    <doseHighUnit>MG/DAY</doseHighUnit>
+                    <doseLow>100</doseLow>
+                    <doseLowUnit>MG/DAY</doseLowUnit>
+                    <doseFormHigh>2</doseFormHigh>
+                    <doseFormHighUnit>EA/DAY</doseFormHighUnit>
+                    <doseFormLow>0.5</doseFormLow>
+                    <doseFormLowUnit>EA/DAY</doseFormLowUnit>
+                    <doseRouteDescription>ORAL</doseRouteDescription>
+                </drugDoseCheck>
+                <drugDoseCheck>
+                    <message>
+                        <drug orderNumber="Z;3;Prospect" ien="455" gcnSeqNo="25485"/>
+                        <severity>Information</severity>
+                        <type>HepaticImpairment</type>
+                        <drugName>INDINAVIR SULFATE ORAL CAPSULE 400 MG</drugName>
+                        <text>Hepatic function is important in this drug's metabolism. Dosing adjustment should be considered in patients with significant hepatic impairment.</text>
+                    </message>
+                    <drug orderNumber="Z;3;Prospect" ien="455" gcnSeqNo="25485"/>
+                    <doseHigh>2400</doseHigh>
+                    <doseHighUnit>MG/DAY</doseHighUnit>
+                    <doseLow>800</doseLow>
+                    <doseLowUnit>MG/DAY</doseLowUnit>
+                    <doseFormHigh>6</doseFormHigh>
+                    <doseFormHighUnit>EA/DAY</doseFormHighUnit>
+                    <doseFormLow>2</doseFormLow>
+                    <doseFormLowUnit>EA/DAY</doseFormLowUnit>
+                    <doseRouteDescription>ORAL</doseRouteDescription>
+                </drugDoseCheck>
+            </drugDoseChecks>
+        </drugCheck>
+    </Body>
+</PEPSResponse>

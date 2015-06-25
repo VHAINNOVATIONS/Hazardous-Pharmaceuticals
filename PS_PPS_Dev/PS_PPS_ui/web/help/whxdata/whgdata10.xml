@@ -1,0 +1,67 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Orderable Item (OI)" value="A product the provider can select to order through CPRS. For pharmacy Orderable Items the provider will see “drug name and dose form” as the Orderable Item." />
+ <entry name="Orderer" value="An authorized person who initiates the prescription order (e.g.,&#160;Physician, Physician’s Assistant, Pharmacist, Nurse, or Nurse Practitioner)." />
+ <entry name="Original Fill" value="The first dispensing of an Outpatient order. Also known as a First Fill." />
+ <entry name="OSS" value="Open Source Software" />
+ <entry name="OTC" value="Over-the-Counter" />
+ <entry name="OTP" value="Overall Test Plan" />
+ <entry name="Outpatient Automation" value="A VHA project in which all of the requests for automatic medication dispensing will be sent to this system. The system will then send the request to the most appropriate auto-filling machine containing the desired medication." />
+ <entry name="Outpatient Fill Priority" value="The indicator that determines the order in which Dispense Requests are filled for Outpatient orders. By default, Dispense Requests for Discharge orders are the highest priority. The second highest priority is Dispense Requests with a delivery method of Window. The third highest priority is Dispense Requests with a delivery method of Mail." />
+ <entry name="Outpatient Visit" value="The physical presence of a person who has obtained Outpatient services during a single 24-hour period." />
+ <entry name="Over-the-Counter (OTC) Drugs" value="Drugs that are available from retail stores without a prescription." />
+ <entry name="Overall Architecture" value="A high-level depiction of the design of a software application that is part of a larger system." />
+ <entry name="P&amp;T" value="Pharmacy and Therapeutics" />
+ <entry name="Package" value="A set of routines, files, options, templates, security keys, screens, bulletins, functions, help frames, forms, blocks, objects, protocols, dialogues, list templates, windows, and namespaces according to DBA requirements that function as a unit." />
+ <entry name="Package Type Domain" value="Provides the list of available package types for an NDC Item." />
+ <entry name="PACS" value="Picture Archiving Communication Systems" />
+ <entry name="PAE" value="Pharmacy Application Environment" />
+ <entry name="Par Level" value="The calculated desired quantity of product to have on hand based on historical use or an administrative decision." />
+ <entry name="Parenteral" value="Medications introduced by means other than by way of the digestive tract." />
+ <entry name="Partial Fill" value="A prescription that has been filled for a quantity smaller than requested. A possible reason for a partial fill is that a Patient is to return to the clinic in ten days but the prescription calls for a thirty-day supply." />
+ <entry name="Patient" value="An authorized person who is allowed to receive care or is identified as needing care. Receives medications as an Inpatient in a ward or as an Outpatient in a specialty clinic. Also, receives medications as an Outpatient at the pharmacy (window pick-up or mail). Note that a Patient may also include active military personnel and family members of veterans.A person who requires medical treatment, typically the veteran or one of their relatives." />
+ <entry name="Patient Care Management Module (PCMM)" value="The VistA module developed to assist VHA facilities in implementing primary care and managing the assignment of resources that was designed to assess capacity in Outpatient clinics. Users can set up and define a treatment team, assign positions to the team, assign Patients to the team, and assign Patients to a primary care provider." />
+ <entry name="Patient Care Team" value="A group of diverse clinicians who communicate with each other regularly about the care of a defined group of Patients and participate in that care." />
+ <entry name="Patient Educator" value="An authorized person who provides counseling and information to the Patient regarding medication being administered." />
+ <entry name="Patient Medication Profile (PMP)" value="Used by pharmacy to view the appropriate pharmacy-related information about a VA Patient. It displays demographics and certain clinical information about a Patient. It also displays a list of pending and active orders (to include recently expired and recently discontinued orders). It can be used for informational purposes as a view-only version. However, authorized personnel can also use it to process and take actions on a Patient’s prescription orders." />
+ <entry name="Patient Specific Label" value="A VA Data Field used to specify whether a medication requires a patient specific label." />
+ <entry name="PATS" value="Patient Advocate Tracking System" />
+ <entry name="PBM" value="Pharmacy Benefits Management" />
+ <entry name="PCA" value="Patient Controlled Administration" />
+ <entry name="PCE" value="Patient Care Encounter" />
+ <entry name="PCM" value="Project Configuration Manager" />
+ <entry name="PCMM" value="Primary Care Management Module" />
+ <entry name="PCP" value="Primary Care Provider" />
+ <entry name="PDA" value="Personal Digital Assistant" />
+ <entry name="PDM" value="Pharmacy Data Management" />
+ <entry name="PDR" value="Pharmacy Data RepositoryPhysician’s Desk Reference" />
+ <entry name="PDS" value="Pharmacy Data Store" />
+ <entry name="PDSP" value="Project Defined Software Process" />
+ <entry name="PDTS" value="Pharmacy Data Transaction System" />
+ <entry name="PDX" value="Patient Data Exchange" />
+ <entry name="Pending Order" value="The status of an order entered by a Provider through CPRS and that has been electronically signed without Pharmacy or Nursing finishing the order. Once Pharmacy or Nursing finishes and verifies the order, the order status changes to an Active order." />
+ <entry name="PEPS" value="Pharmacy Enterprise Product System" />
+ <entry name="PEPS Local Administrator (PLA)" value="A PLM who has the additional permission to create, update, or delete search templates or partial saved items at a local instance." />
+ <entry name="PEPS Local Manager (PLM)" value="An authorized user who updates editable fields and rules at a Local facility. Receives/sends update requests from/to the PEPS National Manager." />
+ <entry name="PEPS Manager (PM)" value="A parent role for PEPS National Manager and PEPS Local Manager. This role is able to make changes to PEPS and is used when the distinction between PEPS Local and PEPS National is not needed." />
+ <entry name="PEPS National Administrator (PNA)" value="A PNM who has the additional permissions to create, update, or delete national-level templates." />
+ <entry name="PEPS National Manager (PNM)" value="The authorized user who receives and reviews update requests from drug Vendors and PEPS Local Managers. Sends requests to appropriate decision makers. Creates updates for the National PEPS. Sends update to the PEPS Local Manager and to interested parties." />
+ <entry name="PEPS Second Reviewer (PSR)" value="A person who performs Quality Assurance checks for PEPS items being processed nationally. A PSR may also perform the Second Reviewer role of a PNM when so designated by the PNM." />
+ <entry name="PEPS Viewer" value="An authorized user who uses PEPS in a read-only fashion, such as searching and viewing item data. This user is unable to make changes to PEPS data. Formerly referred to as PEPS User." />
+ <entry name="PEPS-L" value="PEPS Local" />
+ <entry name="PEPS-L Mgmt App" value="PEPS Local Management Application" />
+ <entry name="PEPS-M" value="PEPS Master" />
+ <entry name="PEPS-M Mgmt App" value="PEPS Master Management Application" />
+ <entry name="PEPS-N" value="PEPS National" />
+ <entry name="Persisted Data" value="Any data that a system records in a state (or form) that is retrievable by the system or some other system later after some span of time." />
+ <entry name="Person Services" value="A person-oriented business component and interface used for person lookup within a system. This is required to produce person -oriented business components and user interfaces for person lookup. This is required to support the implementation of service oriented n-tier application architecture, centralized/distributed deployment architecture, and application modernization as specified by VHA Enterprise Architecture and the HealtheVet Logical Model." />
+ <entry name="PFSS" value="Patient Financial Services System" />
+ <entry name="Pharmacy and Therapeutics (P&amp;T) Committee" value="An advisory committee of the medical staff that represents the official, organizational line of communication and liaison between the medical staff and the pharmacy department; its recommendations are subject to medical staff approval." />
+ <entry name="Pharmacy Benefits Management (PBM)" value="The office responsible for oversight of the VHA pharmacy process as well as National reporting." />
+ <entry name="Pharmacy Data Management (PDM)" value="A VistA package that provides tools for managing site configurable data in pharmacy files." />
+ <entry name="Pharmacy Data Repository (PDR)" value="A data source of Pharmacy medication order data that is not a part of the HDR. The examples of the types of data that may reside in PDR are “who reviewed a medication order,” “who filled a medication order,” drug lot number and expiration date, “what equipment was used to fill the medication order,” and other information that needs to be persistently stored." />
+ <entry name="Pharmacy Enterprise Product System (PEPS)" value="A component of the overall PRE system whose purpose is to manage medications and supplies in support of pharmacy operations. It uses the Enterprise Product List (EPL) to store information about medications and supplies. See glossary term Enterprise Product List." />
+ <entry name="Pharmacy System Domain" value="Contains data that pertains to the entire Pharmacy system of a medical center, and not to any one site or division." />
+ <entry name="Pharmacy Technician" value="An authorized person who provides support within the pharmacy organization. This person may have a license or specific authorization to perform specific tasks within the pharmacy. Typical tasks include dispensing an order, labeling items, etc." />
+
+</glossarydata>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplFdbAutoUpdateDo" 
+    table="EPL_FDB_AUTO_UPDATE"
+
+>
+    <meta attribute="extends" 
+          inherit="false">
+          gov.va.med.pharmacy.peps.domain.common.model.DataObject
+    </meta>
+    <id
+        name="eplId"
+        type="java.lang.Long"
+        column="EPL_ID"
+         length="30">
+        <generator class="assigned" />
+    </id>
+      <property 
+          name="vaProductName" 
+          column="VA_PRODUCT_NAME" 
+          type="java.lang.String"
+          length="100">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+      <property 
+          name="fdbProductName" 
+          column="FDB_PRODUCT_NAME" 
+          type="java.lang.String"
+          length="100">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+        
+          
+      <property 
+          name="ndc" 
+          column="NDC" 
+          type="java.lang.String"
+          length="13">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+          
+      <property 
+          name="gcnSeqno" 
+          column="GCN_SEQNO" 
+          type="java.lang.Long"
+          length="10">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+          
+      <property 
+          name="message" 
+          column="MESSAGE" 
+          type="java.lang.String"
+          length="2000">
+      
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+      <property 
+          name="ndcIdFk" 
+          column="NDC_ID_FK" 
+          type="java.lang.Long"
+          length="30">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property 
+          name="productIdFk" 
+          column="PRODUCT_ID_FK" 
+          type="java.lang.Long"
+          length="30">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property 
+          name="createdBy" 
+          column="CREATED_BY" 
+          type="java.lang.String"
+          length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property 
+        name="createdDtm" 
+          column="CREATED_DTM" 
+          type="java.util.Date"
+          length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property 
+          name="lastModifiedBy" 
+          column="LAST_MODIFIED_BY" 
+          type="java.lang.String"
+          length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property 
+          name="lastModifiedDtm" 
+          column="LAST_MODIFIED_DTM" 
+          type="java.util.Date"
+          length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+        
+
+    <!-- Associations -->
+    <!-- derived association(s) for compound key -->
+    <!-- end of derived association(s) -->
+
+</class>
+</hibernate-mapping>

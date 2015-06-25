@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="retrievePartial">
+
+    <input
+        name="itemId"
+        value="flowScope.itemId"
+        type="string" />
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <action-state id="retrievePartial">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="retrievePartial" />
+        </evaluate>
+        <transition
+            on="success"
+            to="chooseEditFlow" />
+        <transition
+            on="error"
+            to="partialItemsError" />
+    </action-state>
+
+    <view-state
+        id="partialItemsError"
+        view="partial.items.error">
+        <transition
+            on="ok"
+            to="end" />
+    </view-state>
+
+    <decision-state id="chooseEditFlow">
+        <if
+            test="flowScope.item.isNewInstance()"
+            then="addItem"
+            else="editItem" />
+    </decision-state>
+
+    <subflow-state
+        id="addItem"
+        subflow="${flowScope.itemType.getViewName()}WizardAdd">
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <transition
+            on="end"
+            to="end" />
+        <transition
+            on="cancel"
+            to="cancel" />
+    </subflow-state>
+
+    <subflow-state
+        id="editItem"
+        subflow="editItem">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <input
+            name="oldItem"
+            value="flowScope.oldItem"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <transition
+            on="end"
+            to="end" />
+        <transition
+            on="cancel"
+            to="cancel" />
+    </subflow-state>
+
+    <end-state id="cancel" />
+
+    <end-state id="end" />
+</flow>

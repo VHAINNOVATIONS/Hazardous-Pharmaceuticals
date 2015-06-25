@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF1JONJP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-14 :: 16:15:25:621 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:11:28:786 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing method signature comments</Summary>
+    <Description>java doc deffeciency</Description>
+    <Annotation>duplicate of other global comment from Uma</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF1JY9DC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-14 :: 16:22:53:808 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:11:47:441 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="92">src/gov/va/med/pharmacy/peps/common/vo/AtcCanisterVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is the todo comment still valid or should it be removed</Summary>
+    <Description>(atcCanister != null ? atcCanister : "(Not specified)") +  // @todo: I18n this!</Description>
+    <Annotation>Will need to localize in M3</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF1K0E6Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-14 :: 16:24:33:371 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-14 :: 16:24:47:418 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/DrugDataVendorVersionVo.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is this class being used?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NUVJY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:00:00:574 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:09:57:821 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/validator/fields/VendorStockNumberValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing class description</Summary>
+    <Description />
+    <Annotation>Class has a javadoc, from what I see</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NVTAB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:00:44:291 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:07:59:232 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="20">src/gov/va/med/pharmacy/peps/common/vo/validator/fields/OrderUnitValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing comments</Summary>
+    <Description>@Override</Description>
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NWW3F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:01:34:587 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:07:34:218 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/validator/fields/NdcValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Does not need import statement</Summary>
+    <Description />
+    <Annotation />
+    <Revision>removed import</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NXKMN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:02:06:383 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:07:02:032 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/validator/fields/GCNSequenceNumberValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Does not need import statement</Summary>
+    <Description />
+    <Annotation>there aren't any extra imports that I can see</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NYEUQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:02:45:554 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:06:08:800 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/numeric/UnitPriceValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing method comments</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2NYSZE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:03:03:866 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:05:55:519 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/numeric/NdcPricePerDispenseUnitValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing class and method comments</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O08B0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:04:10:380 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:04:43:426 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="92">src/gov/va/med/pharmacy/peps/common/vo/AtcCanisterVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing class comments</Summary>
+    <Description>also todo lower on line 91</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O1C08">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:05:01:832 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:09:29:525 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/validator/fields/VendorStockNumberValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>misssing comments</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O29FR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:05:45:159 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:56:33:185 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/CsFedScheduleVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove TODO if not appicable</Summary>
+    <Description />
+    <Annotation />
+    <Revision>removed import</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O3663">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:06:27:579 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:06:39:985 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/DosageFormVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing method comments</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O642I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:08:44:826 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:09:01:263 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="294">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove comment and add blank line</Summary>
+    <Description>public static final FieldKey&lt;DataField&lt;String&gt;&gt; INPATIENT_MEDICATION_EXPIRED_ORDER_MAX_TIME = new FieldKey&lt;DataField&lt;String&gt;&gt;(</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O70I0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:09:26:856 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:10:29:355 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/FormularyAlternativeVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Not sure if this class is necessary??</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2O9C8P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:11:15:385 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:11:35:697 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/IngredientVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>TODO comment found - very cryptic</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OA822">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:11:56:618 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:12:05:805 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/InpatientPharmLocationVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>method comments</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OAX2N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:12:29:039 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:13:48:490 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="70">src/gov/va/med/pharmacy/peps/common/vo/IntendedUseVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary />
+    <Description>@param vuid vuid property</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OD9I2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:14:18:458 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:10:50:037 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing class and method comments</Summary>
+    <Description>This is a global issue. Most of the vo's are missing either class or method comments.</Description>
+    <Annotation />
+    <Revision>added javadoc to noted locations</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OFCJE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:15:55:706 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:16:10:736 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>unnecessary import statement</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2OG64W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:16:34:064 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:16:59:063 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="551">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>is this block necessary</Summary>
+    <Description>* @todo Should read-only fields still show the required asterick on the form??? // If I am already "approved", no</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U0ETZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:52:16:535 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:51:17:028 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/OiRouteVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>@toDo very cryptic</Summary>
+    <Description>Either remove or modify if necessary</Description>
+    <Annotation>We need to localize, but I think that may be a M3 task -- the todo itself isn't that cryptic.</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U3KCB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:54:43:643 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:50:58:825 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unnecessary import</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed import</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U6J5R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:57:02:079 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:56:44:351 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/PossibleDosagesPackageVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unused variable</Summary>
+    <Description />
+    <Annotation />
+    <Revision>removed extra code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U79FX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:57:36:141 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:58:39:865 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="583">src/gov/va/med/pharmacy/peps/common/vo/ProductVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>is this block comment necessary?</Summary>
+    <Description>*       Local deployment, so... // Note: I am a "pending" item that was saved, and then retrieved. else { //</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U9FGY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:59:17:266 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:59:38:656 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/RequestMessageVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unnecessary import statement</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UA89E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:59:54:578 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:00:09:828 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/RequestSummaryVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused import</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UARPH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:00:19:781 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:00:32:812 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/RequestVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused import</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UBPVY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:01:04:078 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:57:03:934 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="75">src/gov/va/med/pharmacy/peps/common/vo/Selectable.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Modify todo</Summary>
+    <Description>return (getValue() != null ? getValue() : "(Not specified)");  // @todo: I18n this!</Description>
+    <Annotation>Will need to localize in M3</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UC5EJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:01:24:187 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:57:53:885 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/vo/SingleMultiSourceProductVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unused variable</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed commmented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UCS5Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:01:53:687 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:58:15:102 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="194">src/gov/va/med/pharmacy/peps/common/vo/SynonymVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>@TODO needs to be removed/modified</Summary>
+    <Description>(synonymVendor != null ? synonymVendor : "(Not specified)") + // @todo: I18n this!</Description>
+    <Annotation>Will need to localize in M3</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UEQIY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:03:24:874 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:01:02:517 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/WardGroupForAtcVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unused variable</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

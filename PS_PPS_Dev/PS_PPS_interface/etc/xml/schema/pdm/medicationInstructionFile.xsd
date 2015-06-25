@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationInstruction"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationInstruction"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+
+    <xsd:complexType name="nameKey">
+        <xsd:simpleContent>
+            <xsd:restriction base="common:stringField">
+                <xsd:minLength value="1" />
+                <xsd:maxLength value="9" />
+
+                <xsd:attribute
+                    name="number"
+                    type="common:fieldNumber"
+                    use="required"
+                    fixed="0.01" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="medicationInstructionFile">
+        <xsd:sequence>
+            <xsd:element
+                name="candidateKey"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element
+                            name="name"
+                            type="nameKey"
+                            minOccurs="1"
+                            maxOccurs="1" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="name"
+                type="nameKey"
+                minOccurs="0"
+                maxOccurs="1" />
+
+            <xsd:element
+                name="synonym"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="1" />
+                            <xsd:maxLength value="9" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="0.5" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="expansion"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="2" />
+                            <xsd:maxLength value="50" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="1" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="otherLanguageExpansion"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="2" />
+                            <xsd:maxLength value="100" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="1.1" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="medRoute"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="3" />
+                            <xsd:maxLength value="45" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="2" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="schedule"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="2" />
+                            <xsd:maxLength value="20" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="3" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="instructions"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="10" />
+                            <xsd:maxLength value="75" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="4" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="additionalInstructions"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="10" />
+                            <xsd:maxLength value="100" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="5" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="plural"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="1" />
+                            <xsd:maxLength value="25" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="9" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="defaultAdminTimes"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="1" />
+                            <xsd:maxLength value="40" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="10" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="ward"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element
+                            name="wardFile"
+                            type="wardFile"
+                            minOccurs="1"
+                            maxOccurs="unbounded" />
+                    </xsd:sequence>
+
+                    <xsd:attribute
+                        name="multiple"
+                        type="xsd:boolean"
+                        use="required"
+                        fixed="true" />
+
+                    <xsd:attribute
+                        name="number"
+                        type="common:fieldNumber"
+                        use="required"
+                        fixed="20" />
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="intendedUse"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:enumeration value="0" /><!-- Outpatient -->
+                            <xsd:enumeration value="1" /><!-- Outpatient and Inpatient -->
+                            <xsd:enumeration value="2" /><!-- Inpatient Only -->
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="30" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="frequencyInMinutes"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:integerField">
+                            <xsd:minInclusive value="0" />
+                            <xsd:maxInclusive value="129600" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="31" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <xsd:attribute
+            name="action"
+            use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="common:itemAction">
+                    <xsd:enumeration value="Add" />
+                    <xsd:enumeration value="Modify" />
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+
+        <xsd:attribute
+            name="number"
+            type="common:fileNumber"
+            use="required"
+            fixed="51" />
+    </xsd:complexType>
+
+    <xsd:complexType name="wardFile">
+        <xsd:sequence>
+            <xsd:element
+                name="ward"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="1" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="0.01" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="defaultAdministrationTimes"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <!-- 06-14-22 or 0600-1400-2200 -->
+                            <xsd:pattern value="(\d{2,4}-)*\d{2,4}" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="0.02" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <xsd:attribute
+            name="number"
+            type="common:fileNumber"
+            use="required"
+            fixed="51.01" />
+    </xsd:complexType>
+</xsd:schema>

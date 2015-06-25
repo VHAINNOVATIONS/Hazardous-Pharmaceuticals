@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+    <!-- Generated content, all changes will be lost! -->
+
+    <class
+        name="gov.va.med.pharmacy.peps.domain.common.model.EplRequestDo"
+        table="EPL_REQUESTS"
+        >
+        <meta
+            attribute="extends"
+            inherit="false">
+            gov.va.med.pharmacy.peps.domain.common.model.DataObject
+        </meta>
+
+        <id
+            name="id"
+            type="java.lang.Long"
+            column="ID">
+            <meta attribute="use-in-equals">true</meta>
+            <generator class="hilo" />
+        </id>
+
+        <property
+            name="requestType"
+            type="java.lang.String"
+            column="REQUEST_TYPE"
+            not-null="true"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="siteName"
+            type="java.lang.String"
+            column="SITE_NAME"
+            not-null="true"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="itemType"
+            type="java.lang.String"
+            column="ITEM_TYPE"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestStatus"
+            type="java.lang.String"
+            column="REQUEST_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="newItemRequestStatus"
+            type="java.lang.String"
+            column="NEW_ITEM_REQUEST_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="underReviewFlag"
+            type="java.lang.String"
+            column="UNDER_REVIEW_FLAG"
+            not-null="true"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requesterName"
+            type="java.lang.String"
+            column="REQUESTER_NAME"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="rejectReasonText"
+            type="java.lang.String"
+            column="REJECT_REASON_TEXT"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestRejectReason"
+            type="java.lang.String"
+            column="REQUEST_REJECT_REASON"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="note"
+            type="java.lang.String"
+            column="NOTE"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastReviewerName"
+            type="java.lang.String"
+            column="LAST_REVIEWER_NAME"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="revisionNumber"
+            type="java.lang.Long"
+            column="REVISION_NUMBER"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="markedForPsr"
+            type="java.lang.String"
+            column="MARKED_FOR_PSR"
+            length="1">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="psrName"
+            type="java.lang.String"
+            column="PSR_NAME"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="domainId"
+            type="java.lang.Long"
+            column="DOMAIN_ID"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="proposedItemId"
+            type="java.lang.String"
+            column="PROPOSED_ITEM_ID"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdBy"
+            type="java.lang.String"
+            column="CREATED_BY"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdDtm"
+            type="java.util.Date"
+            column="CREATED_DTM"
+            not-null="true"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedBy"
+            type="java.lang.String"
+            column="LAST_MODIFIED_BY"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedDtm"
+            type="java.util.Date"
+            column="LAST_MODIFIED_DTM"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+
+        <!-- Associations -->
+
+        <!-- bi-directional one-to-many association to EplRequestDetailDo -->
+        <set
+            name="eplRequestDetails"
+            lazy="true"
+            inverse="true">
+            <key>
+                <column name="REQUEST_ID_FK" />
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplRequestDetailDo" />
+        </set>
+        <!-- bi-directional many-to-one association to EplOrderableItemDo -->
+        <many-to-one
+            name="eplOrderableItem"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplOrderableItemDo"
+            not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="EPL_ID_OI_FK" />
+        </many-to-one>
+        <!-- bi-directional many-to-one association to EplProductDo -->
+        <many-to-one
+            name="eplProduct"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplProductDo"
+            not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="EPL_ID_PRODUCT_FK" />
+        </many-to-one>
+        <!-- bi-directional many-to-one association to EplNdcDo -->
+        <many-to-one
+            name="eplNdc"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplNdcDo"
+            not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="EPL_ID_NDC_FK" />
+        </many-to-one>
+
+    </class>
+</hibernate-mapping>
+

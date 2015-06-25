@@ -1,0 +1,186 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<drugData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response ../../../schema/drug/data/localDrugDataResponse.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response">
+
+    <drugsNotFound>
+        <vuid>888888</vuid>
+        <vuid>999999</vuid>
+        <ndc>548796</ndc>
+        <ndc>12387</ndc>
+    </drugsNotFound>
+    
+    <drugDataFields>
+        <drugRequest>
+            <ndc>37714</ndc>
+        </drugRequest>
+        <stringDataField
+            fieldName="Dispense Quantity Limit"
+            value="20/10 days" />
+        <booleanDataField
+            fieldName="Do Not Mail"
+            value="true" />
+        <booleanDataField
+            fieldName="High-Risk"
+            value="true" />
+        <booleanDataField
+            fieldName="Patient Specific Label"
+            value="false" />
+        <booleanDataField
+            fieldName="Protect From Light"
+            value="false" />
+        <booleanDataField
+            fieldName="Refrigeration"
+            value="true" />
+        <booleanDataField
+            fieldName="Witness For Administration"
+            value="false" />
+        <integerDataField
+            fieldName="Days Supply Limit"
+            value="30" />
+        <listDataField fieldName="Splittable">
+            <item value="0.5" />
+            <item value="0.33" />
+            <item value="0.25" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Order Entry">
+            <item value="INR|Plasma" />
+            <item value="Creatinine|Serum" />
+            <item value="Hemoglobin Alc|Blood" />
+            <item value="Gentamicin - Peak|Serum" />
+            <item value="Gentamicin - Trough|Serum" />
+            <item value="Gentamicin - Random|Serum" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Finishing an Order">
+            <item value="Creatinine|Serum" />
+            <item value="Gentamicin - Trough|Serum" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Administration" />
+        <listDataField fieldName="Vitals Display - Order Entry">
+            <item value="Pulse (Heart Rate)" />
+            <item value="Blood Pressure" />
+            <item value="Pain Level" />
+            <item value="Temperature" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Finishing an Order">
+            <item value="Pain Level" />
+            <item value="Temperature" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Administration">
+            <item value="Blood Pressure" />
+        </listDataField>
+    </drugDataFields>
+
+    <drugDataFields>
+        <drugRequest>
+            <vuid>37762515</vuid>
+        </drugRequest>
+        <stringDataField
+            fieldName="Dispense Quantity Limit"
+            value="100/30 days" />
+        <booleanDataField
+            fieldName="Do Not Mail"
+            value="true" />
+        <booleanDataField
+            fieldName="High-Risk"
+            value="true" />
+        <booleanDataField
+            fieldName="Patient Specific Label"
+            value="true" />
+        <booleanDataField
+            fieldName="Protect From Light"
+            value="false" />
+        <booleanDataField
+            fieldName="Refrigeration"
+            value="false" />
+        <booleanDataField
+            fieldName="Witness For Administration"
+            value="false" />
+        <integerDataField
+            fieldName="Days Supply Limit"
+            value="365" />
+        <listDataField fieldName="Splittable">
+            <item value="0.5" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Order Entry">
+            <item value="Creatinine|Serum" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Finishing an Order">
+            <item value="Gentamicin - Trough|Serum" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Administration">
+            <item value="Gentamicin - Peak|Serum" />
+            <item value="Gentamicin - Trough|Serum" />
+            <item value="Gentamicin - Random|Serum" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Order Entry">
+            <item value="Pulse (Heart Rate)" />
+            <item value="Blood Pressure" />
+            <item value="Pain Level" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Finishing an Order">
+            <item value="Pulse (Heart Rate)" />
+            <item value="Blood Pressure" />
+            <item value="Pain Level" />
+            <item value="Temperature" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Administration">
+            <item value="Pain Level" />
+        </listDataField>
+    </drugDataFields>
+
+    <drugDataFields>
+        <drugRequest>
+            <vuid>37762516</vuid>
+        </drugRequest>
+        <stringDataField
+            fieldName="Dispense Quantity Limit"
+            value="2/12 days" />
+        <booleanDataField
+            fieldName="Do Not Mail"
+            value="true" />
+        <booleanDataField
+            fieldName="High-Risk"
+            value="true" />
+        <booleanDataField
+            fieldName="Patient Specific Label"
+            value="true" />
+        <booleanDataField
+            fieldName="Protect From Light"
+            value="true" />
+        <booleanDataField
+            fieldName="Refrigeration"
+            value="false" />
+        <booleanDataField
+            fieldName="Witness For Administration"
+            value="true" />
+        <integerDataField
+            fieldName="Days Supply Limit"
+            value="365" />
+        <listDataField fieldName="Splittable"></listDataField>
+        <listDataField fieldName="Lab Display - Order Entry">
+            <item value="Creatinine|Serum" />
+            <item value="Hemoglobin Alc|Blood" />
+            <item value="Gentamicin - Random|Serum" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Finishing an Order">
+            <item value="INR|Plasma" />
+        </listDataField>
+        <listDataField fieldName="Lab Display - Administration">
+            <item value="Gentamicin - Trough|Serum" />
+            <item value="Gentamicin - Random|Serum" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Order Entry">
+            <item value="Pain Level" />
+            <item value="Temperature" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Finishing an Order">
+            <item value="Pulse (Heart Rate)" />
+        </listDataField>
+        <listDataField fieldName="Vitals Display - Administration">
+            <item value="Blood Pressure" />
+        </listDataField>
+    </drugDataFields>
+</drugData>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="PRE" version="2.5" xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
+
+    <!-- Start jetty config - will keep the generated .java files when compiling 
+        the JSPs -->
+    <servlet id="jsp">
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>logVerbosityLevel</param-name>
+            <param-value>DEBUG</param-value>
+        </init-param>
+        <init-param>
+            <param-name>keepgenerated</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsp</servlet-name>
+        <url-pattern>*.jsp</url-pattern>
+        <url-pattern>*.jspf</url-pattern>
+        <url-pattern>*.jspx</url-pattern>
+        <url-pattern>*.xsp</url-pattern>
+        <url-pattern>*.JSP</url-pattern>
+        <url-pattern>*.JSPF</url-pattern>
+        <url-pattern>*.JSPX</url-pattern>
+        <url-pattern>*.XSP</url-pattern>
+    </servlet-mapping>
+
+    <!-- End jetty config -->
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:xml/spring/test/*Context.xml,classpath*:xml/national/spring/test/*Context.xml, classpath*:xml/spring/StrutsConfig.xml</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>menuConfigLocation</param-name>
+        <param-value>/xml/national/struts/menu-config.xml</param-value>
+    </context-param>
+
+<!-- Struts 2 Configuration ========================================== -->
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>xml/national/struts/struts.xml</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.struts</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>OldExceptionFilter</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.utility.struts.OldExceptionFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>OldExceptionFilter</filter-name>
+        <url-pattern>*.struts</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>StrutsWebFlow</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.springwebflow.servlet.SpringWebFlowFilter</filter-class>
+    </filter>
+
+   <filter-mapping>
+       <filter-name>StrutsWebFlow</filter-name>
+       <url-pattern>*.struts</url-pattern>
+   </filter-mapping>
+<!-- ===================================================================================== -->
+
+    <filter>
+        <filter-name>ExceptionFilter</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.utility.ExceptionFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ExceptionFilter</filter-name>
+        <url-pattern>*.go</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>      
+    </listener>
+
+    <listener>
+        <listener-class>net.sf.navigator.menu.MenuContextListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.apache.tiles.web.startup.TilesListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>gov.va.med.pharmacy.peps.presentation.common.springwebflow.breadcrumbs.BreadcrumbsFlowExecutionListener</listener-class>
+    </listener>
+
+    <!-- VistA Synchronization Status Servlet -->
+    <servlet>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.SynchronizationStatusServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <url-pattern>/encapsulation/status</url-pattern>
+    </servlet-mapping>
+
+    <!-- Order Check Servlet -->
+    <servlet>
+        <servlet-name>OrderCheck</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.OrderCheckServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderCheck</servlet-name>
+        <url-pattern>/ordercheck</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Info Servlet -->
+    <servlet>
+        <servlet-name>DrugInfo</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugInfoServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugInfo</servlet-name>
+        <url-pattern>/druginfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>spring-mvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <!-- use test classpath -->
+            <param-value>classpath*:xml/spring/test/*Context.xml,classpath*:xml/national/spring/test/*Context.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>spring-mvc</servlet-name>     
+        <url-pattern>*.go</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

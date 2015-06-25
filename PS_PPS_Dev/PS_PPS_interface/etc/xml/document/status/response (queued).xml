@@ -1,0 +1,11 @@
+<!-- VistA response after an NDF/PDM update message has been queued 
+    for later processing. -->
+
+<response
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/status/response ../../schema/status/response.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/status/response">
+
+    <response status="Queued" />
+
+</response>

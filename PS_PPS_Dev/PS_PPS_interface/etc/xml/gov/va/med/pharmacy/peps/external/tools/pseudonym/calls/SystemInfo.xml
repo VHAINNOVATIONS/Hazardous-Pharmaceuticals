@@ -1,0 +1,15 @@
+<Response type="systemInfo" status="success">
+    <SystemInfo vistalinkVersion="1.5T15"
+                vistalinkBuild="1.5.0.026"
+                appServerTimeout="604800"
+                reAuthSessionTimeout="3600"
+                uci="VISTA"
+                vol="ROU"
+                boxVolume="ROU:CACHE"
+                mVersion="PseudonyM"
+                operatingSystem="Java"
+                domainName="swri.org"
+                vistaProduction="false"
+                defaultInstitution="500/ALBANY VA MEDICAL CENTER" />
+    <IntroText><![CDATA[PseudonyM a simulated VistA server for testing and development only.<BR>]]></IntroText>
+</Response>

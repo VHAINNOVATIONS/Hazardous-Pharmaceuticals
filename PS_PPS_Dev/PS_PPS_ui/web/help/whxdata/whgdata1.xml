@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Automatic Refill" value="A valid refill request forwarded directly to dispensing. These types of refills do not require any form of intervention prior to dispensing." />
+ <entry name="Average Wholesale Price (AWP)" value="A “list price,” which few customers actually pay. There is no standard method for calculating the AWP." />
+ <entry name="AWP" value="Average Wholesale Price" />
+ <entry name="AWT" value="Abstract Window Toolkit" />
+ <entry name="Back Count" value="A process followed by Nursing that consists of counting a CS inventory location after medication is removed from it. An example would be a locked cabinet drawer in which morphine tablets are stored. Each time a tablet is removed, the nurse should do a “Back-Count” on the drawer by entering the remaining number of tablets into the system." />
+ <entry name="Baseline" value="A complete copy of a project that is captured to act as a “snapshot” of the project’s plans and status at a particular point in time. This frozen perspective is used to measure change from the original snapshot or picture of that original element." />
+ <entry name="Basic Flow" value="The main success scenario from trigger to completion." />
+ <entry name="BCMA" value="Bar Code Medication Administration" />
+ <entry name="BEA" value="BEA Systems, Inc." />
+ <entry name="BID" value="Twice a Day" />
+ <entry name="Black-box Testing" value="A testing technique that takes an external perspective of the system and does not explicitly use knowledge of the internal structure of the system. Testing without knowledge of the internal workings of the item being tested." />
+ <entry name="BO" value="Business Object" />
+ <entry name="Borrow Order (Inventory)" value="Allows the local pharmacy to obtain inventory without placing a Vendor purchase order. This order does not involve billing, but will support “horse trading” for specific items with the lending institution. See glossary term Lend Order (Inventory)." />
+ <entry name="BPR" value="Business Process Re-engineering" />
+ <entry name="BSAD" value="Baseline System Architecture Document" />
+ <entry name="Business Analysis Model" value="An object model describing the realization of business Use Cases." />
+ <entry name="Business Delegate" value="Used to hide the underlying implementation details of the business service, such as lookup and access details of the Enterprise JavaBeans (EJB) architecture. The software intermediary used to decouple business components from the code that uses them." />
+ <entry name="Business Delegate Pattern" value="A façade used to encapsulate calls to your business model." />
+ <entry name="Business Engineering" value="A set of techniques a company uses to design its business according to specific goals." />
+ <entry name="Business Logic" value="The logic relating to processing, workflow, business rules, data, etc." />
+ <entry name="Business Logic Layer" value="The code that resides in this layer executes the work that needs to be done; it is responsible for carrying out the individual steps of a process. This layer is typically designed using business entities. The business entities implement the business rules. They do not store the business data; instead, they may hold references to data entities that store the data." />
+ <entry name="Business Model" value="A visual representation of business processes and entities. Comprises two models (physical or logical representation of a system or its subsystems): (1)&#160;a business Use Case model to describe the business actors and the business processes, and (2) a business object model to describe business entities used by the business Use Cases." />
+ <entry name="Business Object" value="An object that represents tangible entities within an application that a user can create, access, and manipulate while performing a Use Case. Business Objects are typically stateful, persistent, and long-lived. Business Objects contain business data and model the business behavior." />
+ <entry name="Business Process" value="A group of activities that takes input, transforms it, and provides an output to an internal/external customer (see glossary term Process). An example of a business process for a hospital would be “order fulfillment,” involving the input of several cross-functional activities resulting in a prescription in the hands of the Patient customer." />
+ <entry name="Business Process Model" value="A model that outlines the workflow of an organization. It uses text, diagrams, and/or graphical shapes to model the various steps of a process. Models can be detailed in nature (representing very specific tasks) or they can be high-level (representing interaction between major business units)." />
+ <entry name="Business Process Re-engineering (BPR)" value="The fundamental analysis and redesign of business processes and management systems, job definitions, organizational structures and beliefs, and behaviors to achieve dramatic performance improvements to meet contemporary requirements. Information Technology (IT) is a key enabler in this process." />
+ <entry name="Business Rules" value="The basic business vocabulary and criteria that control or guide business behavior; indicate what is required and not required in running the business. A statement expressing a policy or condition that governs business actions and establishes data integrity guidelines." />
+ <entry name="Business Service" value="The software object that a client asks to do asynchronous processing; a service in the business tier that can process a client’s software request." />
+ <entry name="C2" value="Represents a Schedule 2 Narcotic" />
+ <entry name="Cache" value="A fast memory used to hold commonly used variables, which are automatically fetched by hardware from the slower and larger main computer memory." />
+ <entry name="Caché Relational Database" value="The post-relational database management system that has been identified by the VHA for data storage needs at the local level." />
+ <entry name="CAIP" value="Cross-Application Integration Protocol" />
+ <entry name="Cancel" value="An undo action in a GUI (“cancel” is not an action on an order)." />
+ <entry name="Candidate Architecture" value="The proposed design of a system structure." />
+ <entry name="Capability" value="A software element addressing a specific, well-defined functional responsibility of the containing service." />
+ <entry name="Capacity Management" value="The process of planning, analyzing, sizing, and optimizing automated capabilities to satisfy demand in a timely manner and at a reasonable cost. This process should be proactive and responsive to business needs because the business cannot add resources after a capacity problem has happened without impacting performance." />
+ <entry name="Caregiver" value="A person who administers medication to the Patient. May pick up or receive medications for the Patient. May also communicate for the Patient in cases where the Patient is unable (e.g., Nurse, Resident, Physician, Spouse)." />
+ <entry name="CBOC" value="Community Based Outpatient Clinic" />
+ <entry name="CBPM" value="Current Business Process Model" />
+ <entry name="CBT" value="Computer-Based Training" />
+ <entry name="CCB" value="Change Control Board" />
+ <entry name="CCM" value="Change and Configuration Management" />
+ <entry name="CCOW" value="Clinical Context Management (formally Clinical Context Object Workgroup)" />
+ <entry name="CDATA" value="Character Data" />
+ <entry name="CDC" value="Centers for Disease Control and Prevention" />
+ <entry name="CDER" value="Center for Drug Evaluation and Research" />
+ <entry name="CDS" value="Clinical Data Services" />
+ <entry name="CDW" value="Clinical Data Warehouse" />
+ <entry name="CE" value="Clinical Evaluator" />
+ <entry name="CEN" value="Committee European de Normalization" />
+ <entry name="Centers for Disease Control and Prevention (CDC)" value="The lead Federal Agency for protecting the health and safety of people at home and abroad, providing credible information to enhance health decisions, and promoting health through strong partnerships. Serves as the national focus for developing and applying disease prevention and control, environmental health, and health promotion and education activities designed to improve the health of the people of the United States." />
+ <entry name="CHAMPUS" value="Civilian Health and Medical Program of the Uniformed Services" />
+ <entry name="Change Management" value="The formal process of recording, analyzing, estimating, tracking, and reporting of modifications to the project baseline artifacts, such as business functional requirements." />
+ <entry name="Change Request (CR)" value="The mechanism by which a change to a project deliverable or artifact is requested." />
+ <entry name="Change Set" value="A list of related versions associated with a change management activity." />
+ <entry name="Character Data (CDATA)" value="An XML&#160;section tag used to denote character data that will be ignored by the XML parser. The tag begins with the string “&lt;![CDATA[” and ends with “]]&gt;”." />
+ <entry name="CHCS" value="Composite Health Care System" />
+ <entry name="CHDR" value="Clinical Data Repository/Health Data Repository" />
+ <entry name="Check" value="A visual inspection by a pharmacist to ensure that the medication dispensed matches the labeled container." />
+ <entry name="Chemotherapy" value="The treatment of a disease using chemical agents that are intended to eliminate the causative organisms without harming the Patient." />
+ <entry name="Child Orders" value="One or more Inpatient medication orders that are linked together using the conjunctions AND, OR, THEN, or EXCEPT to create combinations of dosages, medication routes, administration schedules, and order durations." />
+ <entry name="CHIPS" value="Consolidated Health Information Program System" />
+ <entry name="CHISS" value="Common Health Information Security Services" />
+ <entry name="CI" value="Configuration Items" />
+ <entry name="CID" value="Criteria Identification" />
+ <entry name="CIF" value="Continuous Improvement Framework" />
+ <entry name="CIO" value="Chief Information Officer" />
+ <entry name="CIP" value="Capital Investment Proposal" />
+
+</glossarydata>

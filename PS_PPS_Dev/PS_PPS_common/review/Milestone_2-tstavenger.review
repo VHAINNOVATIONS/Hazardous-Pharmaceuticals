@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4AQKIF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:28:16:983 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:29:54:356 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="40">src/gov/va/med/pharmacy/peps/common/vo/datafield/MultitextDataField.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>State in javadoc that an exception is thrown only if the given multiselect is false</Summary>
+    <Description>Perhaps reword javadoc to say:&#xD;
+&#xD;
+Don't allow code to call setMultiselect(false) on MultitextDataFields since they always must be multiselect.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4B2S2T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:37:46:661 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:42:53:407 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="157">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider cloning the old and new data field values</Summary>
+    <Description>As the diff functionality is currently implemented, a memory reference is set on the Difference object created. If the old or new values in the Difference object were to be changed, the same values would change on the old or new ValueObject being differenced (a Product, for example).&#xD;
+&#xD;
+The ValueObject class implements Cloneable and has a clone() method implementation on it, so we could clone these if we would want to. Then the two would be equal (when using the equals() method), but would not refer to the same instance of DataField.&#xD;
+&#xD;
+This applies to lines 157 and 160.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BA3WJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:43:28:579 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:43:41:501 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="165">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>two -&gt; to</Summary>
+    <Description>Change "two" to "to"</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BB2PZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:44:13:703 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:44:45:390 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="166">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Specify that this means the two instances of the DataFields class are assumed unequal</Summary>
+    <Description>Change to "The two instances of DataFields are assumed unequal."</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BBXLI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:44:53:718 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:45:10:484 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="171">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>COllection -&gt; Collection</Summary>
+    <Description>COllection -&gt; Collection</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BCS1F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:45:33:171 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:46:34:155 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="210">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider cloning ValueObjects</Summary>
+    <Description>As above for DataFields, consider cloning the ValueObjects at line 210 and 213 because memory references are passed into the diff functionality. If values were ever changed in the Difference or in the Product, they would be reflected in the other.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BFC10">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:47:32:388 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:48:22:278 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="27">src/gov/va/med/pharmacy/peps/common/vo/diff/Difference.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Make these public static final attributes private</Summary>
+    <Description>Why are MAX_STRING_LEN_CHARS and MAX_LIST_STRING_LEN_CHARS public? They don't appear to be used outside of this class, so they could be private.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BGHYZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:48:26:747 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:49:20:996 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="27">src/gov/va/med/pharmacy/peps/common/vo/diff/Difference.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Spell out LENGTH and CHARACTERS, possibly also MAXIMUM</Summary>
+    <Description>I believe the coding standards state that these attributes (lines 27 and 28) should be named MAXIMUM_STRING_LENGTH_CHARARACTERS</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BJAA1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:50:36:745 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:51:48:010 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="93">src/gov/va/med/pharmacy/peps/common/vo/diff/Difference.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should we localize?</Summary>
+    <Description>Since we documented a TODO twice fo lines 93 and 105, I think we ought to localize the values... we should also localize 112, 115, 125, 148, and 152</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BLNRP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:52:27:541 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:52:40:181 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="52">src/gov/va/med/pharmacy/peps/common/vo/DosageFormVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add JavaDoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BMAQ2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:52:57:290 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:53:15:290 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="10">src/gov/va/med/pharmacy/peps/common/vo/DrugClassificationVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>What is a drug classification?</Summary>
+    <Description>Expand on the javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BN9Z5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:53:42:977 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:54:04:446 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Find all TODOs and figure out if we should do the to do.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BO5Y6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:54:24:414 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:54:45:570 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="10">src/gov/va/med/pharmacy/peps/common/vo/DrugTextVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BP18W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:55:04:976 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:55:29:929 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/common/vo/EntityType.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description>RequestItemType -&gt; EntityType also at lines 27, 35</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BPT89">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:55:41:241 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:55:59:585 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="10">src/gov/va/med/pharmacy/peps/common/vo/EntityType.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description>Is this enum really only for a request?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BRE9M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:56:55:162 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:57:27:099 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="54">src/gov/va/med/pharmacy/peps/common/vo/FieldAuthorizationVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description>This constructor does not create a FieldAuthorization with no required/disabled fields. It actually sets values!</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BSC0G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:57:38:896 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:57:51:740 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/common/vo/FieldAuthorizationVo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description>What about required fields?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BV26P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:59:46:129 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:01:07:112 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="74">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Expand javadoc</Summary>
+    <Description>This class does a whole lot more now ... for instance it tells Presentation what type all of the fields are to choose what type of component to use. It lets us know what level a field is displayed at to derive the OGNL path. It tells us which fields require second review. It also configures the validator instance to use.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BXCCK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:01:32:612 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:02:28:861 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="291">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove commented code since it isn't used</Summary>
+    <Description>We're using clearcase so we can always figure out what used to be there... see also line 507, 579</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C03AL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:03:40:845 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:04:24:125 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="866">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>Need to include PRIMARY_KEY_DATA_FIELD and change MULTIPLE_DATA_FIELD to MULTITEXT_DATA_FIELD</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C2L7Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:05:37:390 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:06:33:420 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1005">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Shouldn't this be in the NdcVo?</Summary>
+    <Description>This code strikes me as FieldAuthorization logic, which is currently located in the individual VOs, not in the FieldKey class. I would recommend to move it to the NdcVo under the required fields.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C5AXP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:07:44:029 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:23:012 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1151">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>I'm assuming the code is correct and the java doc is not, but either way the two don't match. The code will return all Orderable Item fields that require second approval, not just OI VA data fields requiring second approval. Applies also to line 1065, method getNdcSecondApprovalDataFields() and line 1228, method getProductSecondApprovalDataFields().</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C848D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:55:309 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:11:40:276 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1289">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>OGNL actually also needs ['&lt;key&gt;']</Summary>
+    <Description>For VA data fields, should toAttributeName() also return the "keyed" value instead of just dataFields? Such as change would also impact the Presentation custom tags as they would no longer have to manually add the key value. For instance: &#xD;
+&#xD;
+dataFields['application.package.use'] instead of just dataFields</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CARFE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:11:58:682 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:12:47:803 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1316">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Change this method too if changing toAttributeName for VA data fields</Summary>
+    <Description>If toAttributeName is changed for VA data fields to return the "keyed" OGNL path, then this method needs to be changed to handle that properly.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CDA7R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:13:56:343 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:14:30:856 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1333">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>I don't think "This constructor is used for DataFields, not for ValueObjects and general fields." applies any longer. See other constructors for the same comment.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CGUF7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:16:42:499 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:17:00:888 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1751">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>The isCompositeDataFieldType() doesn't exist.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CICWW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:17:53:120 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:18:11:556 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="1939">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>For consistency should this method be named isValueObjectField()?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CLB42">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:20:10:754 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:20:25:722 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="29">src/gov/va/med/pharmacy/peps/common/vo/InpatientPharmLocationVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>InpatientPharmLocation -&gt; location</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CLZGR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:20:42:315 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:21:21:267 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="10">src/gov/va/med/pharmacy/peps/common/vo/IntendedUseVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description>This VO isn't the NDC's package size</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CN0NO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:21:30:516 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:21:49:781 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="70">src/gov/va/med/pharmacy/peps/common/vo/IntendedUseVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Correct javadoc</Summary>
+    <Description>vuid -&gt; intendedUse</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DJWWU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:47:05:310 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:47:25:778 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="10">src/gov/va/med/pharmacy/peps/common/vo/ItemStatus.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc</Summary>
+    <Description>Is the ItemStatus really only for a Product?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DKWS2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:47:51:794 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:48:01:340 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/common/vo/LocalPossibleDosagesVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DL70Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:48:05:075 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:29:00:505 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/common/vo/LocalPossibleDosagesVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Delete commented code</Summary>
+    <Description>If the code isn't used, delete it since we have history in ClearCase also see line 86</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DMTBG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:49:20:620 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:49:32:214 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="31">src/gov/va/med/pharmacy/peps/common/vo/ManagedItemVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused field</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DNIDS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:49:53:104 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:51:12:555 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="133">src/gov/va/med/pharmacy/peps/common/vo/ManagedItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Methods other than getter/setters can be called outside of Service!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DP83J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:51:13:087 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:52:40:351 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Methods on ValueObjects other than get/set can be called from other projects!</Summary>
+    <Description>Methods like ManagedItemVo.updateFromRequestDetails() can be called outside of the Service project! So Presentation could call this method -- should that be allowed?&#xD;
+&#xD;
+If we were to return this VO to an external client (another VA application), it too would be able to call these methods -- should that be allowed?&#xD;
+&#xD;
+If that is truly ok, then we can leave things as they are. If not, we may want to consider other options -- either leaving this code in service, creating interfaces to return to Presentation and to external clients, or perhaps something else?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DRLCH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:53:03:569 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:24:29:198 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="241">src/gov/va/med/pharmacy/peps/common/vo/ManagedItemVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>resetFieldToOldValue</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DRY5U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:53:20:178 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:24:54:161 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="295">src/gov/va/med/pharmacy/peps/common/vo/ManagedItemVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add parameter descriptions to javadoc</Summary>
+    <Description>fieldKey</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DSGRY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:53:44:302 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:54:22:411 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="343">src/gov/va/med/pharmacy/peps/common/vo/ManagedItemVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>Also applies to lines 351, 359, 367, 396, 425</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DTWBE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:54:51:098 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:54:59:770 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="84">src/gov/va/med/pharmacy/peps/common/vo/ModDifferenceVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description>getNewDataFieldValueForRequestUpdate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DU7GF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:55:05:535 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:55:35:878 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="129">src/gov/va/med/pharmacy/peps/common/vo/ModDifferenceVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add parameter description to javadoc</Summary>
+    <Description>requestor, see also line 211, 229, 247, 265</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DV7S4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:55:52:612 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:56:28:643 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="279">src/gov/va/med/pharmacy/peps/common/vo/ModDifferenceVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Duplication of code, this method is already in ValueObject with the same implementation</Summary>
+    <Description>Applies to equals(), hashCode(), and toString()</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DW8C3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:56:39:987 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:39:13:374 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/common/vo/NationalPossibleDosagesVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add/update javadoc</Summary>
+    <Description>Applies to whole VO</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DWTHS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:57:07:408 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:27:50:835 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unnecessary import statement for java.util.List</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5A4392">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 06:58:34:358 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:02:27:840 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="75">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider using fields directly instead of getter and setter methods</Summary>
+    <Description>Instead of calling findGetters(), this class could use the Fields directly. Using reflection, the class could retrieve all Fields and compare similarly named fields between the old and new instances.&#xD;
+&#xD;
+Using the Fields instead of getter/setter methods may simplify the could and would definitely remove the dependency on developers using get*, set*, and is* methods. We've already had problems where we tried to name a method get* but it really wasn't a getter in the sense of directly returning a field value.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F3A2H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:17:54:617 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:18:29:351 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/common/vo/EntityType.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Rename to isOrderableItem since the enum isn't NATIONAL_ORDERABLE_ITEM</Summary>
+    <Description>isNationalOrderableItem -&gt; isOrderableItem</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

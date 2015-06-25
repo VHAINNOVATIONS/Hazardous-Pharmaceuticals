@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="decideStart">
+    
+
+    <action-state id="decideStart">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="updateDif" />
+            <attribute
+                name="actionMethod"
+                value="canPerformDifUpdate" />
+        </evaluate>
+        
+        <transition
+            on="success"
+            to="uploadDif" />
+        <transition
+            on="error"
+            to="localError" />
+    </action-state>
+    
+    <view-state
+        id="uploadDif"
+        view="updateDif">
+        
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+            
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>           
+        </on-render>
+        
+        <transition
+            on="submit"
+            to="submit" />
+        <transition
+            on="error"
+            to="uploadDif" />
+ 
+    </view-state>
+    
+    <action-state id="submit">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="updateDif" />
+            <attribute
+                name="actionMethod"
+                value="uploadFile" />
+        </evaluate>
+        
+        <transition
+            on="success"
+            to="confirm" />
+        <transition
+            on="error"
+            to="uploadDif" />
+    </action-state>
+    
+    <view-state
+        id="confirm"
+        view="confirm.difupload">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="ok" />
+    </view-state>
+    
+    <action-state id="ok">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="updateDif" />
+            <attribute
+                name="actionMethod"
+                value="performDifUpdate" />
+        </evaluate>
+        
+        <transition
+            on="success"
+            to="updateRunning" />
+        <transition
+            on="error"
+            to="localError" />
+    </action-state>
+
+
+    <view-state
+        id="updateRunning"
+        view="running.difUpdate">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="decideStart" />
+    </view-state>
+    
+    <view-state
+        id="localError"
+        view="error.difUpdate">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="decideStart" />
+    </view-state>
+    
+
+</flow>

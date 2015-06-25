@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4G9BUT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:02:50:309 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:03:36:028 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove unused import statements</Summary>
+    <Description>remove unused import statements by using cntl+shift+O</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GAS3G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:03:58:012 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:04:20:575 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="52">src/gov/va/med/pharmacy/peps/service/local/capability/RequestCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @throws tag from the comment</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GFNTU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:07:45:762 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:08:29:903 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="72">src/gov/va/med/pharmacy/peps/service/local/capability/impl/RequestCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @throws tag at the comment and line is longer than 125 characters</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GGWCP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:08:43:465 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:09:13:637 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove unused member variables from code</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GJ2FX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:10:24:669 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:10:53:965 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="80">src/gov/va/med/pharmacy/peps/service/local/session/bean/RequestServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @throws tag and line longer than 125 characters</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GKOM3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:11:40:059 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:11:53:997 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="48">src/gov/va/med/pharmacy/peps/service/local/session/RequestService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @throws tag from comment</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GN7UT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:13:38:309 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:14:14:262 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>some methods are missing java doc comment and some tags, lines longer than 125 char</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HIP9R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:38:07:215 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:38:43:997 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="159">src/gov/va/med/pharmacy/peps/service/national/capability/impl/RequestCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>incorrect comment</Summary>
+    <Description>comment shou</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HP5JR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:43:08:247 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:08:58:891 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="111">src/gov/va/med/pharmacy/peps/service/national/session/bean/RequestServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @param tag in the comment</Summary>
+    <Description>missing @param tag for difference</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HRNJC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:45:04:872 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:45:30:622 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="81">src/gov/va/med/pharmacy/peps/service/national/session/RequestService.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented/unused methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HU0PB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:46:55:247 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:47:13:372 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="25">test/gov/va/med/pharmacy/peps/service/national/test/integration/RequestServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>does not have enough test methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4HURL6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:47:30:090 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:47:44:028 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>fix check style errors</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I1C3I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:52:36:606 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:54:47:762 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/service/common/capability/impl/UnitCapabilityImpl.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this capabilityImpl class is not used</Summary>
+    <Description>this class contains hard coded units and are not called from any class other than productcapabilityimpl. productcapabilityimpl as this variable, but it is not useing this.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I4O9G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:55:12:340 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 10:44:39:781 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/service/common/capability/UnitCapability.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>capability class not used</Summary>
+    <Description>this capability class is not used.</Description>
+    <Annotation />
+    <Revision>removed the capability class and the capability impl class</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4I69YQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:56:27:122 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:56:54:622 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/service/common/session/impl/ConsoleServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing java doc comments</Summary>
+    <Description>missing java doc comments for the class and for all the methods</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HWP3I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:36:46:350 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:38:32:584 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="230">src/gov/va/med/pharmacy/peps/service/common/session/impl/DomainServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @todo comment</Summary>
+    <Description>missing a @todo comment to remove the hard coded WardGroup once available from Vista</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HZYH7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:39:18:475 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:39:58:787 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="354">src/gov/va/med/pharmacy/peps/service/common/session/impl/DomainServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>parameter name do not match</Summary>
+    <Description>parameter name in the comment do not match the parameter name in the method.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5I0Y7N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:40:04:787 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:40:49:756 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>parameter name do not match</Summary>
+    <Description>parameter name in the comment do not match the parameter name in the method.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5I3SK4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:42:17:428 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:13:40:687 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/service/common/session/ConsoleService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing java doc comment from interface and all methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5I61RQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:44:02:678 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:01:31:285 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/service/common/session/bean/ConsoleServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing @return tag from comments of all methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5I82YA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:45:37:522 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:45:57:350 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/service/common/session/impl/ConsoleServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing javadoc comment from class and all methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5JH8C6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:20:44:022 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:21:15:569 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Local RequestService and Capability are not needed</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5JL9PO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:23:52:428 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:24:24:662 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="200">src/gov/va/med/pharmacy/peps/service/national/capability/impl/RequestCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>put comment to explain why nulling out the difference</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

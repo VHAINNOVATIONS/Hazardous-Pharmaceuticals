@@ -1,0 +1,99 @@
+<project name="SeleniumTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="generateSeleniumTestCaseProperties" uri="http://www.swri.org">
+        <attribute name="timeout" default="12000" />
+        <attribute name="browserString" default="*iexplore" />
+        <attribute name="fileDir"
+                   default="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/presentation/common/test/selenium" />
+        <attribute name="file" default="/SeleniumTestCase.properties" />
+        <sequential>
+            <mkdir dir="@{fileDir}" />
+            <propertyfile file="@{fileDir}/@{file}">
+                <entry key="timeout" value="@{timeout}" />
+                <entry key="browser.string" value="@{browserString}" />
+            </propertyfile>
+
+            <property name="local.number" value="1" />
+
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.local.targets}" delimiter=",;:" param="target">
+                        <sequential>
+                            <propertyfile file="@{fileDir}/@{file}">
+                                <entry key="local-${local.number}.url" value="http://@{host}:${server.@{target}.port}" />
+                            </propertyfile>
+
+                            <math result="local.number"
+                                  operand1="${local.number}"
+                                  operation="+"
+                                  operand2="1"
+                                  datatype="int" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+
+            <for list="${national.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.national.targets}" delimiter=",;:" param="target">
+                        <sequential>
+                            <propertyfile file="@{fileDir}/@{file}">
+                                <entry key="national.url" value="http://@{host}:${server.@{target}.port}" />
+                            </propertyfile>
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="seleniumTest" uri="http://www.swri.org">
+        <sequential>
+            <junit printsummary="on"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   errorProperty="selenium.test.failed"
+                   failureProperty="selenium.test.failed"
+                   dir="${basedir}"
+                   fork="true">
+
+                <jvmarg value="-Xmx512m" />
+                <jvmarg value="-Xms64m" />
+                <jvmarg value="-Xverify:none" />
+                <jvmarg value="-XX:PermSize=256m" />
+                <!-- <jvmarg value="-Demma.coverage.out.file=${build.dir}/coverage/${ant.project.name}-coverage.emma" />
+                <jvmarg value="-Demma.coverage.out.merge=true" /> -->
+
+                <classpath>
+                    <path refid="project.class.path" />
+                </classpath>
+
+                <batchtest todir="${build.test.dir}">
+                    <fileset dir="${build.classes.dir}">
+                        <include name="**/test/selenium/**/*Test.class" />
+                    </fileset>
+                </batchtest>
+
+                <formatter type="xml" />
+            </junit>
+
+            <junitreport todir="${build.test.dir}">
+                <fileset dir="${build.test.dir}">
+                    <include name="TEST-*.xml" />
+                </fileset>
+
+                <report todir="${build.test.dir}/report" />
+            </junitreport>
+            
+            <!-- <if>
+                <isfalse value="${out.of.container}" />
+                <then>
+                    <swri:coverageGetAll />
+                </then>
+            </if>
+
+            <swri:coverageReport allProjects="true" /> -->
+
+            <fail if="selenium.test.failed" unless="ignore.test.failures">One or more Selenium tests failed!</fail>
+        </sequential>
+    </macrodef>
+</project>

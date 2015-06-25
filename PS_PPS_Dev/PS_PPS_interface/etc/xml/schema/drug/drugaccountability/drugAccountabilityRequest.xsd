@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../../common.xsd" />
+
+    <xsd:element name="drugAccountabilityRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    ref="requestAdd"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+                <xsd:element
+                    ref="requestUpdate"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:element name="requestAdd">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="ndc"
+                    type="ndcField"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="vuid"
+                    type="xsd:integer"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="orderUnit"
+                    type="xsd:string"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerDispenseUnit"
+                    type="xsd:double"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    ref="addSynonymFields"
+                    minOccurs="0"
+                    maxOccurs="1" />
+                <xsd:element
+                    ref="addNDCFields"
+                    minOccurs="0"
+                    maxOccurs="1" />
+                <xsd:element
+                    ref="addProductFields"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="requestUpdate">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="ndc"
+                    type="ndcField"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="vuid"
+                    type="xsd:integer"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    ref="updateSynonymFields"
+                    minOccurs="0"
+                    maxOccurs="1" />
+                <xsd:element
+                    ref="updateNDCFields"
+                    minOccurs="0"
+                    maxOccurs="1" />
+                <xsd:element
+                    ref="updateProductFields"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="addSynonymFields">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="vsn"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="vendor"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="dispenseUnitsPerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="updateSynonymFields">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="vsn"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="vendor"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="orderUnit"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="dispenseUnitsPerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerDispenseUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="addNDCFields">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="vsn"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="vendor"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="dispenseUnitsPerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="otcRXIndicator"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="manufacturer"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="updateNDCFields">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="vsn"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="vendor"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="orderUnit"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="dispenseUnitsPerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerDispenseUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="otcRXIndicator"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="manufacturer"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="addProductFields">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="dispenseUnitPerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="currentInventory"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="ifcapItemNumber"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="updateProductFields">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="orderUnit"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="dispenseUnitsPerOrderUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pricePerDispenseUnit"
+                    type="xsd:double"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="currentInventory"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="ifcapItemNumber"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="ndcField">
+        <xsd:restriction base="xsd:string">
+            <!-- xxxxx-xxxx-xx (12 digit NDC)-->
+            <xsd:pattern value="\d{6}-\d{4}-\d{2}" />
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

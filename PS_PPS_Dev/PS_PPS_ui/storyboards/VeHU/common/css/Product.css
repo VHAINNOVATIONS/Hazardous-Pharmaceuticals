@@ -1,0 +1,87 @@
+a {
+	text-indent:5px;
+	color: #0000CC;
+}
+
+.productId {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color:#002266;
+	float:left;
+	text-indent:6px;
+	line-height:28px;
+	background-color:inherit;
+}
+
+.orderableItem {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	float:right;
+	line-height:28px;
+}
+
+.generalInfo {
+	margin-top: 14px;
+	height: 70px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	font-weight:normal;
+	/*border-color:#000000;
+	border-width:medium;
+	border:solid;*/
+	background-color:inherit;
+	margin-left:10px;
+}
+
+.buttonPanel {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	height:30px;
+	line-height:30px;
+	margin-top:10px;
+	background-color:inherit;
+}
+
+.buttonLeft {
+	float:left;
+	margin-top:inherit;
+}
+
+.buttonCenter {
+	float:left;
+	margin-left:300px;
+	margin-top:inherit;
+}
+.adjbuttonCenter {
+	float:left;
+	margin-left:2.5px;
+	margin-top:inherit;
+}
+.buttonRight {
+	float:right;
+	margin-right:10px;
+	margin-top:inherit;
+}
+
+.heading {
+	width:100%;	
+}
+
+.mainBody {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	margin-top: 70px;
+	width:100%;
+}
+
+.button {
+	size:12em;
+	text-align:center;
+}
+
+.ndcBody {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	line-height:26px;
+	margin-top:65px;
+}

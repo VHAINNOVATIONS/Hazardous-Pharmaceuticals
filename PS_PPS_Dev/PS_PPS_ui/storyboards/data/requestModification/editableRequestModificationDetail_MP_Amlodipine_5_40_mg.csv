@@ -1,0 +1,5 @@
+//Product name, VADF name, current value, Modified value, Reason
+Patient Specific Label,Not Checked,Checked,Updated Data Field,Y
+Vitals: Order Entry,Pulse(Heart Rate),Blood Pressure,Updated Data Field,Y
+Vitals: Order Finish,Pulse(Heart Rate),Blood Pressure,Updated Data Field,Y
+Vitals: Order Administration,Pulse(Heart Rate),Blood Pressure,Updated Data Field,Y

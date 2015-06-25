@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="load">
+
+    <on-start>
+        <set
+            name="conversationScope.searchTemplate"
+            value="null"
+            type="gov.va.med.pharmacy.peps.common.vo.SearchTemplateVo" />
+        <set
+            name="conversationScope.items"
+            value="null"
+            type="java.util.Collection" />
+    </on-start>
+
+    <action-state id="load">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="loadOISearch" />
+        </evaluate>
+        <transition
+            on="success"
+            to="searchCriteria" />
+    </action-state>
+
+    <view-state
+        id="searchCriteria"
+        view="${conversationScope.searchTemplate.searchCriteria.searchDomain.viewName}.search">
+        <on-render>
+
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="search" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="retrieve"
+            to="end" />
+        <transition
+            on="search"
+            to="addMoveProductsCriteria" />
+    </view-state>
+
+    <action-state id="addMoveProductsCriteria">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="moveChildren" />
+            <attribute
+                name="actionMethod"
+                value="addMoveProductsCriteria" />
+        </evaluate>
+        <transition
+            on="success"
+            to="search" />
+    </action-state>
+
+    <action-state id="search">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="search" />
+        </evaluate>
+        <transition
+            on="success"
+            to="searchCriteria" />
+        <transition
+            on="input"
+            to="searchCriteria" />
+    </action-state>
+
+    <end-state id="end">
+        <output
+            name="itemId"
+            value="requestParameters.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="requestParameters.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+    </end-state>
+
+</flow>

@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/pmi/response"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/pmi/response"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../../common.xsd" />
+
+    <xsd:element name="pmiData">
+        <xsd:complexType>
+            <xsd:choice>
+                <xsd:sequence>
+                    <xsd:element
+                        name="title"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="commonBrandNames"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="0" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="missedDose"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="phonetics"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="0" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="howToTake"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="drugInteractions"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="medicalAlert"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="0" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="notes"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="overdose"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="precautions"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="storage"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="sideEffects"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="uses"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="warnings"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="0" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+
+                    <xsd:element
+                        name="disclaimer"
+                        minOccurs="1"
+                        maxOccurs="1">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:minLength value="1" />
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+
+                <xsd:element
+                    name="noData"
+                    minOccurs="1"
+                    maxOccurs="1">
+                    <xsd:complexType />
+                </xsd:element>
+            </xsd:choice>
+
+            <xsd:attribute
+                name="language"
+                type="common:language"
+                use="required" />
+
+            <xsd:attribute
+                name="gcnSequenceNumber"
+                type="xsd:integer"
+                use="required" />
+
+            <xsd:attribute
+                name="vuid"
+                type="xsd:integer"
+                use="optional" />
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

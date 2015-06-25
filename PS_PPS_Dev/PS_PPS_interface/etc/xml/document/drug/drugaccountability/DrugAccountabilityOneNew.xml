@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugAccountabilityRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request ../../../schema/drug/drugaccountability/DrugAccountabilityRequest.xsd "
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request">
+    <requestAdd>
+        <ndc>002669-9010-99</ndc>
+        <vuid>4002698</vuid>
+        <orderUnit>EA</orderUnit>
+        <pricePerDispenseUnit>10.01</pricePerDispenseUnit>
+        <pricePerOrderUnit>10.02</pricePerOrderUnit>
+        <addSynonymFields>
+            <vsn>VSN10</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>10.03</dispenseUnitsPerOrderUnit>
+        </addSynonymFields>
+        <addNDCFields>
+            <vsn>VSN10</vsn>
+            <vendor>McKesson Corporation</vendor>
+            <dispenseUnitsPerOrderUnit>10.04</dispenseUnitsPerOrderUnit>
+            <otcRXIndicator>0</otcRXIndicator>
+            <manufacturer>EMD</manufacturer>
+        </addNDCFields>
+        <addProductFields>
+            <dispenseUnitPerOrderUnit>10.05</dispenseUnitPerOrderUnit>
+            <currentInventory>10</currentInventory>
+            <ifcapItemNumber>45</ifcapItemNumber>
+        </addProductFields>
+    </requestAdd>
+</drugAccountabilityRequest>

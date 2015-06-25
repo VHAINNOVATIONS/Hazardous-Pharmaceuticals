@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="M5P1">
+  <ReviewIssue id="FWXNUEG8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 10:55:29:576 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 15:33:11:704 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="50">src/gov/va/med/pharmacy/peps/service/local/capability/impl/SiteUpdateScheduleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>nationalSiteUpdateScheduleService is not used</Summary>
+    <Description>this private variable is never used</Description>
+    <Annotation />
+    <Revision>This variable (nationalSiteUpdateScheduleService  is not needed, but would require changing some xml files that also refer to this variable and it seems dangerous to make that big a change at this point.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWZ2ZVU2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-10 :: 10:47:25:802 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:12:10:268 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="567">test/gov/va/med/pharmacy/peps/service/common/capability/test/ProductRulesCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>test does nothing</Summary>
+    <Description>this test just builds a product and does nothing should be removed if not appilcable</Description>
+    <Annotation />
+    <Revision>Removed test</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWZ3611P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-10 :: 10:52:12:493 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 15:56:23:696 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="7">test/gov/va/med/pharmacy/peps/service/local/test/integration/ProductServiceTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Deprecated Vo</Summary>
+    <Description>The mergeDifferenceVo is deprecated. Should another Vo be used in it's place?</Description>
+    <Annotation />
+    <Revision>Changed to ModDifferenceVo</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX4SWJ7W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-14 :: 10:51:30:380 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:11:24:863 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/service/local/capability/impl/SiteUpdateScheduleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Hard coded site number</Summary>
+    <Description>The site number of 999 is hard coded. Is there another way to find out if the site is national or local?</Description>
+    <Annotation />
+    <Revision>After talking with Tim Stavenger I marked the TODO for M5P2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7MMIMD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:19:03:877 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 15:30:48:802 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="33">src/gov/va/med/pharmacy/peps/service/national/session/impl/SiteUpdateScheduleServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Create method</Summary>
+    <Description>I do not think this create method in National is being called by anybody. Do we need to remove it?</Description>
+    <Annotation />
+    <Revision>Cannot remove it SiteUpdateScheduleServiceImpl must implement abstract method create</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7MQ70V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:21:55:471 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:07:11:366 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="35">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/message/impl/HospitalQueueServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>onMessage method</Summary>
+    <Description>Is this hospital queue being used?</Description>
+    <Annotation />
+    <Revision>Yes it is still being used.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7MUZH7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:25:38:971 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 14:55:05:259 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="72">src/gov/va/med/pharmacy/peps/service/national/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>method can be private</Summary>
+    <Description>constructPepsLocalConfigVo is only being called by insertFromLocal in same package. THe visibility could be changed to private</Description>
+    <Annotation />
+    <Revision>changed to private</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7NHQ8G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:43:20:080 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 14:52:32:491 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>MergeDifferenceVo is deprecated</Summary>
+    <Description>Should another class be used instead</Description>
+    <Annotation />
+    <Revision>Switched to ModDifferenceVO</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7NLO8F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:46:24:111 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 14:42:30:312 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ProductRulesCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove block of code if no longer applicable</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Removed block of code -- can always be retrieved through ClearCase history if ever needed again.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7NN7N8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:47:35:924 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 14:31:36:709 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ugoring</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/service/common/capability/impl/SiteUpdateScheduleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>create a static variable</Summary>
+    <Description>for schedule interval and update version, instead of hard coding since it's been hard coded in more than one place</Description>
+    <Annotation />
+    <Revision>Added two static variables for schedule interval and update version</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

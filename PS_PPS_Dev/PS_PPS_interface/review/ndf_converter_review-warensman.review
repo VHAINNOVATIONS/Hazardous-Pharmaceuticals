@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="ndf_converter_review">
+  <ReviewIssue id="FOX99GUM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 13:49:39:598 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 13:49:56:348 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove copyright headers.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FOXA2IUZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:12:15:227 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:12:58:272 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Organize imports</Summary>
+    <Description />
+    <Annotation>Organize imports.</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FOXAFB4F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:22:11:727 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:22:36:415 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="52">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/DrugManufacturerFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Check to see if still needed with updated requirements.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FOXAKN3F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:26:20:523 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:26:39:835 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="56">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/NdcUpnFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use no dashes method.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FOXAWTQC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:35:48:996 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:36:04:917 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/VaGenericFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Needs to use static factory.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FOXAXG0E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:36:17:870 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-12-19 :: 14:36:30:776 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo>mspears</AssignedTo>
+    <File line="120">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/ndf/VaGenericFileConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Needs to use abstract factory.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

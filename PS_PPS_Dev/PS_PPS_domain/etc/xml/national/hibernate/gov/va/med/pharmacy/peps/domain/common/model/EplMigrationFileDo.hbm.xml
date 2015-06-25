@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplMigrationFileDo" 
+    table="EPL_MIGRATION_FILE"
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+    <id
+        name="fileId"
+        type="java.lang.Double"
+        column="FILE_ID">
+    
+        <meta attribute="use-in-equals">true</meta>
+    </id>
+
+        <property 
+            name="migrationFileName" 
+            column="MIGRATION_FILE_NAME" 
+            type="java.lang.String"
+            length="100">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="rowsProcessedQty" 
+            column="ROWS_PROCESSED_QTY" 
+            type="java.lang.Integer"
+            length="6">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="rowsMigratedQty" 
+            column="ROWS_MIGRATED_QTY" 
+            type="java.lang.Integer"
+            length="6">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="rowsNotMigratedQty" 
+            column="ROWS_NOT_MIGRATED_QTY" 
+            type="java.lang.Integer"
+            length="6">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="errorQty" 
+            column="ERROR_QTY" 
+            type="java.lang.Integer"
+            length="6">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="createdBy" 
+            column="CREATED_BY" 
+            type="java.lang.String"
+            length="50">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="createdDtm" 
+            column="CREATED_DTM" 
+            type="java.sql.Timestamp"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="lastModifiedBy" 
+            column="LAST_MODIFIED_BY" 
+            type="java.lang.String"
+            length="50">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property 
+            name="lastModifiedDtm" 
+            column="LAST_MODIFIED_DTM" 
+            type="java.sql.Timestamp"
+            length="26">
+	        <meta attribute="use-in-tostring">true</meta>
+	        <meta attribute="use-in-equals">true</meta>
+        </property>
+    <!-- Associations -->
+    <!-- derived association(s) for compound key -->
+    <!-- end of derived association(s) -->
+  
+
+</class>
+</hibernate-mapping>

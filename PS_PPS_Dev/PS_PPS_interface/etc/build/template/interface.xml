@@ -1,0 +1,162 @@
+<project name="InterfaceTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <property file="${ant.file.Template}/properties/project.properties" />
+	
+
+    <macrodef name="initInterfaceTemplate" uri="http://www.swri.org">
+        <sequential>
+            <path id="Interface.build.class.path">
+
+                <fileset dir="${module.BuildLib.dir}/${module.Interface}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset>
+                
+                <path refid="build.class.path" />
+            </path>
+
+            <taskdef name="jwsc"
+                     classname="weblogic.wsee.tools.anttasks.JwscTask"
+                     classpathref="Interface.build.class.path" />
+
+            <!--taskdef name="wsgen" classname="org.codehaus.xfire.gen.WsGenTask" classpathref="Interface.build.class.path" /-->
+        	
+            <taskdef name="wsdlc"
+                     classname="weblogic.wsee.tools.anttasks.WsdlcTask"
+                     classpathref="Interface.build.class.path" />
+
+            <taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="Interface.build.class.path" />
+        	 <property name="buildCPTest" refid="build.class.path"/>
+            <echo>Classpath inside InitInterfaceTemplate: ${buildCPTest}</echo>
+            <property name="interfaceCPTest" refid="Interface.build.class.path" />
+        	 <echo>Interface Classpath inside InitInterfaceTemplate: ${interfaceCPTest}</echo>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="schemaToJava" uri="http://www.swri.org">
+        <attribute name="schemaDir" default="${etc.xml.schema.dir}" />
+        <attribute name="srcGenDir" default="${build.src.dir}" />
+
+        <sequential>
+            <property name="buildCP" refid="build.class.path"/>
+            <!-- echo>Classpath at this stage: ${buildCP}</echo -->
+            <property name="interfaceCP" refid="Interface.build.class.path" />
+            <!-- echo>Interface CP at this stage: ${interfaceCP}</echo -->
+
+            <xjc destdir="@{srcGenDir}" binding="${etc.xml.dir}/schema/globalBindings.xjb" extension="true">
+                <schema dir="@{schemaDir}">
+                    <include name="**/*.xsd" />
+                </schema>
+            </xjc>
+        </sequential>
+    </macrodef>
+
+    <!--<macrodef name="stsWsdlToJava" uri="http://www.swri.org">
+        <attribute name="wsdlDir" default="${etc.xml.dir}/sts" />
+        <attribute name="srcGenDir" default="${build.src.dir}" />
+
+        <sequential>
+            <wsgen outputDirectory="@{srcGenDir}" wsdl="@{wsdlDir}/PharmacyServices.wsdl" package="gov.va.med.pharmacy.peps.external.common.sts.outbound.capability" overwrite="true" />
+        </sequential>
+    </macrodef>-->
+
+    <macrodef name="pseudoStsWsdlToJWS" uri="http://www.swri.org">
+        <attribute name="wsdlDir" default="${etc.xml.dir}/sts" />
+        <attribute name="srcGenDir" default="${build.archive.dir}/src" />
+
+        <sequential>
+            <path id="Interface.build.class.path">
+                <path refid="build.class.path" />
+
+                <fileset dir="${module.BuildLib.dir}/${module.Common}/build/weblogic">
+                    <include name="weblogic.jar" />
+                </fileset>
+
+                <!-- webservices.jar and two xbean.jar /-->
+                <fileset dir="${module.BuildLib.dir}/${module.Interface}/${build}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset>
+            </path>
+
+            <wsdlc srcWsdl="@{wsdlDir}/PharmacyServices.wsdl"
+                   destJwsDir="${build.archive.dir}"
+                   destImplDir="@{srcGenDir}"
+                   packageName="gov.va.med.pharmacy.peps.external.tools.pseudosts" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="pseudoStsJWSToWS" uri="http://www.swri.org">
+        <sequential>
+            <jwsc srcdir="${src.dir}" destdir="${build.archive.dir}" classpathref="Interface.build.class.path">
+                <jws file="gov/va/med/pharmacy/peps/external/tools/pseudosts/PharmacyServicesPortTypeImpl.java"
+                     compiledWsdl="${build.archive.dir}/PharmacyServices_wsdl.jar" />
+            </jwsc>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="pseudoStsPackageEar" uri="http://www.swri.org">
+        <sequential>
+            <zip destfile="${build.archive.dir}/pseudosts.ear" basedir="${build.archive.dir}" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packagePseudonymJar" uri="http://www.swri.org">
+        <sequential>
+            <jar destfile="${build.archive.dir}/pseudonym.jar">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                </manifest>
+
+                <fileset dir="${build.classes.dir}">
+                    <include name="**/pseudonym/**/*.class" />
+                    <include name="schema/**" />
+                    <include name="**/drug/update/request/**/*.class" />
+                </fileset>
+
+                <fileset dir="${build.meta.dir}">
+                    <include name="schema/**" />
+                </fileset>
+
+                <fileset dir="${module.Common.dir}/build/classes">
+                    <include name="**/PropertyUtility.class" />
+                    <include name="**/exception/**/*.class" />
+                </fileset>
+
+                <fileset dir="${module.Common.dir}/etc">
+                    <include name="properties/**/exception/**/*.properties" />
+                </fileset>
+
+                <fileset dir="${etc.dir}">
+                    <include name="**/tools/pseudonym/**/*.properties" />
+                    <include name="**/tools/pseudonym/**/*.xml" />
+                </fileset>
+            </jar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="generateSTSCapabilityProperty" uri="http://www.swri.org">
+        <sequential>
+            <mkdir dir="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/external/common/sts/outbound/capability/impl" />
+            <propertyfile file="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/external/common/sts/outbound/capability/impl/StsCapabilityImpl.properties"
+                          comment="STS connection properties">
+
+                <entry key="sts.url" value="${sts.url}" />
+            </propertyfile>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageFdbUpdaterJar" uri="http://www.swri.org">
+        <sequential>
+            <jar destfile="${build.archive.dir}/FDBDataUpdater.jar">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Main-Class" value="gov.va.med.pharmacy.peps.external.tools.fdbupdater.FDBUpdater" />
+                </manifest>
+
+                <fileset dir="${build.classes.dir}">
+                    <include name="**/fdbupdater/**/*.class" />
+                </fileset>
+            </jar>
+        </sequential>
+    </macrodef>
+</project>

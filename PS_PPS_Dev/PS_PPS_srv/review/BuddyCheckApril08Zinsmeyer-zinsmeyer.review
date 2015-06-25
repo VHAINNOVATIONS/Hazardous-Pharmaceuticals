@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BuddyCheckApril08Zinsmeyer">
+  <ReviewIssue id="FF2K4N4C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:15:37:740 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:16:10:595 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/service/common/messagingservice/session/MessagingServiceMdb.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>More descriptive comments</Summary>
+    <Description>A more descriptive commentary on the purpose of the class and the onMessage method would be helpful.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2K6CUP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:16:57:745 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:17:22:164 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/service/common/messagingservice/utility/MessagingServiceJmsConfiguration.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues identified</Summary>
+    <Description>No issues were identified.  This is a very simple class.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2K8OGA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:18:46:090 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:19:10:556 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/capability/ReceiveFromNationalCapability.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description</Summary>
+    <Description>No class description provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KA61Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:19:55:550 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:20:13:547 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/capability/impl/ReceiveFromNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description provided</Summary>
+    <Description>No class description has been provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KJ72I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:26:56:778 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:27:37:195 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="78">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/capability/impl/ReceiveFromNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method descriptions</Summary>
+    <Description>Even though purpose of these methods is obvious, no method description is provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KKLLB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:28:02:255 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:28:23:315 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="103">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/capability/impl/ReceiveFromNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method header provided</Summary>
+    <Description>no method header provide for public void setConsoleCapability(ConsoleCapability consoleCapability)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KMO2E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:29:38:774 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:30:25:784 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/message/ReceiveFromNationalService.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description</Summary>
+    <Description>no class description is provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KOM5J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:31:09:607 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:32:07:209 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/message/impl/ReceiveFromNationalServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>More description comment</Summary>
+    <Description>a more descriptive comment could be provided.  What response is received from local?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KQFS3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:32:34:659 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:33:11:920 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="46">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/message/impl/ReceiveFromNationalServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No method description</Summary>
+    <Description>No method description is provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KVC92">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:36:23:366 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:37:11:266 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="35">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/message/impl/ReceiveFromNationalServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No @throws tag</Summary>
+    <Description>This method throws an exception.  No tag indicating an exception is provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2KXB02">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:37:55:058 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:38:21:414 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/service/local/messagingservice/inbound/message/bean/ReceiveFromNationalServiceBean.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Misspelled Receive</Summary>
+    <Description>The word recieve is misspelled.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L05KB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:40:07:979 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:40:25:367 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/SendToNationalCapability.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No header provided</Summary>
+    <Description>No comment header provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L0XQ2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:40:44:474 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:41:14:752 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/SendToNationalCapability.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Inconsistent Javadoc Tags</Summary>
+    <Description>The second @param tag does not match the method declaration.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L3FZ9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:42:41:445 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:43:10:238 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="27">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description provided</Summary>
+    <Description>No class description has been provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L4B0A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:43:21:658 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:43:48:452 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="40">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Inconsisted Javadoc Tags</Summary>
+    <Description>The javadoc tags do not match the method declaration</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L5FMD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:44:14:293 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:44:43:180 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="46">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>@throws tag</Summary>
+    <Description>The method throws exceptions, but are not listed in the Javadoc tags</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L6ATX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:44:54:741 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:45:21:894 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="74">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method header provided</Summary>
+    <Description>No method header provided for  public void send(ValueObject valueObject).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2L754X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:45:34:017 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:46:04:748 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="80">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No method description</Summary>
+    <Description>No method description has been provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LE3HL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:50:58:473 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:51:27:312 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="13">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/capability/ReceiveFromLocalCapability.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description</Summary>
+    <Description>No class description provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LFOB9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:52:12:117 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:52:34:638 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/capability/impl/ReceiveFromLocalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description provided</Summary>
+    <Description>No class description provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LGMFS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:52:56:344 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:53:32:830 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="37">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/capability/impl/ReceiveFromLocalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>@throws tag</Summary>
+    <Description>@throws tag is missing</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LHP12">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:53:46:358 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 09:54:54:435 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="70">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/capability/impl/ReceiveFromLocalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method headers provided</Summary>
+    <Description>No method headers provided for   &#xD;
+   public void setRequestCapability(RequestCapability requestCapability) &#xD;
+   public RequestCapability getRequestCapability ()&#xD;
+   public ConsoleCapability getConsoleCapability() &#xD;
+   public void setConsoleCapability(ConsoleCapability consoleCapability)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LS8ZY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:01:58:798 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:02:11:081 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="59">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/capability/impl/ReceiveFromLocalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Todo Found</Summary>
+    <Description>// todo - handle duplicate item. If duplicate, the item should not be added at national and&#xD;
+                // a message should be sent to locals to inactivate the item.&#xD;
+                LOG.error("Duplicate Item");&#xD;
+            }&#xD;
+            catch (ValueObjectValidationException e) {&#xD;
+                LOG.error("ValueObjectValidationException");&#xD;
+                // todo--throw the exception</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LTGK9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:02:55:257 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:03:19:510 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/message/ReceiveFromLocalService.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No class description provided</Summary>
+    <Description>No class description was provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LV0Y0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:04:08:328 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:04:36:581 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/message/impl/ReceiveFromLocalServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>More descriptive class header</Summary>
+    <Description>a more descriptive class description could be provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LVZCF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:04:52:911 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:05:36:194 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="34">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/message/impl/ReceiveFromLocalServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Javadoc problem</Summary>
+    <Description>Javadoc @param message is inconsistent with declaration&#xD;
+@throws tag is missing</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LY1S8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:06:29:384 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:07:05:026 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="30">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/message/bean/ReceiveFromLocalServiceBean.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Header problems</Summary>
+    <Description>@param message tag problem&#xD;
+missing method description</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2LZ4KZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:07:19:667 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:07:53:668 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="42">src/gov/va/med/pharmacy/peps/service/national/messagingservice/inbound/message/bean/ReceiveFromLocalServiceBean.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Additional Comment</Summary>
+    <Description>Suggest adding a comment on what is happening with setRollbackOnly.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2M19O9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:08:59:577 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:09:19:703 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/service/national/messagingservice/outbound/capability/SendToLocalCapability.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method header provided</Summary>
+    <Description>No method header was provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2M2TNI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:10:12:126 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:11:25:189 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="35">test/gov/va/med/pharmacy/peps/service/common/messagingservice/test/stub/ObjectMessageStub.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Method header problems</Summary>
+    <Description>@param tag is missing a description&#xD;
+No method description&#xD;
+See style check highlights</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2M5BGM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:12:08:518 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:13:21:065 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="23">test/gov/va/med/pharmacy/peps/service/common/messagingservice/test/stub/ObjectMessageStub.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Complete Test?</Summary>
+    <Description>Many of the stubs don't appear to do anything.  Should they at least record somewhere they were called and what the parameter values were?  Should they be checking the paramter values?   Is NULL a valid return value or should there be something else?  The test seems incomplete.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2M8897">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:14:24:331 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:14:52:956 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="22">test/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/test/SendToNationalCapabilityStub.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Style guide issues</Summary>
+    <Description>Several style guid issues are present</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MBZBM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:17:19:378 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:18:07:847 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="48">test/gov/va/med/pharmacy/peps/service/local/test/integration/SendToNationalCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Method problems</Summary>
+    <Description>No method header provided&#xD;
+No comments on what is being done; what are you setting up for?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MDC8H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:18:22:769 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:18:46:191 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="70">test/gov/va/med/pharmacy/peps/service/local/test/integration/SendToNationalCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>@throws tag</Summary>
+    <Description>@throws tag does not match declaration</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MDZTF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:18:53:331 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:19:14:253 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="83">test/gov/va/med/pharmacy/peps/service/local/test/integration/SendToNationalCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method header provided</Summary>
+    <Description>no method header provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MENBC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:19:23:784 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:19:38:550 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="96">test/gov/va/med/pharmacy/peps/service/local/test/integration/SendToNationalCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No method header provided</Summary>
+    <Description>no method header is provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MF6EU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:19:48:534 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:20:12:394 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="109">test/gov/va/med/pharmacy/peps/service/local/test/integration/SendToNationalCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Commented out code</Summary>
+    <Description>commented out code should be deleted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MHR6O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:21:48:768 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:23:10:893 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="29">test/gov/va/med/pharmacy/peps/service/local/test/integration/SendToNationalCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>More testing</Summary>
+    <Description>The test seems trivial.  More tests should be provided.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MKHM2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:23:56:330 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:24:16:908 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="14">test/gov/va/med/pharmacy/peps/service/local/test/integration/UserServiceTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No headers provided</Summary>
+    <Description>No class or method headers provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MLL4S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:24:47:548 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:26:13:563 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="15">test/gov/va/med/pharmacy/peps/service/local/test/integration/UserServiceTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>More testing</Summary>
+    <Description>The testing seems trivial.  It seems to only test the happy paths, login successful.  What about bad username?  Bad password?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MPUEZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:28:06:203 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:28:39:281 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="22">test/gov/va/med/pharmacy/peps/service/national/messagingservice/outbound/capability/impl/test/SendToLocalCapabilityStub.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Style check issues</Summary>
+    <Description>See style check issues</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2MRESX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:29:19:281 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 10:29:51:921 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="56">test/gov/va/med/pharmacy/peps/service/national/messagingservice/outbound/capability/impl/test/SendToLocalCapabilityStub.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>More comments</Summary>
+    <Description>Provide comments on what is being tested and the test logic.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2T0NWY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:24:28:690 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:25:23:502 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="51">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>More commentary</Summary>
+    <Description>add more commentary on what is happening here.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2ZHYUL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:25:53:709 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:27:25:849 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="53">src/gov/va/med/pharmacy/peps/service/national/messagingservice/outbound/capability/impl/SendToLocalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>More comments</Summary>
+    <Description>Add additional comments to describe what is happening for those who are not JMS literate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2ZMJ20">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:29:26:520 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:29:41:473 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="74">src/gov/va/med/pharmacy/peps/service/local/messagingservice/outbound/capability/impl/SendToNationalCapabilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No header provided</Summary>
+    <Description>no method header provided</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

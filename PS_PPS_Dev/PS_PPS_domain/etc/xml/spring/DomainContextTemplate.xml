@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- DAOs -->
+	<bean id="dataAccessObject" abstract="true" autowire-candidate="true">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="eplVaDrugClassDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVaDrugClassDaoImpl"
+		autowire-candidate="true" />
+		
+	<bean id="eplNdfSynchQueueDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNdfSynchQueueDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplReducedCopayDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplReducedCopayDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplSpecialHandlingDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSpecialHandlingDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProductLabDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProductLabDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProductVitalDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProductVitalDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplCmopIdGeneratorDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplCmopIdGeneratorDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplCmopIdHistoryDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplCmopIdHistoryDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplItemAuditHistoryDetailDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplItemAuditHistoryDetailDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplOiScheduleTypeDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOiScheduleTypeDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplInterfaceCounterDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplInterfaceCounterDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplOiAdminSchedAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOiAdminSchedAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplNdcByOutpatientSiteNdcDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNdcByOutpatientSiteNdcDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdDrugTextLAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdDrugTextLAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdDrugTextNAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdDrugTextNAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdSpecHandlingAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdSpecHandlingAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDfNounDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDfNounDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplDfUnitDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDfUnitDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDtSynonymDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDtSynonymDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplOiDrugTextLAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOiDrugTextLAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplOiDrugTextNAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOiDrugTextNAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdDrugClassAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdDrugClassAssocDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplDispenseUnitsPerDoseDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDispenseUnitsPerDoseDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplNationalPossibleDosageDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNationalPossibleDosageDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplMedicationInstructionDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplMedicationInstructionDaoImpl"
+		autowire-candidate="true" />
+
+
+	<bean id="eplSynonymDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSynonymDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplIntendedUseDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplIntendedUseDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplOrderUnitDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOrderUnitDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplMedInstructWardDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplMedInstructWardDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplLocalPossibleDosageDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplLocalPossibleDosageDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplAtcCanisterDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplAtcCanisterDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplAdminScheduleDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplAdminScheduleDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplScheduleTypeDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplScheduleTypeDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplLocalConsoleInfoDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplLocalConsoleInfoDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplIngredientDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplIngredientDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplManufacturerDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplManufacturerDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDosageFormDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDosageFormDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplMultiTextDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplMultiTextDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDfMedRtDfAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDfMedRtDfAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdIngredientAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdIngredientAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplStandardMedRouteDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplStandardMedRouteDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplLocalMedRouteDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplLocalMedRouteDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVaDispenseUnitDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVaDispenseUnitDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDrugUnitDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDrugUnitDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDoseUnitDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDoseUnitDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDoseUnitSynonymDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDoseUnitSynonymDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplHospitalLocationDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplHospitalLocationDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplPartialSaveMgtDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPartialSaveMgtDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplIfcapItemNumberDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplIfcapItemNumberDaoImpl"
+		autowire-candidate="true" />
+
+
+	<bean id="eplVaGenericNameDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVaGenericNameDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVaDfDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVaDfDaoImpl"
+		autowire-candidate="true" />
+	<bean id="eplWardDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplWardDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVadfEditablePropertyDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVadfEditablePropertyDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVadfOwnerDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVadfOwnerDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVadfLovDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVadfLovDaoImpl"
+		autowire-candidate="true" />
+
+
+	<bean id="eplSeqNumDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSeqNumDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVadfAssocValueDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVadfAssocValueDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbNdcDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbNdcDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbProductDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbProductDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVadfNonlistValueDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVadfNonlistValueDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplCsFedScheduleDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplCsFedScheduleDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplNdcDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNdcDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplOiMedRouteAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOiMedRouteAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplOrderableItemDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplOrderableItemDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplPackageTypeDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPackageTypeDaoImpl"
+		autowire-candidate="true" />
+
+
+	<bean id="eplPackageUseAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPackageUseAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProductDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProductDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplRequestDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplRequestDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplRequestDetailDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplRequestDetailDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplSiteConfigDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSiteConfigDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplItemAuditHistoryDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplItemAuditHistoryDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplNotificationDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNotificationDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplNotificationStatusDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNotificationStatusDaoImpl"
+		autowire-candidate="true" />
+
+
+	<bean id="eplNotifUserPrefDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNotifUserPrefDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplUserDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplUserDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplSessionPreferenceDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSessionPreferenceDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplSearchTemplateDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSearchTemplateDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplSearchCriteriaDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSearchCriteriaDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplPrintTemplateDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPrintTemplateDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplPrintFieldDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPrintFieldDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplPharmacySystemDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPharmacySystemDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplSiteUpdateScheduleDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplSiteUpdateScheduleDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplLabDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplLabDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVitalDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVitalDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplClassTypeDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplClassTypeDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplDrugTextDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplDrugTextDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplWarnLabelDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplWarnLabelDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdWarnLabelLAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdWarnLabelLAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplProdWarnLabelNAssocDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplProdWarnLabelNAssocDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplPackageUsageDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplPackageUsageDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplMigrationErrorDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplMigrationErrorDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplMigrationFileDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplMigrationFileDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplMigrationControlDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplMigrationControlDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplVuidStatusHistoryDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplVuidStatusHistoryDaoImpl"
+		autowire-candidate="true" />
+
+
+	<bean id="eplNationalSettingDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplNationalSettingDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbAddDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbAddDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbUpdateDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbUpdateDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbAutoAddDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbAutoAddDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbAutoUpdateDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbAutoUpdateDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbDosageFormDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbDosageFormDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbDrugClassDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbDrugClassDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbDrugIngredientDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbDrugIngredientDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbDrugUnitDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbDrugUnitDaoImpl"
+		autowire-candidate="true" />
+
+	<bean id="eplFdbGenericNameDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbGenericNameDaoImpl"
+		autowire-candidate="true" />
+		
+	<bean id="eplFdbMonographPemDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbMonographPemDaoImpl"
+		autowire-candidate="true" />
+		
+	<bean id="eplFdbGcnseqnoPemDao" parent="dataAccessObject"
+		class="gov.va.med.pharmacy.peps.domain.common.dao.impl.EplFdbGcnseqnoPemDaoImpl"
+		autowire-candidate="true" />
+
+	<!-- Capabilities -->
+	<bean id="managedItemDomainCapability" abstract="true"
+		autowire-candidate="true">
+		<property name="dataFieldsDomainCapability" ref="dataFieldsDomainCapability" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="partialSaveMgtDomainCapability" ref="partialSaveMgtDomainCapability" />
+		<property name="requestDomainCapability" ref="requestDomainCapability" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+		<property name="managedItemDomainCapabilityFactory" ref="managedItemDomainCapabilityFactory" />
+	</bean>
+
+	<bean id="colorDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ColorDomainCapabilityImpl"
+		autowire-candidate="true" />
+
+	<bean id="otcRxDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.OtcRxDomainCapabilityImpl"
+		autowire-candidate="true" />
+
+	<bean id="csFedScheduleDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.CsFedScheduleDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplCsFedScheduleDao" ref="eplCsFedScheduleDao" />
+		<property name="csFedScheduleConverter" ref="csFedScheduleConverter" />
+	</bean>
+	
+	<bean id="ndfSynchQueueDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.NdfSynchQueueDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplNdfSynchQueueDao" ref="eplNdfSynchQueueDao" />
+		<property name="ndfSynchQueueConverter" ref="ndfSynchQueueConverter" />
+    	<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+	</bean>
+
+	<bean id="migrationErrorDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.MigrationErrorDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplMigrationErrorDao" ref="eplMigrationErrorDao" />
+		<property name="migrationErrorConverter" ref="migrationErrorConverter" />
+	</bean>
+
+	<bean id="migrationFileDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.MigrationFileDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplMigrationFileDao" ref="eplMigrationFileDao" />
+		<property name="migrationFileConverter" ref="migrationFileConverter" />
+	</bean>
+
+	<bean id="migrationControlDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.MigrationControlDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplMigrationControlDao" ref="eplMigrationControlDao" />
+		<property name="migrationControlConverter" ref="migrationControlConverter" />
+	</bean>
+
+	<bean id="reportDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ReportDomainCapabilityImpl"
+		autowire-candidate="true">
+	</bean>
+
+
+	<bean id="fdbAddDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbAddDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbAddDao" ref="eplFdbAddDao" />
+		<property name="fdbAddConverter" ref="fdbAddConverter" />
+	</bean>
+
+	<bean id="fdbUpdateDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbUpdateDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbUpdateDao" ref="eplFdbUpdateDao" />
+		<property name="fdbUpdateConverter" ref="fdbUpdateConverter" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+	</bean>
+
+	<bean id="fdbNdcDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbNdcDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbNdcDao" ref="eplFdbNdcDao" />
+		<property name="fdbNdcConverter" ref="fdbNdcConverter" />
+	</bean>
+
+	<bean id="fdbProductDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbProductDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbProductDao" ref="eplFdbProductDao" />
+		<property name="fdbProductConverter" ref="fdbProductConverter" />
+	</bean>
+
+	<bean id="nationalSettingDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.NationalSettingDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplNationalSettingDao" ref="eplNationalSettingDao" />
+		<property name="nationalSettingConverter" ref="nationalSettingConverter" />
+	</bean>
+	<bean id="fdbAutoAddDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbAutoAddDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbAutoAddDao" ref="eplFdbAutoAddDao" />
+		<property name="fdbAutoAddConverter" ref="fdbAutoAddConverter" />
+	</bean>
+	<bean id="fdbAutoUpdateDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbAutoUpdateDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbAutoUpdateDao" ref="eplFdbAutoUpdateDao" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" /> 
+		<property name="fdbAutoUpdateConverter" ref="fdbAutoUpdateConverter" />
+	</bean>
+
+	<bean id="vuidStatusHistoryDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.VuidStatusHistoryDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplVuidStatusHistoryDao" ref="eplVuidStatusHistoryDao" />
+		<property name="vuidStatusHistoryConverter" ref="vuidStatusHistoryConverter" />
+	</bean>
+
+	<bean id="oiScheduleTypeDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.OiScheduleTypeDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplOiScheduleTypeDao" ref="eplOiScheduleTypeDao" />
+		<property name="oiScheduleTypeConverter" ref="oiScheduleTypeConverter" />
+	</bean>
+
+	<bean id="interfaceCounterDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.InterfaceCounterDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplInterfaceCounterDao" ref="eplInterfaceCounterDao" />
+		<property name="interfaceCounterConverter" ref="interfaceCounterConverter" />
+	</bean>
+
+	<bean id="administrationScheduleDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.AdministrationScheduleDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplAdminScheduleDao" ref="eplAdminScheduleDao" />
+		<property name="eplHospitalLocationDao" ref="eplHospitalLocationDao" />
+		<property name="eplWardDao" ref="eplWardDao" />
+		<property name="adminScheduleConverter" ref="adminScheduleConverter" />
+	</bean>
+
+	<bean id="administrationScheduleTypeDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.AdministrationScheduleTypeDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplScheduleTypeDao" ref="eplScheduleTypeDao" />
+		<property name="adminScheduleTypeConverter" ref="adminScheduleTypeConverter" />
+
+
+	</bean>
+
+	<bean id="partialSaveMgtDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.PartialSaveMgtDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplPartialSaveMgtDao" ref="eplPartialSaveMgtDao" />
+		<property name="partialSaveConverter" ref="partialSaveConverter" />
+	</bean>
+
+	<bean id="dataFieldsDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DataFieldsDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplVaDfDao" ref="eplVaDfDao" />
+		<property name="eplVadfLovDao" ref="eplVadfLovDao" />
+		<property name="eplVadfOwnerDao" ref="eplVadfOwnerDao" />
+		<property name="eplVadfEditablePropertyDao" ref="eplVadfEditablePropertyDao" />
+		<property name="eplVadfNonlistValueDao" ref="eplVadfNonlistValueDao" />
+		<property name="eplVadfAssocValueDao" ref="eplVadfAssocValueDao" />
+		<property name="eplMultiTextDao" ref="eplMultiTextDao" />
+		<property name="dataFieldsConverter" ref="dataFieldsConverter" />
+	</bean>
+
+	<bean id="dosageFormDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DosageFormDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplDosageFormDao" ref="eplDosageFormDao" />
+		<property name="eplOrderableItemDao" ref="eplOrderableItemDao" />
+		<property name="eplDfNounDao" ref="eplDfNounDao" />
+		<property name="eplDfUnitDao" ref="eplDfUnitDao" />
+		<property name="eplDfMedRtDfAssocDao" ref="eplDfMedRtDfAssocDao" />
+		<property name="eplDispenseUnitsPerDoseDao" ref="eplDispenseUnitsPerDoseDao" />
+		<property name="dataFieldsConverter" ref="dataFieldsConverter" />
+		<property name="dosageFormConverter" ref="dosageFormConverter" />
+	</bean>
+
+	<bean id="resetNationalDatabaseDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ResetNationalDatabaseDomainCapabilityImpl"
+		autowire-candidate="true">
+	</bean>
+
+	<bean id="drugClassDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DrugClassDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplVaDrugClassDao" ref="eplVaDrugClassDao" />
+		<property name="eplProdDrugClassAssocDao" ref="eplProdDrugClassAssocDao" />
+		<property name="drugClassConverter" ref="drugClassConverter" />
+		<property name="eplVuidStatusHistoryDao" ref="eplVuidStatusHistoryDao" />
+		<property name="vuidStatusHistoryConverter" ref="vuidStatusHistoryConverter" />
+	</bean>
+
+	<bean id="dispenseUnitDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DispenseUnitDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplVaDispenseUnitDao" ref="eplVaDispenseUnitDao" />
+		<property name="eplProductDao" ref="eplProductDao" />
+		<property name="dispenseUnitConverter" ref="dispenseUnitConverter" />
+	</bean>
+
+	<bean id="doseUnitDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DoseUnitDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplDoseUnitDao" ref="eplDoseUnitDao" />
+		<property name="eplDoseUnitSynonymDao" ref="eplDoseUnitSynonymDao" />
+		<property name="doseUnitConverter" ref="doseUnitConverter" />
+	</bean>
+
+	<bean id="medicationInstructionDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.MedicationInstructionDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplMedicationInstructionDao" ref="eplMedicationInstructionDao" />
+		<property name="eplMedInstructWardDao" ref="eplMedInstructWardDao" />
+		<property name="localMedicationRouteDomainCapability" ref="localMedicationRouteDomainCapability" />
+		<property name="medicationInstructionConverter" ref="medicationInstructionConverter" />
+
+	</bean>
+
+	<bean id="genericNameDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.GenericNameDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplVaGenericNameDao" ref="eplVaGenericNameDao" />
+		<property name="eplProductDao" ref="eplProductDao" />
+		<property name="genericNameConverter" ref="genericNameConverter" />
+		<property name="eplVuidStatusHistoryDao" ref="eplVuidStatusHistoryDao" />
+		<property name="vuidStatusHistoryConverter" ref="vuidStatusHistoryConverter" />
+	</bean>
+
+	<bean id="ingredientDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.IngredientDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplIngredientDao" ref="eplIngredientDao" />
+		<property name="eplProdIngredientAssocDao" ref="eplProdIngredientAssocDao" />
+		<property name="ingredientConverter" ref="ingredientConverter" />
+		<property name="eplVuidStatusHistoryDao" ref="eplVuidStatusHistoryDao" />
+		<property name="vuidStatusHistoryConverter" ref="vuidStatusHistoryConverter" />
+	</bean>
+
+	<bean id="manufacturerDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ManufacturerDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplManufacturerDao" ref="eplManufacturerDao" />
+		<property name="eplNdcDao" ref="eplNdcDao" />
+		<property name="manufacturerConverter" ref="manufacturerConverter" />
+	</bean>
+
+	<!-- <bean -->
+	<!-- id="fdbMappingDomainCapability" -->
+	<!-- class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbMappingDomainCapabilityImpl" -->
+	<!-- autowire-candidate="true"> -->
+	<!-- </bean> -->
+
+	<bean id="userDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.UserDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplUserDao" ref="eplUserDao" />
+		<property name="eplSessionPreferenceDao" ref="eplSessionPreferenceDao" />
+		<property name="eplNotifUserPrefDao" ref="eplNotifUserPrefDao" />
+		<property name="userConverter" ref="userConverter" />
+	</bean>
+
+	<bean id="itemAuditHistoryDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ItemAuditHistoryDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplItemAuditHistoryDao" ref="eplItemAuditHistoryDao" />
+		<property name="eplItemAuditHistoryDetailDao" ref="eplItemAuditHistoryDetailDao" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+		<property name="itemAuditHistoryConverter" ref="itemAuditHistoryConverter" />
+	</bean>
+
+	<bean id="notificationDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.NotificationDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplUserDao" ref="eplUserDao" />
+		<property name="eplNotificationDao" ref="eplNotificationDao" />
+		<property name="eplNotificationStatusDao" ref="eplNotificationStatusDao" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="eplItemAuditHistoryDao" ref="eplItemAuditHistoryDao" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+		<property name="notificationConverter" ref="notificationConverter" />
+		<property name="notificationStatusConverter" ref="notificationStatusConverter" />
+		<property name="notificationSummaryConverter" ref="notificationSummaryConverter" />
+	</bean>
+
+	<bean id="ndcDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.NdcDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplNdcDao" ref="eplNdcDao" />
+		<property name="ndcImageCapability" ref="ndcImageCapability" />
+			<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="ndcConverter" ref="ndcConverter" />
+	</bean>
+
+	<bean id="searchTemplateDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.SearchTemplateDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplSearchTemplateDao" ref="eplSearchTemplateDao" />
+		<property name="eplSearchCriteriaDao" ref="eplSearchCriteriaDao" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+		<property name="eplPrintFieldDao" ref="eplPrintFieldDao" />
+		<property name="eplPrintTemplateDao" ref="eplPrintTemplateDao" />
+		<property name="printTemplateDomainCapability" ref="printTemplateDomainCapability" />
+		<property name="searchTemplateConverter" ref="searchTemplateConverter" />
+	</bean>
+
+	<bean id="drugUnitDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DrugUnitDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplDrugUnitDao" ref="eplDrugUnitDao" />
+		<property name="eplProductDao" ref="eplProductDao" />
+		<property name="eplProdIngredientAssocDao" ref="eplProdIngredientAssocDao" />
+		<property name="eplDfUnitDao" ref="eplDfUnitDao" />
+		<property name="drugUnitConverter" ref="drugUnitConverter" />
+
+	</bean>
+
+	<bean id="seqNumDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.SeqNumDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplSeqNumDao" ref="eplSeqNumDao" />
+		<property name="eplCmopIdGeneratorDao" ref="eplCmopIdGeneratorDao" />
+		<property name="environmentUtility" ref="environmentUtility" />
+	</bean>
+
+	<bean id="orderableItemDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.OrderableItemDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplOrderableItemDao" ref="eplOrderableItemDao" />
+		<property name="eplProductDao" ref="eplProductDao" />
+		<property name="eplLabDao" ref="eplLabDao" />
+		<property name="eplVitalDao" ref="eplVitalDao" />
+		<property name="eplOiMedRouteAssocDao" ref="eplOiMedRouteAssocDao" />
+		<property name="eplOiDrugTextLAssocDao" ref="eplOiDrugTextLAssocDao" />
+		<property name="eplOiDrugTextNAssocDao" ref="eplOiDrugTextNAssocDao" />
+		<property name="eplOiAdminSchedAssocDao" ref="eplOiAdminSchedAssocDao" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+			<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="orderableItemConverter" ref="orderableItemConverter" />
+	</bean>
+
+	<bean id="orderUnitDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.OrderUnitDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplOrderUnitDao" ref="eplOrderUnitDao" />
+		<property name="orderUnitConverter" ref="orderUnitConverter" />
+	</bean>
+
+	<bean id="specialHandlingDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.SpecialHandlingDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplSpecialHandlingDao" ref="eplSpecialHandlingDao" />
+		<property name="specialHandlingConverter" ref="specialHandlingConverter" />
+	</bean>
+
+	<bean id="intendedUseDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.IntendedUseDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplIntendedUseDao" ref="eplIntendedUseDao" />
+		<property name="intendedUseConverter" ref="intendedUseConverter" />
+	</bean>
+
+	<bean id="packageTypeDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.PackageTypeDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplPackageTypeDao" ref="eplPackageTypeDao" />
+		<property name="eplNdcDao" ref="eplNdcDao" />
+		<property name="packageTypeConverter" ref="packageTypeConverter" />
+	</bean>
+
+	<bean id="printTemplateDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.PrintTemplateDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplPrintTemplateDao" ref="eplPrintTemplateDao" />
+		<property name="eplPrintFieldDao" ref="eplPrintFieldDao" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+		<property name="printTemplateConverter" ref="printTemplateConverter" />
+	</bean>
+
+	<bean id="productDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ProductDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplProductDao" ref="eplProductDao" />
+		<!--  LOCAL ONLY <property name="eplAtcCanisterDao" ref="eplAtcCanisterDao" /> -->
+		<!--  LOCAL ONLY <property name="eplProductLabDao" ref="eplProductLabDao" /> -->
+		<!--  LOCAL ONLY <property name="eplProductVitalDao" ref="eplProductVitalDao" /> -->
+		<property name="eplCmopIdHistoryDao" ref="eplCmopIdHistoryDao" />
+		<!--  LOCAL ONLY <property name="eplLocalPossibleDosageDao" ref="eplLocalPossibleDosageDao" /> -->
+		<!--  LOCAL ONLY <property name="eplNationalPossibleDosageDao" ref="eplNationalPossibleDosageDao" /> -->
+		<!--  LOCAL ONLY <property name="eplIfcapItemNumberDao" ref="eplIfcapItemNumberDao" /> -->
+		<!--  LOCAL ONLY <property name="eplProdWarnLabelLAssocDao" ref="eplProdWarnLabelLAssocDao" /> -->
+		<property name="eplProdWarnLabelNAssocDao" ref="eplProdWarnLabelNAssocDao" />
+		<!--  LOCAL ONLY <property name="eplNdcByOutpatientSiteNdcDao" ref="eplNdcByOutpatientSiteNdcDao" /> -->
+		<!--  LOCAL ONLY <property name="eplProdDrugTextLAssocDao" ref="eplProdDrugTextLAssocDao" /> -->
+		<property name="eplProdDrugTextNAssocDao" ref="eplProdDrugTextNAssocDao" />
+		<property name="eplProdDrugClassAssocDao" ref="eplProdDrugClassAssocDao" />
+		<property name="eplProdIngredientAssocDao" ref="eplProdIngredientAssocDao" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<!--  LOCAL ONLY <property name="doseUnitDomainCapability" ref="doseUnitDomainCapability" /> -->
+		<property name="eplSynonymDao" ref="eplSynonymDao" />
+		<property name="productConverter" ref="productConverter" />
+		<property name="synonymConverter" ref= "synonymConverter" />
+		<property name="eplVuidStatusHistoryDao" ref="eplVuidStatusHistoryDao" />
+		<property name="vuidStatusHistoryConverter" ref="vuidStatusHistoryConverter" />
+		<property name="eplReducedCopayDao" ref="eplReducedCopayDao" />
+		<property name="reducedCopayConverter" ref="reducedCopayConverter" />
+	</bean>
+
+	<bean id="requestDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.RequestDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplRequestDao" ref="eplRequestDao" />
+		<property name="eplRequestDetailDao" ref="eplRequestDetailDao" />
+		<property name="requestConverter" ref="requestConverter" />
+		<property name="requestSummaryConverter" ref="requestSummaryConverter" />
+	</bean>
+
+	<bean id="standardMedRouteDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.StandardMedRouteDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplStandardMedRouteDao" ref="eplStandardMedRouteDao" />
+		<property name="standardMedRouteConverter" ref="standardMedRouteConverter" />
+		<property name="eplVuidStatusHistoryDao" ref="eplVuidStatusHistoryDao" />
+		<property name="vuidStatusHistoryConverter" ref="vuidStatusHistoryConverter" />
+	</bean>
+
+	<bean id="shapeDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ShapeDomainCapabilityImpl"
+		autowire-candidate="true" />
+
+	<bean id="localMedicationRouteDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.LocalMedicationRouteDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplLocalMedRouteDao" ref="eplLocalMedRouteDao" />
+		<property name="eplPackageUseAssocDao" ref="eplPackageUseAssocDao" />
+		<property name="localMedicationRouteConverter" ref="localMedicationRouteConverter" />
+	</bean>
+
+	<bean id="consoleDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.ConsoleDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplLocalConsoleInfoDao" ref="eplLocalConsoleInfoDao" />
+		<property name="localConsoleInfoConverter" ref="localConsoleInfoConverter" />
+	</bean>
+
+	<bean id="pharmacySystemDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.PharmacySystemDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplPharmacySystemDao" ref="eplPharmacySystemDao" />
+		<property name="pharmacySystemConverter" ref="pharmacySystemConverter" />
+
+	</bean>
+
+	<bean id="siteUpdateScheduleDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.SiteUpdateScheduleDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplSiteUpdateScheduleDao" ref="eplSiteUpdateScheduleDao" />
+		<property name="siteUpdateScheduleConverter" ref="siteUpdateScheduleConverter" />
+	</bean>
+
+	<bean id="siteConfigDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.SiteConfigDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplSiteConfigDao" ref="eplSiteConfigDao" />
+		<property name="environmentUtility" ref="environmentUtility" />
+		<property name="siteConfigConverter" ref="siteConfigConverter" />
+	</bean>
+
+	<bean id="drugTextDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DrugTextDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplDrugTextDao" ref="eplDrugTextDao" />
+	    <property name="eplOiDrugTextNAssocDao" ref="eplOiDrugTextNAssocDao" />
+    	<property name="eplProdDrugTextNAssocDao" ref="eplProdDrugTextNAssocDao" />
+		<property name="eplDtSynonymDao" ref="eplDtSynonymDao" />
+		<property name="drugTextConverter" ref="drugTextConverter" />
+		<property name="eplProdDrugTextLAssocDao" ref="eplProdDrugTextLAssocDao" />
+	</bean>
+
+	<bean id="packageUseageDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.PackageUseageDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplPackageUsageDao" ref="eplPackageUsageDao" />
+		<property name="packageUsageConverter" ref="packageUsageConverter" />
+	</bean>
+
+	<bean id="drugClassTypeDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.DrugClassTypeDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplClassTypeDao" ref="eplClassTypeDao" />
+		<property name="drugClassificationTypeConverter" ref="drugClassificationTypeConverter" />
+
+	</bean>
+
+	<bean id="rxConsultDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.RxConsultDomainCapabilityImpl"
+		parent="managedItemDomainCapability" autowire-candidate="true">
+		<property name="eplWarnLabelDao" ref="eplWarnLabelDao" />
+		<property name="eplProdWarnLabelLAssocDao" ref="eplProdWarnLabelLAssocDao" />
+		<property name="rxConsultConverter" ref="rxConsultConverter" />
+	</bean>
+
+	<bean id="fdbDosageFormDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbDosageFormDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbDosageFormDao" ref="eplFdbDosageFormDao" />
+		<property name="fdbDosageFormConverter" ref="fdbDosageFormConverter" />
+	</bean>
+
+	<bean id="fdbDrugClassDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbDrugClassDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbDrugClassDao" ref="eplFdbDrugClassDao" />
+		<property name="fdbDrugClassConverter" ref="fdbDrugClassConverter" />
+	</bean>
+
+	<bean id="fdbDrugIngredientDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbDrugIngredientDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbDrugIngredientDao" ref="eplFdbDrugIngredientDao" />
+		<property name="fdbDrugIngredientConverter" ref="fdbDrugIngredientConverter" />
+	</bean>
+
+	<bean id="fdbDrugUnitDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbDrugUnitDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbDrugUnitDao" ref="eplFdbDrugUnitDao" />
+		<property name="fdbDrugUnitConverter" ref="fdbDrugUnitConverter" />
+	</bean>
+
+	<bean id="fdbGenericNameDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbGenericNameDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbGenericNameDao" ref="eplFdbGenericNameDao" />
+		<property name="fdbGenericNameConverter" ref="fdbGenericNameConverter" />
+	</bean>
+
+	<bean id="fdbMonographPemDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbMonographPemDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbMonographPemDao" ref="eplFdbMonographPemDao" />
+		<property name="fdbMonographPemConverter" ref="fdbMonographPemConverter" />
+	</bean>
+	
+	<bean id="fdbGcnseqnoPemDomainCapability"
+		class="gov.va.med.pharmacy.peps.domain.common.capability.impl.FdbGcnseqnoPemDomainCapabilityImpl"
+		autowire-candidate="true">
+		<property name="eplFdbGcnseqnoPemDao" ref="eplFdbGcnseqnoPemDao" />
+		<property name="fdbGcnseqnoPemConverter" ref="fdbGcnseqnoPemConverter" />
+	</bean>
+	<!-- Utilities -->
+
+<!--     <bean id="ndfSynchQueueDomainCapability"
+        class="gov.va.med.pharmacy.peps.domain.common.capability.impl.NdfSynchQueueDomainCapabilityImpl"
+        autowire-candidate="true">
+    </bean>
+ -->
+	<bean id="fdbDosageFormConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbDosageFormConverter"
+		autowire-candidate="true" />
+	<bean id="fdbDrugClassConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbDrugClassConverter"
+		autowire-candidate="true" />
+	<bean id="fdbDrugIngredientConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbDrugIngredientConverter"
+		autowire-candidate="true" />
+	<bean id="fdbDrugUnitConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbDrugUnitConverter"
+		autowire-candidate="true" />
+	<bean id="fdbGenericNameConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbGenericNameConverter"
+		autowire-candidate="true" />
+
+	<bean id="fdbMonographPemConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbMonographPemConverter"
+		autowire-candidate="true" />
+	<bean id="fdbGcnseqnoPemConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbGcnseqnoPemConverter"
+		autowire-candidate="true" />
+
+
+	<bean id="fdbAddConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbAddConverter"
+		autowire-candidate="true" />
+	<bean id="fdbUpdateConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbUpdateConverter"
+		autowire-candidate="true" />
+	<bean id="fdbAutoAddConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbAutoAddConverter"
+		autowire-candidate="true" />
+	<bean id="fdbAutoUpdateConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbAutoUpdateConverter"
+		autowire-candidate="true" />
+
+
+	<bean id="nationalSettingConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NationalSettingConverter"
+		autowire-candidate="true" />
+
+	<bean id="ndfSynchQueueConverter" parent="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NdfSynchQueueConverter"
+		autowire-candidate="true" />
+
+
+	<bean id="converter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.Converter"
+		abstract="true" autowire-candidate="true">
+		<property name="managedItemDomainCapabilityFactory" ref="managedItemDomainCapabilityFactory" />
+	</bean>
+
+	<bean id="activeIngredientConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.ActiveIngredientConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="ingredientConverter" ref="ingredientConverter" />
+		<property name="drugUnitConverter" ref="drugUnitConverter" />
+	</bean>
+
+
+	<bean id="adminScheduleTypeConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.AdminScheduleTypeConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="adminScheduleConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.AdminScheduleConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="adminScheduleTypeConverter" ref="adminScheduleTypeConverter" />
+	</bean>
+
+	<bean id="atcCanisterConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.AtcCanisterConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="csFedScheduleConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.CsFedScheduleConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="dataFieldsConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DataFieldsConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="dataFieldsDomainCapability" ref="dataFieldsDomainCapability" />
+	</bean>
+
+	<bean id="dispenseUnitConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DispenseUnitConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="dosageFormConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DosageFormConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="localMedicationRouteConverter" ref="localMedicationRouteConverter" />
+	</bean>
+
+	<bean id="doseUnitConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DoseUnitConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="migrationErrorConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.MigrationErrorConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="migrationFileConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.MigrationFileConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="migrationControlConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.MigrationControlConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="vuidStatusHistoryConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.VuidStatusHistoryConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="drugClassConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DrugClassConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="drugClassificationTypeConverter" ref="drugClassificationTypeConverter" />
+	</bean>
+
+	<bean id="drugClassGroupConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DrugClassGroupConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="drugClassConverter" ref="drugClassConverter" />
+	</bean>
+
+	<bean id="drugClassificationTypeConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DrugClassificationTypeConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="drugTextConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DrugTextConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="drugUnitConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.DrugUnitConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="genericNameConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.GenericNameConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="ifcapItemNumberConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.IfcapItemNumberConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="reducedCopayConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.ReducedCopayConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="ingredientConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.IngredientConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="intendedUseConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.IntendedUseConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="interfaceCounterConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.InterfaceCounterConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="itemAuditHistoryConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.ItemAuditHistoryConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="itemAuditHistoryDetailsConverter" ref="itemAuditHistoryDetailsConverter" />
+	</bean>
+
+	<bean id="itemAuditHistoryDetailsConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.ItemAuditHistoryDetailsConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="localConsoleInfoConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.LocalConsoleInfoConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="localMedicationRouteConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.LocalMedicationRouteConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="standardMedRouteConverter" ref="standardMedRouteConverter" />
+	</bean>
+
+	<bean id="localPossibleDosagesConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.LocalPossibleDosagesConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="doseUnitConverter" ref="doseUnitConverter" />
+	</bean>
+
+	<bean id="localRxConsultAssociationConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.LocalRxConsultAssociationConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="rxConsultConverter" ref="rxConsultConverter" />
+	</bean>
+
+	<bean id="manufacturerConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.ManufacturerConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="medicationInstructionConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.MedicationInstructionConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="localMedicationRouteConverter" ref="localMedicationRouteConverter" />
+	</bean>
+
+	<bean id="nationalPossibleDosagesConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NationalPossibleDosagesConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="nationalRxConsultAssociationConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NationalRxConsultAssociationConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="rxConsultConverter" ref="rxConsultConverter" />
+	</bean>
+
+	<bean id="ndcByOutpatientSiteNdcConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NdcByOutpatientSiteNdcConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="fdbNdcConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbNdcConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="fdbProductConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.FdbProductConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="ndcConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NdcConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="productConverter" ref="productConverter" />
+		<property name="dataFieldsConverter" ref="dataFieldsConverter" />
+		<property name="orderUnitConverter" ref="orderUnitConverter" />
+		<property name="manufacturerConverter" ref="manufacturerConverter" />
+		<property name="packageTypeConverter" ref="packageTypeConverter" />
+	</bean>
+
+	<bean id="notificationConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NotificationConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="notificationStatusConverter" ref="notificationStatusConverter" />
+	</bean>
+
+	<bean id="notificationStatusConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NotificationStatusConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="userConverter" ref="userConverter" />
+	</bean>
+
+	<bean id="notificationSummaryConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.NotificationSummaryConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="notificationStatusConverter" ref="notificationStatusConverter" />
+	</bean>
+
+	<bean id="oiScheduleTypeConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.OiScheduleTypeConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="orderableItemConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.OrderableItemConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="dataFieldsConverter" ref="dataFieldsConverter" />
+		<property name="drugTextConverter" ref="drugTextConverter" />
+		<property name="dosageFormConverter" ref="dosageFormConverter" />
+		<property name="standardMedRouteConverter" ref="standardMedRouteConverter" />
+		<property name="adminScheduleConverter" ref="adminScheduleConverter" />
+		<property name="localMedicationRouteConverter" ref="localMedicationRouteConverter" />
+		<property name="oiScheduleTypeConverter" ref="oiScheduleTypeConverter" />
+	</bean>
+
+	<bean id="orderUnitConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.OrderUnitConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="packageTypeConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.PackageTypeConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="packageUsageConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.PackageUsageConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="partialSaveConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.PartialSaveConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="orderableItemConverter" ref="orderableItemConverter" />
+		<property name="productConverter" ref="productConverter" />
+		<property name="ndcConverter" ref="ndcConverter" />
+	</bean>
+
+	<bean id="pharmacySystemConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.PharmacySystemConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="printTemplateConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.PrintTemplateConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="productConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.ProductConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="orderableItemConverter" ref="orderableItemConverter" />
+		<property name="dataFieldsConverter" ref="dataFieldsConverter" />
+		<property name="activeIngredientConverter" ref="activeIngredientConverter" />
+		<property name="atcCanisterConverter" ref="atcCanisterConverter" />
+		<property name="csFedScheduleConverter" ref="csFedScheduleConverter" />
+		<property name="drugClassGroupConverter" ref="drugClassGroupConverter" />
+		<property name="localPossibleDosagesConverter" ref="localPossibleDosagesConverter" />
+		<property name="ifcapItemNumberConverter" ref="ifcapItemNumberConverter" />
+		<property name="ndcByOutpatientSiteNdcConverter" ref="ndcByOutpatientSiteNdcConverter" />
+		<property name="synonymConverter" ref="synonymConverter" />
+		<property name="drugTextConverter" ref="drugTextConverter" />
+		<property name="orderUnitConverter" ref="orderUnitConverter" />
+		<property name="genericNameConverter" ref="genericNameConverter" />
+		<property name="dispenseUnitConverter" ref="dispenseUnitConverter" />
+		<property name="doseUnitConverter" ref="doseUnitConverter" />
+		<property name="drugUnitConverter" ref="drugUnitConverter" />
+		<property name="dosageFormConverter" ref="dosageFormConverter" />
+		<property name="reducedCopayConverter" ref="reducedCopayConverter" />
+	</bean>
+
+	<bean id="requestConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.RequestConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="requestSummaryConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.RequestSummaryConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="dosageFormConverter" ref="dosageFormConverter" />
+		<property name="genericNameConverter" ref="genericNameConverter" />
+		<property name="drugUnitConverter" ref="drugUnitConverter" />
+		<property name="dispenseUnitConverter" ref="dispenseUnitConverter" />
+
+	</bean>
+
+	<bean id="rxConsultConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.RxConsultConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="searchTemplateConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.SearchTemplateConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="printTemplateConverter" ref="printTemplateConverter" />
+		<property name="userConverter" ref="userConverter" />
+	</bean>
+
+	<bean id="siteConfigConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.SiteConfigConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="siteUpdateScheduleConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.SiteUpdateScheduleConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="specialHandlingAssociationConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.SpecialHandlingAssociationConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="specialHandlingConverter" ref="specialHandlingConverter" />
+	</bean>
+
+	<bean id="specialHandlingConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.SpecialHandlingConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="synonymConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.SynonymConverter"
+		parent="converter" autowire-candidate="true">
+		<property name="orderUnitConverter" ref="orderUnitConverter" />
+		<property name="intendedUseConverter" ref="intendedUseConverter" />
+	</bean>
+
+	<bean id="standardMedRouteConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.StandardMedRouteConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="userConverter"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.converter.UserConverter"
+		parent="converter" autowire-candidate="true" />
+
+	<bean id="managedItemDomainCapabilityFactory"
+		class="gov.va.med.pharmacy.peps.domain.common.utility.impl.ManagedItemDomainCapabilityFactoryImpl"
+		autowire-candidate="true" />
+
+	<context:component-scan base-package="gov.va.med.pharmacy.peps.domain.common" />
+
+</beans>

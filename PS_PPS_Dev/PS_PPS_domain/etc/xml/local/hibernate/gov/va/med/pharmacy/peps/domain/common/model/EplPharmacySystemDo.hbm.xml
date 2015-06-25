@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplPharmacySystemDo"
+    table="EPL_PHARMACY_SYSTEM"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+     <id
+        name="siteNumber"
+        type="java.lang.Integer"
+        column="SITE_NUMBER"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="psAnd"
+        type="java.lang.String"
+        column="PS_AND"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psCmopWarningLabelSource"
+        type="java.lang.String"
+        column="PS_CMOP_WARNING_LABEL_SOURCE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psDays"
+        type="java.lang.String"
+        column="PS_DAYS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psExcept"
+        type="java.lang.String"
+        column="PS_EXCEPT"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psEight"
+        type="java.lang.String"
+        column="PS_EIGHT"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psFive"
+        type="java.lang.String"
+        column="PS_FIVE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psFor"
+        type="java.lang.String"
+        column="PS_FOR"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psFour"
+        type="java.lang.String"
+        column="PS_FOUR"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psHours"
+        type="java.lang.String"
+        column="PS_HOURS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psMinutes"
+        type="java.lang.String"
+        column="PS_MINUTES"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psMonths"
+        type="java.lang.String"
+        column="PS_MONTHS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psNine"
+        type="java.lang.String"
+        column="PS_NINE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psOne"
+        type="java.lang.String"
+        column="PS_ONE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psOneFourth"
+        type="java.lang.String"
+        column="PS_ONE_FOURTH"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psOneHalf"
+        type="java.lang.String"
+        column="PS_ONE_HALF"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psOneThird"
+        type="java.lang.String"
+        column="PS_ONE_THIRD"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psOpaiWarningLabelSource"
+        type="java.lang.String"
+        column="PS_OPAI_WARNING_LABEL_SOURCE"
+        length="256"
+        not-null="true"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psPmisLanguage"
+        type="java.lang.String"
+        column="PS_PMIS_LANGUAGE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psPmisPrinter"
+        type="java.lang.String"
+        column="PS_PMIS_PRINTER"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psPmisSectionDelete"
+        type="java.lang.String"
+        column="PS_PMIS_SECTION_DELETE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psSeconds"
+        type="java.lang.String"
+        column="PS_SECONDS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psSeven"
+        type="java.lang.String"
+        column="PS_SEVEN"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psSiteName"
+        type="java.lang.String"
+        column="PS_SITE_NAME"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psSix"
+        type="java.lang.String"
+        column="PS_SIX"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psTen"
+        type="java.lang.String"
+        column="PS_TEN"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psThen"
+        type="java.lang.String"
+        column="PS_THEN"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psThree"
+        type="java.lang.String"
+        column="PS_THREE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psThreeFourths"
+        type="java.lang.String"
+        column="PS_THREE_FOURTHS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psTwo"
+        type="java.lang.String"
+        column="PS_TWO"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psTwoThirds"
+        type="java.lang.String"
+        column="PS_TWO_THIRDS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psWarningLabelSource"
+        type="java.lang.String"
+        column="PS_WARNING_LABEL_SOURCE"
+        length="256"
+        not-null="true"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="psWeeks"
+        type="java.lang.String"
+        column="PS_WEEKS"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="inactivationDate"
+        type="java.util.Date"
+        column="INACTIVATION_DATE"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="requestStatus"
+        type="java.lang.String"
+        column="REQUEST_STATUS"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="itemStatus"
+        type="java.lang.String"
+        column="ITEM_STATUS"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="rejectReasonText"
+        type="java.lang.String"
+        column="REJECT_REASON_TEXT"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="requestRejectReason"
+        type="java.lang.String"
+        column="REQUEST_REJECT_REASON"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="revisionNumber"
+        type="java.lang.Long"
+        column="REVISION_NUMBER"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+
+</class>
+</hibernate-mapping>

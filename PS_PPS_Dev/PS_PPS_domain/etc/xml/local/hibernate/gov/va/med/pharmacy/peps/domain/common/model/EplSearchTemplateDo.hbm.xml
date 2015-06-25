@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplSearchTemplateDo"
+    table="EPL_SEARCH_TEMPLATES"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="eplId"
+        type="java.lang.Long"
+        column="EPL_ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="templateName"
+        type="java.lang.String"
+        column="TEMPLATE_NAME"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="templateType"
+        type="java.lang.String"
+        column="TEMPLATE_TYPE"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="advancedSearchYn"
+        type="java.lang.String"
+        column="ADVANCED_SEARCH_YN"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="andSearchYn"
+        type="java.lang.String"
+        column="AND_SEARCH_YN"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="defaultYn"
+        type="java.lang.String"
+        column="DEFAULT_YN"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="notes"
+        type="java.lang.String"
+        column="NOTES"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional one-to-many association to EplSearchCriteriaDo -->
+    <set
+        name="eplSearchCriterias"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="EPL_ID_SEARCH_TEMPLATE_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplSearchCriteriaDo"
+        />
+    </set>
+    <!-- bi-directional many-to-one association to EplPrintTemplateDo -->
+    <many-to-one
+        name="eplPrintTemplate"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplPrintTemplateDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="EPL_ID_PRINT_TEMPLATE_FK" />
+    </many-to-one>
+    <!-- bi-directional many-to-one association to EplUserDo -->
+    <many-to-one
+        name="eplUser"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplUserDo"
+        not-null="true"
+        update="false"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="USER_ID_FK" />
+    </many-to-one>
+
+</class>
+</hibernate-mapping>
+

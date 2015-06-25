@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF2PE3TE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:42:57:362 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:10:19:446 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="24">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>Comments Added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2PHN1X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:45:42:261 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:09:52:103 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="44">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Mistake</Summary>
+    <Description>Why is TODAY's date (new Date()) being used for the install date?&#xD;
+This is not correct.&#xD;
+Where is the date of installation stored?</Description>
+    <Annotation />
+    <Revision>This is actuall a misnamed field. VersionInstallDtm is reflecting The last update. This change will not be made at this point in time</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2PMSU4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:49:43:036 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:22:08:283 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="52">src/gov/va/med/pharmacy/peps/service/common/capability/impl/DataFieldsCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Block comment/Commented code</Summary>
+    <Description>Remove old commented out code.</Description>
+    <Annotation />
+    <Revision>Code Removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2PORLP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:51:14:749 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:13:04:336 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="82">src/gov/va/med/pharmacy/peps/service/common/capability/impl/DataFieldsCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description>Remove old dead commented out code</Description>
+    <Annotation />
+    <Revision>Code Removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2PQTMG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:52:50:680 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:53:16:286 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="97">src/gov/va/med/pharmacy/peps/service/common/capability/impl/DataFieldsCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>TODO found</Summary>
+    <Description>This needs to be done</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2PRGVE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:53:20:810 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:55:11:766 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="98">src/gov/va/med/pharmacy/peps/service/common/capability/impl/DataFieldsCapabilityImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Individual sets/Loop - Missing sets</Summary>
+    <Description>Similar methods use a more maintainable loop structure for this purpose.&#xD;
+Are all of the OI fields set or are some missing (see the TODO)?&#xD;
+Needs correction.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2PWZ48">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 11:57:37:736 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:11:26:915 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="174">src/gov/va/med/pharmacy/peps/service/common/capability/impl/DataFieldsCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Deficient Javadoc comments for method(s)</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Added Javadoc</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2ST4J1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:18:36:973 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:04:55:609 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/service/common/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>none</Description>
+    <Annotation />
+    <Revision>Javadocs Added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2STXHN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:19:14:507 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:05:10:640 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="24">src/gov/va/med/pharmacy/peps/service/common/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Redundant public modifier</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2SUJY6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:19:43:614 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:05:21:780 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="31">src/gov/va/med/pharmacy/peps/service/common/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Redundant public modifier</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2SURZE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:19:54:026 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:05:33:405 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="38">src/gov/va/med/pharmacy/peps/service/common/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Redundant public modifier</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2SWAP2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:21:04:934 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:21:22:255 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/service/common/capability/DataFieldsCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No issues</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U2351">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:53:34:693 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:00:05:458 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/service/common/session/bean/ConsoleServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>Added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U830Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:58:14:474 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:13:29:546 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/service/common/session/ConsoleService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U9NXO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:59:28:236 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:43:13:358 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/service/local/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>Comments added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UIEE7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:06:15:775 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:50:09:647 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="34">src/gov/va/med/pharmacy/peps/service/local/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Confusion - what is the intent?</Summary>
+    <Description>Why does a method in the local console, named processFromNational (notice FROM NATIONAL!) use a class called sendToNationalCapability (notice SEND TO NATIONAL!)? &#xD;
+Rename or explain in comment</Description>
+    <Annotation />
+    <Revision>Comments added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UN2QF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:09:53:943 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:47:31:665 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/service/local/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UP1RD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:11:25:993 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:02:05:664 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="30">src/gov/va/med/pharmacy/peps/service/national/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Line to long</Summary>
+    <Description />
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UPM8K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:11:52:532 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:01:51:821 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="27">src/gov/va/med/pharmacy/peps/service/national/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UQAGP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:12:23:929 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:00:52:384 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="9">src/gov/va/med/pharmacy/peps/service/national/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused import</Summary>
+    <Description />
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2URE6F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:13:15:399 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:04:48:286 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/service/national/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UXTLS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:18:15:328 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:06:07:300 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="39">src/gov/va/med/pharmacy/peps/service/national/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Never can happen!</Summary>
+    <Description>if (1 != 1)&#xD;
+FIX!</Description>
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2VIM2W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:34:25:352 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:05:05:567 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="40">src/gov/va/med/pharmacy/peps/service/national/capability/impl/ConsoleCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Error - never executed code</Summary>
+    <Description>The previous line is an error.&#xD;
+This line can not be executed.&#xD;
+So why is it here?&#xD;
+Is the method called used anywhere else?&#xD;
+If not used elsewhere, the called method should be deleted.</Description>
+    <Annotation />
+    <Revision>Code Removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30DHKD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:50:24:301 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:51:59:016 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/service/common/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>JUnit Integration Tests are required</Summary>
+    <Description>None found in the test directory.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30G7MM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:52:31:390 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:52:51:321 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/service/common/capability/DataFieldsCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>JUnit Integration Tests are required</Summary>
+    <Description>None found in the test directory.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30H3U0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:53:13:128 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:53:36:946 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/service/common/session/bean/ConsoleServiceBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>JUnit Integration Tests are required</Summary>
+    <Description>None found in the test directory.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30I7WF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:54:05:055 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:54:22:727 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/service/common/session/ConsoleService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>JUnit Integration Tests are required</Summary>
+    <Description>None found in the test directory.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30J5LZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:54:48:743 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:55:12:055 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/service/local/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>JUnit Integration Tests are required</Summary>
+    <Description>None found in the test directory.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30K1X4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:55:30:616 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:55:49:412 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="27">src/gov/va/med/pharmacy/peps/service/national/capability/ConsoleCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>JUnit Integration Tests are required</Summary>
+    <Description>None found in the test directory.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

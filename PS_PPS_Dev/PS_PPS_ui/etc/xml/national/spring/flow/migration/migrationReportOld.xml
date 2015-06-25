@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="load">
+
+    <!-- state exists to force login if necessary -->
+	<action-state
+		id="load">
+		<evaluate expression="migrationController.loadSummary()"/>
+		<transition
+			on="success"
+			to="migrationSummary" />
+	</action-state>
+	
+	<view-state
+        id="migrationSummary"
+        view="migration.summary">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <!-- <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="migration" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render> -->
+        <transition
+        	on="details"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="0"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details1"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="1"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details2"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="2"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details3"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="3"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details4"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="4"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details5"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="5"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details6"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="6"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details7"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="7"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details8"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="8"
+        		type="long" />
+        </transition>
+        <transition
+        	on="details9"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="9"
+        		type="long" />
+        </transition>
+        <transition
+        	on="allDetails"
+        	to="loadDetails" >
+        	<set
+        		name="conversationScope.fileType"
+        		value="10"
+        		type="long" />
+        </transition>
+        <transition
+        	on="print"
+        	to="printSummary" /><!-- TODO: CHANGE TO printSummary when a print screen page has been made -->
+    </view-state>
+    
+    <action-state id="loadDetails">
+    	<evaluate expression="migrationController.loadDetailsPage()"/>
+        <transition
+            on="success"
+            to="migrationDetails" >
+         </transition>
+    </action-state>
+    
+    <view-state
+    	id="migrationDetails"
+    	view="migration.details" model="migrDet">
+        <transition
+        	on="print1"
+        	to="printDetails" />
+     </view-state>
+     
+     <view-state
+        id="printSummary"
+        view="migration.summary.print" >
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+       <!--  <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="migration" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render> -->
+    </view-state>
+    
+    <view-state
+        id="printDetails"
+        view="migration.details.print" >
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <!-- <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="migration" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render> -->
+    </view-state>
+</flow>

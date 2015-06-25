@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="M5P1">
+  <ReviewIssue id="FX9AR0NM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:22:10:834 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-23 :: 14:46:49:065 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Manage Item Flow - PRE00001217</Summary>
+    <Description>The manage item flow (manageItem.xml) contains a reference to PRE00001217, citing a workaround that was implemented to fix a defect. If there isn't a better solution, this todo comment probably needs to be removed.</Description>
+    <Annotation />
+    <Revision>Comment removed since defect is closed and issue has not yet reappeared</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9AV11Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:25:17:974 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 09:32:02:762 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="831">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Notify user no items were selected</Summary>
+    <Description>Please address the todo comment.</Description>
+    <Annotation />
+    <Revision>addressed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9AX11Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:26:51:287 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-08-03 :: 10:20:14:236 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="890">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Authorization is wrong place</Summary>
+    <Description>Please address the todo comment.</Description>
+    <Annotation>This would require reworking a major method of our code, Investigation still needs to happen</Annotation>
+    <Revision>Agreed, but would require major rework in the service layer. Will address in M5P2</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9AY8YP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:27:48:193 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 09:58:03:942 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="993">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Display appropriate error message</Summary>
+    <Description>Please address the todo comment.</Description>
+    <Annotation />
+    <Revision>Todo comment adressed prior to code review, removed it</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9AZTU0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:29:01:896 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-08-03 :: 10:19:50:906 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="1183">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Mod change message</Summary>
+    <Description>Please address the todo comment.</Description>
+    <Annotation>This requires a major rework of the flows to get the information into this method</Annotation>
+    <Revision>Todo comment addressed and notified. Change out of scope for M5P2</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9B0VOF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:29:50:943 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-27 :: 09:31:27:709 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="202">src/gov/va/med/pharmacy/peps/presentation/common/action/RequestAction.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Notify user no items were selected</Summary>
+    <Description>Please address the todo comment.</Description>
+    <Annotation />
+    <Revision>Todo addressed, new comment added</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9B2S4U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:31:19:662 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 15:29:53:850 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="308">src/gov/va/med/pharmacy/peps/presentation/common/action/SearchAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Faulty try/catch logic</Summary>
+    <Description>Catching a generic Exception can mask unexpected errors. A more specific exception should be caught or the logic should account for a missing default search template.</Description>
+    <Annotation />
+    <Revision>Exception narrowed to the specific one thrown rather than generic Exception</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9BDVHK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:39:57:224 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-24 :: 09:26:27:709 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="222">src/gov/va/med/pharmacy/peps/presentation/common/action/ConsoleAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Unchecked interface error</Summary>
+    <Description>If the interface throws an unchecked exception (e.g., InterfaceException), the status should not default to "Request to send entire drug file was successful". The user should receive a message that displays the appropriate error.</Description>
+    <Annotation />
+    <Revision>Message now indicates if an interface exception was thrown.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9BO97K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:48:01:568 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 15:27:46:573 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="347">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Avoid using deprecated methods</Summary>
+    <Description>Avoid using DosageForm.getValue().</Description>
+    <Annotation />
+    <Revision>now use .getDosageFormName()</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9BYL6R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:56:03:651 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 15:26:59:413 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="1289">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Unecessary code</Summary>
+    <Description>Is this used anymore?</Description>
+    <Annotation />
+    <Revision>Code deleted</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9BZXWN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:57:06:791 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-23 :: 16:18:18:779 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="1439">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>String constants?</Summary>
+    <Description>Any reason wizard2, wizard13, etc. aren't constants?</Description>
+    <Annotation />
+    <Revision>They are now</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9C1XVS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:58:40:072 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-08-03 :: 10:19:30:920 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="1504">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Hard coding the exact displayed text may cause problems</Summary>
+    <Description>If the text format changes in the future, this will be difficule to debug.</Description>
+    <Annotation />
+    <Revision>Agreed, but no way to fix this right now, address in M5P2</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9C5TJ3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:01:41:055 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 14:59:07:341 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="247">src/gov/va/med/pharmacy/peps/presentation/common/action/MoveChildrenAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Duplicate code</Summary>
+    <Description>This should probably be extracted to a separate method.</Description>
+    <Annotation />
+    <Revision>Code pulled out into external method</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CCW0Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:07:10:883 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 15:25:47:656 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="337">src/gov/va/med/pharmacy/peps/presentation/common/action/PepsAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Comments doesn't match code</Summary>
+    <Description>The comment says the first matching link is returned. The code returns the last matching link.</Description>
+    <Annotation />
+    <Revision>Code works, so changed the comment</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CLC04">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:13:44:836 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 15:20:14:158 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="376">src/gov/va/med/pharmacy/peps/presentation/common/action/PepsAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Comment doesn't match code</Summary>
+    <Description>The last item is returned, which may or may not be the first item.</Description>
+    <Annotation />
+    <Revision>Code works, so changed the comment</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CMO94">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:14:47:368 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-23 :: 14:01:13:400 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="430">src/gov/va/med/pharmacy/peps/presentation/common/action/PepsAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deprecated method</Summary>
+    <Description>Avoid deprecated method.</Description>
+    <Annotation>These methods are deprecated because they override a method from one of the parent classes. Those parent classes may use them, however, we should not.</Annotation>
+    <Revision>see annotation</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DMCUC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:42:32:196 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 14:24:41:732 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="85">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/PepsConversionErrorInterceptor.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Variable name?</Summary>
+    <Description>A variable names "fakie"? :oP</Description>
+    <Annotation />
+    <Revision>changed the name</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DOEGF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:44:07:599 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 11:14:49:132 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="61">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/RemoveRowInterceptor.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Probably best to just for null</Summary>
+    <Description>instead of setting the variable to an empty array.</Description>
+    <Annotation />
+    <Revision>Modified the logic a bit, should still prevent the null pointer without the assignment</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DSEHF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:47:14:259 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-08-03 :: 10:19:17:888 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="33">src/gov/va/med/pharmacy/peps/presentation/common/utility/impl/DomainUtilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Several deprecated methods</Summary>
+    <Description>Several deprecated method calls are made in this class.</Description>
+    <Annotation>This data does not exist in the database for this code drop - there is no domain service to pull this data from</Annotation>
+    <Revision>This will be addressed in M5P2</Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DTWKS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:48:24:364 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-23 :: 13:58:46:486 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="39">src/gov/va/med/pharmacy/peps/presentation/common/utility/ApplicationContextUtility.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Incorrect comment</Summary>
+    <Description>The comment states a National bean will be returned if one isn't found, which doesn't seem to happen in the code.</Description>
+    <Annotation />
+    <Revision>Code correctly commented</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DWMXX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:50:31:845 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 10:40:28:758 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="109">src/gov/va/med/pharmacy/peps/presentation/common/utility/ManagedDataWizardController.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Magic number?</Summary>
+    <Description>14 seems to a magic number.</Description>
+    <Annotation />
+    <Revision>added 14 as a variable, and added a comment stating there is nothing particularly special about it</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DZ7C9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:52:31:593 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-23 :: 13:50:46:319 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo>tdietzel</AssignedTo>
+    <File line="52">src/gov/va/med/pharmacy/peps/presentation/national/action/UpdateDifAction.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Return error?</Summary>
+    <Description>Shouldn't an error be returned if an exception occurs?</Description>
+    <Annotation />
+    <Revision>Agreed, change made</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

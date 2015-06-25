@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.1
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+
+<class 
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplFdbNdcDo" 
+    table="EPL_FDB_NDC"
+    
+>
+    <meta attribute="extends" 
+          inherit="false">
+          gov.va.med.pharmacy.peps.domain.common.model.DataObject
+    </meta>
+
+    <id
+        name="ndcIdFk"
+        type="java.lang.Long"
+        column="NDC_ID_FK">
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="dosageForm"
+        type="java.lang.String"
+        column="DOSAGE_FORM"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="federalDeaClassCode"
+        type="java.lang.String"
+        column="FEDERAL_DEA_CLASS_CODE"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="federalLegendCode"
+        type="java.lang.String"
+        column="FEDERAL_LEGEND_CODE"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="formatCode"
+        type="java.lang.String"
+        column="FORMAT_CODE"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="gcnSeqno"
+        type="java.lang.Long"
+        column="GCN_SEQNO"
+        length="10">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="labelerName"
+        type="java.lang.String"
+        column="LABELER_NAME"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="ndc"
+        type="java.lang.String"
+        column="NDC"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="ndcFormatted"
+        type="java.lang.String"
+        column="NDC_FORMATTED"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="obsoleteDate"
+        type="java.lang.String"
+        column="OBSOLETE_DATE"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="packageDescription"
+        type="java.lang.String"
+        column="PACKAGE_DESCRIPTION"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="packageSize"
+        type="java.lang.Double"
+        column="PACKAGE_SIZE">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="previousNdc"
+        type="java.lang.String"
+        column="PREVIOUS_NDC"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="replacementNdc"
+        type="java.lang.String"
+        column="REPLACEMENT_NDC"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="strengthNumeric"
+        type="java.lang.Double"
+        column="STRENGTH_NUMERIC">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="strengthUnit"
+        type="java.lang.String"
+        column="STRENGTH_UNIT"
+        length="256">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+   </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.sql.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.sql.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26">
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+</class>
+</hibernate-mapping>

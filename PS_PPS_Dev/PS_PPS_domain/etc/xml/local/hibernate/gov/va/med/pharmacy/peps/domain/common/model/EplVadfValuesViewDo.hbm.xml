@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplVadfValuesViewDo"
+    table="EPL_VADF_VALUES_VIEW"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <composite-id name="key" class="gov.va.med.pharmacy.peps.domain.common.model.EplVadfValuesViewDoKey">
+        <meta attribute="use-in-equals">true</meta>
+        <key-property
+            name="vadfOwnerId"
+            column="VADF_OWNER_ID_FK"
+            type="java.lang.Long"
+            length="30"
+        />
+        <key-property
+            name="vadfName"
+            column="VADF_NAME"
+            type="java.lang.String"
+            length="100"
+        />
+        <key-property
+            name="vadfValue"
+            column="VADF_VALUE"
+            type="java.lang.String"
+            length="2000"
+        />
+    </composite-id>
+</class>
+</hibernate-mapping>

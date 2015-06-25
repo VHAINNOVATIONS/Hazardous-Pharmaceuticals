@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+    <!-- Generated content, all changes will be lost! -->
+
+    <class
+        name="gov.va.med.pharmacy.peps.domain.common.model.EplMedicationInstructionDo"
+        table="EPL_MEDICATION_INSTRUCTIONS"
+        >
+        <meta
+            attribute="extends"
+            inherit="false">
+            gov.va.med.pharmacy.peps.domain.common.model.DataObject
+        </meta>
+
+        <id
+            name="eplId"
+            type="java.lang.Long"
+            column="EPL_ID">
+            <meta attribute="use-in-equals">true</meta>
+            <generator class="assigned" />
+        </id>
+
+        <property
+            name="additionalInstruction"
+            type="java.lang.String"
+            column="ADDITIONAL_INSTRUCTION"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="defaultAdminTimes"
+            type="java.lang.String"
+            column="DEFAULT_ADMIN_TIMES"
+            not-null="true"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="medInstructionExpansion"
+            type="java.lang.String"
+            column="MED_INSTRUCTION_EXPANSION"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="frequencyInMinutes"
+            type="java.lang.Long"
+            column="FREQUENCY_IN_MINUTES"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="instructions"
+            type="java.lang.String"
+            column="INSTRUCTIONS"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="intendedUse"
+            type="java.lang.String"
+            column="INTENDED_USE"
+            length="20">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="medInstructionName"
+            type="java.lang.String"
+            column="MED_INSTRUCTION_NAME"
+            not-null="true"
+            length="256">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="medInstructionOtherLangExp"
+            type="java.lang.String"
+            column="MED_INSTRUCTION_OTHER_LANG_EXP"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="plural"
+            type="java.lang.String"
+            column="PLURAL"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="medInstructionSchedule"
+            type="java.lang.String"
+            column="MED_INSTRUCTION_SCHEDULE"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="medInstructionSynonym"
+            type="java.lang.String"
+            column="MED_INSTRUCTION_SYNONYM"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="inactivationDate"
+            type="java.util.Date"
+            column="INACTIVATION_DATE"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestStatus"
+            type="java.lang.String"
+            column="REQUEST_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="itemStatus"
+            type="java.lang.String"
+            column="ITEM_STATUS"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="rejectReasonText"
+            type="java.lang.String"
+            column="REJECT_REASON_TEXT"
+            length="2000">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="requestRejectReason"
+            type="java.lang.String"
+            column="REQUEST_REJECT_REASON"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="revisionNumber"
+            type="java.lang.Long"
+            column="REVISION_NUMBER"
+            not-null="true"
+            length="30">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdBy"
+            type="java.lang.String"
+            column="CREATED_BY"
+            not-null="true"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="createdDtm"
+            type="java.util.Date"
+            column="CREATED_DTM"
+            not-null="true"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedBy"
+            type="java.lang.String"
+            column="LAST_MODIFIED_BY"
+            length="50">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+        <property
+            name="lastModifiedDtm"
+            type="java.util.Date"
+            column="LAST_MODIFIED_DTM"
+            length="26">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+
+        <!-- Associations -->
+
+        <!-- bi-directional one-to-many association to EplMedInstructWardDo -->
+        <set
+            name="eplMedInstructWards"
+            lazy="true"
+            inverse="true">
+            <key>
+                <column name="EPL_ID_MED_INSTRUCT_FK" />
+            </key>
+            <one-to-many class="gov.va.med.pharmacy.peps.domain.common.model.EplMedInstructWardDo" />
+        </set>
+        <!-- bi-directional many-to-one association to EplLocalMedRouteDo -->
+        <many-to-one
+            name="eplLocalMedRoute"
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplLocalMedRouteDo"
+            not-null="true">
+            <meta attribute="use-in-equals">true</meta>
+            <column name="MED_ROUTE_ID_FK" />
+        </many-to-one>
+
+    </class>
+</hibernate-mapping>

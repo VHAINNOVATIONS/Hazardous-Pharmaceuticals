@@ -1,0 +1,394 @@
+<!DOCTYPE tiles-definitions PUBLIC 
+    "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+    "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    <!-- National tiles definitions -->
+
+    <definition
+        name="ndc.edit.form.spring"
+        extends="managed.item.edit.form.spring">
+        <put-attribute
+            name="tabs.list"
+            value="/WEB-INF/jsp/national/ndc/editTabs.jsp" />
+        <put-attribute
+            name="tabs.content"
+            value="/WEB-INF/jsp/national/ndc/editTabsContent.jsp" />
+    </definition>
+
+    <definition
+        name="ndc.request.edit.spring"
+        extends="ndc.edit.spring" />
+    
+    <definition
+        name="orderable.item.request.edit.spring"
+        extends="orderable.item.edit.spring" />
+
+    <definition
+        name="orderable.item.edit.form.spring"
+        extends="managed.item.edit.form.spring">
+        <put-attribute
+            name="tabs.list"
+            value="/WEB-INF/jsp/national/orderableitem/editTabs.jsp" />
+        <put-attribute
+            name="tabs.content"
+            value="/WEB-INF/jsp/national/orderableitem/editTabsContent.jsp" />
+        <put-attribute
+            name="children"
+            value="/WEB-INF/jsp/national/orderableitem/productlist.jsp" />
+    </definition>
+    
+    <definition
+        name="product.edit.tabs.content.spring"
+        template="/WEB-INF/jsp/product/editTabsContent.jsp">
+        <put-attribute
+            name="national.view"
+            value="/WEB-INF/jsp/national/product/nationalview.jsp" />
+        <put-attribute
+            name="drug.data"
+            value="/WEB-INF/jsp/national/product/drugdata.jsp" />
+        <put-attribute
+            name="quick.actions"
+            value="quick.actions.spring" />
+        <put-attribute
+            name="application.data"
+            value="application.data.spring" />
+        <put-attribute
+            name="dispense.data"
+            value="/WEB-INF/jsp/national/product/dispensedata.jsp" />
+        <put-attribute
+            name="administration.data"
+            value="/WEB-INF/jsp/product/administrationdata.jsp" />
+        <put-attribute
+            name="warning.labels"
+            value="/WEB-INF/jsp/national/product/warningLabels.jsp" />
+    </definition>    
+
+    <definition
+        name="application.data.spring"
+        template="/WEB-INF/jsp/product/applicationdata.jsp">
+        <put-attribute
+            name="outpatient"
+            value="/WEB-INF/jsp/national/product/outpatient.jsp" />
+        <put-attribute
+            name="unit.dose"
+            value="/WEB-INF/jsp/national/product/inpatient_unitdose.jsp" />
+        <put-attribute
+            name="ward.stock"
+            value="/WEB-INF/jsp/national/product/wardstock.jsp" />
+        <put-attribute
+            name="drug.accountability"
+            value="/WEB-INF/jsp/national/product/drugaccountability.jsp" />
+        <put-attribute
+            name="controlled.substance.jsp"
+            value="/WEB-INF/jsp/national/product/controlledsubstance.jsp" />
+        <put-attribute
+            name="non.va.med"
+            value="/WEB-INF/jsp/national/product/nonvamed.jsp" />
+    </definition>
+
+    <definition
+        name="product.request.edit.spring"
+        extends="product.edit.spring" />    
+    
+    <definition
+        name="product.edit.form.spring"
+        extends="managed.item.edit.form.spring">
+        <put-attribute
+            name="tabs.list"
+            value="/WEB-INF/jsp/product/editTabs.jsp" />
+        <put-attribute
+            name="tabs.content"
+            value="product.edit.tabs.content.spring" />
+        <put-attribute
+            name="children"
+            value="/WEB-INF/jsp/national/product/ndclist.jsp" />
+    </definition>
+
+
+    <definition
+        name="product.wizard.input.spring.saved"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/productSaved.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/empty.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.1"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/uniquenessFields.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/empty.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.2"
+        extends="default">
+        <put-attribute
+            name="body-header" 
+            value="" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/requiredFields.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/empty.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.2b"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/requiredFieldsAdditional.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/empty.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.3"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/localUseFields.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.4"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/synonyms.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.5"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/dispensingDataFields.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.6"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/screen6.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.7"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/screen7.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.7b"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/screen7b.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="product.wizard.input.spring.8"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/product/wizardHeader.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/product/screen8.jsp" />
+        <put-attribute
+            name="footer"
+            value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+    </definition>
+
+    <definition
+        name="move.NDCs.start"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/ndc/moveNDCproductSelect.jsp" />
+    </definition>
+
+    <definition
+        name="move.NDCs.Page2"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/ndc/moveNDCproductSelect.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/ndc/moveNDCs.jsp" />
+    </definition>
+
+    <definition
+        name="move.NDCs.end"
+        extends="default">
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national/ndc/moveNDCend.jsp" />
+    </definition>
+
+    <definition
+        name="move.products.start"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/manageditem/moveProductOISelect.jsp" />
+    </definition>
+
+    <definition
+        name="move.products.Page2"
+        extends="default">
+        <put-attribute
+            name="body-header"
+            value="/WEB-INF/jsp/national/manageditem/moveProductOISelect.jsp" />
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/manageditem/moveChildren.jsp" />
+    </definition>
+
+
+    <definition
+        name="move.products.end"
+        extends="default">
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/manageditem/moveProductsEnd.jsp" />
+    </definition> 
+    
+    <definition 
+    	name="migration-home"
+    	extends="default">
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/migrationStart.jsp" />
+    </definition>
+    
+    <definition 
+    	name="migration-start"
+    	extends="default">
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/migrationStart.jsp" />
+    </definition>
+    
+    <definition
+    	name="migration-control"
+    	extends="default">
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/migrationControl.jsp" />
+    </definition>
+    
+    <definition
+    	name="migration-summary"
+    	extends="default">
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/migrationSummary.jsp" />
+    </definition>
+    
+    <definition 
+    	name="migration-details"
+    	extends="default">
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/migrationDetails.jsp" />
+    </definition>
+
+    <definition
+    	name="migration-summary-print"
+    	extends="popup" >
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/printSummary.jsp" />
+    </definition>
+    
+    <definition
+    	name="migration-details-print"
+    	extends="popup" >
+    	<put-attribute
+    		name="body-content"
+    		value="/WEB-INF/jsp/national/migration/printDetails.jsp" />
+    </definition>
+    
+    <definition
+        name="scheduler-home"
+        extends="default" >
+        <put-attribute
+            name="body-content"
+            value="/WEB-INF/jsp/national//schedulerHome.jsp" />
+    </definition>
+    
+    <definition
+        name="domain.mapping"
+        extends="default" >
+        <put-attribute name="body-header" value="/WEB-INF/jsp/national/domainmapping/domainMappingHeader.jsp"/>
+        <put-attribute name="body-content" value="/WEB-INF/jsp/national/domainmapping/domainMapping.jsp"/>
+    </definition>
+    
+    <definition name="user.roles" extends="default" >
+        <put-attribute name="body-content" value="/WEB-INF/jsp/manageApplication/userRoles/userRoles.jsp"/>
+    </definition>
+    
+    
+</tiles-definitions>

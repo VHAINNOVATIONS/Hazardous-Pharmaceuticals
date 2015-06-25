@@ -1,0 +1,57 @@
+<project name="ClearCaseTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initClearCaseTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef name="clearCaseBaselines"
+                     classname="org.swri.ant.task.ClearCaseBaselinesTask"
+                     loaderref="ant-loader"
+                     classpathref="build.class.path"
+                     uri="http://www.swri.org" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="baseline" uri="http://www.swri.org">
+        <attribute name="viewpath" default="${basedir}/.." />
+        <attribute name="baselinename" default="${baseline.name}" />
+        <sequential>
+            <swri:makeBaseline viewpath="@{viewpath}" baselinename="@{baselinename}" />
+
+            <!-- We could recommend the new baseline, but that would overwrite CruiseControl's baselines -->
+            <!--
+            <swri:recommendBaseline viewpath="@{viewpath}" />
+            -->
+        </sequential>
+    </macrodef>
+
+    <macrodef name="makeBaseline" uri="http://www.swri.org">
+        <attribute name="viewpath" />
+        <attribute name="baselinename" />
+        <sequential>
+            <exec executable="cleartool" dir="@{viewpath}">
+                <arg value="mkbl" />
+                <arg value="-full" />
+                <arg value="-identical" />
+                <arg value="@{baselinename}" />
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="recommendBaseline" uri="http://www.swri.org">
+        <attribute name="viewpath" />
+        <sequential>
+            <exec executable="cleartool" dir="@{viewpath}">
+                <arg value="chstream" />
+                <arg value="-recommend" />
+                <arg value="-default" />
+                <arg value="-cview" />
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="baselineNames" uri="http://www.swri.org">
+        <attribute name="viewpath" default="${basedir}/.." />
+        <attribute name="property" default="baseline.name" />
+        <sequential>
+            <swri:clearCaseBaselines property="@{property}" dir="@{viewpath}" />
+        </sequential>
+    </macrodef>
+</project>

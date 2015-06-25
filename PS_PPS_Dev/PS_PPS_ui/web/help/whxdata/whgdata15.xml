@@ -1,0 +1,64 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Transport Invoice" value="A list of CS items that are being moved from one location to another within the same facility. It can be a single sealed package containing one or more CS items or multiple sealed packages. The Transport Invoice exists in the system as a list of CS items that has a custodian, origin, and destination." />
+ <entry name="Treatment" value="The provision, coordination, or management of healthcare or related services by one or more healthcare Providers. This includes the coordination of healthcare by a healthcare Provider with a third party, consultation between Providers relating to a Patient, and the referral of a Patient for healthcare from one healthcare Provider to another." />
+ <entry name="TRM/SP" value="Technical Reference Model and Standards Profile" />
+ <entry name="TSEC" value="Trade Study Evaluation Criteria" />
+ <entry name="TSPR" value="Technical Services Project Repository" />
+ <entry name="TSS" value="Trade Study Scenarios" />
+ <entry name="TUID" value="Temporary Unique Identifier" />
+ <entry name="UAT" value="User Acceptance Test" />
+ <entry name="UCI" value="User Class Identifier" />
+ <entry name="UD" value="Unit Dose" />
+ <entry name="UI" value="User Interface" />
+ <entry name="UML" value="Unified Modeling Language" />
+ <entry name="UN/EDIFACT" value="United Nations/Electronic Data Interchange for Administration, Commerce and Transport" />
+ <entry name="Unallocated Inventory " value="Physical inventory that has not been reserved for filling of dispense requests." />
+ <entry name="Unified&#160;Change Management (UCM)" value="A layer built on Rational ClearCase to provide additional configuration management features for software development." />
+ <entry name="Unified&#160;Modeling Language (UML)" value="A standardized language used for object-oriented modeling." />
+ <entry name="Unit Dose Indicator" value="An indicator to differentiate products produced in blister packs verses product produced in bulk bottles." />
+ <entry name="Unit Dose Pick List" value="A list of unit dose Dispense Requests that are scheduled to be administered to the Patients in a ward group within a specified window of time. The Unit Dose Pick List replaced the Pick List from VistA." />
+ <entry name="Units per Dose" value="The number of Units (i.e., tablets, capsules) to be dispensed at one time for a dose. Fractional numbers will be accepted." />
+ <entry name="Universal Product Code (UPC)" value="A 12-digit code assigned to an item to identify the product and the vendor that sells the product." />
+ <entry name="URL" value="Uniform Resource Locator" />
+ <entry name="Usage" value="The removal of an inventory item from the inventory location is assumed to be used or consumed by the user in the managed area in which the inventory location is defined. It does not track actual consumption by the Patient through administration or dispense. See glossary terms Replenishment and Dispensed Inventory." />
+ <entry name="Use Case" value="A narrative describing a sequence of actions and responses between an actor and a system. The narrative is technology-free and implementation independent. It is the description of a well-defined task or goal – from the point-of-view of the actor that achieves the Use Case’s goal. A Use Case describes what the system needs to do without specifying how the system will do it. A Use Case that “calls” on other Use Cases – for additional functionality – via an extend or include relationship is referred to as a “parent” Use Case." />
+ <entry name="Use Case Diagram" value="A diagrammatic representation of the boundaries of a product or Application showing the actors outside the boundary and the Use Case or work units inside the boundary." />
+ <entry name="Use Case Specifications" value="A document that defines a sequence of actions performed by a system that yields an observable result of value to an actor." />
+ <entry name="Use Rule" value="A criterion-based rule for a product, group of products, or class of products that aids decision support." />
+ <entry name="User" value="The requestor, individual, or organization that specifies, or may assist with specification, and typically accepts the project deliverables. There may be multiple users on a given project." />
+ <entry name="User (Inventory)" value="A term used in the inventory system to refer to the area personnel that handle or administer the drugs. They are the pharmacy customer to whom inventory items are supplied." />
+ <entry name="User Acceptance Test (UAT)" value="The process that confirms the system functionality meets all user requirements as stated in the requirements document(s). The UAT is usually conducted by the stakeholders." />
+ <entry name="User Area (Inventory)" value="A term used in the inventory system to refer to the pharmacy customer areas such as wards or clinics. These are areas out of which drugs are administered as opposed to the pharmacy that dispenses them." />
+ <entry name="User Area Manager" value="An authorized person who monitors, oversees, and manages supplies for a specific area (e.g., person who would interact with the Replenisher in maintaining appropriate levels of inventory)." />
+ <entry name="USPS" value="United States Postal Service" />
+ <entry name="VA" value="Department of Veterans Affairs" />
+ <entry name="VA Data Fields" value="A set of rules governing the use of a product in the VHA system. Examples include: “Witness required for Administration,” “Useable for Outpatient Only,” “Must be Refrigerated,” etc. These fields are defined in the requirements process and cannot be modified or added after the system has been deployed. The VA Data Fields are fields that must be set by a VA entity (i.e., cannot be obtained from a COTS product or other data source). When values are defined for the fields at National, they may be marked as “non-editable” preventing Local VHA facilities from changing the setting. Any field left editable can be changed by a local facility." />
+ <entry name="VA Generic Name" value="The name assigned to an item (e.g., medication, supply) in Pharmacy VistA files." />
+ <entry name="VA Product Name" value="The name assigned to a medication item in Pharmacy VistA files. The name includes the Strength, Unit, and Dosage Form of the medication." />
+ <entry name="VA-wide Person Identifier (VPID)" value="A unique identification number assigned to all persons associated with the VA, including veterans, Patients, and employees. According to http://vista.med.va.gov/iss/acronyms/index (To access the link, VA VPN access is needed)." />
+ <entry name="VACO" value="VA Central Office" />
+ <entry name="VAEA" value="VA Enterprise Architecture" />
+ <entry name="Value Object" value="A software element that exposes property mutators and accessors. A Data Transfer Object from Sun’s Design Pattern Catalog is a synonymous term." />
+ <entry name="VAMC" value="Department of Veterans Affairs Medical Center" />
+ <entry name="Variable Dosage" value="A medication treatment whereby the administration doses vary for the duration of treatment. For example, a drug may be taken/administered in the following order: 4mg a.m., 2mg noon, 4mg HS (at bedtime) for 7 days." />
+ <entry name="Variable Schedule" value="The schedule of a drug whereby it may vary during the therapy. For example, a drug may be given twice a day on Monday and Tuesday and three times a day on the remaining days of week for 7 days." />
+ <entry name="VAX MUMPS Standard" value="An advanced operating system, originally designed by Digital Equipment Corporation (DEC), that operates on the VAX and Alpha architectures. The correct way to refer to the operating system is OpenVMS for VAX or OpenVMS for Alpha. VMS is one of the most secure operating systems on the market." />
+ <entry name="VBA" value="Veterans Benefits Administration" />
+ <entry name="VDD" value="Version Description Document" />
+ <entry name="VDEF" value="VistA&#160;Data&#160;Extraction Framework " />
+ <entry name="VDL" value="Virtual Due List" />
+ <entry name="VDSI" value="VistA Data Systems and Integration" />
+ <entry name="VeHU" value="VHA eHealth University" />
+ <entry name="Vendor" value="The organization that provides supplies to the pharmacy. Note that this may include prime, non-prime, and loaning organizations (any outside supplier; e.g.,&#160;external supplier)." />
+ <entry name="Vendor Purchase Order" value="An order that details the items the pharmacy wishes to procure from a prime or non-prime supplier (Vendor). It is often called a procurement order, supply order, or sales order." />
+ <entry name="Verify" value="To assure that an order placed for a Patient is accurate as recorded and ready for dispensing." />
+ <entry name="Version" value="A variant of some artifact; later versions of an artifact typically expand on earlier versions. Major revisions will mean the version number is incremented by one or more. Minor revisions will be signified by the addition of a decimal number in tenths or hundredths." />
+ <entry name="Veterans Health Information Systems and Technology Architecture (VistA)" value="The automated information systems used in VAMCs. The Department of Veterans Affairs (VA) has had automated information systems in its medical facilities since 1985, beginning with the Decentralized Hospital Computer Program information system, including administrative and extensive clinical administration capabilities." />
+ <entry name="Veterans Integrated Service Network (VISN)" value="A set of healthcare facilities within a geographical area. Each VHA healthcare facility is located in one of many VISNs (Veterans Integrated Service Networks) spanning the U.S. and its territories." />
+ <entry name="VETS" value="VHA Enterprise Terminology Service" />
+ <entry name="VHA" value="Veterans Health Administration" />
+ <entry name="VHA Health Information Model (VHIM)" value="A model that provides standard definitions, semantics, and constraints so that data can be represented consistently across all components of the HealtheVet Architecture." />
+ <entry name="VHA OI" value="VHA Office of Information" />
+
+</glossarydata>

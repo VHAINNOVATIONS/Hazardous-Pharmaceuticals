@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 9" />
+<meta name="OriginalFile" content="masterHelp.docx" />
+<link rel="stylesheet" href="../masterHelp.css" type="text/css" />
+<link rel="stylesheet" href="../masterHelp.css" type="text/css" />
+<title>FDB Scheduler</title>
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js">
+</script>
+<script type="text/javascript" language="javascript" src="../whver.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js">
+</script>
+</head>
+<body link="blue" vlink="purple">
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        if (window.addTocInfo)
+        {
+        addTocInfo("Manage Application\nFDB Scheduler");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+        }
+        if (window.writeBtnStyle)
+                writeBtnStyle();
+
+        if (window.writeIntopicBar)
+                writeIntopicBar(1);
+
+        
+        document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../index.htm", "", "&gt;", "Home", "Home.htm");
+document.write("<a href=\"Manage_Application.htm\">Manage Application<\/a> &gt; FDB Scheduler<\/p>");
+
+
+        if (window.setRelStartPage)
+        {
+        setRelStartPage("../index.htm");
+
+                autoSync(1);
+                sendSyncInfo();
+                sendAveInfoOut();
+        }
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+
+//-->
+//]]>
+</script><script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+</script>
+<h2>FDB Scheduler</h2>
+<p class="WD_Normal">The <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot28702" name="HotSpot28702">FDB</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot28702', 'POPUP28702');
+//]]>
+</script> <span class="glosstext" id="POPUP28702" style="display: none;">First DataBank</span> Scheduler is used to schedule when the five background tasks will be executed.&#160; Each of these tasks executes independently.&#160; For performance reasons the tasks should be scheduled to run during the systems ‘down’ time and should be spaced out so they do not run at the same time.&#160;&#160; Generally each task will run in less than five minutes so they don’t need to be spread out significantly.&#160; Only the PPS-N Supervisor can see this screen.</p>
+<table border="1" cellspacing="0" cellpadding="0" style=" border:none;">
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:solid #4F81BD 1.0px; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Jobs Types</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:solid #4F81BD 1.0px; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Description</font></span></b></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Inactivation Job</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This job looks at the Product and <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot45635" name="HotSpot45635">NDC</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot45635', 'POPUP45635');
+//]]>
+</script> <span class="glosstext" id="POPUP45635" style="display: none;">National Drug Code</span> proposed inactivation date.&#160; If there are any NDCs that are Active and have a proposed Inactivation date earlier than the current date then the NDC will be inactivated. If there are any Products that are Active and have a proposed Inactivation date earlier than the current date then a <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot17762" name="HotSpot17762">Request</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot17762', 'POPUP17762');
+//]]>
+</script> <span class="glosstext" id="POPUP17762" style="display: none;">A user action that a PEPS Item (OI, Product Item, or NDC Item) addition or modification be considered by the PNM for updates within the PEPS enterprise database.</span> to Inactivate the product will be put on the request list.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Fdb Update</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This job will search the FDB Packaged Drugs Update Date field for all entries greater that the Last Successful Run date.&#160; When a match is found, the system will check the FDB Drug against its <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot46813" name="HotSpot46813">VA</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot46813', 'POPUP46813');
+//]]>
+</script> <span class="glosstext" id="POPUP46813" style="display: none;">Department of Veterans Affairs</span> equivalent to see if any fields that are currently monitored by the VA were updated.&#160; If so, then the job will put an entry on either the FDB Update list (if the system could not automatically process the update) or the Update Report (if the system automatically processed the update.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Fdb Add&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This job will search the FDB Packaged Drugs Add Date field for all entries greater that the Last Successful Run date.&#160; When a match is found, the system will either add the Packaged Drug to the PPS-N <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot39901" name="HotSpot39901">EPL</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot39901', 'POPUP39901');
+//]]>
+</script> <span class="glosstext" id="POPUP39901" style="display: none;">Enterprise Product List</span> (if certain criteria for auto add are met) or will place the Packaged Drug on the FDB Add list for <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot23981" name="HotSpot23981">NDF</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot23981', 'POPUP23981');
+//]]>
+</script> <span class="glosstext" id="POPUP23981" style="display: none;">National Drug File</span> Managers to process.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91"><a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot41866" name="HotSpot41866">FSS</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot41866', 'POPUP41866');
+//]]>
+</script> <span class="glosstext" id="POPUP41866" style="display: none;">Federal Supply Schedule</span></font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This job will search the Federal Supply <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot32342" name="HotSpot32342">Schedule</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot32342', 'POPUP32342');
+//]]>
+</script> <span class="glosstext" id="POPUP32342" style="display: none;">The frequency by which the doses are to be administered (i.e., Q8H, BID, NOW). Often referred to as Administration Schedule.</span> database for any updates that have occurred since the Last Success Run time.&#160;&#160; Any PPS-N EPL NDCs that have corresponding updates in FSS will be automatically updated.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91"><a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot21894" name="HotSpot21894">STS</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot21894', 'POPUP21894');
+//]]>
+</script> <span class="glosstext" id="POPUP21894" style="display: none;">Standards and Terminology Services</span></font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This job will call the Standard Terminology Web <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot50855" name="HotSpot50855">Service</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot50855', 'POPUP50855');
+//]]>
+</script> <span class="glosstext" id="POPUP50855" style="display: none;">A logical grouping of capabilities that support a common business process. Thus a “drug information service” might provide capabilities that allow for the searching of different types of drug information and different types of searches for the same information (i.e., searching for a drug by Generic Name, NDC, Therapeutic category). This is loosely analogous to the class-method relationship, in which a class is composed of multiple methods that support the usage of the class.</span> to retrieve the up to date list of Standard Medication Routes.&#160; Any newly added routes will be added to the PPS-N EPL.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">&#160;</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">&#160;</font></span></p>
+</td>
+</tr>
+</table>
+<p class="WD_ListParagraph">&#160;</p>
+<h4>FDB Control Process</h4>
+<p class="WD_Normal"><b>Refresh button:</b> This button refreshes the System Time field and the information in the table.</p>
+<p class="WD_Normal"><b>System Time:</b>&#160; This is the current date time of the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot45055" name="HotSpot45055">Application</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot45055', 'POPUP45055');
+//]]>
+</script> <span class="glosstext" id="POPUP45055" style="display: none;">A software product that provides a specified functionality.</span> Server that will be processing the request.&#160; It may very well be in a different time zone that the client machine where the user is located.</p>
+<p class="WD_Normal"><b>Scheduler Status:</b>&#160; This should always be RUNNING.&#160; If this field is set to anything other than running then a serious error has occurred and the System Administrators should be notified.</p>
+<h4>Table Columns</h4>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Jobs:&#160; The name of the job.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Controls:</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" margin-left:1.0in; text-indent:-.25in;"><span style=" font-family:Courier New;">o<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;</font></span></span> Resume:&#160; This button allows for the control process to be restarted if it was paused for some reason.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" margin-left:1.0in; text-indent:-.25in;"><span style=" font-family:Courier New;">o<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;</font></span></span> Pause:&#160; This button will stop the job from executing at the specified time and put the job in a hold mode.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" margin-left:1.0in; text-indent:-.25in;"><span style=" font-family:Courier New;">o<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;</font></span></span> Schedule: This button will allow the user the schedule the job to run once they have set the Hours and Minutes.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Hrs:&#160; This is the server time hours for the job to run.&#160; For example, selecting 1 would have the job run in the 1AM hour.&#160; Used in conjunction with the Mins column.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Mins: This is the server time minutes for the job to run.&#160; For example, selecting 30 would have the job run at the bottom of the hour.&#160; Used in conjunction with the Hrs column.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Job Status:&#160; PAUSED indicates that the job is not current scheduled to run.&#160; RUNNING indicates the job will run at the Next Fire Time.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Next Fire Time: This is the next time schedule for the job to execute.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Last Success Run: For the Inactivation Job, FSS and STS jobs, this indicates the date time the job finished on its last run.&#160;&#160; For the FDB Add and Update jobs, this indicates the latest value in the AddDate or UpdateDate field in the FDB Packaged Drug table.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot34616" name="HotSpot34616">Process</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot34616', 'POPUP34616');
+//]]>
+</script> <span class="glosstext" id="POPUP34616" style="display: none;">A process is a collection of activities that takes one or more kinds of input and creates an output that is of value to the customer. It is cross-functional and results oriented, defying rather than respecting organizational boundaries. It is focused on goals and ends rather than actions and means. Thinking about the process is a prerequisite to re-engineering; only processes can be re-engineered.</span> Status:&#160;</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" margin-left:1.0in; text-indent:-.25in;"><span style=" font-family:Courier New;">o<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;</font></span></span> STOPPED indicates the job has not been executed since the code was deployed.&#160; COMPLETED indicates that the job has executed and the Last success Run will hold the time the job last completed.&#160;</p>
+<p class="WD_ListParagraphCxSpLast" style=" margin-left:1.0in; text-indent:-.25in;"><span style=" font-family:Courier New;">o<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;</font></span></span> RUNNING indicates the job is currently executing.</p>
+<p class="WD_Normal"><img border="0" width="658" height="192" src="image062.jpg" alt="" /></p>
+<p class="WD_Normal">Under the jobs table there is a row of National setting variables that are used in the execution of the product.</p>
+<table border="1" cellspacing="0" cellpadding="0" style=" border:none;">
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:solid #4F81BD 1.0px; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Jobs Types</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:solid #4F81BD 1.0px; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Description</font></span></b></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Messaging Status</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">On indicates Messages are being sent to NDF as they are generated.&#160; Off indicates Messages are being queued as they are generated.&#160; When the NDF Supervisor changes the status from Off to On all queued messages will be sent.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Fda Host Name</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This is the host name for the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot25376" name="HotSpot25376">FDA</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot25376', 'POPUP25376');
+//]]>
+</script> <span class="glosstext" id="POPUP25376" style="display: none;">Food and Drug Administration</span> Server which holds the FDB Med guides.&#160; This is used in conjunction with the name of the med guide in the product attribute to display the med guide.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Messages on Queue&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This is an integer count of the number of messages on the NDF message queue.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Messaging Running</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">This is used in conjunction with the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot28879" name="HotSpot28879">Message</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot28879', 'POPUP28879');
+//]]>
+</script> <span class="glosstext" id="POPUP28879" style="display: none;">A collection of data in a standardized format that can be sent to or received at a given destination.</span> Status button.&#160; When the messaging is on, this is set to true, when the messaging is off, this is set to false.&#160;</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">Error Messages</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:none; width:239.4pt; background:#D3DFEE; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">If an error occurs when processing the NDF Messages from the queue, the error will be displayed here and the messaging will automatically be turned back off.</font></span></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><b><span style=" color:#365F91;"><font color="#365F91">&#160;</font></span></b></p>
+</td>
+<td width="319" valign="top" style=" border-left:none; border-right:none; border-top:none; border-bottom:solid #4F81BD 1.0px; width:239.4pt; padding:0in 5.4pt 0in 5.4pt;">
+<p class="WD_Normal" style=" margin-bottom:.0001pt; line-height:normal;"><span style=" color:#365F91;"><font color="#365F91">&#160;</font></span></p>
+</td>
+</tr>
+</table>
+<p class="WD_ListParagraph">&#160;</p>
+<span style=" font-size:11.0pt; line-height:115%; font-family:'Calibri' ,'sans-serif';"><font size="3" style="font-size:11pt;"><br clear="all" /></font></span> <span style=" font-size:11.0pt; line-height:115%; font-family:'Calibri' ,'sans-serif';"><font size="3" style="font-size:11pt;"><br clear="all" /></font></span> <span style=" font-size:11.0pt; line-height:115%; font-family:'Calibri' ,'sans-serif';"><font size="3" style="font-size:11pt;"><br clear="all" /></font></span> <script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

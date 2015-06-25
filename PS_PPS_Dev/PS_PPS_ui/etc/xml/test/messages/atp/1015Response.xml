@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEPSResponse
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response">
+    <Header>
+        <Time value="0845"/>
+        <MServer namespace="VISTA" uci="text" ip="10.56.132.1"
+            serverName="Server Name" stationNumber="45"/>
+        <MUser userName="user" duz="88660079" jobNumber="1015"/>
+        <PEPSVersion difIssueDate="20081020" difBuildVersion="6" difDbVersion="3.2"/>
+    </Header>
+    <Body>
+        <drugCheck>
+            <drugDoseChecks>
+                <drugDoseCheck>
+                    <drug orderNumber="Z;1;Prospect" gcnSeqNo="4970"/>
+                    <doseHigh>50</doseHigh>
+                    <doseHighUnit>MCG/KG/MIN</doseHighUnit>
+                    <doseLow>0.5</doseLow>
+                    <doseLowUnit>MCG/KG/MIN</doseLowUnit>
+                    <doseFormHigh>0.03125</doseFormHigh>
+                    <doseFormHighUnit>ML/KG/MIN</doseFormHighUnit>
+                    <doseFormLow>0.00031</doseFormLow>
+                    <doseFormLowUnit>ML/KG/MIN</doseFormLowUnit>
+                    <doseRouteDescription>CONTINUOUS INFUSION</doseRouteDescription>
+                </drugDoseCheck>
+            </drugDoseChecks>
+        </drugCheck>
+    </Body>
+</PEPSResponse>

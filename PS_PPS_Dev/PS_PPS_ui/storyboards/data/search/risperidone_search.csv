@@ -1,0 +1,9 @@
+//genericName, Strength, Unit, Dose Form, VA Drug Class, Local Use, Request Status, State, Formulary,NDC
+Risperidone,0.25,mg,TAB,Anti-psychotic,Y,Approved,Active,Formulary,3
+Risperidone,0.25,ml,TAB,Anti-psychotic,Y,Approved,Active,Formulary,3
+Risperidone,0.50,ml,TAB-ORAL DISINTEGRATING,Anti-psychotic,N,Approved,Active,Non-Formulary,2
+Risperidone,0.50,mg,TAB,Anti-psychotic,Y,Approved,Active,Formulary,3
+Risperidone,1.00,mg,TAB-ORAL DISINTEGRATING,Anti-psychotic,N,Approved,Active,Non-Formulary,3
+Risperidone,1.00,mg/ml,SOLN-ORAL,Anti-psychotic,N,Approved,Active,Formulary,1
+Risperidone,2.00,mg,TAB,Anti-psychotic,Y,Approved,Active,Formulary,4
+Risperidone,2.00,mg,TAB-ORAL DISINTEGRATING,Anti-psychotic,N,Approved,Active,Non-Formulary,4

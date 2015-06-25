@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="M5P1">
+  <ReviewIssue id="FWNUUYZA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-02 :: 14:14:11:734 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:09:01:371 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="73">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DosageFormDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for the variable fedDo</Summary>
+    <Description>in this case it should be dosageFormDo instead of fedDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWNV4IRB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-02 :: 14:21:37:271 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:09:18:183 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="113">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DosageFormDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for the variable fedDo</Summary>
+    <Description>inthis case it should be dosageFormDo instead of fedDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWNWZI9Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-02 :: 15:13:42:599 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:26:51:168 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="56">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DrugTextDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>fix the warning</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWNX31XB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-02 :: 15:16:28:031 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:11:28:152 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="59">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DrugTextDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for variable eplProdWarnLabelLAssocDo</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWNXQYO7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-02 :: 15:35:03:559 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:14:37:730 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="43">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/DrugTextDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>comment does not match the method</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWNXROEF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-02 :: 15:35:36:903 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:15:01:183 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/domain/common/capability/DrugTextDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>comment does not match the method</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWMQ7HA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 17:36:28:126 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:15:09:902 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="61">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/MedicationInstructionDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for the variable</Summary>
+    <Description>genNameDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWMRJ7M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 17:37:29:986 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:15:32:183 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="84">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/MedicationInstructionDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for the variable</Summary>
+    <Description>genNameDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXNU7BM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 10:55:20:338 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:16:08:886 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="88">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Comment does not match with the method</Summary>
+    <Description>According to the comment it inserts a ndc with duplicate check, but the name of the method is createWithoutDuplicateCheck.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXNWVKG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 10:57:25:072 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:16:44:402 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="65">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>unused variable</Summary>
+    <Description>this variable is not used in this class. should be removed.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXU1Q6M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 13:49:09:070 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:17:35:043 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="568">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>this method is never used locally</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXU470Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 13:51:04:211 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:18:06:011 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="568">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NdcDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>this method is never used locally</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXWJWMQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 14:59:16:466 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:19:20:355 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="266">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/NotificationDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>remove the depricated method of put a comment to use the new method</Summary>
+    <Description>if (summary.isLocalUse())</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXXGVNL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 15:24:54:849 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:38:04:652 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="710">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/OrderableItemDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this is a duplicate method of searchBySimpleDataField</Summary>
+    <Description>searchAllSimpleDataFields</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWZB1S67">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-10 :: 14:32:51:295 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:24:43:105 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="77">src/gov/va/med/pharmacy/peps/domain/common/capability/ProductDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this method is not called by any other method. also input parameter should be the string parameter va print name, not the product vo.</Summary>
+    <Description>Collection&lt;ProductVo&gt; retrieveByVaPrintName(ProductVo product);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWZB8NZP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-10 :: 14:38:12:469 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:28:40:543 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="620">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this method is not called by any other method</Summary>
+    <Description>retrieveByVaPrintName</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWZBBECY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-10 :: 14:40:19:954 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:29:04:621 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="123">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>the variable is never read locally</Summary>
+    <Description>private EplOrderableItemDao eplOrderableItemDao;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWZBCH26">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-10 :: 14:41:10:110 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:29:00:136 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="132">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>the variable is never read locally</Summary>
+    <Description>private EplProdSpecHandlingAssocDao eplProdSpecHandlingAssocDao;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7KYJVO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 09:32:26:148 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:24:00:433 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="687">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>this method is not used</Summary>
+    <Description>searchByGenericName</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7KZJER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 09:33:12:195 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:36:35:590 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="686">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/ProductDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>this method is not used</Summary>
+    <Description>searchByActiveIngredientName</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7MHJX1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:15:12:277 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:36:15:043 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="141">src/gov/va/med/pharmacy/peps/domain/common/capability/RequestDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>misspelled name</Summary>
+    <Description>getModifictionRequestId</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7N2K8W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 10:31:32:480 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:36:07:590 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="272">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>misspelled method name</Summary>
+    <Description>getModifictionRequestId</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX98QESM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 13:25:43:270 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:34:48:183 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="44">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/DosageFormConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>this field is never read locally</Summary>
+    <Description>private DataFieldsDomainCapability dataFieldsDomainCapability;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX98UYQ1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 13:29:15:721 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:34:22:074 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="192">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/DosageFormConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>depricated method</Summary>
+    <Description>dosageForm.setValue(data.getDfName());</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX98WEL8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 13:30:22:940 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 13:30:46:065 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="304">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/DosageFormConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>depricated method</Summary>
+    <Description>dosageForm.setValue(data.getDfName());</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX999J5P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 13:40:35:389 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:33:58:402 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="98">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/DoseUnitConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>depricated method setvalue</Summary>
+    <Description>replacement.setValue(data.getEplDoseUnit().getDoseUnitName());</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9BXFVP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:55:10:117 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:33:25:136 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="46">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/NdcConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>the member variable never read locally</Summary>
+    <Description>private DataFieldsDomainCapability dataFieldsDomainCapability;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9C4M9M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:00:44:986 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:32:33:980 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="86">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/NotificationStatusConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>depricated method. all the references to this method should be removed</Summary>
+    <Description>public EplNotificationStatusDo convert</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CED1P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:08:19:597 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:23:46:449 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="150">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/NotificationSummaryConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>depricated method</Summary>
+    <Description>summary.setLocalUse</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CEZ96">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:08:48:378 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:22:59:965 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="155">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/NotificationSummaryConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>depricated method</Summary>
+    <Description>summary.setLocalUse</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CLUQ0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:14:09:096 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:22:49:824 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="63">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/OrderableItemConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>variable never read locally</Summary>
+    <Description>private DataFieldsDomainCapability dataFieldsDomainCapability;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D6VPZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:30:30:167 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:25:18:511 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="444">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/OrderableItemConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Fix this code as per this TODO comment or remove the comment</Summary>
+    <Description>// TODO this is till the data load is corrected. Once the data load is corrected remove the else</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DJWZ4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:40:38:320 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:21:53:683 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="62">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/ProductConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>variable never read locally</Summary>
+    <Description>private SpecialHandlingAssociationConverter specialHandlingAssociationConverter;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DKTUP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:41:20:929 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:21:49:215 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="76">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/ProductConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>variable never read locally</Summary>
+    <Description>private DataFieldsDomainCapability dataFieldsDomainCapability;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9EU26V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 16:16:31:255 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:07:29:699 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="70">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/SpecialHandlingConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for the variable</Summary>
+    <Description>SpecialHandlingVo orderUnit</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9EUU9P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 16:17:07:645 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 13:07:03:074 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="105">src/gov/va/med/pharmacy/peps/domain/common/utility/converter/SpecialHandlingConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use meaningful name for the variable</Summary>
+    <Description>SpecialHandlingVo orderUnit</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FXRTDVPI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:23:41:766 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:23:48:782 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

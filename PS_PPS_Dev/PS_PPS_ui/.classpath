@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/hibernate-validator-4.1.0.Final.jar" sourcepath="/PS_PPS_lib/Common/hibernate/hibernate-validator-4.1.0.Final-sources.jar"/>
+	<classpathentry kind="src" path="/PS_PPS_common"/>
+	<classpathentry kind="src" path="/PS_PPS_srv"/>
+	<classpathentry excluding="**/*.contrib|**/*.contrib.*|**/*.keep|**/*.keep.*|**/*.merge|**/*.merge.*|*.contrib|*.contrib.*|*.keep|*.keep.*|*.merge|*.merge.*|gov/va/med/pharmacy/peps/presentation/common/action/|gov/va/med/pharmacy/peps/presentation/common/springwebflow/struts/|gov/va/med/pharmacy/peps/presentation/common/struts/|gov/va/med/pharmacy/peps/presentation/common/utility/struts/|gov/va/med/pharmacy/peps/presentation/local/action/|gov/va/med/pharmacy/peps/presentation/national/action/" kind="src" path="src"/>
+	<classpathentry excluding="*.keep|*.keep.*|**/*.keep|**/*.keep.*|*.contrib|*.contrib.*|**/*.contrib|**/*.contrib.*|*.merge|*.merge.*|**/*.merge|**/*.merge.*" kind="src" path="build/src"/>
+	<classpathentry excluding="**/*.contrib|**/*.contrib.*|**/*.keep|**/*.keep.*|**/*.merge|**/*.merge.*|*.contrib|*.contrib.*|*.keep|*.keep.*|*.merge|*.merge.*|gov/va/med/pharmacy/peps/presentation/common/struts/" kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="lib" path="build/meta"/>
+	<classpathentry kind="lib" path="etc"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/el-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/jboss-el-2.0.2.CR1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/junitperf-1.9.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/ognl-2.7.3.jar" sourcepath="/PS_PPS_lib/Presentation/springwebflow/ognl-2.7.3-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/jcl-over-slf4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/velocity-tools-view-1.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/tiles-api-2.2.2.jar" sourcepath="/PS_PPS_lib/Presentation/tiles/tiles-api-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/tiles-core-2.2.2.jar" sourcepath="/PS_PPS_lib/Presentation/tiles/tiles-core-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/tiles-jsp-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/tiles-servlet-2.2.2.jar" sourcepath="/PS_PPS_lib/Presentation/tiles/tiles-servlet-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/tiles-template-2.2.2.jar" sourcepath="/PS_PPS_lib/Presentation/tiles/tiles-template-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/tiles/tiles-portlet-2.2.2.jar" sourcepath="/PS_PPS_lib/Presentation/tiles/tiles-portlet-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/jetty/jetty-6.1.14.jar" sourcepath="/PS_PPS_lib/Presentation/build/jetty/jetty-6.1.14-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/jetty/jetty-util-6.1.14.jar" sourcepath="/PS_PPS_lib/Presentation/build/jetty/jetty-util-6.1.14-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/jetty/management/jetty-management-6.1.14.jar" sourcepath="/PS_PPS_lib/Presentation/build/jetty/management/jetty-management-6.1.14-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/jetty/naming/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/jetty/naming/jetty-naming-6.1.14.jar" sourcepath="/PS_PPS_lib/Presentation/build/jetty/naming/jetty-naming-6.1.14-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/jetty/plus/jetty-plus-6.1.14.jar" sourcepath="/PS_PPS_lib/Presentation/build/jetty/plus/jetty-plus-6.1.14-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/jstl/jstl-api-1.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/jstl/jstl-impl-1.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-aop-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-beans-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-beans-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-context-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-context-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-context-support-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-core-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-core-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-web-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Common/spring/spring-web-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/spring-webmvc-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Presentation/springwebflow/spring-webmvc-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/spring-webmvc-portlet-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/portlet-api-2.0.jar" sourcepath="/PS_PPS_lib/Presentation/springwebflow/portlet-api-2.0-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-tx-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-jdbc-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-bean-collections-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-core-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/displaytag/itext-1.3.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/build/selenium/selenium-java-client-driver-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/sds/vha-stddata-basic-15.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/sds/vha-stddata-client-15.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/weblogic/weblogic.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/easymock-2.5.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/kaajee/kaajee-1.1.0.007.jar" sourcepath="etc/source/kaajee-1.1.0.007-src.zip"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/freemarker-2.3.18.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/displaytag/displaytag-1.2.jar" sourcepath="etc/source/displaytag-1.2-src.zip"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/displaytag/displaytag-export-poi-1.2.jar" sourcepath="etc/source/displaytag-1.2-src.zip"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/displaytag/poi-3.2-FINAL.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/xml/xercesImpl-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/ejb3-persistence-1.0.2.GA.jar" sourcepath="/PS_PPS_lib/Common/hibernate/ejb3-persistence-1.0.2.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-test-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/easymockclassextension-2.5.2.jar" sourcepath="/PS_PPS_lib/Common/build/test/easymockclassextension-2.5.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/profile/aspectjrt-1.6.11.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/profile/aspectjweaver-1.6.11.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/ehcache-core-2.5.2.jar" sourcepath="/PS_PPS_lib/Common/hibernate/ehcache-core-2.5.2-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Presentation/springwebflow/ehcache-web-2.0.4.jar" sourcepath="/PS_PPS_lib/Presentation/springwebflow/ehcache-web-2.0.4-sources.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

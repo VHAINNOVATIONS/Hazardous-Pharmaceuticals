@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<pmiRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/pmi/request ../../../schema/drug/pmi/patientMedicationInformationRequest.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/pmi/request"
+    language="English">
+
+    <vuid>4007158</vuid>
+
+</pmiRequest>

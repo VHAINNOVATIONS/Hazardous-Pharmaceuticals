@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+
+	<!-- Common Services -->
+	<bean id="domainService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.DomainServiceImpl"
+		autowire-candidate="true">
+		<property name="drugReferenceCapability" ref="drugReferenceCapability" />
+		<property name="otcRxDomainCapability" ref="otcRxDomainCapability" />
+		<property name="csFedScheduleDomainCapability" ref="csFedScheduleDomainCapability" />
+		<property name="dataFieldsCapability" ref="dataFieldsCapability" />
+		<property name="dosageFormDomainCapability" ref="dosageFormDomainCapability" />
+		<property name="drugClassDomainCapability" ref="drugClassDomainCapability" />
+		<property name="drugClassTypeDomainCapability" ref="drugClassTypeDomainCapability" />
+		<property name="genericNameDomainCapability" ref="genericNameDomainCapability" />
+		<property name="manufacturerDomainCapability" ref="manufacturerDomainCapability" />
+		<property name="packageTypeDomainCapability" ref="packageTypeDomainCapability" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="standardMedRouteDomainCapability" ref="standardMedRouteDomainCapability" />
+		<property name="localMedicationRouteDomainCapability" ref="localMedicationRouteDomainCapability" />
+		<property name="drugUnitDomainCapability" ref="drugUnitDomainCapability" />
+		<property name="dispenseUnitDomainCapability" ref="dispenseUnitDomainCapability" />
+		<property name="ingredientDomainCapability" ref="ingredientDomainCapability" />
+		<property name="orderUnitDomainCapability" ref="orderUnitDomainCapability" />
+		<property name="specialHandlingDomainCapability" ref="specialHandlingDomainCapability" />
+		<property name="intendedUseDomainCapability" ref="intendedUseDomainCapability" />
+		<property name="doseUnitDomainCapability" ref="doseUnitDomainCapability" />
+		<property name="packageUseageDomainCapability" ref="packageUseageDomainCapability" />
+		<property name="administrationScheduleDomainCapability" ref="administrationScheduleDomainCapability" />
+		<property name="administrationScheduleTypeDomainCapability"
+			ref="administrationScheduleTypeDomainCapability" />
+		<property name="oiScheduleTypeDomainCapability" ref="oiScheduleTypeDomainCapability" />
+		<property name="vistaAuthoritativeDomainCapability" ref="vistaAuthoritativeDomainCapability" />
+		<property name="rxConsultDomainCapability" ref="rxConsultDomainCapability" />
+		<property name="drugTextDomainCapability" ref="drugTextDomainCapability" />
+		<property name="environmentUtility" ref="environmentUtility" />
+		<property name="ndfSynchQueueDomainCapability" ref="ndfSynchQueueDomainCapability" />
+	</bean>
+
+	<bean id="managedItemService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ManagedItemServiceImpl"
+		autowire-candidate="true">
+		<property name="managedItemCapability" ref="managedItemCapability" />
+	</bean>
+
+	<bean id="fdbMappingService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.FdbMappingServiceImpl"
+		autowire-candidate="true">
+		<!-- <property name="fdbMappingDomainCapability" ref="fdbMappingDomainCapability" 
+			/> -->
+		<property name="fdbDrugClassDomainCapability" ref="fdbDrugClassDomainCapability" />
+		<property name="fdbDrugIngredientDomainCapability" ref="fdbDrugIngredientDomainCapability" />
+		<property name="fdbDrugUnitDomainCapability" ref="fdbDrugUnitDomainCapability" />
+		<property name="fdbDosageFormDomainCapability" ref="fdbDosageFormDomainCapability" />
+		<property name="fdbGenericNameDomainCapability" ref="fdbGenericNameDomainCapability" />
+		<property name="domainService" ref="domainService" />
+		<property name="domainMappingExecutor" ref="domainMappingExecutor" />
+		<property name="fdbMappingProcess" ref="fdbMappingProcess" />
+	</bean>
+
+	<bean id="fdbMappingProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.FdbMappingProcessImpl">
+		<property name="fdbMappingService" ref="fdbMappingService" />
+		<property name="domainService" ref="domainService" />
+		<property name="transactionManager" ref="transactionManager" />
+	</bean>
+
+	<bean id="domainMappingExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+		<property name="concurrencyLimit" value="2" />
+	</bean>
+
+	<bean id="notificationService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.NotificationServiceImpl"
+		autowire-candidate="true">
+		<property name="notificationCapability" ref="notificationCapability" />
+	</bean>
+
+	<bean id="printTemplateService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.PrintTemplateServiceImpl"
+		autowire-candidate="true">
+		<property name="printTemplateCapability" ref="printTemplateCapability" />
+	</bean>
+
+	<bean id="requestService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.RequestServiceImpl"
+		autowire-candidate="true">
+		<property name="requestCapability" ref="requestCapability" />
+	</bean>
+
+	<bean id="searchTemplateService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.SearchTemplateServiceImpl"
+		autowire-candidate="true">
+		<property name="searchTemplateCapability" ref="searchTemplateCapability" />
+	</bean>
+
+	<bean id="migrationService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.MigrationServiceImpl"
+		autowire-candidate="true">
+		<property name="migrationProcessManager" ref="migrationProcessManager" />
+		<property name="resetNationalDatabaseDomainCapability" ref="resetNationalDatabaseDomainCapability" />
+		<property name="migrationErrorDomainCapability" ref="migrationErrorDomainCapability" />
+		<property name="migrationFileDomainCapability" ref="migrationFileDomainCapability" />
+		<property name="migrationCapability" ref="migrationCapability" />
+		<property name="migrationExportManager" ref="migrationExportManager" />
+	</bean>
+
+	<bean id="migrationCSVService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.MigrationCSVServiceImpl">
+		<property name="migrationCapability" ref="migrationCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="resetNationalDatabaseDomainCapability" ref="resetNationalDatabaseDomainCapability" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="orderableItemDomainCapability" ref="orderableItemDomainCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+	<bean id="migrationProcessManager"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.MigrationProcessManagerImpl">
+		<property name="migrationProcess" ref="migrationProcess" />
+		<property name="taskExecutor" ref="taskExecutor" />
+	</bean>
+
+	<bean id="migrationProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.MigrationProcessImpl">
+		<property name="migrationCSVService" ref="migrationCSVService" />
+		<property name="migrationCapability" ref="migrationCapability" />
+		<property name="migrationFileDomainCapability" ref="migrationFileDomainCapability" />
+		<property name="resetNationalDatabaseDomainCapability" ref="resetNationalDatabaseDomainCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+    
+    <bean id="nationalSettingService"
+        class="gov.va.med.pharmacy.peps.service.common.session.impl.NationalSettingServiceImpl"
+        autowire-candidate="true">
+        <property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+    </bean>
+
+	<bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+		<property name="concurrencyLimit" value="10" />
+	</bean>
+
+
+	<!-- export stuff starts here -->
+	<bean id="taskExportExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+		<property name="concurrencyLimit" value="2" />
+	</bean>
+
+	<bean id="migrationExportProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.MigrationExportProcessImpl">
+		<property name="migrationCSVService" ref="migrationCSVService" />
+		<property name="fdbMappingService" ref="fdbMappingService" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+
+		</property>
+	</bean>
+
+	<bean id="migrationExportManager"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.MigrationExportManagerImpl">
+		<property name="migrationExportProcess" ref="migrationExportProcess" />
+		<property name="taskExportExecutor" ref="taskExportExecutor" />
+	</bean>
+
+	<!-- Scheduler starts here -->
+	<bean id="inactivationCheckTask"
+		class="gov.va.med.pharmacy.peps.service.common.scheduler.tasks.InactivationCheckTaskImpl"
+		autowire-candidate="true">
+		<property name="proposedInactivateCapability" ref="proposedInactivateCapability" />
+		<property name="fdbSchedulerProcessCapability" ref="fdbSchedulerProcessCapability" />
+	</bean>
+
+	<bean id="fdbAddTask"
+		class="gov.va.med.pharmacy.peps.service.common.scheduler.tasks.FdbAddTaskImpl"
+		autowire-candidate="true">
+		<property name="autoAddUpdateCapability" ref="autoAddUpdateCapability" />
+		<property name="fdbSchedulerProcessCapability" ref="fdbSchedulerProcessCapability" />
+
+	</bean>
+
+	<bean id="fdbUpdateTask"
+		class="gov.va.med.pharmacy.peps.service.common.scheduler.tasks.FdbUpdateTaskImpl"
+		autowire-candidate="true">
+		<property name="autoAddUpdateCapability" ref="autoAddUpdateCapability" />
+		<property name="fdbSchedulerProcessCapability" ref="fdbSchedulerProcessCapability" />
+	</bean>
+
+	<bean id="stsTask"
+		class="gov.va.med.pharmacy.peps.service.common.scheduler.tasks.StsTaskImpl"
+		autowire-candidate="true">
+		<property name="stsCapability" ref="stsCapability" />
+		<property name="fdbSchedulerProcessCapability" ref="fdbSchedulerProcessCapability" />
+	</bean>
+
+	<bean id="fssTask"
+		class="gov.va.med.pharmacy.peps.service.common.scheduler.tasks.FssTaskImpl"
+		autowire-candidate="true">
+		<property name="fssCapability" ref="fssCapability" />
+		<property name="fdbSchedulerProcessCapability" ref="fdbSchedulerProcessCapability" />
+	</bean>
+
+	<bean id="schedulerState"
+		class="gov.va.med.pharmacy.peps.service.common.scheduler.SchedulerStateImpl">
+	</bean>
+
+	<bean id="fdbSchedulerProcessService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.FdbSchedulerProcessServiceImpl"
+		autowire-candidate="true">
+
+		<property name="fdbSchedulerProcessCapability" ref="fdbSchedulerProcessCapability" />
+	</bean>
+
+	<bean id="fdbSchedulerProcessCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.FdbSchedulerProcessCapabiltyImpl"
+		autowire-candidate="true">
+
+		<property name="jobFactory" ref="jobFactory" />
+		<property name="scheduler" ref="scheduler" />
+		<property name="fdbAddTrigger" ref="fdbAddTrigger" />
+		<property name="fdbAddJob" ref="fdbAddJob" />
+		<property name="fdbUpdateJob" ref="fdbUpdateJob" />
+		<property name="stsJob" ref="stsJob" />
+		<property name="fssJob" ref="fssJob" />
+		<property name="inactivationCheckJob" ref="inactivationCheckJob" />
+		<property name="schedulerState" ref="schedulerState" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+    	<property name="ndfSynchQueueDomainCapability" ref="ndfSynchQueueDomainCapability" />
+		<property name="vistaFileSynchCapability" ref="vistaFileSynchCapability" />
+		<property name="managedItemCapabilityFactory" ref="managedItemCapabilityFactory" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+
+
+	<bean id="jobFactory"
+		class="org.springframework.scheduling.quartz.SpringBeanJobFactory" />
+
+	<bean name="fdbAddJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass"
+			value="gov.va.med.pharmacy.peps.service.common.scheduler.jobs.FdbAddJob" />
+		<property name="name" value="fdbAddJob" />
+		<property name="applicationContextJobDataKey" value="applicationContext" />
+		<property name="group" value="FDBGroup" />
+		<property name="jobDataAsMap">
+			<map>
+				<entry value-ref="fdbAddTask" key="fdbAddTask" />
+			</map>
+		</property>
+
+	</bean>
+
+	<bean name="fdbUpdateJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass"
+			value="gov.va.med.pharmacy.peps.service.common.scheduler.jobs.FdbUpdateJob" />
+		<property name="name" value="fdbUpdateJob" />
+		<property name="applicationContextJobDataKey" value="applicationContext" />
+		<property name="group" value="FDBGroup" />
+		<property name="jobDataAsMap">
+			<map>
+				<entry value-ref="fdbUpdateTask" key="fdbUpdateTask" />
+			</map>
+		</property>
+
+	</bean>
+
+	<bean name="stsJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass"
+			value="gov.va.med.pharmacy.peps.service.common.scheduler.jobs.StsJob" />
+		<property name="name" value="stsJob" />
+		<property name="applicationContextJobDataKey" value="applicationContext" />
+		<property name="group" value="FDBGroup" />
+		<property name="jobDataAsMap">
+			<map>
+				<entry value-ref="stsTask" key="StsTask" />
+			</map>
+		</property>
+	</bean>
+
+
+	<bean name="fssJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass"
+			value="gov.va.med.pharmacy.peps.service.common.scheduler.jobs.FssJob" />
+		<property name="name" value="fssJob" />
+		<property name="applicationContextJobDataKey" value="applicationContext" />
+		<property name="group" value="FDBGroup" />
+		<property name="jobDataAsMap">
+			<map>
+				<entry value-ref="fssTask" key="fssTask" />
+			</map>
+		</property>
+
+	</bean>
+
+	<bean name="inactivationCheckJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass"
+			value="gov.va.med.pharmacy.peps.service.common.scheduler.jobs.InactivationCheckJob" />
+		<property name="name" value="inactivationCheckJob" />
+		<property name="applicationContextJobDataKey" value="applicationContext" />
+		<property name="group" value="FDBGroup" />
+		<property name="jobDataAsMap">
+			<map>
+				<entry value-ref="inactivationCheckTask" key="inactivationCheckTask" />
+			</map>
+		</property>
+	</bean>
+
+
+	<bean id="fdbAddTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="fdbAddJob" />
+		<property name="name" value="fdbAddTrigger" />
+		<!-- run at 14 PM every day -->
+		<property name="cronExpression" value="0 00 3 * * ?" />
+	</bean>
+
+	<bean id="fdbUpdateTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="fdbUpdateJob" />
+		<property name="name" value="fdbUpdateTrigger" />
+		<!-- run at 14 PM every day -->
+		<property name="cronExpression" value="0 50 2 * * ?" />
+	</bean>
+
+	<bean id="stsTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="stsJob" />
+		<property name="name" value="stsTrigger" />
+		<!-- run at 14 PM every day -->
+		<property name="cronExpression" value="0 40 2 * * ?" />
+	</bean>
+
+	<bean id="fssTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="fssJob" />
+		<property name="name" value="fssTrigger" />
+		<!-- run at 14 PM every day -->
+		<property name="cronExpression" value="0 30 2 * * ?" />
+	</bean>
+
+	<bean id="inactivationCheckTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="inactivationCheckJob" />
+		<property name="name" value="inactivationCheckTrigger" />
+		<!-- run at 14 PM every day -->
+		<property name="cronExpression" value="0 20 2 * * ?" />
+	</bean>
+
+	<bean id="scheduler"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="fdbAddTrigger" />
+				<ref bean="fdbUpdateTrigger" />
+				<ref bean="stsTrigger" />
+				<ref bean="fssTrigger" />
+				<ref bean="inactivationCheckTrigger" />
+			</list>
+		</property>
+		<property name="autoStartup" value="false" />
+		<property name="jobFactory" ref="jobFactory" />
+	</bean>
+
+	<!-- Scheduler ends here -->
+
+	<bean id="fDBUpdateProcessService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.FDBUpdateProcessServiceImpl"
+		autowire-candidate="true">
+
+		<property name="fdbUpdateProcessCapability" ref="fdbUpdateProcessCapability" />
+	</bean>
+
+	<bean id="userService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.UserServiceImpl"
+		autowire-candidate="true">
+		<property name="userCapability" ref="userCapability" />
+	</bean>
+
+	<bean id="consoleService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ConsoleServiceImpl"
+		autowire-candidate="true">
+		<property name="consoleCapability" ref="consoleCapability" />
+		<property name="drugReferenceCapability" ref="drugReferenceCapability" />
+	</bean>
+
+	<!-- report starts here -->
+	<bean id="reportsService"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ReportsServiceImpl"
+		autowire-candidate="true">
+		<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="reportExportManager" ref="reportExportManager" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+
+	</bean>
+
+	<bean id="reportExportManager"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ReportExportManagerImpl"
+		autowire-candidate="true">
+		<property name="reportExportProcess" ref="reportExportProcess" />
+		<property name="reportNdfProcess" ref="reportNdfProcess" />
+		<property name="reportIngredientProcess" ref="reportIngredientProcess" />
+		<property name="reportWarningProcess" ref="reportWarningProcess" />
+		<property name="reportExportExecutor" ref="reportExportExecutor" />
+	</bean>
+
+	<bean id="reportExportExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+		<property name="concurrencyLimit" value="4" />
+	</bean>
+
+	<bean id="reportExportProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ReportExportProcessImpl">
+		<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="domainService" ref="domainService" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+	</bean>
+
+	<bean id="reportNdfProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ReportNdfProcessImpl">
+		<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="domainService" ref="domainService" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+	</bean>
+	
+	<bean id="reportIngredientProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ReportIngredientProcessImpl">
+		<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="domainService" ref="domainService" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+	</bean>
+	
+	<bean id="reportWarningProcess"
+		class="gov.va.med.pharmacy.peps.service.common.session.impl.ReportWarningProcessImpl">
+		<property name="reportDomainCapability" ref="reportDomainCapability" />
+		<property name="domainService" ref="domainService" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+	</bean>
+
+	<!-- report ends here -->
+
+
+	<!-- Common Capabilities -->
+
+	<bean id="fdbUpdateProcessCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.FdbUpdateProcessCapabilityImpl"
+		autowire-candidate="true">
+		<property name="manufacturerDomainCapability" ref="manufacturerDomainCapability" />
+		<property name="packageTypeDomainCapability" ref="packageTypeDomainCapability" />
+		<property name="drugReferenceCapability" ref="drugReferenceCapability" />
+		<property name="drugReferenceAutoCapability" ref="drugReferenceAutoCapability" />
+		<property name="orderUnitDomainCapability" ref="orderUnitDomainCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="fdbAddDomainCapability" ref="fdbAddDomainCapability" />
+		<property name="fdbUpdateDomainCapability" ref="fdbUpdateDomainCapability" />
+		<property name="fdbAutoUpdateDomainCapability" ref="fdbAutoUpdateDomainCapability" />
+		<property name="fdbAutoAddDomainCapability" ref="fdbAutoAddDomainCapability" />
+		<property name="fdbNdcDomainCapability" ref="fdbNdcDomainCapability" />
+		<property name="requestDomainCapability" ref="requestDomainCapability" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="vistaFileSynchCapability" ref="vistaFileSynchCapability" />
+		<property name="fssInterfaceCapability" ref="fssInterfaceCapability" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+    	<property name="ndfSynchQueueDomainCapability" ref="ndfSynchQueueDomainCapability" />
+
+	</bean>
+	<bean id="autoAddUpdateCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.AutoAddUpdateCapabilityImpl"
+		autowire-candidate="true">
+		<property name="fdbUpdateProcessCapability" ref="fdbUpdateProcessCapability" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="manufacturerDomainCapability" ref="manufacturerDomainCapability" />
+		<property name="packageTypeDomainCapability" ref="packageTypeDomainCapability" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="vistaFileSynchCapability" ref="vistaFileSynchCapability" />
+		<property name="ndfSynchQueueDomainCapability" ref="ndfSynchQueueDomainCapability" />
+		<property name="drugReferenceCapability" ref="drugReferenceCapability" />
+		<property name="drugReferenceAutoCapability" ref="drugReferenceAutoCapability" />
+		<property name="fdbAutoAddDomainCapability" ref="fdbAutoAddDomainCapability" />
+		<property name="fdbAddDomainCapability" ref="fdbAddDomainCapability" />
+		<property name="fdbUpdateDomainCapability" ref="fdbUpdateDomainCapability" />
+		<property name="fdbAutoUpdateDomainCapability" ref="fdbAutoUpdateDomainCapability" />
+		<property name="fdbNdcDomainCapability" ref="fdbNdcDomainCapability" />
+		<property name="fdbProductDomainCapability" ref="fdbProductDomainCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+
+
+	<bean id="dataFieldsCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.DataFieldsCapabilityImpl"
+		autowire-candidate="true">
+		<property name="dataFieldsDomainCapability" ref="dataFieldsDomainCapability" />
+	</bean>
+
+	<bean id="ndcRulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.NdcRulesCapabilityImpl"
+		parent="rulesCapability" autowire-candidate="true">
+		<property name="intendedUseDomainCapability" ref="intendedUseDomainCapability" />
+	</bean>
+	
+	<bean id="ingredientRulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.IngredientRulesCapabilityImpl"
+		parent="rulesCapability" autowire-candidate="true">
+		<property name="ingredientDomainCapability" ref="ingredientDomainCapability" />
+	</bean>
+
+	<bean id="orderableItemRulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.OrderableItemRulesCapabilityImpl"
+		parent="rulesCapability" autowire-candidate="true">
+	</bean>
+
+	<bean id="migrationCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.MigrationCapabilityImpl"
+		autowire-candidate="true">
+
+		<property name="specialHandlingDomainCapability" ref="specialHandlingDomainCapability" />
+		<property name="resetNationalDatabaseDomainCapability" ref="resetNationalDatabaseDomainCapability" />
+		<property name="drugTextDomainCapability" ref="drugTextDomainCapability" />
+		<property name="orderUnitDomainCapability" ref="orderUnitDomainCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="drugUnitDomainCapability" ref="drugUnitDomainCapability" />
+		<property name="dosageFormDomainCapability" ref="dosageFormDomainCapability" />
+		<property name="drugClassDomainCapability" ref="drugClassDomainCapability" />
+		<property name="genericNameDomainCapability" ref="genericNameDomainCapability" />
+		<property name="dispenseUnitDomainCapability" ref="dispenseUnitDomainCapability" />
+		<property name="ingredientDomainCapability" ref="ingredientDomainCapability" />
+		<property name="migrationRequestCapability" ref="migrationRequestCapability" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="orderableItemDomainCapability" ref="orderableItemDomainCapability" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="manufacturerDomainCapability" ref="manufacturerDomainCapability" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="packageTypeDomainCapability" ref="packageTypeDomainCapability" />
+		<property name="drugReferenceCapability" ref="drugReferenceCapability" />
+		<property name="csFedScheduleDomainCapability" ref="csFedScheduleDomainCapability" />
+		<property name="migrationSynchFileCapability" ref="migrationSynchFileCapability" />
+		<property name="intendedUseDomainCapability" ref="intendedUseDomainCapability" />
+		<property name="standardMedRouteDomainCapability" ref="standardMedRouteDomainCapability" />
+		<property name="migrationErrorDomainCapability" ref="migrationErrorDomainCapability" />
+		<property name="fdbProductDomainCapability" ref="fdbProductDomainCapability" />
+		<property name="fdbNdcDomainCapability" ref="fdbNdcDomainCapability" />
+		<property name="fssInterfaceCapability" ref="fssInterfaceCapability" />
+		<property name="fdbDrugClassDomainCapability" ref="fdbDrugClassDomainCapability" />
+		<property name="fdbDrugIngredientDomainCapability" ref="fdbDrugIngredientDomainCapability" />
+		<property name="fdbDrugUnitDomainCapability" ref="fdbDrugUnitDomainCapability" />
+		<property name="fdbDosageFormDomainCapability" ref="fdbDosageFormDomainCapability" />
+		<property name="fdbGenericNameDomainCapability" ref="fdbGenericNameDomainCapability" />
+        <property name="vistaFileSynchCapability" ref="vistaFileSynchCapability" />
+
+
+
+	</bean>
+
+	<bean id="printTemplateCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.PrintTemplateCapabilityImpl"
+		autowire-candidate="true">
+		<property name="printTemplateDomainCapability" ref="printTemplateDomainCapability" />
+	</bean>
+
+	<bean id="productRulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.ProductRulesCapabilityImpl"
+		parent="rulesCapability" autowire-candidate="true">
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="drugUnitDomainCapability" ref="drugUnitDomainCapability" />
+	</bean>
+
+	<bean id="stsCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.StsCapabilityImpl"
+		autowire-candidate="true">
+		<property name="standardMedRouteDomainCapability" ref="standardMedRouteDomainCapability" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+	<bean id="fssCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.FssCapabilityImpl"
+		autowire-candidate="true">
+		<property name="fssInterfaceCapability" ref="fssInterfaceCapability" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+
+	<bean id="proposedInactivateCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.ProposedInactivateCapabilityImpl"
+		autowire-candidate="true">
+		<property name="itemAuditHistoryDomainCapability" ref="itemAuditHistoryDomainCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="requestDomainCapability" ref="requestDomainCapability" />
+		<property name="ndcDomainCapability" ref="ndcDomainCapability" />
+		<property name="productDomainCapability" ref="productDomainCapability" />
+		<property name="orderableItemDomainCapability" ref="orderableItemDomainCapability" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+		<property name="resetNationalDatabaseDomainCapability" ref="resetNationalDatabaseDomainCapability" />
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+	<bean id="rulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.DefaultRulesCapabilityImpl"
+		autowire-candidate="true">
+		<property name="environmentUtility" ref="environmentUtility" />
+		<property name="managedItemCapabilityFactory" ref="managedItemCapabilityFactory" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+		<property name="domainService" ref="domainService" />
+		<property name="vistaFileSynchCapability" ref="vistaFileSynchCapability" />
+	</bean>
+
+	<bean id="rxConsultRulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.RxConsultRulesCapabilityImpl"
+		parent="rulesCapability" autowire-candidate="true" />
+
+	<bean id="drugTextRulesCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.DrugTextRulesCapabilityImpl"
+		parent="rulesCapability" autowire-candidate="true" />
+
+	<bean id="searchTemplateCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.SearchTemplateCapabilityImpl"
+		autowire-candidate="true">
+		<property name="searchTemplateDomainCapability" ref="searchTemplateDomainCapability" />
+	</bean>
+
+	<bean id="userCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.UserCapabilityImpl"
+		autowire-candidate="true">
+		<property name="environmentUtility" ref="environmentUtility" />
+		<property name="userDomainCapability" ref="userDomainCapability" />
+		<property name="seqNumDomainCapability" ref="seqNumDomainCapability" />
+		<property name="nationalSettingDomainCapability" ref="nationalSettingDomainCapability" />
+	</bean>
+
+	<bean id="notificationCapability"
+		class="gov.va.med.pharmacy.peps.service.common.capability.impl.NotificationCapabilityImpl"
+		autowire-candidate="true">
+		<property name="notificationDomainCapability" ref="notificationDomainCapability" />
+		<property name="managedItemCapability" ref="managedItemCapability" />
+	</bean>
+
+
+
+	<!-- Common Utilities -->
+	<bean id="managedItemCapabilityFactory"
+		class="gov.va.med.pharmacy.peps.service.common.utility.impl.ManagedItemCapabilityFactoryImpl"
+		parent="managedItemDomainCapabilityFactory" autowire-candidate="true" />
+
+	<bean id="requestStateMachineFactory"
+		class="gov.va.med.pharmacy.peps.service.common.utility.requestmachine.RequestStateMachineFactory"
+		autowire-candidate="true">
+		<property name="environmentUtility" ref="environmentUtility" />
+	</bean>
+
+	<!-- External Common Services -->
+	<bean id="drugDataService"
+		class="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.DrugDataServiceImpl"
+		autowire-candidate="true">
+		<property name="drugDataCapability" ref="drugDataCapability" />
+	</bean>
+
+	<!-- <bean id="drugAccountabilityService" class="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.DrugAccountabilityServiceImpl" 
+		autowire-candidate="true"> <property name="drugAccountServiceCapability" 
+		ref="drugAccountServiceCapability" /> </bean> -->
+
+	<bean id="quickActionService"
+		class="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.QuickActionServiceImpl"
+		autowire-candidate="true">
+		<property name="quickActionCapability" ref="quickActionCapability" />
+	</bean>
+
+	<bean id="drugReferenceService"
+		class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.impl.DrugReferenceServiceImpl"
+		autowire-candidate="true">
+		<property name="drugReferenceCapability" ref="drugReferenceCapability" />
+	</bean>
+
+	<bean id="synchronizationStatusService"
+		class="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.SynchronizationStatusServiceImpl"
+		autowire-candidate="true">
+		<property name="synchronizationStatusCapability" ref="synchronizationStatusCapability" />
+	</bean>
+
+	<bean id="orderCheckService"
+		class="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.OrderCheckServiceImpl"
+		autowire-candidate="true">
+		<property name="processOrderChecksCapability" ref="processOrderChecksCapability" />
+	</bean>
+
+	<bean id="drugInfoService"
+		class="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.DrugInfoServiceImpl"
+		autowire-candidate="true">
+		<property name="processDrugInfoCapability" ref="processDrugInfoCapability" />
+	</bean>
+
+	<tx:annotation-driven />
+
+
+</beans>

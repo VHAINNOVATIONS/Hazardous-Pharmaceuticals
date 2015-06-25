@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FELPATGP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-03 :: 14:08:18:985 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-03 :: 14:12:19:316 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Test limited - Comment</Summary>
+    <Description>The three test methods are limited to not null and not empty checking.&#xD;
+It is not likely to be able to add a test for specific contents since they vary by developer, generation, etc.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FELPMVPO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-03 :: 14:17:41:772 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-03 :: 14:18:26:357 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/common/capability/impl/BuildVersionCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Comment - all good here (this is a test)</Summary>
+    <Description>* Return the baseline used for the current build and the date the build was run.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FELPXHDV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-03 :: 14:25:56:419 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-03 :: 14:26:20:048 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/common/capability/BuildVersionCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Comment - all good here (more test)</Summary>
+    <Description>public interface BuildVersionCapability {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

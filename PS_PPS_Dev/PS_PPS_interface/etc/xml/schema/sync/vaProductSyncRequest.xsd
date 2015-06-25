@@ -1,0 +1,265 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/vaProductSyncRequest" 
+        xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/vaProductSyncRequest" 
+        elementFormDefault="qualified" attributeFormDefault="unqualified">
+        
+        <xsd:element name="vaProductSyncRequest">
+        <xsd:complexType>
+           <xsd:sequence>
+           
+              <xsd:element 
+                  name="RequestType" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+ 
+               <xsd:element
+                  name="vaProductIen" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="vaProductName" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vaGenericNameRecord" 
+                  type="vaGenericNameType"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="dosageFormRecord" 
+                  type="dosageFormType"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="strength" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="units" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="nationalFormularyName" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vaPrintName" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vaProductIdentifier" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="transmitToCmop" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vaDispenseUnitRecord" 
+                  type="vaDispenseUnitType"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="activeIngredientsRecord" 
+                  type="activeIngredientsType"
+                  minOccurs="0" 
+                  maxOccurs="unbounded" />
+                  
+               <xsd:element
+                  name="gcnSeqNo" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="primaryVaDrugClassRecord" 
+                  type="primaryVaDrugClassType"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="nationalFormularyIndicator" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="csFederalSchedule" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="singleMultiSourceProduct" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="inactivationDate" 
+                  type="xsd:dateTime"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="overrideDfDoseChkExclusion" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="excludeDrugDrugInteraction" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="createPossibleDosage" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="productPackage" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="masterEntryForVuid" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vuid" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="effectiveDateTimeRecord" 
+                  type="effectiveDateTimeType"
+                  minOccurs="1" 
+                  maxOccurs="unbounded" />
+                  
+               <xsd:element
+                  name="fdaMedGuide" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="serviceCode" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="possibleDosagesToCreate" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+                   <xsd:element
+                  name="hazardToDispose" 
+                  type="xsd:boolean"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+                   <xsd:element
+                  name="primaryEpaCode" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+                   <xsd:element
+                  name="wasteSortCode" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+                   <xsd:element
+                  name="dotShippingName" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+                   <xsd:element
+                  name="hazardToHandle" 
+                  type="xsd:boolean"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+
+           </xsd:sequence>
+        </xsd:complexType>
+     </xsd:element>
+ 
+     <xsd:complexType name="vaGenericNameType">
+        <xsd:sequence>
+           <xsd:element name="vaGenericNameName" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="vaGenericIen" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>                  
+
+     <xsd:complexType name="dosageFormType">
+        <xsd:sequence>
+           <xsd:element name="dosageFormName" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="dosageFormIen" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>                  
+
+     <xsd:complexType name="vaDispenseUnitType">
+        <xsd:sequence>
+           <xsd:element name="vaDispenseUnitName" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="vaDispenseUnitIen" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>                  
+
+     <xsd:complexType name="activeIngredientsType">
+        <xsd:sequence>
+           <xsd:element name="activeIngredientsName" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="activeIngredientsIen" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="activeIngredientsStrength" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+           <xsd:element name="activeIngredientsUnitsName" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+           <xsd:element name="activeIngredientsUnitsIen" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>                  
+
+     <xsd:complexType name="primaryVaDrugClassType">
+        <xsd:sequence>
+           <xsd:element name="primaryVaDrugClassCode" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="primaryVaDrugClassClassification" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="primaryVaDrugClassIen" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>                  
+
+     <xsd:complexType name="effectiveDateTimeType">
+        <xsd:sequence>
+           <xsd:element name="effectiveDateTime" type="xsd:dateTime" minOccurs="1" maxOccurs="1"></xsd:element>
+           <xsd:element name="effectiveDateTimeStatus" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+     </xsd:complexType>                  
+
+</xsd:schema>
+                  

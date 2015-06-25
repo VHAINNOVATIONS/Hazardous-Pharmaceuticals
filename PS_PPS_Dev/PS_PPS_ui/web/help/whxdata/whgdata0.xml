@@ -1,0 +1,74 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="10F" value="VHA Office of Logistics" />
+ <entry name="A&amp;MM" value="Acquisition and Materiel Management" />
+ <entry name="AAA" value="Authentication, Authorization and Access" />
+ <entry name="AAC" value="Austin Automation Center" />
+ <entry name="AAIP" value="Authorization and Authentication Infrastructure Program" />
+ <entry name="ABC Inventory Analysis" value="A method used to categorize inventory into groups based on certain characteristics in order to develop inventory planning policies, plan orders, set inventory control schedules, and manage inventory quantity levels and costs. The three categories may be based on certain activity characteristics. “A” items compose 10% of the products but are 70% of the cost. “B” items compose 20% of the items but are 20 % of the cost. “C” items compose 70% of products but are 10% of the cost. Other ABC characteristics could be developed based on such things as consumption rates or drug characteristics such as risk or effectiveness." />
+ <entry name="Accept Order" value="An authorized user indicating to the system after entering an order that the order is complete and ready for signature. The acceptance of the order changes the order status to “Pending” (refer to Pending definition) and triggers a notification to the provider for a co-signature or second signature (if needed)." />
+ <entry name="Accessor" value="A&#160;Java method that examines the state of an object, does not change it, and typically returns a result. Accessors are often called “getters,” and their names often start with “get.”" />
+ <entry name="ACD" value="Automatic Call Distribution" />
+ <entry name="ACID" value="Automicity, Consistency, Isolation, and Durability" />
+ <entry name="ACK (HL7)" value="Acknowledgement" />
+ <entry name="Acquisition and Materiel Management (A&amp;MM)" value="The service organization that reviews all requests for supplies and equipment, and maintains systems, procedures, controls, and reports for: stock control, equipment planning and acquisition, property accounting and control, procurement from VA sources and other agencies, excess and exchange/sale property disposal, and supply fund management programs. The service organization also initiates and coordinates all equipment and supply action involving new and replacement facility construction, and audits invoices and all receiving reports and resolves discrepancies with Fiscal Service." />
+ <entry name="ACR" value="American College of Radiology" />
+ <entry name="Activator" value="A person given the authority to review and “finish” a pending electronic product order so that it can be filled in accordance with Provider instructions." />
+ <entry name="Actor" value="A person who will use the envisioned system. Actors are used in Use Cases to document and model the envisioned System/User interaction." />
+ <entry name="Actor Generalization" value="An approach used in Use Case development to show that actors are specializations of one another. For example, the PEPS Manager actor is a generalization of a PEPS Local Manager and a PEPS National Manager." />
+ <entry name="ADA" value="American Disability Act" />
+ <entry name="Additive" value="A drug (e.g., an electrolyte, vitamin, nutrient, antibiotic) that is added to an IV solution for the purpose of parenteral administration (giving a drug intravenously)." />
+ <entry name="ADDS" value="Automated Drug Dispensing System" />
+ <entry name="ADE" value="Adverse Drug Event" />
+ <entry name="Administration Schedule Domain" value="Contains the sets of standard times over which medications are to be administered." />
+ <entry name="Administrative Discrepancy Limit" value="A VA Data Field in the PEPS system denoting the amount of a drug that can be missing before a criminal reporting process is started." />
+ <entry name="Admission/Discharge/" value="A module of the Patient Information Management System (PIMS) that provides a comprehensive range of software supporting the administrative functions of Patient registration, admission, discharge, and transfer." />
+ <entry name="Admixture" value="A type of intravenously administered medication comprised of any number of additives (including zero) in at least one solution. It is given at a specified flow rate." />
+ <entry name="ADPAC" value="Automated Data Processing Application Coordinator" />
+ <entry name="ADR" value="Adverse Drug Reaction" />
+ <entry name="ADR (Architecture)" value="Administrative Data Repository" />
+ <entry name="ADT" value="Admission/Discharge/Transfer" />
+ <entry name="Adverse Drug" value="The unwanted or unintended effects of an adverse drug event that occur during the drug’s proper use." />
+ <entry name="Adverse Drug Event (ADE)" value="The unwanted or unintended events caused by medical management rather than by the underlying disease or the condition of the Patient. May not always cause an injury." />
+ <entry name="Adverse Reaction Tracking (ART)" value="The VHA software package that stores and reports the Patient allergy or adverse reaction data." />
+ <entry name="AHFS (Framework)" value="American Hospital Formulary Service Framework" />
+ <entry name="AICC" value="Aviation Industry CBT Committee" />
+ <entry name="AID" value="Architecture and Interface Design Strategy Document" />
+ <entry name="Alerts" value="A software object typically generated by an application in response to some particular event. Alerts are messages that require acknowledgement from their recipients." />
+ <entry name="Allocated Inventory" value="The quantity of physical inventory on-hand (i.e., in storage at that particular location) that is committed for use in filling activated Patient orders." />
+ <entry name="Alternate Flow" value="A term used when developing Use Cases. An Alternate Flow is one segment of a complete path through a Use Case." />
+ <entry name="Ambulatory Care Reporting Project" value="The process of collecting and storing encounter-based clinical, diagnostic, and administrative Outpatient data for daily transmission to the Austin Automation Center." />
+ <entry name="AMIS" value="Automated Management Information System" />
+ <entry name="AMS" value="Addiction Management System" />
+ <entry name="Ancillary Support" value="Auxiliary or secondary services provided to a patient in addition to his or her main healthcare services. For example, lab tests are typically considered ancillary support." />
+ <entry name="Another Neat" value="A Java-based software application building tool that provides full portability for pure Java code." />
+ <entry name="ANSI" value="American National Standards Institute" />
+ <entry name="ANT" value="Another Neat Tool" />
+ <entry name="API" value="Application Programming Interface" />
+ <entry name="Application" value="A software product that provides a specified functionality." />
+ <entry name="Application Package Use" value="Indicates which VistA package uses the item (e.g., Inpatient, Outpatient)." />
+ <entry name="Application Programming Interface (API)" value="Enables applications to communicate with each other. An API is the set of programming language constructs or statements that can be coded in an application program to obtain the specific functions and services provided by an underlying operating system or service program." />
+ <entry name="Application Services" value="A single logical authoritative source of data. Its purpose is to encapsulate the business rules associated with its data and to abstract the data source(s) from the applications and/or services that interact with it (i.e., Billing, Clinical Reminders, Person Demographics, Terminology, Appointment Management)." />
+ <entry name="APRD" value="Audible Prescription Reading Devices" />
+ <entry name="AR" value="Accounts Receivable" />
+ <entry name="AR/WS" value="Inpatient Pharmacy Automatic Replenishment/Ward Stock" />
+ <entry name="Architecture" value="The organizational structure of a system Hardware Configuration Item (HWCI), or Computer Software Configuration Item (CSCI), identifying its components, their interfaces, and a concept of execution among them." />
+ <entry name="Area of Use" value="Any location where inventory is maintained, including pharmacies, Controlled Substances (CS) vaults, wards, clinics, etc." />
+ <entry name="ART" value="Adverse Reaction Tracking" />
+ <entry name="Artifact" value="A physical piece of information used or produced by a software development process. Examples of artifacts include documents, models, source files, scripts, and binary executable files. It is a work product or a deliverable." />
+ <entry name="ASC" value="Accredited Standards Committees" />
+ <entry name="ASIS" value="Application Structure and Integration Services" />
+ <entry name="ASP" value="Active Server Page" />
+ <entry name="Assumption" value="An external factor that may be true in the future and that may have an impact on how an application is built." />
+ <entry name="ASTM" value="American Society for Testing and Materials" />
+ <entry name="Asynchronous" value="Events that are not synchronized by a shared signal such as clock or semaphore, proceeding independently." />
+ <entry name="ATC Canister" value="The brand name for the automatic dispensing unit that is used to package specific medications into unit dose packages. " />
+ <entry name="ATP" value="Acceptance Test Plan" />
+ <entry name="Attribute" value="A name property of the class or its objects. " />
+ <entry name="Audit Record (Inventory)" value="A record stored in the system to allow tracking, accountability, reporting, and process metrics of specific actions. One example is the required accountability throughout the CS handling processes." />
+ <entry name="Authentication, Authorization, and Access (AAA) Security" value="The AAIP initiative has been replaced by KAAJEE." />
+ <entry name="Authoritative Source" value="A single, unambiguous, reliable, and official representation within a system." />
+ <entry name="Authorized User" value="A person given the appropriate system access and privileges to perform some task." />
+ <entry name="Automated Management Information System (AMIS)" value="A generalized system established to provide and meet the reporting requirements for the VHA and to provide statistical data for management use at all levels." />
+
+</glossarydata>

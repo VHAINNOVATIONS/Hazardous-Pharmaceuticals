@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="loadSearchTemplates">
+
+    <action-state id="loadSearchTemplates">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="retrieveSearchTemplates" />
+        </evaluate>
+        <transition
+            on="success"
+            to="manageSearchTemplates" />
+    </action-state>
+
+    <view-state
+        id="manageSearchTemplates"
+        view="advanced.search.templates">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="search" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="remove"
+            to="removeSearchTemplates" />
+        <transition
+            on="retrieve"
+            to="retrieveSearchTemplate" />
+        <transition
+            on="default"
+            to="setDefaultTemplate" />
+        <transition
+            on="undefault"
+            to="unDefaultTemplate" />
+        <transition
+            on="advanced"
+            to="cancel" />
+    </view-state>
+
+    <action-state id="setDefaultTemplate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="setDefaultSearch" />
+        </evaluate>
+        <transition
+            on="success"
+            to="manageSearchTemplates" />
+        <transition
+            on="input"
+            to="exceptionEndState" />
+    </action-state>
+
+    <action-state id="unDefaultTemplate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="unDefaultSearch" />
+        </evaluate>
+        <transition
+            on="success"
+            to="manageSearchTemplates" />
+        <transition
+            on="input"
+            to="exceptionEndState" />
+    </action-state>
+
+    <action-state id="retrieveSearchTemplate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="retrieveSearchTemplate" />
+        </evaluate>
+        <transition
+            on="success"
+            to="retrieveEndState" />
+        <transition
+            on="input"
+            to="exceptionEndState" />
+    </action-state>
+
+    <action-state id="removeSearchTemplates">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="removeSearchTemplates" />
+        </evaluate>
+        <transition
+            on="success"
+            to="manageSearchTemplates" />
+        <transition
+            on="input"
+            to="exceptionEndState" />
+    </action-state>
+
+    <end-state id="retrieveEndState"/>
+
+    <end-state id="cancel" />
+
+</flow>

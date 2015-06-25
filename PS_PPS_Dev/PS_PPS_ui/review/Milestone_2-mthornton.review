@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4E4LRC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:03:10:632 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:37:47:858 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="27">src/gov/va/med/pharmacy/peps/presentation/common/utility/impl/DomainUtilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>At Least One Constructor</Summary>
+    <Description>May want to consider adding a constructor to this file.</Description>
+    <Annotation>We already have the default empty constructor, do we need anything more?</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EWWWP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:25:11:449 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:07:05:258 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="99">src/gov/va/med/pharmacy/peps/presentation/common/utility/WizardController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Javadoc insufficient</Summary>
+    <Description>Missing and incomplete javadoc</Description>
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EYHPS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:26:25:072 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:27:50:834 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="249">src/gov/va/med/pharmacy/peps/presentation/common/utility/WizardController.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Confusing ternary</Summary>
+    <Description>// Verify expected model, reset flows if not the right type.&#xD;
+            if (! isTopLevelFlow() &amp;&amp; ! isCompatibleModel(currentItem)) {&#xD;
+                resetFlows();&#xD;
+            }&#xD;
+            &#xD;
+            // Else, add the new sub-flow.&#xD;
+            else {&#xD;
+                flows.push(new Flow(FlowState.SEARCH_SUB_FLOW));&#xD;
+            }</Description>
+    <Annotation>consider reversing if/then logic to simplify understanding</Annotation>
+    <Revision>Changed such that code inside if/else logic is reversed and that the test is now if (isTopLevelFlow() || isCompatibleModel(currentItem)). So the flows are reset only if both are false, which was the logic previously.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F030N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:27:39:335 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:37:30:264 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="41">src/gov/va/med/pharmacy/peps/presentation/common/utility/ExceptionFilter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add a constructor</Summary>
+    <Description />
+    <Annotation>We already have the default empty constructor, do we need anything more?</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F17FW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:28:31:724 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:37:15:796 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="21">src/gov/va/med/pharmacy/peps/presentation/common/utility/DifferenceUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add a constructor</Summary>
+    <Description />
+    <Annotation>We already have the default empty constructor, do we need anything more?</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F3AWT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:30:09:533 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:31:04:594 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="109">src/gov/va/med/pharmacy/peps/presentation/common/utility/DateFormatUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Recommend reducing cyclomatic complexity</Summary>
+    <Description>Suggest that we parse logic into different methods</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FYNJ1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:54:32:221 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:36:58:343 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="22">src/gov/va/med/pharmacy/peps/presentation/common/utility/ApplicationContextUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add a constructor</Summary>
+    <Description />
+    <Annotation>We already have the default empty constructor, do we need anything more?</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FZT8P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:55:26:281 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:26:30:781 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="25">src/gov/va/med/pharmacy/peps/presentation/common/struts/SelectableTypeConverter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add one constructor</Summary>
+    <Description />
+    <Annotation>We already have the default empty constructor, do we need anything more?</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4G31HX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:57:56:949 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:35:15:062 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="41">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/ValidationExceptionInterceptor.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Shouldn't this throw a lesser exception?</Summary>
+    <Description>Which exceptions can be thrown here?</Description>
+    <Annotation>The invocation.invoke() call throws Exception, forcing the intercept() method to throw Exception. We don't really have a choice but to throw the generic class.</Annotation>
+    <Revision>Left method signature as-is.</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4G5BWU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:59:43:758 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 11:34:00:750 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>tstavenger</AssignedTo>
+    <File line="59">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Should the @Override tag be here?</Summary>
+    <Description>Check this throughout the interceptors, please</Description>
+    <Annotation>Although not required to compile, the @Override annotation allows for the compiler to check that the method is actually overriding a super class method. Therefore, the @Override annotations can stay as is.</Annotation>
+    <Revision>Left annotations as is.</Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GHPSU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:09:21:630 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:49:31:693 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="48">web/javascript/CSSMenuHorizontal.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should probably put onload calls in a single 'master' file</Summary>
+    <Description>Since another javascript calling onload with another function could collide with the use of onload here, there should be some master place where all onloads go.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GKWWD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:11:50:797 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:01:37:465 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="19">web/javascript/DynamicContent.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused empty methods</Summary>
+    <Description />
+    <Annotation />
+    <Revision>methods removed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GO8Q1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:14:26:089 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:56:00:822 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="51">web/javascript/CSSMenuHorizontal.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add javadoc header</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GON8L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:14:44:901 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:56:24:041 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="51">web/javascript/cookies.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add javadoc header</Summary>
+    <Description />
+    <Annotation />
+    <Revision>added javadoc</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

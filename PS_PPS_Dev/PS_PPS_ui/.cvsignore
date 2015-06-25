@@ -1,0 +1,5 @@
+build
+classes
+tmp
+log
+junit*properties

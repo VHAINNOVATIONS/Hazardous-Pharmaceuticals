@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplVaGenNameDo"
+    table="EPL_VA_GEN_NAMES"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="eplId"
+        type="java.lang.Long"
+        column="EPL_ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="vuid"
+        type="java.lang.String"
+        column="VUID"
+        not-null="true"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="genericName"
+        type="java.lang.String"
+        column="GENERIC_NAME"
+        not-null="true"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="inactivationDate"
+        type="java.util.Date"
+        column="INACTIVATION_DATE"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="requestStatus"
+        type="java.lang.String"
+        column="REQUEST_STATUS"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="itemStatus"
+        type="java.lang.String"
+        column="ITEM_STATUS"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="rejectReasonText"
+        type="java.lang.String"
+        column="REJECT_REASON_TEXT"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+     <property
+            name="requestRejectReason"
+            type="java.lang.String"
+            column="REQUEST_REJECT_REASON"
+            length="100">
+            <meta attribute="use-in-tostring">true</meta>
+            <meta attribute="use-in-equals">true</meta>
+        </property>
+    <property
+        name="revisionNumber"
+        type="java.lang.Long"
+        column="REVISION_NUMBER"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional one-to-many association to EplProductDo removed -->
+ 
+
+</class>
+</hibernate-mapping>
+

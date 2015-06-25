@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app
+    xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:wls="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+    xsi:schemaLocation="
+        http://java.sun.com/xml/ns/j2ee 
+        http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd 
+        http://xmlns.oracle.com/weblogic/weblogic-web-app 
+        http://xmlns.oracle.com/weblogic/weblogic-web-app/1.2/weblogic-web-app.xsd">
+
+    <jsp-descriptor>
+        <keepgenerated>true</keepgenerated>
+        <!-- <precompile>true</precompile>
+        <precompile-continue>true</precompile-continue> -->
+        <verbose>true</verbose>
+    </jsp-descriptor>
+    
+    <run-as-role-assignment>
+        <role-name>adminuserrole</role-name>
+        <run-as-principal-name>KAAJEE</run-as-principal-name>
+    </run-as-role-assignment>
+
+    <security-role-assignment>
+        <role-name>AUTHENTICATED_KAAJEE_USER</role-name>
+        <principal-name>AUTHENTICATED_KAAJEE_USER</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PEPS LOCAL MANAGER</role-name>
+        <principal-name>PEPS LOCAL MANAGER</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PEPS LOCAL ADMIN</role-name>
+        <principal-name>PEPS LOCAL ADMIN</principal-name>
+    </security-role-assignment>
+<!-- 
+    <security-role-assignment>
+        <role-name>PEPS NATIONAL MANAGER</role-name>
+        <principal-name>PEPS NATIONAL MANAGER</principal-name>
+    </security-role-assignment>
+    
+    <security-role-assignment>
+        <role-name>PEPS NATIONAL ADMIN</role-name>
+        <principal-name>PEPS NATIONAL ADMIN</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PEPS NATIONAL VIEWER</role-name>
+        <principal-name>PEPS NATIONAL VIEWER</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PEPS SECOND REVIEWER</role-name>
+        <principal-name>PEPS SECOND REVIEWER</principal-name>
+    </security-role-assignment>
+    -->
+    
+    <security-role-assignment>
+        <role-name>PEPS LOCAL VIEWER</role-name>
+        <principal-name>PEPS LOCAL VIEWER</principal-name>
+    </security-role-assignment>
+
+    
+    <!-- new keys role assignments -->
+     
+    <security-role-assignment>
+        <role-name>PSS_PPSN_MANAGER</role-name>
+        <principal-name>PSS_PPSN_MANAGER</principal-name>
+    </security-role-assignment>
+        
+    <security-role-assignment>
+        <role-name>PSS_PPSN_MIGRATOR</role-name>
+        <principal-name>PSS_PPSN_MIGRATOR</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PSS_PPSN_SECOND_APPROVER</role-name>
+        <principal-name>PSS_PPSN_SECOND_APPROVER</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PSS_PPSN_SUPERVISOR</role-name>
+        <principal-name>PSS_PPSN_SUPERVISOR</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>PSS_PPSN_VIEWER</role-name>
+        <principal-name>PSS_PPSN_VIEWER</principal-name>
+    </security-role-assignment>
+    
+    <session-descriptor>
+        <cookie-name>kaajeeJSESSIONID</cookie-name>
+    </session-descriptor>
+
+    <!-- 
+    <wls:jsp-descriptor>
+        <wls:page-check-seconds>-1</wls:page-check-seconds>
+    </wls:jsp-descriptor>
+
+    <wls:container-descriptor>
+        <wls:servlet-reload-check-secs>-1</wls:servlet-reload-check-secs>
+        <wls:resource-reload-check-secs>-1</wls:resource-reload-check-secs>
+    </wls:container-descriptor>
+    -->
+</weblogic-web-app>

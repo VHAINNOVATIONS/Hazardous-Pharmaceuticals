@@ -1,0 +1,1113 @@
+/* Entire document */
+html {
+	width: 1250px;
+}
+
+body {
+	width: inherit;
+	margin: 0;
+}
+
+h1 {
+	color: #000000; /* black */
+	text-align: center;
+	font-weight: bold;
+	font-family: arial; /* set the font for h1 headers */
+	font-size: 12px; /* set the font for h1 headers */
+	padding: 0;
+	margin: 0;
+}
+
+.redText {
+	color: #FF0000; /* red */
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+/* All header information */
+.header {
+	width: inherit;
+	background: #002266; /* navy blue */
+	color: #FFFFFF; /* white */
+	font-weight: bold;
+}
+
+#showInactivePanel {
+	margin-bottom: 20px !important;
+}
+
+/* banner image */
+.banner {
+	width: 700px;
+	height: 83px;
+	/* was 78 - increased to cover small white space in IE9 */
+	background: #002266; /* navy blue */
+	clear: left;
+	float: left;
+}
+
+/* Application header/title */
+.branding {
+	float: left;
+	font-size: 20px;
+	background: #002266; /* navy blue */
+	height: 30px;
+	width: 850px;
+	text-align: center;
+}
+
+/* Navigation bar */
+.navigation {
+	width: inherit;
+	height: 130px;
+	background: #2E3A3F; /* dark grey */
+	clear: both;
+}
+
+/* Bread crumb links */
+.breadcrumbs {
+	background: transparent;
+	font-family: arial; /* set the font for breadcrumbs */
+	font-size: 12px; /* set the font for breadcrumbs */
+	margin-top: 4px; /* changed from 10px for IE9 compatibility */
+	*margin-top: 10px; /* IE7 */
+	margin-bottom: 24px; /* changed from 10px for IE9 compatibility */
+	*margin-bottom: 10px; /* IE7 */
+	margin-left: 10px;
+}
+
+/* User login module */
+.user-info {
+	font-family: arial; /* set the font for login-user info */
+	font-size: 12px; /* set the font for login-user info */
+	float: right;
+	text-align: right;
+	background: #002266; /* navy blue */
+	width: 540px;
+	height: 35px; /* changed from 30 to fill in space in IE9 */
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+/* Links used to skip navigation links */
+.skip-links {
+	font-family: arial; /* set the font for skip-nav link */
+	font-size: 10px; /* set the font for skip-nav link */
+	float: right;
+	text-align: right;
+	background: #002266; /* navy blue */
+	width: 540px;
+	height: 30px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+}
+
+/* Text used to prompt user */
+.instructionalText {
+	font-family: arial; /* set the font for instructional text */
+	font-size: 12px; /* set the font for instructional text */
+	padding-bottom: 10px;
+}
+
+/* Main body of app */
+.body {
+	background: #FFFFFF; /* white */
+	color: #000000; /* black */
+	font-weight: normal;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	width: inherit;
+}
+
+/* header portion of main body */
+.body-header {
+	width: inherit;
+	background: #eeeeee; /* light grey */
+	border-top: 1px solid #002266;
+	border-bottom: 1px solid #002266;
+	/* removed to allow grey to blend behind tabs */
+	padding-left: 0px; /* was 10px and this pushed it to the right in FF */
+	margin: 0px;
+	clear: both;
+	font-family: arial; /* set the font for header items, below the menu */
+	font-size: 12px; /* set the font for header items, below the menu */
+}
+
+/* content portion of main body */
+.body-content {
+	width: inherit;
+	clear: both;
+	background: #FFFFFF; /* white */
+	color: #000000; /* black */
+	height: 100%;
+	font-family: arial; /* set the font for labels, fieldset names, etc. */
+	font-size: 12px; /* set the font for labels, fieldset names, etc. */
+}
+
+/* content portion of main body */
+.body-content-left,.footer-left {
+	width: 48%;
+	float: left;
+	margin: 0px;
+	clear: left;
+	padding: 0 1% 0 1%;
+}
+
+/* footer portion of main body */
+.body-footer {
+	width: 1250px;
+	clear: both;
+	background: #FFFFFF; /* white */
+	color: #000000; /* black */
+	font-weight: normal;
+	/*position: absolute;
+	bottom: 30px;*/
+}
+
+.divider {
+	border-left: solid 1px #808080;
+	border-right-color: #ffffff;
+	position: absolute;
+	vertical-align: middle;
+	width: 0px;
+	height: 100%;
+}
+
+.body-content-right,.footer-right {
+	width: 600px;
+	float: left;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.footer {
+	width: 1250px;
+	background: #FFFFFF; /* white */
+	color: #000000; /* black */
+	font-weight: normal;
+	clear: both;
+	/*position: absolute;
+	bottom: 0px;*/
+	font-family: arial;
+	/* set the font for links at the bottom of the page */
+	font-size: 12px; /* set the font for links at the bottom of the page */
+}
+
+/* Formatting classes */
+a.HeaderLinks:link {
+	color: #FFFFCC;
+}
+
+a.HeaderLinks:visited {
+	color: #FFFFCC;
+}
+
+a.HeaderLinks:hover {
+	color: #E2144A;
+}
+
+a.HeaderLinks:active {
+	color: #FFFFFF;
+}
+
+.panel {
+	clear: both;
+	width: 100%;
+
+	/* padding: 5px 0 5px 0; */
+}
+
+.twoColumn {
+	width: 49.5%;
+	float: left;
+}
+
+.threeColumn {
+	width: 33%;
+	float: left;
+}
+
+.threeColumn1 {
+	width: 30%;
+	float: left;
+}
+
+.threeColumn2 {
+	width: 40%;
+	float: right;
+}
+
+.threeColumn2left {
+	width: 40%;
+	float: left;
+}
+
+.fourColumn {
+	width: 24.75%;
+	float: left;
+}
+
+.eightColumn {
+	width: 12.4%;
+	float: left;
+}
+
+.middle {
+	width: 49.5%;
+	float: left;
+	margin-left: 49.5%;
+}
+
+.row {
+	clear: left;
+	/* padding: 5px 0 5px 0; */
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.tabbed {
+	margin-left: 150px;
+}
+
+.clearLeft {
+	clear: left;
+}
+
+.column {
+	float: left;
+	padding: 0 5px 0 5px;
+	display: inline;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.floatTowardsRight {
+	float: right;
+	right: 10px;
+	position: relative;
+}
+
+.floatMiddle {
+	position: absolute;
+	left: 50%;
+}
+
+.checkbox {
+	margin-left: 2px;
+}
+
+.date {
+	width: 120px;
+}
+
+.textfield {
+	width: 200px;
+	font-family: arial; /* set the font for text fields */
+	font-size: 12px; /* set the fonts for text fields */
+}
+
+.textarea {
+	width: 200px;
+	font-family: arial; /* set the font for text fields */
+	font-size: 12px; /* set the fonts for text fields */
+}
+
+.radiobutton {
+	
+}
+
+.select {
+	font-family: arial; /* set the font for combobox text */
+	font-size: 12px; /* set the fonts for combobox text */
+}
+
+.password {
+	width: 200px;
+	font-family: arial; /* set the font for text fields */
+	font-size: 12px; /* set the fonts for text fields */
+}
+
+.button {
+	height: 23px;
+	width: 85px;
+	font-family: arial; /* set the font for small buttons */
+	font-size: 12px; /* set the fonts for small buttons  */
+}
+
+.wideButton {
+	height: 23px;
+	width: 125px;
+	font-family: arial; /* set the font for medium buttons */
+	font-size: 12px; /* set the font for medium buttons */
+}
+
+.wideButton2 {
+	height: 23px;
+	width: 165px;
+	font-family: arial; /* set the font for large buttons */
+	font-size: 12px; /* set the font for large buttons */
+}
+
+.wideButton3 {
+	height: 23px;
+	width: 205px;
+	font-family: arial; /* set the font for larger buttons */
+	font-size: 12px; /* set the font for larger buttons */
+}
+
+.wideButton4 {
+	height: 23px;
+	width: 305px;
+	font-family: arial; /* set the font for larger buttons */
+	font-size: 12px; /* set the font for larger buttons */
+}
+
+.spacer {
+	/* sets dimensions for blank.gif in nationalEditLink.ftl to align labels without pencil icon */
+	height: 16px;
+	width: 16px;
+}
+
+.uniquenesspanel {
+	clear: both;
+	width: 100%;
+	padding: 5px 0 5px 0;
+}
+
+.addproducttitle {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 5px;
+}
+
+.buttonspacer { /* insert vertical space to reposition buttons */
+	height: 30px;
+	width: 100%;
+}
+
+.headerlabel {
+	
+}
+
+.twoColumnwide {
+	width: 60%;
+	float: left;
+}
+
+label.select {
+	width: 200px;
+}
+
+label.aligncheckbox1 {
+	float: left;
+	left: 222px;
+}
+
+label.editheader {
+	width: 150px;
+}
+
+label.editheader2 {
+	width: 170px;
+}
+
+input.aligncheckbox1 {
+	clear: both; /* had float: left but not clear or position */
+	position: absolute;
+	left: 228px;
+}
+
+input.aligncheckbox2 {
+	clear: both;
+	position: absolute;
+	left: 845px;
+}
+
+input.aligncheckbox3 {
+	clear: both;
+	position: absolute;
+	left: 725px;
+}
+
+input.aligncheckbox4 {
+	clear: both;
+	position: absolute;
+	left: 900px;
+}
+
+input.aligncheckbox5 {
+	clear: both;
+	position: absolute;
+	left: 834px;
+}
+
+label.date {
+	width: 200px;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+input.formulary {
+	width: 254px;
+}
+
+select.formularyalt {
+	width: 258px;
+}
+
+select.apppackageuse {
+	width: 90px;
+	height: 40px;
+}
+
+input.checkbox2 {
+	margin-left: -14px;
+	padding: 0px;
+}
+
+.horizontalspacer { /* insert vertical space in between items */
+	height: 20px;
+	width: 100%;
+}
+
+select.itemnumber {
+	width: 188px;
+	height: 40px;
+}
+
+input.columnCheckbox {
+	margin-left: 0px;
+	position: relative;
+	left: 10px;
+}
+
+label.iahdate,input.iahdate {
+	width: 110px;
+}
+
+.verticalmiddle {
+	padding-top: 40px;
+	vertical-align: middle;
+}
+
+label.saveas {
+	width: 60px;
+}
+
+.navspacer { /* insert vertical space in between header and main menu */
+	height: 3px;
+	width: 100%;
+	background-color: #000000; /* black */
+}
+
+label.uniqueness {
+	width: 130px;
+}
+
+.topspacer { /* insert vertical space */
+	height: 10px;
+	width: 1250px;
+	clear: both;
+	float: left;
+	padding: 10px;
+	font-style: italic;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.twoColumnwidest {
+	width: 75%;
+	float: left;
+}
+
+label.highrisk {
+	width: 229px;
+}
+
+select.schedule {
+	width: 180px;
+	height: 100px; /* was 50 */
+}
+
+input.aligncheckbox6 {
+	position: absolute;
+	left: 717px;
+}
+
+.column2 {
+	float: left;
+	padding: 0 5px 0 25px;
+	display: inline;
+}
+
+.validation {
+	width: 40%;
+	float: left;
+	background: #ffc;
+	border: 1px solid red;
+}
+
+.warnings {
+	width: 40%;
+	border: 1px solid red;
+}
+
+.optionTransferSelectButton {
+	width: 30px;
+}
+
+.optionTransferMoveButton {
+	width: 50px;
+}
+
+input.aligncheckbox7 {
+	left: 152px;
+	position: absolute;
+}
+
+.columnpadded {
+	float: left;
+	padding: 5px 0px 0px 4px;
+}
+
+.columnpadded2 {
+	float: left;
+	padding: 3px 0px 0px 0px;
+}
+
+input.columnCheckbox2 {
+	margin-left: 0px;
+	position: relative;
+	left: 30px;
+}
+
+input.vafieldswidth {
+	width: 540px;
+}
+
+.widthspacer {
+	width: 130px;
+}
+
+.center {
+	position: relative;
+	top: 1px;
+	left: 50%;
+}
+
+input.acceptchangecolumn {
+	position: relative;
+	top: 1px;
+	left: 35px;
+}
+
+input.acceptchangecolumn2 {
+	position: relative;
+	top: 1px;
+	left: 50px;
+}
+
+input.requesttomodifycolumn {
+	position: relative;
+	top: 1px;
+	left: 80px;
+}
+
+.ndcImage {
+	border-style: none;
+}
+
+/* News article images */
+.news-img {
+	float: left;
+	margin: 4px;
+    min-height: 150px; 
+    min-width: 150px;
+    max-height: 500px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+/* News article images */
+.office-title {
+	font-weight: bolder;
+	font-size: large;
+}
+
+.twoColumnRight {
+	width: 49.5%;
+	float: right;
+}
+
+.bodyheaderspacer {
+	clear: both;
+	width: 100%;
+	padding: 0;
+}
+
+label.dispense {
+	width: 260px;
+}
+
+.label {
+	text-align: left;
+	padding-right: 3px;
+}
+
+label.textarea {
+	text-align: left;
+	vertical-align: top;
+	width: 200px;
+}
+
+select.scored {
+	width: 188px;
+	height: 60px;
+}
+
+input.aligncheckboxndcmain {
+	clear: both;
+	position: absolute;
+	left: 840px;
+}
+
+label.aligncheckboxndcmain {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.readonly {
+	padding-bottom: 8px;
+	margin-right: -25px;
+}
+
+label.labelreadonly {
+	line-height: 25px;
+	margin-left: 0px; /* for IE9 to align checkbox labels */
+}
+
+input.labelreadonly {
+	line-height: 25px;
+}
+
+input.aligncheckboxoptions2 {
+	clear: both;
+	position: absolute;
+	left: 429px;
+}
+
+.columnnopadding {
+	float: left;
+	display: inline;
+}
+
+input.aligncheckbox225 {
+	clear: both;
+	position: absolute;
+	left: 225px;
+}
+
+input.aligncheckbox720 {
+	clear: both;
+	position: absolute;
+	left: 720px;
+}
+
+select.outpatientdrug {
+	width: 300px;
+}
+
+select.pharmacylocation {
+	width: 205px;
+	height: 220px;
+}
+
+.linkpadding { /* items that still link to popups need proper spacing */
+	line-height: 22px;
+}
+
+.unauthorized {
+	
+}
+
+label[disabled] {
+	/* hold in case we want to use disabled parameter again */
+	font-weight: bold;
+	opacity: 1.0;
+	/* works, but doesn't show much difference - not required */
+	filter: alpha(opacity =     100);
+	/* IE solution - works, but doesn't show much difference - not required */
+	zoom: 1; /* needed in IE with opacity if no defined position */
+	/* color:red!important; */ /* doesn't work */
+}
+
+input[disabled],select[disabled],checkbox[disabled],textarea[disabled] {
+	/* for grey text boxes, bold makes them easier to read */
+	background-color: lightyellow;
+	border: solid 1px lightblue;
+	font-weight: bold;
+}
+
+textarea.readonlydisabled {
+	/* for grey text boxes, bold makes them easier to read */
+	width:200px;
+	font-family:arial;
+	font-size:12px;
+	background-color: lightyellow;
+	border: solid 1px lightblue;
+	font-weight: bold;
+}
+
+.legend {
+	color: black;
+	background-color: #eeeeee;
+	/* #0044cc is blue - black isn't bad - 009999 is a nice green */
+	border: 1px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 5px; /* space outside this legend box */
+}
+
+label.producteditheader {
+	width: 90px;
+}
+
+label.ndceditheader {
+	width: 140px;
+}
+
+.column20 {
+	float: left;
+	padding: 0 5px 0 5px;
+	display: inline;
+	width: 90px;
+}
+
+.column21 {
+	float: left;
+	padding: 0 5px 0 5px;
+	display: inline;
+	width: 140px;
+}
+
+.column22 {
+	float: left;
+	padding: 0 5px 0 5px;
+	display: inline;
+	width: 110px;
+}
+
+.column23 {
+	float: left;
+	padding: 0 5px 0 5px;
+	display: inline;
+	width: 135px;
+}
+
+.readonlynational {
+	padding-bottom: 8px;
+	margin-right: 5px;
+	padding-left: 16px;
+	/* need this for national spacing in front of peps:text fields */
+}
+
+input.aligncheckbox214 {
+	clear: both;
+	position: absolute;
+	left: 214px;
+	line-height: 25px;
+}
+
+input.aligncheckbox962 {
+	clear: both;
+	position: absolute;
+	left: 962px;
+}
+
+label.table {
+	text-align: left;
+	width: 190px;
+}
+
+select.comboBox {
+	width: 147px;
+}
+
+.background1 {
+	background-color: #E0FFFF;
+}
+
+.background2 {
+	background-color: #FFF8DC;
+}
+
+.background3 {
+	background-color: #F0FFF0;
+}
+
+input.aligncheckbox216 {
+	clear: both;
+	position: absolute;
+	left: 216px;
+}
+
+.rowspacer { /* insert vertical space to reposition buttons */
+	height: 20px;
+	width: 100%;
+}
+
+input.fdamedguidewidth {
+	width: 846px;
+}
+
+input.aligncheckbox186 {
+	clear: both;
+	position: absolute;
+	left: 126px;
+}
+
+label.aligncheckbox {
+	width: 194px;
+}
+
+.searchcriteria {
+	height: 90px;
+	width: 100%;
+}
+
+select.matchwidth {
+	width: 182px;
+	/* was 205 - in IE9, this becomes the width of the textfield portion of the dropdown */
+	font-family: arial; /* set the font for combobox text */
+	font-size: 12px; /* set the fonts for combobox text */
+}
+
+select.minwidth {
+	width: 2px;
+	font-family: arial; /* set the font for combobox text */
+	font-size: 12px; /* set the fonts for combobox text */
+}
+
+.addsign {
+	position: absolute;
+}
+
+.feedback {
+	margin-right: 20px;
+}
+
+input.fortychars {
+	width: 320px;
+}
+
+.confirm {
+	width: 260px;
+}
+
+.possibleDosage {
+	width: 400px;
+}
+
+/**
+ * Wrap <pre>formatted</pre> Exception text. This CSS solution is
+ * browser-dependent, with each setting noting which browser is supported.
+ *
+ * @see http://www.longren.org/2006/09/27/wrapping-text-inside-pre-tags/
+ */
+.exception {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	width: 99%;
+}
+
+.scrollableTable {
+	border: 1px solid black;
+	margin: 20px 20px 20px 20px;
+	border-collapse: collapse;
+	empty-cells: show;
+	table-layout: auto;
+	padding: 10px;
+}
+
+.scrollableTable th {
+	background-color: #B0B0B0; /* dark grey */
+}
+
+.scrollableTable tr {
+	white-space: nowrap;
+}
+
+.scrollableTable td {
+	overflow-x: hidden;
+}
+
+.entryDate {
+	border: 1px;
+	width: 100px;
+}
+
+.innerFdbDiv {
+	height: 555px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.innerEplDiv {
+	height: 555px;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+tr.selected {
+	background-color: #003366;
+	color: #ffffff;
+}
+
+.modSummaryTitle {
+	padding-left: 8px;
+}
+
+.eplTable {
+	padding: 22px;
+	float: left;
+}
+
+div#domainSelector {
+	width: 100px;
+	padding: 20px;
+}
+
+div#dateFilter {
+	width: 100px;
+	margin-left: 20px;
+}
+
+div#filterDateInput {
+	width: 77px;
+	margin-left: 20px;
+}
+
+div#filterDateNote {
+	width: 310px;
+	margin-left: 20px;
+	font-size: 12px;
+}
+
+div#domainMappingSearch {
+	width: 310px;
+	margin-left: 200px;
+}
+
+.dualTable {
+	border: 0;
+	cellspacing: 0;
+	cell-padding: 22px;
+}
+
+.clearButton {
+	display: inline;
+	padding-left: 400px;
+}
+
+.submitButton {
+	display: inline;
+	padding-left: 130px;
+}
+
+.confirmcollect {
+	width: 400px;
+}
+
+.subcat {
+	height: 90px;
+	width: 300px;
+}
+
+input.aligncheckbox11 {
+	clear: both; /* had float: left but not clear or position */
+	position: absolute;
+	left: 498px;
+}
+
+fieldset.userRoles {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+table.userRoles {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+table.userRoles td.userRole {
+	text-align: center;
+}
+
+a.addLink {
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	background: url(../images/addsign.jpg) no-repeat left top;
+	margin-left: 0px;
+	position: relative;
+	left: 13px;
+}
+
+input.maxlen40 {
+	width: 340px;
+}
+
+input.maxlen25 {
+	width: 215px;
+}
+
+input.maxlen94 {
+	width: 798px;
+}
+
+input.maxlen45 {
+	width: 382px;
+}
+
+input.maxlen6 {
+	width: 58px;
+}
+
+input.maxlen9 {
+	width: 88px;
+}
+
+input.aligncheckboxprod {
+	float: left;
+	left: 894px;
+}
+
+input.maxlen100 {
+	width: 850px;
+}
+
+input.maxlen71 {
+	width: 570px;
+}

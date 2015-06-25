@@ -1,0 +1,71 @@
+.controlGroup {
+	padding: 0.12em 0.12em; /* changed from .25 to reduce vertical space between lines */
+	clear: both;
+	width: 99%;
+}
+
+.control {
+	
+}
+
+.controlLabel {
+	
+}
+
+.requestToEdit {
+	
+}
+
+.editable {
+	float: left;
+}
+
+.editable img {
+	border-style: none;
+}
+
+.checkboxLabel {
+	
+}
+
+.label {
+	width: 195px;
+}
+
+.left {
+	float: left;
+}
+
+.errorLabel {
+	/* width: 255px; */
+	font-weight: bold;
+	color: red;
+}
+
+.errorMessage {
+	font-weight: bold; 
+	color: red;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.errorMessage2 {
+	font-weight: bold;
+	color: red;
+	background:#ffc;
+	border:1px solid red; 
+}
+
+.errorMessage3 {
+	font-weight: bold; 
+	color: black;
+	font-family: arial;
+	font-size: 12px;
+}
+.required {
+	color: red;
+}
+
+.submit {
+	
+}

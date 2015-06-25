@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    id="PRE"
+    version="2.5
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:xml/spring/test/*Context.xml,classpath*:xml/local/spring/test/*Context.xml,classpath*:xml/local/spring/test/CommonContext-Local-1.xml,classpath*:xml/local/spring/test/DomainContext-Local-1.xml
+        </param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>menuConfigLocation</param-name>
+        <param-value>/xml/local/spring/menu-config.xml</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
+        <param-value>/xml/spring/tiles.xml,/xml/local/spring/tiles.xml</param-value>
+    </context-param>
+
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>xml/local/struts/struts.xml</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ExceptionFilter</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.utility.ExceptionFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ExceptionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SpringWebFlow</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.springwebflow.servlet.SpringWebFlowFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>SpringWebFlow</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>net.sf.navigator.menu.MenuContextListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.apache.tiles.web.startup.TilesListener</listener-class>
+    </listener>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- VistA Synchronization Status Servlet -->
+    <servlet>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.SynchronizationStatusServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <url-pattern>/encapsulation/status</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Info Retrieve Servlet -->
+    <servlet>
+        <servlet-name>DrugData</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugDataServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugData</servlet-name>
+        <url-pattern>/encapsulation/drug/data</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Accountability Servlet -->
+    <servlet>
+        <servlet-name>DrugAccountability</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugAccountabilityServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugAccountability</servlet-name>
+        <url-pattern>/encapsulation/drugaccountability/data</url-pattern>
+    </servlet-mapping>
+
+    <!-- PMI Retrieve Servlet -->
+    <servlet>
+        <servlet-name>PatientMedicationInformation</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.drugdatavendor.servlet.PatientMedicationInformationServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientMedicationInformation</servlet-name>
+        <url-pattern>/drugdatavendor/pmi</url-pattern>
+    </servlet-mapping>
+
+    <!-- Order Check Servlet -->
+    <servlet>
+        <servlet-name>OrderCheck</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.OrderCheckServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderCheck</servlet-name>
+        <url-pattern>/ordercheck</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Info Servlet -->
+    <servlet>
+        <servlet-name>DrugInfo</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugInfoServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugInfo</servlet-name>
+        <url-pattern>/druginfo</url-pattern>
+    </servlet-mapping>
+</web-app>

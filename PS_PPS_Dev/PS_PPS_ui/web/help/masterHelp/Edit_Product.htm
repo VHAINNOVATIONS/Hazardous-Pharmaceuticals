@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 9" />
+<meta name="OriginalFile" content="masterHelp.docx" />
+<link rel="stylesheet" href="../masterHelp.css" type="text/css" />
+<link rel="stylesheet" href="../masterHelp.css" type="text/css" />
+<title>Edit Product</title>
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+        origWidth = innerWidth;
+        origHeight = innerHeight;
+        onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+/*]]>*/
+</style>
+
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js">
+</script>
+<script type="text/javascript" language="javascript" src="../whver.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js">
+</script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js">
+</script>
+</head>
+<body link="blue" vlink="purple">
+<script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+        var strUrl = document.location.href;
+        var bc = 0;
+        var n = strUrl.toLowerCase().indexOf("bc-");
+        if(n != -1)
+        {
+                document.location.href = strUrl.substring(0, n);
+                bc = strUrl.substring(n+3);
+        }
+
+        if (window.addTocInfo)
+        {
+        addTocInfo("Manage PPS\nEdit Items\nEdit Product");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+        }
+        if (window.writeBtnStyle)
+                writeBtnStyle();
+
+        if (window.writeIntopicBar)
+                writeIntopicBar(1);
+
+        
+        document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../index.htm", "", "&gt;", "Home", "Home.htm");
+document.write("<a href=\"Manage_PPS.htm\">Manage PPS<\/a> &gt; <a href=\"Edit_Items.htm\">Edit Items<\/a> &gt; Edit Product<\/p>");
+
+
+        if (window.setRelStartPage)
+        {
+        setRelStartPage("../index.htm");
+
+                autoSync(1);
+                sendSyncInfo();
+                sendAveInfoOut();
+        }
+}
+else
+        if (window.gbIE4)
+                document.location.reload();
+
+//-->
+//]]>
+</script><script type="text/javascript" language="JavaScript1.2" src="../ehlpdhtm.js">
+</script>
+<h3>Edit Product</h3>
+<p class="WD_Normal">This screen exists to allow any user to view an Product <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot20640" name="HotSpot20640">Item</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot20640', 'POPUP20640');
+//]]>
+</script> <span class="glosstext" id="POPUP20640" style="display: none;">A generic type representing one conceptual entity consisting of a collection of data fields. For example, a medication may contain the following collection of data fields: Product Name, Generic Name, Trade Name, Dosage Form, NDC, etc. Conceptual entities include Medications, Supplies, and Investigationals.</span>, and authorized users to edit the product or approve a change another user has made to the product&#160;&#160; If a user does not have a role that enables them to edit the product, all the input actions on the screen will be disabled and the buttons at the bottom of the screen will not be visible. The screen is broken up into multiple tabs</p>
+<p class="WD_Normal">Some of the data fields listed in this screen are not editable at the National level.&#160; The attribute is displayed on the screen for consistency sake but none of the National Roles have the ability to edit the attribute.&#160; An example of this is the Labs and Vitals component of the Administrative Data tab.&#160; The Labs and Vital attributes in that tab are not editable at the national level.</p>
+<p class="WD_Normal">If a field is modified that requires a second review then the change will not take place immediately.&#160; Instead a request for the change will be placed into the system.</p>
+<p class="WD_Normal">If the user is approving a change that someone else placed into the system, the change will happen once the approval is completed.</p>
+<p class="WD_Normal">Note that the <span style=" color:#0070C0;"><font color="#0070C0">Drug Data, Quick Actions, <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot26360" name="HotSpot26360">Application</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot26360', 'POPUP26360');
+//]]>
+</script> <span class="glosstext" id="POPUP26360" style="display: none;">A software product that provides a specified functionality.</span> Data, and Administration Data</font></span> tab are not fully detailed here because they were created mainly for the Local Managers.&#160; However, the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot42064" name="HotSpot42064">PMI</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot42064', 'POPUP42064');
+//]]>
+</script> <span class="glosstext" id="POPUP42064" style="display: none;">Patient Medication Information</span> and Warning Labels for the product are shown in the Quick Actions tab.</p>
+<h4>Header</h4>
+<p class="WD_Normal">The header is visible no matter which of the sub-tabs are chosen for the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot35101" name="HotSpot35101">OI</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot35101', 'POPUP35101');
+//]]>
+</script> <span class="glosstext" id="POPUP35101" style="display: none;">Office of Information</span> fields. The Header contains the following information.</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> Product:&#160; This is the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot42544" name="HotSpot42544">VA</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot42544', 'POPUP42544');
+//]]>
+</script> <span class="glosstext" id="POPUP42544" style="display: none;">Department of Veterans Affairs</span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot16161" name="HotSpot16161">Product Name</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot16161', 'POPUP16161');
+//]]>
+</script> <span class="glosstext" id="POPUP16161" style="display: none;">A unique name assigned to each drug product in the National Drug files.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> Primary Class</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> Category</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> PPS OI Name: This is a hyperlink which, when clicked, will bring up the <a href="Edit_Orderable_Item.htm">Orderable Item Edit</a> Screen.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> Application <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot50665" name="HotSpot50665">Package</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot50665', 'POPUP50665');
+//]]>
+</script> <span class="glosstext" id="POPUP50665" style="display: none;">A set of routines, files, options, templates, security keys, screens, bulletins, functions, help frames, forms, blocks, objects, protocols, dialogues, list templates, windows, and namespaces according to DBA requirements that function as a unit.</span> Use</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> Item Status</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Wingdings;">Ø<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;</font></span></span> New Item <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot26342" name="HotSpot26342">Request</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot26342', 'POPUP26342');
+//]]>
+</script> <span class="glosstext" id="POPUP26342" style="display: none;">A user action that a PEPS Item (OI, Product Item, or NDC Item) addition or modification be considered by the PNM for updates within the PEPS enterprise database.</span></p>
+<p class="WD_Normal">The user has the ability to Show all of the tabs or Show only a few of the tabs by using the <b>Show All Tabs</b> or <b>Hide All Tabs</b> hyperlinks.</p>
+<h4>National Data</h4>
+<p class="WD_Normal">The National Data tab contains most of the national data attributes associated with the <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot59861" name="HotSpot59861">NDF</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot59861', 'POPUP59861');
+//]]>
+</script> <span class="glosstext" id="POPUP59861" style="display: none;">National Drug File</span> managers managing the item.&#160; This is the main editing tab for the NDF Mangers.&#160; This tab contains the following list of attributes:</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Product Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> &#160;</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot31764" name="HotSpot31764">Generic Name</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot31764', 'POPUP31764');
+//]]>
+</script> <span class="glosstext" id="POPUP31764" style="display: none;">A non-proprietary name assigned to an item (e.g., drug, supply).</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Strength</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot32990" name="HotSpot32990">Dispense Unit</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot32990', 'POPUP32990');
+//]]>
+</script> <span class="glosstext" id="POPUP32990" style="display: none;">A unit of measure for dispensing (e.g., GM, EA).</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Print Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Product Id</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot21420" name="HotSpot21420">CMOP</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot21420', 'POPUP21420');
+//]]>
+</script> <span class="glosstext" id="POPUP21420" style="display: none;">Consolidated Mail Outpatient Pharmacy</span> (Dispense) National</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Exclude DDI <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot42009" name="HotSpot42009">Check</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot42009', 'POPUP42009');
+//]]>
+</script> <span class="glosstext" id="POPUP42009" style="display: none;">A visual inspection by a pharmacist to ensure that the medication dispensed matches the labeled container.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Override DF Check Exclusion</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Auto-Create Possible Dosage</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Possible Dosage To Create</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Package</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot15786" name="HotSpot15786">FDB</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot15786', 'POPUP15786');
+//]]>
+</script> <span class="glosstext" id="POPUP15786" style="display: none;">First DataBank</span> Med Guide</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> GCNSEQNO</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot47018" name="HotSpot47018">VUID</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot47018', 'POPUP47018');
+//]]>
+</script> <span class="glosstext" id="POPUP47018" style="display: none;">VHA Unique Identifier</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot22629" name="HotSpot22629">CS</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot22629', 'POPUP22629');
+//]]>
+</script> <span class="glosstext" id="POPUP22629" style="display: none;">Controlled Substances</span> Federal <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot39301" name="HotSpot39301">Schedule</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot39301', 'POPUP39301');
+//]]>
+</script> <span class="glosstext" id="POPUP39301" style="display: none;">The frequency by which the doses are to be administered (i.e., Q8H, BID, NOW). Often referred to as Administration Schedule.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> National <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot28194" name="HotSpot28194">Formulary</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot28194', 'POPUP28194');
+//]]>
+</script> <span class="glosstext" id="POPUP28194" style="display: none;">A collection of pharmaceutical substances along with their formulas, uses, and methods of preparation. Additionally, this can be a list of products that are approved for use with Patients (for the appropriate indications).</span> Indicator</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> National Formulary Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Item Status</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Proposed Inactivation Date</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Reduced Copay</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Sub-Category</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot38608" name="HotSpot38608">Drug Class</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot38608', 'POPUP38608');
+//]]>
+</script> <span class="glosstext" id="POPUP38608" style="display: none;">The grouping of drug products based on various criteria, which may include similarity of chemical structure, clinical indications, pharmacology, and therapeutic activity.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Active Ingredient</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Synonyms</p>
+<h4>NDCs</h4>
+<p class="WD_Normal">The Ndcs tab contains information concerning the NDCs associated with the product and contains the ability to perform limited actions on those NDCs.</p>
+<p class="WD_Normal">This tab contains several attributes and then a table listing the NDCs.&#160; The attributes and table sections contains the following information</p>
+<p class="WD_Normal">By default, only the Active NDCs are displayed, the user can see the Inactive NDCs as well by checking the <b>Show Inactive NDCs</b> checkbox.</p>
+<p class="WD_Heading5">Attributes:</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Normal Amount To <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot32135" name="HotSpot32135">Order</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot32135', 'POPUP32135');
+//]]>
+</script> <span class="glosstext" id="POPUP32135" style="display: none;">A request for a product that will be used in the support of a single Patient care. Usually initiated by a Physician or an authorized person.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Reorder Level</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Single/Multi Source</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Long Term Out of Stock</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Dispense Unit</p>
+<p class="WD_Heading5"><a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot8736" name="HotSpot8736">NDC</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot8736', 'POPUP8736');
+//]]>
+</script> <span class="glosstext" id="POPUP8736" style="display: none;">National Drug Code</span> Table:</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Select:&#160; This field allows the user to select an entry.&#160; The selected entry will be used if the user selects the <b>Move Products</b> button.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> NDC</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot30629" name="HotSpot30629">Trade Name</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot30629', 'POPUP30629');
+//]]>
+</script> <span class="glosstext" id="POPUP30629" style="display: none;">A name (i.e., brand name) assigned to a generic product to distinguish it as one produced and sold by a specific manufacturer.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VSN</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Package Size</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Package Type</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> PPOU:&#160; Price Per Order Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> PPDU: Price Per Dispense Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot32333" name="HotSpot32333">Manufacturer</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot32333', 'POPUP32333');
+//]]>
+</script> <span class="glosstext" id="POPUP32333" style="display: none;">Specifies the vendor or company that produces the product.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Item Status</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> UPC/UPN</p>
+<p class="WD_Normal"><img border="0" width="658" height="244" src="image023.jpg" alt="" /></p>
+<p class="WD_Normal"><b>Select All</b> button:&#160; This button is used to select all the items visible in the table.</p>
+<p class="WD_Normal"><b>Move Ndcs</b> button:&#160; This button is used to move the selected NDCs to a different Product When the button is selected, a Product search screen is displayed that will allow the user to select the Product to which the products will be moved.</p>
+<p class="WD_Normal"><b>Move Ndcs to New Product</b> button:&#160; This button is used to copy the selected NDCs to a new Product When the button is selected, the Product Add Wizard is executed using this product as a template.&#160; When the product add wizard is completed, then as many NDC Add wizard are displayed as there were items selected it the table, with each add wizard being for a different NDC.</p>
+<p class="WD_Normal"><b>Create New NDC (from Blank)</b> hyperlink:&#160; This link is used to populate the new NDC wizard screen and pre-populating the NDC with this Product.</p>
+<h4>History</h4>
+<p class="WD_Normal">The History tab contains information concerning the changes that have been made to the Product since it was migrated or approved. This tab contains several attributes and then a table listing the changes that have been made.</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> New Item Request</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Request Rejection Reason</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Rejection Reason Comment</p>
+<p class="WD_Normal">The table consists of the following fields:</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot9809" name="HotSpot9809">Event</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot9809', 'POPUP9809');
+//]]>
+</script> <span class="glosstext" id="POPUP9809" style="display: none;">An occurrence that may be synchronous or asynchronous and to which an application must respond in some manner.</span> Category:&#160; This is the major category for why the change occurred.&#160; For Example a System Event occurs based on an automated action of the system while a National Modification occurs based on a user action.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Detail Event Category:&#160; When multiple attributes are changes at the same time, there is a single event that captures the change but each change is listed separately and this field is populated.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Field Name:&#160; This is the name of the attribute that was modified.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Reason: This is the reason for the change.&#160; In most cases, this is optional free text that is entered by the user.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Old Value:&#160; This is the original value.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> New Value: This is the modified value.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Date/Time Modified:&#160; This is the date and time the change was made.</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Username:&#160; The user who modified or approved the request.</p>
+<p class="WD_Normal">&#160;</p>
+<p class="WD_Normal"><img border="0" width="659" height="84" src="image025.jpg" alt="" /></p>
+<h4>A – Z tab</h4>
+<p class="WD_Normal">The A - Z tab contains a listing of all the attributes of the product in a table format.&#160; There are captions on some of the labels.</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> L: indicates the field is Local Only and cannot be modified by National Users.</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> *: indicates a mandatory field.</p>
+<p class="WD_ListParagraphCxSpLast" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> R: Indicates a Read Only field.&#160; Read only fields are fields that can be entered when an Orderable Item is created but cannot be modified after the creation.</p>
+<p class="WD_Normal">The table consists of all the attributes of the Product.</p>
+<p class="WD_ListParagraphCxSpFirst" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Action Profile <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot58235" name="HotSpot58235">Message</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot58235', 'POPUP58235');
+//]]>
+</script> <span class="glosstext" id="POPUP58235" style="display: none;">A collection of data in a standardized format that can be sent to or received at a given destination.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Active Ingredient</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Application Package Use</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Approved for Splitting</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot22223" name="HotSpot22223">AR/WS</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot22223', 'POPUP22223');
+//]]>
+</script> <span class="glosstext" id="POPUP22223" style="display: none;">Inpatient Pharmacy Automatic Replenishment/Ward Stock</span> Amis Category</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> AR/WS Amis Conversion Number</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot32183" name="HotSpot32183">ATC Canister</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot32183', 'POPUP32183');
+//]]>
+</script> <span class="glosstext" id="POPUP32183" style="display: none;">The brand name for the automatic dispensing unit that is used to package specific medications into unit dose packages.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> ATC Canisters</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> ATC Choice</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> ATC Mnemonic</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Auto-Create Possible Dosage</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Category</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> CMOP Dispense (National)</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Corresponding Inpatient Drug</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Corresponding Outpatient Drug</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> CS Federal Schedule</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Current Inventory</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> DAW Code</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Day (ND) or <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot36113" name="HotSpot36113">Dose</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot36113', 'POPUP36113');
+//]]>
+</script> <span class="glosstext" id="POPUP36113" style="display: none;">A specified quantity of a therapeutic agent, such as a drug, prescribed to be taken at one time or at stated intervals.</span> (NL) Limit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot18144" name="HotSpot18144">DEA</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot18144', 'POPUP18144');
+//]]>
+</script> <span class="glosstext" id="POPUP18144" style="display: none;">Drug Enforcement Agency</span> Schedule</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Default Mail <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot11967" name="HotSpot11967">Service</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot11967', 'POPUP11967');
+//]]>
+</script> <span class="glosstext" id="POPUP11967" style="display: none;">A logical grouping of capabilities that support a common business process. Thus a “drug information service” might provide capabilities that allow for the searching of different types of drug information and different types of searches for the same information (i.e., searching for a drug by Generic Name, NDC, Therapeutic category). This is loosely analogous to the class-method relationship, in which a class is composed of multiple methods that support the usage of the class.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot32170" name="HotSpot32170">Days Supply Limit</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot32170', 'POPUP32170');
+//]]>
+</script> <span class="glosstext" id="POPUP32170" style="display: none;">A VA Data Field used to specify the default days’ supply (e.g., 90 days) that a medication can be dispensed.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Limit for Order</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Limit Schedule</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Override</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Override Reason</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Override Reason Entered By</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot46971" name="HotSpot46971">Dispense Quantity Limit</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot46971', 'POPUP46971');
+//]]>
+</script> <span class="glosstext" id="POPUP46971" style="display: none;">A VA Data Field that specifies the limit as a Quantity-per-Time period. Quantity is the number of dispense units. Time period is specified by a number of days.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Quantity Override</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Dispense Quantity Override Reason</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Do Not Handle if Pregnant</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Do Not Mal</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Effective Dates</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Exclude Drug-Drug Interaction Check</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot28018" name="HotSpot28018">FDA</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot28018', 'POPUP28018');
+//]]>
+</script> <span class="glosstext" id="POPUP28018" style="display: none;">Food and Drug Administration</span> Med Guide</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Follow-Up Time</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Formulary</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Formulary Alternative</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> FSN/NSN</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> GCNSEQNO</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Hazardous to Dispose</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Hazardous to Handle</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Hazardous to <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot51785" name="HotSpot51785">Patient</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot51785', 'POPUP51785');
+//]]>
+</script> <span class="glosstext" id="POPUP51785" style="display: none;">An authorized person who is allowed to receive care or is identified as needing care. Receives medications as an Inpatient in a ward or as an Outpatient in a specialty clinic. Also, receives medications as an Outpatient at the pharmacy (window pick-up or mail). Note that a Patient may also include active military personnel and family members of veterans.A person who requires medical treatment, typically the veteran or one of their relatives.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot15791" name="HotSpot15791">High Risk</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot15791', 'POPUP15791');
+//]]>
+</script> <span class="glosstext" id="POPUP15791" style="display: none;">A VA Data Field used to indicate whether an item is considered “high-risk” to a patient and therefore requires follow-up or double-checks during administration.</span> Follow-Up</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> High Risk Follow-Up Time Period</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> High Risk Med</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> IEN</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot39983" name="HotSpot39983">IFCAP</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot39983', 'POPUP39983');
+//]]>
+</script> <span class="glosstext" id="POPUP39983" style="display: none;">Integrated Funds Distribution, Control Point Activity, Accounting, and Procurement</span> Item Number</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Inpatient Medication Expired Orders Max Time</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Inpatient Medication Expired Orders Min Time</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Inpatient Pharmacy Location</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Item Status</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Lab Monitor Mark</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Lab Test Monitor</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Lab Value</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Labs during Administration</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Labs during Finishing an Order</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Labs during Order Entry</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Local Drug Text Entry</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Local Non-Formulary</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Local Possible Dosages</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Local Print Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Local <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot61964" name="HotSpot61964">Special Handling</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot61964', 'POPUP61964');
+//]]>
+</script> <span class="glosstext" id="POPUP61964" style="display: none;">The Drug Enforcement Agency (DEA) special handling codes used to designate drug products as over-the-counter, narcotics, bulk compounds, supply items. Requirements exist for each code that determines how a drug product is to be handled and/or stored.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Local Use</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Long Term Out of Stock</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Low Safety Martin</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Master Entry for VUID</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Max Dispense Limit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Maximum Dose per Day</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Monitor Max Days</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Monitor Routine</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> National Drug Text Entry</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> National Formulary Indicator</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> National Formulary Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot54637" name="HotSpot54637">NCPDP</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot54637', 'POPUP54637');
+//]]>
+</script> <span class="glosstext" id="POPUP54637" style="display: none;">National Council for Prescription Drug Programs</span> Dispense Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> NCPDP Quantity Multiplier</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> NDC by Outpatient Site</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> NDF Product IEN</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> New Item Request</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Non-Renewable</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Normal Amount to Order</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Number of Associated Labs</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Number of doses</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Number of Lab Instances Displayed</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> OP External Dispense</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Order Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Override Dose Form Dose Check Exclusion</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Patient Specific Label</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Possible Dosages</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Possible Dosages To Create</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Previously Marked for Local Use</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Price Per Dispense Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Price Per Order Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Dispense Units per Order Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Inactivation Date</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Package</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Strength</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Product Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Proposed Inactivation Date</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Protect from Light</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Quantity Dispense Message</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Recall Level</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Reduced Copay</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot48603" name="HotSpot48603">Refrigeration</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot48603', 'POPUP48603');
+//]]>
+</script> <span class="glosstext" id="POPUP48603" style="display: none;">A VA Data Field used to specify whether an item requires refrigeration.</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Rejection Reason Comment</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Reorder Level</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Request Rejection Reason</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> RX Message</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Service Code</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Single/Multi Source</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Special Handling</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Specimen Type</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Sub-Category</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Synonyms</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Tallman Lettering</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Total Dispense Quantity</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Transmit to CMOP (Local)</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Unit Dose Schedule</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Unit dose Schedule Type</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Dispense Unit</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Drug Classes</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Print Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Product <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot33643" name="HotSpot33643">AID</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot33643', 'POPUP33643');
+//]]>
+</script> <span class="glosstext" id="POPUP33643" style="display: none;">Architecture and Interface Design Strategy Document</span></p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VA Product Name</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Vitals during Administration</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Vitals during Finishing an Order</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> Vitals during Order Entry</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> VUID</p>
+<p class="WD_ListParagraphCxSpMiddle" style=" text-indent:-.25in;"><span style=" font-family:Symbol;">·<span style=" font:7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span> <a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot46931" name="HotSpot46931">Witness</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot46931', 'POPUP46931');
+//]]>
+</script> <span class="glosstext" id="POPUP46931" style="display: none;">An authorized person who co-signs an action taken by another Caregiver to attest to the correctness of the action as documented (e.g., witness of CS waste, witness of chemotherapy drug administration).</span> Required</p>
+<p class="WD_ListParagraphCxSpLast">&#160;</p>
+<h4>Buttons at the bottom of the page</h4>
+<p class="WD_Normal"><b><a class="glossterm" href="javascript:TextPopup(this)" id="HotSpot33733" name="HotSpot33733">Cancel</a><script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+TextPopupInit('HotSpot33733', 'POPUP33733');
+//]]>
+</script> <span class="glosstext" id="POPUP33733" style="display: none;">An undo action in a GUI (“cancel” is not an action on an order).</span></b> button:&#160; This button is used to return the user to the previously selected page.</p>
+<p class="WD_Normal"><b>Save Work in Progress</b> button:&#160; This button is used to save the current state of the product to a temporary location so the user may exit the screen and then come back and work on the product without submitting the current set of changes.</p>
+<p class="WD_Normal"><b>Change OI</b> button: This button is used to start the process of associating this product to a different orderable item.&#160;&#160;</p>
+<p class="WD_Normal"><b>Submit</b> button: This button is used to submit the current changes to the database.</p>
+<p class="WD_Normal"><b>Create New Product (from existing)</b> hyperlink:&#160; This link is used to populate the new Product wizard screen and pre-populating the wizard with the information from this Product.</p>
+<p class="WD_Normal">&#160;</p>
+<span style=" font-size:11.0pt; line-height:115%; font-family:'Calibri' ,'sans-serif';"><font size="3" style="font-size:11pt;"><br clear="all" /></font></span> <script type="text/javascript" language="javascript1.2">
+//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+        writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]>
+</script>
+</body>
+</html>

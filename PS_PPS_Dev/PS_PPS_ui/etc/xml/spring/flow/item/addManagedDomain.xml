@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    abstract="true">
+
+    <subflow-state
+        id="addManagedDomain"
+        subflow="selectNewDomainItem">
+        <on-entry>
+            <!-- Make sure that any input from the fields on the page gets saved before we move on to the wizardAdd flow. -->
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="input" />
+            </evaluate>
+
+            <set
+                name="parentEntityType"
+                value="flowScope.item"
+                type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        </on-entry>
+        <input
+            name="parentItem"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <input
+            name="parentAttribute"
+            value="currentEvent.attributes.parentAttribute"
+            type="string" />
+        <input
+            name="itemType"
+            value="currentEvent.attributes.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <transition
+            on="end"
+            to="${flowScope.previousViewState}">
+            <set
+                name="flowScope.item"
+                value="currentEvent.attributes.parentItem"
+                type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.parentItem.entityType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+        <transition
+            on="cancel"
+            to="${flowScope.previousViewState}">
+            <set
+                name="flowScope.item"
+                value="currentEvent.attributes.parentItem"
+                type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.parentItem.entityType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+    </subflow-state>
+
+    <global-transitions>
+        <transition
+            on="addManagedDomain"
+            to="addManagedDomain" />
+    </global-transitions>
+</flow>

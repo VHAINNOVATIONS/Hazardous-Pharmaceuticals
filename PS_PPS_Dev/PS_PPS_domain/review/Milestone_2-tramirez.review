@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF30NVI2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:58:28:922 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 16:59:35:329 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Looks like a copy and paste oversight</Summary>
+    <Description>comment should be for OI</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF30RD0B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:01:11:579 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 17:02:18:064 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tramirez</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>static variables should be all upeprcase with underscores separating words</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

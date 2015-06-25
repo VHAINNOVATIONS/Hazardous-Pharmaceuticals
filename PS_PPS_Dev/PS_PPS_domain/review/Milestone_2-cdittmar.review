@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5CEUHW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:02:55:460 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:04:30:315 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/domain/common/capability/IntendedUseDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>make javadocs match class</Summary>
+    <Description>change references to manufacturers and Generic Names to Intended Use</Description>
+    <Annotation />
+    <Revision>Reads intended use now</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CG5AS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:03:56:116 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:01:35:037 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/domain/common/capability/IngredientDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>make javadocs match class</Summary>
+    <Description>change references to manufacturers and Generic Names to Intended Use</Description>
+    <Annotation />
+    <Revision>Javadoc refers to Ingredient rather than Manufacter</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CGSQ3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:04:26:475 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:04:40:960 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="31">src/gov/va/med/pharmacy/peps/domain/common/capability/NdcDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add javadoc for throws ValueObjectValidationException</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CIMC2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:05:51:506 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 09:01:52:376 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="81">src/gov/va/med/pharmacy/peps/domain/common/capability/NdcDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>should this method be removed?</Summary>
+    <Description>It's not used in anywhere in the code</Description>
+    <Annotation />
+    <Revision>Going to leave it in for now, may be used later</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CK0Y3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:06:57:099 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:11:14:770 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="46">src/gov/va/med/pharmacy/peps/domain/common/capability/OrderableItemDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add javadoc for method</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Javadoc added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CKSC7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:07:32:599 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:07:54:630 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/capability/OrderUnitDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>make javadoc match class</Summary>
+    <Description>change reference to manufacturers to order unit</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CLO0E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:08:13:646 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:14:50:859 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/domain/common/capability/OtcRxDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add javadoc for class</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Javadoc added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CM963">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:08:41:067 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:15:24:825 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/capability/PackageSizeDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>change package type to package size in javadoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5COMK7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:10:31:735 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:26:46:935 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="34">src/gov/va/med/pharmacy/peps/domain/common/capability/ProductDomainCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add javadoc for method</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Javadoc added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CVT1Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:16:06:743 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:29:49:195 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/dao/EplCsFedScheduleDao.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>update javadoc to refer to this class</Summary>
+    <Description>changen EplDosageForm to EplCsFedSchedule</Description>
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CWGZY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:16:37:774 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:17:26:524 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/dao/EplAtcCanisterDao.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Update javadoc to refer to this class instead of EplDosageFrom</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CYAJB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:18:02:711 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:31:24:410 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/dao/EplLocalConsoleInfoDao.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Update javadoc to refer to this class instead of EplDosageFrom</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CYW0Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:18:30:554 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:29:17:164 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/dao/EplNdcDao.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Update javadoc to refer to this class instead of "v"</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D1DWD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:20:27:037 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:37:33:383 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="43">test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalNdcDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove unused attribute</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Attribute removed along with set method for attribute</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D1LXF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:20:37:443 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:37:07:790 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="42">test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalNdcDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>make attribute name use camel casing</Summary>
+    <Description>captialize Ndc</Description>
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D5YK9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:24:00:441 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 09:36:54:868 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="2">test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalNdcDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented out code</Summary>
+    <Description>throughout this class there are lines of code or partial lines of code that are commented out. Remove these. Keep real comments though.</Description>
+    <Annotation />
+    <Revision>Removed extra comments</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D6W6Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:24:44:018 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:24:50:550 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="47">test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalNdcDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove unused attribute</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D74NF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:24:54:987 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:25:08:675 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="46">test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalNdcDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>camelcase attribute name</Summary>
+    <Description>capitalize Ndc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D9S41">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:26:58:705 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:27:04:643 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="376">test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalNdcDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented out code</Summary>
+    <Description>throughout this class there are lines of code or partial lines of code that are commented out. Remove these. Keep real comments though.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

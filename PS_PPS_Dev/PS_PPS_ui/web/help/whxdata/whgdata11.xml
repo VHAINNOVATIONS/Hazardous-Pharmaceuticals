@@ -1,0 +1,73 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Pick List" value="Items that need to be gathered, or picked, while filling a Patient’s order. See glossary term Pull List." />
+ <entry name="Piggyback" value="The small volume parenteral solution for intermittent infusion. A piggyback is comprised of any number of additives, including zero, and one solution: the mixture is made in a small bag. The piggyback is given on a schedule (e.g.,&#160;Q6H). Once the medication flows in, the piggyback is removed; another is not hung until the administration schedule calls for it." />
+ <entry name="PIMS" value="Patient Information Management System" />
+ <entry name="PKI" value="Public Key Infrastructure" />
+ <entry name="PLM" value="PEPS Local Manager" />
+ <entry name="PM" value="PEPS Manager" />
+ <entry name="PMD" value="Program Mistake Detector (Java source code analyzer)" />
+ <entry name="PMI" value="Patient Medication Information" />
+ <entry name="PMIS" value="Patient Medication Information Sheet" />
+ <entry name="PMO" value="Program Management Office (as used by PRE)" />
+ <entry name="PMP" value="Patient Medication Profile " />
+ <entry name="PMP (management)" value="Project Management Plan" />
+ <entry name="PNM" value="PEPS National Manager" />
+ <entry name="PO" value="Purchase Order" />
+ <entry name="POC" value="Point of Contact" />
+ <entry name="POI" value="Poor Obfuscation Implementation (Java API to access Microsoft format files)" />
+ <entry name="Point-of-Use (POU) Equipment" value="The automatic dispensing system of secured supplies." />
+ <entry name="POJO" value="Plain Old Java Object" />
+ <entry name="Polypharmacy" value="The practice of administering many different medicines concurrently for the treatment of the same disease." />
+ <entry name="Postconditions" value="An assertion that must hold following the successful execution of the associated function (e.g., use case path, class method, and/or test case)." />
+ <entry name="POU" value="Point-of-Use" />
+ <entry name="PPP" value="Pharmacy Prescription Practices" />
+ <entry name="PRE" value="Pharmacy Re-engineering" />
+ <entry name="PRE CCB" value="PRE Configuration Control Board" />
+ <entry name="Pre-exchange Order" value="Any Inpatient order that must be delivered to the ward before the scheduled delivery of products (e.g., NOW orders, STAT orders, missing dose request). An Inpatient order that is not included in a Unit Dose Pick List or Sterile Product Work List." />
+ <entry name="Preconditions" value="A condition that must always be true before the start of a use case or test case." />
+ <entry name="Preferred Products" value="The products stocked in the pharmacy that have a high turnover rate or comprise a large percentage of the dispensed items." />
+ <entry name="Preparation List (Prep List)" value="Contains detailed information about active and future Unit Dose medication orders that are “due” for administering to Patients in a particular location (e.g., ward) during a specified timeframe. The Prep List can be printed to facilitate routine medication rounds by displaying medications to be administered during the specified timeframe for the Caregiver’s assigned Patients, which facilitates in the gathering of medications." />
+ <entry name="Prescription" value="An Outpatient medication order written on a standard blank issued by a regulatory body. An Outpatient order can be in a written format also on VAF 10-1158 Doctor’s Order sheet. Currently, DEA requires controlled substances to be submitted to Pharmacy in a written format with a “wet signature.”" />
+ <entry name="Presentation Layer" value="A logical grouping of user interaction and display components." />
+ <entry name="Primary Care Provider (PCP)" value="A Patient’s main healthcare provider in non-emergency situations either chosen by or assigned to a Patient." />
+ <entry name="Primavera IT Project OfficeTM" value="A software application used to uniquely identify work units and status of the work." />
+ <entry name="PRN" value="Pro re nata (As needed)" />
+ <entry name="Pro re nata" value="A Latin term, basically meaning “take as needed.” It is normally abbreviated as “PRN.”" />
+ <entry name="Process" value="A process is a collection of activities that takes one or more kinds of input and creates an output that is of value to the customer. It is cross-functional and results oriented, defying rather than respecting organizational boundaries. It is focused on goals and ends rather than actions and means. Thinking about the process is a prerequisite to re-engineering; only processes can be re-engineered." />
+ <entry name="Process (Architecture)" value="An operating system term for a unit of work that contains one or more threads." />
+ <entry name="Procurer" value="Any authorized person who plans and orders supplies (e.g.,&#160;Procurement Specialist)." />
+ <entry name="Product Item" value="A specific type of medication, supply, or prosthetic." />
+ <entry name="Product Name" value="A unique name assigned to each drug product in the National Drug files." />
+ <entry name="Product Number" value="The number used by the product manufacturer to identify a product." />
+ <entry name="Product Type" value="An indicator that defines whether an item is categorized as a medication, supply, or prosthetic." />
+ <entry name="Progress Note" value="The communication among disciplines concerning the Patient’s care. Members of the Patient care team must document observations, progress, response to and changes in treatment, subsequent assessments of the Patient’s response to care, other intervention, planned follow-up care, instructions, and diagnosis and pertinent findings from ancillary tests. Progress notes must give a pertinent chronological report of the Patient’s course. Progress notes may include, but are not limited to: a change in diagnosis(es), a change in condition, and/or a Patient’s leave of absence. They may also include any justification for Patient limitations. Clinical care must be documented in a progress note by the respective clinical staff as defined by their scope of practice. Documentation in the progress notes is required when there is a history of allergies, adverse reactions, or other conditions. The appropriate progress title must be used to trigger Patient postings." />
+ <entry name="Project Management Office (PMO)" value="An entity formed to coordinate across the enterprise all efforts toward making a project successful. The mission of the PMO is to monitor project activities and work elements, to coordinate efforts among all stakeholders, and ultimately, to ensure the success of a project." />
+ <entry name="Project Management Plan (PMP)" value="A strategic document for describing and executing a project. It defines the technical and managerial approach, project functions, and deliverables necessary to satisfy the requirements of a project, such as agreement on scope and priorities." />
+ <entry name="Project Plan" value="See glossary term Project Management Plan (PMP)." />
+ <entry name="Project Sponsor" value="The person who promotes and/or authorizes the initiation of a project, provides ongoing support, and has a vested interest in the success of the project." />
+ <entry name="Protect From Light" value="A VA Data Field used to specify whether an item must be protected from light." />
+ <entry name="Prototype" value="A mock-up, model, or actual working version of a technological device or process used to generate engineering information that will help design or perfect the final product/process. Engineering prototypes, test-of-principle models, bench models, breadboard models, and pre-production prototypes are used in the new product stages of development." />
+ <entry name="Provider" value="An authorized person who delivers some form of healthcare to a Patient. Additionally, these individuals may be considered as an Orderer with the authority to sign orders if given the authorization within the system. Some providers may not be given the authority to sign orders (e.g., nursing staff)." />
+ <entry name="PS" value="Person Service" />
+ <entry name="PSL" value="Person Service Lookup" />
+ <entry name="PSR" value="PEPS Second Reviewer" />
+ <entry name="PUI" value="Project Unique Identifier" />
+ <entry name="Pull" value="A style of data management in which an application actively gathers data from an external application or system." />
+ <entry name="Pull List (Inventory)" value="An inventory requirements list of items to be “pulled” from supply inventory locations for the purpose of replenishment to the user areas. It is generated from a combination of consumption rates, replacement lead times, and inventory control factors. See glossary term Pick List." />
+ <entry name="Push" value="A style of data management in which an application actively sends data to an external application or system." />
+ <entry name="Q6H" value="Every six hours" />
+ <entry name="QA" value="Quality Assurance" />
+ <entry name="QD" value="Every Day" />
+ <entry name="QID" value="Four Times a Day" />
+ <entry name="QO" value="Query Object" />
+ <entry name="Quality Assurance (QA)" value="A set of activities that defines and implements quality into the software development process. Conducting work product reviews, testing, analyzing metrics, and surveying users are typical quality assurance activities." />
+ <entry name="Quick Order" value="A pre-written order of any number of items (a single medication or an order set). Quick Orders are used to expedite order entry for commonly used orders." />
+ <entry name="R.Ph" value="Registered Pharmacist" />
+ <entry name="RAR" value="Resource Adapter Archive" />
+ <entry name="Rational ClearCase" value="A tool developed by IBM to control and manage versions of elements such as source files for software and documentation, directories, reports, etc." />
+ <entry name="Rational ClearQuest" value="A tool developed by IBM to submit and track change requests, gather project matrices, and generate defect summary reports." />
+ <entry name="Rational RequisitePro" value="A tool developed by IBM to organize, prioritize, track, and control changing requirements of a system or application." />
+ <entry name="Rational Software Architect" value="A tool developed by IBM to model the system components and their interactions." />
+
+</glossarydata>

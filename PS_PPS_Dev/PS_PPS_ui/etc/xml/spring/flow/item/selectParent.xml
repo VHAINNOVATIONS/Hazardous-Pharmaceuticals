@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="searchItems"
+    start-state="loadConditional">
+
+    <input
+        name="item"
+        value="flowScope.childitem"
+        type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+
+    <on-start>
+        <set
+            name="flowScope.searchMode"
+            value="flowScope.childitem.entityType.parent"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+        <!-- Backup previous conversation scope search results. -->
+        <set
+            name="conversationScope.oldItems"
+            value="conversationScope.items"
+            type="java.util.Collection" />
+        <set
+            name="conversationScope.oldSearchTemplate"
+            value="conversationScope.searchTemplate"
+            type="gov.va.med.pharmacy.peps.common.vo.SearchTemplateVo" />
+        <set
+            name="conversationScope.searchTemplate"
+            value="null"
+            type="gov.va.med.pharmacy.peps.common.vo.SearchTemplateVo" />
+        <set
+            name="conversationScope.items"
+            value="null"
+            type="java.util.Collection" />
+    </on-start>
+
+    <action-state id="loadConditional">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="loadConditionalSearch" />
+        </evaluate>
+        <transition
+            on="success"
+            to="searchCriteria" />
+    </action-state>
+
+    <view-state
+        id="searchCriteria"
+        view="${conversationScope.searchTemplate.searchCriteria.searchDomain.viewName}.selectParent.search">
+        <transition
+            on="blankTemplate"
+            to="blankTemplate" />
+        <transition
+            on="blankLocalTemplate"
+            to="blankLocalTemplate" />
+
+        <transition
+            on="retrieve"
+            to="selectParent">
+            <set
+                name="flowScope.itemId"
+                value="requestParameters.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="requestParameters.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+        <transition
+            on="retrieveChildren"
+            to="selectParent">
+            <set
+                name="flowScope.itemId"
+                value="requestParameters.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="requestParameters.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+    </view-state>
+
+    <subflow-state
+        id="blankTemplate"
+        subflow="manageTemplate">
+        <input
+            name="itemType"
+            value="flowScope.searchMode"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="templateMethod"
+            value="'openBlankTemplate'"
+            type="string" />
+        <transition
+            on="end"
+            to="selectParent">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+        <transition
+            on="cancel"
+            to="searchCriteria" />
+    </subflow-state>
+
+    <subflow-state
+        id="blankLocalTemplate"
+        subflow="manageTemplate">
+        <input
+            name="itemType"
+            value="flowScope.searchMode"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="templateMethod"
+            value="'openBlankLocalTemplate'"
+            type="string" />
+        <transition
+            on="end"
+            to="selectParent">
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+        <transition
+            on="cancel"
+            to="searchCriteria" />
+    </subflow-state>
+
+    <action-state id="selectParent">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="selectParent" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+
+    <end-state id="end">
+        <output
+            name="item"
+            value="flowScope.childitem"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+    </end-state>
+
+    <on-end>
+        <!-- Restore previous conversation scope search results. -->
+        <set
+            name="conversationScope.searchTemplate"
+            value="conversationScope.oldSearchTemplate"
+            type="gov.va.med.pharmacy.peps.common.vo.SearchTemplateVo" />
+        <set
+            name="conversationScope.items"
+            value="conversationScope.oldItems"
+            type="java.util.Collection" />
+    </on-end>
+
+</flow>

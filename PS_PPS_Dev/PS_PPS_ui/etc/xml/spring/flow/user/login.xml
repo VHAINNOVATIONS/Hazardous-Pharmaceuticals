@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-exception"
+    start-state="loginInputState">
+
+	<var name="user" class="gov.va.med.pharmacy.peps.common.vo.UserVo"></var>
+	
+    <view-state
+        id="loginInputState"
+        view="user.login">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+<!-- 
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="user" />
+                <attribute
+                    name="actionMethod"
+                    value="login" />
+            </evaluate>
+ -->            
+            <evaluate expression="userCommand.login()"></evaluate>
+        </on-render>
+        <transition
+            on="login"
+            to="loginExecuteState" />
+    </view-state>
+
+    <action-state id="loginExecuteState">
+        <!-- 
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="user" />
+            <attribute
+                name="actionMethod"
+                value="login" />
+        </evaluate>
+         -->
+        <evaluate expression="userCommand.login()"></evaluate>
+        <transition
+            on="input"
+            to="loginInputState" />
+        <transition
+            on="login"
+            to="loginInputState" />
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+
+    <end-state
+        id="end"
+        view="user.login" />
+
+</flow>

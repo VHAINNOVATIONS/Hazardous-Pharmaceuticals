@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugAccountabilityResponse xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/response">
+    <responseType>
+        <NDC>002669-9010-99</NDC>
+        <type>Success</type>
+        <ErrorMessage></ErrorMessage>
+    </responseType>
+</drugAccountabilityResponse>

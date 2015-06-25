@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="load">
+
+	<!-- state exists to force login if necessary -->
+    <decision-state 
+    	id="load">
+    	<if test="sessionScope.isStopped==false"
+    		then="migrationControl"
+    		else="migrationStart"/>
+    </decision-state>
+    
+	<view-state
+        id="migrationStart"
+        view="migration.start">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <!-- <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="migration" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render> -->
+        <!-- <transition
+        	on="save"
+        	to="saveCSV" /> -->
+        <transition
+        	on="start"
+        	to="start" />
+    </view-state>
+    
+    <!-- <action-state 
+    	id="saveCSV">
+    	<evaluate expression="springWebFlowActionAdapter">
+    		<attribute
+    			name="actionName"
+    			value="migration" />
+    		<attribute
+    			name="actionMethod"
+    			value="saveCsv" />
+    	</evaluate>
+    	<transition
+    		on="success"
+    		to="migrationStart" >
+    		<set
+    			name="hasSavedCsv"
+    			value="'true'"
+    			type="boolean" />
+    	</transition>
+    </action-state> -->
+    
+    <action-state
+    	id="start">
+    	<evaluate expression="migrationController.startMigration()"/>
+    	<transition
+    		on="success"
+    		to="migrationControl">
+    		<set
+    			name="conversationScope.isStopped"
+    			value="false"
+    			type="boolean" />
+    	</transition>
+    </action-state>
+    
+    <view-state
+        id="migrationControl"
+        view="migration.control">
+        <!-- <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="migration" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render> -->
+        <transition
+        	on="finish"
+        	to="migrationFinish" >
+        </transition>
+    </view-state>
+    
+    <action-state
+    	id="migrationFinish">
+    	<evaluate expression="migrationController.endMigration()"/>
+    	<transition
+    		on="success"
+    		to="end" >
+    		<set
+    			name="conversationScope.isStopped"
+    			value="false"
+    			type="boolean" />
+    	</transition>
+   </action-state>
+    
+    <end-state
+    	id="end"
+    	view="flowRedirect:migrationReport" />
+</flow>

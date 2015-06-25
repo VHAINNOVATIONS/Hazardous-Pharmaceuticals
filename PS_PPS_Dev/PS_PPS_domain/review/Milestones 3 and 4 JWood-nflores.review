@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4 JWood">
+  <ReviewIssue id="FKFR00SG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:07:31:456 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:16:10:521 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="153">src/gov/va/med/pharmacy/peps/domain/common/utility/dataobjectconversion/DataObjectConversionUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Should this be using depricated method</Summary>
+    <Description>if (!isEmptyOrNotSelected(selection.getKey().getListValue())) {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFVCORP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:09:20:869 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:09:48:025 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="2193">src/gov/va/med/pharmacy/peps/domain/common/utility/dataobjectconversion/DataObjectConversionUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>should commented out code still be here?</Summary>
+    <Description>// /**</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFVGSUQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:12:32:786 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:13:29:347 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="17">src/gov/va/med/pharmacy/peps/domain/common/model/DoFieldNames.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>How come this one isn't set to ("eplDosageForms") to follow format of other entries -- might be okay -- just looked out of place to me so marking it just in case</Summary>
+    <Description>EPL_DOSAGE_FORMS("vadfOwnerId");</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVP4A8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:06:47:024 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:06:50:805 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="118">src/gov/va/med/pharmacy/peps/domain/common/utility/dataobjectconversion/DataObjectConversionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>DataObjectConversionUtility</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

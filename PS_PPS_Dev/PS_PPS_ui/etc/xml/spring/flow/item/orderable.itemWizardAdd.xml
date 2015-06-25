@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="addItem"
+    start-state="wizard1">
+
+ 	<input
+        name="itemId"
+        value="flowScope.itemId"
+        type="string" />
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <view-state
+        id="wizard1"
+        view="orderable.item.wizard.input.1">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="next"
+            to="next1" />
+        <transition
+            on="generateOINames"
+            to="generateOINames" />
+    </view-state>
+
+    <action-state id="next1">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard2" />
+    </action-state>
+
+    <action-state id="generateOINames">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="generateOINames" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard1" />
+    </action-state>
+
+    <view-state
+        id="wizard2"
+        view="orderable.item.wizard.input.2">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="wizard1" />
+        <transition
+            on="confirm"
+            to="editItem" />
+    </view-state>
+
+	<subflow-state
+        id="editItem"
+        subflow="editItem">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <input
+            name="item"
+            value="flowScope.item"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+        <input
+            name="oldItem"
+            value="flowScope.oldItem"
+            type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+
+        <transition
+            on="end"
+            to="chooseEnd">
+            <set
+                name="flowScope.item"
+                value="currentEvent.attributes.item"
+                type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+            <set
+                name="flowScope.itemId"
+                value="currentEvent.attributes.itemId != null ? currentEvent.attributes.itemId : currentEvent.attributes.item.id"
+                type="string" />
+            <set
+                name="flowScope.itemType"
+                value="currentEvent.attributes.itemType"
+                type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        </transition>
+        <transition
+            on="searchEnd"
+            to="search" />
+        <transition
+            on="retrieveEnd"
+            to="retrieve" />
+        <transition
+            on="cancel"
+            to="cancel" />            
+    </subflow-state>
+    
+    <action-state id="next2">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="validateWizard" />
+        </evaluate>
+        <transition
+            on="success"
+            to="wizard3" />
+    </action-state>
+
+    <view-state
+        id="wizard3"
+        view="orderable.item.wizard.input.3">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="previous"
+            to="wizard2" />
+    </view-state>
+</flow>

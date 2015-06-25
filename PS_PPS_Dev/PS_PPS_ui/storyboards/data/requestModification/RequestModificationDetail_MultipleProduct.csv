@@ -1,0 +1,3 @@
+//Product name, VADF name, current value, requested value,reason,req to modify value,req to make editable
+Metoprolol Tartrate<br>50 mg TAB,Patient Specific Label,Not Checked,Checked,changed value of non-editable field,N,Y
+Metoprolol Tartrate<br>100 mg TAB,Patient Specific Label,Not Checked,Checked,changed value of non-editable field,Y,N

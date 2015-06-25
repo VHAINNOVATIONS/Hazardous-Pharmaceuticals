@@ -1,0 +1,28 @@
+     [echo] --------------------------- Cleaning Interface ----------------------------
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+     [echo] --------------------------- Cleaning Common ----------------------------
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+
+cleanAll:
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+
+cleanAll:

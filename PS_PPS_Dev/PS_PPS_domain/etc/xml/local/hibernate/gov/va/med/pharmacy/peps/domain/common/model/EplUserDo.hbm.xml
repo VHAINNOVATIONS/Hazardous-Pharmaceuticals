@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplUserDo"
+    table="EPL_USERS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="firstName"
+        type="java.lang.String"
+        column="FIRST_NAME"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastName"
+        type="java.lang.String"
+        column="LAST_NAME"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="location"
+        type="java.lang.String"
+        column="LOCATION"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="userName"
+        type="java.lang.String"
+        column="USER_NAME"
+        not-null="true"
+        length="256"
+        unique="true"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="userPassword"
+        type="java.lang.String"
+        column="USER_PASSWORD"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional one-to-many association to EplNotificationStatusDo -->
+    <set
+        name="eplNotificationStatuses"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="USER_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplNotificationStatusDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplNotifUserPrefDo -->
+    <set
+        name="eplNotifUserPrefs"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="USER_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplNotifUserPrefDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplSearchTemplateDo -->
+    <set
+        name="eplSearchTemplates"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="USER_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplSearchTemplateDo"
+        />
+    </set>
+    <!-- bi-directional one-to-many association to EplSessionPreferenceDo -->
+    <set
+        name="eplSessionPreferences"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="USER_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplSessionPreferenceDo"
+        />
+    </set>
+
+</class>
+</hibernate-mapping>
+

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5I7QT8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:45:21:788 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:48:50:052 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="25">src/gov/va/med/pharmacy/peps/external/common/drugdatavendor/outbound/capability/SearchCapability.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Generic return types</Summary>
+    <Description>It's generally advisable to return the specific type of Collection, rather than a generic Collection type. For example, returning a HashSet provides the callee with the option to efficiently lookup/retrieve objects in the data structure. Otherwise, the type must be down-casted to to a Set.&#xD;
+&#xD;
+The recommended return types are: Set, List, and Map.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5IEGZG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:50:35:644 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:51:47:331 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="39">src/gov/va/med/pharmacy/peps/external/common/drugdatavendor/outbound/utility/impl/FdbConnectionUtilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Potential race condition?</Summary>
+    <Description>Is there a potential race conditon between the when the fdbDataSource reference is set and retrieved during the lookup?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5II0HO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:53:20:892 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:55:26:703 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="147">src/gov/va/med/pharmacy/peps/external/common/drugdatavendor/outbound/utility/impl/SearchResultsConversionUtilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Distinction betweeen checked/unchecked exceptions</Summary>
+    <Description>It seems most the interface exceptions are unchecked. For non-recoverable errors, this makes sense. However, there seems to be a number of "business logic" errors that may occur which will go uncaught (i.e., handling a FDBUnknownIDException).</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5IORMM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:58:35:998 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 12:54:17:513 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="37">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/outbound/capability/impl/VistaLinkCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Seems like this is cheating a bit. :o)</Summary>
+    <Description />
+    <Annotation />
+    <Revision>This stub will need to be updated to be more realistic in the next milestone.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ITH9C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:02:15:840 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 12:47:34:302 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="23">src/gov/va/med/pharmacy/peps/external/common/sts/capability/StsCapability.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Is this prototype interface accurate?</Summary>
+    <Description>Is this what the STS interface will look like for generating a VUID? Or will we need to pass in the term, concept, etc. in order to generate a VUID?</Description>
+    <Annotation />
+    <Revision>Requirements are still being gathered with STS. The comment is probably correct, something will have to be passed in.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5J0CBT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:07:36:041 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:08:20:416 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="130">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugTherapyCheckCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Generic Types</Summary>
+    <Description>For consistency reasons, it's probably a good idea to make all of the types generic.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5J22VJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:08:57:103 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:10:01:681 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="36">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseStatusUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Seems like an exception should be thrown</Summary>
+    <Description>Is returning null here a reasonable thing to do or should an exception be thrown?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5J4HMS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:10:49:540 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:11:15:618 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="36">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/MessageTypeUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Another exception</Summary>
+    <Description>Seems like an exception should be thrown here as well.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5J5LBL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:11:40:977 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:12:06:977 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/StringUtility.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is this helper method really necessary?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5J6OG0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:12:31:680 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 11:13:50:461 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mspears</ReviewerId>
+    <AssignedTo />
+    <File line="32">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/impl/ScreenDrugConversionUtilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why are some classes beans and others are not?</Summary>
+    <Description>Some of the utility classes have been converted to beans and other have not. Is there a guideline for this? It seems a bit inconsistent.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

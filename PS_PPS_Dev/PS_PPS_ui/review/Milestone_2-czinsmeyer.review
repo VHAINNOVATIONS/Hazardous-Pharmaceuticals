@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FKFHLKT4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 09:44:21:016 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 09:44:50:855 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="75">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused variables</Summary>
+    <Description>private static final PrintTemplateVo PRODUCT_SEARCH_PRINT_TEMPLATE = DefaultPrintTemplateFactory.defaultProductSearch();&#xD;
+    private static final PrintTemplateVo NDC_SEARCH_PRINT_TEMPLATE = DefaultPrintTemplateFactory.defaultNdcSearch();&#xD;
+    private static final PrintTemplateVo OI_SEARCH_PRINT_TEMPLATE = DefaultPrintTemplateFactory.defaultOrderableItemSearch();&#xD;
+    private static final PrintTemplateVo DOMAIN_SEARCH_PRINT_TEMPLATE = DefaultPrintTemplateFactory&#xD;
+        .defaultManagedDataSearch();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFHN1S8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 09:45:29:672 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 09:45:56:867 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="207">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Missing method header</Summary>
+    <Description>public String computeProductUniquenessFields() {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFK25RR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 10:53:13:911 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 10:54:27:513 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>czinsmeyer</ReviewerId>
+    <AssignedTo />
+    <File line="55">src/gov/va/med/pharmacy/peps/presentation/national/action/UpdateDifAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this the best way to handle this exception?</Summary>
+    <Description>Do we just want to log a trace dump if this occurs?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

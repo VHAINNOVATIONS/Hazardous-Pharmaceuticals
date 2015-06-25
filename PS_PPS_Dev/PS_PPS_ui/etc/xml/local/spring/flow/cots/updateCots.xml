@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="retrieveSiteUpdateSchedule">
+    
+    <action-state id="retrieveSiteUpdateSchedule">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="updateDif" /> 
+            <attribute
+                name="actionMethod"
+                value="retrieveSiteUpdateSchedule" />
+        </evaluate>
+ 
+       <transition
+            on="success"
+            to="manageDif" />
+            <transition
+            on="error"
+            to="manageDif" />
+    </action-state>
+    
+    <view-state
+        id="manageDif"
+        view="updateDif">
+        
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+            
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>           
+        </on-render>
+        
+        <transition
+            on="submit"
+            to="submit" />
+        <transition
+            on="error"
+            to="manageDif" />
+            <transition
+            on="manualExecute"
+            to="manualExecute" />
+ 
+    </view-state>
+    
+    <action-state id="submit">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="updateDif" />
+            <attribute
+                name="actionMethod"
+                value="saveSiteUpdateSchedule" />
+        </evaluate>
+        
+        <transition
+            on="success"
+            to="confirm" />
+        <transition
+            on="error"
+            to="manageDif" />
+    </action-state>
+          
+    <action-state id="manualExecute">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="updateDif" />
+            <attribute
+                name="actionMethod"
+                value="performDifUpdate" />
+        </evaluate>
+        
+        <transition
+            on="success"
+            to="updateRunning" />
+        <transition
+            on="error"
+            to="localError" />
+    </action-state>
+    
+    
+    <view-state
+        id="updateRunning"
+        view="running.difUpdate">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="manageDif" />
+    </view-state>
+    
+    <view-state
+        id="confirm"
+        view="confirm.difupdates">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="manageDif" />
+    </view-state>
+
+    
+    <view-state
+        id="localError"
+        view="error.difUpdate">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="updateDif" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="ok"
+            to="manageDif" />
+    </view-state>
+    
+</flow>

@@ -1,0 +1,101 @@
+<project name="Domain" default="compile" basedir="." xmlns:swri="http://www.swri.org">
+	<import file="../PS_PPS_common/etc/build/template/template.xml" />
+
+	<import file="${etc.build.dir}/template/domain.xml" />
+
+	<target name="init" depends="Template.init" description="Initialize the project">
+		<swri:initDomainTemplate />
+		<property name="buildCP" refid="build.class.path"/>
+		<!-- echo>Classpath at this stage: ${buildCP}</echo -->
+		<property name="projectCP" refid="Domain.build.class.path" />
+		<!-- echo>${ant.project.name} Build CP at this stage: ${projectCP}</echo -->
+		<for list="${national.hosts}" delimiter=",;:" param="host">
+			<sequential>
+				<if>
+					<istrue value="${refresh.database}" />
+					<then>
+						<if>
+							<istrue value="${refresh.database.migration}" />
+							<then>
+								<swri:refreshDatabaseMigration environment="national" file="NationalEPL" />
+							</then>
+							<else>
+								<!--swri:refreshDatabase environment="local" file="LocalEPL" / edited for migration -->
+								<swri:refreshDatabase environment="national" file="NationalEPL" />
+							</else>
+						</if>
+					</then>
+				</if>
+			</sequential>
+		</for>
+	</target>
+
+	<target name="clean" depends="Template.clean" description="Clean the project" />
+
+	<target name="cleanAll" depends="Template.cleanAll" description="Clean the project and its dependencies" />
+
+	<target name="generate" depends="Template.generate" description="Generate the project artifacts">
+		<swri:generateHibernateConfig />
+	</target>
+
+	<target name="compile" depends="Template.compile" description="Compile the source code" />
+
+	<target name="compileEnvironments" depends="Template.compileEnvironments" description="Compile the source code environments (common, local, and national) separately" />
+
+	<target name="unitTest" depends="Template.unitTest" description="Execute the unit tests" />
+
+	<target name="buildUnitTest"
+            depends="Template.buildUnitTest"
+            description="Compile environments separately for dependency checking, then run unit tests" />
+
+	<target name="jar" depends="Template.jar" description="Package the project artifacts">
+		<!--swri:packageLocalJar /-->
+		<swri:packageNationalJar />
+	</target>
+
+	<target name="document" depends="Template.document" description="Document the project" />
+
+	<target name="exportDatabase" depends="generate" description="Export database to Excel spreadsheets">
+		<!--swri:exportDatabase environment="local" / edited for migration -->
+		<swri:exportDatabase environment="national" />
+	</target>
+
+	<target name="refreshDatabase" depends="generate" description="Reload database tables and data">
+        <!--swri:refreshDatabase environment="local" file="LocalEPL" / edited for migration-->
+        <for list="${national.hosts}" delimiter=",;:" param="host">
+            <sequential>
+                <swri:refreshDatabase environment="national" file="NationalEPL" />
+            </sequential>
+        </for>
+	</target>
+
+	<target name="refreshDatabaseMigration" depends="generate" description="Reload database tables and data">
+        <!--swri:refreshDatabase environment="local" file="LocalEPL" / edited for migration-->
+        <for list="${national.hosts}" delimiter=",;:" param="host">
+            <sequential>
+                <swri:refreshDatabaseMigration environment="national" file="NationalEPL" />
+            </sequential>
+        </for>
+	</target>
+
+	<target name="refreshPerformanceDatabase" depends="generate" description="Reload performance database tables and data">
+        <!--swri:refreshPerformanceDatabase environment="local" file="LocalEPL" / edited for migration-->
+        <for list="${national.hosts}" delimiter=",;:" param="host">
+            <sequential>
+                <swri:refreshPerformanceDatabase environment="national" file="NationalEPL" />
+            </sequential>
+        </for>
+	</target>
+
+	<target name="createDdl" depends="init" description="Generate DDL for all databases off of Derby database">
+		<swri:createDdl />
+	</target>
+
+	<target name="middlegen" depends="init" description="Generate hbm.xml and Hibernate data objects from hbm.xml">
+		<!--swri:hibernate environment="local" / edited for migration-->
+		<swri:hibernate environment="national" />
+	</target>
+
+	<!-- CruiseControl calls this target so everything is clean before running unit tests and so that the database gets refreshed -->
+	<target name="cruiseControlUnitTest" depends="Template.setRefreshDatabase, Template.cruiseControlUnitTest" />
+</project>

@@ -1,0 +1,132 @@
+<project name="BuildTestTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <!-- Do not cause the build to fail if a test case fails -->
+    <target name="setIgnoreTestFailures">
+        <property name="ignore.test.failures" value="true" />
+    </target>
+
+    <target name="initBuildFailureMessage">
+        <tempfile property="build.failure.message.file" prefix="build" suffix=".properties" />
+
+        <propertyfile file="${build.failure.message.file}">
+            <entry key="build.failure.message" value="Build failure!" />
+        </propertyfile>
+    </target>
+
+    <!-- Run Checkstyle and PMD looking to eventually fail if errors -->
+    <target name="buildTestDocument">
+        <if>
+            <equals arg1="${deploy.environment}" arg2="devbox" />
+            <then>
+                <swri:progress msg="Skipping Checkstyle and PMD for devbox environment" />
+            </then>
+            <else>
+                <swri:progress msg="Documenting ${ant.project.name}" />
+        
+                <swri:checkstyle />
+                <swri:pmd errorOnly="true" />
+            </else>
+        </if>
+    </target>
+
+    <!-- Create a failure message and fail the build -->
+    <!-- if unit or integration tests fail, or if Checkstyle or PMD errors exist -->
+    <macrodef name="checkForBuildTestFailure" uri="http://www.swri.org">
+        <sequential>
+            <swri:setBuildFailed />
+
+            <delete file="${build.failure.message.file}" quiet="true" failonerror="false" />
+
+            <if>
+                <istrue value="${build.failed}" />
+                <then>
+                    <fail>${build.failure.message}</fail>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="setBuildFailed" uri="http://www.swri.org">
+        <sequential>
+            <if>
+                <or>
+                    <!-- Build has failed if message is longer than 'Build failure!' or if unit, integration, checkstyle, or pmd has failed -->
+                    <length string="${build.failure.message}" trim="true" length="14" when="greater" />
+                    <isset property="unit.test.failed" />
+                    <isset property="integration.test.failed" />
+                    <isset property="selenium.test.failed" />
+                    <!-- 2011-10-17: jbarde, commentted out so checkstyle and pmd warnings/errors cannot fail a build -->
+                    <!-- <isset property="checkstyle.failure" /> -->
+                    <!-- <isset property="pmd.failure" /> -->
+                </or>
+                <then>
+                    <property name="build.failed" value="true" />
+                    <echo message="build.failure.message: . ${build.failure.message}" />
+                    <echo message="unit.test.failed: ...... ${unit.test.failed}" />
+                    <echo message="integration.test.failed: ${integration.test.failed}" />
+                    <echo message="selenium.test.failed: .. ${selenium.test.failed}" />
+                    <echo message="checkstyle.failure: .... ${checkstyle.failure}" />
+                    <echo message="pmd.failure: ........... ${pmd.failure}" />
+                </then>
+                <else>
+                    <property name="build.failed" value="false" />
+                </else>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="setBuildFailureMessage" uri="http://www.swri.org">
+        <sequential>
+            <property file="${build.failure.message.file}" />
+
+            <if>
+                <isset property="unit.test.failed" />
+                <then>
+                    <var name="build.failure.message"
+                         value="${build.failure.message} One or more ${ant.project.name} unit tests failed!" />
+                </then>
+            </if>
+
+            <if>
+                <isset property="integration.test.failed" />
+                <then>
+                    <var name="build.failure.message"
+                         value="${build.failure.message} One or more ${ant.project.name} integration tests failed!" />
+                </then>
+            </if>
+
+            <if>
+                <isset property="selenium.test.failed" />
+                <then>
+                    <var name="build.failure.message"
+                         value="${build.failure.message} One or more ${ant.project.name} Selenium tests failed!" />
+                </then>
+            </if>
+
+            <!-- 2011-10-17: jbarde, commentted out so checkstyle warnings/errors cannot fail a build -->
+            <!--
+            <if>
+                <isset property="checkstyle.failure" />
+                <then>
+                    <var name="build.failure.message"
+                         value="${build.failure.message} Checkstyle errors in ${ant.project.name} found!" />
+                </then>
+            </if>
+            -->
+
+            <!-- 2011-10-17: jbarde, commentted out so PMD warnings/errors cannot fail a build -->
+            <!--
+            <if>
+                <isset property="pmd.failure" />
+                <then>
+                    <var name="build.failure.message"
+                         value="${build.failure.message} PMD errors in ${ant.project.name} found!" />
+                </then>
+            </if>
+            -->
+
+            <propertyfile file="${build.failure.message.file}">
+                <entry key="build.failure.message" value="${build.failure.message}" />
+            </propertyfile>
+        </sequential>
+    </macrodef>
+</project>

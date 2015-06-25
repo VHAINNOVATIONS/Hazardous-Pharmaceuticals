@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/PS_PPS_common"/>
+	<classpathentry excluding="*.keep|*.keep.*|**/*.keep|**/*.keep.*|*.contrib|*.contrib.*|**/*.contrib|**/*.contrib.*|*.merge|*.merge.*|**/*.merge|**/*.merge.*" kind="src" path="src"/>
+	<classpathentry excluding="*.keep|*.keep.*|**/*.keep|**/*.keep.*|*.contrib|*.contrib.*|**/*.contrib|**/*.contrib.*|*.merge|*.merge.*|**/*.merge|**/*.merge.*" kind="src" path="build/src"/>
+	<classpathentry excluding="*.keep|*.keep.*|**/*.keep|**/*.keep.*|*.contrib|*.contrib.*|**/*.contrib|**/*.contrib.*|*.merge|*.merge.*|**/*.merge|**/*.merge.*" kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="lib" path="build/meta"/>
+	<classpathentry kind="lib" path="etc"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/build/hibernate/freemarker-2.3.18.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/build/hibernate/hibernate-tools-3.2.4.GA.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/build/middlegen/middlegen-hibernate-plugin-2.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/build/middlegen/html.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/hibernate/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/junitperf-1.9.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/weblogic/weblogic.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/hibernate/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-core-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-aop-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-beans-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-context-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/spring/spring-tx-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/spring/spring-orm-3.0.5.RELEASE.jar" sourcepath="/PS_PPS_lib/Domain/spring/spring-orm-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/xml/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-bean-collections-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-beanutils-core-1.8.3.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/commons/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/build/test/easymock-2.5.2.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/log/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/build/hibernate/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/build/hibernate/jtidy-r8-20060801.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/hibernate/hibernate-commons-annotations-3.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/hibernate/hibernate-core-3.6.4.Final.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PS_PPS_interface"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/hibernate/javassist-3.4.GA.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Domain/hibernate/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/hibernate-validator-4.1.0.Final.jar" sourcepath="/PS_PPS_lib/Common/hibernate/hibernate-validator-4.1.0.Final-sources.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Interface/vistalink/vljConnector-1.6.0.028.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Interface/vistalink/vljFoundationsLib-1.6.0.028.jar"/>
+	<classpathentry kind="lib" path="/PS_PPS_lib/Common/hibernate/ehcache-core-2.5.2.jar" sourcepath="/PS_PPS_lib/Common/hibernate/ehcache-core-2.5.2-sources.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

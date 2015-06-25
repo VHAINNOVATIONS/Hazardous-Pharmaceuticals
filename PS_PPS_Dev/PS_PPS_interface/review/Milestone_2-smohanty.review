@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4EHP6U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:13:21:606 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:14:57:856 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="41">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDoseCheckCapabilityImpl.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description>This class is leftover from POCII and is not used in the current application.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EK5R7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:15:16:387 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:15:31:325 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="47">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugDrugCheckCapabilityImpl.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EKYKZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:15:53:747 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:16:05:497 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="39">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugIngredientCheckCapabilityImpl.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EV10A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:23:43:450 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:23:55:840 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="46">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/impl/PerformDrugTherapyCheckCapabilityImpl.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EVUTM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:24:22:090 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:24:43:731 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/PerformDrugDoseCheckCapability.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EY0GR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:26:02:715 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:26:30:090 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/PerformDrugDrugCheckCapability.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EZ121">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:26:50:137 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:27:01:575 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/PerformDrugIngredientCheckCapability.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EZNTH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:27:19:637 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:27:31:122 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/PerformDrugTherapyCheckCapability.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F0CFS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:27:51:544 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:28:02:434 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckRate.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F1PPN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:28:55:403 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:29:10:044 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckRoute.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F2FA8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:29:28:544 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:29:39:106 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckType.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F2Z83">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:29:54:387 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:30:04:450 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseCheckUnit.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F3IMW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:30:19:544 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:30:45:481 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/DoseStatusUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F4TCQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:31:20:090 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:31:43:044 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/IdMapUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F5QYD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:32:03:637 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:32:13:497 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="25">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/MessageConversionUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F6MCL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:32:44:325 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:32:57:512 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/MessageSeverityUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F7BGO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:33:16:872 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:33:27:372 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/MessageTypeUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4F7WY3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:33:44:715 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:38:13:387 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="25">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/ScreenDrugConversionUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FDR4Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:38:17:122 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:38:42:215 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="25">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/ScreenDrugConversionUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over interface from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FF9QN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:39:27:887 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:39:42:481 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/StringUtility.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FG1KT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:40:03:965 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:40:15:872 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="32">src/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/utility/impl/ScreenDrugConversionUtilityImpl.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FHCBK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:41:04:544 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:41:16:653 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/external/tools/fdbupdater/FDBUpdater.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FIJAF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:42:00:231 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:42:15:528 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="36">src/gov/va/med/pharmacy/peps/external/tools/nddfloader/NddfLoader.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FJEZ2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:42:41:294 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:43:01:872 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="26">test/gov/va/med/pharmacy/peps/external/common/drugdatavendor/outbound/capability/test/SearchCapabilityTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over test class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FKBGB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:43:23:387 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:43:36:497 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="20">test/gov/va/med/pharmacy/peps/external/common/preencapsulation/outbound/capability/test/SendTestMessageCapabilityTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over test class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FL5T7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:44:02:731 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:44:22:153 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="25">test/gov/va/med/pharmacy/peps/external/common/preencapsulation/outbound/utility/test/stub/VistaLinkConnectionUtilityStub.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over stub class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FLUV4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:44:35:200 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:44:49:090 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="32">test/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/test/PerformDrugDoseCheckCommandTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over test class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FMOD6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:45:13:434 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:45:26:387 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="28">test/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/test/PerformDrugDrugCheckCommandTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over test class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FNDW0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:45:46:512 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:46:05:278 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="28">test/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/test/PerformDrugIngredientCheckCommandTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over test  class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4FO2YD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:46:18:997 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:46:37:700 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="28">test/gov/va/med/pharmacy/peps/external/local/drugdatavendor/outbound/capability/test/PerformDrugTherapyCheckCommandTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused left over test class from POCII</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4 JWood">
+  <ReviewIssue id="FKFS7NY8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:41:27:680 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:42:55:315 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="73">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary />
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFS9TMI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:43:08:346 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:44:46:621 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="104">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should runtime exception be re-thrown?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFSQ99X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:55:55:125 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:56:38:044 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="230">src/gov/va/med/pharmacy/peps/common/vo/EntityType.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Throw runtime instead?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFSRZ26">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:57:15:198 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:57:28:650 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="292">src/gov/va/med/pharmacy/peps/common/vo/EntityType.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Throw runtime instead?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFT4YLZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:07:21:143 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:09:22:589 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="118">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>(general for FieldKey) Should we have sub-classes to reduce the amt of parameters on these?</Summary>
+    <Description>Or, separate the GUI/presentation config from the data/domain side, and have rules checks to verify the GUI and data setttings for the same field are compatible?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFT8QOK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:10:17:492 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:11:58:532 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1501">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Elevate the severity level of this LOG statement.</Summary>
+    <Description>See other LOG.trace() calls in this file.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7HQJW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:36:58:028 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:37:33:184 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="328">src/gov/va/med/pharmacy/peps/common/vo/ValueObject.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Shoudl this 'validator not found' exception be sent up?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKRA6DZL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-09-05 :: 15:49:49:137 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-09-05 :: 15:53:11:730 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="139">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Don't rely on null national</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

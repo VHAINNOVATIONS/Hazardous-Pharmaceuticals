@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:webflow="http://www.springframework.org/schema/webflow-config"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/webflow-config
+        http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/jee
+        http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <import resource="PresentationContextTemplate.xml" />
+
+    <!-- Common Services -->
+
+    <!-- <bean id="domainService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true"
+        lazy-init="true">
+        <property name="jndiName" value="DomainServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.DomainService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="domainService" 
+        jndi-name="DomainServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.DomainService" />
+
+    <!-- <bean id="managedItemService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="ManagedItemServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.ManagedItemService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="managedItemService" 
+        jndi-name="ManagedItemServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.ManagedItemService" />
+
+    <!-- <bean id="notificationService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="NotificationServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.NotificationService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="notificationService" 
+        jndi-name="NotificationServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.NotificationService" />
+
+    <!-- <bean id="printTemplateService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="PrintTemplateServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.PrintTemplateService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="printTemplateService" 
+        jndi-name="PrintTemplateServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.PrintTemplateService" />
+
+    <!-- <bean id="requestService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="RequestServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.RequestService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="requestService" 
+        jndi-name="RequestServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.RequestService" />
+
+    <!-- <bean id="searchTemplateService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="SearchTemplateServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.SearchTemplateService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="searchTemplateService" 
+        jndi-name="SearchTemplateServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.SearchTemplateService" />
+
+    <!-- <bean id="userService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="UserServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.UserService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="userService" 
+        jndi-name="UserServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.UserService" />
+
+    <jee:local-slsb 
+        id="nationalSettingService" 
+        jndi-name="NationalSettingServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.NationalSettingService" />
+
+    <!-- External Services -->
+    <!-- <bean id="drugDataService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="DrugDataServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.DrugDataService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="drugDataService" 
+        jndi-name="DrugDataServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.DrugDataService" />
+
+    <!-- <bean id="drugAccountabilityService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="DrugAccountabilityServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.DrugAccountabilityService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+   <!--   <jee:local-slsb 
+        id="drugAccountabilityService" 
+        jndi-name="DrugAccountabilityServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.DrugAccountabilityService" />
+-->
+    <!-- <bean id="drugReferenceService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="DrugReferenceServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.DrugReferenceService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="drugReferenceService" 
+        jndi-name="DrugReferenceServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.drugdatavendor.session.DrugReferenceService" />
+
+    <!-- <bean id="quickActionService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="QuickActionServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.QuickActionService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="quickActionService" 
+        jndi-name="QuickActionServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.QuickActionService" />
+
+    <!-- <bean id="synchronizationStatusService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="SynchronizationStatusServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.SynchronizationStatusService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="synchronizationStatusService" 
+        jndi-name="SynchronizationStatusServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.SynchronizationStatusService" />
+
+    <!-- <bean id="drugInfoService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="DrugInfoServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.DrugInfoService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="drugInfoService" 
+        jndi-name="DrugInfoServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.DrugInfoService" />
+
+    <!-- <bean id="orderCheckService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property name="jndiName" value="OrderCheckServiceLocal" />
+        <property name="businessInterface"
+            value="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.OrderCheckService" />
+        <property name="resourceRef" value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="orderCheckService" 
+        jndi-name="OrderCheckServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.external.common.preencapsulation.session.OrderCheckService" />
+
+    <jee:local-slsb 
+        id="migrationCSVService" 
+        jndi-name="MigrationCSVServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.MigrationCSVService" />
+        
+
+    <jee:local-slsb 
+        id="migrationService" 
+        jndi-name="MigrationServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.MigrationService" />
+        
+    
+<!--     <jee:local-slsb  -->
+<!--         id="schedulerService"  -->
+<!--         jndi-name="SchedulerServiceLocal"  -->
+<!--         business-interface="gov.va.med.pharmacy.peps.service.common.session.SchedulerService" /> -->
+        
+        <jee:local-slsb 
+        id="fdbMappingService" 
+        jndi-name="FdbMappingServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.FdbMappingService" /> 
+   
+    <jee:local-slsb 
+        id="fDBUpdateProcessService" 
+        jndi-name="FDBUpdateProcessServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.FDBUpdateProcessService" />
+        
+    <jee:local-slsb 
+        id="fdbSchedulerProcessService" 
+        jndi-name="FdbSchedulerProcessServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.FdbSchedulerProcessService" />  
+        
+    <jee:local-slsb 
+        id="reportsService" 
+        jndi-name="ReportsServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.ReportsService" />     
+    
+    <!-- WebLogic specific interceptors (use real LoginInterceptor that incorporates 
+        KAAJEE) -->
+    <bean id="springLoginInterceptorFlow"
+          class="gov.va.med.pharmacy.peps.presentation.common.spring.interceptor.LoginSpringInterceptor">
+        <property name="userService" ref="userService" />
+        <property name="environmentUtility" ref="environmentUtility" />
+    </bean>
+
+    <mvc:interceptors>
+        <!-- gov.va.med.pharmacy.peps.presentation.common.spring.interceptor.test.stub.LoginSpringInterceptorStub -->
+        <bean id="springLoginInterceptor"
+            class="gov.va.med.pharmacy.peps.presentation.common.spring.interceptor.LoginSpringInterceptor">
+            <property name="userService" ref="userService" />
+            <property name="environmentUtility" ref="environmentUtility" />
+        </bean>
+    </mvc:interceptors>
+</beans>

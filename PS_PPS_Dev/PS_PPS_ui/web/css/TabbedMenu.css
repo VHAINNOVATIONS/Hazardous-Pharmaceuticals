@@ -1,0 +1,137 @@
+/* For tabbed menu */
+
+.navheader { /* adds space for submenu line with light-blue background */
+	background-color:#BECEE0;
+	height: 129px; /* was 52 but increased for IE9 */
+	*height: 50px; /* IE7 */
+
+}
+
+/* Firefox - to reposition main menu up*/
+@-moz-document url-prefix()
+{
+.navheader {background-color:#BECEE0; height:130px;}
+}
+
+.menuList {
+  float:left;
+  width:1250px;
+  font-family: arial; /* set the fonts for navigation menu tabs */
+  font-size: 12px; /* set the fonts for navigation menu tabs */
+  line-height:normal; /* controls height of tabs */
+  margin-bottom: 5px;
+  background-color: #990000; /* main menu bar */
+  margin-left: -40px;  /* changed from 0 to work in IE9 */
+  *margin-left: 0px;  /* IE7 */
+  margin-top: 0px; /* added this to properly align top menu list in IE9 */
+  list-style: none; /* eliminates the bullets in FireFox */
+}
+
+/* Firefox - to reposition main menu up*/
+@-moz-document url-prefix()
+{
+.menuList {margin-left: -40px; margin-top: 0px;} /* was 3 px - changed for IE9 */
+}
+
+.menuList ul {
+  /* padding:10px 10px 0; */ /* controls height and left start position of submenu */
+  list-style:none; /* removes bullets in FireFox */
+  float:left; /* standardized spacing above the main menu in FF and IE */
+  line-height:normal; /* controls height of tabs */
+  margin-bottom: 5px; /* adds space at bottom of menu */
+  *margin-top: 4px; /* IE7 */
+  font-family: arial; /* set the fonts for navigation menu tabs */
+  font-size: 12px; /* set the fonts for navigation menu tabs */
+  width:1250px;
+  background-color: #BECEE0; /* submenu bar */
+  margin-left: 0;
+}
+
+/* Firefox - to reposition main menu to the left*/
+@-moz-document url-prefix()
+{
+.menuList ul {margin-left: -40px;}
+}
+
+.menuList li {
+  float:left; /* w/o both went vertical lists */
+  /* padding:0 0 0 9px; */ /* spacing between tabs - w/o all moved left, and next to each other */
+  list-style:none; /* removes bullets in FireFox */
+  white-space: nowrap; /* prevents main menu items from wrapping */
+  text-align: center;
+  border-right: 1px solid #620000; /* adds dividers between menu items */
+  border-left: 1px solid #CC6600;
+}
+
+.menuList a { /* controls main menu */
+  display:block; /* w/o moves up a bit and line heights are smaller*/
+  padding:5px 15px 5px 15px;/* spacing around the main menu items */
+  text-decoration:none; /* eliminates underline for main menu links */
+  font-weight:bold; /* affects both menu and submenu items */
+  color:#FFFFFF; /* initial text color on menu buttons */
+}
+
+.menuList a:hover {
+  background-color:#003366; /* dark blue background hover color */
+}
+
+.menuList li.selected {
+  background-color:#BECEE0; /* for selected main menu item */
+  border-right: 1px solid #FFFFFF; /* adds dividers between menu items */
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF; /* add divider between selected menu item and submenu */
+}
+  
+.menuList li.selected a { /* selected link in main menu */
+  color:#003366; 
+}
+
+.menuList li:hover a { /* only links in main menus */
+  color: #FFFFFF; /* hover font color for main links */
+}
+
+/* copied from tabs.css */
+.menuList li.selected ul.submenu {
+    display: inline; /* in IE and FF, submenu disappeared */
+    left: -42px; /* w/o submenu slides way to the right; /* was -2 but changed for IE9 */
+    *left: -2px; /* IE7 */
+    position: absolute; /* w/o submenu begins with selected menu item; menu remainder positioned after end of submenu */
+    top: 108px; /* controls top of submenu line */ /* was 107 but changed to slighter low submenu up in IE9 */
+    *top: 107px; /* IE7 */
+}
+
+/* Firefox - to position submenu to the left */
+@-moz-document url-prefix()
+{
+.menuList li.selected ul.submenu {left: -0px;} /* was -32 but changed for IE9 */
+}
+
+.menuList li.selected ul.submenu a {
+    /* border-left: 1px solid #cccccc; */ /* dividing lines between submenu items */
+    color: #003366 !important; /* initial color of links in submenu */
+    line-height: normal; /* height of submenu line, including dividing lines */
+    padding:5px 15px 5px 15px;/* spacing around the submenu items */
+}
+
+.menuList li.selected ul.submenu a.selected {
+    color: #003366 !important; /* color of selected submenu */
+    background-color: #FFFFFF;
+}
+
+.menuList li.selected ul.submenu a:hover {
+    color: #FFFFFF !important; /* hover color for submenus */ 
+    background-color: #003366;
+}
+
+.menuList ul.submenu {
+    display: none; /* w/o the unselected submenu appears on the third line, and remaining main menu 
+					items are shifted right */
+}
+
+.menuList li.selected ul.submenu li { /* shoved submenu items left and changed red dividers to blue */
+	white-space: nowrap;
+	padding: 0;
+	border-right: 1px solid #336699 !important;
+	border-left: 1px solid #DDE6EE;
+
+}

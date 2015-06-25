@@ -1,0 +1,4 @@
+<SecurityInfo version="1.0" />
+<Response type="AV.Logon" status="success">
+<PostSignInText></PostSignInText>
+</Response>

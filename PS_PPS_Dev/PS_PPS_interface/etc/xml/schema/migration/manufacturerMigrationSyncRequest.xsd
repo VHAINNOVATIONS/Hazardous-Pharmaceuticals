@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/migration/manufacturer/request"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/migration/manufacturer/request"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="manufacturerMigrationSyncRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="manufacturer"
+                     type="xsd:string"
+                     minOccurs="1"
+                     maxOccurs="1">
+                </xsd:element>
+                <xsd:element name="ien"
+                     type="xsd:string"
+                     minOccurs="0"
+                     maxOccurs="1">
+                </xsd:element>
+                <xsd:element name="inactivationDate"           
+                     type="xsd:dateTime"       
+                     minOccurs="0" 
+                     maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+ 

@@ -1,0 +1,126 @@
+<Response type="array" ><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<getConfigurationCallResult
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="C:\reeng\main\modules\config\src\gov\va\med\hds\cd\config\xml\getConfigurationCallResult.xsd">
+<configTree>
+
+<pluginParameterCategory>
+<id>4</id>
+<fullName>XHD PRISM PARAMETERS</fullName>
+<pluginId>gov.va.med.desktop.prism</pluginId>
+<name>Desktop</name>
+<parentId>0</parentId>
+<packageRoot>true</packageRoot>
+<okToTransport>true</okToTransport>
+<preferencePageId>prismPreferencePage</preferencePageId>
+<parameters>
+<parameter>
+<id>481</id>
+<name>Timeout for HealtheVet Desktop</name>
+<fullName>XHD TIMEOUT DESKTOP</fullName>
+<key>Timeout for HealtheVet Desktop^10000000056;VA(200,^481^1</key>
+<readOnly>false</readOnly>
+
+<extEntity>USR: MANAGER,SYSTEM O</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>false</wordProcessing>
+<value>9999</value>
+<defaultValue/>
+</parameter>
+<parameter>
+<id>-1</id>
+<name></name>
+<fullName></fullName>
+<key>^10000000056;VA(200,^-1^</key>
+<readOnly>false</readOnly>
+<extEntity>USR: MANAGER,SYSTEM O</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>false</wordProcessing>
+<value/>
+<defaultValue/>
+</parameter>
+<parameter>
+<id>330</id>
+<name>ADA Section 508 Notice Acknowledged</name>
+
+<fullName>XHD PRISM ADA S508 NOTICE</fullName>
+<key>ADA Section 508 Notice Acknowledged^10000000056;VA(200,^330^1</key>
+<readOnly>false</readOnly>
+<extEntity>USR: MANAGER,SYSTEM O</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>false</wordProcessing>
+<value>true</value>
+<defaultValue>false</defaultValue>
+</parameter>
+<parameter>
+<id>480</id>
+<name>Desktop Theme</name>
+<fullName>XHD PRISM DESKTOP THEME</fullName>
+<key>Desktop Theme^10000000056;VA(200,^480^1</key>
+<readOnly>false</readOnly>
+
+<extEntity>USR: MANAGER,SYSTEM O</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>false</wordProcessing>
+<value></value>
+<defaultValue></defaultValue>
+</parameter>
+<parameter>
+<id>482</id>
+<name>Countdown Seconds upon Timeout</name>
+<fullName>XHD TIMEOUT COUNTDOWN</fullName>
+<key>Countdown Seconds upon Timeout^544;DIC(9.4,^482^1</key>
+<readOnly>false</readOnly>
+<extEntity>PKG: HEALTHEVET DESKTOP</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>false</wordProcessing>
+<value>20</value>
+
+<defaultValue>20</defaultValue>
+</parameter>
+<parameter>
+<id>483</id>
+<name>HealtheVet Desktop UI Settings</name>
+<fullName>XHD PRISM DESKTOP UI SETTINGS</fullName>
+<key>HealtheVet Desktop UI Settings^10000000056;VA(200,^483^1</key>
+<readOnly>false</readOnly>
+<extEntity>USR: MANAGER,SYSTEM O</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>true</wordProcessing>
+<value>
+&lt;DesktopSettings&gt;
+.&lt;gov.va.med.desktop.prism&gt;
+
+..%3Cwidth%3E%0A%091024%0A%3C%2Fwidth%3E%0A%3Cheight%3E%0A%09768%0A%3C%2Fheight%3E%0A%3CsplitterPosition%3E%0A%09169%0A%3C%2FsplitterPosition%3E%0A%3Cy%3E%0A%0967%0A%3C%2Fy%3E%0A%3CperspectiveList%3E%0A%09XUI+-+HeVD+Proof+of+Concept%3B%0A%3C%2FperspectiveList%3E%0A%3Cx%3E%0A%09162%0A%3C%2Fx%3E
+.&lt;/gov.va.med.desktop.prism&gt;
+&lt;/DesktopSettings&gt;
+</value>
+<defaultValue>
+&lt;DesktopSettings&gt;
+.&lt;gov.va.med.desktop.prism&gt;
+
+..%3Cwidth%3E%0A%09800%0A%3C%2Fwidth%3E%0A%3Cheight%3E%0A%09600%0A%3C%2Fheight%3E%0A%3CsplitterPosition%3E%0A%09169%0A%3C%2FsplitterPosition%3E%0A%3Cy%3E%0A%0967%0A%3C%2Fy%3E%0A%3CperspectiveList%3E%0A%09XUI+-+HeVD+Proof+of+Concept%3B%0A%3C%2FperspectiveList%3E%0A%3Cx%3E%0A%09162%0A%3C%2Fx%3E
+.&lt;/gov.va.med.desktop.prism&gt;
+&lt;/DesktopSettings&gt;
+</defaultValue>
+</parameter>
+<parameter>
+<id>484</id>
+<name>Desktop Font Settings</name>
+<fullName>XHD PRISM FONT SETTINGS</fullName>
+
+<key>Desktop Font Settings^10000000056;VA(200,^484^</key>
+<readOnly>false</readOnly>
+<extEntity>USR: MANAGER,SYSTEM O</extEntity>
+<multiValued>false</multiValued>
+<wordProcessing>false</wordProcessing>
+<value/>
+<defaultValue/>
+</parameter>
+</parameters>
+<children>
+</children>
+</pluginParameterCategory>
+</configTree>
+</getConfigurationCallResult>
+]]></Response>

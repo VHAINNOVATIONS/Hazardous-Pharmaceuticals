@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4">
+  <ReviewIssue id="FKH170FV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:40:39:931 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:41:22:619 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="160">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>I believe all this code moved to the ManagedItemAction class -- should commented out code be removed.</Summary>
+    <Description>// // for product item inherit the value of national formulary indicator from orderable item</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH1CGWC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:44:54:540 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:46:18:524 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="595">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Should there be try/catch blocks around the NDC and OI calls as well -- see product call.  Or since there is a try catch around the whole method is the other try/catch around the product not necessary?</Summary>
+    <Description>vistaLinkCapability.sendNdcItem((NdcVo) item, status, action, user);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH23V82">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 12:06:12:818 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 12:07:39:112 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="689">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Either there is a problem with the logic in this method -- or a test case in OrderableItemServiceTest method testManageOrderableItemProductLink(), but the test case fails when you try to validate that the child's parent has actually been updated.</Summary>
+    <Description>public void swapChildren(ManagedItemVo parent1, ManagedItemVo parent2, UserVo user)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH2MLUL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 12:20:47:133 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 12:21:21:054 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="330">src/gov/va/med/pharmacy/peps/service/common/capability/ManagedItemCapability.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Copy and paste error -- @return description is wrong at this level.</Summary>
+    <Description>* @return SUCCESS</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <include file="struts-default.xml" />
+
+    <package
+        name="peps-common"
+        extends="struts-default">
+
+        <interceptors>
+            <interceptor
+                name="fieldAuthorization"
+                class="fieldAuthorizationInterceptor" />
+            <interceptor
+                name="localeAware"
+                class="localeAwareInterceptor" />
+            <interceptor
+                name="login"
+                class="loginInterceptor" />
+            <interceptor
+                name="annotationModelDriven"
+                class="annotationModelDrivenInterceptor" />
+            <interceptor
+                name="removeRow"
+                class="removeRowInterceptor" />
+            <interceptor
+                name="requestScope"
+                class="requestScopeInterceptor" />
+            <interceptor
+                name="sessionScope"
+                class="sessionScopeInterceptor" />
+            <interceptor
+                name="springWebFlowScope"
+                class="springWebFlowScopeInterceptor" />
+            <interceptor
+                name="validationException"
+                class="validationExceptionInterceptor" />
+            <interceptor
+                name="pepsConversionError"
+                class="pepsConversionErrorInterceptor" />
+            <interceptor
+                name="multiselect"
+                class="multiselectInterceptor" />
+            <interceptor
+                name="trimStringParameters"
+                class="trimStringParametersInterceptor" />
+
+
+            <!-- Struts basicStack with our custom trimStringParameters, multiselect, and pepsConversionError interceptors -->
+            <interceptor-stack name="pepsBasicStack">
+                <interceptor-ref name="exception" />
+                <interceptor-ref name="servletConfig" />
+                <interceptor-ref name="trimStringParameters" />
+                <interceptor-ref name="prepare" />
+                <interceptor-ref name="checkbox" />
+                <interceptor-ref name="multiselect" />
+                <interceptor-ref name="actionMappingParams" />
+                <interceptor-ref name="params" />
+                <interceptor-ref name="pepsConversionError" />
+            </interceptor-stack>
+
+            <!-- Struts validationWorkflowStack with our custom validationException interceptor -->
+            <interceptor-stack name="pepsValidationWorkflowStack">
+                <interceptor-ref name="pepsBasicStack" />
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">render</param>
+                </interceptor-ref>
+                <interceptor-ref name="validationException" />
+                <interceptor-ref name="workflow" />
+            </interceptor-stack>
+
+            <interceptor-stack name="pepsStack">
+                <interceptor-ref name="localeAware" />
+                <interceptor-ref name="login" />
+                <interceptor-ref name="fieldAuthorization" />
+                <interceptor-ref name="sessionScope" />
+                <interceptor-ref name="requestScope" />
+                <interceptor-ref name="springWebFlowScope" />
+                <interceptor-ref name="annotationModelDriven" />
+                <interceptor-ref name="removeRow" />
+                <interceptor-ref name="fileUpload" />
+                <interceptor-ref name="pepsValidationWorkflowStack" />
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="pepsStack" />
+
+        <global-results>
+            <result name="exception" />
+            <!--HANDLED IN INTERCEPTOR NOW - result name="optimisticLock" / -->
+        </global-results>
+
+        <global-exception-mappings>
+            <!--HANDLED IN INTERCEPTOR NOW - exception-mapping
+                result="optimisticLock"
+                exception="gov.va.med.pharmacy.peps.common.exception.OptimisticLockingException" /-->
+            <exception-mapping
+                result="exception"
+                exception="java.lang.Exception" />
+        </global-exception-mappings>
+
+        <action
+            name="*_*"
+            method="{2}"
+            class="{1}Action" />
+    </package>
+</struts>

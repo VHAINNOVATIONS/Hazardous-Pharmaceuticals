@@ -1,0 +1,12 @@
+<Fault>
+    <FaultCode>Server</FaultCode>
+    <FaultString>Internal Application Error</FaultString>
+    <FaultActor>XUS KAAJEE GET USER INFO</FaultActor>
+    <Detail>
+        <Error
+            type="XUS KAAJEE GET USER INFO"
+            code="182305">
+            <Message>Invalid Kernel logon credentials. [Security Type: AV]</Message>
+        </Error>
+    </Detail>
+</Fault>

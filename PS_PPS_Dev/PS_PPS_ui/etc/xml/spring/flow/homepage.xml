@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="retrievePartialSaves">
+
+    <action-state id="retrieveNotifications">
+         <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="notification" />
+            <attribute
+                name="actionMethod"
+                value="homeSearch" />
+        </evaluate>
+        <!--<evaluate expression="notificationAction.homeSearch()" result="flowScope.event"></evaluate> -->
+        <transition
+            on="success"
+            to="retrievePartialSaves" />
+    </action-state>
+
+    <action-state id="retrievePartialSaves">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="retrieveNewestPartialItems" />
+        </evaluate>
+        <!-- <evaluate expression="managedItemAction.retrieveNewestPartialItems()" result="flowScope.event"></evaluate> -->
+        <transition
+            on="success"
+            to="homepage" />
+    </action-state>
+
+    <view-state
+        id="homepage"
+        view="home-pageOld">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="homePage" />
+                <attribute
+                    name="actionMethod"
+                    value="render" /> 
+            </evaluate>
+           	<!--<evaluate expression="homePageAction.render()" result="flowScope.event"></evaluate> -->
+        </on-render>
+    </view-state>
+</flow>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="load">
+
+    <!-- Load state only here to force login, if necessary -->
+    <action-state id="load">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="request" />
+            <attribute
+                name="actionMethod"
+                value="loadRequests" />
+        </evaluate>
+        <transition
+            on="success"
+            to="reviewCriteria">
+        </transition>
+    </action-state>
+
+    <view-state
+        id="reviewCriteria"
+        view="review.search">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="request" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="search"
+            to="searchPendingRequests" />
+        <transition
+            on="retrieve"
+            to="end" />
+    </view-state>
+
+    <action-state id="searchPendingRequests">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="request" />
+            <attribute
+                name="actionMethod"
+                value="searchPendingRequests" />
+        </evaluate>
+        <transition
+            on="success"
+            to="reviewCriteria" />
+        <transition
+            on="input"
+            to="reviewCriteria" />
+    </action-state>
+
+    <end-state id="end">
+        <output
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <output
+            name="mainRequest"
+            value="conversationScope.mainRequest"
+            type="gov.va.med.pharmacy.peps.common.vo.RequestVo" />
+    </end-state>
+
+</flow>

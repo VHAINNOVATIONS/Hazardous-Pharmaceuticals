@@ -1,0 +1,117 @@
+<project name="EarTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initEarTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef name="ear"
+                     classname="org.swri.ant.task.EarTask"
+                     classpathref="build.class.path"
+                     loaderref="ant-loader"
+                     uri="http://www.swri.org" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageLocalEar" uri="http://www.swri.org">
+        <attribute name="name" default="${application.name}-${application.version}-local" />
+        <sequential>
+            <swri:packageEar name="@{name}">
+                <connectorpatternset>
+                    <exclude name="**/National*.rar" />
+                </connectorpatternset>
+
+                <webpatternset>
+                    <exclude name="**/National*.war" />
+                </webpatternset>
+
+                <ejbpatternset>
+                    <exclude name="**/National*.jar" />
+                </ejbpatternset>
+
+                <librarymodule>
+                    <fileset dir="${tmp.archive.dir}">
+                        <include name="${lib}/**/*.jar" />
+                        <exclude name="${lib}/**/*sources.jar" />
+                        <exclude name="${lib}/**/National*.jar" />
+                        <exclude name="${lib}/**/Local*Client.jar" />
+                    </fileset>
+                    <fileset dir="${tmp.archive.dir}">
+                        <include name="${lib}/**/National*Client.jar" />
+                    </fileset>
+                    <fileset dir="${tmp.archive.dir}">
+                        <include name="APP-INF/**" />
+                    </fileset>
+                </librarymodule>
+            </swri:packageEar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageNationalEar" uri="http://www.swri.org">
+        <attribute name="name" default="${application.name}-${application.version}-national" />
+        <sequential>
+            <swri:packageEar name="@{name}">
+                <connectorpatternset>
+                    <exclude name="**/Local*.rar" />
+                </connectorpatternset>
+
+                <webpatternset>
+                    <exclude name="**/Local*.war" />
+                </webpatternset>
+
+                <ejbpatternset>
+                    <exclude name="**/Local*.jar" />
+                </ejbpatternset>
+
+                <librarymodule>
+                    <fileset dir="${tmp.archive.dir}">
+                        <include name="${lib}/**/*.jar" />
+                        <exclude name="${lib}/**/*sources.jar" />
+                        <exclude name="${lib}/**/Local*.jar" />
+                        <exclude name="${lib}/**/*Client.jar" />
+                    </fileset>
+                    <fileset dir="${tmp.archive.dir}">
+                        <include name="APP-INF/**" />
+                    </fileset>
+                </librarymodule>
+            </swri:packageEar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageEar" uri="http://www.swri.org">
+        <attribute name="name" />
+        <attribute name="destFile" default="@{name}.ear" />
+        <element name="connectorpatternset" optional="true" />
+        <element name="webpatternset" optional="true" />
+        <element name="ejbpatternset" optional="true" />
+        <element name="librarymodule" optional="true" />
+        <sequential>
+            <swri:ear destfile="${build.archive.dir}/@{destFile}" displayName="@{name}" description="@{name}" update="true">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <metainf dir="${tmp.dir}/meta/META-INF">
+                    <include name="**/*.xml" />
+                </metainf>
+
+                <module type="connector" dir="${tmp.archive.dir}/connector">
+                    <include name="**/*.rar" />
+                    <connectorpatternset />
+                </module>
+
+                <module type="web" dir="${tmp.archive.dir}/web">
+                    <include name="**/*.war" />
+                    <webpatternset />
+                </module>
+
+                <module type="ejb" dir="${tmp.archive.dir}/ejb">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                    <ejbpatternset />
+                </module>
+
+                <librarymodule />
+            </swri:ear>
+
+            <checksum file="${build.archive.dir}/@{destFile}" forceOverwrite="true" />
+        </sequential>
+    </macrodef>
+</project>

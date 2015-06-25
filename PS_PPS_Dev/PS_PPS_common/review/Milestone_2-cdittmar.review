@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5DDGU8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:29:50:720 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 08:51:20:673 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>cdittmar</ReviewerId>
+    <AssignedTo />
+    <File line="61">test/gov/va/med/pharmacy/peps/common/utility/test/NdcGenerator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>remove commented out code</Summary>
+    <Description>Should package size also have a generator that is called here instead of just not setting package size?</Description>
+    <Annotation />
+    <Revision>Removed the lines. Package Size is not a mandatory field on NDC so we can leave it out</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

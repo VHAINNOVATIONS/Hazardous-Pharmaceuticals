@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left {
+	margin-top:2px;
+	margin-left:5px;
+	width:350px;
+	float:left;
+}
+
+.right {
+	margin-top:2px;
+	margin-left:5px;
+	float:left;
+	width:350px;
+}
+
+.checkboxes {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height:16px;
+	text-align:left;
+}
+
+.drugCheckbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height:25px;
+	text-align:left;
+	margin-top:3px;
+}
+
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height:20px;
+	text-indent:10px;
+	text-align:left;
+}
+
+.righttext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	margin-top:15px;
+	line-height:20px;
+	text-indent:10px;
+	text-align:left;
+}
+
+.nameText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height:20px;
+	text-indent:10px;
+	text-align:left;
+	color:#FF0000;
+}
+
+.labs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height:20px;
+	text-indent:3px;
+	text-align:left;
+}
+
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left:25px;
+}
+
+.top {
+	width:100%;
+	height:90px;
+}
+
+.clinicalData {
+	width:100%;
+	margin-left:0px;
+	left:0;
+	margin-top:5px;
+}
+
+.body {
+	width:100%;
+}
+
+.fieldset {
+	border-top:thin;
+	border-top-style:solid;
+	border-top-color:#CCCCCC;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	
+}
+
+.borderTitle {
+	color:#1764FF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.labCombo {
+	margin-left:11px;
+}
+
+.vitalCombo {
+	margin-left:6px;
+}
+
+.bottomRt {
+	float:right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	color:#003399;
+	margin-top:5px;
+	width:320px;
+}
+
+.modReqButton {
+	float:left;
+	text-indent:2px;
+}
+
+.templtButton {
+	float:left;
+	margin-left:15px;
+	text-indent:2px;
+}
+
+
+
+.labLabel {
+	float:left;
+	text-align:right;
+	width:160px;
+}
+
+.labField {
+	
+}
+
+.labelColumn {
+	color:#999999;
+}

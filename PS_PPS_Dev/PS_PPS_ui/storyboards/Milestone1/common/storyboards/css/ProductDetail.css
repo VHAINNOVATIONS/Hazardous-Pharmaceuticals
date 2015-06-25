@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tableFont {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.fieldset {
+	margin-top:3px;
+	border-top:thin;
+	border-top-style:solid;
+	border-top-color:#CCCCCC;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+}
+
+
+.localDataFieldset {
+	border-top:thin;
+	border-top-style:solid;
+	border-top-color:#CCCCCC;
+	border-bottom:thin;
+	border-bottom-style:solid;
+	border-bottom-color:#CCCCCC;
+	border-left:none;
+	border-right:none;
+}
+
+.borderTitle {
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.textarea {
+	margin-left:15px;
+}
+textarea {
+	margin-left:3px;
+}
+
+
+.botRight {
+	float:right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	color:black;
+	margin-top:0px;
+}
+
+.modBttn {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	float:left;
+	text-indent:2px;
+}
+
+.templateBttn {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	float:left;
+	margin-left:15px;
+	text-indent:2px;
+}
+
+.button {
+	size:12em;
+	text-align:center;
+}
+.buttonCenter {
+	float:left;
+	margin-left:300px;
+	margin-top:inherit;
+}
+.buttonRequestMod {
+	float:left;
+	margin-left:400px;
+	margin-top:inherit;
+}
+.text_leftalign {
+text-align:left;
+}
+
+.text_rightalign {
+text-align:right;
+}

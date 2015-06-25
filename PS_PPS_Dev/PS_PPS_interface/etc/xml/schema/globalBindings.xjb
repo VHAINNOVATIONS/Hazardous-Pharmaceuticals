@@ -1,0 +1,29 @@
+<jaxb:bindings
+    version="1.0"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    jaxb:extensionBindingPrefixes="xjc">
+
+    <jaxb:globalBindings
+        fixedAttributeAsConstantProperty="false"
+        generateIsSetMethod="true"
+        typesafeEnumBase="xsd:string"
+        typesafeEnumMemberName="generateName">
+        
+        <xjc:superClass name="gov.va.med.pharmacy.peps.external.common.vo.XmlValueObject" />
+        
+        <jaxb:javaType
+            name="float"
+            xmlType="xsd:float"
+            printMethod="gov.va.med.pharmacy.peps.external.common.utility.jaxb.FloatDatatype.print"
+            parseMethod="gov.va.med.pharmacy.peps.external.common.utility.jaxb.FloatDatatype.parse" />
+        
+        <jaxb:javaType
+            name="double"
+            xmlType="xsd:double"
+            printMethod="gov.va.med.pharmacy.peps.external.common.utility.jaxb.DoubleDatatype.print"
+            parseMethod="gov.va.med.pharmacy.peps.external.common.utility.jaxb.DoubleDatatype.parse" />
+        
+    </jaxb:globalBindings>
+</jaxb:bindings>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4 JWood">
+  <ReviewIssue id="FKFQOB7R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 13:58:25:095 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 13:59:02:094 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="488">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove old commented out code</Summary>
+    <Description>//                disabledFields.addAll(FieldKey.getNdcNonVaDataFieldsNational());</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFQPZPN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 13:59:43:499 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:00:01:936 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="504">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove old commented out code</Summary>
+    <Description>//Fields NDC_DISP_UNITS_PER_ORD_UNIT, Source, and OTC_RX_Indicator are editable after creation</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFQT3OD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:02:08:605 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:02:45:448 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="622">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Since comments seem to be from CY06 they should probably be looked and to see if they still apply and removed if need be.</Summary>
+    <Description>* **</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFQVGGD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:03:58:477 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:04:53:101 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="853">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This is probably not the place to set this -- at some point the software is supposed to determine at creation time whether this is supposed to be VA or COTS</Summary>
+    <Description>ndc.setSource(ProductDataSourceType.VA);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFQX291">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:05:13:381 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 14:05:20:662 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="871">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This is probably not the place to set this -- at some point the software is supposed to determine at creation time whether this is supposed to be VA or COTS</Summary>
+    <Description>ndc.setSource(ProductDataSourceType.VA);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFVULB4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:23:16:192 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:24:23:237 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="198">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This logic is wrong the OrderableItem Type of local refers to the whether the OI is  local or national -- there is a va df that is used to tell whether the OI is "Local Only"</Summary>
+    <Description>return LOCAL.equals(orderableItemType);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFVZ37Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:26:46:030 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:27:47:482 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="200">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Might need a new method called "isLocal()" to actually state whether it is a Local OI or National OI -- that is separate than the isLocalOnly() method that can tell if the Local only checkbox was checked.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFW8US1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:34:21:649 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:34:43:636 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="263">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>should there be code in this method</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFWD5NS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:37:42:376 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:38:48:112 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="471">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this could just check if (isNational())  when it is decided what to do about the isLocalOnlyData -- versus isLocal() this will need to be checked out to make sure the logic is still correct.</Summary>
+    <Description>if (!this.isLocalOnlyData()) {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFWGZS4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:40:41:380 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:41:16:239 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="639">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>In the blank template method the initial product count is set to 0 and here it is set to null -- should this be consistant?</Summary>
+    <Description>orderableItem.setProductCount(null);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFWJ1IL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:42:16:941 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:42:45:004 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="742">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add javadocs for methods where missing.</Summary>
+    <Description>public Collection&lt;LabDisplayAdministrationVo&gt; getLabDisplayAdministration() {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGV81OM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:53:30:502 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:53:53:439 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="205">etc/properties/gov/va/med/pharmacy/peps/common/vo/FieldKey.properties</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>commented out section should probably be removed.</Summary>
+    <Description># default.oi.route.abbreviation=OI Med Route</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGV91I2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:54:16:922 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:54:33:453 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="287">etc/properties/gov/va/med/pharmacy/peps/common/vo/FieldKey.properties</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Not in alphebetical order</Summary>
+    <Description>str.dispense.unit.per.dose.abbreviation=Dispense Unit per Dose</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGV9OOP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:54:46:969 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:55:00:499 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="302">etc/properties/gov/va/med/pharmacy/peps/common/vo/FieldKey.properties</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Not in alphebetical order</Summary>
+    <Description>expansion.abbreviation=Expansion</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVCA30">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:56:48:012 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:57:04:636 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1104">etc/properties/gov/va/med/pharmacy/peps/common/vo/FieldKey.properties</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>commented out code should probably be removed</Summary>
+    <Description>#oi.drug.text.entry.abbreviation=Drug Text</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVE3SD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:58:13:165 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:58:28:993 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1889">etc/properties/gov/va/med/pharmacy/peps/common/vo/FieldKey.properties</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>not in alphebetical order</Summary>
+    <Description>displayable.name.abbreviation=Template Name</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVEQ7N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:58:42:227 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:58:53:867 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1921">etc/properties/gov/va/med/pharmacy/peps/common/vo/FieldKey.properties</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>not in alphebetical order</Summary>
+    <Description>marked.for.psr.abbreviation=Marked for PSR</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVHM3Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:00:56:879 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:01:13:113 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="42">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Need to add page 2 and page 3 validation code.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVIIKS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:01:38:956 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:01:54:502 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="64">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>JavaDoc description is incorrect.</Summary>
+    <Description>* Specifically validates the NDC PricePerOrderUnit field of the given NdcVO</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVJQX3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:02:36:423 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:02:51:750 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="122">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Need to add validation for package size field</Summary>
+    <Description>//no current validation for package size field</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKGVL2XB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:03:38:639 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 09:03:58:201 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="157">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Need to add validation for NDC dispense units per order unit</Summary>
+    <Description>//no current validation for NDC dispense units per order unit</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH2TZXA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 12:26:31:966 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 12:26:54:544 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="23">src/gov/va/med/pharmacy/peps/common/vo/validator/OrderableItemValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to add page level validation</Summary>
+    <Description>public class OrderableItemValidator extends AbstractValidator&lt;OrderableItemVo&gt; {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

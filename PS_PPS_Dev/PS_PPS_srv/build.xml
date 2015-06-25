@@ -1,0 +1,156 @@
+<project name="Service" default="compile" basedir="." xmlns:swri="http://www.swri.org">
+    <import file="../PS_PPS_common/etc/build/template/template.xml" />
+
+    <target name="init" depends="Template.init" description="Initialize the project">
+        <property name="buildCP" refid="build.class.path"/>
+        <!-- echo>Classpath at this stage: ${buildCP}</echo -->
+    </target>
+
+    <target name="clean" depends="Template.clean" description="Clean the project" />
+
+    <target name="cleanAll" depends="Template.cleanAll" description="Clean the project and its dependencies" />
+
+    <target name="generate" depends="Template.generate" description="Generate the project artifacts">
+        <swri:generateNationalIntegrationProperties host="${national.hosts}" />
+        <!--swri:generateLocalIntegrationProperties /-->
+
+    	<!-- Out of container can be overridden by hijacking Common/etc/build/template/properties/project.properties and changing its value -->
+        <propertyfile file="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/service/common/test/integration/IntegrationTestCase.properties">
+            <entry key="out.of.container" value="${out.of.container}" />
+        </propertyfile>
+
+        <!--swri:localEjbdoclet /-->
+        <swri:nationalEjbdoclet />
+
+        <swri:createJndiProperties />
+    </target>
+
+    <macrodef name="generateNationalIntegrationProperties" uri="http://www.swri.org">
+        <attribute name="host" />
+        <attribute name="fileName"
+                   default="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/service/common/test/integration/IntegrationTestCase.properties" />
+        <sequential>
+            <dirname property="file.dir" file="@{fileName}" />
+            <mkdir dir="${file.dir}" />
+
+            <propertyfile file="@{fileName}">
+                <entry key="national.host" value="@{host}" />
+                <entry key="national.port" value="${server.NationalPharmacyServer.port}" />
+                <entry key="national.context.factory" value="${@{host}.jndi.provider}" />
+                <entry key="national.provider.url"
+                       value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.NationalPharmacyServer.port}" />
+            </propertyfile>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="generateLocalIntegrationProperties" uri="http://www.swri.org">
+        <attribute name="fileName"
+                   default="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/service/common/test/integration/IntegrationTestCase.properties" />
+        <sequential>
+            <dirname property="file.dir" file="@{fileName}" />
+            <mkdir dir="${file.dir}" />
+
+            <property name="local.number" value="1" />
+
+            <for list="${local.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <for list="${@{host}.local.targets}" delimiter=",;:" param="target">
+                        <sequential>
+                            <propertyfile file="@{fileName}">
+                                <entry key="local-${local.number}.host" value="@{host}" />
+                                <entry key="local-${local.number}.port" value="${server.@{target}.port}" />
+                                <entry key="local-${local.number}.context.factory" value="${@{host}.jndi.provider}" />
+                                <entry key="local-${local.number}.provider.url"
+                                       value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.@{target}.port}" />
+                            </propertyfile>
+
+                            <math result="local.number"
+                                  operand1="${local.number}"
+                                  operation="+"
+                                  operand2="1"
+                                  datatype="int" />
+                        </sequential>
+                    </for>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="createJndiProperties" uri="http://www.swri.org">
+        <sequential>
+            <for list="${national.hosts}" delimiter=",;:" param="host">
+                <sequential>
+                    <mkdir dir="${build.meta.dir}/properties/local/spring" />
+                    <propertyfile file="${build.meta.dir}/properties/local/spring/nationalJndi.properties"
+                                  comment="JNDI Template properties used by Local Spring configuration to lookup instances of National services">
+
+                        <entry key="national.java.naming.provider.url"
+                               value="${@{host}.j2ee.url.prefix}://${@{host}.j2ee.url.host}:${server.NationalPharmacyServer.port}" />
+                        <entry key="national.java.naming.factory.initial" value="${@{host}.jndi.provider}" />
+                        <entry key="national.java.naming.security.principal" value="${@{host}.j2ee.user}" />
+                        <entry key="national.java.naming.security.credentials" value="${@{host}.j2ee.password}" />
+                    </propertyfile>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <target name="compile" depends="Template.compile" description="Compile the source code" />
+
+    <target name="compileEnvironments"
+            depends="Template.compileEnvironments"
+            description="Compile the source code environments (common, local, and national) separately" />
+
+    <target name="unitTest" depends="Template.unitTest" description="Execute the unit tests" />
+
+    <target name="buildUnitTest"
+            depends="Template.buildUnitTest"
+            description="Compile environments separately for dependency checking, then run unit tests" />
+
+    <target name="buildIntegrationTest"
+            depends="Template.buildIntegrationTest"
+            description="Compile environments separately for dependency checking, then run integration tests" />
+
+    <target name="buildTestAll"
+            depends="Template.buildTestAll"
+            description="Compile environments separately for dependency checking, then run unit and integration tests" />
+
+    <target name="jar" depends="Template.jar" description="Package the project artifacts">
+        <!--swri:packageLocalClientJar /-->
+        <swri:packageNationalClientJar />
+        <!--swri:packageLocalJar /-->
+        <swri:packageNationalJar />
+        <!--swri:packageLocalEjbJar /-->
+        <swri:packageNationalEjbJar />
+    </target>
+
+    <target name="ear" depends="Template.ear" description="Ear the project artifacts">
+        <copy todir="${tmp.dir}/meta/META-INF">
+            <fileset dir="${etc.dir}/weblogic">
+                <include name="weblogic-application.xml" />
+            </fileset>
+        </copy>
+        <swri:packageLocalEar />
+        <swri:packageNationalEar />
+    </target>
+
+    <!-- Deploy National first so it's services are available at Local -->
+    <target name="deploy" depends="Template.deploy" description="Deploy the project artifacts">
+        <swri:redeployNational />
+        <!--swri:redeployLocal /-->
+    </target>
+
+    <target name="redeploy"
+            depends="Template.redeploy"
+            description="Redeploy Service without repackaging Common, Domain, or Interface" />
+
+    <target name="integrationTest"
+            depends="Template.integrationTest"
+            description="Deploy and execute the integration tests" />
+
+    <target name="performanceTest"
+            depends="Template.performanceTest"
+            description="Deploy and execute the performance tests" />
+
+    <target name="document" depends="Template.document" description="Document the project" />
+</project>

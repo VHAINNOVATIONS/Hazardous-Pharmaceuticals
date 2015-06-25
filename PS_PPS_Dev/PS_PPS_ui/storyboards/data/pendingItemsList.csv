@@ -1,0 +1,5 @@
+generic name, strength, unit, dosage form, level (product, NDC), item type (Investigational, supply, compound, med), Local Use, Formulary, Item status
+Risperidone,2,mg,Tablet,Product,Investigational,N,Formulary, ,jwood
+Lisinopril,100,mg,Tablet,NDC,Supply,Y,Formulary, ,cwalker
+Rifampin,200,mg,Tablet,Product,Compound,N,Formulary, ,cwalker
+Atomoxetine,80,mg,Tablet,Product,Medication,N,Formulary, ,jwood

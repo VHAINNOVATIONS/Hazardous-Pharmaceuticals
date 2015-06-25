@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="drugData">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="drugRequest" minOccurs="1" maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+        
+    <xsd:element name="drugRequest">
+        <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="vuid" type="xsd:integer" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="ndc" type="xsd:integer" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>    
+</xsd:schema>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd 
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <import resource="../ServiceContextTemplate.xml" />
+
+    <!-- Service method level transaction management while running out of container. -->
+    <tx:advice
+        id="transactionAdviceRequired"
+        transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method
+                name="*"
+                propagation="REQUIRED"
+                rollback-for="java.lang.Throwable" />
+        </tx:attributes>
+    </tx:advice>
+
+    <tx:advice
+        id="transactionAdviceRequiresNew"
+        transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method
+                name="*"
+                propagation="REQUIRES_NEW"
+                rollback-for="java.lang.Throwable" />
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut
+            id="externalSessionBean"
+            expression="within(gov.va.med.pharmacy.peps.external..session.impl.*)" />
+        <aop:pointcut
+            id="sessionBean"
+            expression="within(gov.va.med.pharmacy.peps.service..session.impl.*)" />
+        <aop:pointcut
+            id="messageBean"
+            expression="within(gov.va.med.pharmacy.peps..message.impl.*)" />
+
+        <!-- External Session Beans use REQUIRES_NEW to mimic CMT in container. -->
+        <aop:advisor
+            advice-ref="transactionAdviceRequiresNew"
+            pointcut-ref="externalSessionBean"
+            order="1" />
+        <aop:advisor
+            advice-ref="transactionSynchronizationAdvice"
+            pointcut-ref="externalSessionBean"
+            order="2" />
+
+        <!-- Service Session Beans use REQUIRED to mimic CMT in container. -->
+        <aop:advisor
+            advice-ref="transactionAdviceRequired"
+            pointcut-ref="sessionBean"
+            order="1" />
+        <aop:advisor
+            advice-ref="transactionSynchronizationAdvice"
+            pointcut-ref="sessionBean"
+            order="2" />
+
+        <!-- Message Beans use REQUIRES_NEW to give them a separate transaction from the Session Beans -->
+        <!-- since the Message Beans are called directly from the Service when running out of container. -->
+        <!-- This is different from the deployment configuration, but should mimic it since we're not using JMS out of container. -->
+        <aop:advisor
+            advice-ref="transactionAdviceRequiresNew"
+            pointcut-ref="messageBean"
+            order="1" />
+        <aop:advisor
+            advice-ref="transactionSynchronizationAdvice"
+            pointcut-ref="messageBean"
+            order="2" />
+    </aop:config>
+
+    <bean
+        id="transactionManager"
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+        autowire-candidate="true">
+        <property
+            name="sessionFactory"
+            ref="sessionFactory" />
+    </bean>
+
+
+    <bean
+        id="transactionSynchronizationAdvice"
+        class="gov.va.med.pharmacy.peps.common.transaction.test.TransactionSynchronizationAdvice"
+        autowire-candidate="true" />
+    <!-- End Service method level transaction management. -->
+
+   <!--  <bean
+        id="drugAccountServiceCapability"
+        class="gov.va.med.pharmacy.peps.service.common.capability.impl.DrugAccountServiceCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="managedItemCapability"
+            ref="managedItemCapability" />
+        <property
+            name="productDomainCapability"
+            ref="productDomainCapability" />
+        <property
+            name="orderUnitDomainCapability"
+            ref="orderUnitDomainCapability" />
+        <property
+            name="manufacturerDomainCapability"
+            ref="manufacturerDomainCapability" />
+        <property
+            name="intendedUseDomainCapability"
+            ref="intendedUseDomainCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+          <property
+            name="drugAccountabilityCapability"
+            ref="drugAccountabilityCapability" />
+        <property
+            name="drugAccountabilityService"
+            ref="drugAccountabilityService" /> 
+    </bean> -->
+</beans>

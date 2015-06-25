@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="M5P1">
+  <ReviewIssue id="FWUTYM81">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 11:23:25:441 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:23:08:340 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="107">src/gov/va/med/pharmacy/peps/common/utility/FieldKeyUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// if (EntityType.DRUG_TEXT.equals(entityType)) {</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWUU2D27">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 11:26:20:191 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:22:42:887 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="303">src/gov/va/med/pharmacy/peps/common/utility/FieldKeyUtility.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>The variable diff is never used -- is it needed for something or can this line be removed?</Summary>
+    <Description>Difference diff = modDifference.getDifference();</Description>
+    <Annotation />
+    <Revision>removed unused variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWV4SNG1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 16:26:42:865 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:48:46:906 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="182">src/gov/va/med/pharmacy/peps/common/vo/CsFedScheduleVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO related to m5Part 2 if not we need to remove it.</Summary>
+    <Description>* TODO 5/21/09 TMD investigate adding this data to the database so it is not hardcoded in this method</Description>
+    <Annotation />
+    <Revision>M5 Part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWV513P6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 16:33:17:178 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:19:14:438 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="289">src/gov/va/med/pharmacy/peps/common/vo/DosageFormVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed - can it be removed</Summary>
+    <Description>// handledFields.add(FieldKey.DF_DISPENSE_UNITS_PER_DOSE);</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWV51VPU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 16:33:53:490 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:18:30:845 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="292">src/gov/va/med/pharmacy/peps/common/vo/DosageFormVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed?</Summary>
+    <Description>// handledFields.add(FieldKey.DF_UNITS);&#xD;
+        // this.setDfUnits(localDosageForm.getDfUnits());</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWV53NCN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 16:35:15:959 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:17:45:784 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="66">src/gov/va/med/pharmacy/peps/common/vo/DoseUnitVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed -- can it be removed.</Summary>
+    <Description>// fields.add(FieldKey.REPLACEMENT_DOSE_UNIT);</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWV5C1ES">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 16:41:47:428 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:15:36:864 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="178">src/gov/va/med/pharmacy/peps/common/vo/DrugTextVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>is commented out code still needed or can it be removed?</Summary>
+    <Description>// fields.remove(FieldKey.DRUG_TEXT_TYPE);</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWV5PKH3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-07 :: 16:52:18:663 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:14:16:163 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/common/vo/FieldAuthorizationVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this logger needed -- Eclipse settings say not being used.</Summary>
+    <Description>private static final org.apache.log4j.Logger LOG = org.apache.log4j.Logger.getLogger(FieldAuthorizationVo.class);</Description>
+    <Annotation />
+    <Revision>removed the logger</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWJKVNC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:08:20:664 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:13:14:664 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="1478">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// public static final FieldKey&lt;DataField&lt;Boolean&gt;&gt; SPLITTABLE = new FieldKey&lt;DataField&lt;Boolean&gt;&gt;("splittable",&#xD;
+    // FieldType.VA_DATA_FIELD, FieldSubType.SIMPLE_DATA_FIELD, FieldEnvironment.BOTH, Boolean.class, false);</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWJYAMP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:18:46:609 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:12:18:618 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="2624">src/gov/va/med/pharmacy/peps/common/vo/FieldKey.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is this method still needed -- I can't see where it is being used.</Summary>
+    <Description>private static boolean isDomainField(FieldKey fieldKey) {&#xD;
+        for (EntityType level : (Collection&lt;EntityType&gt;) fieldKey.getEntityTypes()) {&#xD;
+            if (level.isDomainType()) {&#xD;
+                return true;&#xD;
+            }&#xD;
+        }</Description>
+    <Annotation />
+    <Revision>removed unused private method</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWK5MW3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:24:29:091 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:10:39:339 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/common/vo/FormularyAlternativeVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>//    /**&#xD;
+//     * &#xD;
+//     * @return nonFormularyId property&#xD;
+//     */&#xD;
+//    public String getNonFormularyId() {&#xD;
+//        return nonFormularyId;&#xD;
+//    }&#xD;
+&#xD;
+//    /**&#xD;
+//     * &#xD;
+//     * @param nonFormularyId nonFormularyId property&#xD;
+//    */&#xD;
+//    public void setNonFormularyId(String nonFormularyId) {&#xD;
+//        this.nonFormularyId = trimToEmpty(nonFormularyId);&#xD;
+//    }</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWKB91A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:28:51:070 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 14:51:07:327 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/common/vo/IntendedUse.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>I believe the JUnits in this class are not correct -- seems it should say if the Intended Use is Inpatient, Outpatient, None, or both instead of Active;Inactive</Summary>
+    <Description>public enum IntendedUse {&#xD;
+    INPATIENT, OUTPATIENT, NONE, BOTH;</Description>
+    <Annotation />
+    <Revision>fixed the java doc</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWKDR0Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:30:47:699 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:43:26:674 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="72">src/gov/va/med/pharmacy/peps/common/vo/IntendedUseVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO related to m5Part 2 -- if not we need to remove it.</Summary>
+    <Description>* TODO reevaluate this method for future use to something more stabled. Either an enum or a DB flag of some form&#xD;
+     * @return boolean</Description>
+    <Annotation />
+    <Revision>M5 part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWKVEBO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:44:31:044 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 11:00:11:666 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="154">src/gov/va/med/pharmacy/peps/common/vo/LocalPossibleDosagesVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>should doseUnit.getValue() change to doseUnit.getDoseName?</Summary>
+    <Description>sb.append(s3 + ": " + (doseUnit != null ? doseUnit.getValue() : "(Not specified)") + "&lt;p&gt;");</Description>
+    <Annotation />
+    <Revision>replaced doseUnit.getValue() with doseUnit.getDoseUnitName()</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWLD49G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:58:17:812 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:25:23:751 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/common/vo/MergeDifferenceVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this class ready to be removed?</Summary>
+    <Description>* TODO Finalize the removal of this class from the code base</Description>
+    <Annotation />
+    <Revision>M5 Part II</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWWLEZWB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-08 :: 16:59:45:467 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 14:30:28:835 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="30">src/gov/va/med/pharmacy/peps/common/vo/MergeVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>I think this is supposed to change to ModDifferenceVo?</Summary>
+    <Description>private Collection&lt;MergeDifferenceVo&gt; mergeRequestDetails = new ArrayList&lt;MergeDifferenceVo&gt;(0);</Description>
+    <Annotation />
+    <Revision>We will replace this depricated Vo in M5 Part II</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXPA3Y9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 11:35:42:081 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 18:27:37:207 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="467">src/gov/va/med/pharmacy/peps/common/vo/NdcVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// if (getRequestItemStatus().isApproved()) {&#xD;
+        // fields.addAll(listUniquenessCriteria());&#xD;
+        //            &#xD;
+        // //Color has requirement as editable after creation = N&#xD;
+        // fields.add(FieldKey.COLOR);&#xD;
+        //            &#xD;
+        // //Imprint has requirement as editable after creation = N&#xD;
+        //            fields.add(FieldKey.IMPRINT);&#xD;
+        //        }</Description>
+    <Annotation />
+    <Revision>removed the commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXPMKK4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 11:45:23:476 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 14:29:27:133 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="454">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this todo related to M5 part 2 if not we need to remove it.</Summary>
+    <Description>// TODO Verify with the requirements that these are the same for local OIs and National OIs</Description>
+    <Annotation />
+    <Revision>Verified for required fields and the fixes will be done in M5 Part II</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXPO5JY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 11:46:37:342 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 18:24:19:443 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="548">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>is commented out code still needed or can it be removed?</Summary>
+    <Description>// if (isNational()) {&#xD;
+        // fields.add(FieldKey.ITEM_STATUS);&#xD;
+        // fields.add(FieldKey.OI_ROUTE);&#xD;
+        // }</Description>
+    <Annotation />
+    <Revision>removed the commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FWXYBY83">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-09 :: 15:49:04:515 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 18:22:48:631 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="586">src/gov/va/med/pharmacy/peps/common/vo/OrderableItemVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>can this line be removed -- eclipse warnings say variable is never used.</Summary>
+    <Description>LocalMedicationRouteVo route = myRoute.getLocalMedicationRoute();</Description>
+    <Annotation />
+    <Revision>removed the unused local variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FCUDM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 11:44:30:538 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-08-03 :: 11:26:33:371 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="66">src/gov/va/med/pharmacy/peps/common/vo/ProductVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>According to eclipse these two variables are never used -- are they needed?</Summary>
+    <Description>private String primaryDrugClass;&#xD;
+    private String secondaryDrugClass;</Description>
+    <Annotation />
+    <Revision>removed only secondaryDrugClass. Did not remove primaryDrugClass because it will fail the FieldKey unit test.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FFWN5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 11:46:53:441 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:41:18:659 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="353">src/gov/va/med/pharmacy/peps/common/vo/ProductVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO related to m5 part 2, if not we need to remove it.</Summary>
+    <Description>// TODO (tstavenger:Apr 24, 2009) Uncomment the following if block once Possible Dosages is a FieldKey. See ACT2.12</Description>
+    <Annotation />
+    <Revision>removed the todo-- as no uncommented line found</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FGPCY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 11:47:30:658 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:39:47:175 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="372">src/gov/va/med/pharmacy/peps/common/vo/ProductVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO related to m5 part 2, if not we need to remove it</Summary>
+    <Description>// TODO (tstavenger:Apr 24, 2009) Uncomment the following if block once Possible Dosages is a FieldKey. See ACT2.13</Description>
+    <Annotation />
+    <Revision>removed the todo- as there was no commented line found in that area</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FJU2I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 11:49:56:730 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 18:09:36:339 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="728">src/gov/va/med/pharmacy/peps/common/vo/ProductVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>According to Eclipse this variable is never used -- is it needed?</Summary>
+    <Description>colPossibleDosagesNational</Description>
+    <Annotation />
+    <Revision>removed the variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FOVTS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 11:53:52:288 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 18:08:52:120 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="2153">src/gov/va/med/pharmacy/peps/common/vo/ProductVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TOD related to m5 part 2, if not we need to remove it</Summary>
+    <Description>@todo</Description>
+    <Annotation />
+    <Revision>M5 Part II</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FY8G6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 12:01:08:550 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:38:10:691 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="272">src/gov/va/med/pharmacy/peps/common/vo/SearchCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this tod related to M5 part 2, if not we need to remove it.</Summary>
+    <Description>// @todo: Combine national and local warning labels into one query.</Description>
+    <Annotation />
+    <Revision>will be done in M5 part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3FZGUA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 12:02:06:082 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 18:03:11:777 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="582">src/gov/va/med/pharmacy/peps/common/vo/SearchCriteriaVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is this commetned out code still needed?</Summary>
+    <Description>// commented out extra search fields - default parent search field is VA Product Name&#xD;
+        // productSearchFields.add(new SearchFieldVo(FieldKey.SEARCH_ALL_FIELDS, EntityType.PRODUCT));&#xD;
+        // productSearchFields.add(new SearchFieldVo(FieldKey.GENERIC_NAME, EntityType.PRODUCT));&#xD;
+        // productSearchFields.add(new SearchFieldVo(FieldKey.ACTIVE_INGREDIENT, EntityType.PRODUCT));&#xD;
+        // productSearchFields.add(new SearchFieldVo(FieldKey.VA_PRINT_NAME, EntityType.PRODUCT));&#xD;
+        // productSearchFields.add(new SearchFieldVo(FieldKey.CMOP_ID, EntityType.PRODUCT));&#xD;
+        // productSearchFields.add(new SearchFieldVo(FieldKey.PRIMARY_DRUG_CLASS, EntityType.PRODUCT));</Description>
+    <Annotation />
+    <Revision>we will keep these-- may need in the future</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3G06OU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 12:02:39:582 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:49:18:851 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="603">src/gov/va/med/pharmacy/peps/common/vo/SearchCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is this commented out code still needed?</Summary>
+    <Description>// simpleSearchFields.add(new SearchFieldVo(FieldKey.GENERIC_NAME, EntityType.PRODUCT));&#xD;
+        // simpleSearchFields.add(new SearchFieldVo(FieldKey.TRADE_NAME, EntityType.NDC));&#xD;
+        // simpleSearchFields.add(new SearchFieldVo(FieldKey.ACTIVE_INGREDIENT, EntityType.PRODUCT));&#xD;
+        // simpleSearchFields.add(new SearchFieldVo(FieldKey.VA_PRODUCT_NAME, EntityType.PRODUCT));&#xD;
+        // simpleSearchFields.add(new SearchFieldVo(FieldKey.VA_PRINT_NAME, EntityType.PRODUCT));&#xD;
+        // simpleSearchFields.add(new SearchFieldVo(FieldKey.OI_NAME, EntityType.ORDERABLE_ITEM));&#xD;
+        // simpleSearchFields.add(new SearchFieldVo(FieldKey.NDC, EntityType.NDC));</Description>
+    <Annotation />
+    <Revision>removed comment code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3G1EQC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 12:03:36:660 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:48:11:680 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="955">src/gov/va/med/pharmacy/peps/common/vo/SearchCriteriaVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO related to M5Part2, if not we need to remove it.</Summary>
+    <Description>// TODO Support advanced "All" search, then remove empty collection and if block below&#xD;
+                    // fields = getAdvancedSearchFields(getEntityType());</Description>
+    <Annotation />
+    <Revision>M5 Part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX3GN7QB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-13 :: 12:20:34:019 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:47:03:946 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="12">src/gov/va/med/pharmacy/peps/common/vo/SearchTemplateMessageVo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Does this class need the long serialVersionuid variable?</Summary>
+    <Description>public class SearchTemplateMessageVo extends ValueObject {</Description>
+    <Annotation />
+    <Revision>added serialization vuid variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7U0JHV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 13:45:55:507 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:23:31:713 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/common/vo/UserVo.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// NotificationTypeVo userPreference = new NotificationTypeVo();&#xD;
+        // // userPreference.setId("add.view");&#xD;
+        // userPreference.setValue("wizardAdd");&#xD;
+        // notifications.add(userPreference);&#xD;
+        //&#xD;
+        // // preferences.put("add.view", "wizardAdd");</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7U6YE9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 13:50:54:753 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-31 :: 09:28:09:483 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/common/vo/ValueObject.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO needed for M5 part 2, if not we need to remove it.</Summary>
+    <Description />
+    <Annotation />
+    <Revision>M5 part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7W3SXU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 14:44:26:946 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 15:22:48:197 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/common/vo/diff/Diff.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Eclipse says not being used -- can I remove it?</Summary>
+    <Description>import gov.va.med.pharmacy.peps.common.vo.ManagedItemVo;</Description>
+    <Annotation />
+    <Revision>removed unused import statement</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7W7LRJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 14:47:24:271 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:39:24:574 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="86">src/gov/va/med/pharmacy/peps/common/vo/diff/Difference.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO needed for M5 part 2, if not we need to remove it</Summary>
+    <Description>* TODO Localize the output</Description>
+    <Annotation />
+    <Revision>M5 Part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX7W9QZZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-16 :: 14:49:04:367 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:38:48:386 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="146">src/gov/va/med/pharmacy/peps/common/vo/diff/Difference.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this TODO needed for M5 part 2, if not we need to remove it</Summary>
+    <Description>* TODO Localize result</Description>
+    <Annotation />
+    <Revision>M5 Part 2</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX95041X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 11:41:17:445 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:43:00:386 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/common/vo/printtemplate/Column.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Eclipse says not being used -- can it be removed?</Summary>
+    <Description>private static final org.apache.log4j.Logger LOG = org.apache.log4j.Logger.getLogger(Column.class);</Description>
+    <Annotation />
+    <Revision>removed the variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9521AZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 11:42:47:195 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:42:14:964 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="248">src/gov/va/med/pharmacy/peps/common/vo/printtemplate/DefaultPrintTemplateFactory.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Can commented out code be removed?</Summary>
+    <Description>//  printTemplate.addTextField(FieldKey.VA_PRINT_NAME);</Description>
+    <Annotation />
+    <Revision>removed commented line</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9543BW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 11:44:23:132 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:41:47:339 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="718">src/gov/va/med/pharmacy/peps/common/vo/printtemplate/DefaultPrintTemplateFactory.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Can commented out lines of code be removed?</Summary>
+    <Description>// printTemplate.setTemplateName("TEMPLATENAME");&#xD;
+        printTemplate.addTextField(FieldKey.CATEGORY);&#xD;
+&#xD;
+        Map&lt;String, Object&gt; linkParameters = new HashMap&lt;String, Object&gt;();&#xD;
+        linkParameters.put("itemId", FieldKey.ID);&#xD;
+        linkParameters.put("itemType", FieldKey.ENTITY_TYPE);&#xD;
+        &#xD;
+        // linkParameters.put("tabElementId", "ndcmain_tab");</Description>
+    <Annotation />
+    <Revision>removed commented lines</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9BQST2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 14:50:00:278 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 17:37:39:293 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/common/vo/printtemplate/InputColumn.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Does this class need the long serialVersionuid variable?</Summary>
+    <Description>public class InputColumn extends Column {</Description>
+    <Annotation />
+    <Revision>added  long serialVersionuid variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9C4XS5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:00:59:909 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:35:15:826 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="40">src/gov/va/med/pharmacy/peps/common/vo/validator/DosageFormValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// if (target.getExcludeFromDosageChks() != null &amp;&amp; target.getExcludeFromDosageChks().length() &gt; 0) {&#xD;
+         // rejectIfLengthOutsideRangeInclusive(target.getExcludeFromDosageChks(), 1, 5, errors,&#xD;
+         // FieldKey.EXCLUDE_FROM_DOSAGE_CHKS); }</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9C6J8P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:02:14:377 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:33:30:061 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/common/vo/validator/DrugClassValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// rejectIfNullOrEmpty(target.getId(), errors, FieldKey.DOSAGE_FORM);&#xD;
+        // rejectIfNullOrEmpty(target.getValue(), errors, FieldKey.DOSAGE_FORM);</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9C895V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:03:34:627 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:32:42:015 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="78">src/gov/va/med/pharmacy/peps/common/vo/validator/ErrorKey.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>This list is no longer in alphebetical order -- should it be reordered?</Summary>
+    <Description>public static final ErrorKey ACTIVE_INGREDIENT_NAME_EMPTY = new ErrorKey("errors.active.ingredient.name.empty");&#xD;
+    public static final ErrorKey ACTIVE_INGREDIENT_UNIT_EMPTY = new ErrorKey("errors.active.ingredient.unit.empty");</Description>
+    <Annotation />
+    <Revision>Not all of them are in alphabetical order. therefore did not change the  order in this one.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CCSU8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:07:06:752 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-30 :: 13:22:34:894 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="61">src/gov/va/med/pharmacy/peps/common/vo/validator/HospitalLocationValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Eclipse says this method is not being used -- is it still needed?</Summary>
+    <Description>private boolean adminTimesValidator(String administrationTimes) {</Description>
+    <Annotation />
+    <Revision>removed the method</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CF0WM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:08:50:518 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 10:43:50:636 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="45">src/gov/va/med/pharmacy/peps/common/vo/validator/LocalPossibleDosagesValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>eclipse says variables are not being used -- are they still needed?</Summary>
+    <Description>DoseUnitVo doseUnit = localPossibleDosage.getDoseUnit();&#xD;
+            double numericDose = localPossibleDosage.getNumericDose();</Description>
+    <Annotation />
+    <Revision>removed the variables</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CH8SX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:10:34:065 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 10:39:13:544 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="58">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out doce still needed or can it be removed?</Summary>
+    <Description>// if (previousNdc != null &amp;&amp; !isNullOrEmptyString(previousNdc.getValue())) {&#xD;
+        // rejectIfNotNumeric(previousNdc.getValue(), errors, FieldKey.PREVIOUS_NDC);&#xD;
+        // }&#xD;
+        // rejectIfNotNumeric(vadfs.getDataField(FieldKey.PREVIOUS_NDC).getValue(), errors, FieldKey.PREVIOUS_NDC);</Description>
+    <Annotation />
+    <Revision>commented code not needed. this has been removed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CJ8II">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:12:07:002 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 10:33:41:218 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="164">src/gov/va/med/pharmacy/peps/common/vo/validator/NdcValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// if (environment.isLocal() &amp;&amp; user != null) {&#xD;
+        //&#xD;
+        // if (isNull(ndcPricePerOrderUnit)) {&#xD;
+        // rejectIfNull(ndcPricePerOrderUnit, errors, FieldKey.NDC_PRICE_PER_ORDER_UNIT);&#xD;
+        //&#xD;
+        // return;&#xD;
+        // }&#xD;
+        //&#xD;
+        // if (isNull(ndcPricePerOrderUnit.getValue())) {&#xD;
+        // rejectIfNull(ndcPricePerOrderUnit.getValue(), errors, FieldKey.NDC_PRICE_PER_ORDER_UNIT);&#xD;
+        //&#xD;
+        // return;&#xD;
+        // }&#xD;
+        //&#xD;
+        // // unit price&#xD;
+        // DataField&lt;Double&gt; unitPrice = vadfs.getDataField(FieldKey.UNIT_PRICE);&#xD;
+        // FieldKey.UNIT_PRICE.newValidatorInstance().validate(unitPrice, errors);&#xD;
+        //&#xD;
+        // }</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CLFI9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:13:49:377 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 10:31:56:609 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="207">src/gov/va/med/pharmacy/peps/common/vo/validator/OrderableItemValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out codes still needed or can it be removed?</Summary>
+    <Description>// ListDataField&lt;String&gt; formularyStatus = target.getDataFields().getDataField(FieldKey.FORMULARY_STATUS);&#xD;
+&#xD;
+        // if (formularyStatus == null || isNullOrEmpty(formularyStatus.getValue())) {&#xD;
+        // errors.addError(FieldKey.FORMULARY_STATUS, ErrorKey.COMMON_EMPTY, new Object[] {FieldKey.FORMULARY_STATUS});&#xD;
+        // }&#xD;
+        // else {&#xD;
+        // if (target.isNational()) {&#xD;
+        //&#xD;
+        // // Formulary status is a single-select list&#xD;
+        // String formularyStatusValue = formularyStatus.getValue().get(0);&#xD;
+        //&#xD;
+        // // DF67: Formulary Status&#xD;
+        // // Rule 2: For a national orderable item, if National Formulary Indicator is set to "Y", then the Formulary&#xD;
+        // // Status is set to "Formulary".&#xD;
+        // // Rule 3: For a national orderable item, if National Formulary Indicator is set to "N", then the Formulary&#xD;
+        // // Status is set to "Non-Formulary".&#xD;
+        // if (target.getNationalFormularyIndicator()) {&#xD;
+        // rejectIfFalse("formulary".equalsIgnoreCase(formularyStatusValue), ErrorKey.FORMULARY_STATUS_RULE_2,&#xD;
+        // errors, FieldKey.FORMULARY_STATUS);&#xD;
+        // }&#xD;
+        // else {&#xD;
+        // rejectIfFalse("non-formulary".equalsIgnoreCase(formularyStatusValue), ErrorKey.FORMULARY_STATUS_RULE_3,&#xD;
+        // errors, FieldKey.FORMULARY_STATUS);&#xD;
+        // }&#xD;
+        // }&#xD;
+        // }</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CQR91">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:17:57:877 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 15:45:41:172 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="493">src/gov/va/med/pharmacy/peps/common/vo/validator/ProductValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is commented out code still needed or can it be removed?</Summary>
+    <Description>// check if a value from formulary is selected, and check that non-formulary is selected&#xD;
+        // boolean blnNonFormulary = false;&#xD;
+        //&#xD;
+        // if ((formulary != null) &amp;&amp; (formulary.isSelected())) {&#xD;
+        //&#xD;
+        // // iterate through the selected values and if find non-formulary, then break&#xD;
+        // for (String selection : formulary.getValue()) {&#xD;
+        // if ("NON-FORMULARY".equals(selection) || ("NON-FORMULARY W/ RESTRICTIONS").equals(selection)) {&#xD;
+        // blnNonFormulary = true;&#xD;
+        // break;&#xD;
+        // }&#xD;
+        // }&#xD;
+        //&#xD;
+        // if ((blnNonFormulary) &amp;&amp; (!formularyAlternative.isSelected())) {&#xD;
+        // errors.addError(ErrorKey.FORMULARY_ALTERNATIVE_NOT_SELECTED, new Object[] {FieldKey.FORMULARY_ALTERNATIVE});&#xD;
+        // }&#xD;
+        // }&#xD;
+&#xD;
+        // national formulary restriction&#xD;
+        // if (!isNullOrEmptyString(target.getNationalFormularyRestriction())) {&#xD;
+        // FieldKey.NATIONAL_FORMULARY_RESTRICTION.newValidatorInstance().validate(&#xD;
+        // target.getNationalFormularyRestriction(), errors);&#xD;
+&#xD;
+        // }</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CWYSD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:22:47:581 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 15:27:45:101 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="48">src/gov/va/med/pharmacy/peps/common/vo/validator/SpecialHandlingValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Eclipse says not being used -- should it be removed?</Summary>
+    <Description>boolean value = target.getValue().trim().matches("[A-Z]");</Description>
+    <Annotation />
+    <Revision>removed commented code</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9CYUD3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:24:15:159 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 10:25:54:643 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="26">src/gov/va/med/pharmacy/peps/common/vo/validator/UnitDoseRouteValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>All the validation for this object has been commented out.  What validation if any needs to be here?</Summary>
+    <Description>//TODO:  Need to check this code.  it was commented out while waiting for other functionality to be completed.&#xD;
+//        if (isNull(target)) {&#xD;
+//            rejectIfNull(target, errors, FieldKey.ROUTE);&#xD;
+//&#xD;
+//            return;&#xD;
+//        }&#xD;
+//&#xD;
+//        if (isNullOrEmpty(target.getId())) {&#xD;
+//            rejectIfNullOrEmpty(target.getId(), errors, FieldKey.ROUTE);&#xD;
+//            &#xD;
+//            return;&#xD;
+//        }&#xD;
+//&#xD;
+//        rejectIfNullOrEmpty(target.getValue(), errors, FieldKey.ROUTE);</Description>
+    <Annotation />
+    <Revision>deleted the validator class because this is not used.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D0ML5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:25:38:393 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 09:23:35:796 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/common/vo/validator/ValidationError.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Eclispse says this is not being used -- is it needed?</Summary>
+    <Description>import gov.va.med.pharmacy.peps.common.vo.ValueObject;</Description>
+    <Annotation />
+    <Revision>removed the  import statement</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D14U9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:26:02:049 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 09:22:30:406 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="27">src/gov/va/med/pharmacy/peps/common/vo/validator/ValidationError.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Eclipse says this is not being used, is it needed?</Summary>
+    <Description>private static final org.apache.log4j.Logger LOG = org.apache.log4j.Logger.getLogger(ValidationError.class);</Description>
+    <Annotation />
+    <Revision>removed the variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D40CE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:28:16:190 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 09:18:55:938 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="40">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/list/ProductTypeValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>eclipse says variable not being used, is it needed?</Summary>
+    <Description>boolean supply = false;</Description>
+    <Annotation />
+    <Revision>removed the variable</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D6DOG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:30:06:784 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-21 :: 09:16:49:752 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="50">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/numeric/NdcPricePerDispenseUnitValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is this commented out code still needed?</Summary>
+    <Description>// Pattern p1 = Pattern.compile("\\d+(\\.\\d{1,4})?$");&#xD;
+        // Matcher matcher1 = p1.matcher(target.getValue().toString());&#xD;
+        // System.out.println("From Validator: "+target.getValue().toString());&#xD;
+        // boolean matchFound1 = matcher1.matches();</Description>
+    <Annotation />
+    <Revision>removed the commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D7248">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:30:38:456 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 15:26:40:133 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="52">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/numeric/NdcPricePerOrderUnitValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Is this commented out code still needed?</Summary>
+    <Description>// Pattern p1 = Pattern.compile("^\\d+(\\.\\d{1,2})?$");&#xD;
+        // Matcher matcher1 = p1.matcher(target.getValue().toString());&#xD;
+        // boolean matchFound1 = matcher1.matches();&#xD;
+        //&#xD;
+        // if (!matchFound1) {&#xD;
+        // errors.addError(ErrorKey.COMMON_INCORRECT_DECIMAL_DIGITS, new Object[] {FieldKey.NDC_PRICE_PER_ORDER_UNIT, 2});&#xD;
+        //&#xD;
+        // return;&#xD;
+        // }</Description>
+    <Annotation />
+    <Revision>removed the commented code</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9D9NLO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:32:39:612 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 15:22:54:384 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="58">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/numeric/UnitPriceValidator.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Can commented out code be removed?</Summary>
+    <Description>// Pattern p1 = Pattern.compile("^\\d+(\\.\\d{1,2})?$");&#xD;
+        // Matcher matcher1 = p1.matcher(target.getValue().toString());&#xD;
+        // boolean matchFound1 = matcher1.matches();&#xD;
+        //&#xD;
+        // if (!matchFound1) {&#xD;
+        // errors.addError(ErrorKey.COMMON_INCORRECT_DECIMAL_DIGITS, new Object[] {FieldKey.UNIT_PRICE, 2});&#xD;
+        //&#xD;
+        //            return;&#xD;
+        //        }</Description>
+    <Annotation />
+    <Revision>removed the commented code</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FX9DEWSV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-17 :: 15:36:44:815 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-07-20 :: 15:20:43:947 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo />
+    <File line="23">src/gov/va/med/pharmacy/peps/common/vo/validator/datafield/string/MessageValidator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Which is correct -- the comments say that message should be 5-20 characters, but code is checking for 1-68 characters.</Summary>
+    <Description>* this is an optional field for product item&#xD;
+     * message should be between 5-20 characters&#xD;
+     * @param target Message&#xD;
+     * @param errors the errors collection&#xD;
+     * &#xD;
+     */&#xD;
+    public void validate(DataField&lt;String&gt; target, Errors errors) {&#xD;
+        if (isNull(target)) {&#xD;
+            rejectIfNull(target, errors, FieldKey.MESSAGE);&#xD;
+&#xD;
+            return;&#xD;
+        }// end if&#xD;
+&#xD;
+        if (isNull(target.getValue())) {&#xD;
+&#xD;
+            // check if the string is not empty string&#xD;
+            rejectIfNullOrEmpty(target.getValue(), errors, FieldKey.MESSAGE);&#xD;
+&#xD;
+            return;&#xD;
+        }&#xD;
+&#xD;
+        // the length is between 5 to 20 characters, inclusive&#xD;
+        rejectIfLengthOutsideRangeInclusive(target.getValue(), 1, 68, errors, FieldKey.MESSAGE);&#xD;
+    }</Description>
+    <Annotation />
+    <Revision>fixed the comment</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>
+

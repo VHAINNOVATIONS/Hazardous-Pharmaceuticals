@@ -1,0 +1,223 @@
+<project name="CompileTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <!-- Standard compile all used in build -->
+    <macrodef name="compile" uri="http://www.swri.org">
+        <element name="additionalclasspath" optional="true" />
+        <sequential>
+            <!-- for some reason, compiling with the new weblogic.jar 
+                 (wlfullclient from 10.3.x) requires it to be forked
+             -->
+            <!--
+                in order to exclude path folders you have to trick the javac task by
+                adding 'sourcepath=""' to disable its default searching mechanism.
+                see: http://ant.apache.org/manual/Tasks/javac.html#srcdirnote
+             -->
+            <javac destdir="${build.classes.dir}" debug="on" fork="true" sourcepath="">
+                <classpath>
+                    <path refid="project.class.path" />
+                    <additionalclasspath />
+                </classpath>
+
+                <src path="${src.dir}" />
+                <src path="${build.src.dir}" />
+                <src path="${test.dir}" />
+
+                <include name="**/*.java" />
+                <exclude name="**/common/action/*.java" />
+                <exclude name="**/common/struts/**/*.java" />
+                <exclude name="**/common/springwebflow/struts/*.java" />
+                <exclude name="**/common/utility/struts/*.java" />
+                <exclude name="**/local/action/*.java" />
+                <exclude name="**/national/action/*.java" />
+            </javac>
+
+            <!-- <swri:coverageInstrument /> -->
+        </sequential>
+    </macrodef>
+
+    <!-- Compile environment macrodefs used in buildUnitTest, buildIntegrationTest, and buildTestAll -->
+    <macrodef name="setClassPaths" uri="http://www.swri.org">
+        <attribute name="project" default="${ant.project.name}" />
+        <element name="includepatternset" />
+        <sequential>
+            <delete dir="${tmp.build.dir}/classes" />
+            <mkdir dir="${tmp.build.dir}/classes" />
+            <mkdir dir="${tmp.build.dir}/${lib}" />
+
+            <for list="${dependencies},@{project}" delimiter=",;:" param="module">
+                <sequential>
+                    <copy todir="${tmp.build.dir}">
+                        <fileset dir="${module.@{module}.dir}/${build}">
+                            <includepatternset />
+
+                            <!-- STS WSDL and JAXB Java source generation places classes under packages outside of the PPS structure, -->
+                            <!-- forcing the Interface build to change the classpath while compiling environments. -->
+                            <!-- Consider revisiting this in the future to see if it can be cleaned up (Ant 1.7.1 includes a feature -->
+                            <!-- that can include all files outside of a package).-->
+                            <include name="org/w3/_2001/xmlschema/**/*.class" />
+                            <include name="gov/va/med/term/webservices/pharmacy/**/*.class" />
+                            <include name="${classes}/schema/**/*.class" />
+
+                            <exclude name="**/test/**" />
+                        </fileset>
+                    </copy>
+                    <copy todir="${tmp.build.dir}/${lib}">
+                        <fileset dir="${module.BuildLib.dir}/@{module}">
+                            <include name="**/*.jar" />
+                            <exclude name="**/*sources.jar" />
+                            <exclude name="${build}/**" />
+                        </fileset>
+                    </copy>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileCommon" uri="http://www.swri.org">
+        <element name="additionalpatternset" optional="true" />
+        <element name="additionalclasspath" optional="true" />
+        <sequential>
+            <swri:progress msg="Compiling common environment" />
+
+            <swri:setClassPaths>
+                <includepatternset>
+                    <additionalpatternset />
+                    <include name="**/common/**/*.class" />
+                    <!-- added for ease of development, as the future for local is unknown -->
+                    <include name="**/national/**/*.class" />
+                    <exclude name="**/local/**/*.class" />
+                    <!-- exclude name="**/national/**/*.class" / -->
+                </includepatternset>
+            </swri:setClassPaths>
+
+            <swri:compileEnvironment>
+                <includepatternset>
+                    <additionalpatternset />
+                    <include name="**/common/**/*.java" />
+                    <!-- added for ease of development, as the future for local is unknown -->
+                    <include name="**/national/**/*.class" />
+                    <exclude name="**/local/**/*.java" />
+                    <!-- exclude name="**/national/**/*.java" / -->
+                    <exclude name="**/common/action/*.java" />
+                    <exclude name="**/common/struts/**/*.java" />
+                	<exclude name="**/common/springwebflow/struts/*.java" />
+                    <exclude name="**/common/utility/struts/*.java" />
+                    <exclude name="**/local/action/*.java" />
+                    <exclude name="**/national/action/*.java" />
+                </includepatternset>
+                <classpathfilesets>
+                    <additionalclasspath />
+                </classpathfilesets>
+            </swri:compileEnvironment>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileLocal" uri="http://www.swri.org">
+        <element name="additionalpatternset" optional="true" />
+        <element name="additionalclasspath" optional="true" />
+        <sequential>
+            <swri:progress msg="Compiling local environment" />
+
+            <swri:setClassPaths>
+                <includepatternset>
+                    <additionalpatternset />
+                    <include name="**/common/**/*.class" />
+                    <include name="**/local/**/*.class" />
+                    <include name="**/national/**/session/*.class" />
+                </includepatternset>
+            </swri:setClassPaths>
+
+            <swri:compileEnvironment>
+                <includepatternset>
+                    <additionalpatternset />
+                    <include name="**/common/**/*.java" />
+                    <include name="**/local/**/*.java" />
+                    <include name="**/national/**/session/*.java" />
+                </includepatternset>
+                <classpathfilesets>
+                    <additionalclasspath />
+                </classpathfilesets>
+            </swri:compileEnvironment>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileNational" uri="http://www.swri.org">
+        <element name="additionalpatternset" optional="true" />
+        <element name="additionalclasspath" optional="true" />
+        <sequential>
+            <swri:progress msg="Compiling national environment" />
+
+            <swri:setClassPaths>
+                <includepatternset>
+                    <additionalpatternset />
+                    <include name="**/common/**/*.class" />
+                    <include name="**/national/**/*.class" />
+                </includepatternset>
+            </swri:setClassPaths>
+
+            <swri:compileEnvironment>
+                <includepatternset>
+                    <additionalpatternset />
+                    <include name="**/common/**/*.java" />
+                    <include name="**/national/**/*.java" />
+                </includepatternset>
+                <classpathfilesets>
+                    <additionalclasspath />
+                </classpathfilesets>
+            </swri:compileEnvironment>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="compileEnvironment" uri="http://www.swri.org">
+        <element name="includepatternset" />
+        <element name="classpathfilesets" optional="true" />
+        <sequential>
+            <!-- for some reason, compiling with the new weblogic.jar 
+                 (wlfullclient from 10.3.x) requires it to be forked
+             -->
+            <javac destdir="${build.classes.dir}" sourcepath="" debug="on" fork="true">
+                <src path="${src.dir}" />
+                <src path="${build.src.dir}" />
+
+                <!-- STS WSDL and JAXB Java source generation places classes under packages outside of the PPS structure, -->
+                <!-- forcing the Interface build to change the classpath while compiling environments. -->
+                <!-- Consider revisiting this in the future to see if it can be cleaned up (Ant 1.7.1 includes a feature -->
+                <!-- that can include all files outside of a package).-->
+                <include name="org/w3/_2001/xmlschema/**/*.java" />
+                <include name="gov/va/med/term/webservices/pharmacy/**/*.java" />
+                <include name="schema/**/*.java" />
+                <exclude name="**/common/action/*.java" />
+                <exclude name="**/common/struts/**/*.java" />
+            	<exclude name="**/common/springwebflow/struts/*.java" />
+                <exclude name="**/common/utility/struts/*.java" />
+                <exclude name="**/local/action/*.java" />
+                <exclude name="**/national/action/*.java" />
+
+                <includepatternset />
+
+                <classpath>
+                    <fileset dir="${tmp.build.dir}/${lib}">
+                        <include name="**/*.jar" />
+                        <!-- this won't work for some reason, moved the validation-api-*.jar files to Presentation -->
+                        <!-- exclude name="hibernate/validation-api**" if="${exclude.validation.api}"/ -->
+                        <exclude name="**/*sources.jar" />
+                        <exclude name="build/**/*.jar" />
+                    </fileset>
+
+                    <!-- 2011-08-12 - jbarde
+                        replaced dirset with path element, as dirset was
+                        recursively adding ALL the subdirectories within
+                        ./tmp/build/classes/*
+                     -->
+                    <!-- dirset dir="${tmp.build.dir}/${classes}" / -->
+                    <pathelement location="${tmp.build.dir}/${classes}"/>
+
+                    <fileset dir="${module.BuildLib.dir}/${module.Common}/build/weblogic">
+                        <include name="weblogic.jar" />
+                    </fileset>
+
+                    <classpathfilesets />
+                </classpath>
+            </javac>
+        </sequential>
+    </macrodef>
+</project>

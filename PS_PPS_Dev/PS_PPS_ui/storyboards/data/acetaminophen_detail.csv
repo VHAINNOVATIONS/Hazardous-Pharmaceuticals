@@ -1,0 +1,2 @@
+//genericName, tradeName, ndc, route, mfg, strength, unit, doseForm, drugClass, dispenseUnit, dql1, dql2, orderable, dsl, splittable, appPkg, witness, 
+acetaminophen,Tylenol,12345-1234,oral,Merck,250,mg,Tablet,Ace Inhibitors,TAB,30,15,orderable,days,0.33,Inpatient,true

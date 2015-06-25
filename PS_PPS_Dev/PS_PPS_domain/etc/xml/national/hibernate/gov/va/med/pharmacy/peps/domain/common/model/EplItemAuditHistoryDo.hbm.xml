@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplItemAuditHistoryDo"
+    table="EPL_ITEM_AUDIT_HISTORY"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="eplId"
+        type="java.lang.Long"
+        column="EPL_ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="auditItemType"
+        type="java.lang.String"
+        column="AUDIT_ITEM_TYPE"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="auditItemId"
+        type="java.lang.Long"
+        column="AUDIT_ITEM_ID"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="siteName"
+        type="java.lang.String"
+        column="SITE_NAME"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="eventCategory"
+        type="java.lang.String"
+        column="EVENT_CATEGORY"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="reason"
+        type="java.lang.String"
+        column="REASON"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional one-to-many association to EplItemAuditHistoryDetailDo -->
+    <set
+        name="eplItemAuditHistoryDetails"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="IAH_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplItemAuditHistoryDetailDo"
+        />
+    </set>
+    <!-- bi-directional many-to-one association to EplNotificationDo -->
+    <many-to-one
+        name="eplNotification"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplNotificationDo"
+        not-null="false"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="NOTIFICATION_ID_FK" />
+    </many-to-one>
+
+</class>
+</hibernate-mapping>
+

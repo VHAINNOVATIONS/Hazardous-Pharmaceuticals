@@ -1,0 +1,17 @@
+<!-- VistA facility data request example.  -->
+
+<vistaDomainsRequest
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/request"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/request ../../schema/facility/localVistADomainRequest.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <domain name="Outpatient Sites" />
+    <domain name="Hospital Locations" />
+    <domain name="Wards" />
+    <domain name="Labs" />
+    <domain name="Vitals" />
+    <domain name="IFCAP Item Numbers" />
+    <domain name="Specimen Types" />
+    <domain name="VistA Version" />
+</vistaDomainsRequest>

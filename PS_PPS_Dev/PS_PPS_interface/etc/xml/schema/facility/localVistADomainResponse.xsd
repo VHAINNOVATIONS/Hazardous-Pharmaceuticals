@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/response"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/facility/vista/response"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+
+    <xsd:element name="vistaDomainsResponse">
+        <xsd:complexType>
+            <xsd:choice
+                minOccurs="1"
+                maxOccurs="unbounded">
+                <xsd:element name="stringDomain">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:string">
+                                <xsd:attribute
+                                    name="name"
+                                    type="common:vistaDomainName"
+                                    use="required" />
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="booleanDomain">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:boolean">
+                                <xsd:attribute
+                                    name="name"
+                                    type="common:vistaDomainName"
+                                    use="required" />
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="integerDomain">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:integer">
+                                <xsd:attribute
+                                    name="name"
+                                    type="common:vistaDomainName"
+                                    use="required" />
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="listDomain">
+                    <xsd:complexType>
+                        <xsd:choice
+                            minOccurs="1"
+                            maxOccurs="unbounded">
+                            <xsd:element
+                                name="stringItem"
+                                type="xsd:string" />
+
+                            <xsd:element
+                                name="booleanItem"
+                                type="xsd:boolean" />
+
+                            <xsd:element
+                                name="integerItem"
+                                type="xsd:integer" />
+                        </xsd:choice>
+
+                        <xsd:attribute
+                            name="name"
+                            type="common:vistaDomainName"
+                            use="required" />
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

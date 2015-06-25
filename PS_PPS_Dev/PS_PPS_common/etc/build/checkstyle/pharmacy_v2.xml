@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: VA CheckStyle
+    Description: none
+-->
+<module name="Checker">
+    <property name="severity" value="warning" />
+    <module name="TreeWalker">
+        <module name="gov.va.med.pharmacy.checkstyle.checks.HeaderCheck">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="The header must conform to section (xxx)" />
+            <property name="severity" value="warning" />
+            <property name="allowExtraLines" value="true" />
+            <property name="startHeader" value="/**" />
+            <property name="mustContain"
+                value=" \* Source file created in [0-9]{4} by Southwest Research Institute" />
+            <property name="endHeader" value=" */" />
+        </module>
+        <module name="DeclarationOrder">
+            <property name="severity" value="error" />
+        </module>
+        <module name="gov.va.med.pharmacy.checkstyle.checks.DoWhileCheck">
+            <property name="severity" value="error" />
+        </module>
+        <module
+            name="gov.va.med.pharmacy.checkstyle.checks.MultiStatementCheck">
+            <property name="severity" value="error" />
+        </module>
+        <module
+            name="gov.va.med.pharmacy.checkstyle.checks.CommentBlankLineCheck">
+            <property name="severity" value="warning" />
+        </module>
+        <module name="gov.va.med.pharmacy.checkstyle.checks.BlankLines">
+            <property name="severity" value="error" />
+        </module>
+        <module name="JavadocMethod">
+            <property name="logLoadErrors" value="true" />
+            <property name="suppressLoadErrors" value="true" />
+            <property name="severity" value="warning" />
+        </module>
+        <module name="gov.va.med.pharmacy.checkstyle.checks.JavadocTypeCheck">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Class Javadoc must exist. (Section 5.2) " />
+            <property name="authorFormat" value="notAllowed" />
+            <property name="versionFormat" value="notAllowed" />
+            <property name="severity" value="warning" />
+        </module>
+        <module name="JavadocVariable">
+            <property name="scope" value="package" />
+        </module>
+        <module name="JavadocStyle">
+            <property name="scope" value="package" />
+            <property name="checkEmptyJavadoc" value="true" />
+            <!-- SwRI: removing checking of sentence structure -->
+            <property name="checkFirstSentence" value="false" />
+        </module>
+        <module name="ConstantName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Static variable names must be all uppercase with underscores separating the words in the name. (Section 3.3)" />
+            <property name="severity" value="error" />
+        </module>
+        <module name="LeftCurly">
+            <!-- <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Open Brace Restrictions (Section 2.3.3)" /> -->
+            <property name="severity" value="error" />
+            <property name="option" value="eol" />
+        </module>
+        <module name="RightCurly">
+            <!-- <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Closing Brace restrictions (Section 2.3.3)" /> -->
+            <property name="severity" value="error" />
+            <property name="option" value="same" />
+        </module>
+        <module name="ParenPad">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Checks for spacing around parenthesis (Section 2.3.3)" />
+            <property name="severity" value="error" />
+        </module>
+        <module name="MethodParamPad">
+            <property name="severity" value="error" />
+        </module>
+        <module name="PackageDeclaration">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Make sure each class has a package" />
+            <property name="severity" value="error" />
+        </module>
+        <module name="ArrayTypeStyle">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="The array declaration must use the brackets which immediately follow the type name, not the field name. (Section 8.1.3)" />
+            <property name="severity" value="error" />
+        </module>
+        <module name="NeedBraces">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Compound statements require braces (8.2.1)" />
+            <property name="severity" value="error" />
+        </module>
+        <module name="MultipleVariableDeclarations" />
+        <module name="MemberName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="All non-static variables must be written with the first word lower case and all remaining words having initial capital letters. Single character variable names are not allowed except for temporary variables  declared in for and while loops. (Section 3.3)" />
+            <property name="severity" value="error" />
+            <property name="format" value="^[a-z][a-zA-Z0-9]+$" />
+        </module>
+        <module name="MethodName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Method naming must be lower CamelCase (Section 3.4)" />
+            <property name="severity" value="error" />
+        </module>
+        <module name="WhitespaceAround">
+            <property name="severity" value="error" />
+            <property name="tokens"
+                value="ASSIGN, BAND, BAND_ASSIGN, BOR, BOR_ASSIGN, BSR, BSR_ASSIGN, BXOR, BXOR_ASSIGN, COLON, DIV, DIV_ASSIGN, EQUAL, GE, GT, LAND, LCURLY, LE, LITERAL_ASSERT, LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_FOR, LITERAL_IF, LITERAL_RETURN, LITERAL_SYNCHRONIZED, LITERAL_TRY, LITERAL_WHILE, LOR, LT, MINUS, MINUS_ASSIGN, MOD, MOD_ASSIGN, NOT_EQUAL, PLUS, PLUS_ASSIGN, QUESTION, SL, SLIST, SL_ASSIGN, SR, SR_ASSIGN, STAR, STAR_ASSIGN, TYPE_EXTENSION_AND" />
+        </module>
+        <module name="WhitespaceAfter">
+            <property name="severity" value="error" />
+        </module>
+        <module name="RedundantModifier" />
+        <module name="PackageName">
+            <property name="severity" value="error" />
+            <property name="format" value="^[a-z]+(\.[a-z_][a-z0-9_]*)*$" />
+        </module>
+        <module name="ParameterName" />
+        <module name="StaticVariableName">
+            <property name="applyToPrivate" value="false" />
+        </module>
+        <module name="LocalVariableName">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Local Variable Names follow the same conventions as member variables (Section 3.5)" />
+            <property name="severity" value="error" />
+            <property name="tokens" value="VARIABLE_DEF" />
+        </module>
+        <module name="TypeName">
+            <property name="severity" value="error" />
+        </module>
+        <module name="AvoidStarImport" />
+        <module name="IllegalImport">
+            <property name="severity" value="error" />
+        </module>
+        <module name="UnusedImports">
+            <property name="processJavadoc" value="true"/>
+        </module>
+        <module name="ImportOrder">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="checks order of imports" />
+            <property name="severity" value="error" />
+            <property name="groups" value="java,javax,com,org,net,gov" />
+            <property name="separated" value="true" />
+        </module>
+        <module name="LineLength">
+            <property name="severity" value="error" />
+            <property name="max" value="128" />
+        </module>
+        <module name="MethodLength">
+            <property name="severity" value="error" />
+        </module>
+        <module name="ParameterNumber" />
+        <module name="OperatorWrap" />
+        <module name="AvoidNestedBlocks" />
+        <module name="EmptyBlock" />
+        <module name="EmptyStatement" />
+        <module name="EqualsHashCode" />
+        <module name="HiddenField">
+            <property name="ignoreConstructorParameter" value="true" />
+            <property name="ignoreSetter" value="true" />
+            <property name="ignoreAbstractMethods" value="true" />
+            <message key="hidden.field"
+                value="''{0}'' hides a field. &quot;{0}&quot; does not have a modifier or is not marked private, but has public setter/getter methods." />
+        </module>
+        <module name="InnerAssignment" />
+        <module name="MagicNumber">
+            <property name="severity" value="info" />
+        </module>
+        <module name="MissingSwitchDefault" />
+        <module name="RedundantThrows">
+            <property name="logLoadErrors" value="true" />
+            <property name="suppressLoadErrors" value="true" />
+        </module>
+        <module name="SimplifyBooleanExpression" />
+        <module name="SimplifyBooleanReturn" />
+        <!-- commented out as it is an unimpressive check -->
+        <!-- <module name="DesignForExtension" /> -->
+        <!-- <module name="FinalClass">
+            <property name="severity" value="error" />
+        </module> -->
+        <module name="HideUtilityClassConstructor">
+            <property name="severity" value="error" />
+        </module>
+        <module name="VisibilityModifier">
+            <property name="protectedAllowed" value="true"/>
+        </module>
+        <module name="AnonInnerLength">
+            <property name="max" value="40" />
+        </module>
+        <module name="ExecutableStatementCount">
+            <property name="severity" value="ignore" />
+            <property name="tokens"
+                value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF" />
+        </module>
+        <module name="TodoComment">
+            <metadata name="net.sf.eclipsecs.core.comment"
+                value="To-do indicator" />
+            <property name="severity" value="error" />
+            <property name="format" value="\b(?i)TODO\b" />
+            <message key="todo.match"
+                value="Comment matches to-do  format ''{0}''." />
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="To-do comments" />
+        </module>
+        <module name="TodoComment">
+            <metadata name="net.sf.eclipsecs.core.comment"
+                value="Fix-Me indicator" />
+            <property name="severity" value="error" />
+            <property name="format" value="\b(?i)FIXME\b" />
+            <message key="todo.match"
+                value="Comment matches fix-me  format ''{0}''." />
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Fixme comments" />
+        </module>
+        <module name="TodoComment">
+            <metadata name="net.sf.eclipsecs.core.comment"
+                value="XXX indicator" />
+            <property name="severity" value="error" />
+            <property name="format" value="\b(?i)XXX\b" />
+            <message key="todo.match"
+                value="Comment matches XXX format ''{0}''." />
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="XXX comments" />
+        </module>
+        <module name="BooleanExpressionComplexity">
+            <property name="max" value="5" />
+        </module>
+        <module name="ClassFanOutComplexity">
+            <property name="max" value="75" />
+        </module>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="25" />
+        </module>
+        <module name="ModifierOrder">
+            <property name="severity" value="error" />
+        </module>
+            <!-- carried over from previous version -->
+        <module name="Indentation">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment"
+                value="Four spaces are used for each level of indentation (Section 4.4)" />
+            <property name="severity" value="error" />
+            <property name="basicOffset" value="4" />
+            <property name="braceAdjustment" value="0" />
+            <property name="caseIndent" value="4" />
+        </module>
+    </module>
+    <module name="FileTabCharacter">
+        <property name="severity" value="error" />
+    </module>
+    <module name="FileLength">
+        <property name="severity" value="error" />
+    </module>
+    <module name="NewlineAtEndOfFile" />
+    <module name="StrictDuplicateCode">
+        <property name="fileExtensions" value="java" />
+        <property name="severity" value="info" />
+    </module>
+</module>

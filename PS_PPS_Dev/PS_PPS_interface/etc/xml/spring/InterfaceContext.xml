@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/jee
+        http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <import resource="InterfaceContextTemplate.xml" />
+
+    <!-- DrugDataVendor -->
+    <!-- <bean
+        id="fdbDataSource"
+        class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property
+            name="jndiName"
+            value="datasource/FDB-DIF" />
+    </bean> -->
+
+    <jee:jndi-lookup 
+        id="fdbDataSource" 
+        jndi-name="datasource/FDB-DIF" />
+        
+    <!-- VistALink Interface -->
+    <bean
+        id="vistaLinkConnectionUtility"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.utility.impl.VistaLinkConnectionUtilityImpl"
+        autowire-candidate="true" />
+        
+    <!-- TODO make this ant-scriptable -->
+    <!-- this following definition should only be used to replace previous for the DMZ --> 
+    <!-- 
+    <bean
+        id="vistaLinkConnectionUtility"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.utility.test.stub.VistaLinkConnectionUtilityStub"
+        autowire-candidate="true" />
+    -->
+
+    <!-- STS/VETS Interface -->
+    <!--
+        <bean
+        id="stsCapability"
+        class="gov.va.med.pharmacy.peps.external.common.sts.outbound.capability.impl.StsCapabilityImpl">
+        <property
+        name="environmentUtility"
+        ref="environmentUtility" />
+        </bean>
+    
+    <bean
+        id="stsInterfaceCapability"
+        class="gov.va.med.pharmacy.peps.external.common.sts.outbound.capability.impl.StsInterfaceCapabilityImpl"
+        autowire-candidate="true">
+    </bean>
+    -->
+     <bean id="stsInterfaceCapability" class="gov.va.med.pharmacy.peps.external.common.sts.outbound.capability.StsInterfaceCapabilityStub" autowire-candidate="true">  
+    </bean>
+</beans>

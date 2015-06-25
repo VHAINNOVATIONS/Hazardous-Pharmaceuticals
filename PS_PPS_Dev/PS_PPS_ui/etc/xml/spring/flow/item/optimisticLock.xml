@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="compute.merge.information">
+    <input
+        name="itemId"
+        value="flowScope.itemId"
+        type="string" />
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <input
+        name="item"
+        value="flowScope.item"
+        type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+    
+    <action-state id="compute.merge.information">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="computeMergeInformation" />
+        </evaluate>
+        <transition
+            on="success"
+            to="mergeSummary" />
+    </action-state>
+ 
+    <view-state
+        id="mergeSummary"
+        view="merge.summary">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="commitMergeModifications"
+            to="commit.merge.modifications" />
+        <transition
+            on="cancel"
+            to="cancel" />
+    </view-state>
+    
+    <action-state id="commit.merge.modifications">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="commitMergeModifications" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+    
+    <end-state id="end" />
+
+    <end-state id="cancel" />
+
+</flow>

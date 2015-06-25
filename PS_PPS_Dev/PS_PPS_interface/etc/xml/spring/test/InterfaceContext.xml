@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <import resource="../InterfaceContextTemplate.xml"/>
+
+    <!-- DrugDataVendor -->
+    <bean id="fdbDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" autowire-candidate="true">
+        <property name="driverClassName">
+            <value>oracle.jdbc.driver.OracleDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:oracle:thin:@//PRE-EPL-DB:1522/eplnat.dyn.datasys.swri.edu</value>
+        </property>
+        <property name="username">
+            <value>fdb_dif</value>
+        </property>
+        <property name="password">
+            <value>fdb_dif123</value>
+        </property>
+    </bean>
+
+    <!-- VistALink Interface Stub -->
+    <bean id="vistaLinkConnectionUtility" 
+    	class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.utility.test.stub.VistaLinkConnectionUtilityStub" 
+    	autowire-candidate="true"/>
+
+    <!-- STS & FSS Interface Stub -->
+    <bean id="stsInterfaceCapability" class="gov.va.med.pharmacy.peps.external.common.sts.outbound.capability.StsInterfaceCapabilityStub" autowire-candidate="true">
+    </bean>
+    <bean id="fssInterfaceCapability" class="gov.va.med.pharmacy.peps.external.common.fss.outbound.capability.FssInterfaceCapabilityStub" autowire-candidate="true">
+    </bean>
+    
+</beans>

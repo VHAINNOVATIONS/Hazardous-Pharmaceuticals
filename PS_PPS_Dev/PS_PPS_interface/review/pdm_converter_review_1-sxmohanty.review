@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="pdm_converter_review_1">
+  <ReviewIssue id="FR0SW90D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:41:58:429 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:42:29:898 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/AdministrationScheduleFileConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add javadoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR0SXHJ8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:42:56:132 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:43:13:632 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="263">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/AdministrationScheduleFileConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add java doc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR0SYMS1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:43:49:585 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:44:15:976 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="263">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/AdministrationScheduleFileConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>empty constructor</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR0T2RJY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:47:02:398 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 10:47:17:820 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="5">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/DosageFormFileConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>missing java doc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FR0U2OTQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 11:14:58:478 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2009-02-10 :: 11:15:55:900 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sxmohanty</ReviewerId>
+    <AssignedTo>warensman</AssignedTo>
+    <File line="2">src/gov/va/med/pharmacy/peps/external/common/preencapsulation/utility/update/pdm/OrderUnitFileConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unused import statement, missing javadoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

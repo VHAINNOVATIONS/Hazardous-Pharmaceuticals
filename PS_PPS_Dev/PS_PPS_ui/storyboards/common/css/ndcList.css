@@ -1,0 +1,96 @@
+.heading {
+	width:100%;
+	margin-top:60px;
+}
+
+.productId {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color:black;
+	line-height:20px;
+	background-color:inherit;
+	vertical-align:top;
+	margin-top:15px;
+}
+
+
+.generalInfo {
+	height: 90px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	font-weight:normal;
+	/*border-color:#000000;
+	border-width:medium;
+	border:solid;*/
+	background-color:inherit;
+	margin-left:10px;
+	vertical-align:top;
+}
+
+.vuid {
+	font-family:Arial, Helvetica, sans-serif;
+	text-indent:3px;
+	float:left;
+}
+
+.searchResults {
+	height:25px;
+	background-color:inherit;
+	text-indent:0px;
+}
+
+.searchTable{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align:left;
+	table-layout:auto;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.right {
+	float:right;
+	width:250px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:x-small;
+}
+
+.ndcList {
+	background-color:inherit;
+	margin-top:6px;
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	color:#000000;
+}
+
+a {
+	text-indent:5px;
+	color: #0000CC;
+}
+
+
+th {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	font-weight:bold;
+	background-color:#b0b0b0;
+	padding:0,0,0,0;
+	text-align:center;
+}
+tr {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	font-weight:normal;
+}
+td {
+	padding:3,3,3,3;
+	
+}
+
+.buttonRight {
+	float:right;
+	margin-right:10px;
+}

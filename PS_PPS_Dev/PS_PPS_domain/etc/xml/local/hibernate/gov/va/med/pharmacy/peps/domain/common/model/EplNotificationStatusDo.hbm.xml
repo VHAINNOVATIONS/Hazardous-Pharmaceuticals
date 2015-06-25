@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplNotificationStatusDo"
+    table="EPL_NOTIFICATION_STATUS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <composite-id name="key" class="gov.va.med.pharmacy.peps.domain.common.model.EplNotificationStatusDoKey">
+        <meta attribute="use-in-equals">true</meta>
+        <key-property
+            name="notificationIdFk"
+            column="NOTIFICATION_ID_FK"
+            type="java.lang.Long"
+            length="30"
+        />
+        <key-property
+            name="userIdFk"
+            column="USER_ID_FK"
+            type="java.lang.Long"
+            length="30"
+        />
+    </composite-id>
+
+    <property
+        name="status"
+        type="java.lang.String"
+        column="STATUS"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        update="false"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        update="false"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+    <!-- derived association(s) for compound key -->
+    <!-- bi-directional many-to-one association to EplNotificationDo -->
+    <many-to-one
+        name="eplNotification"
+	    class="gov.va.med.pharmacy.peps.domain.common.model.EplNotificationDo"
+	    update="false"
+	    insert="false"
+	>
+    	<column name="NOTIFICATION_ID_FK" />
+	</many-to-one>
+
+    <!-- bi-directional many-to-one association to EplUserDo -->
+    <many-to-one
+        name="eplUser"
+	    class="gov.va.med.pharmacy.peps.domain.common.model.EplUserDo"
+	    update="false"
+	    insert="false"
+	>
+    	<column name="USER_ID_FK" />
+	</many-to-one>
+
+    <!-- end of derived association(s) -->
+
+
+</class>
+</hibernate-mapping>
+

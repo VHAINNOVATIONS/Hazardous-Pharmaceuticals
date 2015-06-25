@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="notifications">
+
+    <!-- Load state only here to force login, if necessary -->
+    <view-state
+        id="notifications"
+        view="notifications.search">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="notification" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="search"
+            to="search" />
+        <transition
+            on="popupField"
+            to="popupField">
+            <!-- The viewedBy information to be edited is a request parameter. Set it in flash scope to be available for the next render. -->
+            <set
+                name="flashScope.viewedBy"
+                value="currentEvent.attributes.viewedBy"
+                type="string" />
+        </transition>
+        <transition
+            on="hide"
+            to="hide" />
+            <transition
+            on="updateViewedBy"
+            to="updateViewedBy" />
+    </view-state>
+
+    <view-state
+        id="notificationsSearch"
+        view="notifications.search">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="notification" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="search"
+            to="search" />
+        <transition
+            on="popupField"
+            to="popupField">
+            <!-- The viewedBy information to be edited is a request parameter. Set it in flash scope to be available for the next render. -->
+            <set
+                name="flashScope.viewedBy"
+                value="currentEvent.attributes.viewedBy"
+                type="string" />
+        </transition>
+        <transition
+            on="hide"
+            to="hide" />
+            <transition
+            on="updateViewedBy"
+            to="updateViewedBy" />
+    </view-state>
+    
+    <action-state id="search">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="notification" />
+            <attribute
+                name="actionMethod"
+                value="search" />
+        </evaluate>
+        <transition
+            on="success"
+            to="notificationsSearch" />
+        <transition
+            on="input"
+            to="notificationsSearch" />
+    </action-state>
+    
+    <action-state id="hide">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="notification" />
+            <attribute
+                name="actionMethod"
+                value="hide" />
+        </evaluate>
+        <transition
+            on="success"
+            to="notificationsSearch" />
+        <transition
+            on="input"
+            to="notificationsSearch" ></transition>
+    </action-state>
+    
+    <view-state
+        id="popupField"
+        view="viewed.by">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="notification" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+    </view-state>
+    
+    
+    <action-state id="updateViewedBy">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="notification" />
+            <attribute
+                name="actionMethod"
+                value="updateViewedBy" />
+        </evaluate>
+        <transition
+            on="success"
+            to="manageItem" />
+    </action-state>
+
+    <subflow-state
+        id="manageItem"
+        subflow="manageItem">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <transition
+            on="end"
+            to="end" />
+    </subflow-state>
+
+    <end-state id="end">
+        <output
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+    </end-state>
+
+</flow>

@@ -1,0 +1,27 @@
+<!-- NDF domain example with multiple file additions and modifications.  -->
+
+<ndfDomain
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/domain/ndf"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:drugManufacturer="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugManufacturer"
+    xmlns:packageSize="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/packageSize"
+    xmlns:packageType="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/packageType"
+    xmlns:vaGeneric="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaGeneric"
+    xmlns:drugIngredients="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugIngredients"
+    xmlns:drugUnits="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugUnits"
+    xmlns:vaDispenseUnit="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaDispenseUnit"
+    xmlns:vaDrugClass="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaDrugClass"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/outbound/domain/ndf ../../schema/domain/ndfDomain.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    pepsIdNumber="1234567890">
+
+    <drugManufacturerFile
+        action="Inactivate"
+        number="55.95">
+        <drugManufacturer:candidateKey>
+            <drugManufacturer:name number="0.01">Smithkline</drugManufacturer:name>
+        </drugManufacturer:candidateKey>
+
+        <drugManufacturer:name number="0.01">GlaxoSmithKline</drugManufacturer:name>
+    </drugManufacturerFile>
+</ndfDomain>

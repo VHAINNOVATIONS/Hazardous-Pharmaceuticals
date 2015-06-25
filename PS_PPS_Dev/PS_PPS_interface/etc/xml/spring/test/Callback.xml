@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <import resource="../InterfaceContextTemplate.xml" />
+
+    <!-- Callback stubs -->
+
+    <bean
+        id="managedItemCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.ManagedItemCapabilityStub"
+        autowire-candidate="true">
+    </bean>
+
+    <bean
+        id="productDomainCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.ProductDomainCapabilityStub"
+        autowire-candidate="true">
+    </bean>
+
+    <bean
+        id="orderUnitDomainCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.OrderUnitDomainCapabilityStub"
+        autowire-candidate="true">
+    </bean>
+
+    <bean
+        id="manufacturerDomainCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.ManufacturerDomainCapabilityStub"
+        autowire-candidate="true">
+    </bean>
+
+    <bean
+        id="interfaceCounterDomainCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.InterfaceCounterDomainCapabilityStub"
+        autowire-candidate="true">
+    </bean>
+
+    <bean
+        id="intendedUseDomainCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.IntendedUseDomainCapabilityStub"
+        autowire-candidate="true">
+    </bean>
+
+    <!-- bean
+        id="migrationRequestCapability"
+        class="gov.va.med.pharmacy.peps.external.common.stub.MigrationRequestCapabilityImpl"
+        autowire-candidate="true">
+    </bean-->
+
+</beans>

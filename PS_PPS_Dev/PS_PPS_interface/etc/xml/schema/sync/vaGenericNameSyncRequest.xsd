@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/vaGenericNameSyncRequest" 
+        xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/vaGenericNameSyncRequest" 
+        elementFormDefault="qualified" attributeFormDefault="unqualified">
+        
+        <xsd:element name="vaGenericNameSyncRequest">
+        <xsd:complexType>
+           <xsd:sequence>
+           
+              <xsd:element 
+                  name="RequestType" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vaGenericNameIen" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="vaGenericNameName" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="inactivationDate" 
+                  type="xsd:dateTime"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="masterEntryForVuid" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="vuid" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="effectiveDateTimeRecord" 
+                  type="effectiveDateTime"
+                  minOccurs="1" 
+                  maxOccurs="unbounded" />
+                  
+           </xsd:sequence>
+        </xsd:complexType>
+     </xsd:element>
+ 
+     <xsd:complexType name="effectiveDateTime">
+        <xsd:sequence>
+            <xsd:element name="effectiveDateTime" type="xsd:dateTime" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="status" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-exception"
+    start-state="logoutState">
+
+    <end-state
+        id="logoutState"
+        view="flowRedirect:homepage">
+        <on-entry>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="user" />
+                <attribute
+                    name="actionMethod"
+                    value="logout" />
+            </evaluate>
+        </on-entry>
+    </end-state>
+
+</flow>

@@ -1,0 +1,118 @@
+<project name="WarTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="packageLocalWar" uri="http://www.swri.org">
+        <attribute name="name" default="Local${ant.project.name}" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <element name="libfileset" optional="true" />
+        <sequential>
+            <swri:packageWar name="@{name}" environment="local" destDir="@{destDir}">
+                <buildclassespatternset>
+                    <exclude name="**/national/**/*.class" />
+                </buildclassespatternset>
+
+                <etcpatternset>
+                    <exclude name="**/national/**" />
+                </etcpatternset>
+
+                <webpatternset>
+                    <exclude name="**/national/**" />
+                </webpatternset>
+
+                <nestedelement>
+                    <libfileset />
+                </nestedelement>
+            </swri:packageWar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageNationalWar" uri="http://www.swri.org">
+        <attribute name="name" default="National${ant.project.name}" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <element name="libfileset" optional="true" />
+        <sequential>
+            <swri:packageWar name="@{name}" environment="national" destDir="@{destDir}">
+                <buildclassespatternset>
+                    <exclude name="**/local/**/*.class" />
+                </buildclassespatternset>
+
+                <etcpatternset>
+                    <exclude name="**/local/**" />
+                </etcpatternset>
+
+                <webpatternset>
+                    <exclude name="**/local/**" />
+                </webpatternset>
+
+                <nestedelement>
+                    <libfileset />
+                </nestedelement>
+            </swri:packageWar>
+
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageWar" uri="http://www.swri.org">
+        <attribute name="environment" />
+        <attribute name="name" />
+        <attribute name="destFile" default="@{name}.war" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <element name="buildclassespatternset" optional="true" />
+        <element name="buildmetapatternset" optional="true" />
+        <element name="etcpatternset" optional="true" />
+        <element name="webpatternset" optional="true" />
+        <element name="nestedelement" optional="true" />
+        <sequential>
+            <mkdir dir="@{destDir}" />
+
+            <!-- Using the patternsets via refid below assumes the jar.xml is initialized before calling this macrodef -->
+            <!-- as these patternsets are defined in jar.xml! -->
+            <war destfile="@{destDir}/@{destFile}"
+                 duplicate="preserve"
+                 update="true"
+                 compress="off"
+                 webxml="${etc.web.dir}/@{environment}/web.xml">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <webinf dir="${etc.web.dir}/@{environment}">
+                    <include name="weblogic.xml" />
+                </webinf>
+
+                <classes dir="${build.classes.dir}">
+                    <patternset refid="build.classes.dir.patternset" />
+                    <buildclassespatternset />
+                </classes>
+
+                <classes dir="${build.meta.dir}">
+                    <patternset refid="build.meta.dir.patternset" />
+                    <buildmetapatternset />
+                </classes>
+
+                <classes dir="${etc.dir}">
+                    <patternset refid="etc.dir.patternset" />
+                    <etcpatternset />
+                </classes>
+
+                <fileset dir="${web.dir}">
+                    <include name="**" />
+                    <exclude name="WEB-INF/jsp/struts/**" />
+                    <webpatternset />
+                </fileset>
+
+                <nestedelement />
+            </war>
+
+            <copy todir="${tmp.archive.dir}/${web}">
+                <fileset dir="@{destDir}">
+                    <include name="@{destFile}" />
+                </fileset>
+            </copy>
+            
+            <!--
+            <swri:progress msg="Precompiling deployment file @{destDir}/@{destFile}" />
+            <swri:precompile file="@{destDir}/@{destFile}" />
+            -->
+        </sequential>
+    </macrodef>
+</project>

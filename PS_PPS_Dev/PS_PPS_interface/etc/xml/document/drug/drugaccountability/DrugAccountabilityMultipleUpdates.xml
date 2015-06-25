@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugAccountabilityRequest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request ../../../schema/drug/drugaccountability/DrugAccountabilityRequest.xsd "
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/request">
+    <requestUpdate>
+        <ndc>043254-1234-10</ndc>
+        <vuid>4002698</vuid>
+        <updateSynonymFields>
+            <vsn>VSN-30</vsn>
+            <vendor>CYGEN PHARMACY SUPPLIES</vendor>
+            <orderUnit>BT</orderUnit>
+            <pricePerOrderUnit>130.02</pricePerOrderUnit>
+            <dispenseUnitsPerOrderUnit>130.03</dispenseUnitsPerOrderUnit>
+            <pricePerDispenseUnit>130.01</pricePerDispenseUnit>
+        </updateSynonymFields>
+        <updateNDCFields>
+            <vsn>VSN-30</vsn>
+            <vendor>CYGEN PHARMACY SUPPLIES</vendor>
+            <orderUnit>BT</orderUnit>
+            <pricePerOrderUnit>130.02</pricePerOrderUnit>
+            <dispenseUnitsPerOrderUnit>130.03</dispenseUnitsPerOrderUnit>
+            <pricePerDispenseUnit>130.01</pricePerDispenseUnit>
+            <otcRXIndicator>0</otcRXIndicator>
+            <manufacturer>AMER RED CROSS</manufacturer>
+        </updateNDCFields>
+        <updateProductFields>
+            <orderUnit>BT</orderUnit>
+            <pricePerOrderUnit>130.02</pricePerOrderUnit>
+            <dispenseUnitsPerOrderUnit>130.03</dispenseUnitsPerOrderUnit>
+            <pricePerDispenseUnit>130.01</pricePerDispenseUnit>
+            <currentInventory>130</currentInventory>
+            <ifcapItemNumber>130</ifcapItemNumber>
+        </updateProductFields>
+    </requestUpdate>
+    
+    <requestUpdate>
+        <ndc>043254-1234-11</ndc>
+        <vuid>4002698</vuid>
+        <updateSynonymFields>
+            <vsn>VSN-31</vsn>
+            <vendor>CYGEN PHARMACY SUPPLIES</vendor>
+            <orderUnit>BT</orderUnit>
+            <pricePerOrderUnit>131.02</pricePerOrderUnit>
+            <dispenseUnitsPerOrderUnit>131.03</dispenseUnitsPerOrderUnit>
+            <pricePerDispenseUnit>131.01</pricePerDispenseUnit>
+        </updateSynonymFields>
+    </requestUpdate>
+    
+    <requestUpdate>
+        <ndc>043254-1234-12</ndc>
+        <vuid>4002698</vuid>
+        <updateNDCFields>
+            <vsn>VSN-32</vsn>
+            <vendor>CYGEN PHARMACY SUPPLIES</vendor>
+            <orderUnit>BT</orderUnit>
+            <pricePerOrderUnit>132.02</pricePerOrderUnit>
+            <dispenseUnitsPerOrderUnit>132.03</dispenseUnitsPerOrderUnit>
+            <pricePerDispenseUnit>132.01</pricePerDispenseUnit>
+            <otcRXIndicator>0</otcRXIndicator>
+            <manufacturer>AMER RED CROSS</manufacturer>
+        </updateNDCFields>
+    </requestUpdate>
+    
+    <requestUpdate>
+        <ndc>043254-1234-13</ndc>
+        <vuid>4002698</vuid>
+        <updateProductFields>
+            <orderUnit>BT</orderUnit>
+            <pricePerOrderUnit>133.02</pricePerOrderUnit>
+            <dispenseUnitsPerOrderUnit>133.03</dispenseUnitsPerOrderUnit>
+            <pricePerDispenseUnit>133.01</pricePerDispenseUnit>
+            <currentInventory>133</currentInventory>
+            <ifcapItemNumber>133</ifcapItemNumber>
+        </updateProductFields>
+    </requestUpdate>
+</drugAccountabilityRequest>

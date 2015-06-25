@@ -1,0 +1,2 @@
+//genericName, tradeName, ndc, route, mfg, strength, unit, doseForm, drugClass, dispenseUnit, dql1, dql2, orderable, dsl, splittable, appPkg, witness, 
+lisinopril,lisin,12345-1234,IV,Merck,350,mg,Capsule,Ace Inhibitors,CAP,30,15,orderable,days,0.33,Outpatient,false

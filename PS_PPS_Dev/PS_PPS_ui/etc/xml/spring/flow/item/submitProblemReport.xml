@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="problemReportText">
+
+    <input
+        name="itemId"
+        value="flowScope.itemId"
+        type="string" />
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <input
+        name="item"
+        value="flowScope.item"
+        type="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo" />
+
+    <view-state
+        id="problemReportText"
+        view="problem.report.text">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        
+        <transition
+            on="cancel"
+            to="cancel" />
+        <transition
+            on="submitProblemReport"
+            to="submitProblemReport" />
+    </view-state>
+
+    <action-state id="submitProblemReport">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="submitProblemReport" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+    </action-state>
+    
+    <end-state id="end" />
+    
+    <end-state id="cancel" />
+</flow>

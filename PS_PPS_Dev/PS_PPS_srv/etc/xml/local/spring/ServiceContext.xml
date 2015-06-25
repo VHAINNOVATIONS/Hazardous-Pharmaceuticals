@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/jee
+           http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <import resource="ServiceContextTemplate.xml" />
+
+    <!-- This is the LOCAL ServiceContext.xml file -->
+
+    <!-- DIF Update Scheduler, using the SiteUpdateScheduleService EJB since we are in a J2EE environment -->
+    <bean
+        id="difUpdateScheduler"
+        class="gov.va.med.pharmacy.peps.service.local.utility.DifUpdateScheduler"
+        autowire-candidate="true">
+        <property
+            name="siteUpdateScheduleService"
+            ref="siteUpdateScheduleServiceForDifUpdate" />
+    </bean>
+
+    <!-- <bean
+        id="siteUpdateScheduleServiceForDifUpdate"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property
+            name="jndiName"
+            value="SiteUpdateScheduleServiceLocal" />
+        <property
+            name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.local.session.SiteUpdateScheduleService" />
+        <property
+            name="resourceRef"
+            value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="siteUpdateScheduleServiceForDifUpdate"
+        jndi-name="SiteUpdateScheduleServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.local.session.SiteUpdateScheduleService" />
+
+    <!-- Local Capabilities -->
+    <bean
+        id="sendToNationalCapability"
+        class="gov.va.med.pharmacy.peps.service.local.messagingservice.outbound.capability.impl.SendToNationalCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="jndiTemplate"
+            ref="emptyJndiTemplate" />
+    </bean>
+
+    <!-- National Services -->
+    <!-- <bean
+        id="nationalRequestService"
+        class="org.springframework.ejb.access.SimpleRemoteStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property
+            name="jndiName"
+            value="RequestService" />
+        <property
+            name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.common.session.RequestService" />
+        <property
+            name="jndiTemplate"
+            ref="nationalJndiTemplate" />
+        <property
+            name="resourceRef"
+            value="false" />
+    </bean> -->
+    
+    <jee:remote-slsb 
+        id="nationalRequestService"
+        jndi-name="RequestService"
+        business-interface="gov.va.med.pharmacy.peps.service.common.session.RequestService" />
+
+    <!-- <bean
+        id="nationalConsoleService"
+        class="org.springframework.ejb.access.SimpleRemoteStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property
+            name="jndiName"
+            value="ConsoleService" />
+        <property
+            name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.national.session.ConsoleService" />
+        <property
+            name="jndiTemplate"
+            ref="nationalJndiTemplate" />
+        <property
+            name="resourceRef"
+            value="false" />
+    </bean> -->
+    
+    <jee:remote-slsb 
+        id="nationalConsoleService"
+        jndi-name="ConsoleService"
+        business-interface="gov.va.med.pharmacy.peps.service.national.session.ConsoleService" />
+
+    <!-- <bean
+        id="nationalSiteUpdateScheduleService"
+        class="org.springframework.ejb.access.SimpleRemoteStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property
+            name="jndiName"
+            value="SiteUpdateScheduleService" />
+        <property
+            name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.national.session.SiteUpdateScheduleService" />
+        <property
+            name="jndiTemplate"
+            ref="nationalJndiTemplate" />
+        <property
+            name="resourceRef"
+            value="false" />
+    </bean> -->
+    
+    <jee:remote-slsb 
+        id="nationalSiteUpdateScheduleService"
+        jndi-name="SiteUpdateScheduleService"
+        business-interface="gov.va.med.pharmacy.peps.service.national.session.SiteUpdateScheduleService" />
+
+    <!-- JNDI Templates -->
+    <bean
+        id="nationalJndiTemplate"
+        class="org.springframework.jndi.JndiTemplate"
+        autowire-candidate="true">
+        <property name="environment">
+            <props>
+                <prop key="java.naming.factory.initial">${national.java.naming.factory.initial}</prop>
+                <prop key="java.naming.provider.url">${national.java.naming.provider.url}</prop>
+                <prop key="java.naming.security.principal">${national.java.naming.security.principal}</prop>
+                <prop key="java.naming.security.credentials">${national.java.naming.security.credentials}</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- National JNDI Template Properties -->
+    <!-- nationalJndi.properties file is generated by the build to allow for deployment to different machines -->
+    <!-- gov.va.med.pharmacy.peps.siteConfig.properties file overrides natioanlJndi.properties file -->
+    <!-- Ignore any exceptions thrown if cannot find the gov.va.med.pharmacy.peps.siteConfig.properties file since it isn't required. -->
+    <bean
+        id="nationalJndiProperties"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property
+            name="ignoreResourceNotFound"
+            value="true" />
+        <property name="locations">
+            <list>
+                <value>properties/local/spring/nationalJndi.properties</value>
+                <value>classpath:gov.va.med.pharmacy.peps.siteConfig.properties</value>
+            </list>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/migration/ndc/request"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/migration/ndc/request"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="ndcMigrationSynchRequest">
+        <xsd:complexType>
+            <xsd:choice minOccurs="1" maxOccurs="1" >
+                <xsd:element name="migrationStatus"
+                     type="statusField"/>
+                <xsd:element name="ndcUPN"          
+                     type="ndcUPNFieldsType"/>
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="statusField">
+        <xsd:sequence>
+            <xsd:element name="status" type="xsd:string"
+                minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ndcUPNFieldsType">
+        <xsd:sequence>
+            <xsd:element name="ndc"                        
+                 type="xsd:string"         
+                 minOccurs="1" maxOccurs="1" />
+            <xsd:element name="upn"                        
+                 type="xsd:string"         
+                 minOccurs="0" maxOccurs="1" />
+            <xsd:element name="manufacturerRecord"               
+                 type="manufacturerRecord"         
+                 minOccurs="1" maxOccurs="1" />
+            <xsd:element name="tradeName"                   
+                 type="xsd:string"         
+                 minOccurs="0" maxOccurs="1" />
+            <xsd:element name="vaProduct"              
+                 type="productRecord"         
+                 minOccurs="1" maxOccurs="1" />
+            <xsd:element name="inactivationDate"           
+                 type="xsd:dateTime"       
+                 minOccurs="0" maxOccurs="1" />
+            <xsd:element name="packageSize"                
+                 type="xsd:string"         
+                 minOccurs="0" maxOccurs="1" />
+            <xsd:element name="packageTypeRecord"                
+                 type="packageTypeRecord"         
+                 minOccurs="0" maxOccurs="1" />
+            <xsd:element name="otcRxIndicator"             
+                 type="xsd:string"         
+                 minOccurs="0" maxOccurs="1" />
+        </xsd:sequence>
+    </xsd:complexType>
+    
+     <xsd:complexType name="manufacturerRecord">
+        <xsd:sequence>
+            <xsd:element name="manufacturer" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="manufacturerIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+     <xsd:complexType name="productRecord">
+        <xsd:sequence>
+            <xsd:element name="productName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="productIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+     <xsd:complexType name="packageTypeRecord">
+        <xsd:sequence>
+            <xsd:element name="packageType" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="packageTypeIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
+

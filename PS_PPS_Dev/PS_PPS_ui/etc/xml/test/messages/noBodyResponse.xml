@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exception
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/exception exception.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/exception">
+    <code>PRE</code>
+    <message>No order checks requested. At least one type of order check must be requested.</message>
+    <detailedMessage><![CDATA[gov.va.med.pharmacy.peps.common.exception.InterfaceValidationException: No order checks requested. At least one type of order check must be requested.
+	at gov.va.med.pharmacy.peps.external.common.preencapsulation.capability.impl.ProcessOrderChecksCapabilityImpl.handleRequest(ProcessOrderChecksCapabilityImpl.java:58)
+	at gov.va.med.pharmacy.peps.external.common.preencapsulation.session.impl.OrderCheckServiceImpl.performOrderCheck(OrderCheckServiceImpl.java:31)
+	at gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.OrderCheckServiceBean.performOrderCheck(OrderCheckServiceBean.java:36)
+	at gov.va.med.pharmacy.peps.external.common.preencapsulation.session.bean.OrderCheckService_z0vrjk_ELOImpl.performOrderCheck(OrderCheckService_z0vrjk_ELOImpl.java:61)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.springframework.ejb.access.LocalSlsbInvokerInterceptor.invoke(LocalSlsbInvokerInterceptor.java:75)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy34.performOrderCheck(Unknown Source)
+	at gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.OrderCheckServlet.getResponse(OrderCheckServlet.java:26)
+	at gov.va.med.pharmacy.peps.common.servlet.AbstractPepsServlet.doService(AbstractPepsServlet.java:120)
+	at gov.va.med.pharmacy.peps.common.servlet.AbstractPepsServlet.doPost(AbstractPepsServlet.java:85)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:763)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:223)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:283)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:175)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3245)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2003)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:1909)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1359)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:181)
+]]></detailedMessage>
+</exception>

@@ -1,0 +1,10 @@
+<Response type="array"><![CDATA[
+<response
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/status/response ../../schema/status/response.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/status/response">
+
+    <response status="Success">Message #104 was successfully processed.</response>
+
+</response>
+]]></Response>

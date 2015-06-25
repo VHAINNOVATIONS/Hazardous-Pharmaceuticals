@@ -1,0 +1,37 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/vaDispenseUnitSyncRequest" 
+        xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/vaDispenseUnitSyncRequest" 
+        elementFormDefault="qualified" attributeFormDefault="unqualified">
+        
+        <xsd:element name="vaDispenseUnitSyncRequest">
+        <xsd:complexType>
+           <xsd:sequence>
+           
+              <xsd:element 
+                  name="RequestType" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="vaDispenseUnitIen" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="vaDispenseUnitName" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="inactivationDate" 
+                  type="xsd:dateTime"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+           </xsd:sequence>
+        </xsd:complexType>
+        </xsd:element>
+</xsd:schema>

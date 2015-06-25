@@ -1,0 +1,7 @@
+//type,user,date,read
+New VA Specific Items,user1,8/22/2007 08:22,Yes
+New COTS Items,user2,8/18/2007 14:14,No
+Modified VA Specific Items,user3,8/7/2007 08:25,No
+Modified COTS Items,user4,8/3/2007 10:26,No
+Rejected VA Specific Items,user1,8/2/2007 08:23,Yes
+Deleted COTS Items,user3,8/1/2007 10:20,No

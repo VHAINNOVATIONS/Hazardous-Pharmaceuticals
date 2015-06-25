@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4">
+  <ReviewIssue id="FKFT1FW8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:04:36:920 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:06:02:211 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="88">src/gov/va/med/pharmacy/peps/service/common/utility/ExternalScriptRunner.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should this be a threaded/timed/batch process, and not synchronous?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFWV6K8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:51:43:352 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:53:53:687 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="212">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove this try/catch!  And why is a retrieve throwing a validation exception????</Summary>
+    <Description>I think the actual exception is an item not found one, in which case we really need to gracefully handle this at some point, but for now, let the exception bubble up and be ugly...better than fail silently!</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFWYMUU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 16:54:24:438 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:34:13:389 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="429">src/gov/va/med/pharmacy/peps/service/common/capability/impl/ManagedItemCapabilityImpl.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Don't handle exception case this way!, or at least rethrow the exception.</Summary>
+    <Description>This is a fails slient condition...it woudl be better to show the empty list but with a big error at the top saying 'system couldn't retrieve partial saves, see sys admin' or some such.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7KFOU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:39:03:918 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:39:24:215 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="279">src/gov/va/med/pharmacy/peps/service/common/capability/impl/UserCapabilityImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove deprecated method!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7L8P4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:39:41:512 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:40:43:964 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="289">src/gov/va/med/pharmacy/peps/service/common/capability/impl/UserCapabilityImpl.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>UserVo should never be null...</Summary>
+    <Description>Better to just kill the app with a thrown runtime exception, or graceful 'system down, see admin' sort of error page.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKRFSXC3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-09-05 :: 18:27:18:723 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-09-05 :: 18:27:20:035 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="56">test/gov/va/med/pharmacy/peps/service/national/messagingservice/outbound/capability/impl/test/SendToLocalCapabilityStub.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary />
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKRFU2SK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-09-05 :: 18:28:12:452 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-09-05 :: 18:28:42:355 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="57">test/gov/va/med/pharmacy/peps/service/national/messagingservice/outbound/capability/impl/test/SendToLocalCapabilityStub.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Jetty: Need to get the right class loader for threads...breaks ext. interfaces code</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

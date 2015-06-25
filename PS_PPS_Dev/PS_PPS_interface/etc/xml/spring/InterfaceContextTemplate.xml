@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- DrugDataVendor Capabilities -->
+    <bean
+        id="versionCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.VersionCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="navigation"
+            ref="fdbNavigation" />
+    </bean>
+
+    <!-- 
+    <bean
+        id="fssInterfaceCapability"
+        class="gov.va.med.pharmacy.peps.external.common.fss.outbound.capability.impl.FssInterfaceCapabilityImpl"
+        autowire-candidate="true">
+    </bean>
+     -->
+     
+    <bean id="fssInterfaceCapability" class="gov.va.med.pharmacy.peps.external.common.fss.outbound.capability.FssInterfaceCapabilityStub" autowire-candidate="true">
+    </bean>
+    
+    <bean
+        id="drugReferenceCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.DrugReferenceCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="fdbDataManager"
+            ref="fdbDataManager" />
+        <property
+            name="productDomainCapability"
+            ref="productDomainCapability" />
+    </bean>
+    
+      <bean
+        id="drugReferenceAutoCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.DrugReferenceAutoCapabilityImpl"
+        autowire-candidate="true">
+    </bean>
+
+    <bean
+        id="ndcImageCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.NdcImageCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="navigation"
+            ref="fdbNavigation" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+    </bean>
+
+    <bean
+        id="drugInfoCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.DrugInfoCapabilityImpl"
+        autowire-candidate="true">
+        <lookup-method
+            name="newScreenDrugInstance"
+            bean="fdbScreenDrug" />
+        <lookup-method
+            name="newDispensableDrugInstance"
+            bean="fdbDispensableDrug" />
+    </bean>
+
+    <bean
+        id="performDrugChecksCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.PerformDrugChecksCapabilityImpl"
+        autowire-candidate="true">
+        <lookup-method
+            name="newScreenDrugsInstance"
+            bean="fdbScreenDrugs" />
+        <lookup-method
+            name="newScreenDrugInstance"
+            bean="fdbScreenDrug" />
+        <property
+            name="performDrugDoseCheckCapability"
+            ref="performDrugDoseCheckCapability" />
+        <property
+            name="performDrugDrugCheckCapability"
+            ref="performDrugDrugCheckCapability" />
+        <property
+            name="performDrugTherapyCheckCapability"
+            ref="performDrugTherapyCheckCapability" />
+    </bean>
+
+    <bean
+        id="performDrugDoseCheckCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.PerformDrugDoseCheckCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="screening"
+            ref="fdbScreening" />
+    </bean>
+
+    <bean
+        id="performDrugDrugCheckCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.PerformDrugDrugCheckCapabilityImpl"
+        autowire-candidate="true">
+        <lookup-method
+            name="newFdbCodeInstance"
+            bean="fdbCode" />
+        <lookup-method
+            name="newMonographInstance"
+            bean="fdbMonograph" />
+        <property
+            name="screening"
+            ref="fdbScreening" />
+    </bean>
+
+    <bean
+        id="performDrugTherapyCheckCapability"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.capability.impl.PerformDrugTherapyCheckCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="screening"
+            ref="fdbScreening" />
+    </bean>
+
+    <!-- Vistalink Capabilities -->
+    <bean
+        id="vistaFileSynchCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.capability.impl.VistaFileSynchCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="vistaLinkConnectionUtility"
+            ref="vistaLinkConnectionUtility" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+        <property
+            name="interfaceCounterDomainCapability"
+            ref="interfaceCounterDomainCapability" />
+    </bean>
+
+  <bean
+        id="migrationRequestCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.capability.impl.MigrationRequestCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="vistaLinkConnectionUtility"
+            ref="vistaLinkConnectionUtility" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+    </bean>
+    
+    <bean
+        id="migrationSynchFileCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.capability.impl.MigrationSynchFileCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="vistaLinkConnectionUtility"
+            ref="vistaLinkConnectionUtility" />
+    </bean>
+    
+
+    <bean
+        id="quickActionCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.capability.impl.QuickActionCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="vistaLinkConnectionUtility"
+            ref="vistaLinkConnectionUtility" />
+        <property
+            name="interfaceCounterDomainCapability"
+            ref="interfaceCounterDomainCapability" />
+    </bean>
+
+    <bean
+        id="vistaAuthoritativeDomainCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.capability.impl.VistaAuthoritativeDomainCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="vistaLinkConnectionUtility"
+            ref="vistaLinkConnectionUtility" />
+    </bean>
+
+    <bean
+        id="synchronizationStatusCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.inbound.capability.impl.SynchronizationStatusCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="interfaceCounterDomainCapability"
+            ref="interfaceCounterDomainCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+    </bean>
+
+    <bean
+        id="processOrderChecksCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.inbound.capability.impl.ProcessOrderChecksCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="performDrugChecksCapability"
+            ref="performDrugChecksCapability" />
+        <property
+            name="versionCapability"
+            ref="versionCapability" />
+    </bean>
+
+    <bean
+        id="processDrugInfoCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.inbound.capability.impl.ProcessDrugInfoCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="drugInfoCapability"
+            ref="drugInfoCapability" />
+    </bean>
+
+    <!-- First DataBank -->
+    <!--  FDB classes are managed by Spring to reduce the frequency of class instantiation (Spring caches instances for -->
+    <!--  us and to support profiling FDB methods if we chose to. -->
+    <bean
+        id="fdbCode"
+        class="firstdatabank.dif.FDBCode"
+        scope="prototype"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <bean
+        id="fdbDataManager"
+        class="firstdatabank.database.FDBDataManager"
+        factory-method="getInstanceUsingFactory"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbJdbcConnectionFactory" />
+    </bean>
+
+    <bean
+        id="fdbDispensableDrug"
+        class="firstdatabank.dif.DispensableDrug"
+        scope="prototype"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <bean
+        id="fdbJdbcConnectionFactory"
+        class="gov.va.med.pharmacy.peps.external.common.drugdatavendor.outbound.utility.JdbcConnectionFactory"
+        autowire-candidate="true">
+        <property
+            name="dataSource"
+            ref="fdbDataSource" />
+    </bean>
+
+    <bean
+        id="fdbMonograph"
+        class="firstdatabank.dif.Monograph"
+        scope="prototype"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <bean
+        id="fdbNavigation"
+        class="firstdatabank.dif.Navigation"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <bean
+        id="fdbScreenDrug"
+        class="firstdatabank.dif.ScreenDrug"
+        scope="prototype"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <bean
+        id="fdbScreenDrugs"
+        class="firstdatabank.dif.ScreenDrugs"
+        scope="prototype"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <bean
+        id="fdbScreening"
+        class="firstdatabank.dif.Screening"
+        autowire-candidate="true">
+        <constructor-arg ref="fdbDataManager" />
+    </bean>
+
+    <!-- Outbound PRE Encapsulation Capabilities -->
+    <bean
+        id="sendTestMessageCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.outbound.capability.impl.SendTestMessageCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="vistaLinkConnectionUtility"
+            ref="vistaLinkConnectionUtility" />
+    </bean>
+
+    <!-- Inbound PRE Encapsulation Capabilities -->
+    <bean
+        id="drugDataCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.inbound.capability.impl.DrugDataCapabilityImpl"
+        autowire-candidate="true">
+        <property
+            name="managedItemCapability"
+            ref="managedItemCapability" />
+        <property
+            name="productDomainCapability"
+            ref="productDomainCapability" />
+        <property
+            name="environmentUtility"
+            ref="environmentUtility" />
+    </bean>
+   <!--  <bean
+        id="drugAccountabilityCapability"
+        class="gov.va.med.pharmacy.peps.external.common.preencapsulation.inbound.capability.impl.DrugAccountabilityCapabilityImpl"
+        autowire-candidate="true">
+    </bean>
+    -->
+     <bean id="stsInterfaceCapability" class="gov.va.med.pharmacy.peps.external.common.sts.outbound.capability.StsInterfaceCapabilityStub" autowire-candidate="true">
+    </bean>
+    
+    <context:component-scan base-package="gov.va.med.pharmacy.peps.external.common"/>
+</beans>

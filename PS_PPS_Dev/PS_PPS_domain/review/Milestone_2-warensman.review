@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4B6KWY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:40:44:002 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:44:38:232 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Insufficient javadoc. Correct javadoc warnings.</Summary>
+    <Description />
+    <Annotation>Insufficient Javadoc. Correct Javadoc warnings.</Annotation>
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BHBSN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:49:05:399 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:50:08:601 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Correct PMD errors and warnings.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BK3FT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:51:14:537 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:52:29:301 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="152">src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Insufficient comments.</Summary>
+    <Description>I can't tell what this method does and there seems to be some rather complicated boolean logic going on.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BM3UY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:52:48:394 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:53:29:362 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="152">src/gov/va/med/pharmacy/peps/domain/common/model/EplVadfAssocValueDo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Insufficient comments.</Summary>
+    <Description>What are you doing here with the hashCode method?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E14UO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:00:28:752 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:02:17:984 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do and DoKey Classes are generated?</Summary>
+    <Description>These classes seem to be generated, but are in the /src folder. Should these be generated and appear in /build/src instead? If not, should they be cleaned up and have sufficient (javadoc) comments put in?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E552F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:03:35:655 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:03:56:951 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="8">src/gov/va/med/pharmacy/peps/domain/common/utility/DataObjectConversionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should we be delivering code with deprecated methods?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4G5TSG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:00:06:928 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:01:20:973 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/utility/StringValidator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Explanation of what the validation criteria are would be nice to have.</Summary>
+    <Description>The regex could be consulted, but it would be nice to have a readable explanation.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4G9CGA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:02:51:082 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:03:41:597 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="122">src/gov/va/med/pharmacy/peps/domain/common/utility/ValueObjectConversionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should be propertyDo. Lower case o.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GEX13">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:07:11:031 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:08:02:312 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="560">src/gov/va/med/pharmacy/peps/domain/common/utility/ValueObjectConversionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Avoid abbreviating words cani, can for canister.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GHSET">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:09:25:013 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:09:34:450 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove commented out code.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GJ60C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:10:29:292 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:10:42:198 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Clean up comments. Spelling errors, etc.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GOVY7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:14:56:191 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:15:19:784 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="920">src/gov/va/med/pharmacy/peps/domain/common/utility/ValueObjectConversionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Delete or clean up these oddly formatted comments.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GPMYE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:15:31:190 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:15:44:190 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="954">src/gov/va/med/pharmacy/peps/domain/common/utility/ValueObjectConversionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Delete or clean up these oddly formatted comments.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GR3QZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:16:39:611 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:16:54:923 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="2">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DataFieldsDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Improve the javadoc comments in this class.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GS3ET">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:17:25:829 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:17:46:797 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="52">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DataFieldsDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add comment on rationale for this 9998 number.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GVB74">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:19:55:888 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:20:10:622 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="2">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DispenseUnitDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add overview comment for this class.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GW4W4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:20:34:372 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:21:08:121 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="2">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DomainCapabilityTestCase.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Why is PMD disabled for this class? Enable and check for problems.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GXSEG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:21:51:496 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:38:370 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="19">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DosageFormDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should be localDosage... Next line should be nationalDosage...</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GYXK6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:44:838 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:54:619 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="34">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DosageFormDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need overview comment added.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H0YOI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:24:19:602 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:24:30:915 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="54">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DrugClassDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Comment this class better.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H1F9B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:24:41:087 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:25:09:102 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="30">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DrugClassDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Eventually this sort of test case probably needs to be rewritten so it doesn't break when the domain is updated.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H3FG8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:26:14:648 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:24:25:593 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="18">test/gov/va/med/pharmacy/peps/domain/common/capability/test/DrugUnitDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>This class needs a comment description.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H54XQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:27:34:334 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:27:44:678 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="23">test/gov/va/med/pharmacy/peps/domain/common/capability/test/GenericNameDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Needs a comment describing the class.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H5MSY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:27:57:490 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:28:20:615 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Test cases will break due to expecting specific numbers of return values.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H6GLV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:28:36:115 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 12:19:43:392 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="15">test/gov/va/med/pharmacy/peps/domain/common/capability/test/IngredientDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Needs a comment describing the class.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H7P3U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:29:33:786 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:29:45:176 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="16">test/gov/va/med/pharmacy/peps/domain/common/capability/test/IntendedUseDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Needs a comment describing the class.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H89KT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:30:00:317 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:30:09:676 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="65">test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalProductDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Needs a comment describing the class.</Summary>
+    <Description>*</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H8LH7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:30:15:739 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:30:50:738 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="91">test/gov/va/med/pharmacy/peps/domain/common/capability/test/LocalProductDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Commented out test case.</Summary>
+    <Description>Should the test case be commented out? If it doesn't work, should probably remove it altogether.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4H9VN2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:31:15:566 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:31:33:784 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>warensman</ReviewerId>
+    <AssignedTo />
+    <File line="74">test/gov/va/med/pharmacy/peps/domain/common/capability/test/NationalProductDomainCapabilityTest.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Commented out test case.</Summary>
+    <Description>Remove or fix suggested.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

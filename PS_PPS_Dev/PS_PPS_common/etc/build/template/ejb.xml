@@ -1,0 +1,88 @@
+<project name="EjbTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initEjbTemplate" uri="http://www.swri.org">
+        <sequential>
+            <taskdef name="ejbdoclet"
+                     classname="xdoclet.modules.ejb.EjbDocletTask"
+                     loaderref="ant-loader"
+                     classpathref="build.class.path" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="localEjbdoclet" uri="http://www.swri.org">
+        <sequential>
+            <swri:ejbdoclet environment="local" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="nationalEjbdoclet" uri="http://www.swri.org">
+        <sequential>
+            <swri:ejbdoclet environment="national" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="ejbdoclet" uri="http://www.swri.org">
+        <attribute name="verbose" default="false" />
+        <attribute name="environment" default="" />
+
+        <sequential>
+            <if>
+                <length string="@{environment}" trim="true" when="greater" length="0" />
+                <then>
+                    <var name="environment.pattern" value="**/@{environment}/" />
+                    <var name="environment.dir" value="@{environment}/" />
+                </then>
+                <else>
+                    <var name="environment.pattern" value="" />
+                    <var name="environment.dir" value="" />
+                </else>
+            </if>
+
+            <ejbdoclet ejbspec="2.0" destDir="${build.src.dir}" verbose="@{verbose}">
+                <!-- ejbdoclet requires super classses (located in Common) in the fileset it works with. -->
+                <fileset dir="${module.Common.dir}/${src}">
+                    <include name="**/bean/AbstractPeps*Bean.java" />
+                </fileset>
+
+                <fileset dir="${src.dir}">
+                    <include name="**/common/**/session/bean/*Bean.java" />
+                    <include name="**/common/**/message/bean/*Bean.java" />
+                	 <include name="**/common/migration/bean/*Bean.java" />
+                    <include name="${environment.pattern}**/session/bean/*Bean.java" />
+                    <include name="${environment.pattern}**/message/bean/*Bean.java" />
+                </fileset>
+
+                <remoteinterface pattern="{0}Remote"
+                                 destDir="${build.src.dir}"
+                                 acceptAbstractClasses="false"
+                                 acceptInterfaces="false">
+                    <packageSubstitution packages="session.bean" substituteWith="session.contract" />
+                </remoteinterface>
+
+                <localinterface pattern="{0}Local"
+                                destDir="${build.src.dir}"
+                                acceptAbstractClasses="false"
+                                acceptInterfaces="false">
+                    <packageSubstitution packages="session.bean" substituteWith="session.contract" />
+                </localinterface>
+
+                <homeinterface pattern="{0}RemoteHome"
+                               destDir="${build.src.dir}"
+                               acceptAbstractClasses="false"
+                               acceptInterfaces="false">
+                    <packageSubstitution packages="session.bean" substituteWith="session.contract" />
+                </homeinterface>
+
+                <localhomeinterface pattern="{0}LocalHome"
+                                    destDir="${build.src.dir}"
+                                    acceptAbstractClasses="false"
+                                    acceptInterfaces="false">
+                    <packageSubstitution packages="session.bean" substituteWith="session.contract" />
+                </localhomeinterface>
+
+                <deploymentdescriptor destDir="${build.meta.dir}/${environment.dir}META-INF" validatexml="false" />
+
+                <weblogic version="8.1" createtables="Disabled" destDir="${build.meta.dir}/${environment.dir}META-INF" />
+            </ejbdoclet>
+        </sequential>
+    </macrodef>
+</project>

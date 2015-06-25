@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/sync/syncResponse"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/sync/syncResponse"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="syncResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="syncResponseType"
+                    type="syncResponseType"
+                    minOccurs="1"
+                    maxOccurs="1" />
+                <xsd:element
+                    name="ien"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="syncResponseType">
+     <xsd:sequence>
+            <xsd:element name="status" type="syncResponseStatusType" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="message" type="xsd:string" minOccurs="0" maxOccurs="1"/>     
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="syncResponseStatusType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Success" /><!-- Message was processed successfully by VistA. -->
+            <xsd:enumeration value="Failure" /><!-- Message was not enqueued successfully. -->
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

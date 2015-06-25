@@ -1,0 +1,313 @@
+a {
+	text-indent:5px;
+	color: #0000CC;
+}
+
+.column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	width:250px;
+}
+
+.column3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+.advCriteria {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	margin-left:40px;
+	margin-top: auto;
+	margin-bottom: auto;
+	vertical-align: top;
+}
+.advColumn1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:80px;
+	float:left;
+	text-align:left;
+	line-height:23px;
+	text-indent:3px;
+	
+}
+
+.advColumn2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	width:130px;
+}
+
+.advColumn3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+.searchNDC {
+	float:right;
+	margin:0,0,0,0;
+	width:50px;
+}
+
+input {
+	caption-side:left;
+	margin-left: 3px;
+	margin-top: 3px;
+	text-align:left;
+}
+
+select {
+	caption-side:left;
+	margin-left: 3px;
+	margin-top: 3px;
+	text-align:left;
+}
+
+.pageTitle {
+	position: absolute;
+	margin-top: 129px;
+	margin-left: 154px;
+	width: 85%;/*899px;*/
+	height: 32px;
+	background-color: #630C21;
+	border-right: 1px solid #182C52;
+	font-weight: bold;
+	color:#FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+}
+
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.checkbox_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:230px;
+	float:left;
+	text-align:left;
+	line-height:18px;
+}
+
+.checkbox_column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	width:80px;
+}
+
+.checkbox_column3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	width:80px;
+}
+
+.checkbox_column4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+.text_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:110px;
+	float:left;
+	text-align:left;
+	line-height:2;
+}
+.text_column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:220px;
+	float:left;
+	text-align:left;
+}
+.text_column3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:155px;
+	float:left;
+	text-align:left;
+	line-height:2;
+}
+.text_column4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align:left;
+}
+
+
+
+.searchResults {
+	height:25px;
+	background-color:inherit;
+	text-indent:0px;
+}
+
+.searchCriteria {
+	background-color:#EEEEEE;
+	height:77px;
+	border-width:medium;
+	border-color:#000000;
+	color:#0000CC;
+}
+
+.pageBody {
+	position: absolute;
+	margin-top: 116px;
+	margin-left: 0px;
+	left: 0px;
+	top: 0px;
+	width: 100%;/*900px;*/
+	font:Arial, Helvetica, sans-serif;
+	font-size:small;
+	color:#000000;
+}
+
+.left {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	float:left;
+	margin-top:3px;
+	text-indent:0px;
+}
+
+.right {
+	float:right;
+	width:250px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:x-small;
+}
+
+.searchFieldset {
+	background-color:#ffffff;
+	margin-top:3px;
+	width:98%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	color:#000000;
+}
+
+.ndcList {
+	background-color:inherit;
+	margin-top:6px;
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	color:#000000;
+}
+
+.searchBottom {
+	font-family:Arial, Helvetica, sans-serif;
+	height:50px;
+	margin-top:3px;
+	margin-left:0px;
+	background-color:#eeeeee;
+	line-height:18px;
+	text-indent:5px;
+}
+
+.ndcBottom {
+	font-family:Arial, Helvetica, sans-serif;
+	height:50px;
+	margin-top:3px;
+	margin-left:0px;
+	background-color:inherit;
+	line-height:18px;
+	text-indent:5px;
+}
+
+.bottomLeft {
+	font-family:inherit;
+	float:left;
+	margin-left:12px;
+	width:400px;
+}
+
+.blankTempButton{
+	font-family:inherit;
+	float:left;
+	margin-left:12px;
+}
+
+.openTempButton {
+	font-family:inherit;
+	float:right;
+}
+
+.bottomCenter {
+	font-family:inherit;
+	font-size:x-small;
+	margin-top:11px;
+}
+
+.bottomRight {
+	font-family:inherit;
+	float:right;
+	width:200px;
+}
+
+.column {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:left;
+	text-align:left;
+	text-indent:3px;
+	margin-top:2px;
+	margin-left:5px;
+}
+
+.columnRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	float:right;
+	text-align:left;
+	text-indent:3px;
+	margin-top:2px;
+	margin-left:5px;
+	margin-right:15px;
+}
+.searchTable{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align:left;
+	table-layout:auto;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+th {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	font-weight:bold;
+	background-color:#b0b0b0;
+	padding:0,0,0,0;
+}
+tr {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	font-weight:normal;
+}
+td {
+	padding:3,3,3,3;
+	
+}
+
+.printButon {
+	width:5em;
+	text-align:center;
+}
+
+.templateButon {
+	width:13m;
+	text-align:center;
+}

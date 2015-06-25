@@ -1,0 +1,168 @@
+<%@ tag language="java"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.ManagedItemVo"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.FieldKey"%>
+<%@ tag import="java.util.ArrayList"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.ManagedDataVo"%>
+<%@ tag import="java.util.List"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.datafield.DataFields"%>
+<%@ tag import="gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.Selectable"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.datafield.MultitextDataField"%>
+<%@ tag import="gov.va.med.pharmacy.peps.common.vo.datafield.DataField"%>
+<%@ taglib
+    prefix="peps"
+    tagdir="/WEB-INF/tags"%>
+<%@ taglib 
+    prefix="spring" 
+    uri="http://www.springframework.org/tags"%>
+<%@ attribute
+    name="key"
+    required="true"
+    type="java.lang.String"
+    description="String form of FieldKey the field to be displayed"%>
+<%@ attribute
+    name="item"
+    required="true"
+    type="java.lang.Object"
+    rtexprvalue="true"
+    description="The item containing the datafield"%>
+<%@ attribute
+    name="label"
+    required="true"
+    type="java.lang.String"
+    description="HTML label to provide for the field."%>
+<%@ attribute
+    name="title"
+    required="true"
+    type="java.lang.String"
+    description="HTML title to provide for the field."%>
+<%@ attribute
+    name="disabled"
+    required="true"
+    type="java.lang.Boolean"
+    description="True if the field should be disabled."%>
+<%@ attribute
+    name="labelPosition"
+    required="true"
+    type="java.lang.String"
+    description="Position of the label."%>
+<%@ attribute
+    name="required"
+    required="true"
+    type="java.lang.Boolean"
+    description="True if the field is required to be entered."%>
+<%@ attribute
+    name="cssStyle"
+    required="false"
+    type="java.lang.String"
+    description="CSS style HTML attribute passed on to Struts tags."%>
+<%@ attribute
+    name="entityType"
+    required="false"
+    type="gov.va.med.pharmacy.peps.common.vo.EntityType"
+    description="Optional EntityType for which to localize"%>
+<%
+
+gov.va.med.pharmacy.peps.common.vo.FieldKey fieldKey = gov.va.med.pharmacy.peps.common.vo.FieldKey.getKey(key);
+jspContext.setAttribute("camelCaseKey", fieldKey.fromDotsToCamelCase());
+Object dF = gov.va.med.pharmacy.peps.presentation.common.utility.JspTagUtility.getFieldValue(item, fieldKey);
+
+if (label == null) {
+    jspContext.setAttribute("label", gov.va.med.pharmacy.peps.common.vo.FieldKey.getLocalizedName(key,
+        request.getLocale(), entityType));
+}
+%>
+<peps:controlheader
+    key="${key}"
+    id="${key}"
+    label=""
+    name="${key}"
+    labelposition="${labelPosition}"    
+    dataField="<%=dF instanceof DataField ? (DataField)dF : null%>"
+    fieldAuthorization="${fieldAuthorization}"/>
+<%
+if (!"none".equals(labelPosition)) {
+%>
+<fieldset>
+<legend>
+<peps:label
+    key="${key}"
+    required="${required}"
+    entityType="${entityType}" />
+</legend>
+<%
+}
+gov.va.med.pharmacy.peps.common.vo.FieldAuthorizationVo fieldAuthorization = (gov.va.med.pharmacy.peps.common.vo.FieldAuthorizationVo) jspContext.getAttribute("fieldAuthorization");
+
+if(fieldAuthorization == null)
+    fieldAuthorization = (gov.va.med.pharmacy.peps.common.vo.FieldAuthorizationVo) request.getAttribute("fieldAuthorization");
+
+
+int row=0;
+
+            int numRows = 0;
+            int col = 0;
+            java.util.Collection collection = ((gov.va.med.pharmacy.peps.common.vo.datafield.ListDataField) dF).getValue();
+            if (collection != null) {
+                numRows = collection.size();
+            }
+            
+            if (numRows == 0 && required == true) { //added this to show a blank row and the addmanageddataaddlink
+                numRows = 1;
+            }
+
+            for (row = 0; row <= numRows; row++) {
+       
+                    String ognlSuffix = null;
+                    String columnKey = null;
+                    gov.va.med.pharmacy.peps.common.vo.datafield.DataField rowItem = null;
+
+                
+                        if(row < ((List)dF).size()){
+                                                 
+                                jspContext.setAttribute("rowItem", false ? "asdf" : "");
+                            
+                        }
+                        
+   
+                    jspContext.setAttribute("id", columnKey + "_" + row);
+                    
+                    jspContext.setAttribute("name", fieldKey.fromDotsToCamelCase()+"."+fieldKey.fromDotsToCamelCase() + "_" + row);
+
+                    jspContext.setAttribute("cssStyle",gov.va.med.pharmacy.peps.common.vo.FieldKey.getLocalizedWidth(columnKey,request.getLocale()));
+                    
+                    boolean disabledColumn = (Boolean) jspContext.getAttribute("disabled") || (fieldAuthorization != null && fieldAuthorization.isDisabledModifyMultipleDataField(fieldKey));
+%>
+<peps:input
+    id="${id}"
+    name="${name}"    
+    key="<%=columnKey%>"
+    item="${item}"
+    labelPosition="none"
+    disabled="<%=disabledColumn%>"
+    maxlength="${maxlength}"
+    required="${required}"
+    size="${size}"
+    value="${rowItem}"
+    cssClass="minwidth"
+    cssStyle="${cssStyle}"
+    managedDataAddLink="${managedDataAddLink}" />
+
+<%
+}
+
+if (!"none".equals(labelPosition)) {
+%>
+</fieldset>
+<%
+}
+%>
+
+<peps:controlfooter
+    key="${key}"
+    id="${key}"
+    label=""
+    name="${key}"
+    labelposition="${labelPosition}"    
+    dataField="<%=dF instanceof DataField ? (DataField)dF : null%>"
+    fieldAuthorization="${fieldAuthorization}"/>

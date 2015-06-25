@@ -1,0 +1,41 @@
+.text_column1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width:90px;
+	float:left;
+	text-align:left;
+	line-height:29px;
+	margin-left:10px;
+}
+.text_column2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align:left;
+	float:left;
+}
+
+.title {
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:10px;
+	font-size:medium;
+}
+
+.button {
+	width:5em;
+	text-align:center;
+	margin-top:10px;
+	margin-left:30px;
+	left:0px;
+}
+
+.textField {
+	margin-top:5px;
+}
+
+.smallText {
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left:10px;
+	font-size:small;
+}

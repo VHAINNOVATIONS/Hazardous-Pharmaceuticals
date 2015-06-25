@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/jee
+           http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <import resource="PresentationContextTemplate.xml" />
+
+    <!-- Local Services -->   
+    <!-- <bean
+        id="consoleService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property
+            name="jndiName"
+            value="ConsoleServiceLocal" />
+        <property
+            name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.local.session.ConsoleService" />
+        <property
+            name="resourceRef"
+            value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="consoleService"
+        jndi-name="ConsoleServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.local.session.ConsoleService" />
+    
+    <!-- <bean
+        id="siteUpdateScheduleService"
+        class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean"
+        autowire-candidate="true">
+        <property
+            name="jndiName"
+            value="SiteUpdateScheduleServiceLocal" />
+        <property
+            name="businessInterface"
+            value="gov.va.med.pharmacy.peps.service.local.session.SiteUpdateScheduleService" />
+        <property
+            name="resourceRef"
+            value="false" />
+    </bean> -->
+    
+    <jee:local-slsb 
+        id="siteUpdateScheduleService"
+        jndi-name="SiteUpdateScheduleServiceLocal" 
+        business-interface="gov.va.med.pharmacy.peps.service.local.session.SiteUpdateScheduleService" />
+    
+    
+    
+</beans>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4 JWood">
+  <ReviewIssue id="FKFTDMCD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:14:05:149 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:14:34:725 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="42">src/gov/va/med/pharmacy/peps/presentation/common/struts/FileTypeConverter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Incorrect catch and logging messages.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKFTHWA4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:17:24:652 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-28 :: 15:17:59:025 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="192">src/gov/va/med/pharmacy/peps/presentation/common/springwebflow/utility/FlowUrlUtility.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This should not fail silently!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7OHYV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:42:13:495 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:49:31:008 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="177">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7XYN4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:49:35:008 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:49:48:992 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="167">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7YW28">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:50:18:320 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:50:29:273 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="233">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH7ZNEL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:50:53:757 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:51:02:804 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="258">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH80A9I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:51:23:382 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:51:33:710 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="283">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH80TS7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:51:48:679 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:51:57:694 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="308">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SpringWebFlowScopeInterceptor.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH81Z8D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:52:42:397 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 14:53:05:538 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="142">src/gov/va/med/pharmacy/peps/presentation/common/struts/interceptor/SessionScopeInterceptor.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This needs to be reported explicitly!</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH8HYK0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 15:05:08:016 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 15:18:34:932 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="131">test/gov/va/med/pharmacy/peps/presentation/common/test/selenium/SeleniumTestCase.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Should this be re-thrown?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH90310">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 15:19:13:620 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 15:19:25:776 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>jwood</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="169">test/gov/va/med/pharmacy/peps/presentation/common/test/selenium/SeleniumTestCase.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should this be re-thrown?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

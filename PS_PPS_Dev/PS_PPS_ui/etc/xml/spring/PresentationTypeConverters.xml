@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:webflow="http://www.springframework.org/schema/webflow-config"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+
+        http://www.springframework.org/schema/beans
+
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="conversionService"
+		class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean
+					class="gov.va.med.pharmacy.peps.presentation.common.converter.DateConverter" />
+				<bean
+                    class="gov.va.med.pharmacy.peps.presentation.common.converter.EntityTypeConverter" />
+				<bean
+					class="gov.va.med.pharmacy.peps.presentation.common.converter.ValueObjectConverterFactory" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

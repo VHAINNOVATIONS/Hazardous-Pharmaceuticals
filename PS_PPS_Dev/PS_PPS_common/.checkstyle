@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="true">
+  <local-check-config name="Pharmacy" location="/PS_PPS_common/etc/build/checkstyle/pharmacy_v2-plugin.xml" type="project" description="">
+    <additional-data name="protect-config-file" value="false"/>
+  </local-check-config>
+  <fileset name="Source" enabled="true" check-config-name="Pharmacy" local="true">
+    <file-match-pattern match-pattern="^src|test.*java$" include-pattern="true"/>
+  </fileset>
+  <filter name="FileTypesFilter" enabled="true">
+    <filter-data value="java"/>
+  </filter>
+</fileset-config>

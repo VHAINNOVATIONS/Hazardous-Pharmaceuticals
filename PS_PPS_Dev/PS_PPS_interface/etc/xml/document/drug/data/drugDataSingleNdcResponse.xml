@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugData xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response">
+    <drugDataFields>
+        <drugRequestIdentifier>
+            <ndc>182014101</ndc>
+        </drugRequestIdentifier>
+        <booleanDataField fieldName="Mark For Local Use" value="true"/>
+        <booleanDataField fieldName="Protect From Light" value="false"/>
+        <stringDataField fieldName="NDC" value="000182-0141-01"/>
+        <stringDataField fieldName="Trade Name" value="ACETAMINOPHEN TAB"/>
+        <stringDataField fieldName="Vendor" value="MCKESSON CORP"/>
+        <stringDataField fieldName="VSN" value="1000"/>
+        <stringDataField fieldName="UPC" value="7839FOP3233444"/>
+        <stringDataField fieldName="Source" value="VA"/>
+        <doubleDataField fieldName="NDC Price Per Dispense Unit" value="0.0"/>
+        <doubleDataField fieldName="NDC Price Per Order Unit" value="0.0"/>
+        <doubleDataField fieldName="Unit Price" value="0.0"/>
+        <listDataField fieldName="Product Type">
+            <item value="MEDICATION"/>
+        </listDataField>
+        <listDataField fieldName="Refrigeration">
+            <item value="REFRIGERATE"/>
+        </listDataField>
+        <listDataField fieldName="Shape">
+            <item value="ROUND"/>
+        </listDataField>
+        <listDataField fieldName="Color">
+            <item value="WHITE"/>
+        </listDataField>
+        <listDataField fieldName="Item Status">
+            <item value="ACTIVE"/>
+        </listDataField>
+        <complexDataField fieldName="Manufacturer">
+            <complexItem name="Manufacturer Name" value="IVAX"/>
+            <complexItem name="Address" value="123 Tom Slick Ave San Antonio, TX 78238"/>
+            <complexItem name="Phone Number" value="(210) 555-1212"/>
+        </complexDataField>
+        <complexDataField fieldName="Order Unit">
+            <complexItem name="Order Unit Abbreviation" value="BT"/>
+            <complexItem name="Order Unit Expansion" value="BOTTLE"/>
+        </complexDataField>
+        <complexDataField fieldName="Package Type">
+            <complexItem name="Package Type Name" value="BOTTLE"/>
+        </complexDataField>
+    </drugDataFields>
+</drugData>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplProdIngredientAssocDo"
+    table="EPL_PROD_INGREDIENT_ASSOCS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <composite-id name="key" class="gov.va.med.pharmacy.peps.domain.common.model.EplProdIngredientAssocDoKey">
+        <meta attribute="use-in-equals">true</meta>
+        <key-property
+            name="ingredientIdFk"
+            column="INGREDIENT_ID_FK"
+            type="java.lang.Long"
+            length="30"
+        />
+        <key-property
+            name="eplIdProductFk"
+            column="EPL_ID_PRODUCT_FK"
+            type="java.lang.Long"
+            length="30"
+        />
+    </composite-id>
+
+    <property
+        name="activeYn"
+        type="java.lang.String"
+        column="ACTIVE_YN"
+        not-null="true"
+        length="1"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="strength"
+        type="java.lang.String"
+        column="STRENGTH"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+    <!-- derived association(s) for compound key -->
+    <!-- bi-directional many-to-one association to EplProductDo -->
+    <many-to-one
+        name="eplProduct"
+	    class="gov.va.med.pharmacy.peps.domain.common.model.EplProductDo"
+	    update="false"
+	    insert="false"
+	>
+    	<column name="EPL_ID_PRODUCT_FK" />
+	</many-to-one>
+
+    <!-- bi-directional many-to-one association to EplIngredientDo -->
+    <many-to-one
+        name="eplIngredient"
+	    class="gov.va.med.pharmacy.peps.domain.common.model.EplIngredientDo"
+	    update="false"
+	    insert="false"
+	>
+    	<column name="INGREDIENT_ID_FK" />
+	</many-to-one>
+
+    <!-- end of derived association(s) -->
+
+    <!-- bi-directional many-to-one association to EplDrugUnitDo -->
+    <many-to-one
+        name="eplDrugUnit"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplDrugUnitDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="DRUG_UNIT_ID_FK" />
+    </many-to-one>
+
+</class>
+</hibernate-mapping>
+

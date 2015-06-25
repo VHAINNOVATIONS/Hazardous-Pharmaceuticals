@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaDrugClass"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/vaDrugClass"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+
+    <xsd:complexType name="codeKey">
+        <xsd:simpleContent>
+            <xsd:restriction base="common:stringField">
+                <xsd:pattern value="[a-zA-Z]{2}\d{3}" />
+
+                <xsd:attribute
+                    name="number"
+                    type="common:fieldNumber"
+                    use="required"
+                    fixed="0.01" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="classificationKey">
+        <xsd:simpleContent>
+            <xsd:restriction base="common:stringField">
+                <xsd:minLength value="1" />
+                <xsd:maxLength value="64" />
+
+                <xsd:attribute
+                    name="number"
+                    type="common:fieldNumber"
+                    use="required"
+                    fixed="1" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="vuidKey">
+        <xsd:simpleContent>
+            <xsd:restriction base="common:stringField">
+                <xsd:minLength value="1" />
+                <xsd:maxLength value="20" />
+
+                <xsd:attribute
+                    name="number"
+                    type="common:fieldNumber"
+                    use="required"
+                    fixed="99.99" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="vaDrugClassFile">
+        <xsd:sequence>
+            <xsd:element
+                name="candidateKey"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element
+                            name="code"
+                            type="codeKey"
+                            minOccurs="1"
+                            maxOccurs="1" />
+
+                        <xsd:element
+                            name="classification"
+                            type="classificationKey"
+                            minOccurs="1"
+                            maxOccurs="1" />
+
+                        <xsd:element
+                            name="vuid"
+                            type="vuidKey"
+                            minOccurs="1"
+                            maxOccurs="1" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="code"
+                type="codeKey"
+                minOccurs="0"
+                maxOccurs="1" />
+
+            <xsd:element
+                name="classification"
+                type="classificationKey"
+                minOccurs="0"
+                maxOccurs="1" />
+
+            <xsd:element
+                name="parentClass"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:stringField">
+                            <xsd:minLength value="1" />
+                            <xsd:maxLength value="20" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="2" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="type"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:restriction base="common:integerField">
+                            <xsd:enumeration value="0" />
+                            <xsd:enumeration value="1" />
+                            <xsd:enumeration value="2" />
+
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="3" />
+                        </xsd:restriction>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="description"
+                minOccurs="0"
+                maxOccurs="1"
+                nillable="true">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="common:abstractWordProcessingField">
+                            <xsd:attribute
+                                name="number"
+                                type="common:fieldNumber"
+                                use="required"
+                                fixed="4" />
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element
+                name="vuid"
+                type="vuidKey"
+                minOccurs="0"
+                maxOccurs="1" />
+
+            <xsd:element
+                name="effectiveDateTime"
+                minOccurs="1"
+                maxOccurs="1">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="common:abstractEffectiveDateTimeField">
+                            <xsd:sequence>
+                                <xsd:element
+                                    name="effectiveDateTimeFile"
+                                    minOccurs="1"
+                                    maxOccurs="unbounded">
+                                    <xsd:complexType>
+                                        <xsd:complexContent>
+                                            <xsd:extension base="common:abstractEffectiveDateTimeFile">
+                                                <xsd:attribute
+                                                    name="number"
+                                                    type="common:fileNumber"
+                                                    use="required"
+                                                    fixed="50.60509" />
+                                            </xsd:extension>
+                                        </xsd:complexContent>
+                                    </xsd:complexType>
+                                </xsd:element>
+                            </xsd:sequence>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <xsd:attribute
+            name="action"
+            use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="common:itemAction">
+                    <xsd:enumeration value="Add" />
+                    <xsd:enumeration value="Modify" />
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+
+        <xsd:attribute
+            name="number"
+            type="common:fileNumber"
+            use="required"
+            fixed="50.605" />
+    </xsd:complexType>
+</xsd:schema>

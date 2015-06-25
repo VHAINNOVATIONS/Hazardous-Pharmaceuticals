@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="displaySettings">
+
+    <view-state
+        id="displaySettings"
+        view="display.settings.old">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="user" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="updatePreferences"
+            to="updatePreferences" />
+        <transition
+            on="cancel"
+            to="cancel" />
+        <transition
+            on="end"
+            to="displaySettings" />
+    </view-state>
+
+    <action-state id="updatePreferences">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="user" />
+            <attribute
+                name="actionMethod"
+                value="updatePreferences" />
+        </evaluate>
+        <transition
+            on="success"
+            to="displaySettings" />
+    </action-state>
+    
+    <end-state id="cancel" />
+</flow>

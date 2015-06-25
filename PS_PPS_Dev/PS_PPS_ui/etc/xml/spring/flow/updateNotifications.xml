@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="updateViewedBy">
+
+    <input
+        name="itemId"
+        value="flowScope.itemId"
+        type="string" />
+
+    <input
+        name="itemType"
+        value="flowScope.itemType"
+        type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+
+    <input
+        name="notificationId"
+        value="flowScope.notificationId"
+        type="long" />
+
+    <input
+        name="status"
+        value="flowScope.notificationStatus"
+        type="string" />
+
+    <action-state id="updateViewedBy">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="notification" />
+            <attribute
+                name="actionMethod"
+                value="updateViewedBy" />
+        </evaluate>
+        <transition
+            on="success"
+            to="manageItem" />
+    </action-state>
+
+    <subflow-state
+        id="manageItem"
+        subflow="manageItem">
+        <input
+            name="itemId"
+            value="flowScope.itemId"
+            type="string" />
+        <input
+            name="itemType"
+            value="flowScope.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+        <transition
+            on="end"
+            to="end" />
+    </subflow-state>
+
+    <end-state
+        id="end"
+        view="flowRedirect:notifications" />
+
+</flow>

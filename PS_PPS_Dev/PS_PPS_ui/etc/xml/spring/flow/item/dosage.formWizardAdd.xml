@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="addItem"
+    start-state="dosageFormAdd">
+
+    <view-state
+        id="dosageFormAdd"
+        view="dosage.form.add">
+        <on-render>
+<!--             <evaluate expression="springWebFlowActionAdapter"> -->
+<!--                 <attribute -->
+<!--                     name="actionName" -->
+<!--                     value="managedItem" /> -->
+<!--                 <attribute -->
+<!--                     name="actionMethod" -->
+<!--                     value="render" /> -->
+<!--             </evaluate> -->
+            <evaluate expression="managedItemAction.render()"></evaluate>
+        </on-render>
+    </view-state>
+</flow>

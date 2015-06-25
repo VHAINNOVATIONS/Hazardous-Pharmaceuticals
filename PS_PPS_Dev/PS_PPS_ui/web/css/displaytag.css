@@ -1,0 +1,176 @@
+table.pepsTable {
+	/*width: 100%;*/
+	border: 1px solid black;
+	margin: 20px 0 20px 0 !important;
+	border-collapse: collapse; 
+	empty-cells: show;
+	table-layout: auto;	
+}
+
+#domainSearchResults {
+	width: 100%;
+}
+
+table.pepsTable thead tr {
+	background-color: #B0B0B0; /* dark grey */
+}
+
+table.pepsTable th {
+	padding: 2px 8px 2px 8px !important;
+	text-align: center;
+	vertical-align: middle;
+	border-color: black;
+	font-family: arial; /* set the fonts for table headers */
+	font-size: 12px; /* set the fonts for table headers */
+}
+
+table.pepsTable th a,table.pepsTable th a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+table.pepsTable th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+th.sortable a {
+	background-image: url(/PRE/images/displaytag/arrow_off.png);
+	background-repeat: no-repeat;
+	background-position: right; 
+	display: block;
+	width: 100%;
+	padding-right: 12px; 
+	display: inline;
+}
+
+th.ascending a {
+	background-image: url(/PRE/images/displaytag/arrow_up.png);
+}
+
+th.descending a {
+	background-image: url(/PRE/images/displaytag/arrow_down.png);
+}
+
+tr.odd {
+	background-color: #FFFFFF; /* white */
+}
+
+tr.even {
+	background-color: #DEEFFF; /* light blue */
+}
+
+tr.nochange {
+	background-color: #FFFFFF; /* white */
+}
+
+tr.noteditable {
+	background-color: #C0C0C0; /* light gray */
+}
+
+tr.hasconflict {
+	background-color: #FFFFE0; /* light yellow */
+}
+
+table.pepsTable td {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: middle;
+	border-color: black;
+	font-family: arial; /* set the fonts for table content */
+	font-size: 12px; /* set the fonts for table content */
+}
+
+div.exportlinks {
+	background-color: #eee; /* light grey */
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 99.25%;
+}
+
+span.export {
+	background-repeat: no-repeat;
+	padding: 0 4px 1px 20px;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+}
+
+span.excel {
+	background-image: url(/PRE/images/displaytag/ico_file_excel.png);
+}
+
+span.csv {
+	background-image: url(/PRE/images/displaytag/ico_file_csv.png);
+}
+
+span.xml {
+	background-image: url(/PRE/images/displaytag/ico_file_xml.png);
+}
+
+span.pdf {
+	background-image: url(/PRE/images/displaytag/ico_file_pdf.png);
+}
+
+span.rtf {
+	background-image: url(/PRE/images/displaytag/ico_file_rtf.png);
+}
+
+span.pagebanner {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 99.25%;
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;
+}
+
+span.pagelinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 99.25%;
+	display: block;
+	border-top: none;
+	margin-bottom: -5px;
+}
+
+.group-1 {
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-top: 1px solid black;
+}
+
+.group-2 {
+	font-style: italic;
+	border-top: 1px solid black;
+}
+
+.subtotal-sum,.grandtotal-sum {
+	font-weight: bold;
+	text-align: right;
+}
+
+.subtotal-header {
+	padding-bottom: 0px;
+	border-top: 1px solid white;
+}
+
+.subtotal-label,.grandtotal-label {
+	border-top: 1px solid white;
+	font-weight: bold;
+}
+
+.grouped-table tr.even {
+	background-color: #fff;
+}
+
+.grouped-table tr.odd {
+	background-color: #fff;
+}
+
+.grandtotal-row {
+	border-top: 2px solid black;
+}

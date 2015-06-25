@@ -1,0 +1,71 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/dosageFormSyncRequest" 
+        xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/sync/dosageFormSyncRequest" 
+        elementFormDefault="qualified" attributeFormDefault="unqualified">
+        
+        <xsd:element name="dosageFormSyncRequest">
+        <xsd:complexType>
+           <xsd:sequence>
+           
+              <xsd:element 
+                  name="RequestType" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="dosageFormIen" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="dosageFormName" 
+                  type="xsd:string"
+                  minOccurs="1" 
+                  maxOccurs="1" />
+
+               <xsd:element
+                  name="inactivationDate" 
+                  type="xsd:dateTime"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+               <xsd:element
+                  name="unitsRecord" 
+                  type="units"
+                  minOccurs="0" 
+                  maxOccurs="unbounded" />
+                  
+               <xsd:element
+                  name="dispenseUnitsPerDose" 
+                  type="dispenseUnitsPerDose"
+                  minOccurs="0" 
+                  maxOccurs="unbounded" />
+                  
+               <xsd:element
+                  name="excludeFromDosageChecks" 
+                  type="xsd:string"
+                  minOccurs="0" 
+                  maxOccurs="1" />
+                  
+           </xsd:sequence>
+        </xsd:complexType>
+     </xsd:element>
+ 
+     <xsd:complexType name="units">
+        <xsd:sequence>
+            <xsd:element name="units" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="unitsIen" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="package" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+     <xsd:complexType name="dispenseUnitsPerDose">
+        <xsd:sequence>
+            <xsd:element name="dispenseUnitsPerDoseNumber" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="package" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

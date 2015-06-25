@@ -1,0 +1,31 @@
+table.reportsTable{
+    /*width: 100%;*/
+    margin: 0px 0 0px 0 !important;
+    empty-cells: show;
+    table-layout: auto; 
+}
+
+table.reportsTable thead tr {
+    background-color: #dedede; /* dark grey */
+    border-color: black;
+    border: medium;
+}
+
+table.reportsTable th {
+    padding: 2px 8px 2px 8px !important;
+    text-align: center;
+    vertical-align: middle;
+    border-color: white;
+    font-family: arial; /* set the fonts for table headers */
+    font-size: 12px; /* set the fonts for table headers */
+}
+
+table.reportsTable th a,table.reportsTable th a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+table.reportsTable th a:hover {
+    text-decoration: underline;
+    color: black;
+}

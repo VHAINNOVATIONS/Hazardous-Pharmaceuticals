@@ -1,0 +1,5 @@
+//generic name, strength, unit, dosage form, level (product, NDC), item type (Investigational, supply, compound, med), Local Use, Formulary, Request Type, Request status, Requested By, Request Date
+Risperidone,2,mg,Tablet,NDC,Medication,N,Formulary,Modification,Active,Pending,user 1,November 20 2007
+Lisinopril,100,mg,Tablet,NDC,Medication,Y,Formulary,Addition,Active,Pending 2nd Approval,user 2,November 21 2007
+Rifampin,200,mg,Tablet,Product,Medication,N,Formulary,Modification,Active,Pending,user 2,November 22 2007
+Atomoxetine,80,mg,Tablet,Product,Medication,N,Formulary,Addition,Active,Pending 2nd Approval,user 1,November 23 2007

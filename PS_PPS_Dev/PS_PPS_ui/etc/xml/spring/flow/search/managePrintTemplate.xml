@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="loadPrintTemplate">
+
+    <action-state id="loadPrintTemplate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="printTemplateLoad" />
+        </evaluate>
+        <transition
+            on="success"
+            to="viewPrintTemplate" />
+    </action-state>
+
+    <view-state
+        id="viewPrintTemplate"
+        view="advanced.search.print.template">
+
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="search" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="submit"
+            to="managePrintTemplate" />
+    </view-state>
+
+    <action-state id="managePrintTemplate">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="managePrintTemplate" />
+        </evaluate>
+        <transition
+            on="success"
+            to="end" />
+        <transition
+            on="input"
+            to="end" />
+    </action-state>
+
+    <end-state
+        id="end"
+        view="advanced.search" />
+
+</flow>

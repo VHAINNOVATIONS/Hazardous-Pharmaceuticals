@@ -1,0 +1,33 @@
+<!-- Orderable Item example  -->
+
+<orderableItem
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/orderableItem"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:dosageForm="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/dosageForm"
+    xmlns:standardMedicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/standardMedicationRoutes"
+    xmlns:medicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationRoutes"
+    xmlns:pharmacyOrderableItem="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/pharmacyOrderableItem"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/orderableItem ../../schema/item/orderableItem.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    pepsIdNumber="123456789"
+    status="Approved">
+
+    <dosageFormFile
+        action="Add"
+        number="50.606">
+        <dosageForm:candidateKey>
+            <dosageForm:name number=".01">Tab</dosageForm:name>
+        </dosageForm:candidateKey>
+    </dosageFormFile>
+
+    <pharmacyOrderableItemFile
+        action="Add"
+        number="50.7">
+        <pharmacyOrderableItem:candidateKey>
+            <pharmacyOrderableItem:name number="0.01">Aspirin</pharmacyOrderableItem:name>
+            <pharmacyOrderableItem:dosageForm number=".02">Tab</pharmacyOrderableItem:dosageForm>
+        </pharmacyOrderableItem:candidateKey>
+        
+        <pharmacyOrderableItem:formularyStatus number="5">1</pharmacyOrderableItem:formularyStatus>
+    </pharmacyOrderableItemFile>
+</orderableItem>

@@ -1,0 +1,68 @@
+     [echo] --------------------------- Cleaning Domain ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_domain\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+     [echo] --------------------------- Cleaning Common ----------------------------
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+
+cleanAll:
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface
+
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\log
+     [echo] --------------------------- Cleaning Interface ----------------------------
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\build
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface\tmp
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+   [subant] Entering directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+
+Template.clean:
+   [delete] Deleting directory C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+    [mkdir] Created dir: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common\log
+     [echo] --------------------------- Cleaning Common ----------------------------
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+
+cleanAll:
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_common
+
+
+cleanAll:
+   [subant] Leaving directory: C:\PPSNSource\PS_PPS_Dev\PS_PPS_interface
+
+
+cleanAll:

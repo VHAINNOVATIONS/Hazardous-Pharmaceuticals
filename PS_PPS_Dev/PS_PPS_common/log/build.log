@@ -1,0 +1,10 @@
+     [echo] --------------------------- Cleaning Common ----------------------------
+
+clean:
+
+initTasks:
+     [echo] module.BuildLib.dir: ../../PS_PPS_Bld/PS_PPS_lib
+
+Template.cleanAll:
+
+cleanAll:

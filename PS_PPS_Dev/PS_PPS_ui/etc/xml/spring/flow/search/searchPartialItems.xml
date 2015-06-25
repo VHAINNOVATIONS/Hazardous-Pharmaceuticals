@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="retrievePartialItems">
+
+    <action-state id="retrievePartialItems">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="managedItem" />
+            <attribute
+                name="actionMethod"
+                value="retrievePartialItems" />
+        </evaluate>
+        <transition
+            on="success"
+            to="partialItems" />
+    </action-state>
+
+    <view-state
+        id="partialItems"
+        view="partial.items.old">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="managedItem" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="retrieve"
+            to="end" />
+        <transition
+            on="delete"
+            to="deletePartialItem" />
+    </view-state>
+
+    <action-state id="deletePartialItem">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="search" />
+            <attribute
+                name="actionMethod"
+                value="deletePartial" />
+        </evaluate>
+        <transition
+            on="success"
+            to="retrievePartialItems" />
+    </action-state>
+
+    <end-state id="end">
+        <output
+            name="itemId"
+            value="requestParameters.itemId"
+            type="string" />
+        <output
+            name="itemType"
+            value="requestParameters.itemType"
+            type="gov.va.med.pharmacy.peps.common.vo.EntityType" />
+    </end-state>
+
+</flow>

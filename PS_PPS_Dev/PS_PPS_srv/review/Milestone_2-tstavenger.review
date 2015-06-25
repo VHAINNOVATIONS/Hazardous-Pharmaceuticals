@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5FMQA2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:33:02:090 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:24:39:623 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="18">test/gov/va/med/pharmacy/peps/service/common/utility/test/ServiceFactoryBean.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Do the static constants really need to be public? I don't see any other classes using them.</Summary>
+    <Description>NATIONAL</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FOR5A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:34:36:526 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:35:48:041 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="27">test/gov/va/med/pharmacy/peps/service/common/utility/test/ServiceFactoryBean.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct spelling</Summary>
+    <Description>LOCAL_TWP -&gt; LOCAL_TWO&#xD;
+&#xD;
+Also correct line 92</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FSBNZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:37:23:087 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:26:51:966 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="100">test/gov/va/med/pharmacy/peps/service/common/utility/test/SpringTestConfigUtility.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Reword sentence to make it make more sense</Summary>
+    <Description>Get the Local-1 Spring ApplicationContext can be loaded&#xD;
+&#xD;
+Also at line 113 -- perhaps add it to line 126?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FTEO1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:13:633 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:26:367 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="51">test/gov/va/med/pharmacy/peps/service/local/test/integration/DomainServiceTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description>setOutOfContainer</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FTRLB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:30:383 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:33:34:025 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="27">test/gov/va/med/pharmacy/peps/service/local/test/integration/DomainServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update javadoc for this class</Summary>
+    <Description>DomainServiceTest</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FUARU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:55:242 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:39:23:585 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="49">test/gov/va/med/pharmacy/peps/service/local/test/integration/DomainServiceTest.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Consider adding a setUp() method in the IntegrationTestCase super class that automatically prints the test case name</Summary>
+    <Description>System.out.println(getName());</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FVRRD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:40:03:913 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-21 :: 08:28:59:996 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="64">test/gov/va/med/pharmacy/peps/service/local/test/integration/DomainServiceTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>You shouldn't need to instantiate the String like this; just use the String literal.</Summary>
+    <Description>Applies to all assert statements in this test case.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FX5YM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:41:08:974 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:42:28:176 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="64">test/gov/va/med/pharmacy/peps/service/local/test/integration/DomainServiceTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Don't rely on a certain size to be returned</Summary>
+    <Description>Instead of checking if a certain number of objects are returned, check to see that certain expected instances exist. The number of returned objects is likely to change more than certain instances (or I would think so, anyway).&#xD;
+&#xD;
+Applies to all assertEquals method calls for this test case.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G1CXG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:44:24:628 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:45:03:628 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tstavenger</ReviewerId>
+    <AssignedTo />
+    <File line="27">test/gov/va/med/pharmacy/peps/service/national/test/integration/DomainServiceTest.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Is this test case even necessary?</Summary>
+    <Description>Since there is a local DomainServiceTest, and they appear to be nearly identical, what is the point of this test case?&#xD;
+&#xD;
+If we do still need/want it -- the same comments from local apply to national.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

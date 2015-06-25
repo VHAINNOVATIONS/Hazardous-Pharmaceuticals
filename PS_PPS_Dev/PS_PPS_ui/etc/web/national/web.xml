@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="PRE" version="2.5" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
+    
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:xml/spring/CommonContext.xml,classpath*:xml/spring/PresentationContext.xml,classpath*:xml/national/spring/PresentationContext.xml
+        </param-value>
+    </context-param>
+
+    <!--  Spring MVC Configuration -->
+    <servlet>
+    	<servlet-name>spring-mvc</servlet-name>
+    	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    	<init-param>
+    	<param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:xml/spring/CommonContext.xml,classpath*:xml/spring/PresentationContext.xml,classpath*:xml/national/spring/PresentationContext.xml
+        </param-value>
+    	</init-param>
+    	<load-on-startup>1</load-on-startup>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>spring-mvc</servlet-name>
+		<url-pattern>*.go</url-pattern>
+	</servlet-mapping>
+	
+    <!-- VistA Synchronization Status Servlet -->
+    <servlet>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <servlet-class>
+            gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.SynchronizationStatusServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SynchronizationStatus</servlet-name>
+        <url-pattern>/encapsulation/status</url-pattern>
+    </servlet-mapping>
+
+    <!-- Order Check Servlet -->
+    <servlet>
+        <servlet-name>OrderCheck</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.OrderCheckServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderCheck</servlet-name>
+        <url-pattern>/ordercheck</url-pattern>
+    </servlet-mapping>
+
+    <!-- Drug Info Servlet -->
+    <servlet>
+        <servlet-name>DrugInfo</servlet-name>
+        <servlet-class>gov.va.med.pharmacy.peps.external.common.preencapsulation.servlet.DrugInfoServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DrugInfo</servlet-name>
+        <url-pattern>/druginfo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>KaajeeInit</servlet-name>
+        <servlet-class>gov.va.med.authentication.kernel.InitKaajeeServlet</servlet-class>
+        <init-param>
+            <param-name>kaajee-config-file-location</param-name>
+            <param-value>/WEB-INF/kaajeeConfig.xml</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>gov.va.med.authentication.kernel.LoginController</servlet-class>
+        <run-as>
+            <role-name>adminuserrole</role-name>
+        </run-as>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+	
+    <filter>
+        <filter-name>XSSFilter</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.utility.XSSFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>XSSFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ExceptionFilter</filter-name>
+        <filter-class>gov.va.med.pharmacy.peps.presentation.common.utility.ExceptionFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ExceptionFilter</filter-name>
+        <url-pattern>*.go</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ResponseOverrideFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>gzip</filter-name>
+        <filter-class>net.sf.ehcache.constructs.web.filter.GzipFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>gzip</filter-name>
+        <url-pattern>*.go</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>gzip</filter-name>
+        <url-pattern>/javascript/*</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>gzip</filter-name>
+        <url-pattern>/css/*</url-pattern>
+    </filter-mapping>
+    
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.apache.tiles.web.startup.TilesListener</listener-class>
+    </listener>
+    
+    <!-- Kaajee configuration -->
+    <listener>
+        <listener-class>gov.va.med.authentication.kernel.KaajeeSessionAttributeListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>gov.va.med.authentication.kernel.KaajeeHttpSessionListener</listener-class>
+    </listener>
+
+    <security-role>
+        <description>PEPS Local Manager Role</description>
+        <role-name>PEPS LOCAL MANAGER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS Local Administrator Role</description>
+        <role-name>PEPS LOCAL ADMIN</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS Local Viewer Role</description>
+        <role-name>PEPS LOCAL VIEWER</role-name>
+    </security-role>
+
+    <!-- 
+    <security-role>
+        <description>PEPS National Manager Role</description>
+        <role-name>PEPS NATIONAL MANAGER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS National Administrator Role</description>
+        <role-name>PEPS NATIONAL ADMIN</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS National Viewer Role</description>
+        <role-name>PEPS NATIONAL VIEWER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PEPS Second Reviewer Role</description>
+        <role-name>PEPS SECOND REVIEWER</role-name>
+    </security-role>
+     -->
+     
+    <!-- the new keys: BEGIN -->
+    <security-role>
+        <description>PPS-National Manager Role</description>
+        <role-name>PSS_PPSN_MANAGER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PPS-National Migration Role</description>
+        <role-name>PSS_PPSN_MIGRATOR</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PPS-National Second Approver Role</description>
+        <role-name>PSS_PPSN_SECOND_APPROVER</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PPS-National Supervisor Role</description>
+        <role-name>PSS_PPSN_SUPERVISOR</role-name>
+    </security-role>
+
+    <security-role>
+        <description>PPS-National Viewer Role</description>
+        <role-name>PSS_PPSN_VIEWER</role-name>
+    </security-role>
+
+    <!-- the new keys: END -->
+
+    <security-role>
+        <description>auto-assigned authenticated user role</description>
+        <role-name>AUTHENTICATED_KAAJEE_USER</role-name>
+    </security-role>
+
+    <security-role>
+        <role-name>adminuserrole</role-name>
+    </security-role>
+
+    <!-- End Kaajee Configuration -->
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>KAAJEE Login Access</web-resource-name>
+            <url-pattern>/login/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+     
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>PEPS Index</web-resource-name>
+            <url-pattern>*.go</url-pattern>
+            <url-pattern>/index.jsp</url-pattern>
+            
+            <!-- 
+                finally got the security to work correctly. 
+                url-pattern listing below left in a comment in case it is needed in the future
+             -->
+            <!--
+            <url-pattern>/ migrationControl.go</url-pattern>
+            <url-pattern>/about.go</url-pattern>
+            <url-pattern>/acknowledgeModifications.go</url-pattern>
+            <url-pattern>/activateField.go</url-pattern>
+            <url-pattern>/add.go</url-pattern>
+            <url-pattern>/addCancel.go</url-pattern>
+            <url-pattern>/addManagedDomain.go</url-pattern>
+            <url-pattern>/addMoreDetails.go</url-pattern>
+            <url-pattern>/addMoreItems.go</url-pattern>
+            <url-pattern>/addNdcToProducts.go</url-pattern>
+            <url-pattern>/addterm.go</url-pattern>
+            <url-pattern>/advancedcriteria.go</url-pattern>
+            <url-pattern>/applyToAll.go</url-pattern>
+            <url-pattern>/approveRequest.go</url-pattern>
+            <url-pattern>/associateProduct.go</url-pattern>
+            <url-pattern>/autoPartialSaveLogout.go</url-pattern>
+            <url-pattern>/blankTemplate.go</url-pattern>
+            <url-pattern>/cancel.go</url-pattern>
+            <url-pattern>/cancelCommitMultiModifications.go</url-pattern>
+            <url-pattern>/cancelSearchNewParent.go</url-pattern>
+            <url-pattern>/changeParent.go</url-pattern>
+            <url-pattern>/changeShowActive.go</url-pattern>
+            <url-pattern>/changeShowSpanishWarningLabels.go</url-pattern>
+            <url-pattern>/changeWarningLabel.go</url-pattern>
+            <url-pattern>/commitModifications.go</url-pattern>
+            <url-pattern>/commitMultiModifications.go</url-pattern>
+            <url-pattern>/confirmModifications.go</url-pattern>
+            <url-pattern>/console.go</url-pattern>
+            <url-pattern>/controlDetails.go</url-pattern>
+            <url-pattern>/controlMigration.go</url-pattern>
+            <url-pattern>/createBlankTemplate.go</url-pattern>
+            <url-pattern>/createFromTable.go</url-pattern>
+            <url-pattern>/deleteDomain.go</url-pattern>
+            <url-pattern>/displaySettings.go</url-pattern>
+            <url-pattern>/domainMapping.go</url-pattern>
+            <url-pattern>/domainMappingExport.go</url-pattern>
+            <url-pattern>/domainMappingImport.go</url-pattern>
+            <url-pattern>/download.go</url-pattern>
+            <url-pattern>/downloadCSV.go</url-pattern>
+            <url-pattern>/edit.go</url-pattern>
+            <url-pattern>/editCancel.go</url-pattern>
+            <url-pattern>/editField.go</url-pattern>
+            <url-pattern>/editPartialCancel.go</url-pattern>
+            <url-pattern>/editPartialItem.go</url-pattern>
+            <url-pattern>/editPartialSave.go</url-pattern>
+            <url-pattern>/editRequest.go</url-pattern>
+            <url-pattern>/editRequests.go</url-pattern>
+            <url-pattern>/existingTemplate.go</url-pattern>
+            <url-pattern>/exportToCsv.go</url-pattern>
+            <url-pattern>/fdbAdd.go</url-pattern>
+            <url-pattern>/fdbAddDelete.go</url-pattern>
+            <url-pattern>/fdbAddDetails.go</url-pattern>
+            <url-pattern>/fdbAddPrint.go</url-pattern>
+            <url-pattern>/fdbAddProductDetails.go</url-pattern>
+            <url-pattern>/fdbAddReport.go</url-pattern>
+            <url-pattern>/fdbAutoAddDelete.go</url-pattern>
+            <url-pattern>/fdbAutoUpdateDelete.go</url-pattern>
+            <url-pattern>/fdbDetails.go</url-pattern>
+            <url-pattern>/fdbSearch.go</url-pattern>
+            <url-pattern>/fdbUpdate.go</url-pattern>
+            <url-pattern>/fdbUpdateDelete.go</url-pattern>
+            <url-pattern>/fdbUpdateDetails.go</url-pattern>
+            <url-pattern>/fdbUpdateEdit.go</url-pattern>
+            <url-pattern>/fdbUpdateReport.go</url-pattern>
+            <url-pattern>/generateNames.go</url-pattern>
+            <url-pattern>/generateOINames.go</url-pattern>
+            <url-pattern>/getExportStatus.go</url-pattern>
+            <url-pattern>/getMigrationState.go</url-pattern>
+            <url-pattern>/getResetDataBaseStatus.go</url-pattern>
+            <url-pattern>/hideExistingPPS.go</url-pattern>
+            <url-pattern>/home.go</url-pattern>
+            <url-pattern>/index.jsp</url-pattern>
+            <url-pattern>/jobStart.go</url-pattern>
+            <url-pattern>/manageDomainRequest.go</url-pattern>
+            <url-pattern>/managePartialItem.go</url-pattern>
+            <url-pattern>/manageRequest.go</url-pattern>
+            <url-pattern>/manageSearchTemplate.go</url-pattern>
+            <url-pattern>/manageTemplate.go</url-pattern>
+            <url-pattern>/manageprinttemplate.add.go</url-pattern>
+            <url-pattern>/manageprinttemplate.go</url-pattern>
+            <url-pattern>/manageprinttemplate.remove.go</url-pattern>
+            <url-pattern>/manageprinttemplate.submit.go</url-pattern>
+            <url-pattern>/managesearchtemplates.go</url-pattern>
+            <url-pattern>/markRequestUnderReview.go</url-pattern>
+            <url-pattern>/matchProductResult.go</url-pattern>
+            <url-pattern>/matchResults.go</url-pattern>
+            <url-pattern>/mergeModifications.go</url-pattern>
+            <url-pattern>/mergeSummaryCancel.go</url-pattern>
+            <url-pattern>/migrationControl.go</url-pattern>
+            <url-pattern>/migrationDetails.go</url-pattern>
+            <url-pattern>/migrationHome.go</url-pattern>
+            <url-pattern>/migrationPause.go</url-pattern>
+            <url-pattern>/migrationResume.go</url-pattern>
+            <url-pattern>/migrationStart.go</url-pattern>
+            <url-pattern>/migrationStop.go</url-pattern>
+            <url-pattern>/migrationSummary.go</url-pattern>
+            <url-pattern>/modificationSummary.go</url-pattern>
+            <url-pattern>/modificationSummaryCancel.go</url-pattern>
+            <url-pattern>/moveChildren.go</url-pattern>
+            <url-pattern>/overwritetemplate.cancel.go</url-pattern>
+            <url-pattern>/overwritetemplate.go</url-pattern>
+            <url-pattern>/pauseLouMigration.go</url-pattern>
+            <url-pattern>/pauseMigration.go</url-pattern>
+            <url-pattern>/pharmacySystem.go</url-pattern>
+            <url-pattern>/pmi.go</url-pattern>
+            <url-pattern>/prepareAddManagedDomain.go</url-pattern>
+            <url-pattern>/refreshForm.go</url-pattern>
+            <url-pattern>/rejectProblemReport.go</url-pattern>
+            <url-pattern>/rejectRequest.go</url-pattern>
+            <url-pattern>/rejectRequestSummary.go</url-pattern>
+            <url-pattern>/removeasdefault.go</url-pattern>
+            <url-pattern>/removetemplate.go</url-pattern>
+            <url-pattern>/reports.download.go</url-pattern>
+            <url-pattern>/reports.generate.go</url-pattern>
+            <url-pattern>/reports.go</url-pattern>
+            <url-pattern>/reports.update.go</url-pattern>
+            <url-pattern>/requestCancel.go</url-pattern>
+            <url-pattern>/requestSummary.go</url-pattern>
+            <url-pattern>/resetDataBase.go</url-pattern>
+            <url-pattern>/resumeLouMigration.go</url-pattern>
+            <url-pattern>/resumeMigration.go</url-pattern>
+            <url-pattern>/retrieve.go</url-pattern>
+            <url-pattern>/retrievetemplate.go</url-pattern>
+            <url-pattern>/returnToAdd.go</url-pattern>
+            <url-pattern>/returnToRequest.go</url-pattern>
+            <url-pattern>/reviewNdcInformation.go</url-pattern>
+            <url-pattern>/saveDomainField.go</url-pattern>
+            <url-pattern>/saveDowloadFile.go</url-pattern>
+            <url-pattern>/savePartial.go</url-pattern>
+            <url-pattern>/savetemplate.go</url-pattern>
+            <url-pattern>/schedulerHome.go</url-pattern>
+            <url-pattern>/search.template.go</url-pattern>
+            <url-pattern>/search.update.go</url-pattern>
+            <url-pattern>/searchDataElements.go</url-pattern>
+            <url-pattern>/searchDomainRequests.go</url-pattern>
+            <url-pattern>/searchItems.go</url-pattern>
+            <url-pattern>/searchNewParent.go</url-pattern>
+            <url-pattern>/searchParent.go</url-pattern>
+            <url-pattern>/searchParentCancel.go</url-pattern>
+            <url-pattern>/searchRequests.go</url-pattern>
+            <url-pattern>/searchSettings.go</url-pattern>
+            <url-pattern>/selectParent.go</url-pattern>
+            <url-pattern>/setasdefault.go</url-pattern>
+            <url-pattern>/setdefaulttemplate.go</url-pattern>
+            <url-pattern>/startApplyToAll.go</url-pattern>
+            <url-pattern>/startLouMigration.go</url-pattern>
+            <url-pattern>/startMigration.go</url-pattern>
+            <url-pattern>/startMoveChildren.go</url-pattern>
+            <url-pattern>/startPartialSave.go</url-pattern>
+            <url-pattern>/startResetDataBase.go</url-pattern>
+            <url-pattern>/startScheduler.go</url-pattern>
+            <url-pattern>/status.go</url-pattern>
+            <url-pattern>/statusLouMigration.go</url-pattern>
+            <url-pattern>/stopExport.go</url-pattern>
+            <url-pattern>/stopLouMigration.go</url-pattern>
+            <url-pattern>/submitDomainMappingPage.go</url-pattern>
+            <url-pattern>/submitModifications.go</url-pattern>
+            <url-pattern>/submitNewItem.go</url-pattern>
+            <url-pattern>/summaryPrint.go</url-pattern>
+            <url-pattern>/systemActions.go</url-pattern>
+            <url-pattern>/updateHostName.go</url-pattern>
+            <url-pattern>/updateMessagingState.go</url-pattern>
+            <url-pattern>/uploadCSVFiles.go</url-pattern>
+            <url-pattern>/userRoles.go</url-pattern>
+            <url-pattern>/validateFiles.go</url-pattern>
+             -->
+            
+            <!-- If you list http methods, only those methods are protected. -->
+            <!-- Leave this commented out to protect all access -->
+            <!--
+            <http-method>DELETE</http-method>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+            <http-method>PUT</http-method>
+             --> 
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>PEPS LOCAL MANAGER</role-name>
+            <role-name>PEPS LOCAL ADMIN</role-name>
+            <role-name>PEPS LOCAL VIEWER</role-name>
+            <role-name>PEPS NATIONAL MANAGER</role-name>
+            <role-name>PEPS NATIONAL ADMIN</role-name>
+            <role-name>PEPS NATIONAL VIEWER</role-name>
+            <role-name>PEPS SECOND REVIEWER</role-name>
+            <!-- 
+             -->
+            <role-name>PSS_PPSN_MANAGER</role-name>
+            <role-name>PSS_PPSN_MIGRATOR</role-name>
+            <role-name>PSS_PPSN_SECOND_APPROVER</role-name>
+            <role-name>PSS_PPSN_SUPERVISOR</role-name>
+            <role-name>PSS_PPSN_VIEWER</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login/login.jsp</form-login-page>
+            <form-error-page>/login/loginerror.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

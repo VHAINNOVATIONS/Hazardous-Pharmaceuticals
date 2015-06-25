@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestones 3 and 4 JWood">
+  <ReviewIssue id="FKGV5SWP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:51:45:817 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 08:52:05:441 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/presentation/common/action/PepsAction.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>This file looked okay to me.</Summary>
+    <Description>* Copyright 2007, Southwest Research Institute</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH0JT4G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:22:37:360 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:30:17:348 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="76">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>I am not sure if it is needed but there is a printTemplate variable for NDC List Print and Product list print -- but not one for Orderable Item List print -- should there be?</Summary>
+    <Description>private static final PrintTemplateVo PRODUCT_LIST_PRINT_TEMPLATE = DefaultPrintTemplateFactory.defaultProductList();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH0VGHA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:31:40:846 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:35:05:550 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="976">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Check to see if something similar should be done for OI and NDC item types.</Summary>
+    <Description>if (itemType.isProduct()) {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH0ZVNC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:35:07:128 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:36:07:114 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1246">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add page 2 and page 3 validation steps</Summary>
+    <Description>if ("wizard1".equals(previousViewState)) {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH10PEK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:35:45:692 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:35:58:395 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1242">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add OI page validation</Summary>
+    <Description>if (itemType.isNdc()) {</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FKH11WHT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:36:41:537 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-08-29 :: 11:36:57:413 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>nflores</ReviewerId>
+    <AssignedTo>jwood</AssignedTo>
+    <File line="1419">src/gov/va/med/pharmacy/peps/presentation/common/action/ManagedItemAction.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Need to remove unneeded commented code.</Summary>
+    <Description>// this.itemId = item.getId();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

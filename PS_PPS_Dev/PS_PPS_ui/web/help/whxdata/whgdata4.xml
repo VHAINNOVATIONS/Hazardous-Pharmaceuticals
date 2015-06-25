@@ -1,0 +1,74 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Destruction Holding List" value="The virtual list of all items stored in the Destruction Holding Area." />
+ <entry name="DHCP" value="Decentralized Hospital Computer Program (often referred to in the document as VistA)" />
+ <entry name="DHHS" value="Department of Health and Human Services" />
+ <entry name="DICOM" value="Digital Imaging and Communications in Medicine" />
+ <entry name="DIF" value="Drug Information Framework" />
+ <entry name="Digital Signature" value="Part of a Veterans Administration (VA)/Drug enforcement Agency (DEA) Public Key Infrastructure (PKI) Pilot project to introduce electronic signature for Outpatient medication orders of Schedule&#160;2 and Schedule&#160;2n controlled substances. DEA policy is that these CS cannot be signed for electronically and require a “wet” signature or hand-written prescription that goes to the pharmacy. This pilot project uses smart cards, card readers attached to workstations, digital certificates, and other technologies to electronically (digitally) sign Outpatient orders for Schedule&#160;2 and Schedule&#160;2n CS." />
+ <entry name="Dispense Class" value="A classification of drugs/items.&#160;The Dispense&#160;Classes are Controlled&#160;Substances, non-Controlled Substances, Investigational/Research, and Supply. For each drug there will be an associated Y/N parameter for Refrigeration." />
+ <entry name="Dispense Quantity Limit" value="A VA Data Field that specifies the limit as a Quantity-per-Time period. Quantity is the number of dispense units. Time period is specified by a number of days." />
+ <entry name="Dispense Request" value="A single dispensing action for an order (e.g., an order may contain an original Dispense Request and 11 refills. In this case, the order has a total of 12 Dispense Requests.) A dispense request can have the following statuses: “Pending,” “Filled,” “Checked,” “Delivered,” “Cancelled,” “Exception.”&#160;In addition, for Inpatient only, a dispense request can have a status of “In Transit.”" />
+ <entry name="Dispense Unit" value="A unit of measure for dispensing (e.g., GM, EA)." />
+ <entry name="Dispense Unit Domain" value="Provides&#160;the list of available dispense units for a Product Item." />
+ <entry name="Dispensed Inventory" value="The inventory that has been used to fill an activated Inpatient or Outpatient order. It is used as the point in the process where quantities used are debited from pharmacy supply locations. See related glossary term Replenishment." />
+ <entry name="DO" value="Data Object" />
+ <entry name="Do Not Mail" value="A VA Data Field used to indicate that an item cannot be mailed by the local pharmacy." />
+ <entry name="DoD" value="Department of Defense" />
+ <entry name="Domain" value="Refers to data elements used by PEPS items; for example:  Manufacturer, Standard Med Route.  Usually domain in this context refers to a domain entry, not necessarily the entire domain. " />
+ <entry name="Dosage Form" value="The medium used to administer the active ingredient(s) in health products. Dosage forms include, but are not limited to capsules, tablets, injectables, oral solutions, drops, creams, ointments, and patches." />
+ <entry name="Dosage Form Domain" value="Contains the list of available dosage forms&#160;that can be used for an Orderable Item." />
+ <entry name="Dose" value="A specified quantity of a therapeutic agent, such as a drug, prescribed to be taken at one time or at stated intervals." />
+ <entry name="DPP" value="Detailed Project Plan" />
+ <entry name="Draft Order" value="A dispense order entered into the system by a user, but not completed or not submitted to pharmacy for dispensing." />
+ <entry name="Drug Class" value="The grouping of drug products based on various criteria, which may include similarity of chemical structure, clinical indications, pharmacology, and therapeutic activity." />
+ <entry name="Drug Class Domain" value="Contains the list of VA Drug Classifications that can be used for Product Items." />
+ <entry name="Drug Data Vendor" value="The company that supplies medical information products (e.g.,&#160;MicroMedex or First DataBank)." />
+ <entry name="Drug Enforcement Administration (DEA) Number" value="A numbering system that was implemented as a way to successfully track CS from the time they are manufactured until the time they are dispensed to the Patient or destroyed according to DEA regulations." />
+ <entry name="Drug Indication Dosing" value="Allows for different dosages for different disease states as well as for different Patient conditions. For example, the dose for Megestrol used for anorexia is 800mg daily, whereas the dose for Megestrol used for breast cancer is 40mg four times daily. Additionally, doses for Patients with impaired renal or hepatic clearances may have to be adjusted." />
+ <entry name="Drug Unit Domain" value="Provides the list of available units of measure that can be used for a medication." />
+ <entry name="Drug/Disease Interaction" value="An event that occurs when a drug’s action or effect are altered by a disease or clinical condition. May result in worsening of the disease by the drug." />
+ <entry name="Drug/Drug Interaction" value="The pharmacological or clinical response to the administration of a drug combination different from that anticipated from the known effects of the two agents when given alone." />
+ <entry name="DSD" value="Delivery Service Delegate" />
+ <entry name="DSS" value="Decision Support System" />
+ <entry name="DTAC" value="Development Technology Advisory Committee" />
+ <entry name="Duration" value="The amount of time that the Patient should use the specified dose. This can be calculated from the time between the Start Date/Time and Stop Date/Time for an Inpatient medication order." />
+ <entry name="DUZ" value="A value that identifies a specific end-user signed into the VistA system. The DUZ is being replaced by the VPID but is still in use." />
+ <entry name="DVA" value="Department of Veterans Affairs" />
+ <entry name="E/R" value="Entity/Relationship" />
+ <entry name="E3R" value="Electronic, Error, and Enhancement Report" />
+ <entry name="EBAC" value="Entity-Based Access Control" />
+ <entry name="ebXML" value="Electronic Business eXtensible Markup Language" />
+ <entry name="ECMB" value="Executive Change Management Board" />
+ <entry name="ECME" value="Electronic Claims Management Engine" />
+ <entry name="ECR" value="Engineering Change Request" />
+ <entry name="ECSS" value="Electronic Claims Submission System" />
+ <entry name="EDI" value="Electronic Data Interchange" />
+ <entry name="EDS" value="Electronic Data Systems" />
+ <entry name="EE" value="External Environment" />
+ <entry name="eInvoice" value="An invoice received electronically into the pharmacy system from the prime vendor for medications." />
+ <entry name="EJB" value="Enterprise Java Bean" />
+ <entry name="Electrolyte" value="An additive that disassociates into ions (charged particles) when placed in solution." />
+ <entry name="Electronic Error and Enhancement Request (E3R)" value="A software application located on Forum. It is used VHA-wide to submit suggestions for changes to Office of Information Field Office (OIFO) software products." />
+ <entry name="Electronic Pharmacy Claims/Billing" value="Electronic billing for outpatient prescriptions at point of care service." />
+ <entry name="Electronic Signature" value="A computer data compilation of any symbol or series of symbols executed, adopted, and/or authorized by an individual to be the legally binding equivalent of the individual’s handwritten signature. See glossary term Digital Signature for expansion of this concept within the VA." />
+ <entry name="Element" value="An object that encompasses a set of versions, organized into a version tree. They can be either files or directories." />
+ <entry name="Email Group" value="A group of individuals who receive email and alerts about a topic pertaining to the group." />
+ <entry name="Emergency Cache" value="A bulk supply of drugs stored in central pharmacy specifically for use in large scale emergencies or catastrophic events. The supply is not available for use in filling Patient orders unless released to the pharmacy prior to replacement or expiration." />
+ <entry name="Encapsulation" value="The hiding of a software object’s internal representation. The object provides an interface that queries and manipulates the data without exposing its underlying structure." />
+ <entry name="Encounter" value="A professional contact between a Patient and a Practitioner. A Patient may have multiple encounters for one appointment or during a single visit to a Department of Veterans Affairs Medical Center (VAMC) facility." />
+ <entry name="Enhancement Requests" value="A type of stakeholder request that specifies a new feature or functionality of the system." />
+ <entry name="Enterprise Architecture" value="The architecture that incorporates an entire business or major portion thereof." />
+ <entry name="Enterprise Product List (EPL)" value="A compendium of medications, supplies, and prosthetics available for ordering." />
+ <entry name="Enterprise Reference Terminology (ERT)" value="A standardized set of medical vocabulary used within VHA systems, provides for the sets that accommodate local variations in terminology, and supports automated translation among terminology sets." />
+ <entry name="Enterprise Terminology Service (ETS)" value="The inclusive name for both the ERT and VETS projects. ETS determines terminology for clinical content (i.e., Pharmacy, Labs, Orders, Vitals). ETS has been renamed to Standardized Terminology Service (STS) ." />
+ <entry name="Entity Bean" value="A reusable software component used to implement business logic; multiple clients can access it simultaneously; it represents persistent items that could be stored in a database." />
+ <entry name="Entry By" value="The name of the user who entered the order into the computer." />
+ <entry name="ePharmacy" value="VA electronic pharmacy claims. Used to transmit claims between the VHA and insurance providers." />
+ <entry name="EPL" value="Enterprise Product List" />
+ <entry name="EPL-L" value="EPL Local" />
+ <entry name="EPL-M" value="EPL Master" />
+ <entry name="EPL-N" value="EPL National" />
+ <entry name="ER" value="Emergency Room" />
+
+</glossarydata>

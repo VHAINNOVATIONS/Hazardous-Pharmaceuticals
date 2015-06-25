@@ -1,0 +1,5 @@
+<SecurityInfo version="1.0" />
+<Response type="AV.SetupAndIntroText" status="success">
+<SetupInfo serverName='PseudonyM' volume='simulated' uci='VISTA' device='/simulated/simulated' numberAttempts='5' dtime='180'/>
+<IntroText><![CDATA[This is the intro.<BR>]]></IntroText>
+</Response>

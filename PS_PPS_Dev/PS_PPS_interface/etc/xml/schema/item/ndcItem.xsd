@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/ndcItem"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/ndcItem"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:drugManufacturer="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugManufacturer"
+    xmlns:ndcUpn="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/ndcUpn"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/drugManufacturer"
+        schemaLocation="../ndf/drugManufacturerFile.xsd" />
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/ndf/ndcUpn"
+        schemaLocation="../ndf/ndcUpnFile.xsd" />
+
+    <xsd:element name="ndcItem">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="drugManufacturerFile"
+                    type="drugManufacturer:drugManufacturerFile"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="ndcUpnFile"
+                    type="ndcUpn:ndcUpnFile"
+                    minOccurs="1"
+                    maxOccurs="1" />
+            </xsd:sequence>
+
+            <xsd:attribute
+                name="status"
+                type="common:itemStatus"
+                use="required" />
+                
+            <xsd:attribute
+                name="pepsIdNumber"
+                type="xsd:integer"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

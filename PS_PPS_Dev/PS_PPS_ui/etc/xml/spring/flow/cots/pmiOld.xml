@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow
+    xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/webflow 
+                        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd"
+    parent="common-transitions"
+    start-state="printPmi">
+
+    <view-state
+        id="printPmi"
+        view="print.pmi.old">
+        <attribute
+            name="ignoreBreadcrumb"
+            value="true"
+            type="boolean" />
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="drugReference" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+        <transition
+            on="retrievePmi"
+            to="retrievePmi" />
+        <transition
+            on="pmiPopup"
+            to="pmiPopup" />
+    </view-state>
+
+    <action-state id="retrievePmi">
+        <evaluate expression="springWebFlowActionAdapter">
+            <attribute
+                name="actionName"
+                value="drugReference" />
+            <attribute
+                name="actionMethod"
+                value="retrievePmi" />
+        </evaluate>
+        <transition
+            on="success"
+            to="printPmi" />
+    </action-state>
+
+    <view-state
+        id="pmiPopup"
+        view="pmi.popup.old">
+        <on-render>
+            <evaluate expression="springWebFlowActionAdapter">
+                <attribute
+                    name="actionName"
+                    value="drugReference" />
+                <attribute
+                    name="actionMethod"
+                    value="render" />
+            </evaluate>
+        </on-render>
+    </view-state>
+</flow>

@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<drugData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request ../../../../../Interface/etc/xml/schema/drug/data/localDrugDataRequest.xsd"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/request">
+    <drugRequest>
+        <vuid>4003336</vuid> <!-- SHOULD return results -->
+        <vuid>2902325</vuid> <!-- should NOT return results -->
+        <ndc>000182014101</ndc> <!-- SHOULD return results -->
+        <ndc>283582341835</ndc> <!-- should NOT return results -->
+    </drugRequest>
+</drugData>

@@ -1,0 +1,74 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="ER (Architecture)" value="Entity-Relationship" />
+ <entry name="ERT" value="Enterprise Reference Terminology" />
+ <entry name="ES" value="Enterprise Strategy" />
+ <entry name="Essential Use Case" value="A Use Case containing a basic course of action. It is referred to as the “typical-path;” the main start-to-finish path that the actor and the system will follow under normal circumstances. Any activity that deviates from the “typical-path” is referred to as an alternate course of action. See the glossary term Use Case." />
+ <entry name="ETC" value="Enhanced Therapeutic Classification" />
+ <entry name="Event" value="An occurrence that may be synchronous or asynchronous and to which an application must respond in some manner." />
+ <entry name="Expiration Date (Drug)" value="The date a drug is no longer allowed to be used to fill a Patient order based on a time period established by the manufacturer after which the drug effectiveness is likely to have deteriorated. Maintaining control of this constraint is a high priority Patient safety issue for VHA." />
+ <entry name="Extend Relationship" value="A relationship that continues the functionality of a “parent” Use Case but is subject to a specific condition. It is used to indicate a relationship between a “parent” Use Case and a Use Case containing an alternate course of action. It is conditional and may or may not be used by the “parent” Use Case." />
+ <entry name="eXtensible Markup Language (XML)" value="A simple, very flexible text format derived from Standard Generalized Markup Language (SGML)." />
+ <entry name="Extension Point(s) (XPn)" value="A named marker that references a location or set of locations within the behavioral sequence for a Use Case, at which point additional behavior can be added." />
+ <entry name="External Data Fields" value="Data fields on a PEPS item that contain information that will most likely come from an external data vendor such as a COTS product. Examples include “Generic Name”, “Strength”, etc." />
+ <entry name="Façade" value="A pattern for hiding underlying complexities." />
+ <entry name="Facility" value="A single entity or combination of VA Medical&#160;Center(s), Outpatient Clinic(s), and/or CBOC(s) where various levels of medical care are provided under the auspices of One VA management team." />
+ <entry name="Factory" value="A design pattern for separating the creation of objects from the type of objects being created. This allows the objects to be replaced with minimal design impact." />
+ <entry name="FaTKAAT" value="Fat-Client Kernel Authentication and Authorization Tool" />
+ <entry name="FBPM" value="Future Business Process Model" />
+ <entry name="FCDM" value="Financial and Clinical Data Mart" />
+ <entry name="FDA" value="Food and Drug Administration" />
+ <entry name="FDA Schedule" value="A classification of medications with regards to the Controlled Substances Act of 1970 which dictates special procedures or handling for prescriptions and administration of medication." />
+ <entry name="FDB" value="First DataBank" />
+ <entry name="FDR" value="Financial Data Repository" />
+ <entry name="Federal Health Information Exchange (FHIE)" value="Formerly known as the Government Computer-Based Patient Record&#160;(GCPR). Addresses a Presidential Directive to create a comprehensive, life-long medical record for America’s military service members. Its current implementation allows the retrieval of veteran health information from the DoD data source." />
+ <entry name="Federal Stock Number (FSN)" value="(DOD) The Federal Stock Number of an item of supply consists of the applicable 4-digit class code number from the Federal Supply Classification plus a sequentially assigned 7-digit Federal Item Identification Number. The number shall be arranged as follows: 4210-196-5439. (Note: Federal Stock Numbers were replaced by National Stock Numbers effective 30 September, 1974.)" />
+ <entry name="FHIE" value="Federal Health Information Exchange (formerly GCPR)" />
+ <entry name="FileMan (FM)" value="A software application that creates and maintains a database management system that includes features such as a report writer, data dictionary manager, scroll and screen-oriented data entry, text editors, programming utilities, tools for sending data to other systems, and file archiving." />
+ <entry name="Fill" value="The process whereby a pharmacy will prepare a medication order for dispensing to the Patient." />
+ <entry name="Fill Station" value="The area in which orders are filled or dispensed manually (i.e., by a Pharmacist or a Pharmacy Technician) or automatically (i.e., by automation equipment)." />
+ <entry name="Final Check" value="A final look at the dispensed prescription before delivery to the Patient to ensure that the prescription has been dispensed accurately as prescribed." />
+ <entry name="FIPER" value="Federal Intelligent Product EnviRonment" />
+ <entry name="First Fill" value="See glossary term Original Fill." />
+ <entry name="Fiscal Year (FY)" value="The period from October First of one year to September Thirtieth of the next year." />
+ <entry name="FM" value="FileMan" />
+ <entry name="FMS" value="Financial Management System" />
+ <entry name="Form 222" value="A special order form used to distribute CS (Schedule I and II drugs). The keeping of records is required for distribution of a CS from one manufacturer to another, from manufacturer to distributor, and from distributor to dispenser." />
+ <entry name="Formulary" value="A collection of pharmaceutical substances along with their formulas, uses, and methods of preparation. Additionally, this can be a list of products that are approved for use with Patients (for the appropriate indications)." />
+ <entry name="Formulary Decision Makers" value="A group of individuals who decide on adding, deleting, or changing a product to/from/on the National Enterprise Product List (EPL) or National Formulary. See glossary term Enterprise Product List (EPL)." />
+ <entry name="Forum" value="A National On-line network. In addition to network mail, Forum hosts several National databases that include: Physician Data Query (PDQ) Cancer Information Database; Performance Excellence Database for sharing quality assurance success stories; VA/DoD Health Care Sharing Agreements; National On-Line Information System for tracking problems (NOIS) reported to OI Field Office specialists; Interlibrary Loan System; Facility ADP Plans; Decentralized Hospital Computer Program (DHCP) Site Implementation System; and E3R System designed for entering requests for software enhancements." />
+ <entry name="Fractional Dose" value="A situation in which the dose administered to the Patient is less than the amount that was dispensed." />
+ <entry name="Framework" value="A set of assumptions, concepts, values, and practices that constitute a way of describing a real situation." />
+ <entry name="FSS" value="Federal Supply Schedule" />
+ <entry name="FTEE" value="Full-time Employee Equivalent" />
+ <entry name="Function" value="An activity that spans the entire duration of a project (e.g., status reporting, quality assurance, verification, and validation)." />
+ <entry name="Functional Testing" value="Testing that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions." />
+ <entry name="FY" value="Fiscal Year" />
+ <entry name="GAL" value="Glossary and Acronym List" />
+ <entry name="GCN" value="Generic Code Number" />
+ <entry name="GCN Sequence Number " value="A number that represents a generic formulation, specific not generic ingredient(s), drug strength, dose form, and route of administration." />
+ <entry name="GCPR" value="Government Computer-based Patient Record (now FHIE)" />
+ <entry name="GDD" value="GUI Design Document" />
+ <entry name="Generic Drug" value="A nonproprietary drug approved by the FDA that is tested against a standard of bioavailability and bioequivalence." />
+ <entry name="Generic Name" value="A non-proprietary name assigned to an item (e.g., drug, supply)." />
+ <entry name="Generic Substitution" value="Contains the same active, chemically identical ingredient(s) and is identical in strength, concentration, dosage form, and route of administration to the drug product prescribed." />
+ <entry name="GIP" value="Generic Inventory Package" />
+ <entry name="Goal" value="A statement of the desired outcome of a product that shows it to be reasonable, measurable, and feasible." />
+ <entry name="GOTS" value="Government Off-the-Shelf" />
+ <entry name="Graphical User Interface (GUI)" value="A type of interface that enables users to communicate with a program by manipulating graphical features, rather than by entering commands. Typically, a GUI includes a combination of graphics, pointing devices, menu bars and other menus, overlapping windows, and icons." />
+ <entry name="Green Sheet (GS)" value="A special form used to account for the use of CS in the absence of automated equipment that can perform the accounting function. Currently, VA FORM 10 ‑2638 is being used." />
+ <entry name="Grey-box Testing" value="Test designed based on the knowledge of algorithm, internal states, architectures, or other high-level descriptions of the program behavior." />
+ <entry name="GS" value="Green Sheet" />
+ <entry name="GUI" value="Graphical User Interface" />
+ <entry name="GWD" value="GUI Workshop I Document" />
+ <entry name="HA" value="High Availability" />
+ <entry name="Happy Path" value="The main start-to-finish path that the actor and the system will follow under normal circumstances." />
+ <entry name="HDD" value="High Level Design Document" />
+ <entry name="HDR" value="Health Data Repository" />
+ <entry name="HDR-Hx" value="Health Data Repository – Historical" />
+ <entry name="HDR-IMS" value="Health Data Repository – Interim Messaging Solution" />
+ <entry name="HDR-L" value="Health Data Repository – Local" />
+ <entry name="HDR-N" value="Health Data Repository – National" />
+ <entry name="HDS" value="Health Data Systems" />
+
+</glossarydata>

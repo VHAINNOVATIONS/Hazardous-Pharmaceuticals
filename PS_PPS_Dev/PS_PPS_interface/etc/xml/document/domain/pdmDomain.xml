@@ -1,0 +1,271 @@
+<!-- PDM domain example with multiple file additions and modifications.  -->
+
+<pdmDomain
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/domain/pdm"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:dosageForm="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/dosageForm"
+    xmlns:pharmacyOrderableItem="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/pharmacyOrderableItem"
+    xmlns:administrationSchedule="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/administrationSchedule"
+    xmlns:drugText="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/drugText"
+    xmlns:orderUnit="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/orderUnit"
+    xmlns:rxConsult="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/rxConsult"
+    xmlns:medicationInstruction="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationInstruction"
+    xmlns:pharmacySystem="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/pharmacySystem"
+    xmlns:standardMedicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/standardMedicationRoutes"
+    xmlns:medicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationRoutes"
+    xsi:schemaLocation="gov/va/med/pharmacy/peps/external/common/vo/outbound/domain/pdm ../../schema/domain/pdmDomain.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    pepsIdNumber="1234567890">
+
+    <dosageFormFile
+        action="Modify"
+        number="50.606">
+        <dosageForm:candidateKey>
+            <dosageForm:name number=".01">Tab</dosageForm:name>
+        </dosageForm:candidateKey>
+    </dosageFormFile>
+
+    <dosageFormFile
+        action="Add"
+        number="50.606">
+        <dosageForm:candidateKey>
+            <dosageForm:name number=".01">Pill</dosageForm:name>
+        </dosageForm:candidateKey>
+    </dosageFormFile>
+
+    <administrationScheduleFile
+        action="Modify"
+        number="51.1">
+        <administrationSchedule:candidateKey>
+            <administrationSchedule:name number=".01">Example Name</administrationSchedule:name>
+        </administrationSchedule:candidateKey>
+
+        <administrationSchedule:ward
+            multiple="true"
+            number="3">
+
+            <!-- J to M pull from Ward file. -->
+            <administrationSchedule:wardFile number="51.11">
+                <administrationSchedule:ward number=".01">Example Ward</administrationSchedule:ward>
+                <administrationSchedule:wardAdministrationTimes number="1">0600-1400-2200</administrationSchedule:wardAdministrationTimes>
+            </administrationSchedule:wardFile>
+        </administrationSchedule:ward>
+
+        <administrationSchedule:packagePrefix number="4">PSO</administrationSchedule:packagePrefix>
+
+        <administrationSchedule:hospitalLocation
+            multiple="true"
+            number="7">
+
+            <!-- J to M pull from hospital location file. -->
+            <administrationSchedule:hospitalLocationFile number="51.17">
+                <administrationSchedule:hospitalLocation number=".01">Example Hospital Location</administrationSchedule:hospitalLocation>
+            </administrationSchedule:hospitalLocationFile>
+        </administrationSchedule:hospitalLocation>
+    </administrationScheduleFile>
+
+    <administrationScheduleFile
+        action="Add"
+        number="51.1">
+        <administrationSchedule:candidateKey>
+            <administrationSchedule:name number=".01">Example Name 2</administrationSchedule:name>
+        </administrationSchedule:candidateKey>
+
+        <administrationSchedule:ward
+            multiple="true"
+            number="3">
+
+            <!-- J to M pull from Ward file. -->
+            <administrationSchedule:wardFile number="51.11">
+                <administrationSchedule:ward number=".01">Example Ward 2</administrationSchedule:ward>
+                <administrationSchedule:wardAdministrationTimes number="1">0600-1400-2200</administrationSchedule:wardAdministrationTimes>
+            </administrationSchedule:wardFile>
+        </administrationSchedule:ward>
+
+        <administrationSchedule:packagePrefix number="4">PSO</administrationSchedule:packagePrefix>
+
+        <administrationSchedule:hospitalLocation
+            multiple="true"
+            number="7">
+
+            <!-- J to M pull from hospital location file. -->
+            <administrationSchedule:hospitalLocationFile number="51.17">
+                <administrationSchedule:hospitalLocation number=".01">Example Hospital Location 2</administrationSchedule:hospitalLocation>
+            </administrationSchedule:hospitalLocationFile>
+        </administrationSchedule:hospitalLocation>
+    </administrationScheduleFile>
+
+    <drugTextFile
+        action="Modify"
+        number="51.7">
+        <drugText:candidateKey>
+            <drugText:name number="0.01">FAMOTIDINE</drugText:name>
+        </drugText:candidateKey>
+
+        <!-- Break into chunks with | delimiter <= 70 characters and do not chop whole words. -->
+        <drugText:text
+            wordProcessing="true"
+            number="3">
+            <common:wordProcessingFile append="true"><![CDATA[This is a * NON-FORMULARY * item. It may not be dispensed without|appropriate and completed prior approval received in Pharmacy Service.]]></common:wordProcessingFile>
+        </drugText:text>
+    </drugTextFile>
+
+    <drugTextFile
+        action="Add"
+        number="51.7">
+        <drugText:candidateKey>
+            <drugText:name number="0.01">IODINE</drugText:name>
+        </drugText:candidateKey>
+
+        <!-- Break into chunks with | delimiter <= 70 characters and do not chop whole words. -->
+        <drugText:text
+            wordProcessing="true"
+            number="3">
+            <common:wordProcessingFile append="false"><![CDATA[This is a * NON-FORMULARY * item. It may not be dispensed without|appropriate and completed prior approval received in Pharmacy Service.]]></common:wordProcessingFile>
+        </drugText:text>
+    </drugTextFile>
+
+    <orderUnitFile
+        action="Modify"
+        number="51.5">
+        <orderUnit:candidateKey>
+            <orderUnit:abbreviation number="0.01">BT</orderUnit:abbreviation>
+        </orderUnit:candidateKey>
+
+        <orderUnit:expansion number=".02">Bottle</orderUnit:expansion>
+    </orderUnitFile>
+
+    <orderUnitFile
+        action="Add"
+        number="51.5">
+        <orderUnit:candidateKey>
+            <orderUnit:abbreviation number="0.01">BT</orderUnit:abbreviation>
+        </orderUnit:candidateKey>
+
+        <orderUnit:expansion number=".02">Bottle</orderUnit:expansion>
+    </orderUnitFile>
+
+    <rxConsultFile
+        action="Modify"
+        number="54">
+        <rxConsult:candidateKey>
+            <rxConsult:name number=".01">Food</rxConsult:name>
+        </rxConsult:candidateKey>
+
+        <rxConsult:text
+            multiple="true"
+            number="1">
+            <rxConsult:textFile number="54.1">
+                <rxConsult:text number=".01"><![CDATA[Take with food.]]></rxConsult:text>
+            </rxConsult:textFile>
+        </rxConsult:text>
+
+        <rxConsult:warningMapping number="2">999999</rxConsult:warningMapping>
+        <rxConsult:spanishTranslation number="3">Comida</rxConsult:spanishTranslation>
+    </rxConsultFile>
+
+    <rxConsultFile
+        action="Add"
+        number="54">
+        <rxConsult:candidateKey>
+            <rxConsult:name number=".01">Water</rxConsult:name>
+        </rxConsult:candidateKey>
+
+        <rxConsult:text
+            multiple="true"
+            number="1">
+            <rxConsult:textFile number="54.1">
+                <rxConsult:text number=".01"><![CDATA[Take with water.]]></rxConsult:text>
+            </rxConsult:textFile>
+        </rxConsult:text>
+
+        <rxConsult:warningMapping number="2">999999</rxConsult:warningMapping>
+        <rxConsult:spanishTranslation number="3">Agua</rxConsult:spanishTranslation>
+    </rxConsultFile>
+
+    <medicationInstructionFile
+        action="Modify"
+        number="51">
+        <medicationInstruction:candidateKey>
+            <medicationInstruction:name number="0.01">Example</medicationInstruction:name>
+        </medicationInstruction:candidateKey>
+
+        <medicationInstruction:expansion number="1">Example Expansion</medicationInstruction:expansion>
+
+        <medicationInstruction:ward
+            multiple="true"
+            number="20">
+            <medicationInstruction:wardFile number="51.01">
+
+                <!-- J to M for values for ward file -->
+                <medicationInstruction:ward number=".01">Ward Example</medicationInstruction:ward>
+                <medicationInstruction:defaultAdministrationTimes number=".02">0300-0900-1500-2100</medicationInstruction:defaultAdministrationTimes>
+            </medicationInstruction:wardFile>
+        </medicationInstruction:ward>
+    </medicationInstructionFile>
+
+    <medicationInstructionFile
+        action="Add"
+        number="51">
+        <medicationInstruction:candidateKey>
+            <medicationInstruction:name number="0.01">Example</medicationInstruction:name>
+        </medicationInstruction:candidateKey>
+
+        <medicationInstruction:expansion number="1">Example Expansion</medicationInstruction:expansion>
+
+        <medicationInstruction:ward
+            multiple="true"
+            number="20">
+            <medicationInstruction:wardFile number="51.01">
+
+                <!-- J to M for values for ward file -->
+                <medicationInstruction:ward number=".01">Ward Example</medicationInstruction:ward>
+                <medicationInstruction:defaultAdministrationTimes number=".02">0300-0900-1500-2100</medicationInstruction:defaultAdministrationTimes>
+            </medicationInstruction:wardFile>
+        </medicationInstruction:ward>
+    </medicationInstructionFile>
+
+    <standardMedicationRoutesFile
+        action="Modify"
+        number="51.23">
+        <standardMedicationRoutes:candidateKey>
+            <standardMedicationRoutes:name number=".01">Oral</standardMedicationRoutes:name>
+            <standardMedicationRoutes:vuid number="99.99">12345</standardMedicationRoutes:vuid>
+        </standardMedicationRoutes:candidateKey>
+
+        <standardMedicationRoutes:firstDataBankMedicationRoute number="1">Oral</standardMedicationRoutes:firstDataBankMedicationRoute>
+
+        <standardMedicationRoutes:effectiveDateTime
+            multiple="true"
+            number="99.991">
+            <standardMedicationRoutes:effectiveDateTimeFile number="51.2399">
+                <common:effectiveDateTime number=".01">12-01-2008</common:effectiveDateTime>
+                <common:status number=".02">1</common:status>
+            </standardMedicationRoutes:effectiveDateTimeFile>
+        </standardMedicationRoutes:effectiveDateTime>
+    </standardMedicationRoutesFile>
+
+    <medicationRoutesFile
+        action="Modify"
+        number="51.2">
+        <medicationRoutes:candidateKey>
+            <medicationRoutes:name number=".01">Oral</medicationRoutes:name>
+        </medicationRoutes:candidateKey>
+
+        <medicationRoutes:abbreviation number="1">PO</medicationRoutes:abbreviation>
+
+        <medicationRoutes:standardMedicationRoute number="10">Oral</medicationRoutes:standardMedicationRoute>
+    </medicationRoutesFile>
+
+    <pharmacySystemFile
+        action="Modify"
+        number="59.7">
+        <pharmacySystem:candidateKey>
+            <pharmacySystem:siteName number="0.01">Birmingham VAMC</pharmacySystem:siteName>
+        </pharmacySystem:candidateKey>
+
+        <!-- Data pull from J to M. -->
+        <pharmacySystem:pmisPrinter number="13">Example PMIS Printer</pharmacySystem:pmisPrinter>
+        <pharmacySystem:pmisSectionDelete number="15">R,Z</pharmacySystem:pmisSectionDelete>
+    </pharmacySystemFile>
+</pdmDomain>

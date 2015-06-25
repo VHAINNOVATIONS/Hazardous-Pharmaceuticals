@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF49TAHC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:02:24:336 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:06:26:456 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="202">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Type the List</Summary>
+    <Description>The List should be of type EplRequestDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF49URDM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:03:32:890 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:06:17:424 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="205">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Type the iterator</Summary>
+    <Description>iterator should be of type EplRequestDo</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF49WS1S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:05:07:072 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:23:44:385 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="210">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove type casting</Summary>
+    <Description>once give a type to the list and iterator, do not need to type cast to EplRequestDo</Description>
+    <Annotation />
+    <Revision>compiler complains if type cast is not done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4A1OA9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:08:55:473 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:09:41:338 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="249">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>add type to the hash map</Summary>
+    <Description>add type to  the hash map as new HashMap&lt;String, RequestVo&gt;()</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4A51OK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:11:32:804 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 13:25:04:331 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="391">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>fix spelling mistake in comment</Summary>
+    <Description>fix the spelling mistake in the comment</Description>
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4ADYH7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:18:28:555 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:20:06:519 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>give a type to generic types</Summary>
+    <Description>give a type to generic types, for example instead of saying new HashSet(), say new HashSet&lt;RequestVo&gt;()</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4ANNQP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:26:01:201 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:31:09:709 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="441">src/gov/va/med/pharmacy/peps/domain/common/capability/impl/RequestDomainCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>check for null</Summary>
+    <Description>should check if request detail is null before getting the size. If the requestDetails is null, this line of code will blow up.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4AUMSH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:31:26:561 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:32:21:710 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>comments need more details and check for spelling errors</Summary>
+    <Description>comments need more details and check the comments for spelling errors.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4B17U6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:36:33:774 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:37:11:223 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/dao/EplRequestDao.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>comment incomplete word</Summary>
+    <Description>what is "v" in the comment?? is it "vo"??</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BNBIV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:53:44:983 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:54:35:830 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="133">test/gov/va/med/pharmacy/peps/domain/common/capability/test/RequestDomainCapabilityTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>incorrect entity type</Summary>
+    <Description>Entity type should be set to NDC</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BOYZ6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:55:02:034 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:55:59:194 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="140">test/gov/va/med/pharmacy/peps/domain/common/capability/test/RequestDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>duplicate line of code</Summary>
+    <Description>this is a duplicate of line 137</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BYITL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:02:27:657 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:03:44:068 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="337">test/gov/va/med/pharmacy/peps/domain/common/capability/test/RequestDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>should add assertions for each modifications</Summary>
+    <Description>should add assertion to check mod difference and request reson.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C27H2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:05:19:574 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:06:21:390 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="348">test/gov/va/med/pharmacy/peps/domain/common/capability/test/RequestDomainCapabilityTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this is not a junit test method</Summary>
+    <Description>this is neither a junit test nor called by any other method in this test case.&#xD;
+delete this.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C48TF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:06:54:627 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:07:17:988 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>missing comments for methods</Summary>
+    <Description>some methods are missing comments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C54O7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:07:35:911 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:08:48:212 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>RequestDomainCapabilityTest missing test cases for product and oi</Summary>
+    <Description>This test case has test for adding NDC request. It is missing test cases for adding/modifying Product and Orderable items.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C735O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:07:260 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:57:357 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smohanty</ReviewerId>
+    <AssignedTo />
+    <File line="" />
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>todo comments have not been removed after the fix</Summary>
+    <Description>In Request Domain capability test class, todo comments have not been removed after the fix.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

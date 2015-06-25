@@ -1,0 +1,727 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<!-- Default Tiles definition which provides structure for all other definitions. 
+		Each attribute listed here should be explicitly inserted in the default template. 
+		Corresponding CSS class structure matches the attribute names. -->
+	<definition name="default" template="/WEB-INF/jsp/layouts/default.jsp">
+		<!-- Banner image -->
+		<put-attribute name="banner" value="/WEB-INF/jsp/banner.jsp" />
+		<!-- Branding information, like header/title/app info -->
+		<put-attribute name="branding" value="/WEB-INF/jsp/branding.jsp" />
+		<!-- User login module -->
+		<put-attribute name="user-info" value="/WEB-INF/jsp/user/loginLink.jsp" />
+		<!-- primary navigation menu -->
+		<put-attribute name="primary-nav" value="/WEB-INF/jsp/navigation.jsp" />
+		<!-- Header portion of main body -->
+		<put-attribute name="body-header" value="/WEB-INF/jsp/empty.jsp" />
+		<!-- Content portion of main body -->
+		<put-attribute name="body-content" value="/WEB-INF/jsp/empty.jsp" />
+		<!-- Footer portion of main body -->
+		<put-attribute name="body-footer" value="/WEB-INF/jsp/empty.jsp" />
+		<!-- Footer for app -->
+		<put-attribute name="footer" value="/WEB-INF/jsp/empty.jsp" />
+
+	</definition>
+
+	<!-- Tiles definition for split-pane approach. Each attribute listed here 
+		should be explicitly inserted in the template. Corresponding CSS class structure 
+		matches the attribute names. -->
+	<definition name="splitPane" template="/WEB-INF/jsp/layouts/split.jsp">
+		<!-- Banner image -->
+		<put-attribute name="banner" value="/WEB-INF/jsp/banner.jsp" />
+		<!-- Branding information, like header/title/app info -->
+		<put-attribute name="branding" value="/WEB-INF/jsp/branding.jsp" />
+		<!-- User login module -->
+		<put-attribute name="user-info" value="/WEB-INF/jsp/user/loginLink.jsp" />
+		<!-- primary navigation menu -->
+		<put-attribute name="primary-nav" value="/WEB-INF/jsp/navigation.jsp" />
+		<!-- Header portion of main body -->
+		<put-attribute name="body-header" value="/WEB-INF/jsp/empty.jsp" />
+		<!-- Content portion of main body -->
+		<put-attribute name="body-content-left" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="body-content-right" value="/WEB-INF/jsp/empty.jsp" />
+		<!-- Footer for app -->
+		<put-attribute name="footer-left" value="/WEB-INF/jsp/empty.jsp" />
+		<!-- Footer for app -->
+		<put-attribute name="footer-right" value="/WEB-INF/jsp/empty.jsp" />
+	</definition>
+
+	<!-- Pop-up layout to setup the standard header tags for pop-up windows 
+		that do not contain the navbar -->
+	<definition name="popup" template="/WEB-INF/jsp/layouts/popup.jsp">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/empty.jsp" />
+	</definition>
+
+	<!-- Pop-up layout with a built-in form and standard header tags for pop-up 
+		windows that do not contain the navbar -->
+	<definition name="form.popup" template="/WEB-INF/jsp/layouts/formpopup.jsp">
+		<put-attribute name="form-content" value="/WEB-INF/jsp/empty.jsp" />
+	</definition>
+
+	<definition name="home-page" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+
+    <definition name="admin.home.edit" extends="default">
+        <put-attribute name="body-content" value="/WEB-INF/jsp/manageApplication/editHomePage.jsp" />
+    </definition>
+
+	<definition name="about" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/administration/about.jsp" />
+	</definition>
+
+	<definition name="confirm.difupdates" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/administration/confirmUpdate.jsp" />
+	</definition>
+
+	<definition name="confirm.modifications" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/confirmModifications.jsp" />
+	</definition>
+
+	<definition name="confirm.reject" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/review/reject.jsp" />
+	</definition>
+
+	<definition name="display.settings" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/user/displaySettings.jsp" />
+	</definition>
+
+	<definition name="search.settings" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/user/searchSettings.jsp" />
+	</definition>
+
+	<definition name="dosage.form.wizard" extends="default">
+		<put-attribute name="body-content" value="dosage.form.add.form" />
+	</definition>
+
+	<definition name="dosage.form.add.form" template="/WEB-INF/jsp/domains/dosageform.jsp">
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/domains/addbuttons.jsp" />
+	</definition>
+
+	<definition name="dosage.form.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="drug.class.wizard" extends="default">
+		<put-attribute name="body-content" value="drug.class.code.add.form" />
+	</definition>
+
+	<definition name="drug.class.code.add.form" template="/WEB-INF/jsp/domains/drugClassCode.jsp">
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/domains/addbuttons.jsp" />
+	</definition>
+
+	<definition name="drug.class.code.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="drug.class.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="drug.text.wizard" extends="default">
+		<put-attribute name="body-content" value="drug.text.add.form" />
+	</definition>
+
+	<definition name="drug.text.add.form" template="/WEB-INF/jsp/domains/drugtext.jsp">
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/domains/addbuttons.jsp" />
+	</definition>
+
+	<definition name="drug.text.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="exception" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/error/exception.jsp" />
+	</definition>
+	
+	<definition name="exception.security" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/error/securityException.jsp" />
+	</definition>
+
+	<definition name="exception.noSuchFlowExecution" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/error/noSuchFlowExecution.jsp" />
+	</definition>
+
+	<definition name="ingredient.wizard" extends="default">
+		<put-attribute name="body-content" value="ingredient.add.form" />
+	</definition>
+
+	<definition name="ingredient.add.form" template="/WEB-INF/jsp/domains/ingredient.jsp">
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/domains/addbuttons.jsp" />
+	</definition>
+
+	<definition name="ingredient.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="LOCAL.modification.summary" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/local/manageditem/modSummary.jsp" />
+	</definition>
+
+	<definition name="managed.data.wizard" extends="default">
+		<put-attribute name="body-content" value="managed.data.add" />
+	</definition>
+
+	<definition name="managed.data.add" template="/WEB-INF/jsp/domains/add.jsp">
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/domains/addbuttons.jsp" />
+	</definition>
+
+	<definition name="migration-page" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/pages/migration.jsp" />
+	</definition>
+
+	<definition name="migration-page-ajax" template="/WEB-INF/jsp/pages/migration.ajax.jsp">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/pages/migration.ajax.jsp" />
+	</definition>
+
+	<definition name="managed.data.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/domains/searchcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/domains/searchresults.jsp" />
+		<put-attribute name="body-footer"
+			value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+	</definition>
+
+	<definition name="managed.data.edit.spring" extends="default">
+		<put-attribute name="body-content" value="managed.item.edit.form.spring" />
+		<put-attribute name="body-footer"
+			value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+	</definition>
+
+	<definition name="managed.data.request.edit.spring" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/review/filters.jsp" />
+		<!-- <put-attribute name="body-content-left" value="/WEB-INF/jsp/review/domainbody.jsp" 
+			/> -->
+		<put-attribute name="body-content" value="managed.item.edit.form.spring" />
+		<put-attribute name="body-footer"
+			value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+	</definition>
+
+	<definition name="rx.consult.request.edit.spring" extends="managed.data.request.edit.spring">
+	</definition>
+
+	<definition name="standard.med.route.request.edit.spring"
+		extends="managed.data.request.edit.spring">
+	</definition>
+
+	<definition name="medication.instruction.request.edit.spring"
+		extends="managed.data.request.edit.spring">
+	</definition>
+
+	<definition name="standard.med.route.request.edit.spring"
+		extends="managed.data.request.edit.spring">
+	</definition>
+
+	<definition name="dosage.form.request.edit.spring" extends="managed.data.request.edit.spring">
+	</definition>
+
+	<definition name="drug.class.request.edit.spring" extends="managed.data.request.edit.spring">
+	</definition>
+
+	<definition name="NATIONAL.modification.summary" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/national/manageditem/modSummary.jsp" />
+	</definition>
+
+	<definition name="NATIONAL.inactivation.summary" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/national/manageditem/inactivationSummary.jsp" />
+	</definition>
+
+	<definition name="LOCAL.inactivation.summary" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/local/manageditem/inactivationSummary.jsp" />
+	</definition>
+
+
+	<definition name="merge.summary" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/mergeSummary.jsp" />
+	</definition>
+
+	<definition name="notifications.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/notifications/filters.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/notifications/body.jsp" />
+	</definition>
+
+	<definition name="problem.report.text" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/problemreporttext.jsp" />
+	</definition>
+
+	<definition name="partial.comment" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/partialsavecomment.jsp" />
+	</definition>
+
+	<definition name="partial.items" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/partialsave.jsp" />
+	</definition>
+
+	<definition name="partial.items.error" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/partialsaveerror.jsp" />
+	</definition>
+
+	<definition name="print.pmi" extends="default">
+		<put-attribute name="body-content" value="view.pmi.form" />
+	</definition>
+
+	<definition name="view.pmi.form" template="/WEB-INF/jsp/cots/viewpmi.jsp">
+		<put-attribute name="pmi" value="/WEB-INF/jsp/cots/printpmi.jsp" />
+	</definition>
+
+	<definition name="pmi.popup" extends="popup">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/cots/printpmi.jsp" />
+	</definition>
+
+	<definition name="review.ndc" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/cots/reviewndc.jsp" />
+	</definition>
+
+	<definition name="fdb-add" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/cots/fdbAdd.jsp" />
+	</definition>
+
+	<definition name="fdb-add-print" extends="popup">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/cots/fdbAddPrint.jsp" />
+	</definition>
+
+	<definition name="fdb-add-print-details" extends="popup">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbAddPrintDetails.jsp" />
+	</definition>
+
+	<definition name="fdb-add-details" extends="popup">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbAddPrintDetails.jsp" />
+	</definition>
+
+	<definition name="ndc-add-details" extends="popup">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/cots/ndcDetails.jsp" />
+	</definition>
+
+	<definition name="matching-results" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/matchingResults.jsp" />
+	</definition>
+
+	<definition name="fdb-update" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/cots/fdbUpdate.jsp" />
+	</definition>
+
+	<definition name="fdb-update-details" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbUpdateDetails.jsp" />
+	</definition>
+
+
+	<definition name="fdb-auto-add" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbAutoAddReport.jsp" />
+	</definition>
+
+	<definition name="fdb-auto-update" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbAutoUpdateReport.jsp" />
+	</definition>
+
+	<definition name="fdb-auto-update-details" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbAutoUpdateDetails.jsp" />
+	</definition>
+
+	<definition name="fdb-auto-add-details" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/cots/fdbAutoAddDetails.jsp" />
+	</definition>
+
+	<definition name="quick.actions.spring" template="/WEB-INF/jsp/product/quickactions.jsp">
+		<put-attribute name="cmop.mark" value="/WEB-INF/jsp/product/cmopMark.jsp" />
+		<put-attribute name="enter.edit.dosages"
+			value="/WEB-INF/jsp/product/enter_editDosages.jsp" />
+		<put-attribute name="view.pmi" value="product.view.pmi.spring" />
+		<put-attribute name="view.warninglabels"
+			value="/WEB-INF/jsp/product/warninglabels.jsp" />
+	</definition>
+
+	<definition name="product.view.pmi.spring" template="/WEB-INF/jsp/product/viewpmi.jsp">
+		<put-attribute name="pmi" value="/WEB-INF/jsp/cots/printpmi.jsp" />
+	</definition>
+
+
+	<definition name="ndc.wizard.input.spring.1" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/ndc/wizardHeader.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/ndc/ndcuniquenessFields.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/manageditem/empty.jsp" />
+	</definition>
+
+	<definition name="ndc.wizard.input.spring.2" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/ndc/wizardHeader.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/ndc/ndccommonFields.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/manageditem/empty.jsp" />
+	</definition>
+
+	<definition name="orderable.item.wizard.input.spring.1"
+		extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/orderableitem/wizardHeader.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/orderableitem/OIuniquenessFields.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/manageditem/empty.jsp" />
+		<!-- <put-attribute name="footer" value="/WEB-INF/jsp/manageditem/opentemplate.jsp"/> -->
+	</definition>
+
+
+	<definition name="orderable.item.wizard.input.spring.2"
+		extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/orderableitem/wizardHeader.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/orderableitem/OIcommonFields.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/manageditem/empty.jsp" />
+		<!-- <put-attribute name="footer" value="/WEB-INF/jsp/manageditem/opentemplate.jsp"/> -->
+	</definition>
+
+	<definition name="orderable.item.wizard.input.spring.3"
+		extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/orderableitem/wizardHeader.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/orderableitem/OIadditionalFields.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/manageditem/empty.jsp" />
+	</definition>
+
+	<definition name="managed.item.edit.spring" extends="default">
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/manageditem/opentemplate.jsp" />
+	</definition>
+
+	<definition name="managed.item.edit.form.spring" template="/WEB-INF/jsp/manageditem/edit.jsp">
+		<put-attribute name="tabs.list" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="tabs.content" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="reports"
+			value="/WEB-INF/jsp/manageditem/problemreports.jsp" />
+		<put-attribute name="children" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="history"
+			value="/WEB-INF/jsp/manageditem/history.jsp" />
+		<put-attribute name="requests"
+			value="/WEB-INF/jsp/manageditem/requests.jsp" />
+		<put-attribute name="az" value="/WEB-INF/jsp/manageditem/a-z.jsp" />
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/manageditem/buttons.jsp" />
+	</definition>
+
+	<definition name="ndc.edit.spring" extends="managed.item.edit.spring">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/ndc/header.jsp" />
+		<put-attribute name="body-content" value="ndc.edit.form.spring" />
+	</definition>
+
+	<definition name="orderable.item.edit.spring" extends="managed.item.edit.spring">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/orderableitem/header.jsp" />
+		<put-attribute name="body-content" value="orderable.item.edit.form.spring" />
+	</definition>
+
+	<definition name="pharmacy.system.edit.spring" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/pharmacySystem/header.jsp" />
+		<put-attribute name="body-content" value="pharmacy.system.edit.form.spring" />
+	</definition>
+
+	<definition name="pharmacy.system.edit.form.spring" extends="managed.item.edit.form.spring">
+		<put-attribute name="tabs.list"
+			value="/WEB-INF/jsp/pharmacySystem/editTabs.jsp" />
+		<put-attribute name="tabs.content"
+			value="/WEB-INF/jsp/pharmacySystem/editTabsContent.jsp" />
+	</definition>
+
+	<definition name="product.edit.spring" extends="managed.item.edit.spring">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/product/header.jsp" />
+		<put-attribute name="body-content" value="product.edit.form.spring" />
+	</definition>
+
+	<definition name="rx.consult.wizard" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/rxConsult/add.jsp" />
+	</definition>
+
+	<definition name="rx.consult.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="standard.med.route.wizard" extends="default">
+		<put-attribute name="body-content" value="standard.med.route.add.form" />
+	</definition>
+
+	<definition name="standard.med.route.add.form" template="/WEB-INF/jsp/domains/standardmedroute.jsp">
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/domains/addbuttons.jsp" />
+	</definition>
+
+	<definition name="standard.med.route.edit.spring" extends="managed.data.edit.spring" />
+
+	<definition name="local.medication.route.edit.spring"
+		extends="managed.data.edit.spring" />
+
+	<definition name="console.edit.form"
+		template="/WEB-INF/jsp/systemActions/systemActionsEdit.jsp">
+		<put-attribute name="tabs.list" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="tabs.content" value="/WEB-INF/jsp/empty.jsp" />
+	</definition>
+
+	<definition name="system.actions.edit" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/systemActions/header.jsp" />
+		<put-attribute name="body-content" value="system.actions.edit.form" />
+	</definition>
+
+	<definition name="system.actions.edit.form" extends="console.edit.form">
+		<put-attribute name="tabs.list"
+			value="/WEB-INF/jsp/systemActions/editTabs.jsp" />
+		<put-attribute name="tabs.content"
+			value="/WEB-INF/jsp/systemActions/editTabsContent.jsp" />
+	</definition>
+
+	<definition name="edit.field" extends="popup">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/editField.jsp" />
+	</definition>
+
+	<definition name="viewed.by" template="/WEB-INF/jsp/notifications/viewedBy.jsp" />
+
+	<definition name="review.search.spring" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/review/filters.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/jsp/review/body.jsp" />
+	</definition>
+
+	<definition name="request.summary" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/review/reqSummary.jsp" />
+	</definition>
+
+	<definition name="multi.edit.mod.summary" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/multiEditModSummary.jsp" />
+	</definition>
+
+	<definition name="advanced.search.spring" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/advancedcriteria.jsp" />
+<!-- 		<put-attribute name="body-content" -->
+<!-- 			value="/WEB-INF/jsp/search/advancedresults.jsp" /> -->
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/search/opentemplate.jsp" />
+	</definition>
+
+	<definition name="advanced.search.results" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/advancedcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/advancedresults.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/search/opentemplate.jsp" />
+	</definition>
+
+	<definition name="advanced.search.print.template" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/templateConfig.jsp" />
+	</definition>
+
+	<definition name="advanced.search.templates" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/managesearchtemplates.jsp" />
+	</definition>
+
+	<definition name="advanced.search.warn" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/tools/warning.jsp" />
+	</definition>
+
+	<definition name="domain.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/domains/searchcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/domains/searchresults.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/search/opentemplate.jsp" />
+	</definition>
+
+	<definition name="simple.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/simplecriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/simpleresults.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/search/opentemplate.jsp" />
+	</definition>
+
+	<definition name="user.login" extends="default">
+		<put-attribute name="body-content" value="/WEB-INF/jsp/user/login.jsp" />
+	</definition>
+
+	<definition name="user.logout" extends="default">
+        <put-attribute name="body-content" value="/WEB-INF/jsp/user/logout.jsp" />
+    </definition>
+
+	<definition name="move.products.end" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/manageditem/moveProductsEnd.jsp" />
+	</definition>
+
+	<definition name="product.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/searchparentcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/simpleresults.jsp" />
+	</definition>
+
+	<definition name="orderable.item.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/searchparentcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/simpleresults.jsp" />
+	</definition>
+
+	<definition name="product.selectParent.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/searchparentcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/simpleresults.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/search/opentemplate.jsp" />
+	</definition>
+
+	<definition name="orderable.item.selectParent.search"
+		extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/search/searchparentcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/search/simpleresults.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/search/opentemplate.jsp" />
+	</definition>
+
+	<definition name="reports" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+	</definition>
+
+	<definition name="reports.download" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportDownload.jsp" />
+	</definition>
+
+	<definition name="reports.error" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportsDownloadError.jsp" />
+	</definition>
+
+	<definition name="report.popup" extends="popup">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportResults.jsp" />
+	</definition>
+
+	<definition name="reports.CaptureNDF" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportDownload.jsp" />
+	</definition>
+
+	<definition name="reports.WarningLabels" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportDownload.jsp" />
+	</definition>
+
+	<definition name="reports.ListIngredients" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportDownload.jsp" />
+	</definition>
+
+	<definition name="reports.ProposedInactivation" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportResults.jsp" />
+	</definition>
+
+	<definition name="reports.Exclusions" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportResults.jsp" />
+	</definition>
+
+	<definition name="reports.NoActiveNDCS" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportResults.jsp" />
+	</definition>
+
+	<definition name="reports.DrugClass" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportResults.jsp" />
+	</definition>
+
+	<definition name="reports.VUIDApproval" extends="default">
+		<put-attribute name="body-header" value="/WEB-INF/jsp/reports/reports.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/reports/reportResults.jsp" />
+	</definition>
+
+	<definition name="running.difUpdate" extends="default">
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/administration/runningDifUpdate.jsp" />
+	</definition>
+
+	<!-- NOTE: Prefix before '.search' must match SearchDomain.java:SETUP_ATC 
+		(to lower case). -->
+	<definition name="setup_atc.search" extends="default">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/local/search/atcsetupcriteria.jsp" />
+		<put-attribute name="body-content"
+			value="/WEB-INF/jsp/local/search/atcsetupresults.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/empty.jsp" />
+	</definition>
+
+	<definition name="product.atc.only.edit" extends="splitPane">
+		<put-attribute name="body-header"
+			value="/WEB-INF/jsp/local/search/atcsetupcriteria.jsp" />
+		<put-attribute name="body-content-left"
+			value="/WEB-INF/jsp/local/search/atcsetupresults.jsp" />
+		<put-attribute name="body-content-right"
+			value="/WEB-INF/jsp/local/product/inpatient_unitdose_standalone.jsp" />
+		<put-attribute name="footer-left" value="/WEB-INF/jsp/empty.jsp" />
+	</definition>
+
+	<definition name="product.atc.setup.edit.form" template="/WEB-INF/jsp/manageditem/edit.jsp">
+		<put-attribute name="tabs.list" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="tabs.content"
+			value="/WEB-INF/jsp/local/product/inpatient_unitdose.jsp" />
+		<put-attribute name="children" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="history" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name="requests"
+			value="/WEB-INF/jsp/local/product/inpatient_unitdose.jsp" />
+		<put-attribute name="az"
+			value="/WEB-INF/jsp/local/product/inpatient_unitdose.jsp" />
+
+		<put-attribute name="buttons"
+			value="/WEB-INF/jsp/manageditem/buttons.jsp" />
+	</definition>
+
+	<definition name="enter.edit.dosages.popup" extends="form.popup">
+		<put-attribute name="form-content"
+			value="/WEB-INF/jsp/product/enter_editDosages.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>

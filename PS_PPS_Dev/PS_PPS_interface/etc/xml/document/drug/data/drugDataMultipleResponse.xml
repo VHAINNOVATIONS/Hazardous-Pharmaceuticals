@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugData xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/data/response">
+    <drugsNotFound>
+        <vuid>2902325</vuid>
+        <ndc>283582341835</ndc>
+    </drugsNotFound>
+    <drugDataFields>
+        <drugRequestIdentifier>
+            <ndc>182014101</ndc>
+        </drugRequestIdentifier>
+        <booleanDataField fieldName="Mark For Local Use" value="true"/>
+        <booleanDataField fieldName="Protect From Light" value="false"/>
+        <stringDataField fieldName="NDC" value="000182-0141-01"/>
+        <stringDataField fieldName="Trade Name" value="ACETAMINOPHEN TAB"/>
+        <stringDataField fieldName="Vendor" value="MCKESSON CORP"/>
+        <stringDataField fieldName="VSN" value="1000"/>
+        <stringDataField fieldName="UPC" value="7839FOP3233444"/>
+        <stringDataField fieldName="Source" value="VA"/>
+        <doubleDataField fieldName="NDC Price Per Dispense Unit" value="0.0"/>
+        <doubleDataField fieldName="NDC Price Per Order Unit" value="0.0"/>
+        <doubleDataField fieldName="Unit Price" value="0.0"/>
+        <listDataField fieldName="Product Type">
+            <item value="MEDICATION"/>
+        </listDataField>
+        <listDataField fieldName="Refrigeration">
+            <item value="REFRIGERATE"/>
+        </listDataField>
+        <listDataField fieldName="Shape">
+            <item value="ROUND"/>
+        </listDataField>
+        <listDataField fieldName="Color">
+            <item value="WHITE"/>
+        </listDataField>
+        <listDataField fieldName="Item Status">
+            <item value="ACTIVE"/>
+        </listDataField>
+        <complexDataField fieldName="Manufacturer">
+            <complexItem name="Manufacturer Name" value="IVAX"/>
+            <complexItem name="Address" value="123 Tom Slick Ave San Antonio, TX 78238"/>
+            <complexItem name="Phone Number" value="(210) 555-1212"/>
+        </complexDataField>
+        <complexDataField fieldName="Order Unit">
+            <complexItem name="Order Unit Abbreviation" value="BT"/>
+            <complexItem name="Order Unit Expansion" value="BOTTLE"/>
+        </complexDataField>
+        <complexDataField fieldName="Package Type">
+            <complexItem name="Package Type Name" value="BOTTLE"/>
+        </complexDataField>
+    </drugDataFields>
+    <drugDataFields>
+        <drugRequestIdentifier>
+            <vuid>4003336</vuid>
+        </drugRequestIdentifier>
+        <booleanDataField fieldName="Transmit to CMOP (Local)" value="true"/>
+        <booleanDataField fieldName="Do Not Mail" value="true"/>
+        <booleanDataField fieldName="Exclude Drg-Drg Interaction Ck" value="false"/>
+        <booleanDataField fieldName="High-Risk Follow-Up" value="false"/>
+        <booleanDataField fieldName="High-Risk Med" value="false"/>
+        <booleanDataField fieldName="Local Non-Formulary" value="true"/>
+        <booleanDataField fieldName="Mark For Local Use" value="true"/>
+        <booleanDataField fieldName="Med Controlled Substance" value="false"/>
+        <booleanDataField fieldName="National Formulary Indicator" value="false"/>
+        <booleanDataField fieldName="OP External Dispense" value="false"/>
+        <booleanDataField fieldName="CMOP Dispense (National)" value="false"/>
+        <booleanDataField fieldName="Witness Required" value="false"/>
+        <booleanDataField fieldName="Patient Specific Label" value="false"/>
+        <booleanDataField fieldName="Narcotic" value="false"/>
+        <booleanDataField fieldName="Protect From Light" value="false"/>
+        <booleanDataField fieldName="Do Not Handle if Pregnant" value="false"/>
+        <booleanDataField fieldName="Follow-Up Time" value="false"/>
+        <booleanDataField fieldName="Hazardous to Dispose" value="false"/>
+        <booleanDataField fieldName="Hazardous to Handle" value="false"/>
+        <booleanDataField fieldName="Hazardous to Patient" value="false"/>
+        <booleanDataField fieldName="Long Term Out of Stock" value="false"/>
+        <booleanDataField fieldName="Low Safety Margin" value="false"/>
+        <booleanDataField fieldName="Non-Renewable" value="false"/>
+        <integerDataField fieldName="AR/WS Amis Conversion Number" value="1"/>
+        <integerDataField fieldName="Current Inventory" value="0"/>
+        <integerDataField fieldName="Dispense Days Supply Limit" value="30"/>
+        <integerDataField fieldName="GCNSEQNO" value="19"/>
+        <integerDataField fieldName="Maximum Dose Per Day" value="1"/>
+        <integerDataField fieldName="Monitor Max Days" value="7"/>
+        <integerDataField fieldName="Reorder Level" value="1"/>
+        <stringDataField fieldName="Action Profile Message (OP)" value="Action Profile Msg Text"/>
+        <stringDataField fieldName="Day (ND) Or Dose (NL) Limit" value="12D"/>
+        <stringDataField fieldName="DEA Special Handling" value="3C"/>
+        <stringDataField fieldName="Dispense Quantity Override Reason" value="DQO Reason Text"/>
+        <stringDataField fieldName="Max Dispense Limit" value="Max Disp Limit Text"/>
+        <stringDataField fieldName="Message" value="Message Text"/>
+        <stringDataField fieldName="Generic Name" value="DIGOXIN"/>
+        <stringDataField fieldName="National Formulary Name" value="DIGOXIN TAB"/>
+        <stringDataField fieldName="Override Reason Enterer" value="Override Reason Enterer"/>
+        <stringDataField fieldName="Total Dispense Quantity" value="100"/>
+        <stringDataField fieldName="VA Print Name" value="DIGOXIN 0.25MG TAB"/>
+        <stringDataField fieldName="VA Product Name" value="DIGOXIN 0.25MG TAB"/>
+        <stringDataField fieldName="VUID" value="4003336"/>
+        <stringDataField fieldName="Source" value="VA"/>
+        <listDataField fieldName="Application Package Use">
+            <item value="O-OUTPATIENT"/>
+        </listDataField>
+        <listDataField fieldName="CS Federal Schedule">
+            <item value="0 - Unscheduled"/>
+        </listDataField>
+        <listDataField fieldName="DAW Code">
+            <item value="0-NO PRODUCT SELECTION INDICATED"/>
+        </listDataField>
+        <listDataField fieldName="Inpatient Pharmacy Location">
+            <item value="3E NORTH"/>
+            <item value="3E NORTH"/>
+        </listDataField>
+        <listDataField fieldName="Primary VA Drug Class">
+            <item value="CV050"/>
+        </listDataField>
+        <listDataField fieldName="Request Status">
+            <item value="APPROVED"/>
+        </listDataField>
+        <listDataField fieldName="Secondary VA Drug Class"/>
+        <listDataField fieldName="Single/Multi Source Product">
+            <item value="S - Single Source"/>
+        </listDataField>
+        <listDataField fieldName="Product Type">
+            <item value="MEDICATION"/>
+        </listDataField>
+        <listDataField fieldName="Product Type">
+            <item value="P - PRN"/>
+        </listDataField>
+        <listDataField fieldName="VA Dispense Unit">
+            <item value="TAB"/>
+        </listDataField>
+        <listDataField fieldName="Refrigeration">
+            <item value="REFRIGERATE"/>
+        </listDataField>
+        <listDataField fieldName="Recall Level">
+            <item value="0-NO RECALL"/>
+        </listDataField>
+        <listDataField fieldName="Formulary">
+            <item value="FORMULARY"/>
+        </listDataField>
+        <listDataField fieldName="Item Status">
+            <item value="ACTIVE"/>
+        </listDataField>
+        <listDataField fieldName="Labs During Administration">
+            <item value="HEMOGLOBIN ALC/BLOOD"/>
+        </listDataField>
+        <listDataField fieldName="Labs During Finishing An Order"/>
+        <listDataField fieldName="Labs During Order Entry"/>
+        <listDataField fieldName="Vitals During Administration">
+            <item value="PAIN LEVEL"/>
+        </listDataField>
+        <listDataField fieldName="Vitals During Finishing An Order"/>
+        <listDataField fieldName="Vitals During Order Entry"/>
+        <complexDataField fieldName="Ingredients">
+            <complexItem name="Ingredient Name" value="DIGOXIN"/>
+            <complexItem name="Primary Ingredients" value="DIGITALIS"/>
+            <complexItem name="VUID" value="4018047"/>
+        </complexDataField>
+        <complexDataField fieldName="Drug Class">
+            <complexItem name="Description" value="CV050-DIGITALIS GLYCOSIDES"/>
+            <complexItem name="Code" value="CV050"/>
+            <complexItem name="Classification" value="0-Major"/>
+            <complexItem name="VUID" value="4021564"/>
+            <complexItem name="Parent Class" value=""/>
+        </complexDataField>
+        <complexDataField fieldName="Dispense Unit">
+            <complexItem name="Dispense Unit Name" value="TAB"/>
+        </complexDataField>
+        <complexDataField fieldName="Synonym">
+            <complexItem name="NDC Code" value="062794-0146-01"/>
+            <complexItem name="Dispense Units Per Order Unit" value="1"/>
+            <complexItem name="Price per Dispense Unit" value=" "/>
+            <complexItem name="VSN" value=" "/>
+            <complexItem name="Price Per Order Unit" value=" "/>
+            <complexItem name="Synonym Name" value="DIGOXIN"/>
+            <complexItem name="Product Intended Use" value="0-TRADE NAME"/>
+            <complexItem name="Vendor" value=" "/>
+        </complexDataField>
+        <complexDataField fieldName="ATC Canisters">
+            <complexItem name="Ward Group For ATC Canisters" value="3 NORTH SURG"/>
+            <complexItem name="ATC Canister" value="1"/>
+        </complexDataField>
+        <complexDataField fieldName="Possible Dosages">
+            <complexItem name="Dispense Units Per Dose" value="1.0"/>
+            <complexItem name="Dose" value="0.25"/>
+            <complexItem name="Package" value=""/>
+        </complexDataField>
+        <complexDataField fieldName="Possible Dosages">
+            <complexItem name="Dispense Units Per Dose" value="2.0"/>
+            <complexItem name="Dose" value="0.5"/>
+            <complexItem name="Package" value=""/>
+        </complexDataField>
+        <complexDataField fieldName="Local Possible Dosage">
+            <complexItem name="Dose Unit" value="CAP"/>
+            <complexItem name="Other Language Dosage Name" value="0"/>
+            <complexItem name="BCMA Units Per Dose" value="2.0"/>
+            <complexItem name="Numeric Dose" value="0.25"/>
+            <complexItem name="Local Possible Dosage" value="0.25 MG"/>
+            <complexItem name="Package" value=""/>
+        </complexDataField>
+    </drugDataFields>
+</drugData>

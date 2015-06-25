@@ -1,0 +1,111 @@
+a {
+	text-indent:5px;
+	color: #0000CC;
+}
+
+.productId {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color:black;
+	line-height:20px;
+	background-color:inherit;
+	vertical-align:top;
+	margin-top:15px;
+}
+.orderableItem {
+	line-height:20px;
+	vertical-align:top;
+	margin-top:15px;
+	text-align:left;
+	width:100%;
+}
+
+.orderableHead {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	float:right;
+	line-height:28px;
+}
+
+.orderableItem {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	float:right;
+	line-height:28px;
+}
+
+.generalInfo {
+	height: 95px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	font-weight:normal;
+	/*border-color:#000000;
+	border-width:medium;
+	border:solid;*/
+	background-color:inherit;
+	margin-left:10px;
+	vertical-align:top;
+}
+
+.buttonPanel {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	height:30px;
+	line-height:30px;
+	margin-top:10px;
+	background-color:inherit;
+}
+
+.buttonLeft {
+	float:left;
+	margin-top:inherit;
+}
+.mybuttonCenter {
+	float:left;
+	size:25em;
+	margin-top:5px;
+}
+.buttonCenter {
+	float:left;
+	margin-left:400px;
+	margin-top:inherit;
+}
+.adjbuttonCenter {
+	float:left;
+	margin-left:2.5px;
+	margin-top:inherit;
+}
+.buttonRight {
+	float:right;
+	margin-right:10px;
+	margin-top:inherit;
+}
+
+.heading {
+	width:100%;
+	margin-top:15px;
+}
+
+.mainBody {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	margin-top: 70px;
+	width:100%;
+}
+
+.button {
+	size:12em;
+	text-align:center;
+}
+
+.ndcBody {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	line-height:26px;
+	margin-top:75px;
+}
+
+.body {
+	width:100%;
+	float:none;	
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugAccountabilityResponse xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/drug/drugaccountability/response">
+    <responseType>
+        <NDC>00378-4010-30</NDC>
+        <type>Success</type>
+        <ErrorMessage></ErrorMessage>
+    </responseType>
+    <responseType>
+        <NDC>00378-4010-31</NDC>
+        <type>Success</type>
+        <ErrorMessage></ErrorMessage>
+    </responseType>
+    <responseType>
+        <NDC>00378-4010-32</NDC>
+        <type>Success</type>
+        <ErrorMessage></ErrorMessage>
+    </responseType>
+    <responseType>
+        <NDC>00378-4010-33</NDC>
+        <type>Success</type>
+        <ErrorMessage></ErrorMessage>
+    </responseType>
+</drugAccountabilityResponse>
+

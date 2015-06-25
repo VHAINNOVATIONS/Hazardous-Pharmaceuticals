@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/orderableItem"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/outbound/item/orderableItem"
+    xmlns:common="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+    xmlns:dosageForm="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/dosageForm"
+    xmlns:standardMedicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/standardMedicationRoutes"
+    xmlns:medicationRoutes="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationRoutes"
+    xmlns:pharmacyOrderableItem="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/pharmacyOrderableItem"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/common"
+        schemaLocation="../common.xsd" />
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/dosageForm"
+        schemaLocation="../pdm/dosageFormFile.xsd" />
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/standardMedicationRoutes"
+        schemaLocation="../pdm/standardMedicationRoutesFile.xsd" />
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/medicationRoutes"
+        schemaLocation="../pdm/medicationRoutesFile.xsd" />
+    <xsd:import
+        namespace="gov/va/med/pharmacy/peps/external/common/vo/outbound/pdm/pharmacyOrderableItem"
+        schemaLocation="../pdm/pharmacyOrderableItemFile.xsd" />
+
+    <xsd:element name="orderableItem">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="dosageFormFile"
+                    type="dosageForm:dosageFormFile"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="standardMedicationRoutesFile"
+                    type="standardMedicationRoutes:standardMedicationRoutesFile"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <!-- Depends on Standard Medication Routes File -->
+                <xsd:element
+                    name="medicationRoutesFile"
+                    type="medicationRoutes:medicationRoutesFile"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="pharmacyOrderableItemFile"
+                    type="pharmacyOrderableItem:pharmacyOrderableItemFile"
+                    minOccurs="1"
+                    maxOccurs="1" />
+            </xsd:sequence>
+
+            <xsd:attribute
+                name="status"
+                type="common:itemStatus"
+                use="required" />
+
+            <xsd:attribute
+                name="pepsIdNumber"
+                type="xsd:integer"
+                use="required" />
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

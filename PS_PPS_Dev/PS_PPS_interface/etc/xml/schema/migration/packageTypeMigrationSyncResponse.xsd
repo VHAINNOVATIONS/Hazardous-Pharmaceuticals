@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="gov/va/med/pharmacy/peps/external/common/vo/inbound/migration/packageType/response"
+    xmlns="gov/va/med/pharmacy/peps/external/common/vo/inbound/migration/packageType/response"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:element name="packageTypeMigrationSynchResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element
+                    name="responseType"
+                    type="responseType"
+                    minOccurs="1"
+                    maxOccurs="1" />
+
+                <xsd:element
+                    name="packageTypeIen"
+                    type="xsd:string"
+                    minOccurs="0"
+                    maxOccurs="1" />
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="responseType">
+     <xsd:sequence>
+            <xsd:element name="status" type="responseStatusType" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="message" type="xsd:string" minOccurs="0" maxOccurs="1"/>     
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="responseStatusType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Success" /><!-- Message was processed successfully by VistA. -->
+            <xsd:enumeration value="Failure" /><!-- Message was not enqueued successfully. -->
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
+                    

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF5ODJZW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:37:50:588 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:38:14:061 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="25">src/gov/va/med/pharmacy/peps/presentation/common/action/ConsoleAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5OEI4C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:38:34:812 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:01:00:400 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="109">src/gov/va/med/pharmacy/peps/presentation/common/action/ConsoleAction.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>TODO</Summary>
+    <Description>There is a TODO here that indicates the code is not complete/correct.</Description>
+    <Annotation />
+    <Revision>TODO removed and details changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5OFSTG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:39:35:332 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-25 :: 09:39:07:869 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="14">src/gov/va/med/pharmacy/peps/presentation/national/action/ConsoleAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Unused import</Summary>
+    <Description>Remove added stuff</Description>
+    <Annotation />
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5OH3H8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:40:35:804 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 10:13:26:637 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="23">src/gov/va/med/pharmacy/peps/presentation/national/action/ConsoleAction.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Deficient Javadoc comments</Summary>
+    <Description>Deficient Javadoc comments for class&#xD;
+Deficient Javadoc comments for method(s)&#xD;
+Deficient Javadoc comments for @params and @return statement(s)</Description>
+    <Annotation />
+    <Revision>Javadocs added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5OJ513">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:42:11:127 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:42:42:308 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="1">web/WEB-INF/jsp/tools/console.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>no comment</Summary>
+    <Description>I don't know enough about these to make an intelligent comment.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5OK0UG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:42:52:360 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 13:43:47:302 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>bsiegel</ReviewerId>
+    <AssignedTo />
+    <File line="1">web/WEB-INF/jsp/tools/consoleConfig.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>no comment</Summary>
+    <Description>I don't know enough about these to make an intelligent comment.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

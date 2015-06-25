@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplPartialSaveMgtDo"
+    table="EPL_PARTIAL_SAVE_MGT"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="id"
+        type="java.lang.Long"
+        column="ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="hilo" />
+    </id>
+
+    <property
+        name="entityType"
+        type="java.lang.String"
+        column="ENTITY_TYPE"
+        not-null="true"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="requestType"
+        type="java.lang.String"
+        column="REQUEST_TYPE"
+        not-null="true"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="fileName"
+        type="java.lang.String"
+        column="FILE_NAME"
+        not-null="true"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="itemRevisionNumber"
+        type="java.lang.Long"
+        column="ITEM_REVISION_NUMBER"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="comments"
+        type="java.lang.String"
+        column="COMMENTS"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional many-to-one association to EplOrderableItemDo -->
+    <many-to-one
+        name="eplOrderableItem"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplOrderableItemDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="EPL_ID_OI_FK" />
+    </many-to-one>
+    <!-- bi-directional many-to-one association to EplProductDo -->
+    <many-to-one
+        name="eplProduct"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplProductDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="EPL_ID_PRODUCT_FK" />
+    </many-to-one>
+    <!-- bi-directional many-to-one association to EplNdcDo -->
+    <many-to-one
+        name="eplNdc"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplNdcDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="EPL_ID_NDC_FK" />
+    </many-to-one>
+
+</class>
+</hibernate-mapping>
+

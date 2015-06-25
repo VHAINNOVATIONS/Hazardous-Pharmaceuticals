@@ -1,0 +1,53 @@
+<project name="Common" default="compile" basedir="." xmlns:swri="http://www.swri.org">
+    <import file="../PS_PPS_common/etc/build/template/template.xml" />
+
+    <target name="init" depends="Template.init" description="Initialize the project" />
+
+    <target name="clean" depends="Template.clean" description="Clean the project" />
+
+    <target name="cleanAll" depends="Template.cleanAll" description="Clean the project and its dependencies" />
+
+    <target name="generate" depends="Template.generate" description="Generate the project artifacts">
+        <mkdir dir="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/common/capability/impl" />
+        <propertyfile file="${build.meta.dir}/properties/gov/va/med/pharmacy/peps/common/capability/impl/BuildVersionCapabilityImpl.properties">
+            <entry key="version" value="${build.version.full}" />
+            <entry key="baseline" value="${baseline.name}" />
+            <entry key="date" value="${build.date}" />
+        </propertyfile>
+    </target>
+
+    <target name="compile" depends="Template.compile" description="Compile the source code" />
+
+    <target name="compileEnvironments"
+            depends="Template.compileEnvironments"
+            description="Compile the source code environments (common, local, and national) separately" />
+
+    <target name="unitTest" depends="Template.unitTest" description="Execute the unit tests" />
+
+    <target name="buildUnitTest"
+            depends="Template.buildUnitTest"
+            description="Compile environments separately for dependency checking, then run unit tests" />
+
+    <target name="jar" depends="Template.jar" description="Package the project artifacts">
+        <swri:packageJar />
+
+        <if>
+            <istrue value="${profile}" />
+            <then>
+                <swri:packageJar>
+                    <additionalfileset>
+                        <fileset dir="${build.classes.dir}">
+                            <include name="**/profile/**/*.class" />
+                        </fileset>
+
+                        <fileset dir="${etc.dir}">
+                            <include name="xml/spring/ProfileContextDynamic.xml" />
+                        </fileset>
+                    </additionalfileset>
+                </swri:packageJar>
+            </then>
+        </if>
+    </target>
+
+    <target name="document" depends="Template.document" description="Document the project" />
+</project>

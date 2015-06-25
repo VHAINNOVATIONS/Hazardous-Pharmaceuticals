@@ -1,0 +1,101 @@
+﻿/*Created with Adobe RoboHelp 9.*/
+BODY {
+	font-family: Arial;
+	background-color: #ffffff;
+	font-size: 11pt;
+}
+H1 {
+	font-weight: bold;
+	font-size: 24.0pt;
+}
+LI.h1 {
+	font-weight: bold;
+	font-size: 24.0pt;
+}
+H2 {
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+LI.h2 {
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+H3 {
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+LI.h3 {
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+H4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+LI.h4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+H5 {
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+LI.h5 {
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+H6 {
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+LI.h6 {
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+P {
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 11pt;
+}
+LI.p {
+	font-size: 12.0pt;
+}
+A.expandspot {
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	font-size: 11pt;text-decoration: none;
+}
+SPAN.expandtext {
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+A.dropspot {
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+A.glossterm {
+	cursor: hand;
+	font-style: italic;
+	color: #0000ff;
+	text-decoration: none;
+}
+SPAN.glosstext {
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+OL,
+UL {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+A.popupspot {
+	font-size: 11pt;
+}
+li.Numbered {
+	list-style: decimal;
+}

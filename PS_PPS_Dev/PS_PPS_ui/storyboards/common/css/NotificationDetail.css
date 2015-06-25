@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+a {
+	text-indent:5px;
+	color: #0000CC;
+}
+h1{
+margin-top:70px;
+}
+.heading {
+	width:100%;
+	margin-top:5px;
+}
+
+.mainBody {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	margin-top: 80px;
+	width:100%;
+}
+.button {
+float:left;
+vertical-align:bottom;
+size:auto;
+width:5em;
+}

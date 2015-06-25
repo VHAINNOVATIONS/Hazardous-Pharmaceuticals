@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4ARJW3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:29:02:835 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:29:26:788 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="14">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplTradeNameDaoImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>No actual text</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4ASHXS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:29:46:960 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:30:12:897 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfAssocValueDaoImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>No actual text</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BEBB8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:46:44:804 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:47:05:819 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaDfDaoImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>No actual text</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BHDEQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:49:07:490 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:23:24:989 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="16">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfLovDaoImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>Empty Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D75UE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:24:56:534 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:25:25:502 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplOiMedRouteAssocDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5D9DGP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:26:39:721 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:27:06:924 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Improper Javadoc</Summary>
+    <Description>Comment not in Javadoc format</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DA2YO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:27:12:768 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:28:55:221 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="71">src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc here, at 75, at 79, at 83, at 87, at 91, at 95, at 99, at 103, at 107, at 111, at 115, at 119, at 123, and at 127</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DCOCN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:29:13:799 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:29:31:471 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="150">src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DDBWB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:29:44:315 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:29:53:971 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="180">src/gov/va/med/pharmacy/peps/domain/common/model/EplOiMedRouteAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DGHOO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:32:11:784 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:32:27:596 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfNonlistValueDaoImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>Empty Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DHB7L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:32:50:049 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:33:21:002 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVadfOwnerDaoImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>File Reviewed - No Items Noted</Summary>
+    <Description>File Reviewed - No Items Noted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DIJ1Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:33:46:862 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:33:53:752 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaDispenseUnitDaoImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>File Reviewed - No Items Noted</Summary>
+    <Description>File Reviewed - No Items Noted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DJM1D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:34:37:393 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:34:42:299 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaDrugClassDaoImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>File Reviewed - No Items Noted</Summary>
+    <Description>File Reviewed - No Items Noted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DK1QW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:34:57:752 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:35:03:080 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/dao/impl/EplVaGenericNameDaoImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>File Reviewed - No Items Noted</Summary>
+    <Description>File Reviewed - No Items Noted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DKT1J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:35:33:127 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:35:38:268 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/model/DataObject.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>File Reviewed - No Items Noted</Summary>
+    <Description>File Reviewed - No Items Noted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DLP37">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:36:14:659 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:37:33:752 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplAtcCanisterDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DOA7M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:38:15:346 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:38:41:346 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="66">src/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Improper Javadoc</Summary>
+    <Description>Comment not in Javadoc format</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DP057">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:38:48:955 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:27:440 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="70">src/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadocs starting here and through line 134</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DQ4NJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:41:455 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:39:56:565 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="159">src/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DQOKK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:40:07:268 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:40:17:096 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="196">src/gov/va/med/pharmacy/peps/domain/common/model/EplAtcCanisterDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DRM6M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:40:50:830 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:41:35:299 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Issue</Summary>
+    <Description>The serializable class EplCsFedScheduleDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DTL5R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:42:22:815 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:42:55:346 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="72">src/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Improper Javadoc</Summary>
+    <Description>Improper Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DUF6H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:43:01:721 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:45:45:893 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="76">src/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc starting here and through 124</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DZ1X3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:46:37:815 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:46:52:862 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="147">src/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DZLD6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:47:03:018 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:47:12:127 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="178">src/gov/va/med/pharmacy/peps/domain/common/model/EplCsFedScheduleDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E0AJV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:47:35:659 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:48:21:955 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplDfMedRtDfAssocDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E1LT8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:48:36:908 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:14:330 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc starting here and through 120</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E2OVW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:27:548 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:42:282 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="142">src/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E379S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:51:376 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:50:00:047 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="174">src/gov/va/med/pharmacy/peps/domain/common/model/EplDfMedRtDfAssocDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E40P8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:50:29:516 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:50:59:468 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="22">src/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Line length</Summary>
+    <Description>Line exceeds 125 characters</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E51QY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:51:17:530 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:51:59:280 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="78">src/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc starting here and through 162</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E6B6C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:16:404 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:25:467 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="187">src/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E6SE4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:38:716 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:57:935 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="206">src/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Line length</Summary>
+    <Description>Line exceeds 125 characters</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E7NEV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:18:919 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:45:246 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="222">src/gov/va/med/pharmacy/peps/domain/common/model/EplDosageFormDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EBFFY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:56:15:214 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:57:01:823 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplDrug UntiDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EET6R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:58:52:995 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:59:30:292 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc from here through 136</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EFXBM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:59:45:010 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:05:042 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EGHFL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:11:073 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:29:323 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="161">src/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EH6BF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:43:323 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:51:760 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="196">src/gov/va/med/pharmacy/peps/domain/common/model/EplDrugUnitDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EHW3T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:01:16:745 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:02:02:338 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplFormularyAlternativeDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EJ9MS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:02:20:932 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:02:55:854 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="63">src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc from here through 115</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EK7EI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:03:04:698 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:03:20:135 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="137">src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EKQ8G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:03:29:104 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:03:37:854 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="165">src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ELJ6Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:06:635 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:55:963 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="15">src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDoKey.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplFormularyAlternativeDoKey does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EMSVI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:05:05:838 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:05:42:182 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="24">src/gov/va/med/pharmacy/peps/domain/common/model/EplFormularyAlternativeDoKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc starting here through the end of the file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EOCAB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:06:17:651 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:06:58:526 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="2">src/gov/va/med/pharmacy/peps/domain/common/model/EplIngredientDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplIngredientDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EPS21">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:24:745 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:58:807 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="88">src/gov/va/med/pharmacy/peps/domain/common/model/EplIngredientDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ET8O5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:10:06:245 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:10:41:463 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/model/EplInpatientPharmLocationDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplInpatientPharmLocationDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EUWKE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:11:23:870 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:11:47:713 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="60">src/gov/va/med/pharmacy/peps/domain/common/model/EplInpatientPharmLocationDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EW5XN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:12:22:667 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:12:50:167 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/domain/common/model/EplIntendedUseDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplIntendedUseDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EX2ZQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:13:05:510 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:13:29:088 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/domain/common/model/EplIntendedUseDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EY6OZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:13:56:963 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:14:32:167 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplLocalConsoleInfoDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EZA6V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:14:48:151 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:15:14:182 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="69">src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through the end of the file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F0F4T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:15:41:213 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:16:19:104 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="14">src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDoKey.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Issue</Summary>
+    <Description>The serializable class EplLocalConsoleInfoDoKey does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F1J9P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:16:33:229 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:16:55:620 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="36">src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalConsoleInfoDoKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F2LY2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:17:23:354 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:17:53:323 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalPossibleDosageDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplLocalPossibleDosageDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F3IH2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:18:05:510 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:18:27:792 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="71">src/gov/va/med/pharmacy/peps/domain/common/model/EplLocalPossibleDosageDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F4GLT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:18:49:745 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:19:17:276 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="22">src/gov/va/med/pharmacy/peps/domain/common/model/EplManufacturerDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplManufacturerDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F5EP8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:19:33:932 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:19:54:370 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="80">src/gov/va/med/pharmacy/peps/domain/common/model/EplManufacturerDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F6FJM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:20:21:682 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:20:48:963 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="21">src/gov/va/med/pharmacy/peps/domain/common/model/EplMedRouteDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplOiMedRouteDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F7DKG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:21:05:776 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:21:37:807 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="79">src/gov/va/med/pharmacy/peps/domain/common/model/EplMedRouteDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F8N5Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:22:04:870 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:24:52:807 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="18">src/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplMultiTextDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FCQI7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:15:823 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:38:213 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="63">src/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FDWHH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:10:229 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:40:667 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="17">src/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDoKey.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplMultiTextDoKey does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FEVN4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:55:792 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:27:21:104 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="41">src/gov/va/med/pharmacy/peps/domain/common/model/EplMultiTextDoKey.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FGK52">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:28:14:198 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:28:47:073 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplNationalPossibleDosageDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FHMIK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:03:932 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:36:729 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="11">src/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Unused Import</Summary>
+    <Description>Import java.math.BigInteger is never used</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FIPPL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:54:729 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:30:18:667 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="73">src/gov/va/med/pharmacy/peps/domain/common/model/EplNationalPossibleDosageDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FJVOV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:30:49:135 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:19:745 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="20">src/gov/va/med/pharmacy/peps/domain/common/model/EplNdcDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplNdcDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FKWX5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:37:385 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:56:979 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="125">src/gov/va/med/pharmacy/peps/domain/common/model/EplNdcDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FLTX3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:32:20:151 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:32:45:088 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="19">src/gov/va/med/pharmacy/peps/domain/common/model/EplNewReqValueDo.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Serialization Error</Summary>
+    <Description>The serializable class EplNewReqValueDo does not declare a static final SerialVersion UID field of type long</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FMQC7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:33:02:167 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:33:23:245 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo />
+    <File line="68">src/gov/va/med/pharmacy/peps/domain/common/model/EplNewReqValueDo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing or non-standard Javadoc</Summary>
+    <Description>Missing or non-standard Javadoc from here through end of file</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

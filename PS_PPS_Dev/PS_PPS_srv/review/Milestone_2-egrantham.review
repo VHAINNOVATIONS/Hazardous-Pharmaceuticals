@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4870V7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:17:05:827 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:12:12:359 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="15">test/gov/va/med/pharmacy/peps/service/common/test/integration/search/ProductGenericNameSearchServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>No actual text</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF48KUJV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:27:50:827 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:12:17:406 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="35">test/gov/va/med/pharmacy/peps/service/common/test/integration/search/ProductSearchServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>No actual text</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF498T33">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:46:28:671 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:12:23:641 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="18">test/gov/va/med/pharmacy/peps/service/common/test/integration/search/SearchServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Empty Javadoc</Summary>
+    <Description>No actual text</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF49DPNS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:50:17:512 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:12:27:891 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="123">test/gov/va/med/pharmacy/peps/service/common/test/integration/search/SearchServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc here, at 123, at 127, at 131, at 135, at 139, at 143, and at 147</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF49FHQ6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:51:40:542 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:07:33:514 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="25">test/gov/va/med/pharmacy/peps/service/national/test/integration/SearchServiceTest.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Javadoc</Summary>
+    <Description>Missing Javadoc</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF49GJUJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:52:29:947 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:06:39:154 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="50">test/gov/va/med/pharmacy/peps/service/national/test/integration/SearchServiceTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Commented Out</Summary>
+    <Description>Large section of code commented out</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF49M0A3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:56:44:523 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 14:06:31:810 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>egrantham</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="183">test/gov/va/med/pharmacy/peps/service/national/test/integration/SearchServiceTest.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Commented Out</Summary>
+    <Description>Large section of code commented out</Description>
+    <Annotation/>
+    <Revision/>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

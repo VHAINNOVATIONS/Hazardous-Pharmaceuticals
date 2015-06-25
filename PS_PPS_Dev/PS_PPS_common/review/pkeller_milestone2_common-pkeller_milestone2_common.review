@@ -1,0 +1,3257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="pkeller_milestone2_common">
+  <ReviewIssue id="FF2REMI1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:39:20:809 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:51:38:469 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">build.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2RVMCO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 12:52:33:768 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:47:48:220 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/build/build.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>There are no dependencies</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2T8XEZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:30:54:251 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:31:24:370 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/build/checkstyle/pharmacy.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formated</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2TEVF5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:35:31:601 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:45:38:969 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/build/developer/default.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Defaults sounds</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2TZ062">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:51:10:874 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:51:31:449 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/log4j.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appeart to be well formated</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U0LXE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:52:25:730 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:54:19:261 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/AuthenticationException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Authentication Creditnetials give appropriate response to non-authentication</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2U6J7D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:57:02:137 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:59:23:617 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="3">etc/properties/gov/va/med/pharmacy/peps/common/exception/BusinessRuleException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Field, Validation, and Could_NOT_PROCEED 	errors appear to be fine</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UA7EX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 13:59:53:481 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:02:40:150 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/CommonException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Exceptions appear to be correct.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UE333">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:02:54:495 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:04:31:846 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/DomainException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Domain Exception appear to be correct</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UKRL5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:08:06:185 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:08:49:296 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="2">etc/properties/gov/va/med/pharmacy/peps/common/exception/DomainValidationException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Validation Errors seem to be good</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UR74W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:13:06:272 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:14:48:009 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/DuplicateItemException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Checks for previously entered item appear to be good</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2UV4OY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:16:09:730 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:17:42:481 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="2">etc/properties/gov/va/med/pharmacy/peps/common/exception/InterfaceException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Interface error checking appears to be correct.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2VM7QB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:37:13:379 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:45:40:277 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/InterfaceValidationException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Validation Errors checking appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF2W5OGL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:52:21:525 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-15 :: 14:52:56:054 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/DuplicateItemException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Dupication checking appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF3XNA9T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 08:21:48:737 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 08:34:25:557 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/InterfaceValidationException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Validation error appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF3XOOZY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 08:22:54:478 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 08:24:13:389 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/ItemNotFoundException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Item not found appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF3XR6UB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 08:24:50:915 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 08:35:21:627 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/MissingResourceException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties Files</Summary>
+    <Description>Missing Resource Validation error appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF409U5W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:35:20:180 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:36:06:778 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/OptimisticLockingException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Optimistic Locking Exception appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF40C2ZG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:37:04:924 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:37:31:927 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/PresentationException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Presentation Exception Appears to be pprpriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF40CTH3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:37:39:255 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:38:04:648 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/ServiceException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Sevice Exception Appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF40DKVB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:38:14:759 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:38:56:622 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/gov/va/med/pharmacy/peps/common/exception/ValueObjectValidationException.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Value Object Exception appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF40RFWG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:49:01:504 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:49:35:870 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="32">etc/properties/gov/va/med/pharmacy/peps/common/vo/ValueObject.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Properties File</Summary>
+    <Description>Value Object appears to be appropriate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF412JS9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:57:39:753 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:34:40:074 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/validation/FieldError.properties</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Properties File</Summary>
+    <Description>No values for this property?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF414QC6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 09:59:21:558 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:14:33:744 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/properties/validation/ValidationErrors.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF41LW22">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:12:42:122 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:25:31:715 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="6">etc/xml/spring/test/CommonContext.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF421OQQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:24:59:138 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:25:22:434 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/xml/spring/CommonContext.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF423QXO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:26:35:292 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:27:15:744 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/xml/spring/ProfileContextDynamic.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4255B0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:27:40:572 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:27:53:759 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">etc/xml/spring/CommonContextTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>XML File</Summary>
+    <Description>Appears to be well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF42GLGE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:36:34:718 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:37:40:045 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="31">src/gov/va/med/pharmacy/peps/common/capability/impl/BuildVersionCapabilityImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing @throws tag</Summary>
+    <Description>Should have a throws exception tag.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF42ML6B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 10:41:14:291 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 12:38:21:506 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/capability/BuildVersionCapability.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be functional and well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF476WT8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 12:49:00:956 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 12:49:18:487 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="49">src/gov/va/med/pharmacy/peps/common/exception/AuthenticationException.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be functional and well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF47B0FJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 12:52:12:271 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 12:52:45:537 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/exception/BusinessRuleException.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be functional and well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF48UGDB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:35:19:007 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:26:34:233 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="29">src/gov/va/med/pharmacy/peps/common/exception/CommonException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks appear incorrect</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF490IPY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 13:40:01:990 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:26:25:968 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="59">src/gov/va/med/pharmacy/peps/common/exception/CommonException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks appear incorrect</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4ARCC5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:28:53:045 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:29:11:170 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="49">src/gov/va/med/pharmacy/peps/common/exception/DomainException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4AVY2O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:32:27:840 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:33:01:543 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="19">src/gov/va/med/pharmacy/peps/common/exception/DomainException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4B1NI1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:36:54:073 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:37:17:167 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="19">src/gov/va/med/pharmacy/peps/common/exception/DomainValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4BN672">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 14:53:38:078 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:06:38:424 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="49">src/gov/va/med/pharmacy/peps/common/exception/DomainValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C6FBE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:08:36:362 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:04:112 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="18">src/gov/va/med/pharmacy/peps/common/exception/DuplicateItemException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4C7BG2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:18:002 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:09:54:299 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="48">src/gov/va/med/pharmacy/peps/common/exception/DuplicateItemException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CE1CE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:14:31:502 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:15:26:799 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="26">src/gov/va/med/pharmacy/peps/common/exception/InterfaceException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CGAKG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:16:16:768 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:17:14:377 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="56">src/gov/va/med/pharmacy/peps/common/exception/InterfaceException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CJXRJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:19:06:799 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:55:36:537 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="18">src/gov/va/med/pharmacy/peps/common/exception/InterfaceValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CMWOX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:21:25:377 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:21:59:627 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="48">src/gov/va/med/pharmacy/peps/common/exception/InterfaceValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CPSW8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:23:40:424 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:25:04:596 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="18">src/gov/va/med/pharmacy/peps/common/exception/ItemNotFoundException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4CU2WI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:27:00:018 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:29:52:877 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="48">src/gov/va/med/pharmacy/peps/common/exception/ItemNotFoundException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4DHD62">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:45:06:410 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 15:45:44:629 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/exception/MessageKey.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be functional and well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E0V6P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:00:16:225 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:00:50:068 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/utility/impl/EnvironmentUtilityImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be functional and well formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E48W7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:02:53:959 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:03:16:553 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="23">src/gov/va/med/pharmacy/peps/common/exception/MissingResourceException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E4WLX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:03:24:693 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:04:06:209 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="53">src/gov/va/med/pharmacy/peps/common/exception/MissingResourceException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E8D13">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:06:05:943 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:06:33:600 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="18">src/gov/va/med/pharmacy/peps/common/exception/OptimisticLockingException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4E96QJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:06:44:443 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:07:28:443 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="48">src/gov/va/med/pharmacy/peps/common/exception/OptimisticLockingException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EBCOJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:08:25:459 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:08:49:209 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="28">src/gov/va/med/pharmacy/peps/common/exception/PharmacyException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EC1ZK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:08:58:256 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:09:15:600 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="53">src/gov/va/med/pharmacy/peps/common/exception/PharmacyException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EFO8D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:11:47:053 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:12:15:240 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="28">src/gov/va/med/pharmacy/peps/common/exception/PharmacyRuntimeException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4EGEXQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:12:21:662 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 16:12:47:881 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="53">src/gov/va/med/pharmacy/peps/common/exception/PharmacyRuntimeException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5C22GR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:52:59:259 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:53:16:693 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="22">src/gov/va/med/pharmacy/peps/common/exception/PresentationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in Error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5C35Q3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:53:50:139 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:54:11:244 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="52">src/gov/va/med/pharmacy/peps/common/exception/PresentationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5C4YXO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 07:55:14:652 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:00:46:693 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="19">src/gov/va/med/pharmacy/peps/common/exception/ServiceException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CCAQ0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:00:56:520 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:01:20:579 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="49">src/gov/va/med/pharmacy/peps/common/exception/ServiceException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CENLL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:02:46:521 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:03:04:315 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="16">src/gov/va/med/pharmacy/peps/common/exception/ValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CF53P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:03:09:205 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:03:24:953 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="46">src/gov/va/med/pharmacy/peps/common/exception/ValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks don't concur with arugments</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CL5VJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:07:50:143 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:34:08:041 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="42">src/gov/va/med/pharmacy/peps/common/exception/ValueObjectValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks should also indicate this method overites:&#xD;
+gov.va.med.pharmacy.peps.common.exception.PharmacyException.getLocalizedMessage().   No override tags</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CNQP6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:09:50:442 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:34:03:479 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="54">src/gov/va/med/pharmacy/peps/common/exception/ValueObjectValidationException.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks in error</Summary>
+    <Description>Remarks should also indicate this method overites:&#xD;
+gov.va.med.pharmacy.peps.common.exception.PharmacyException.getLocalizedMessage().   No override tags</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CVHQ4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:15:52:060 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:33:54:855 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="34">src/gov/va/med/pharmacy/peps/common/message/bean/AbstractPepsMessageDrivenBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks should also indicate this method overites:&#xD;
+org.springframework.ejb.support.AbstractMessageDrivenBean.setMessageDrivenContext. No override tags</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5CXK1M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:17:28:378 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:18:16:920 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="54">src/gov/va/med/pharmacy/peps/common/message/bean/AbstractPepsMessageDrivenBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Unchecked type casting</Summary>
+    <Description>Object has been cast without being type checked</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DGCB7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:32:04:819 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:32:40:003 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="169">src/gov/va/med/pharmacy/peps/common/servlet/AbstractPepsServlet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Unchecked type casting</Summary>
+    <Description>Object has been cast without being type checked</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DRZ5J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:41:07:639 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:41:35:074 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/servlet/AbstractPepsServlet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be well documented and formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DVGKZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:43:50:195 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:44:59:301 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="29">src/gov/va/med/pharmacy/peps/common/session/bean/AbstractPepsStatelessSessionBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks in error</Summary>
+    <Description>Remarks whould also indicate theis method overites:&#xD;
+org.springframework.ejb.support.AbstractSessionBean.setSessionContext().  No override tag</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5DX4IN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:45:07:871 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:45:51:189 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="53">src/gov/va/med/pharmacy/peps/common/session/bean/AbstractPepsStatelessSessionBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Unchecked type casting</Summary>
+    <Description>Object has been cast without being type checked</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E2QO1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:29:857 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:49:58:117 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="19">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyComparator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>No remarks have been added</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E3FSF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:50:02:415 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:52:52:225 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="20">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyComparator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E7DO5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:06:293 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:14:933 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="20">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyComparator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E7U2L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:53:27:549 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:20:449 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="21">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyComparator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E93ET">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:54:26:309 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:23:918 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="24">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E9I8C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:54:45:516 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:28:387 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="25">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5E9UBB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:55:01:175 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:34:247 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="26">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EA6B8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:55:16:724 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:52:592 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="28">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EAHJT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:55:31:289 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:56:311 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="31">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EAV5X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:55:48:933 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:25:59:608 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="32">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EB8V2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:56:06:686 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:07:374 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="37">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EC64B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:56:49:787 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:57:14:807 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="24">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No Remarks</Summary>
+    <Description>No remarks have been added</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ECWRP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:57:24:325 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:57:44:047 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="40">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No remarks</Summary>
+    <Description>No remarks have been added</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EDXRI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:58:12:270 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:16:719 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="43">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw Type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EEF82">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:58:34:898 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:27:673 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="40">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EF3BC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:59:06:120 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:30:688 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="41">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EFTP3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:59:40:311 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:33:814 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="44">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EG7YM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 08:59:58:798 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:26:38:392 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="47">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EGNXR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:19:503 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:00:40:271 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="56">src/gov/va/med/pharmacy/peps/common/utility/impl/FieldKeyUtilities.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remarks</Summary>
+    <Description>Remarks are inadequate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EIKUW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:01:48:824 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:02:39:048 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="31">src/gov/va/med/pharmacy/peps/common/utility/impl/XmlUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks</Summary>
+    <Description>Remarks are inadequate and don't address @param</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EK13B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:02:56:519 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:03:47:680 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="67">src/gov/va/med/pharmacy/peps/common/utility/impl/XmlUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>There are no remarks</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ELH25">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:03:869 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:15:854 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="86">src/gov/va/med/pharmacy/peps/common/utility/impl/XmlUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>There are no remarks</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EM07F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:28:683 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:42:591 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="107">src/gov/va/med/pharmacy/peps/common/utility/impl/XmlUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>There are no remarks</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EMDAT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:04:45:653 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:05:11:359 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="113">src/gov/va/med/pharmacy/peps/common/utility/impl/XmlUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No Remarks</Summary>
+    <Description>There are no remarks</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EPBDQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:03:134 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:07:39:683 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/utility/profile/Profiler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be well documented and formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5ESVYJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:09:49:771 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:10:31:462 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/utility/profile/StopWatch.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be well documented and formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5EYTVO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:14:27:012 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:15:47:596 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="144">src/gov/va/med/pharmacy/peps/common/utility/profile/TaskInfo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remarks in error</Summary>
+    <Description>Remarks should also indicate the method overites:&#xD;
+java.lang.Object.toString().  No overrite tag</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F1V4P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:16:48:601 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:17:23:822 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="70">src/gov/va/med/pharmacy/peps/common/utility/timer/Timer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>No remarks have been added</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F3MTE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:18:11:138 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:18:48:609 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="9">src/gov/va/med/pharmacy/peps/common/utility/timer/Timer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>No remarks have been added</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F5UF1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:19:54:301 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:21:26:011 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="82">src/gov/va/med/pharmacy/peps/common/utility/timer/Timer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks in Error</Summary>
+    <Description>Remarks should aslo indicate the method overides:&#xD;
+java.lang.Object.toString().  No overides tag</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5F98K2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:22:32:594 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:22:55:189 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="74">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks</Summary>
+    <Description>Remarks are inadequate</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FAK9M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:23:34:426 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:24:44:775 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="26">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Object should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FHG2E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:28:55:574 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:11:309 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="40">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FHV2S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:15:028 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:25:513 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="41">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FI6FO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:29:748 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:29:43:265 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="47">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FIU0P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:30:00:313 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:30:13:673 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="56">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FKLU6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:23:022 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:31:33:788 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="67">src/gov/va/med/pharmacy/peps/common/utility/ClassUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FMQ8D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:33:02:029 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:33:19:420 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/utility/EnvironmentUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be well documented and formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FO7LI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:34:11:190 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:34:27:425 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="21">src/gov/va/med/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FON13">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:34:31:191 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:34:43:129 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="30">src/gov/va/med/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FPDQ3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:35:05:787 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:35:16:585 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="32">src/gov/va/med/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FPRQ1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:35:23:929 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:35:35:196 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="44">src/gov/va/med/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FQ6WI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:35:43:602 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:36:39:184 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="66">src/gov/va/med/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FQOPM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:36:06:682 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:36:18:152 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="83">src/gov/va/med/pharmacy/peps/common/utility/PropertyUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FTQDE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:28:802 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:39:943 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="151">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FU214">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:43:912 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:38:56:475 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="153">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FUEQM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:39:00:382 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:39:09:648 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="157">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FURC7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:39:16:711 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:39:39:041 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="167">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Unused param</Summary>
+    <Description>Parameter is unused in method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FYYG9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:42:32:553 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:42:45:413 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="172">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5FZD1W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:42:51:476 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:43:21:588 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="177">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code</Summary>
+    <Description>Remarks are not allowed in block format.  Appears to be dead code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G0F90">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:43:40:980 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:45:21:424 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="251">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are in error</Summary>
+    <Description>Remarks are inadequate, no description for params and no return tag</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G2TRT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:45:33:113 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:46:01:943 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="272">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code</Summary>
+    <Description>Block code is not allowed appears to be dead code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G3MAS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:46:10:084 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:46:46:337 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="287">src/gov/va/med/pharmacy/peps/common/utility/ReflectionUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>The remarks do not explain the method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G4XSJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:47:11:635 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:47:23:777 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="27">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G5HYA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:47:37:762 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:47:53:544 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="43">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G5X88">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:47:57:560 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:01:268 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="45">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G6F59">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:48:20:781 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:05:534 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="48">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G7FX4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:08:440 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:18:707 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="51">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G7R8P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:23:113 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:34:067 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="54">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G83E8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:38:864 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:49:51:537 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="57">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G8JSZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:50:00:131 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:50:10:960 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="70">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G8ZL6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:50:20:586 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:50:32:384 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="102">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G9AWR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:50:35:259 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:50:48:869 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="114">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5G9WWH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:51:03:761 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:51:52:249 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="118">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>Remarks do not describe the method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GB2SE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:51:58:046 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:53:26:833 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="127">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>Remarks do not describe the method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GBLHM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:52:22:282 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:52:42:362 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="137">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>Remarks do not describe the method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GC9MM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:52:53:566 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:53:16:552 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="146">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>Remarks do not describe the method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GDEII">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:53:46:554 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:54:02:055 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="164">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GESLK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:54:51:464 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:55:15:372 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="612">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type cast unchecked</Summary>
+    <Description>Object is type casted but not checked</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GFPGE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:55:34:046 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:56:00:360 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="672">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type cast unchecked</Summary>
+    <Description>Object is type casted but not checked</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GHNBR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:57:04:599 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:57:27:991 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="689">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code</Summary>
+    <Description>Block code is not allowed appears to be dead code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GICKO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:57:37:320 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:58:23:995 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>All methods require better remarks to descirbe their function</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GK1Y1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:58:56:857 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:59:15:202 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="25">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GKM16">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:59:22:890 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:59:35:219 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="44">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GKY4J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:59:38:563 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:59:52:345 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="54">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GLDY0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 09:59:59:064 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:00:11:065 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="65">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GLQTL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:00:15:753 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:00:27:144 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="68">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GM5NX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:00:34:989 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:00:46:521 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="87">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GMI56">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:00:51:162 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:01:10:350 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="90">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GND4P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:01:31:321 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:02:11:964 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="107">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type check</Summary>
+    <Description>Type converison without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GONPW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:02:31:700 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:02:54:139 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="120">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type check</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GPKGS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:03:14:140 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:03:33:486 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="146">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type check</Summary>
+    <Description>Type cast without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GQ53H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:03:40:877 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:03:56:518 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="167">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GQJZZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:04:00:191 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:04:33:443 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="169">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type conversion without type check</Summary>
+    <Description>Type coversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GRLBD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:04:48:553 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:05:00:757 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="186">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GRYX0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:05:06:180 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:05:17:977 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="189">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GSGIQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:05:28:994 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:06:05:543 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="191">src/gov/va/med/pharmacy/peps/common/vo/datafield/DataFields.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type convsion</Summary>
+    <Description>Type version without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GU4C3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:06:46:515 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:03:203 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="20">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GUKNT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:07:673 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:20:080 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="32">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GUY4N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:25:127 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:39:050 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="33">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GVE6T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:45:941 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:07:55:848 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="45">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GVU4N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:08:06:599 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:08:17:506 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="54">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GWC3D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:08:29:881 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:08:43:367 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="61">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Type convesion</Summary>
+    <Description>Type convesion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GWS49">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:08:50:649 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:09:07:290 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="73">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GX8YM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:09:12:478 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:09:22:885 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="82">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GXPXC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:09:34:464 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:09:54:622 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="89">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type convesion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GYCBE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:10:03:482 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:10:28:249 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="117">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type conversion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GZ6MM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:10:42:766 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:10:55:751 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="133">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5GZKP5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:11:01:001 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:11:13:018 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="137">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H01IO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:11:22:800 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:11:45:286 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="151">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Dead code</Summary>
+    <Description>Dead code or incompleted code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H0PMC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:11:54:036 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:12:05:537 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="178">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H17JD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:12:17:257 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:12:28:367 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="174">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H1MIW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:12:36:680 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:13:02:291 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="207">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H29JI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:13:06:510 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:13:19:386 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="211">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H4DDQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:14:44:798 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:14:58:768 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="63">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H4R08">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:15:02:456 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:15:12:988 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="76">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H5AH8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:15:27:692 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:15:45:553 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="80">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type convesion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H5TXD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:15:52:897 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:16:04:679 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="84">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H6BRS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:16:16:024 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:16:58:448 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="85">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type conversion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H7GH5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:17:08:777 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:17:27:747 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="122">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type coversion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H81S5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:17:36:389 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:17:48:202 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="156">src/gov/va/med/pharmacy/peps/common/vo/datafield/GroupListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Raw type</Summary>
+    <Description>Raw type should be parameterized</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5H9KRV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:18:47:659 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:19:09:786 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="134">src/gov/va/med/pharmacy/peps/common/vo/datafield/ListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type conversion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HA5SV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:19:14:911 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:19:34:256 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="149">src/gov/va/med/pharmacy/peps/common/vo/datafield/ListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Type conversion</Summary>
+    <Description>Type conversion without type check</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HBE8T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:20:12:509 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:20:47:574 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/vo/datafield/ListDataField.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remarks are inadequate</Summary>
+    <Description>Remarks do not describe method and their purpose</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HE4FS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:22:19:768 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:22:35:582 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/vo/datafield/MultitextDataField.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be well documented and formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HEWD2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:22:55:958 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:23:51:743 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="9">src/gov/va/med/pharmacy/peps/common/vo/AtcCanisterVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No remarks</Summary>
+    <Description>Remarks have not been added to discribe the class.  Remarks for the methods do not desicribe the methods</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HGTST">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:24:25:949 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:24:54:373 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="13">src/gov/va/med/pharmacy/peps/common/vo/AtcCanisterVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code or remarks</Summary>
+    <Description>TODO comments left in code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HHSHL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:25:10:905 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:25:29:656 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="94">src/gov/va/med/pharmacy/peps/common/vo/AtcCanisterVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code or remarks</Summary>
+    <Description>TODO comments left in code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HIAYK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:25:34:844 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:26:08:815 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="96">src/gov/va/med/pharmacy/peps/common/vo/AtcCanisterVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code or remarks</Summary>
+    <Description>TODO comments left in code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HKQC7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:27:28:087 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:27:45:963 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="1">src/gov/va/med/pharmacy/peps/common/vo/ColorVo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Java File</Summary>
+    <Description>Appears to be well documented and formatted</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF5HM806">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:28:37:638 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 10:29:14:282 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>pkeller_milestone2_common</ReviewerId>
+    <AssignedTo>pkeller_milestone2_common</AssignedTo>
+    <File line="24">src/gov/va/med/pharmacy/peps/common/vo/CsFedScheduleVo.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Dead code or remarks</Summary>
+    <Description>TODO comments left in code</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

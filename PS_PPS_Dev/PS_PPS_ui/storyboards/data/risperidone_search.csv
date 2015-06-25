@@ -1,0 +1,18 @@
+//genericName, Strength, Unit, Dose Form, VA Drug Class, Local Use, Request Status, State, Formulary,Orderable ,NDC
+Risperidone,0.25,mg,Tablet,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB,9
+Risperidone,0.25,ml,Capsule,Anti-psychotic,N,Approved,Active,Formulary,Risperidone CAP,2
+Risperidone,0.5,ml,Tablet,Anti-psychotic,Y,Pending,Active,Non-Formulary,Risperidone TAB,3
+Risperidone,0.5,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Approved,Active,Formulary,Risperidone TAB-Rapid Dissolve,2
+Risperidone,1,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Approved,Active,Non-Formulary,Risperidone TAB-Rapid Dissolve,5
+Risperidone,1,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Approved,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,2,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Approved,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,2,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Approved,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,2,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Approved,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,3,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,3,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,4,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,4,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,4,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,5,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,5,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3
+Risperidone,6,mg,Tablet Rapid Dissolve,Anti-psychotic,Y,Pending,Active,Formulary,Risperidone TAB-Rapid Dissolve,3

@@ -1,0 +1,152 @@
+<project name="DocumentTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initDocumentTemplate" uri="http://www.swri.org">
+        <sequential>
+            <path id="build.class.path">
+                <dirset dir="${module.Common.dir}/etc/build" />
+
+                <fileset dir="${module.BuildLib.dir}/${module.Common}">
+                    <!-- this won't work for some reason, moved the validation-api-*.jar files to Presentation -->
+                    <!-- exclude name="hibernate/validation-api**" if="${exclude.validation.api}"/ -->
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                    <exclude name="build/**" />
+                </fileset>
+
+                <fileset dir="${module.BuildLib.dir}/${module.Common}">
+                    <include name="build/**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset>
+                <!-- fileset dir="${module.BuildLib.dir}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset -->
+            </path>
+            <taskdef resource="checkstyletask.properties" classpathref="build.class.path" loaderref="ant-loader" />
+            <taskdef name="pmd"
+                     classname="net.sourceforge.pmd.ant.PMDTask"
+                     classpathref="build.class.path"
+                     loaderref="ant-loader" />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="javadoc" uri="http://www.swri.org">
+        <sequential>
+            <swri:progress msg="Documenting JavaDoc" />
+
+            <pathconvert property="${ant.project.name}SourceFiles" setonempty="false">
+                <path>
+                    <fileset dir="${basedir}">
+                        <include name="${build}/${src}/**/*.java" />
+                        <include name="${src}/**/*.java" />
+                        <include name="${test}/**/*.java" />
+                    </fileset>
+                </path>
+            </pathconvert>
+
+            <if>
+                <isset property="${ant.project.name}SourceFiles" />
+                <then>
+                    <javadoc destdir="${build.dir}/javadoc"
+                             failonerror="false"
+                             classpathref="project.class.path"
+                             verbose="false"
+                             useexternalfile="yes">
+                        <fileset dir="${basedir}">
+                            <include name="${build}/${src}/**/*.java" />
+                            <include name="${src}/**/*.java" />
+                            <include name="${test}/**/*.java" />
+                        </fileset>
+                    </javadoc>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="checkstyle" uri="http://www.swri.org">
+        <attribute name="html" default="true" />
+        <sequential>
+            <swri:progress msg="Documenting Checkstyle" />
+
+            <checkstyle config="${module.Common.dir}/${etc}/${build}/checkstyle/pharmacy_v2.xml"
+                        failOnViolation="false"
+                        failureProperty="checkstyle.failure"
+                        classpathref="build.class.path">
+                <fileset dir="${basedir}">
+                    <include name="${src}/**/*.java" />
+                    <include name="${test}/**/*.java" />
+                    <exclude name="${src}/**/domain/**/model/**/*Do.java" />
+                    <exclude name="${src}/**/domain/**/model/**/*DoKey.java" />
+                    <exclude name="${src}/**/presentation/**/action/**/*.java" />
+                    <exclude name="${src}/**/selenium/**/*.java" />
+                    <exclude name="${src}/**/struts/**/*.java" />
+                </fileset>
+                <formatter type="xml" tofile="${build.dir}/checkstyle/checkstyle.xml" />
+            </checkstyle>
+
+            <if>
+                <istrue value="@{html}" />
+                <then>
+                    <xslt basedir="${build.dir}/checkstyle"
+                          destdir="${build.dir}/checkstyle/report"
+                          style="${module.Common.dir}/${etc}/${build}/checkstyle/checkstyle-noframes-sorted.xsl"
+                          scanincludeddirectories="false" />
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="pmd" uri="http://www.swri.org">
+        <attribute name="html" default="true" />
+        <attribute name="errorOnly" default="false" />
+        <sequential>
+            <swri:progress msg="Documenting PMD" />
+
+            <if>
+                <istrue value="@{errorOnly}" />
+                <then>
+                    <property name="pmd.minimum.priority" value="2" />
+                </then>
+                <else>
+                    <property name="pmd.minimum.priority" value="5" />
+                </else>
+            </if>
+
+            <pmd shortFilenames="true"
+                 rulesetfiles="${module.Common.dir}/${etc}/${build}/pmd/pmd_ruleset.xml"
+                 failuresPropertyName="pmd.violations"
+                 minimumPriority="${pmd.minimum.priority}">
+                <formatter type="xml" toFile="${build.dir}/pmd/pmd.xml" />
+                <auxClasspath>
+                    <pathelement location="${build.classes.dir}" />
+                </auxClasspath>
+                <fileset dir="${basedir}">
+                    <include name="${src}/**/*.java" />
+                    <include name="${test}/**/*.java" />
+                    <exclude name="${test}/**/selenium/**/*.java" />
+                    <exclude name="${src}/**/domain/**/model/**/*Do.java" />
+                    <exclude name="${src}/**/domain/**/model/**/*DoKey.java" />
+                    <exclude name="${src}/**/presentation/**/action/**/*.java" />
+                    <exclude name="${src}/**/selenium/**/*.java" />
+                    <exclude name="${src}/**/struts/**/*.java" />
+                </fileset>
+            </pmd>
+
+            <if>
+                <isset property="pmd.violations" />
+                <then>
+                    <property name="pmd.failure" value="true" />
+                </then>
+            </if>
+
+            <if>
+                <istrue value="@{html}" />
+                <then>
+                    <xslt basedir="${build.dir}/pmd"
+                          destdir="${build.dir}/pmd/report"
+                          style="${module.Common.dir}/${etc}/${build}/pmd/pmd-report-per-class.xslt"
+                          scanincludeddirectories="false" />
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+</project>

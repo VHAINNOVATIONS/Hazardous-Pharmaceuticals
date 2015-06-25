@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<!-- Generated content, all changes will be lost! -->
+
+<class
+    name="gov.va.med.pharmacy.peps.domain.common.model.EplWarnLabelDo"
+    table="EPL_WARN_LABELS"
+    
+>
+    <meta attribute="extends" inherit="false">gov.va.med.pharmacy.peps.domain.common.model.DataObject</meta>
+
+    <id
+        name="eplId"
+        type="java.lang.Long"
+        column="EPL_ID"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="warningLabelType"
+        type="java.lang.String"
+        column="WARNING_LABEL_TYPE"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="inactivationDate"
+        type="java.util.Date"
+        column="INACTIVATION_DATE"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="name"
+        type="java.lang.String"
+        column="NAME"
+        not-null="true"
+        length="256"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+   
+    <property
+        name="spanishTranslation"
+        type="java.lang.String"
+        column="SPANISH_TRANSLATION"
+        length="250"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="consultText"
+        type="java.lang.String"
+        column="CONSULT_TEXT"
+        not-null="true"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="requestStatus"
+        type="java.lang.String"
+        column="REQUEST_STATUS"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="itemStatus"
+        type="java.lang.String"
+        column="ITEM_STATUS"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="rejectReasonText"
+        type="java.lang.String"
+        column="REJECT_REASON_TEXT"
+        length="2000"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="requestRejectReason"
+        type="java.lang.String"
+        column="REQUEST_REJECT_REASON"
+        length="100"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="revisionNumber"
+        type="java.lang.Long"
+        column="REVISION_NUMBER"
+        not-null="true"
+        length="30"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdBy"
+        type="java.lang.String"
+        column="CREATED_BY"
+        not-null="true"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="createdDtm"
+        type="java.util.Date"
+        column="CREATED_DTM"
+        not-null="true"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedBy"
+        type="java.lang.String"
+        column="LAST_MODIFIED_BY"
+        length="50"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+    <property
+        name="lastModifiedDtm"
+        type="java.util.Date"
+        column="LAST_MODIFIED_DTM"
+        length="26"
+    >
+        <meta attribute="use-in-tostring">true</meta>
+        <meta attribute="use-in-equals">true</meta>
+    </property>
+
+    <!-- Associations -->
+
+    <!-- bi-directional one-to-many association to EplWarnLabelDo -->
+    <set
+        name="eplWarnLabels"
+        lazy="true"
+        inverse="true"
+    >
+        <key>
+            <column name="ASSOC_WARNING_MAPPING_ID_FK" />
+        </key>
+        <one-to-many
+            class="gov.va.med.pharmacy.peps.domain.common.model.EplWarnLabelDo"
+        />
+    </set>
+    <!-- bi-directional many-to-one association to EplWarnLabelDo -->
+    <many-to-one
+        name="eplWarnLabel"
+        class="gov.va.med.pharmacy.peps.domain.common.model.EplWarnLabelDo"
+        not-null="true"
+    >
+        <meta attribute="use-in-equals">true</meta>
+        <column name="ASSOC_WARNING_MAPPING_ID_FK" />
+    </many-to-one>
+    <!-- bi-directional one-to-many association to EplProdWarnLabelLAssocDo removed -->
+    
+    <!-- bi-directional one-to-many association to EplProdWarnLabelNAssocDo removed-->
+     
+
+</class>
+</hibernate-mapping>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Milestone_2">
+  <ReviewIssue id="FF4GSCHC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:17:37:584 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:17:57:694 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="30">src/gov/va/med/pharmacy/peps/service/common/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Evaluate and remove all todos</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GSZR9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:18:07:749 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-17 :: 17:35:22:688 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo>mthornton</AssignedTo>
+    <File line="35">src/gov/va/med/pharmacy/peps/service/common/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>update javadoc</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GUYJR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:19:39:495 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:19:50:832 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="9">src/gov/va/med/pharmacy/peps/service/local/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused imports</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GWABV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:20:41:419 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:21:19:778 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="294">src/gov/va/med/pharmacy/peps/service/local/utility/ItemUtility.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Cyclomatic complexity is high</Summary>
+    <Description>Can this method be rewritten or broken down to remove so much if nesting?</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GXQYI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:21:49:626 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:01:207 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="45">src/gov/va/med/pharmacy/peps/service/national/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove Todos</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GY5ZV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:09:115 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:19:634 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="43">src/gov/va/med/pharmacy/peps/service/national/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Update javadocs</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GYPP9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:22:34:653 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-18 :: 17:05:59:828 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="9">src/gov/va/med/pharmacy/peps/service/local/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused imports</Summary>
+    <Description />
+    <Annotation />
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="FF4GZA24">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:23:01:036 CDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2008-04-16 :: 17:23:20:838 CDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mthornton</ReviewerId>
+    <AssignedTo />
+    <File line="108">src/gov/va/med/pharmacy/peps/service/local/utility/ItemUtility.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Evaluate Todos</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

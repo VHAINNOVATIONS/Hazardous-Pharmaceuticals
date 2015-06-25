@@ -1,0 +1,414 @@
+<project name="JarTemplate" basedir="." xmlns:swri="http://www.swri.org">
+    <macrodef name="initJarTemplate" uri="http://www.swri.org">
+        <sequential>
+            <patternset id="build.classes.dir.patternset">
+                <include name="**/*.class" />
+                <exclude name="**/test/**/*.class" />
+                <exclude name="**/external/tools/**/*.class" />
+                <exclude name="**/profile/**/*.class" />
+            </patternset>
+
+            <patternset id="build.meta.dir.patternset">
+                <include name="**/*.xml" />
+                <include name="**/*.xsb" />
+                <include name="**/*.properties" />
+                <exclude name="**/ejb-jar.xml" />
+                <exclude name="**/weblogic-ejb-jar.xml" />
+                <exclude name="**/test/**" />
+            </patternset>
+
+            <patternset id="etc.dir.patternset">
+                <include name="xml/**/*.xml" />
+                <include name="xml/**/*.xsd" />
+                <include name="xml/**/*.xsl" />
+                <exclude name="xml/**/beanRefContext.xml" />
+                <exclude name="xml/**/spring/*Dynamic.xml" />
+                <include name="properties/**/*.properties" />
+                <include name="velocity/**/*.vm" />
+                <include name="images/**" />
+                <exclude name="**/test/**" />
+                <exclude name="**/external/tools/**" />
+            </patternset>
+
+            <patternset id="ejb.build.meta.dir.patternset">
+                <include name="**/ejb-jar.xml" />
+                <include name="**/weblogic-ejb-jar.xml" />
+            </patternset>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="initJarLibpath" uri="http://www.swri.org">
+        <attribute name="project" default="${ant.project.name}" />
+        <sequential>
+            <!-- All dependencies to be placed on the MANIFEST.MF Class-Path must be copied to tmp/archive/lib -->
+            <path id="National@{project}.lib.path">
+                <fileset dir="${tmp.archive.dir}/${lib}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                    <exclude name="**/Local*.jar" />
+                    <exclude name="**/*Client.jar" />
+                </fileset>
+            </path>
+            <path id="Local@{project}.lib.path">
+                <fileset dir="${tmp.archive.dir}/${lib}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                    <exclude name="**/National*.jar" />
+                    <exclude name="**/Local*Client.jar" />
+                </fileset>
+                <fileset dir="${tmp.archive.dir}/${lib}">
+                    <include name="**/National*Client.jar" />
+                </fileset>
+            </path>
+            <path id="@{project}.lib.path">
+                <fileset dir="${tmp.archive.dir}/${lib}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                </fileset>
+            </path>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageLocalClientJar" uri="http://www.swri.org">
+        <sequential>
+            <swri:packageClientJar environment="Local">
+                <buildclassespatternset>
+                    <exclude name="**/national/**" />
+                </buildclassespatternset>
+            </swri:packageClientJar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageNationalClientJar" uri="http://www.swri.org">
+        <sequential>
+            <swri:packageClientJar environment="National">
+                <buildclassespatternset>
+                    <exclude name="**/local/**" />
+                </buildclassespatternset>
+            </swri:packageClientJar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageLocalEjbJar" uri="http://www.swri.org">
+        <sequential>
+            <swri:packageEjbJar environment="Local">
+                <buildmetapatternset>
+                    <exclude name="local/**" />
+                    <exclude name="national/**" />
+                </buildmetapatternset>
+
+                <additionalfileset>
+                    <fileset dir="${build.meta.dir}/local">
+                        <patternset refid="ejb.build.meta.dir.patternset" />
+                    </fileset>
+                </additionalfileset>
+
+                <buildclassespatternset>
+                    <exclude name="**/national/**" />
+                </buildclassespatternset>
+            </swri:packageEjbJar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageNationalEjbJar" uri="http://www.swri.org">
+        <sequential>
+            <swri:packageEjbJar environment="National">
+                <buildmetapatternset>
+                    <exclude name="local/**" />
+                    <exclude name="national/**" />
+                </buildmetapatternset>
+
+                <additionalfileset>
+                    <fileset dir="${build.meta.dir}/national">
+                        <patternset refid="ejb.build.meta.dir.patternset" />
+                    </fileset>
+                </additionalfileset>
+
+                <buildclassespatternset>
+                    <exclude name="**/local/**" />
+                </buildclassespatternset>
+            </swri:packageEjbJar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageLocalJar" uri="http://www.swri.org">
+        <element name="anotherfileset" optional="true" />
+        <sequential>
+            <swri:packageJar environment="Local">
+                <buildclassespatternset>
+                    <exclude name="**/national/**/*.class" />
+                </buildclassespatternset>
+
+                <buildmetapatternset>
+                    <include name="**/local/**" />
+                    <exclude name="local/**" />
+                    <exclude name="**/national/**" />
+                    <exclude name="**/test/**" />
+                </buildmetapatternset>
+
+                <etcpatternset>
+                    <exclude name="**/national/**" />
+                </etcpatternset>
+
+                <additionalfileset>
+                    <fileset dir="${build.meta.dir}/local">
+                        <patternset refid="build.meta.dir.patternset" />
+                    </fileset>
+
+                    <fileset file="${etc.dir}/xml/spring/beanRefContext.xml" />
+
+                    <anotherfileset />
+                </additionalfileset>
+            </swri:packageJar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageNationalJar" uri="http://www.swri.org">
+        <element name="anotherfileset" optional="true" />
+        <sequential>
+            <swri:packageJar environment="National">
+                <buildclassespatternset>
+                    <exclude name="**/local/**/*.class" />
+                </buildclassespatternset>
+
+                <buildmetapatternset>
+                    <include name="**/national/**" />
+                    <exclude name="**/local/**" />
+                    <exclude name="national/**" />
+                    <exclude name="**/test/**" />
+                </buildmetapatternset>
+
+                <etcpatternset>
+                    <exclude name="**/local/**" />
+                </etcpatternset>
+
+                <additionalfileset>
+                    <fileset dir="${build.meta.dir}/national">
+                        <patternset refid="build.meta.dir.patternset" />
+                    </fileset>
+
+                    <fileset file="${etc.dir}/xml/spring/beanRefContext.xml" />
+
+                    <anotherfileset />
+                </additionalfileset>
+            </swri:packageJar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageClientJar" uri="http://www.swri.org">
+        <attribute name="environment" default="" />
+        <attribute name="destFile" default="@{environment}${ant.project.name}Client.jar" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <element name="buildclassespatternset" optional="true" />
+        <element name="additionalfileset" optional="true" />
+        <sequential>
+            <jar destFile="@{destDir}/@{destFile}" update="true">
+                <manifest>
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <fileset dir="${build.classes.dir}">
+                    <include name="**/session/**/*.class" />
+                    <exclude name="**/impl/**" />
+                    <exclude name="**/bean/**" />
+                    <exclude name="**/test/**" />
+                    <buildclassespatternset />
+                </fileset>
+
+                <additionalfileset />
+            </jar>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageEjbJar" uri="http://www.swri.org">
+        <attribute name="environment" default="" />
+        <attribute name="destFile" default="@{environment}${ant.project.name}Ejb.jar" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <element name="buildmetapatternset" optional="true" />
+        <element name="buildclassespatternset" optional="true" />
+        <element name="additionalfileset" optional="true" />
+        <sequential>
+            <swri:copyJarDependencies />
+            <swri:createJarClasspath jarFile="@{destFile}" environment="@{environment}" />
+
+            <jar destFile="@{destDir}/@{destFile}" update="true">
+                <manifest>
+                    <attribute name="Class-Path" value="${@{destFile}.class.path}" />
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <fileset dir="${build.meta.dir}">
+                    <patternset refid="ejb.build.meta.dir.patternset" />
+                    <buildmetapatternset />
+                </fileset>
+
+                <fileset dir="${build.classes.dir}">
+                    <include name="**/session/**/*.class" />
+                    <include name="**/message/**/*.class" />
+                    <exclude name="**/test/**" />
+                    <buildclassespatternset />
+                </fileset>
+
+                <additionalfileset />
+            </jar>
+
+            <swri:copyJarDependencies />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="packageJar" uri="http://www.swri.org">
+        <attribute name="environment" default="" />
+        <attribute name="destFile" default="@{environment}${ant.project.name}.jar" />
+        <attribute name="destDir" default="${build.archive.dir}" />
+        <element name="buildclassespatternset" optional="true" />
+        <element name="buildmetapatternset" optional="true" />
+        <element name="etcpatternset" optional="true" />
+        <element name="additionalfileset" optional="true" />
+        <sequential>
+            <swri:initJarTemplate/>
+            <swri:copyJarDependencies />
+            <swri:createJarClasspath jarFile="@{destFile}" environment="@{environment}" />
+
+            <jar destfile="@{destDir}/@{destFile}" update="true">
+                <manifest>
+                    <attribute name="Class-Path" value="${@{destFile}.class.path}" />
+                    <attribute name="Author" value="${user.name}" />
+                    <attribute name="Build-Date" value="${build.date}" />
+                </manifest>
+
+                <fileset dir="${build.classes.dir}">
+                    <patternset refid="build.classes.dir.patternset" />
+                    <buildclassespatternset />
+                </fileset>
+
+                <fileset dir="${build.meta.dir}">
+                    <patternset refid="build.meta.dir.patternset" />
+                    <buildmetapatternset />
+                </fileset>
+
+                <fileset dir="${etc.dir}">
+                    <patternset refid="etc.dir.patternset" />
+                    <etcpatternset />
+                </fileset>
+
+                <additionalfileset />
+            </jar>
+            
+            <swri:copyJarDependencies />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="copyJarDependencies" uri="http://www.swri.org">
+        <attribute name="list" default="${dependencies}" />
+        <attribute name="project" default="${ant.project.name}" />
+
+        <sequential>
+            <!-- Copy this project's libraries and build archives -->
+            <mkdir dir="${tmp.archive.dir}/lib" />
+            <copy todir="${tmp.archive.dir}/lib">
+                <fileset dir="${basedir}/${module.BuildLib.dir}/@{project}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar"/>
+                    <exclude name="build/**" />
+                    <exclude name="web/**" />
+                    <exclude name="ejb/**" />
+                    <exclude name="connector/**" />
+                    <!-- exclude name="spring/profile/**" / -->
+                    <exclude name="database/derbyclient*.jar" unless="deploy.derby" />
+                </fileset>
+            </copy>
+
+            <if>
+                <istrue value="${profile}" />
+                <then>
+                    <copy todir="${tmp.archive.dir}/lib">
+                        <fileset dir="${module.BuildLib.dir}/@{project}">
+                            <include name="spring/profile/**" />
+                            <exclude name="**/*sources.jar"/>
+                        </fileset>
+                    </copy>
+                </then>
+            </if>
+
+            <copy todir="${tmp.archive.dir}/lib">
+                <fileset dir="${build.archive.dir}">
+                    <include name="**/*.jar" />
+                    <exclude name="**/*sources.jar" />
+                    <exclude name="**/*Ejb.jar" />
+                </fileset>
+            </copy>
+
+            <copy todir="${tmp.archive.dir}/ejb">
+                <fileset dir="${build.archive.dir}">
+                    <include name="**/*Ejb.jar" />
+                    <exclude name="**/*sources.jar"/>
+                </fileset>
+            </copy>
+            <copy todir="${tmp.archive.dir}">
+                <fileset dir="${lib.dir}">
+                    <include name="ejb/**/*.jar" />
+                    <exclude name="ejb/*sources.jar"/>
+                </fileset>
+            </copy>
+
+            <copy todir="${tmp.archive.dir}/web">
+                <fileset dir="${build.archive.dir}">
+                    <include name="**/*.war" />
+                </fileset>
+            </copy>
+            <copy todir="${tmp.archive.dir}">
+                <fileset dir="${lib.dir}">
+                    <include name="web/**/*.war" />
+                </fileset>
+            </copy>
+
+            <copy todir="${tmp.archive.dir}/connector">
+                <fileset dir="${build.archive.dir}">
+                    <include name="**/*.rar" />
+                </fileset>
+            </copy>
+            <copy todir="${tmp.archive.dir}">
+                <fileset dir="${lib.dir}">
+                    <include name="connector/**/*.rar" />
+                </fileset>
+            </copy>
+
+            <!-- Copy this project's dependencies' libraries and build archives -->
+            <for list="@{list}" delimiter=",;:" param="module">
+                <sequential>
+                    <if>
+                        <equals arg1="deploy" arg2="${@{module}.target}" casesensitive="false" />
+                        <then>
+                            <copy todir="${tmp.archive.dir}">
+                                <fileset dir="${module.@{module}.dir}/${tmp}/${archive}">
+                                    <include name="lib/**/*Client.jar" />
+                                    <include name="ejb/**" />
+                                    <exclude name="**/*sources.jar" />
+                                </fileset>
+                            </copy>
+                        </then>
+                        <else>
+                            <copy todir="${tmp.archive.dir}">
+                                <fileset dir="${module.@{module}.dir}/${tmp}/${archive}" />
+                            </copy>
+                        </else>
+                    </if>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <macrodef name="createJarClasspath" uri="http://www.swri.org">
+        <attribute name="environment" default="" />
+        <attribute name="jarFile" />
+        <attribute name="project" default="${ant.project.name}" />
+        <sequential>
+            <!-- All dependencies to be placed on the MANIFEST.MF Class-Path must be copied to tmp/archive/lib before here -->
+            <pathconvert property="@{jarFile}.class.path" refid="@{environment}@{project}.lib.path" pathsep=" " dirsep="/">
+                <map from="${basedir}${file.separator}${tmp}${file.separator}${archive}${file.separator}" to="" />
+            </pathconvert>
+        </sequential>
+    </macrodef>
+</project>
